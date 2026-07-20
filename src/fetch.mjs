@@ -1,0 +1,106 @@
+// -----------------------------------------------------------------------------
+// fetch.mjs — READ-ONLY data collection from the GitHub GraphQL API.
+//
+// This module NEVER writes to any repo. It only runs `search` queries to
+// collect merged PRs (with their reviews) and issues across the whole org.
+// -----------------------------------------------------------------------------
+
+const GQL = "https://api.github.com/graphql";
+
+async function graphql(token, query, variables) {
+  const res = await fetch(GQL, {
+    method: "POST",
+    headers: {
+      Authorization: `bearer ${token}`,
+      "Content-Type": "application/json",
+      "User-Agent": "mantis-leaderboard",
+    },
+    body: JSON.stringify({ query, variables }),
+  });
+  if (!res.ok) {
+    throw new Error(`GitHub API ${res.status}: ${await res.text()}`);
+  }
+  const json = await res.json();
+  if (json.errors) {
+    throw new Error(`GraphQL errors: ${JSON.stringify(json.errors)}`);
+  }
+  return json.data;
+}
+
+// Paginate any `search` query. `searchQuery` is a GitHub search string.
+async function searchAll(token, searchQuery, nodeFields) {
+  const query = `
+    query($q: String!, $cursor: String) {
+      search(query: $q, type: ISSUE, first: 50, after: $cursor) {
+        pageInfo { hasNextPage endCursor }
+        nodes { ${nodeFields} }
+      }
+      rateLimit { remaining }
+    }`;
+  let cursor = null;
+  const out = [];
+  do {
+    const data = await graphql(token, query, { q: searchQuery, cursor });
+    out.push(...data.search.nodes);
+    cursor = data.search.pageInfo.hasNextPage ? data.search.pageInfo.endCursor : null;
+  } while (cursor);
+  return out;
+}
+
+const PR_FIELDS = `
+  ... on PullRequest {
+    number
+    title
+    additions
+    deletions
+    mergedAt
+    baseRefName
+    author { login }
+    repository { nameWithOwner }
+    labels(first: 20) { nodes { name } }
+    files(first: 100) { nodes { path } }
+    reviews(first: 50) {
+      nodes {
+        state
+        body
+        submittedAt
+        author { login }
+      }
+    }
+  }`;
+
+const ISSUE_FIELDS = `
+  ... on Issue {
+    number
+    title
+    state
+    closed
+    closedAt
+    stateReason
+    createdAt
+    author { login }
+    repository { nameWithOwner }
+    labels(first: 20) { nodes { name } }
+  }`;
+
+// Fetch everything the scorer needs, one repo at a time so each search query
+// stays short (GitHub's search API caps query length; a single query listing
+// 15 repos would blow past that). Returns { pullRequests, issues }.
+export async function fetchActivity(token, repos, lookbackDays) {
+  const since = new Date(Date.now() - lookbackDays * 86400_000)
+    .toISOString()
+    .slice(0, 10);
+
+  const pullRequests = [];
+  const issues = [];
+  for (const repo of repos) {
+    pullRequests.push(
+      ...(await searchAll(token, `repo:${repo} is:pr is:merged merged:>=${since}`, PR_FIELDS))
+    );
+    issues.push(
+      ...(await searchAll(token, `repo:${repo} is:issue created:>=${since}`, ISSUE_FIELDS))
+    );
+  }
+
+  return { pullRequests, issues, since };
+}

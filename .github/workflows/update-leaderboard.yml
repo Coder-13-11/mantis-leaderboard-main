@@ -1,0 +1,63 @@
+name: Update Leaderboard
+
+# Runs on a schedule and on manual trigger. Recomputes the whole leaderboard
+# from scratch and commits the refreshed outputs back to THIS repo only.
+on:
+  schedule:
+    - cron: "0 * * * *"      # hourly (UTC). Adjust as needed.
+  workflow_dispatch: {}       # manual "Run workflow" button
+
+# Only permission needed is to write to THIS repo (for the committed outputs
+# and Pages). It has NO access to other repos.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: leaderboard
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Build leaderboard
+        env:
+          # ORG_READ_TOKEN: a fine-grained PAT with READ-ONLY access, scoped
+          # to exactly the repos listed in config/rules.yml. Stored as a
+          # repo secret. See SETUP.md.
+          GH_TOKEN: ${{ secrets.ORG_READ_TOKEN }}
+        run: npm run build
+
+      - name: Commit refreshed outputs
+        run: |
+          git config user.name "leaderboard-bot"
+          git config user.email "actions@github.com"
+          git add data/leaderboard.json site/index.html README.md
+          git diff --cached --quiet || git commit -m "chore: refresh leaderboard [skip ci]"
+          git push
+
+  # Publish the static site to GitHub Pages.
+  deploy-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,121 @@
+# =============================================================================
+# Mantis Leaderboard — Scoring Rules
+# -----------------------------------------------------------------------------
+# This file is the SINGLE SOURCE OF TRUTH for how points are awarded.
+# Change point values here and the leaderboard recomputes on the next run.
+# No code changes needed. Every edit should go through a reviewed PR.
+# =============================================================================
+
+version: 1
+
+# How far back to look. The leaderboard is recomputed from scratch each run,
+# so this just bounds the API queries.
+lookback_days: 365
+
+# Exactly which repos this leaderboard tracks (owner/name). Add a line when
+# a new Mantis repo exists; nothing else needs to change. This is also what
+# the read-only token should be scoped to in GitHub settings — see SETUP.md.
+repos:
+  - KellisLab/Mantis
+  - KellisLab/MantisAPI
+  - KellisLab/MantisIntegrations
+  - KellisLab/Mantis-Public
+  - KellisLab/Mantis_SDK
+  - KellisLab/MantisExtensions
+  - KellisLab/MantisExtensionsBackend
+  - KellisLab/auto-meeting-minutes
+  - KellisLab/Mantis-Discord-Bot
+  - KellisLab/mantis_transcribe_minutes
+  - KellisLab/mantis-docs
+  - KellisLab/mantis_course
+  - KellisLab/Mantis-verticals
+  - KellisLab/generator-mantis
+  - KellisLab/mantis-cli
+
+# -----------------------------------------------------------------------------
+# Pull Requests
+# -----------------------------------------------------------------------------
+pull_requests:
+  # Points by PR size. Size is derived from (additions + deletions) AFTER
+  # excluding generated/vendored files (see `exclude_paths`).
+  size_points:
+    XS: 5
+    S: 15
+    M: 40
+    L: 80
+    XL: 120
+
+  # Upper bound of net changed lines for each bucket. XL = anything larger.
+  size_buckets:
+    XS: 10
+    S: 50
+    M: 250
+    L: 800
+    # XL: everything above L
+
+  # Multipliers stack (multiply together). Applied to the PR's base points.
+  multipliers:
+    documentation: 1.25   # PR has a label in `documentation_labels` below
+    first_pr: 1.5         # contributor's first merged PR in the lookback window
+
+  documentation_labels: ["documentation", "docs"]
+
+  # Files matching these globs don't count toward PR size (anti-gaming:
+  # stops people inflating a PR to XL with lockfiles / generated code).
+  exclude_paths:
+    - "**/package-lock.json"
+    - "**/yarn.lock"
+    - "**/pnpm-lock.yaml"
+    - "**/*.lock"
+    - "dist/**"
+    - "build/**"
+    - "**/vendor/**"
+    - "**/*.min.js"
+    - "**/*.map"
+
+  # Only count PRs merged into these base branches.
+  count_merges_to: ["main", "master"]
+
+# -----------------------------------------------------------------------------
+# Reviews  (anti-spam: only substantive reviews score)
+# -----------------------------------------------------------------------------
+reviews:
+  approved_points: 20
+  changes_requested_points: 15
+
+  # A review must have a body at least this long to count. Kills "LGTM" farming.
+  min_body_length: 15
+
+  # Never score a review the PR author left on their own PR.
+  exclude_self_review: true
+
+  # Only the FIRST scored review per (reviewer, PR) counts. Re-approving the
+  # same PR repeatedly does not stack.
+  one_per_pr_per_reviewer: true
+
+# -----------------------------------------------------------------------------
+# Issues  (anti-farming: opening an issue scores ZERO by itself)
+# -----------------------------------------------------------------------------
+issues:
+  # An issue only scores if a maintainer applies one of these trusted labels.
+  # This is the "label gate": moderation collapses to clicking a label.
+  confirmed_labels: ["confirmed", "bug-verified", "accepted"]
+  confirmed_points: 8
+
+  # Bonus to the issue's REPORTER when a confirmed issue is later closed
+  # (presumed fixed). Rewards useful bug reports.
+  fixed_bonus_points: 25
+
+  # Issues closed as duplicate score nothing (native reason or these labels).
+  duplicate_labels: ["duplicate", "wontfix", "invalid"]
+
+# -----------------------------------------------------------------------------
+# Display
+# -----------------------------------------------------------------------------
+display:
+  top_n_in_readme: 10
+  exclude_logins: ["dependabot[bot]", "github-actions[bot]", "renovate[bot]"]
+  # Leaderboard ranks by points earned in this many trailing ISO weeks
+  # (current week included), not lifetime total. Keeps it about who is
+  # active NOW, not who has the biggest all-time score.
+  rolling_weeks: 4

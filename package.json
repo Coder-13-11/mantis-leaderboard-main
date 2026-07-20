@@ -1,0 +1,16 @@
+{
+  "name": "mantis-leaderboard",
+  "version": "1.0.0",
+  "description": "Read-only automated contributor leaderboard for a GitHub organization.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node src/index.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
