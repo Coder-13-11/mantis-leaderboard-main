@@ -2,12 +2,15 @@
 // fetch.mjs — READ-ONLY data collection from the GitHub GraphQL API.
 //
 // This module NEVER writes to any repo. It only runs `search` queries to
-// collect merged PRs (with their reviews) and issues across the whole org.
+// collect merged PRs (with their reviews) and issues across the tracked repos.
 // -----------------------------------------------------------------------------
 
 const GQL = "https://api.github.com/graphql";
 
-async function graphql(token, query, variables) {
+// GitHub's API gateway occasionally times out on heavier queries (returns a
+// 5xx with an HTML error page instead of JSON). Retry those a couple times
+// with backoff instead of failing the whole run.
+async function graphql(token, query, variables, attempt = 1) {
   const res = await fetch(GQL, {
     method: "POST",
     headers: {
@@ -18,6 +21,10 @@ async function graphql(token, query, variables) {
     body: JSON.stringify({ query, variables }),
   });
   if (!res.ok) {
+    if (res.status >= 500 && attempt < 3) {
+      await new Promise((r) => setTimeout(r, attempt * 3000));
+      return graphql(token, query, variables, attempt + 1);
+    }
     throw new Error(`GitHub API ${res.status}: ${await res.text()}`);
   }
   const json = await res.json();
