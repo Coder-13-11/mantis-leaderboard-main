@@ -26,16 +26,26 @@ Create a **fine-grained personal access token**
 - **Secret** (Settings → Secrets and variables → Actions → *Secrets*):
   - `ORG_READ_TOKEN` = the token from step 1
 
-## 3. Enable GitHub Pages
-
-Settings → Pages → Source: **GitHub Actions**.
-The leaderboard will publish to `https://<org>.github.io/mantis-leaderboard/`.
-
-## 4. Run it
+## 3. Run it
 
 Actions tab → **Update Leaderboard** → **Run workflow**.
 After that it runs automatically every hour (change the cron in
 `.github/workflows/update-leaderboard.yml`).
+
+## Viewing the leaderboard
+
+No GitHub Pages here — Pages requires a paid plan for private repos. Instead,
+every run commits the refreshed leaderboard straight into the repo:
+
+- **README.md** — the table at the top updates automatically, viewable right
+  on the repo's GitHub page.
+- **site/index.html** — a standalone page; download it or `git pull` and
+  open it locally in a browser.
+- **data/leaderboard.json** — raw scored data, if you want to build something
+  else on top of it.
+
+If the repo ever goes public or gets a Pro plan, a Pages deploy job can be
+added back to publish `site/` to a real URL.
 
 ## Run locally (optional)
 

@@ -7,12 +7,15 @@ on:
     - cron: "0 * * * *"      # hourly (UTC). Adjust as needed.
   workflow_dispatch: {}       # manual "Run workflow" button
 
-# Only permission needed is to write to THIS repo (for the committed outputs
-# and Pages). It has NO access to other repos.
+# Only permission needed is to write to THIS repo (for the committed
+# outputs). It has NO access to other repos.
+#
+# No Pages deploy job: Pages requires a paid plan for private repos. The
+# leaderboard is viewable via the auto-updated README table and
+# site/index.html (open it locally, or re-add a Pages deploy job later if
+# the repo goes public or gets a Pro plan).
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: leaderboard
@@ -45,19 +48,3 @@ jobs:
           git add data/leaderboard.json site/index.html README.md
           git diff --cached --quiet || git commit -m "chore: refresh leaderboard [skip ci]"
           git push
-
-  # Publish the static site to GitHub Pages.
-  deploy-pages:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-      - id: deploy
-        uses: actions/deploy-pages@v4
