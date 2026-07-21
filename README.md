@@ -20,7 +20,20 @@ See [SETUP.md](SETUP.md) to get it running.
 ## Live leaderboard
 
 <!-- LEADERBOARD:START -->
-_The table here is populated automatically on the first run._
+| Rank | Contributor | Points | PRs | Reviews | Issues |
+| :--: | :---------- | -----: | --: | ------: | -----: |
+| 🥇 | [@chreia](https://github.com/chreia) | **5120** | 82 | 0 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **2625** | 140 | 153 | 0 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **2250** | 90 | 6 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **1170** | 164 | 22 | 0 |
+| #5 | [@vinays6](https://github.com/vinays6) | **585** | 29 | 15 | 0 |
+| #6 | [@LucaVor](https://github.com/LucaVor) | **505** | 107 | 6 | 0 |
+| #7 | [@charleywolf](https://github.com/charleywolf) | **375** | 30 | 3 | 0 |
+| #8 | [@alex-d4v](https://github.com/alex-d4v) | **335** | 37 | 6 | 0 |
+| #9 | [@varvarakarenski](https://github.com/varvarakarenski) | **300** | 2 | 0 | 0 |
+| #10 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **300** | 2 | 0 | 0 |
+
+_Last updated: Tue, 21 Jul 2026 01:45:11 GMT_
 <!-- LEADERBOARD:END -->
 
 ## How scoring works
