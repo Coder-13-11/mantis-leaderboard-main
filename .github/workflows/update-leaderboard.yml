@@ -37,7 +37,7 @@ jobs:
         env:
           # ORG_READ_TOKEN: a fine-grained PAT with READ-ONLY access, scoped
           # to exactly the repos listed in config/rules.yml. Stored as a
-          # repo secret. See SETUP.md.
+          # repo secret. See README.md.
           GH_TOKEN: ${{ secrets.ORG_READ_TOKEN }}
         run: npm run build
 

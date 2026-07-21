@@ -25,6 +25,17 @@ function pathIsExcluded(path, excludeRes) {
   return excludeRes.some((re) => re.test(path));
 }
 
+// Highest severity tier (from `tierLabels`) whose labels appear on the item,
+// mapped through `multipliers`. 1 if no tier's labels match.
+function severityMultiplier(labels, tierLabels, multipliers) {
+  for (const [tier, tierLabelList] of Object.entries(tierLabels || {})) {
+    if (tierLabelList.some((l) => labels.includes(l.toLowerCase()))) {
+      return multipliers[tier] ?? 1;
+    }
+  }
+  return 1;
+}
+
 function sizeBucket(lines, buckets) {
   if (lines <= buckets.XS) return "XS";
   if (lines <= buckets.S) return "S";
@@ -119,6 +130,9 @@ export function score(activity, rules) {
     );
     if (isDoc) points *= pr.multipliers.documentation;
 
+    const isHighImpact = (pr.impact_labels || []).some((l) => labels.includes(l.toLowerCase()));
+    if (isHighImpact) points *= pr.multipliers.high_impact;
+
     const isFirst = !seenAuthors.has(login);
     if (isFirst) points *= pr.multipliers.first_pr;
     seenAuthors.add(login);
@@ -169,13 +183,19 @@ export function score(activity, rules) {
     );
     if (!isConfirmed) continue; // opening an issue alone scores nothing
 
+    const severity = severityMultiplier(labels, is.severity_labels, is.severity_multipliers);
+    const basePoints = Math.round(is.confirmed_points * severity);
+
     const u = userOf(users, login);
-    addPoints(u, "issue", is.confirmed_points, i.createdAt);
+    addPoints(u, "issue", basePoints, i.createdAt);
     u.counts.confirmed_issues += 1;
 
-    // Confirmed AND closed => presumed fixed => bonus to reporter.
+    // Confirmed AND closed => presumed fixed => bonus to reporter, scaled by
+    // the same severity (finding AND getting a critical bug fixed matters
+    // more than a minor one).
     if (i.closed) {
-      addPoints(u, "issue", is.fixed_bonus_points, i.closedAt);
+      const bonus = Math.round(basePoints * (is.fixed_bonus_multiplier ?? 1));
+      addPoints(u, "issue", bonus, i.closedAt);
       u.counts.fixed_bonuses += 1;
     }
   }

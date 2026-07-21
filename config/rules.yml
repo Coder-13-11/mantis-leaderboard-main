@@ -14,7 +14,7 @@ lookback_days: 365
 
 # Exactly which repos this leaderboard tracks (owner/name). Add a line when
 # a new Mantis repo exists; nothing else needs to change. This is also what
-# the read-only token should be scoped to in GitHub settings — see SETUP.md.
+# the read-only token should be scoped to in GitHub settings — see README.md.
 repos:
   - KellisLab/Mantis
   - KellisLab/MantisAPI
@@ -38,12 +38,16 @@ repos:
 pull_requests:
   # Points by PR size. Size is derived from (additions + deletions) AFTER
   # excluding generated/vendored files (see `exclude_paths`).
+  #
+  # Deliberately flat: XS to XL is only a 6.4x spread (it used to be 24x).
+  # Line count alone should never be able to carry the leaderboard -- someone
+  # merging one 1000-line PR shouldn't beat a week of careful smaller work.
   size_points:
     XS: 5
-    S: 15
-    M: 40
-    L: 80
-    XL: 120
+    S: 10
+    M: 16
+    L: 24
+    XL: 32
 
   # Upper bound of net changed lines for each bucket. XL = anything larger.
   size_buckets:
@@ -57,8 +61,15 @@ pull_requests:
   multipliers:
     documentation: 1.25   # PR has a label in `documentation_labels` below
     first_pr: 1.5         # contributor's first merged PR in the lookback window
+    high_impact: 1.5      # PR has a label in `impact_labels` below
 
   documentation_labels: ["documentation", "docs"]
+
+  # The counterweight to size-based scoring: a maintainer-applied label
+  # saying this PR mattered beyond its diff size (e.g. a hard bug fix that's
+  # only a 5-line change). Rename these to match whatever labels your repos
+  # actually use.
+  impact_labels: ["priority: critical", "priority: high", "impact: high"]
 
   # Files matching these globs don't count toward PR size (anti-gaming:
   # stops people inflating a PR to XL with lockfiles / generated code).
@@ -100,11 +111,22 @@ issues:
   # An issue only scores if a maintainer applies one of these trusted labels.
   # This is the "label gate": moderation collapses to clicking a label.
   confirmed_labels: ["confirmed", "bug-verified", "accepted"]
-  confirmed_points: 8
+  confirmed_points: 10
 
-  # Bonus to the issue's REPORTER when a confirmed issue is later closed
-  # (presumed fixed). Rewards useful bug reports.
-  fixed_bonus_points: 25
+  # Severity, from a maintainer-applied label, scales the base points above.
+  # No severity label = 1x (the base). Rename these to match your labels.
+  severity_multipliers:
+    critical: 3
+    high: 2
+  severity_labels:
+    critical: ["priority: critical", "severity: critical"]
+    high: ["priority: high", "severity: major"]
+
+  # When a confirmed issue is later closed (presumed fixed), the reporter
+  # earns the same points again. Finding a real bug AND getting it fixed is
+  # worth double just filing it -- this is how bug hunting competes with
+  # writing code instead of being an afterthought.
+  fixed_bonus_multiplier: 1
 
   # Issues closed as duplicate score nothing (native reason or these labels).
   duplicate_labels: ["duplicate", "wontfix", "invalid"]

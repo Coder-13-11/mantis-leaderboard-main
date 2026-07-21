@@ -1,21 +1,12 @@
-# 🏆 Mantis Leaderboard
+# Mantis Leaderboard
 
-An automated, **read-only** contributor leaderboard for the Mantis repos
-(listed in [`config/rules.yml`](config/rules.yml)). It observes merged PRs,
-substantive reviews, and confirmed issues and turns them into points — with
-no effect on any other repo.
+A leaderboard that tracks who's actively contributing to the Mantis repos —
+merged PRs, real code reviews, confirmed bugs. It only reads GitHub, never
+writes anything back except to this repo, and it can't touch the actual
+Mantis codebases.
 
-- **Isolated:** lives entirely in this repo; uses a read-only token scoped
-  to just the Mantis repos.
-- **Config-driven:** all points and the tracked repo list live in
-  [`config/rules.yml`](config/rules.yml).
-- **Zero-ops:** a scheduled GitHub Action recomputes and publishes it.
-- **Anti-gaming built in:** PR size excludes generated files, reviews must be
-  substantive, and issues only score when a maintainer labels them.
-- **Active, not lifetime:** ranked by points earned in the trailing 4 weeks,
-  so it reflects who's contributing *now*.
-
-See [SETUP.md](SETUP.md) to get it running.
+It's ranked by points earned in the trailing 4 weeks, not lifetime totals,
+so it's about who's active *now*, not who has the biggest all-time score.
 
 ## Live leaderboard
 
@@ -33,19 +24,62 @@ See [SETUP.md](SETUP.md) to get it running.
 | #9 | [@varvarakarenski](https://github.com/varvarakarenski) | **300** | 2 | 0 | 0 |
 | #10 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **300** | 2 | 0 | 0 |
 
-_Last updated: Tue, 21 Jul 2026 01:45:11 GMT_
+_Last updated: Tue, 21 Jul 2026 01:45:11 GMT — numbers above are from the old scoring rules and will refresh under the new ones on the next run._
 <!-- LEADERBOARD:END -->
+
+## Setup
+
+**1. Create a read-only token.**
+GitHub → Settings → Developer settings → Fine-grained tokens → New token.
+
+- Resource owner: the org
+- Repository access: pick exactly the repos listed under `repos:` in
+  [`config/rules.yml`](config/rules.yml) — not "All repositories". If a repo
+  isn't in that list, the token shouldn't be able to see it.
+- Permissions, set only these to Read, everything else No access:
+  Contents, Pull requests, Issues, Metadata (auto-required).
+
+Zero write permissions means this thing is physically incapable of changing
+anything else, even if there's a bug in it somewhere.
+
+**2. Add it as a secret.**
+Repo → Settings → Secrets and variables → Actions → New repository secret →
+name it `ORG_READ_TOKEN`, paste the token.
+
+**3. Run it.**
+Actions tab → "Update Leaderboard" → Run workflow. After that it runs on its
+own every hour (cron's in `.github/workflows/update-leaderboard.yml`).
+
+**Where results show up:** there's no GitHub Pages site here — Pages needs a
+paid plan for private repos. Instead every run commits the refreshed numbers
+straight into the repo:
+
+- this README's table above, updates itself
+- `site/index.html` — pull the repo and open it in a browser
+- `data/leaderboard.json` — raw scored data if you want to build on top of it
+
+**Running it locally:**
+
+```bash
+npm install
+GH_TOKEN=your_token npm run build
+open site/index.html
+```
 
 ## How scoring works
 
 | Contribution | Points | Notes |
 | ------------ | ------ | ----- |
-| Merged PR | 5 / 15 / 40 / 80 / 120 | XS / S / M / L / XL by meaningful lines changed |
+| Merged PR | 5 / 10 / 16 / 24 / 32 | XS / S / M / L / XL by meaningful lines changed — deliberately flat, size alone can't dominate |
 | Doc PR | ×1.25 | PR labeled `documentation` |
+| High-impact PR | ×1.5 | PR labeled `priority: critical`/`priority: high`/`impact: high` — the counterweight to line-count scoring |
 | First PR | ×1.5 | contributor's first merged PR |
 | Approved review | 20 | must have a real body (anti-spam) |
 | Changes requested | 15 | must have a real body |
-| Confirmed issue | 8 | only when a maintainer labels it `confirmed` |
-| Confirmed issue fixed | +25 | bonus to reporter when it's closed |
+| Confirmed issue | 10 / 20 / 30 | base / high / critical severity, from a maintainer label |
+| Confirmed issue fixed | same again | reporter earns it a second time once the bug is actually closed |
 
-Edit the values in [`config/rules.yml`](config/rules.yml) to change any of this.
+All of this lives in [`config/rules.yml`](config/rules.yml) — point values,
+size buckets, label names, anti-gaming thresholds. Change a number, open a
+PR, done. No code changes needed, and it recomputes from scratch on the next
+run so nothing needs migrating.
