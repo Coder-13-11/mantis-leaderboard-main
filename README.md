@@ -16,7 +16,7 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1663** | 90 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1695** | 91 | 0 | 0 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1160** | 149 | 158 | 0 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **312** | 95 | 6 | 0 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **279** | 164 | 22 | 0 |
@@ -31,7 +31,7 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1687** | 90 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1719** | 91 | 0 | 0 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1408** | 149 | 158 | 0 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **818** | 95 | 6 | 0 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **398** | 164 | 22 | 0 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
 | #10 | [@absol761](https://github.com/absol761) | **93** | 5 | 0 | 0 |
 
-_Last updated: Tue, 21 Jul 2026 20:25:15 GMT_
+_Last updated: Tue, 21 Jul 2026 22:11:07 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
