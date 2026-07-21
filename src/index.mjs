@@ -8,7 +8,7 @@
 // Which repos to track lives in config/rules.yml (`repos:`), not here.
 // -----------------------------------------------------------------------------
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import yaml from "js-yaml";
@@ -53,6 +53,8 @@ async function main() {
     rules_version: rules.version,
   };
 
+  mkdirSync(join(ROOT, "data"), { recursive: true });
+  mkdirSync(join(ROOT, "site"), { recursive: true });
   writeFileSync(join(ROOT, "data/leaderboard.json"), renderJson(users, meta));
   writeFileSync(join(ROOT, "site/index.html"), renderHtml(users, meta));
   updateReadme(join(ROOT, "README.md"), renderReadmeTable(users, rules.display.top_n_in_readme));
