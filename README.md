@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1631** | 89 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1663** | 90 | 0 | 0 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1160** | 149 | 158 | 0 |
-| 🥉 | [@AnasMaar](https://github.com/AnasMaar) | **279** | 164 | 22 | 0 |
-| #4 | [@ppxscal](https://github.com/ppxscal) | **264** | 93 | 6 | 0 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **312** | 95 | 6 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **279** | 164 | 22 | 0 |
 | #5 | [@vinays6](https://github.com/vinays6) | **119** | 30 | 15 | 0 |
 | #6 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
 | #7 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
-| #8 | [@dhedhialy](https://github.com/dhedhialy) | **81** | 21 | 3 | 0 |
-| #9 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **80** | 2 | 0 | 0 |
-| #10 | [@6namdang](https://github.com/6namdang) | **74** | 7 | 1 | 0 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **90** | 32 | 3 | 0 |
+| #9 | [@dhedhialy](https://github.com/dhedhialy) | **81** | 21 | 3 | 0 |
+| #10 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **80** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1655** | 89 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1687** | 90 | 0 | 0 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1408** | 149 | 158 | 0 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **770** | 93 | 6 | 0 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **818** | 95 | 6 | 0 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **398** | 164 | 22 | 0 |
 | #5 | [@vinays6](https://github.com/vinays6) | **139** | 30 | 15 | 0 |
 | #6 | [@alex-d4v](https://github.com/alex-d4v) | **138** | 38 | 6 | 0 |
-| #7 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
-| #8 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
-| #9 | [@absol761](https://github.com/absol761) | **93** | 5 | 0 | 0 |
-| #10 | [@dhedhialy](https://github.com/dhedhialy) | **81** | 21 | 3 | 0 |
+| #7 | [@charleywolf](https://github.com/charleywolf) | **122** | 32 | 3 | 0 |
+| #8 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
+| #9 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
+| #10 | [@absol761](https://github.com/absol761) | **93** | 5 | 0 | 0 |
 
-_Last updated: Tue, 21 Jul 2026 18:22:37 GMT_
+_Last updated: Tue, 21 Jul 2026 20:25:15 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
