@@ -5,8 +5,9 @@ merged PRs, real code reviews, confirmed bugs. It only reads GitHub, never
 writes anything back except to this repo, and it can't touch the actual
 Mantis codebases.
 
-It's ranked by points earned in the trailing 4 weeks, not lifetime totals,
-so it's about who's active *now*, not who has the biggest all-time score.
+It's ranked by points earned in the past 7 days (with a 14-day view
+alongside it), not lifetime totals, so it's about who's active *now*, not
+who has the biggest all-time score.
 
 ## Live leaderboard
 
