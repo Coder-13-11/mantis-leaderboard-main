@@ -49,7 +49,7 @@ async function main() {
   const meta = {
     repos: rules.repos,
     lookback_days: rules.lookback_days,
-    rolling_weeks: rules.display?.rolling_weeks || 4,
+    windows_days: rules.display?.windows_days || [7, 14],
     rules_version: rules.version,
   };
 
@@ -57,7 +57,10 @@ async function main() {
   mkdirSync(join(ROOT, "site"), { recursive: true });
   writeFileSync(join(ROOT, "data/leaderboard.json"), renderJson(users, meta));
   writeFileSync(join(ROOT, "site/index.html"), renderHtml(users, meta));
-  updateReadme(join(ROOT, "README.md"), renderReadmeTable(users, rules.display.top_n_in_readme));
+  updateReadme(
+    join(ROOT, "README.md"),
+    renderReadmeTable(users, rules.display.top_n_in_readme, meta.windows_days)
+  );
 
   console.log("Wrote data/leaderboard.json, site/index.html, README.md");
 }

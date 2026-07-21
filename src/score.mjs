@@ -44,26 +44,22 @@ function sizeBucket(lines, buckets) {
   return "XL";
 }
 
-// ISO week label ("2026-W29") for a timestamp, so points can be bucketed by
-// the week they were earned in.
-function isoWeek(dateStr) {
-  const d = new Date(dateStr);
-  d.setUTCHours(0, 0, 0, 0);
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-  const week = Math.ceil(((d - yearStart) / 86400_000 + 1) / 7);
-  return `${d.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+// Calendar day ("2026-07-21") for a timestamp, so points can be bucketed by
+// the day they were earned in -- fine enough grain to build any trailing
+// window (7-day, 14-day, ...) without re-touching the raw activity.
+function dayKey(dateStr) {
+  return new Date(dateStr).toISOString().slice(0, 10);
 }
 
-// The `n` most recent ISO week labels, current week included.
-function recentWeeks(n) {
-  const weeks = [];
+// The `n` most recent day keys, today included.
+function recentDays(n) {
+  const days = [];
   const d = new Date();
   for (let i = 0; i < n; i++) {
-    weeks.push(isoWeek(d.toISOString()));
-    d.setUTCDate(d.getUTCDate() - 7);
+    days.push(dayKey(d.toISOString()));
+    d.setUTCDate(d.getUTCDate() - 1);
   }
-  return weeks;
+  return days;
 }
 
 // Create/return a user record in the accumulator.
@@ -73,7 +69,7 @@ function userOf(users, login) {
     users[login] = {
       login,
       total: 0,
-      weeks: {},
+      days: {},
       breakdown: { pr: 0, review: 0, issue: 0 },
       counts: { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0 },
       sizes: { XS: 0, S: 0, M: 0, L: 0, XL: 0 },
@@ -82,13 +78,13 @@ function userOf(users, login) {
   return users[login];
 }
 
-// Credit points to a user's lifetime total, category breakdown, and the ISO
-// week the points were earned in.
+// Credit points to a user's lifetime total, category breakdown, and the day
+// the points were earned on.
 function addPoints(user, category, points, earnedAt) {
   user.total += points;
   user.breakdown[category] += points;
-  const week = isoWeek(earnedAt);
-  user.weeks[week] = (user.weeks[week] || 0) + points;
+  const day = dayKey(earnedAt);
+  user.days[day] = (user.days[day] || 0) + points;
 }
 
 export function score(activity, rules) {
@@ -200,11 +196,18 @@ export function score(activity, rules) {
     }
   }
 
-  // Rank by points earned in the trailing window, not lifetime total, so
-  // the leaderboard reflects who is active now.
-  const window = recentWeeks(rules.display?.rolling_weeks || 4);
+  // Rank by the primary trailing window (first entry in windows_days), not
+  // lifetime total, so the leaderboard reflects who is active now. Every
+  // configured window (e.g. 7-day, 14-day) gets computed so the leaderboard
+  // can show more than one at once.
+  const windowsDays = rules.display?.windows_days || [7, 14];
   for (const u of Object.values(users)) {
-    u.rolling_total = window.reduce((sum, week) => sum + (u.weeks[week] || 0), 0);
+    u.windows = {};
+    for (const n of windowsDays) {
+      const days = recentDays(n);
+      u.windows[n] = days.reduce((sum, day) => sum + (u.days[day] || 0), 0);
+    }
+    u.rolling_total = u.windows[windowsDays[0]];
   }
 
   const ranked = Object.values(users).sort((a, b) => b.rolling_total - a.rolling_total);

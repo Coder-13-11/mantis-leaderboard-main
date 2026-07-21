@@ -137,7 +137,8 @@ issues:
 display:
   top_n_in_readme: 10
   exclude_logins: ["dependabot[bot]", "github-actions[bot]", "renovate[bot]"]
-  # Leaderboard ranks by points earned in this many trailing ISO weeks
-  # (current week included), not lifetime total. Keeps it about who is
-  # active NOW, not who has the biggest all-time score.
-  rolling_weeks: 4
+  # Trailing windows, in days, shown on the leaderboard -- not lifetime
+  # total, so it's about who's active NOW. The first entry is the primary
+  # one used for ranking (the "weekly spotlight"); the rest are shown
+  # alongside it. Add a number here to show another window, no code changes.
+  windows_days: [7, 14]
