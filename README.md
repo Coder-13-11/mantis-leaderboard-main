@@ -17,22 +17,22 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1447** | 82 | 0 | 0 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1105** | 148 | 155 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1125** | 148 | 156 | 0 |
 | 🥉 | [@AnasMaar](https://github.com/AnasMaar) | **279** | 164 | 22 | 0 |
 | #4 | [@ppxscal](https://github.com/ppxscal) | **248** | 92 | 6 | 0 |
 | #5 | [@vinays6](https://github.com/vinays6) | **109** | 29 | 15 | 0 |
 | #6 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
 | #7 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
-| #8 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **80** | 2 | 0 | 0 |
-| #9 | [@6namdang](https://github.com/6namdang) | **74** | 7 | 1 | 0 |
-| #10 | [@dhedhialy](https://github.com/dhedhialy) | **71** | 20 | 3 | 0 |
+| #8 | [@dhedhialy](https://github.com/dhedhialy) | **81** | 21 | 3 | 0 |
+| #9 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **80** | 2 | 0 | 0 |
+| #10 | [@6namdang](https://github.com/6namdang) | **74** | 7 | 1 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1471** | 82 | 0 | 0 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1353** | 148 | 155 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1373** | 148 | 156 | 0 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **754** | 92 | 6 | 0 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **398** | 164 | 22 | 0 |
 | #5 | [@alex-d4v](https://github.com/alex-d4v) | **138** | 38 | 6 | 0 |
@@ -40,9 +40,9 @@ who has the biggest all-time score.
 | #7 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
 | #8 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
 | #9 | [@absol761](https://github.com/absol761) | **93** | 5 | 0 | 0 |
-| #10 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **80** | 2 | 0 | 0 |
+| #10 | [@dhedhialy](https://github.com/dhedhialy) | **81** | 21 | 3 | 0 |
 
-_Last updated: Tue, 21 Jul 2026 09:35:37 GMT_
+_Last updated: Tue, 21 Jul 2026 11:54:27 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
