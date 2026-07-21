@@ -13,18 +13,18 @@ so it's about who's active *now*, not who has the biggest all-time score.
 <!-- LEADERBOARD:START -->
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **5120** | 82 | 0 | 0 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **2625** | 140 | 153 | 0 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **2250** | 90 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **1170** | 164 | 22 | 0 |
-| #5 | [@vinays6](https://github.com/vinays6) | **585** | 29 | 15 | 0 |
-| #6 | [@LucaVor](https://github.com/LucaVor) | **505** | 107 | 6 | 0 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **375** | 30 | 3 | 0 |
-| #8 | [@alex-d4v](https://github.com/alex-d4v) | **335** | 37 | 6 | 0 |
-| #9 | [@varvarakarenski](https://github.com/varvarakarenski) | **300** | 2 | 0 | 0 |
-| #10 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **300** | 2 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1596** | 82 | 0 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1448** | 141 | 154 | 0 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **738** | 91 | 6 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **435** | 164 | 22 | 0 |
+| #5 | [@vinays6](https://github.com/vinays6) | **273** | 29 | 15 | 0 |
+| #6 | [@LucaVor](https://github.com/LucaVor) | **203** | 107 | 6 | 0 |
+| #7 | [@pranilraichura](https://github.com/pranilraichura) | **126** | 27 | 1 | 0 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **114** | 30 | 3 | 0 |
+| #9 | [@rohan-va](https://github.com/rohan-va) | **113** | 51 | 21 | 0 |
+| #10 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **106** | 77 | 63 | 0 |
 
-_Last updated: Tue, 21 Jul 2026 01:45:11 GMT — numbers above are from the old scoring rules and will refresh under the new ones on the next run._
+_Last updated: Tue, 21 Jul 2026 02:56:46 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
