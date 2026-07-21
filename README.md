@@ -12,20 +12,37 @@ who has the biggest all-time score.
 ## Live leaderboard
 
 <!-- LEADERBOARD:START -->
+#### Past 7 Days
+
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1596** | 82 | 0 | 0 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1448** | 141 | 154 | 0 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **738** | 91 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **435** | 164 | 22 | 0 |
-| #5 | [@vinays6](https://github.com/vinays6) | **273** | 29 | 15 | 0 |
-| #6 | [@LucaVor](https://github.com/LucaVor) | **203** | 107 | 6 | 0 |
-| #7 | [@pranilraichura](https://github.com/pranilraichura) | **126** | 27 | 1 | 0 |
-| #8 | [@charleywolf](https://github.com/charleywolf) | **114** | 30 | 3 | 0 |
-| #9 | [@rohan-va](https://github.com/rohan-va) | **113** | 51 | 21 | 0 |
-| #10 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **106** | 77 | 63 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1447** | 82 | 0 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1002** | 141 | 154 | 0 |
+| 🥉 | [@AnasMaar](https://github.com/AnasMaar) | **279** | 164 | 22 | 0 |
+| #4 | [@ppxscal](https://github.com/ppxscal) | **232** | 91 | 6 | 0 |
+| #5 | [@vinays6](https://github.com/vinays6) | **109** | 29 | 15 | 0 |
+| #6 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
+| #7 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
+| #8 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **80** | 2 | 0 | 0 |
+| #9 | [@6namdang](https://github.com/6namdang) | **74** | 7 | 1 | 0 |
+| #10 | [@dhedhialy](https://github.com/dhedhialy) | **71** | 20 | 3 | 0 |
 
-_Last updated: Tue, 21 Jul 2026 02:56:46 GMT_
+#### Past 14 Days
+
+| Rank | Contributor | Points | PRs | Reviews | Issues |
+| :--: | :---------- | -----: | --: | ------: | -----: |
+| 🥇 | [@chreia](https://github.com/chreia) | **1471** | 82 | 0 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1250** | 141 | 154 | 0 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **738** | 91 | 6 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **398** | 164 | 22 | 0 |
+| #5 | [@vinays6](https://github.com/vinays6) | **129** | 29 | 15 | 0 |
+| #6 | [@alex-d4v](https://github.com/alex-d4v) | **106** | 37 | 6 | 0 |
+| #7 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
+| #8 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
+| #9 | [@absol761](https://github.com/absol761) | **93** | 5 | 0 | 0 |
+| #10 | [@ThomasdeChillaz](https://github.com/ThomasdeChillaz) | **80** | 2 | 0 | 0 |
+
+_Last updated: Tue, 21 Jul 2026 03:04:31 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
