@@ -35,10 +35,13 @@ async function graphql(token, query, variables, attempt = 1) {
 }
 
 // Paginate any `search` query. `searchQuery` is a GitHub search string.
-async function searchAll(token, searchQuery, nodeFields) {
+// `pageSize` is deliberately small for the PR query below: each PR node also
+// pulls its files + reviews, so a big page size multiplies into a query
+// heavy enough to trip GitHub's gateway timeout (seen in practice).
+async function searchAll(token, searchQuery, nodeFields, pageSize = 50) {
   const query = `
     query($q: String!, $cursor: String) {
-      search(query: $q, type: ISSUE, first: 50, after: $cursor) {
+      search(query: $q, type: ISSUE, first: ${pageSize}, after: $cursor) {
         pageInfo { hasNextPage endCursor }
         nodes { ${nodeFields} }
       }
@@ -65,8 +68,8 @@ const PR_FIELDS = `
     author { login }
     repository { nameWithOwner }
     labels(first: 20) { nodes { name } }
-    files(first: 100) { nodes { path } }
-    reviews(first: 50) {
+    files(first: 50) { nodes { path } }
+    reviews(first: 20) {
       nodes {
         state
         body
@@ -102,7 +105,7 @@ export async function fetchActivity(token, repos, lookbackDays) {
   const issues = [];
   for (const repo of repos) {
     pullRequests.push(
-      ...(await searchAll(token, `repo:${repo} is:pr is:merged merged:>=${since}`, PR_FIELDS))
+      ...(await searchAll(token, `repo:${repo} is:pr is:merged merged:>=${since}`, PR_FIELDS, 15))
     );
     issues.push(
       ...(await searchAll(token, `repo:${repo} is:issue created:>=${since}`, ISSUE_FIELDS))
