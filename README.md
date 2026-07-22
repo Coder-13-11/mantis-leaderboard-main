@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
 | #10 | [@absol761](https://github.com/absol761) | **93** | 5 | 0 | 0 |
 
-_Last updated: Wed, 22 Jul 2026 11:54:48 GMT_
+_Last updated: Wed, 22 Jul 2026 14:11:15 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
