@@ -16,10 +16,10 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **2057** | 106 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **2067** | 107 | 0 | 0 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1110** | 151 | 161 | 0 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **360** | 97 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **267** | 164 | 23 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **323** | 166 | 23 | 0 |
 | #5 | [@6namdang](https://github.com/6namdang) | **122** | 9 | 1 | 0 |
 | #6 | [@vinays6](https://github.com/vinays6) | **119** | 30 | 15 | 0 |
 | #7 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
@@ -31,10 +31,10 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **2129** | 106 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **2139** | 107 | 0 | 0 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1468** | 151 | 161 | 0 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **866** | 97 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **418** | 164 | 23 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **474** | 166 | 23 | 0 |
 | #5 | [@alex-d4v](https://github.com/alex-d4v) | **153** | 38 | 7 | 0 |
 | #6 | [@vinays6](https://github.com/vinays6) | **139** | 30 | 15 | 0 |
 | #7 | [@6namdang](https://github.com/6namdang) | **122** | 9 | 1 | 0 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
 
-_Last updated: Wed, 22 Jul 2026 20:17:51 GMT_
+_Last updated: Wed, 22 Jul 2026 22:12:03 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
