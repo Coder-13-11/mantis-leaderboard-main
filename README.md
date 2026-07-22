@@ -17,9 +17,9 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1977** | 103 | 0 | 0 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1065** | 151 | 158 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1080** | 151 | 159 | 0 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **360** | 97 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **247** | 164 | 22 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **267** | 164 | 23 | 0 |
 | #5 | [@vinays6](https://github.com/vinays6) | **119** | 30 | 15 | 0 |
 | #6 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
 | #7 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
@@ -32,9 +32,9 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **2049** | 103 | 0 | 0 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1423** | 151 | 158 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1438** | 151 | 159 | 0 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **866** | 97 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **398** | 164 | 22 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **418** | 164 | 23 | 0 |
 | #5 | [@vinays6](https://github.com/vinays6) | **139** | 30 | 15 | 0 |
 | #6 | [@alex-d4v](https://github.com/alex-d4v) | **138** | 38 | 6 | 0 |
 | #7 | [@charleywolf](https://github.com/charleywolf) | **122** | 32 | 3 | 0 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
 | #10 | [@absol761](https://github.com/absol761) | **93** | 5 | 0 | 0 |
 
-_Last updated: Wed, 22 Jul 2026 16:27:39 GMT_
+_Last updated: Wed, 22 Jul 2026 18:15:30 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
