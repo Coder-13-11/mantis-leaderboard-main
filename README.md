@@ -23,8 +23,8 @@ who has the biggest all-time score.
 | #5 | [@alex-d4v](https://github.com/alex-d4v) | **242** | 40 | 7 | 193 |
 | #6 | [@rohan-va](https://github.com/rohan-va) | **127** | 53 | 22 | 89 |
 | #7 | [@6namdang](https://github.com/6namdang) | **125** | 9 | 1 | 7 |
-| #8 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **94** | 7 | 0 | 0 |
-| #9 | [@charleywolf](https://github.com/charleywolf) | **90** | 32 | 3 | 52 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **114** | 33 | 3 | 52 |
+| #9 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **94** | 7 | 0 | 0 |
 | #10 | [@dhedhialy](https://github.com/dhedhialy) | **89** | 21 | 3 | 7 |
 
 #### Past 14 Days
@@ -36,13 +36,13 @@ who has the biggest all-time score.
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **699** | 99 | 6 | 12 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **516** | 40 | 7 | 193 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **480** | 168 | 21 | 17 |
-| #6 | [@charleywolf](https://github.com/charleywolf) | **168** | 32 | 3 | 52 |
+| #6 | [@charleywolf](https://github.com/charleywolf) | **192** | 33 | 3 | 52 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **156** | 53 | 22 | 89 |
 | #8 | [@6namdang](https://github.com/6namdang) | **139** | 9 | 1 | 7 |
 | #9 | [@vinays6](https://github.com/vinays6) | **139** | 30 | 15 | 2 |
 | #10 | [@LucaVor](https://github.com/LucaVor) | **101** | 109 | 6 | 4 |
 
-_Last updated: Thu, 23 Jul 2026 21:13:30 GMT_
+_Last updated: Thu, 23 Jul 2026 23:05:18 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
