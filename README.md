@@ -20,7 +20,7 @@ who has the biggest all-time score.
 | 🥈 | [@chreia](https://github.com/chreia) | **1045** | 109 | 0 | 38 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **298** | 96 | 6 | 11 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **290** | 168 | 21 | 17 |
-| #5 | [@alex-d4v](https://github.com/alex-d4v) | **146** | 38 | 7 | 183 |
+| #5 | [@alex-d4v](https://github.com/alex-d4v) | **158** | 38 | 7 | 185 |
 | #6 | [@rohan-va](https://github.com/rohan-va) | **127** | 53 | 22 | 89 |
 | #7 | [@6namdang](https://github.com/6namdang) | **125** | 9 | 1 | 7 |
 | #8 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **94** | 7 | 0 | 0 |
@@ -35,14 +35,14 @@ who has the biggest all-time score.
 | 🥈 | [@chreia](https://github.com/chreia) | **1332** | 109 | 0 | 38 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **649** | 96 | 6 | 11 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **480** | 168 | 21 | 17 |
-| #5 | [@alex-d4v](https://github.com/alex-d4v) | **420** | 38 | 7 | 183 |
+| #5 | [@alex-d4v](https://github.com/alex-d4v) | **432** | 38 | 7 | 185 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **168** | 32 | 3 | 52 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **156** | 53 | 22 | 89 |
 | #8 | [@6namdang](https://github.com/6namdang) | **139** | 9 | 1 | 7 |
 | #9 | [@vinays6](https://github.com/vinays6) | **139** | 30 | 15 | 2 |
 | #10 | [@LucaVor](https://github.com/LucaVor) | **101** | 109 | 6 | 4 |
 
-_Last updated: Thu, 23 Jul 2026 07:39:56 GMT_
+_Last updated: Thu, 23 Jul 2026 10:31:50 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
