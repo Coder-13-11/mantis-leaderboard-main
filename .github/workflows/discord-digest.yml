@@ -1,0 +1,31 @@
+name: Daily Discord Digest
+
+# Posts the top-10 leaderboard to a Discord channel once a day, via an
+# Incoming Webhook (no bot process, nothing to host). Reads the already
+# up-to-date data/leaderboard.json committed by the hourly "Update
+# Leaderboard" workflow -- no GitHub token needed here at all.
+on:
+  schedule:
+    - cron: "0 14 * * *"   # 14:00 UTC daily -- 10am ET / 7am PT. Adjust as you like.
+  workflow_dispatch: {}     # manual "Run workflow" button, for testing
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Post digest to Discord
+        env:
+          # Incoming Webhook URL for the target channel. Repo secret.
+          # Discord: channel Settings -> Integrations -> Webhooks -> New Webhook.
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SITE_URL: https://mantis-leaderboard.vercel.app
+        run: node src/notify-discord.mjs

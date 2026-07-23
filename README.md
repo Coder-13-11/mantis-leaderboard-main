@@ -84,6 +84,28 @@ GH_TOKEN=your_token npm run build
 open site/index.html
 ```
 
+## Daily Discord digest
+
+A separate workflow posts the top 10 to a Discord channel once a day —
+just a webhook POST, no bot process to run or host.
+
+**1. Create an Incoming Webhook in Discord.**
+Channel → Edit Channel → Integrations → Webhooks → New Webhook → name it
+(e.g. "Mantis Leaderboard") → **Copy Webhook URL**.
+
+**2. Add it as a secret.**
+Repo → Settings → Secrets and variables → Actions → New repository secret →
+name it `DISCORD_WEBHOOK_URL`, paste the URL.
+
+**3. Test it.**
+Actions tab → "Daily Discord Digest" → Run workflow. It posts immediately;
+after that it runs on its own every day at 14:00 UTC (cron in
+`.github/workflows/discord-digest.yml` — edit the cron line for a different time).
+
+It reads the `data/leaderboard.json` the hourly refresh already keeps
+current, so this job never needs `ORG_READ_TOKEN` — it can only read this
+repo's own committed file and POST to the one webhook URL you gave it.
+
 ## How scoring works
 
 | Contribution | Points | Notes |
