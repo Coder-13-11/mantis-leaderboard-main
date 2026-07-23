@@ -3,2032 +3,581 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mantis Contributor Leaderboard</title>
+<title>Mantis · Contributor Leaderboard</title>
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #f3f4f8;
-    --card: #ffffff;
-    --border: #e4e6ef;
-    --text: #16181d;
-    --muted: #6b7280;
-    --accent: #6366f1;
-    --accent-soft: #eef0ff;
-    --gold: #f5c518;
-    --silver: #c0c5ce;
-    --bronze: #cd8b52;
+    --bg: #f5f7f5;
+    --panel: #ffffff;
+    --border: #e5e9e5;
+    --text: #14181a;
+    --muted: #62706a;
+    --faint: #97a39d;
+    --accent: #1f9d57;
+    --accent-ink: #ffffff;
+    --accent-soft: #e7f5ec;
+    --gold: #e0a92a;
+    --silver: #9aa4ad;
+    --bronze: #c07d43;
+    --c-pr: #1f9d57;
+    --c-review: #3b82f6;
+    --c-issue: #e0a43b;
+    --c-other: #8b6fe0;
+    --shadow: 0 1px 2px rgba(20,40,30,.05), 0 18px 40px rgba(20,40,30,.07);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #0e1016;
-      --card: #171922;
-      --border: #262a36;
-      --text: #f1f2f6;
-      --muted: #9aa0ac;
-      --accent-soft: #22243a;
+      --bg: #0b0e0c;
+      --panel: #12160f;
+      --panel: #121712;
+      --border: #232a24;
+      --text: #eaf0ec;
+      --muted: #93a29a;
+      --faint: #6b7a72;
+      --accent: #34c47c;
+      --accent-ink: #06110b;
+      --accent-soft: #14251b;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 24px 50px rgba(0,0,0,.45);
     }
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
-    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:
+      radial-gradient(1200px 600px at 50% -300px, var(--accent-soft), transparent 70%),
+      var(--bg);
     color: var(--text);
     margin: 0;
-    padding: 2.5rem 1rem;
+    padding: 2.75rem 1rem 4rem;
+    line-height: 1.45;
   }
-  .card {
-    max-width: 720px;
-    margin: 0 auto;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 1.75rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 12px 28px rgba(0,0,0,.06);
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: .6rem; margin-bottom: .35rem; }
+  .brand .dot {
+    width: 30px; height: 30px; border-radius: 9px;
+    background: linear-gradient(135deg, var(--accent), #0e7a41);
+    display: grid; place-items: center; color: #fff; font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(31,157,87,.35);
   }
-  h1 {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    margin: 0 0 .25rem;
-    font-size: 1.5rem;
+  .brand b { font-size: 1.05rem; letter-spacing: -.01em; }
+  h1 { margin: 0; font-size: 1.9rem; letter-spacing: -.02em; font-weight: 750; }
+  .sub { color: var(--muted); margin: .3rem 0 1.6rem; font-size: .9rem; }
+  .sub .live { color: var(--accent); font-weight: 600; }
+
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; margin-bottom: 1.6rem; }
+  .tile {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+    padding: .85rem .9rem; box-shadow: var(--shadow);
   }
-  .sub { color: var(--muted); margin: 0 0 1.5rem; font-size: .9rem; }
-  .tabs { display: flex; gap: .4rem; margin-bottom: 1.25rem; }
+  .tile-num { font-size: 1.45rem; font-weight: 750; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .tile-lbl { color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; margin-top: .1rem; }
+
+  .tabs { display: inline-flex; gap: .25rem; padding: .25rem; margin-bottom: 1.4rem;
+    background: var(--panel); border: 1px solid var(--border); border-radius: 999px; box-shadow: var(--shadow); }
   input[type="radio"][name="window"] { position: absolute; opacity: 0; pointer-events: none; }
   .tabs label {
-    cursor: pointer;
-    padding: .4rem .9rem;
-    border-radius: 999px;
-    font-size: .85rem;
-    font-weight: 600;
-    color: var(--muted);
-    background: var(--accent-soft);
-    border: 1px solid transparent;
-    transition: color .15s ease, background .15s ease;
+    cursor: pointer; padding: .4rem 1rem; border-radius: 999px; font-size: .82rem;
+    font-weight: 600; color: var(--muted); transition: color .15s, background .15s;
   }
-  #tab-w7:checked ~ .tabs label[for="tab-w7"], #tab-w14:checked ~ .tabs label[for="tab-w14"] {
-    color: #fff;
-    background: var(--accent);
+  #tab-w7:checked ~ .tabs label[for="tab-w7"], #tab-w14:checked ~ .tabs label[for="tab-w14"] { color: var(--accent-ink); background: var(--accent); }
+
+  .boards .panel { display: none; }
+  #tab-w7:checked ~ .boards .panel[data-for="tab-w7"] { display: block; }
+    #tab-w14:checked ~ .boards .panel[data-for="tab-w14"] { display: block; }
+
+  /* Podium */
+  .podium { display: grid; grid-template-columns: 1fr 1.15fr 1fr; align-items: end; gap: .7rem; margin-bottom: 1.4rem; }
+  .pod {
+    position: relative; text-align: center; background: var(--panel);
+    border: 1px solid var(--border); border-radius: 16px; padding: 1.4rem .6rem .95rem;
+    box-shadow: var(--shadow);
   }
-  .boards .board { display: none; flex-direction: column; gap: .5rem; list-style: none; margin: 0; padding: 0; }
-  #tab-w7:checked ~ .boards .board[data-for="tab-w7"] { display: flex; }
-    #tab-w14:checked ~ .boards .board[data-for="tab-w14"] { display: flex; }
+  .pod-1 { padding-top: 1.9rem; border-color: color-mix(in srgb, var(--gold) 45%, var(--border)); }
+  .pod-1 .pod-avatar { width: 68px; height: 68px; }
+  .pod-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); font-size: 1.35rem; }
+  .pod-avatar { width: 54px; height: 54px; border-radius: 50%; border: 2px solid var(--panel);
+    outline: 2px solid var(--border); object-fit: cover; }
+  .pod-1 .pod-avatar { outline-color: var(--gold); }
+  .pod-2 .pod-avatar { outline-color: var(--silver); }
+  .pod-3 .pod-avatar { outline-color: var(--bronze); }
+  .pod-handle { display: block; margin: .55rem 0 .1rem; font-weight: 650; font-size: .9rem; color: var(--text); text-decoration: none; }
+  .pod-handle:hover { color: var(--accent); }
+  .pod-pts { font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .pod-pts span { font-size: .7rem; font-weight: 600; color: var(--faint); margin-left: .2rem; }
+  .pod-meta { color: var(--muted); font-size: .72rem; margin-top: .1rem; }
+
+  /* List */
+  .board { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
   .row {
-    display: grid;
-    grid-template-columns: 2rem 2.25rem 1fr auto;
-    align-items: center;
-    gap: .75rem;
-    padding: .6rem .6rem;
-    border-radius: 10px;
-    transition: background .15s ease;
+    display: grid; grid-template-columns: 1.6rem 2.1rem 1fr auto auto;
+    align-items: center; gap: .8rem; padding: .6rem .55rem; border-radius: 12px;
+    border-bottom: 1px solid var(--border);
   }
-  .row:hover { background: var(--accent-soft); }
-  .row.top-1 { background: linear-gradient(90deg, var(--accent-soft), transparent); }
-  .rank { text-align: center; font-size: 1.05rem; }
-  .avatar { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); }
-  .who { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
-  .handle { color: var(--text); font-weight: 600; text-decoration: none; }
-  .handle:hover { text-decoration: underline; }
-  .meta { color: var(--muted); font-size: .78rem; }
-  .bar { display: block; height: 4px; border-radius: 999px; background: var(--border); overflow: hidden; margin-top: .15rem; }
-  .bar .fill { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
-  .pts { font-weight: 800; font-size: 1.05rem; text-align: right; white-space: nowrap; }
-  .top-1 .pts { color: var(--gold); }
-  .top-2 .pts { color: var(--silver); }
-  .top-3 .pts { color: var(--bronze); }
-  footer { margin-top: 1.75rem; font-size: .78rem; color: var(--muted); text-align: center; }
+  .row:last-child { border-bottom: 0; }
+  .row:hover { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); }
+  .rank { text-align: center; color: var(--faint); font-weight: 700; font-variant-numeric: tabular-nums; font-size: .9rem; }
+  .avatar { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); object-fit: cover; }
+  .who { display: flex; flex-direction: column; gap: .22rem; min-width: 0; }
+  .handle { color: var(--text); font-weight: 650; text-decoration: none; font-size: .92rem; }
+  .handle:hover { color: var(--accent); }
+  .meta { color: var(--muted); font-size: .74rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .split { display: flex; height: 4px; border-radius: 999px; overflow: hidden; background: var(--border); margin-top: .12rem; max-width: 260px; }
+  .seg-pr { background: var(--c-pr); } .seg-review { background: var(--c-review); }
+  .seg-issue { background: var(--c-issue); } .seg-other { background: var(--c-other); }
+  .sparkwrap { width: 96px; }
+  .spark { width: 96px; height: 28px; display: block; }
+  .spark-line { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
+  .spark-area { fill: color-mix(in srgb, var(--accent) 14%, transparent); stroke: none; }
+  .pts { font-weight: 800; font-size: 1.02rem; text-align: right; font-variant-numeric: tabular-nums; min-width: 3ch; }
+  .more { text-align: center; color: var(--faint); font-size: .8rem; margin: 1rem 0 0; }
+
+  /* Legend */
+  .legend { display: flex; flex-wrap: wrap; gap: .9rem; margin: 1.3rem 0 0; color: var(--muted); font-size: .74rem; }
+  .legend span { display: inline-flex; align-items: center; gap: .35rem; }
+  .legend i { width: 9px; height: 9px; border-radius: 3px; display: inline-block; }
+
+  /* Highlights */
+  .highlights { margin-top: 2.4rem; }
+  .highlights h2 { font-size: 1.05rem; margin: 0 0 .9rem; letter-spacing: -.01em; }
+  .h2-sub { color: var(--faint); font-weight: 500; font-size: .8rem; margin-left: .4rem; }
+  .hl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
+  .hl { display: flex; align-items: flex-start; gap: .7rem; background: var(--panel);
+    border: 1px solid var(--border); border-radius: 14px; padding: .8rem .85rem; box-shadow: var(--shadow); }
+  .hl-avatar { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); }
+  .hl-body { flex: 1; min-width: 0; }
+  .hl-top { display: flex; align-items: center; gap: .5rem; }
+  .hl-badge { font-size: .68rem; color: var(--muted); background: var(--accent-soft); border-radius: 999px; padding: .1rem .5rem; white-space: nowrap; }
+  .hl-desc { color: var(--muted); font-size: .78rem; margin-top: .2rem; }
+  .hl-pts { font-weight: 800; color: var(--accent); font-size: .9rem; text-align: right; white-space: nowrap; }
+  .hl-src { display: block; font-size: .68rem; font-weight: 500; color: var(--faint); text-decoration: none; margin-top: .1rem; }
+  .hl-src:hover { color: var(--accent); }
+
+  footer { margin-top: 2.6rem; padding-top: 1.2rem; border-top: 1px solid var(--border);
+    font-size: .76rem; color: var(--faint); text-align: center; }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 560px) {
+    h1 { font-size: 1.5rem; }
+    .tiles { grid-template-columns: repeat(2, 1fr); }
+    .sparkwrap, .spark { display: none; }
+    .row { grid-template-columns: 1.4rem 1.9rem 1fr auto; gap: .6rem; }
+    .hl-grid { grid-template-columns: 1fr; }
+    .pod-meta { display: none; }
+  }
 </style>
 </head>
 <body>
-  <div class="card">
-    <h1>🏆 Mantis Contributor Leaderboard</h1>
-    <p class="sub">15 repos · 96 contributors · updated Thu, 23 Jul 2026 00:07:38 GMT</p>
+  <div class="wrap">
+    <div class="brand"><span class="dot">🦗</span><b>Mantis</b></div>
+    <h1>Contributor Leaderboard</h1>
+    <p class="sub">15 repositories · <span class="live">refreshes hourly</span> · updated Thu, 23 Jul 2026 03:00:43 UTC</p>
+
+    <div class="tiles"><div class="tile"><div class="tile-num">96</div><div class="tile-lbl">Contributors</div></div><div class="tile"><div class="tile-num">1,673</div><div class="tile-lbl">PRs merged</div></div><div class="tile"><div class="tile-num">465</div><div class="tile-lbl">Reviews</div></div><div class="tile"><div class="tile-num">0</div><div class="tile-lbl">Issues confirmed</div></div></div>
 
     <input type="radio" name="window" id="tab-w7" checked/><input type="radio" name="window" id="tab-w14" />
     <div class="tabs"><label for="tab-w7">Past 7 Days</label><label for="tab-w14">Past 14 Days</label></div>
-    <div class="boards"><ul class="board" data-for="tab-w7">
-        <li class="row top top-1">
-          <span class="rank">🥇</span>
-          <img class="avatar" src="https://github.com/chreia.png?size=64" alt="" loading="lazy"/>
+    <div class="boards"><section class="panel" data-for="tab-w7">
+        <div class="podium">
+    <div class="pod pod-2">
+      <div class="pod-badge">🥈</div>
+      <img class="pod-avatar" src="https://github.com/MantisCartography.png?size=120" alt="" loading="lazy"/>
+      <a class="pod-handle" href="https://github.com/MantisCartography">MantisCartography</a>
+      <div class="pod-pts">1005<span>pts</span></div>
+      <div class="pod-meta">151 PRs · 161 reviews</div>
+    </div>
+    <div class="pod pod-1">
+      <div class="pod-badge">🥇</div>
+      <img class="pod-avatar" src="https://github.com/chreia.png?size=120" alt="" loading="lazy"/>
+      <a class="pod-handle" href="https://github.com/chreia">chreia</a>
+      <div class="pod-pts">1766<span>pts</span></div>
+      <div class="pod-meta">109 PRs · 0 reviews</div>
+    </div>
+    <div class="pod pod-3">
+      <div class="pod-badge">🥉</div>
+      <img class="pod-avatar" src="https://github.com/ppxscal.png?size=120" alt="" loading="lazy"/>
+      <a class="pod-handle" href="https://github.com/ppxscal">ppxscal</a>
+      <div class="pod-pts">360<span>pts</span></div>
+      <div class="pod-meta">96 PRs · 6 reviews</div>
+    </div></div>
+        <ol class="board">
+        <li class="row">
+          <span class="rank">4</span>
+          <img class="avatar" src="https://github.com/AnasMaar.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/chreia">@chreia</a>
-            <span class="meta">109 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:100%"></span></span>
-          </span>
-          <span class="pts">1766</span>
-        </li>
-        <li class="row top top-2">
-          <span class="rank">🥈</span>
-          <img class="avatar" src="https://github.com/MantisCartography.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/MantisCartography">@MantisCartography</a>
-            <span class="meta">151 PRs · 161 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:57%"></span></span>
-          </span>
-          <span class="pts">1005</span>
-        </li>
-        <li class="row top top-3">
-          <span class="rank">🥉</span>
-          <img class="avatar" src="https://github.com/ppxscal.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ppxscal">@ppxscal</a>
-            <span class="meta">96 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:20%"></span></span>
-          </span>
-          <span class="pts">360</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#4</span>
-          <img class="avatar" src="https://github.com/AnasMaar.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/AnasMaar">@AnasMaar</a>
+            <a class="handle" href="https://github.com/AnasMaar">AnasMaar</a>
             <span class="meta">167 PRs · 21 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:17%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:3397"></span><span class="seg seg-review" style="flex:415"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,16.3 9.9,25.0 16.8,25.0 23.8,13.0 30.7,25.0 37.6,19.4 44.5,17.3 51.5,3.0 58.4,25.0 65.3,24.1 72.2,18.0 79.2,15.9 86.1,12.4 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,16.3 9.9,25.0 16.8,25.0 23.8,13.0 30.7,25.0 37.6,19.4 44.5,17.3 51.5,3.0 58.4,25.0 65.3,24.1 72.2,18.0 79.2,15.9 86.1,12.4 93.0,25.0"/>
+    </svg></span>
           <span class="pts">295</span>
         </li>
-        <li class="row ">
-          <span class="rank">#5</span>
-          <img class="avatar" src="https://github.com/6namdang.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">5</span>
+          <img class="avatar" src="https://github.com/6namdang.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/6namdang">@6namdang</a>
+            <a class="handle" href="https://github.com/6namdang">6namdang</a>
             <span class="meta">9 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:7%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:194"></span><span class="seg seg-review" style="flex:20"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,5.8 58.4,25.0 65.3,10.3 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,5.8 58.4,25.0 65.3,10.3 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">122</span>
         </li>
-        <li class="row ">
-          <span class="rank">#6</span>
-          <img class="avatar" src="https://github.com/PranavaKCode.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">6</span>
+          <img class="avatar" src="https://github.com/PranavaKCode.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/PranavaKCode">@PranavaKCode</a>
+            <a class="handle" href="https://github.com/PranavaKCode">PranavaKCode</a>
             <span class="meta">103 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:6%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:1632"></span><span class="seg seg-review" style="flex:20"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,3.0 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,3.0 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">105</span>
         </li>
-        <li class="row ">
-          <span class="rank">#7</span>
-          <img class="avatar" src="https://github.com/Cruz-Arnzen.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">7</span>
+          <img class="avatar" src="https://github.com/Cruz-Arnzen.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/Cruz-Arnzen">@Cruz-Arnzen</a>
+            <a class="handle" href="https://github.com/Cruz-Arnzen">Cruz-Arnzen</a>
             <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:6%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:102"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,3.0 79.2,10.8 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,3.0 79.2,10.8 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">102</span>
         </li>
-        <li class="row ">
-          <span class="rank">#8</span>
-          <img class="avatar" src="https://github.com/charleywolf.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">8</span>
+          <img class="avatar" src="https://github.com/charleywolf.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/charleywolf">@charleywolf</a>
+            <a class="handle" href="https://github.com/charleywolf">charleywolf</a>
             <span class="meta">32 PRs · 3 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:5%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:603"></span><span class="seg seg-review" style="flex:55"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,14.0 37.6,25.0 44.5,21.6 51.5,19.5 58.4,25.0 65.3,25.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,14.0 37.6,25.0 44.5,21.6 51.5,19.5 58.4,25.0 65.3,25.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">80</span>
         </li>
-        <li class="row ">
-          <span class="rank">#9</span>
-          <img class="avatar" src="https://github.com/rohan-va.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">9</span>
+          <img class="avatar" src="https://github.com/rohan-va.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/rohan-va">@rohan-va</a>
+            <a class="handle" href="https://github.com/rohan-va">rohan-va</a>
             <span class="meta">53 PRs · 22 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:756"></span><span class="seg seg-review" style="flex:410"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,14.7 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,14.7 65.3,10.6 72.2,25.0 79.2,21.6 86.1,3.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,14.7 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,14.7 65.3,10.6 72.2,25.0 79.2,21.6 86.1,3.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">73</span>
         </li>
-        <li class="row ">
-          <span class="rank">#10</span>
-          <img class="avatar" src="https://github.com/dhedhialy.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">10</span>
+          <img class="avatar" src="https://github.com/dhedhialy.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/dhedhialy">@dhedhialy</a>
+            <a class="handle" href="https://github.com/dhedhialy">dhedhialy</a>
             <span class="meta">21 PRs · 3 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:405"></span><span class="seg seg-review" style="flex:55"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,19.4 51.5,25.0 58.4,16.0 65.3,16.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,19.4 51.5,25.0 58.4,16.0 65.3,16.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">71</span>
         </li>
-        <li class="row ">
-          <span class="rank">#11</span>
-          <img class="avatar" src="https://github.com/LucaVor.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">11</span>
+          <img class="avatar" src="https://github.com/LucaVor.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/LucaVor">@LucaVor</a>
+            <a class="handle" href="https://github.com/LucaVor">LucaVor</a>
             <span class="meta">109 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:1743"></span><span class="seg seg-review" style="flex:120"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,14.8 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,14.8 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">69</span>
         </li>
-        <li class="row ">
-          <span class="rank">#12</span>
-          <img class="avatar" src="https://github.com/absol761.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">12</span>
+          <img class="avatar" src="https://github.com/absol761.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/absol761">@absol761</a>
+            <a class="handle" href="https://github.com/absol761">absol761</a>
             <span class="meta">5 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:93"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,14.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,17.7 58.4,25.0 65.3,25.0 72.2,3.0 79.2,25.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,14.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,17.7 58.4,25.0 65.3,25.0 72.2,3.0 79.2,25.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">64</span>
         </li>
-        <li class="row ">
-          <span class="rank">#13</span>
-          <img class="avatar" src="https://github.com/alex-d4v.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">13</span>
+          <img class="avatar" src="https://github.com/alex-d4v.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/alex-d4v">@alex-d4v</a>
+            <a class="handle" href="https://github.com/alex-d4v">alex-d4v</a>
             <span class="meta">38 PRs · 7 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:890"></span><span class="seg seg-review" style="flex:135"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,3.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,25.0 58.4,25.0 65.3,21.6 72.2,25.0 79.2,17.7 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,3.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,25.0 58.4,25.0 65.3,21.6 72.2,25.0 79.2,17.7 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">47</span>
         </li>
-        <li class="row ">
-          <span class="rank">#14</span>
-          <img class="avatar" src="https://github.com/YakshithK.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">14</span>
+          <img class="avatar" src="https://github.com/YakshithK.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/YakshithK">@YakshithK</a>
+            <a class="handle" href="https://github.com/YakshithK">YakshithK</a>
             <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:78"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,3.0 58.4,25.0 65.3,7.2 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,3.0 58.4,25.0 65.3,7.2 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">47</span>
         </li>
-        <li class="row ">
-          <span class="rank">#15</span>
-          <img class="avatar" src="https://github.com/kaapra081.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">15</span>
+          <img class="avatar" src="https://github.com/kaapra081.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/kaapra081">@kaapra081</a>
+            <a class="handle" href="https://github.com/kaapra081">kaapra081</a>
             <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:40"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,3.0 58.4,25.0 65.3,10.3 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,3.0 58.4,25.0 65.3,10.3 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">40</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#16</span>
-          <img class="avatar" src="https://github.com/vinays6.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/vinays6">@vinays6</a>
-            <span class="meta">30 PRs · 15 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">34</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#17</span>
-          <img class="avatar" src="https://github.com/pranilraichura.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/pranilraichura">@pranilraichura</a>
-            <span class="meta">27 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">32</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#18</span>
-          <img class="avatar" src="https://github.com/Coder-13-11.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Coder-13-11">@Coder-13-11</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">26</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#19</span>
-          <img class="avatar" src="https://github.com/AryanSudhirDev.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/AryanSudhirDev">@AryanSudhirDev</a>
-            <span class="meta">9 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">25</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#20</span>
-          <img class="avatar" src="https://github.com/amywang2010.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/amywang2010">@amywang2010</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">15</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#21</span>
-          <img class="avatar" src="https://github.com/SamDadmi.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/SamDadmi">@SamDadmi</a>
-            <span class="meta">8 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">10</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#22</span>
-          <img class="avatar" src="https://github.com/vili179.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/vili179">@vili179</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">10</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#23</span>
-          <img class="avatar" src="https://github.com/JerryChen1974.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/JerryChen1974">@JerryChen1974</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">8</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#24</span>
-          <img class="avatar" src="https://github.com/SufianTA.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/SufianTA">@SufianTA</a>
-            <span class="meta">10 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">5</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#25</span>
-          <img class="avatar" src="https://github.com/DemonizedCrush.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/DemonizedCrush">@DemonizedCrush</a>
-            <span class="meta">75 PRs · 63 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#26</span>
-          <img class="avatar" src="https://github.com/ZeidAl-Ruzouq.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ZeidAl-Ruzouq">@ZeidAl-Ruzouq</a>
-            <span class="meta">5 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#27</span>
-          <img class="avatar" src="https://github.com/0xCUB3.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/0xCUB3">@0xCUB3</a>
-            <span class="meta">18 PRs · 65 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#28</span>
-          <img class="avatar" src="https://github.com/JustinZ1903718.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/JustinZ1903718">@JustinZ1903718</a>
-            <span class="meta">1 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#29</span>
-          <img class="avatar" src="https://github.com/jophy-ye.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/jophy-ye">@jophy-ye</a>
-            <span class="meta">0 PRs · 7 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#30</span>
-          <img class="avatar" src="https://github.com/laurenap.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/laurenap">@laurenap</a>
-            <span class="meta">1 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#31</span>
-          <img class="avatar" src="https://github.com/Arun-V18.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Arun-V18">@Arun-V18</a>
-            <span class="meta">23 PRs · 7 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#32</span>
-          <img class="avatar" src="https://github.com/excel-8.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/excel-8">@excel-8</a>
-            <span class="meta">8 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#33</span>
-          <img class="avatar" src="https://github.com/farhan132.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/farhan132">@farhan132</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#34</span>
-          <img class="avatar" src="https://github.com/ayanopt.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ayanopt">@ayanopt</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#35</span>
-          <img class="avatar" src="https://github.com/thanosan23.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/thanosan23">@thanosan23</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#36</span>
-          <img class="avatar" src="https://github.com/danishiftikhar3.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/danishiftikhar3">@danishiftikhar3</a>
-            <span class="meta">4 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#37</span>
-          <img class="avatar" src="https://github.com/gconsigli.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/gconsigli">@gconsigli</a>
-            <span class="meta">17 PRs · 16 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#38</span>
-          <img class="avatar" src="https://github.com/architdeepak.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/architdeepak">@architdeepak</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#39</span>
-          <img class="avatar" src="https://github.com/joshwu108.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/joshwu108">@joshwu108</a>
-            <span class="meta">24 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#40</span>
-          <img class="avatar" src="https://github.com/kaeskiio.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/kaeskiio">@kaeskiio</a>
-            <span class="meta">11 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#41</span>
-          <img class="avatar" src="https://github.com/Akshay-Bhaskar1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Akshay-Bhaskar1">@Akshay-Bhaskar1</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#42</span>
-          <img class="avatar" src="https://github.com/advaith55.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/advaith55">@advaith55</a>
-            <span class="meta">3 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#43</span>
-          <img class="avatar" src="https://github.com/deanliang06.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/deanliang06">@deanliang06</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#44</span>
-          <img class="avatar" src="https://github.com/kamchettysadhika.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/kamchettysadhika">@kamchettysadhika</a>
-            <span class="meta">8 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#45</span>
-          <img class="avatar" src="https://github.com/Soham2020sam.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Soham2020sam">@Soham2020sam</a>
-            <span class="meta">9 PRs · 18 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#46</span>
-          <img class="avatar" src="https://github.com/bluesk1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/bluesk1">@bluesk1</a>
-            <span class="meta">0 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#47</span>
-          <img class="avatar" src="https://github.com/VishwanathanV.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/VishwanathanV">@VishwanathanV</a>
-            <span class="meta">9 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#48</span>
-          <img class="avatar" src="https://github.com/awcheng23.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/awcheng23">@awcheng23</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#49</span>
-          <img class="avatar" src="https://github.com/levtechs.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/levtechs">@levtechs</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#50</span>
-          <img class="avatar" src="https://github.com/dianeferragu.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/dianeferragu">@dianeferragu</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#51</span>
-          <img class="avatar" src="https://github.com/Siddharthakhandelwal.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Siddharthakhandelwal">@Siddharthakhandelwal</a>
-            <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#52</span>
-          <img class="avatar" src="https://github.com/edoardopanella.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/edoardopanella">@edoardopanella</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#53</span>
-          <img class="avatar" src="https://github.com/naman-sonawane.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/naman-sonawane">@naman-sonawane</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#54</span>
-          <img class="avatar" src="https://github.com/hongning-wang.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/hongning-wang">@hongning-wang</a>
-            <span class="meta">84 PRs · 10 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#55</span>
-          <img class="avatar" src="https://github.com/epic-riff.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/epic-riff">@epic-riff</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#56</span>
-          <img class="avatar" src="https://github.com/onlineinfoh.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/onlineinfoh">@onlineinfoh</a>
-            <span class="meta">4 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#57</span>
-          <img class="avatar" src="https://github.com/ark248.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ark248">@ark248</a>
-            <span class="meta">31 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#58</span>
-          <img class="avatar" src="https://github.com/shreeya-12.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/shreeya-12">@shreeya-12</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#59</span>
-          <img class="avatar" src="https://github.com/UncleEddie1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/UncleEddie1">@UncleEddie1</a>
-            <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#60</span>
-          <img class="avatar" src="https://github.com/Donysus.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Donysus">@Donysus</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#61</span>
-          <img class="avatar" src="https://github.com/phi-jkim.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/phi-jkim">@phi-jkim</a>
-            <span class="meta">14 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#62</span>
-          <img class="avatar" src="https://github.com/samuelsurr.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/samuelsurr">@samuelsurr</a>
-            <span class="meta">2 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#63</span>
-          <img class="avatar" src="https://github.com/MaitreyaM.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/MaitreyaM">@MaitreyaM</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#64</span>
-          <img class="avatar" src="https://github.com/Krishiv-Thakuria.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Krishiv-Thakuria">@Krishiv-Thakuria</a>
-            <span class="meta">1 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#65</span>
-          <img class="avatar" src="https://github.com/Ardbiu.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Ardbiu">@Ardbiu</a>
-            <span class="meta">20 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#66</span>
-          <img class="avatar" src="https://github.com/alexkana.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/alexkana">@alexkana</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#67</span>
-          <img class="avatar" src="https://github.com/saisanjana22.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/saisanjana22">@saisanjana22</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#68</span>
-          <img class="avatar" src="https://github.com/adityasngpta.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/adityasngpta">@adityasngpta</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#69</span>
-          <img class="avatar" src="https://github.com/Zopu23.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Zopu23">@Zopu23</a>
-            <span class="meta">81 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#70</span>
-          <img class="avatar" src="https://github.com/Premrshah.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Premrshah">@Premrshah</a>
-            <span class="meta">21 PRs · 3 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#71</span>
-          <img class="avatar" src="https://github.com/HridhayJ.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/HridhayJ">@HridhayJ</a>
-            <span class="meta">5 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#72</span>
-          <img class="avatar" src="https://github.com/aritroBh.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/aritroBh">@aritroBh</a>
-            <span class="meta">23 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#73</span>
-          <img class="avatar" src="https://github.com/msun170.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/msun170">@msun170</a>
-            <span class="meta">15 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#74</span>
-          <img class="avatar" src="https://github.com/redaq.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/redaq">@redaq</a>
-            <span class="meta">8 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#75</span>
-          <img class="avatar" src="https://github.com/siridesai.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/siridesai">@siridesai</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#76</span>
-          <img class="avatar" src="https://github.com/themayankjashnani.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/themayankjashnani">@themayankjashnani</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#77</span>
-          <img class="avatar" src="https://github.com/ElpidaPi.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ElpidaPi">@ElpidaPi</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#78</span>
-          <img class="avatar" src="https://github.com/tenzinmchemey.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/tenzinmchemey">@tenzinmchemey</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#79</span>
-          <img class="avatar" src="https://github.com/TheAmrReticoStaderGuy.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/TheAmrReticoStaderGuy">@TheAmrReticoStaderGuy</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#80</span>
-          <img class="avatar" src="https://github.com/manolik.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/manolik">@manolik</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#81</span>
-          <img class="avatar" src="https://github.com/kritgun-1907.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/kritgun-1907">@kritgun-1907</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#82</span>
-          <img class="avatar" src="https://github.com/copilot-swe-agent.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/copilot-swe-agent">@copilot-swe-agent</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#83</span>
-          <img class="avatar" src="https://github.com/imranmk007.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/imranmk007">@imranmk007</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#84</span>
-          <img class="avatar" src="https://github.com/Muhammadabrarrayhan2.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Muhammadabrarrayhan2">@Muhammadabrarrayhan2</a>
-            <span class="meta">46 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#85</span>
-          <img class="avatar" src="https://github.com/ChinmayKamjith1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ChinmayKamjith1">@ChinmayKamjith1</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#86</span>
-          <img class="avatar" src="https://github.com/TaherMerchant25.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/TaherMerchant25">@TaherMerchant25</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#87</span>
-          <img class="avatar" src="https://github.com/RonKat2008.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/RonKat2008">@RonKat2008</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#88</span>
-          <img class="avatar" src="https://github.com/airjan-airlines.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/airjan-airlines">@airjan-airlines</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#89</span>
-          <img class="avatar" src="https://github.com/Akshaj-G.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Akshaj-G">@Akshaj-G</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#90</span>
-          <img class="avatar" src="https://github.com/Cypherspec.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Cypherspec">@Cypherspec</a>
-            <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#91</span>
-          <img class="avatar" src="https://github.com/NisargOza.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/NisargOza">@NisargOza</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#92</span>
-          <img class="avatar" src="https://github.com/ArjunSubramanian22.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ArjunSubramanian22">@ArjunSubramanian22</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#93</span>
-          <img class="avatar" src="https://github.com/Chessing234.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Chessing234">@Chessing234</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#94</span>
-          <img class="avatar" src="https://github.com/varvarakarenski.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/varvarakarenski">@varvarakarenski</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#95</span>
-          <img class="avatar" src="https://github.com/pandeylakshya207-max.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/pandeylakshya207-max">@pandeylakshya207-max</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#96</span>
-          <img class="avatar" src="https://github.com/ThomasdeChillaz.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ThomasdeChillaz">@ThomasdeChillaz</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li></ul><ul class="board" data-for="tab-w14">
-        <li class="row top top-1">
-          <span class="rank">🥇</span>
-          <img class="avatar" src="https://github.com/chreia.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/chreia">@chreia</a>
-            <span class="meta">109 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:100%"></span></span>
-          </span>
-          <span class="pts">2195</span>
-        </li>
-        <li class="row top top-2">
-          <span class="rank">🥈</span>
-          <img class="avatar" src="https://github.com/MantisCartography.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/MantisCartography">@MantisCartography</a>
-            <span class="meta">151 PRs · 161 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:67%"></span></span>
-          </span>
-          <span class="pts">1468</span>
-        </li>
-        <li class="row top top-3">
-          <span class="rank">🥉</span>
-          <img class="avatar" src="https://github.com/ppxscal.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ppxscal">@ppxscal</a>
-            <span class="meta">96 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:39%"></span></span>
-          </span>
-          <span class="pts">866</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#4</span>
-          <img class="avatar" src="https://github.com/AnasMaar.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/AnasMaar">@AnasMaar</a>
+        </li></ol>
+        <p class="more">…and 81 more contributors</p>
+      </section><section class="panel" data-for="tab-w14">
+        <div class="podium">
+    <div class="pod pod-2">
+      <div class="pod-badge">🥈</div>
+      <img class="pod-avatar" src="https://github.com/MantisCartography.png?size=120" alt="" loading="lazy"/>
+      <a class="pod-handle" href="https://github.com/MantisCartography">MantisCartography</a>
+      <div class="pod-pts">1468<span>pts</span></div>
+      <div class="pod-meta">151 PRs · 161 reviews</div>
+    </div>
+    <div class="pod pod-1">
+      <div class="pod-badge">🥇</div>
+      <img class="pod-avatar" src="https://github.com/chreia.png?size=120" alt="" loading="lazy"/>
+      <a class="pod-handle" href="https://github.com/chreia">chreia</a>
+      <div class="pod-pts">2195<span>pts</span></div>
+      <div class="pod-meta">109 PRs · 0 reviews</div>
+    </div>
+    <div class="pod pod-3">
+      <div class="pod-badge">🥉</div>
+      <img class="pod-avatar" src="https://github.com/ppxscal.png?size=120" alt="" loading="lazy"/>
+      <a class="pod-handle" href="https://github.com/ppxscal">ppxscal</a>
+      <div class="pod-pts">866<span>pts</span></div>
+      <div class="pod-meta">96 PRs · 6 reviews</div>
+    </div></div>
+        <ol class="board">
+        <li class="row">
+          <span class="rank">4</span>
+          <img class="avatar" src="https://github.com/AnasMaar.png?size=48" alt="" loading="lazy"/>
+          <span class="who">
+            <a class="handle" href="https://github.com/AnasMaar">AnasMaar</a>
             <span class="meta">167 PRs · 21 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:22%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:3397"></span><span class="seg seg-review" style="flex:415"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,16.3 9.9,25.0 16.8,25.0 23.8,13.0 30.7,25.0 37.6,19.4 44.5,17.3 51.5,3.0 58.4,25.0 65.3,24.1 72.2,18.0 79.2,15.9 86.1,12.4 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,16.3 9.9,25.0 16.8,25.0 23.8,13.0 30.7,25.0 37.6,19.4 44.5,17.3 51.5,3.0 58.4,25.0 65.3,24.1 72.2,18.0 79.2,15.9 86.1,12.4 93.0,25.0"/>
+    </svg></span>
           <span class="pts">490</span>
         </li>
-        <li class="row ">
-          <span class="rank">#5</span>
-          <img class="avatar" src="https://github.com/alex-d4v.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">5</span>
+          <img class="avatar" src="https://github.com/alex-d4v.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/alex-d4v">@alex-d4v</a>
+            <a class="handle" href="https://github.com/alex-d4v">alex-d4v</a>
             <span class="meta">38 PRs · 7 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:7%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:890"></span><span class="seg seg-review" style="flex:135"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,3.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,25.0 58.4,25.0 65.3,21.6 72.2,25.0 79.2,17.7 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,3.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,25.0 58.4,25.0 65.3,21.6 72.2,25.0 79.2,17.7 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">153</span>
         </li>
-        <li class="row ">
-          <span class="rank">#6</span>
-          <img class="avatar" src="https://github.com/vinays6.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">6</span>
+          <img class="avatar" src="https://github.com/vinays6.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/vinays6">@vinays6</a>
+            <a class="handle" href="https://github.com/vinays6">vinays6</a>
             <span class="meta">30 PRs · 15 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:6%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:532"></span><span class="seg seg-review" style="flex:290"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,19.8 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,3.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,18.8 79.2,22.4 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,19.8 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,3.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,18.8 79.2,22.4 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">139</span>
         </li>
-        <li class="row ">
-          <span class="rank">#7</span>
-          <img class="avatar" src="https://github.com/6namdang.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">7</span>
+          <img class="avatar" src="https://github.com/6namdang.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/6namdang">@6namdang</a>
+            <a class="handle" href="https://github.com/6namdang">6namdang</a>
             <span class="meta">9 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:6%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:194"></span><span class="seg seg-review" style="flex:20"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,5.8 58.4,25.0 65.3,10.3 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,5.8 58.4,25.0 65.3,10.3 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">122</span>
         </li>
-        <li class="row ">
-          <span class="rank">#8</span>
-          <img class="avatar" src="https://github.com/charleywolf.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">8</span>
+          <img class="avatar" src="https://github.com/charleywolf.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/charleywolf">@charleywolf</a>
+            <a class="handle" href="https://github.com/charleywolf">charleywolf</a>
             <span class="meta">32 PRs · 3 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:6%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:603"></span><span class="seg seg-review" style="flex:55"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,14.0 37.6,25.0 44.5,21.6 51.5,19.5 58.4,25.0 65.3,25.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,14.0 37.6,25.0 44.5,21.6 51.5,19.5 58.4,25.0 65.3,25.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">122</span>
         </li>
-        <li class="row ">
-          <span class="rank">#9</span>
-          <img class="avatar" src="https://github.com/PranavaKCode.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">9</span>
+          <img class="avatar" src="https://github.com/PranavaKCode.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/PranavaKCode">@PranavaKCode</a>
+            <a class="handle" href="https://github.com/PranavaKCode">PranavaKCode</a>
             <span class="meta">103 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:5%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:1632"></span><span class="seg seg-review" style="flex:20"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,3.0 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,3.0 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">105</span>
         </li>
-        <li class="row ">
-          <span class="rank">#10</span>
-          <img class="avatar" src="https://github.com/Cruz-Arnzen.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">10</span>
+          <img class="avatar" src="https://github.com/Cruz-Arnzen.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/Cruz-Arnzen">@Cruz-Arnzen</a>
+            <a class="handle" href="https://github.com/Cruz-Arnzen">Cruz-Arnzen</a>
             <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:5%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:102"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,3.0 79.2,10.8 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,3.0 79.2,10.8 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">102</span>
         </li>
-        <li class="row ">
-          <span class="rank">#11</span>
-          <img class="avatar" src="https://github.com/LucaVor.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">11</span>
+          <img class="avatar" src="https://github.com/LucaVor.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/LucaVor">@LucaVor</a>
+            <a class="handle" href="https://github.com/LucaVor">LucaVor</a>
             <span class="meta">109 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:5%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:1743"></span><span class="seg seg-review" style="flex:120"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,14.8 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,14.8 44.5,25.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,25.0 79.2,25.0 86.1,3.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">101</span>
         </li>
-        <li class="row ">
-          <span class="rank">#12</span>
-          <img class="avatar" src="https://github.com/absol761.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">12</span>
+          <img class="avatar" src="https://github.com/absol761.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/absol761">@absol761</a>
+            <a class="handle" href="https://github.com/absol761">absol761</a>
             <span class="meta">5 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:93"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,14.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,17.7 58.4,25.0 65.3,25.0 72.2,3.0 79.2,25.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,14.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,22.7 44.5,25.0 51.5,17.7 58.4,25.0 65.3,25.0 72.2,3.0 79.2,25.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">93</span>
         </li>
-        <li class="row ">
-          <span class="rank">#13</span>
-          <img class="avatar" src="https://github.com/rohan-va.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">13</span>
+          <img class="avatar" src="https://github.com/rohan-va.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/rohan-va">@rohan-va</a>
+            <a class="handle" href="https://github.com/rohan-va">rohan-va</a>
             <span class="meta">53 PRs · 22 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:756"></span><span class="seg seg-review" style="flex:410"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,14.7 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,14.7 65.3,10.6 72.2,25.0 79.2,21.6 86.1,3.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,14.7 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,25.0 51.5,25.0 58.4,14.7 65.3,10.6 72.2,25.0 79.2,21.6 86.1,3.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">88</span>
         </li>
-        <li class="row ">
-          <span class="rank">#14</span>
-          <img class="avatar" src="https://github.com/dhedhialy.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">14</span>
+          <img class="avatar" src="https://github.com/dhedhialy.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/dhedhialy">@dhedhialy</a>
+            <a class="handle" href="https://github.com/dhedhialy">dhedhialy</a>
             <span class="meta">21 PRs · 3 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:405"></span><span class="seg seg-review" style="flex:55"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,19.4 51.5,25.0 58.4,16.0 65.3,16.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,19.4 51.5,25.0 58.4,16.0 65.3,16.0 72.2,25.0 79.2,3.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">81</span>
         </li>
-        <li class="row ">
-          <span class="rank">#15</span>
-          <img class="avatar" src="https://github.com/ThomasdeChillaz.png?size=64" alt="" loading="lazy"/>
+        <li class="row">
+          <span class="rank">15</span>
+          <img class="avatar" src="https://github.com/ThomasdeChillaz.png?size=48" alt="" loading="lazy"/>
           <span class="who">
-            <a class="handle" href="https://github.com/ThomasdeChillaz">@ThomasdeChillaz</a>
+            <a class="handle" href="https://github.com/ThomasdeChillaz">ThomasdeChillaz</a>
             <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
+            <span class="split"><span class="seg seg-pr" style="flex:80"></span></span>
           </span>
+          <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="spark-area" points="3,25 3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,3.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0 93.0,25"/>
+      <polyline class="spark-line" points="3.0,25.0 9.9,25.0 16.8,25.0 23.8,25.0 30.7,25.0 37.6,25.0 44.5,3.0 51.5,25.0 58.4,25.0 65.3,25.0 72.2,25.0 79.2,25.0 86.1,25.0 93.0,25.0"/>
+    </svg></span>
           <span class="pts">80</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#16</span>
-          <img class="avatar" src="https://github.com/Coder-13-11.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Coder-13-11">@Coder-13-11</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">62</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#17</span>
-          <img class="avatar" src="https://github.com/pranilraichura.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/pranilraichura">@pranilraichura</a>
-            <span class="meta">27 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">48</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#18</span>
-          <img class="avatar" src="https://github.com/YakshithK.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/YakshithK">@YakshithK</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">47</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#19</span>
-          <img class="avatar" src="https://github.com/AryanSudhirDev.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/AryanSudhirDev">@AryanSudhirDev</a>
-            <span class="meta">9 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">41</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#20</span>
-          <img class="avatar" src="https://github.com/kaapra081.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/kaapra081">@kaapra081</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">40</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#21</span>
-          <img class="avatar" src="https://github.com/gconsigli.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/gconsigli">@gconsigli</a>
-            <span class="meta">17 PRs · 16 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">39</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#22</span>
-          <img class="avatar" src="https://github.com/varvarakarenski.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/varvarakarenski">@varvarakarenski</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">32</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#23</span>
-          <img class="avatar" src="https://github.com/SamDadmi.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/SamDadmi">@SamDadmi</a>
-            <span class="meta">8 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">26</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#24</span>
-          <img class="avatar" src="https://github.com/RonKat2008.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/RonKat2008">@RonKat2008</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">16</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#25</span>
-          <img class="avatar" src="https://github.com/amywang2010.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/amywang2010">@amywang2010</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">15</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#26</span>
-          <img class="avatar" src="https://github.com/pandeylakshya207-max.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/pandeylakshya207-max">@pandeylakshya207-max</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">15</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#27</span>
-          <img class="avatar" src="https://github.com/vili179.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/vili179">@vili179</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">10</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#28</span>
-          <img class="avatar" src="https://github.com/JerryChen1974.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/JerryChen1974">@JerryChen1974</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">8</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#29</span>
-          <img class="avatar" src="https://github.com/SufianTA.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/SufianTA">@SufianTA</a>
-            <span class="meta">10 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">5</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#30</span>
-          <img class="avatar" src="https://github.com/DemonizedCrush.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/DemonizedCrush">@DemonizedCrush</a>
-            <span class="meta">75 PRs · 63 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#31</span>
-          <img class="avatar" src="https://github.com/ZeidAl-Ruzouq.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ZeidAl-Ruzouq">@ZeidAl-Ruzouq</a>
-            <span class="meta">5 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#32</span>
-          <img class="avatar" src="https://github.com/0xCUB3.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/0xCUB3">@0xCUB3</a>
-            <span class="meta">18 PRs · 65 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#33</span>
-          <img class="avatar" src="https://github.com/JustinZ1903718.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/JustinZ1903718">@JustinZ1903718</a>
-            <span class="meta">1 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#34</span>
-          <img class="avatar" src="https://github.com/jophy-ye.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/jophy-ye">@jophy-ye</a>
-            <span class="meta">0 PRs · 7 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#35</span>
-          <img class="avatar" src="https://github.com/laurenap.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/laurenap">@laurenap</a>
-            <span class="meta">1 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#36</span>
-          <img class="avatar" src="https://github.com/Arun-V18.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Arun-V18">@Arun-V18</a>
-            <span class="meta">23 PRs · 7 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#37</span>
-          <img class="avatar" src="https://github.com/excel-8.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/excel-8">@excel-8</a>
-            <span class="meta">8 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#38</span>
-          <img class="avatar" src="https://github.com/farhan132.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/farhan132">@farhan132</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#39</span>
-          <img class="avatar" src="https://github.com/ayanopt.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ayanopt">@ayanopt</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#40</span>
-          <img class="avatar" src="https://github.com/thanosan23.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/thanosan23">@thanosan23</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#41</span>
-          <img class="avatar" src="https://github.com/danishiftikhar3.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/danishiftikhar3">@danishiftikhar3</a>
-            <span class="meta">4 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#42</span>
-          <img class="avatar" src="https://github.com/architdeepak.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/architdeepak">@architdeepak</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#43</span>
-          <img class="avatar" src="https://github.com/joshwu108.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/joshwu108">@joshwu108</a>
-            <span class="meta">24 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#44</span>
-          <img class="avatar" src="https://github.com/kaeskiio.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/kaeskiio">@kaeskiio</a>
-            <span class="meta">11 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#45</span>
-          <img class="avatar" src="https://github.com/Akshay-Bhaskar1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Akshay-Bhaskar1">@Akshay-Bhaskar1</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#46</span>
-          <img class="avatar" src="https://github.com/advaith55.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/advaith55">@advaith55</a>
-            <span class="meta">3 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#47</span>
-          <img class="avatar" src="https://github.com/deanliang06.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/deanliang06">@deanliang06</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#48</span>
-          <img class="avatar" src="https://github.com/kamchettysadhika.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/kamchettysadhika">@kamchettysadhika</a>
-            <span class="meta">8 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#49</span>
-          <img class="avatar" src="https://github.com/Soham2020sam.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Soham2020sam">@Soham2020sam</a>
-            <span class="meta">9 PRs · 18 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#50</span>
-          <img class="avatar" src="https://github.com/bluesk1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/bluesk1">@bluesk1</a>
-            <span class="meta">0 PRs · 2 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#51</span>
-          <img class="avatar" src="https://github.com/VishwanathanV.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/VishwanathanV">@VishwanathanV</a>
-            <span class="meta">9 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#52</span>
-          <img class="avatar" src="https://github.com/awcheng23.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/awcheng23">@awcheng23</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#53</span>
-          <img class="avatar" src="https://github.com/levtechs.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/levtechs">@levtechs</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#54</span>
-          <img class="avatar" src="https://github.com/dianeferragu.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/dianeferragu">@dianeferragu</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#55</span>
-          <img class="avatar" src="https://github.com/Siddharthakhandelwal.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Siddharthakhandelwal">@Siddharthakhandelwal</a>
-            <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#56</span>
-          <img class="avatar" src="https://github.com/edoardopanella.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/edoardopanella">@edoardopanella</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#57</span>
-          <img class="avatar" src="https://github.com/naman-sonawane.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/naman-sonawane">@naman-sonawane</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#58</span>
-          <img class="avatar" src="https://github.com/hongning-wang.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/hongning-wang">@hongning-wang</a>
-            <span class="meta">84 PRs · 10 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#59</span>
-          <img class="avatar" src="https://github.com/epic-riff.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/epic-riff">@epic-riff</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#60</span>
-          <img class="avatar" src="https://github.com/onlineinfoh.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/onlineinfoh">@onlineinfoh</a>
-            <span class="meta">4 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#61</span>
-          <img class="avatar" src="https://github.com/ark248.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ark248">@ark248</a>
-            <span class="meta">31 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#62</span>
-          <img class="avatar" src="https://github.com/shreeya-12.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/shreeya-12">@shreeya-12</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#63</span>
-          <img class="avatar" src="https://github.com/UncleEddie1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/UncleEddie1">@UncleEddie1</a>
-            <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#64</span>
-          <img class="avatar" src="https://github.com/Donysus.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Donysus">@Donysus</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#65</span>
-          <img class="avatar" src="https://github.com/phi-jkim.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/phi-jkim">@phi-jkim</a>
-            <span class="meta">14 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#66</span>
-          <img class="avatar" src="https://github.com/samuelsurr.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/samuelsurr">@samuelsurr</a>
-            <span class="meta">2 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#67</span>
-          <img class="avatar" src="https://github.com/MaitreyaM.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/MaitreyaM">@MaitreyaM</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#68</span>
-          <img class="avatar" src="https://github.com/Krishiv-Thakuria.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Krishiv-Thakuria">@Krishiv-Thakuria</a>
-            <span class="meta">1 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#69</span>
-          <img class="avatar" src="https://github.com/Ardbiu.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Ardbiu">@Ardbiu</a>
-            <span class="meta">20 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#70</span>
-          <img class="avatar" src="https://github.com/alexkana.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/alexkana">@alexkana</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#71</span>
-          <img class="avatar" src="https://github.com/saisanjana22.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/saisanjana22">@saisanjana22</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#72</span>
-          <img class="avatar" src="https://github.com/adityasngpta.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/adityasngpta">@adityasngpta</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#73</span>
-          <img class="avatar" src="https://github.com/Zopu23.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Zopu23">@Zopu23</a>
-            <span class="meta">81 PRs · 1 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#74</span>
-          <img class="avatar" src="https://github.com/Premrshah.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Premrshah">@Premrshah</a>
-            <span class="meta">21 PRs · 3 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#75</span>
-          <img class="avatar" src="https://github.com/HridhayJ.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/HridhayJ">@HridhayJ</a>
-            <span class="meta">5 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#76</span>
-          <img class="avatar" src="https://github.com/aritroBh.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/aritroBh">@aritroBh</a>
-            <span class="meta">23 PRs · 6 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#77</span>
-          <img class="avatar" src="https://github.com/msun170.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/msun170">@msun170</a>
-            <span class="meta">15 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#78</span>
-          <img class="avatar" src="https://github.com/redaq.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/redaq">@redaq</a>
-            <span class="meta">8 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#79</span>
-          <img class="avatar" src="https://github.com/siridesai.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/siridesai">@siridesai</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#80</span>
-          <img class="avatar" src="https://github.com/themayankjashnani.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/themayankjashnani">@themayankjashnani</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#81</span>
-          <img class="avatar" src="https://github.com/ElpidaPi.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ElpidaPi">@ElpidaPi</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#82</span>
-          <img class="avatar" src="https://github.com/tenzinmchemey.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/tenzinmchemey">@tenzinmchemey</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#83</span>
-          <img class="avatar" src="https://github.com/TheAmrReticoStaderGuy.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/TheAmrReticoStaderGuy">@TheAmrReticoStaderGuy</a>
-            <span class="meta">3 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#84</span>
-          <img class="avatar" src="https://github.com/manolik.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/manolik">@manolik</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#85</span>
-          <img class="avatar" src="https://github.com/kritgun-1907.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/kritgun-1907">@kritgun-1907</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#86</span>
-          <img class="avatar" src="https://github.com/copilot-swe-agent.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/copilot-swe-agent">@copilot-swe-agent</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#87</span>
-          <img class="avatar" src="https://github.com/imranmk007.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/imranmk007">@imranmk007</a>
-            <span class="meta">6 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#88</span>
-          <img class="avatar" src="https://github.com/Muhammadabrarrayhan2.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Muhammadabrarrayhan2">@Muhammadabrarrayhan2</a>
-            <span class="meta">46 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#89</span>
-          <img class="avatar" src="https://github.com/ChinmayKamjith1.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ChinmayKamjith1">@ChinmayKamjith1</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#90</span>
-          <img class="avatar" src="https://github.com/TaherMerchant25.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/TaherMerchant25">@TaherMerchant25</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#91</span>
-          <img class="avatar" src="https://github.com/airjan-airlines.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/airjan-airlines">@airjan-airlines</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#92</span>
-          <img class="avatar" src="https://github.com/Akshaj-G.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Akshaj-G">@Akshaj-G</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#93</span>
-          <img class="avatar" src="https://github.com/Cypherspec.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Cypherspec">@Cypherspec</a>
-            <span class="meta">7 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#94</span>
-          <img class="avatar" src="https://github.com/NisargOza.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/NisargOza">@NisargOza</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#95</span>
-          <img class="avatar" src="https://github.com/ArjunSubramanian22.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/ArjunSubramanian22">@ArjunSubramanian22</a>
-            <span class="meta">1 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li>
-        <li class="row ">
-          <span class="rank">#96</span>
-          <img class="avatar" src="https://github.com/Chessing234.png?size=64" alt="" loading="lazy"/>
-          <span class="who">
-            <a class="handle" href="https://github.com/Chessing234">@Chessing234</a>
-            <span class="meta">2 PRs · 0 reviews · 0 issues</span>
-            <span class="bar"><span class="fill" style="width:4%"></span></span>
-          </span>
-          <span class="pts">0</span>
-        </li></ul></div>
+        </li></ol>
+        <p class="more">…and 81 more contributors</p>
+      </section></div>
 
-    <footer>rules v1 · read-only, GitHub activity only · no JS, this page works with scripts off</footer>
+    <div class="legend">
+      <span><i style="background:var(--c-pr)"></i>Pull requests</span>
+      <span><i style="background:var(--c-review)"></i>Reviews</span>
+      <span><i style="background:var(--c-issue)"></i>Issues</span>
+      <span><i style="background:var(--c-other)"></i>Community</span>
+    </div>
+
+    
+
+    <footer>
+      Ranked by points earned in the trailing window, not lifetime totals — it's about who's active now.<br/>
+      rules v1 · read-only, GitHub activity + approved manual credits · <a href="admin.html">log a contribution →</a>
+    </footer>
   </div>
 </body>
 </html>

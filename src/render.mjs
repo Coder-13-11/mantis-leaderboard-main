@@ -6,7 +6,7 @@
 // identically with scripts off and can't break.
 // -----------------------------------------------------------------------------
 
-const SITE_MAX = 25; // contributors shown on the dashboard (podium + list)
+const SITE_MAX = 15; // contributors shown on the dashboard (podium + list)
 
 function medal(rank) {
   return rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : `#${rank}`;
