@@ -1,5 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "buildCommand": "echo 'static site — generated in CI, nothing to build here'",
+  "installCommand": "echo 'no install needed'",
   "outputDirectory": "site"
 }
