@@ -87,6 +87,17 @@ pull_requests:
   # Only count PRs merged into these base branches.
   count_merges_to: ["main", "master"]
 
+  # Anti-gaming: diminishing returns when one person merges many PRs on the
+  # SAME DAY. The main way to farm this board is splitting one change into lots
+  # of small PRs, so after `after` PRs in a day each further same-day PR is
+  # worth a shrinking fraction (previous x `decay`), never below `min_factor`.
+  # A normal cadence (a few PRs/day) is untouched; burst-splitting is damped.
+  # Set `after` very high (e.g. 999) to effectively turn this off.
+  daily_diminishing:
+    after: 3          # first 3 PRs each day score at full value
+    decay: 0.8        # 4th = 0.8x, 5th = 0.64x, 6th = 0.51x, ...
+    min_factor: 0.3   # never drops below 30% of the PR's normal points
+
 # -----------------------------------------------------------------------------
 # Reviews  (anti-spam: only substantive reviews score)
 # -----------------------------------------------------------------------------
@@ -105,35 +116,34 @@ reviews:
   one_per_pr_per_reviewer: true
 
 # -----------------------------------------------------------------------------
-# Issues  (anti-farming: opening an issue scores ZERO by itself)
+# Issues
 # -----------------------------------------------------------------------------
+# For now: any *valid* issue created earns a small flat base. "Valid" just means
+# it wasn't closed as duplicate / invalid / wontfix / not-planned. Kept low on
+# purpose — opening issues is the easiest thing to farm, so it shouldn't be
+# worth much until difficulty is judged (below).
 issues:
-  # An issue only scores if a maintainer applies one of these trusted labels.
-  # This is the "label gate": moderation collapses to clicking a label.
-  # `bug` and `enhancement` are GitHub's default triage labels the Mantis repos
-  # actually use — a maintainer applying one means "this is a real, accepted
-  # issue" (contributors can't self-apply labels without triage access). The
-  # `confirmed`/`accepted` entries are there in case you adopt a stricter,
-  # dedicated triage label later; extras that don't exist simply never match.
-  confirmed_labels: ["bug", "enhancement", "confirmed", "bug-verified", "accepted"]
-  confirmed_points: 10
+  created_points: 3          # a valid issue created
 
-  # Severity, from a maintainer-applied label, scales the base points above.
-  # No severity label = 1x (the base). Rename these to match your labels.
-  severity_multipliers:
-    critical: 3
-    high: 2
-  severity_labels:
-    critical: ["priority: critical", "severity: critical"]
-    high: ["priority: high", "severity: major"]
+  # Small extra once the issue is closed as completed (someone acted on it) —
+  # rewards issues that turn out to be real without needing a triage label.
+  closed_bonus: 2
 
-  # When a confirmed issue is later closed (presumed fixed), the reporter
-  # earns the same points again. Finding a real bug AND getting it fixed is
-  # worth double just filing it -- this is how bug hunting competes with
-  # writing code instead of being an afterthought.
-  fixed_bonus_multiplier: 1
+  # FUTURE — difficulty scoring. When you start applying a difficulty label
+  # (1 = trivial … 6 = very hard), that label's points REPLACE created_points,
+  # so harder issues are worth more. Dormant until the labels exist: any issue
+  # without one of these labels just gets created_points. Rename the label keys
+  # to match whatever you actually create (e.g. "difficulty: 3", "level-3").
+  difficulty_points:
+    "difficulty: 1": 2
+    "difficulty: 2": 4
+    "difficulty: 3": 7
+    "difficulty: 4": 11
+    "difficulty: 5": 16
+    "difficulty: 6": 24
 
-  # Issues closed as duplicate score nothing (native reason or these labels).
+  # Issues closed as duplicate / invalid / wontfix (or not-planned) score
+  # nothing — these labels exist in the Mantis repos already.
   duplicate_labels: ["duplicate", "wontfix", "invalid"]
 
 # -----------------------------------------------------------------------------

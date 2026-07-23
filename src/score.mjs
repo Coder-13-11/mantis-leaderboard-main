@@ -25,17 +25,6 @@ function pathIsExcluded(path, excludeRes) {
   return excludeRes.some((re) => re.test(path));
 }
 
-// Highest severity tier (from `tierLabels`) whose labels appear on the item,
-// mapped through `multipliers`. 1 if no tier's labels match.
-function severityMultiplier(labels, tierLabels, multipliers) {
-  for (const [tier, tierLabelList] of Object.entries(tierLabels || {})) {
-    if (tierLabelList.some((l) => labels.includes(l.toLowerCase()))) {
-      return multipliers[tier] ?? 1;
-    }
-  }
-  return 1;
-}
-
 function sizeBucket(lines, buckets) {
   if (lines <= buckets.XS) return "XS";
   if (lines <= buckets.S) return "S";
@@ -98,6 +87,8 @@ export function score(activity, rules, manual = {}) {
 
   // Track which login has already been credited a "first PR" bonus.
   const seenAuthors = new Set();
+  // Count of a user's PRs merged on each calendar day, for diminishing returns.
+  const prPerDay = {};
 
   // Sort PRs chronologically so "first PR" is deterministic.
   const prs = [...activity.pullRequests]
@@ -134,6 +125,17 @@ export function score(activity, rules, manual = {}) {
     if (isFirst) points *= pr.multipliers.first_pr;
     seenAuthors.add(login);
 
+    // Diminishing returns for many same-day PRs by the same author
+    // (discourages splitting one change into many PRs to farm points).
+    const dd = pr.daily_diminishing;
+    if (dd) {
+      const dk = `${login}|${dayKey(p.mergedAt)}`;
+      const nth = (prPerDay[dk] = (prPerDay[dk] || 0) + 1);
+      if (nth > dd.after) {
+        points *= Math.max(dd.min_factor, dd.decay ** (nth - dd.after));
+      }
+    }
+
     points = Math.round(points);
 
     const u = userOf(users, login);
@@ -163,36 +165,37 @@ export function score(activity, rules, manual = {}) {
     }
   }
 
-  // --- Issues (label-gated) ---
+  // --- Issues (raw valid issues; difficulty labels override the flat base) ---
   for (const i of activity.issues) {
     const login = i.author?.login;
     if (!login || excludeLogins.has(login)) continue;
     const labels = (i.labels?.nodes || []).map((l) => l.name.toLowerCase());
 
+    // Drop issues that were rejected — those aren't real contributions.
     const isDuplicate =
       (is.duplicate_labels || []).some((d) => labels.includes(d.toLowerCase())) ||
       i.stateReason === "DUPLICATE" ||
       i.stateReason === "NOT_PLANNED";
     if (isDuplicate) continue;
 
-    const isConfirmed = (is.confirmed_labels || []).some((c) =>
-      labels.includes(c.toLowerCase())
-    );
-    if (!isConfirmed) continue; // opening an issue alone scores nothing
-
-    const severity = severityMultiplier(labels, is.severity_labels, is.severity_multipliers);
-    const basePoints = Math.round(is.confirmed_points * severity);
+    // A difficulty label's points REPLACE the flat base, when one is present.
+    // Until difficulty labels are in use, every valid issue gets created_points.
+    let basePoints = is.created_points ?? 0;
+    for (const [label, pts] of Object.entries(is.difficulty_points || {})) {
+      if (labels.includes(label.toLowerCase())) {
+        basePoints = pts;
+        break;
+      }
+    }
+    if (!basePoints) continue;
 
     const u = userOf(users, login);
     addPoints(u, "issue", basePoints, i.createdAt);
-    u.counts.confirmed_issues += 1;
+    u.counts.confirmed_issues += 1; // "valid issues created"
 
-    // Confirmed AND closed => presumed fixed => bonus to reporter, scaled by
-    // the same severity (finding AND getting a critical bug fixed matters
-    // more than a minor one).
-    if (i.closed) {
-      const bonus = Math.round(basePoints * (is.fixed_bonus_multiplier ?? 1));
-      addPoints(u, "issue", bonus, i.closedAt);
+    // Small bonus once it's closed as completed (someone acted on it).
+    if (i.closed && i.stateReason !== "NOT_PLANNED" && (is.closed_bonus || 0) > 0) {
+      addPoints(u, "issue", is.closed_bonus, i.closedAt || i.createdAt);
       u.counts.fixed_bonuses += 1;
     }
   }

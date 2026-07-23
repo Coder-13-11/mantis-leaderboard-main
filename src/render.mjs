@@ -252,7 +252,7 @@ export function renderHtml(users, meta) {
     statTile(totalReviews.toLocaleString(), "Reviews"),
     totalManual
       ? statTile(totalManual.toLocaleString(), "Community credits")
-      : statTile(totalIssues.toLocaleString(), "Issues confirmed"),
+      : statTile(totalIssues.toLocaleString(), "Issues logged"),
   ].join("");
 
   return `<!doctype html>

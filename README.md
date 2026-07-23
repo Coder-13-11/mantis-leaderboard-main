@@ -94,8 +94,15 @@ open site/index.html
 | First PR | ×1.5 | contributor's first merged PR |
 | Approved review | 20 | must have a real body (anti-spam) |
 | Changes requested | 15 | must have a real body |
-| Confirmed issue | 10 / 20 / 30 | base / high / critical severity, from a maintainer label |
-| Confirmed issue fixed | same again | reporter earns it a second time once the bug is actually closed |
+| Issue created | 3 | any valid issue (not duplicate/invalid/wontfix/not-planned) — kept low, it's the easiest thing to farm |
+| Issue closed | +2 | small bonus once someone acts on it and closes it as completed |
+| Issue difficulty (future) | 2 → 24 | a `difficulty: 1…6` label *replaces* the flat 3 — harder issues worth more. Dormant until you apply the labels |
+
+**Anti-gaming:** merging many PRs on the *same day* hits diminishing returns
+(the main way to farm this is splitting one change into lots of small PRs).
+The first few PRs a day score full; each further same-day PR is worth a
+shrinking fraction. A normal cadence is unaffected. Tunable under
+`pull_requests.daily_diminishing` in `config/rules.yml`.
 
 All of this lives in [`config/rules.yml`](config/rules.yml) — point values,
 size buckets, label names, anti-gaming thresholds. Change a number, open a
