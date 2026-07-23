@@ -110,7 +110,12 @@ reviews:
 issues:
   # An issue only scores if a maintainer applies one of these trusted labels.
   # This is the "label gate": moderation collapses to clicking a label.
-  confirmed_labels: ["confirmed", "bug-verified", "accepted"]
+  # `bug` and `enhancement` are GitHub's default triage labels the Mantis repos
+  # actually use — a maintainer applying one means "this is a real, accepted
+  # issue" (contributors can't self-apply labels without triage access). The
+  # `confirmed`/`accepted` entries are there in case you adopt a stricter,
+  # dedicated triage label later; extras that don't exist simply never match.
+  confirmed_labels: ["bug", "enhancement", "confirmed", "bug-verified", "accepted"]
   confirmed_points: 10
 
   # Severity, from a maintainer-applied label, scales the base points above.
