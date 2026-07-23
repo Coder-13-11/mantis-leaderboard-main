@@ -261,68 +261,132 @@ export function renderHtml(users, meta) {
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Mantis · Contributor Leaderboard</title>
+<link rel="icon" href="data:image/svg+xml,${encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#0e1442"/><path d="M18 74 40 30 50 46 60 30 82 74" stroke="url(%23g)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g" x1="0" y1="0" x2="100" y2="0"><stop offset="0" stop-color="%234f7cf0"/><stop offset="1" stop-color="%238b5cf6"/></linearGradient></defs></svg>'
+  )}"/>
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #f5f7f5;
+    /* Palette lifted from the Mantis wordmark: deep navy -> indigo -> purple -> sky blue */
+    --navy: #0e1442;
+    --indigo: #3346c4;
+    --purple: #7c4fe0;
+    --blue: #4f8ef0;
+    --bg: #f4f6fc;
     --panel: #ffffff;
-    --border: #e5e9e5;
-    --text: #14181a;
-    --muted: #62706a;
-    --faint: #97a39d;
-    --accent: #1f9d57;
+    --border: #e2e5f5;
+    --text: #10132b;
+    --muted: #5b6180;
+    --faint: #9296b3;
+    --accent: var(--indigo);
     --accent-ink: #ffffff;
-    --accent-soft: #e7f5ec;
-    --gold: #e0a92a;
-    --silver: #9aa4ad;
-    --bronze: #c07d43;
-    --c-pr: #1f9d57;
-    --c-review: #3b82f6;
-    --c-issue: #e0a43b;
-    --c-other: #8b6fe0;
-    --shadow: 0 1px 2px rgba(20,40,30,.05), 0 18px 40px rgba(20,40,30,.07);
+    --accent-soft: #ebeefc;
+    --gold: #d8a838;
+    --silver: #9aa0b8;
+    --bronze: #bd7d4d;
+    --c-pr: var(--indigo);
+    --c-review: var(--blue);
+    --c-issue: #d8a838;
+    --c-other: var(--purple);
+    --shadow: 0 1px 2px rgba(20,25,70,.05), 0 18px 40px rgba(20,25,70,.08);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #0b0e0c;
-      --panel: #12160f;
-      --panel: #121712;
-      --border: #232a24;
-      --text: #eaf0ec;
-      --muted: #93a29a;
-      --faint: #6b7a72;
-      --accent: #34c47c;
-      --accent-ink: #06110b;
-      --accent-soft: #14251b;
-      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 24px 50px rgba(0,0,0,.45);
+      --bg: #080a1e;
+      --panel: #11142f;
+      --border: #23274d;
+      --text: #eceeff;
+      --muted: #9498c0;
+      --faint: #666aa0;
+      --indigo: #6d84ff;
+      --purple: #a480f5;
+      --blue: #6fa6ff;
+      --accent: var(--indigo);
+      --accent-ink: #080a1e;
+      --accent-soft: #191d42;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 24px 50px rgba(0,0,0,.5);
     }
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
+
+  /* Slow-drifting mesh of brand-color glows behind everything */
+  .mesh {
+    position: fixed; inset: 0; z-index: -2; overflow: hidden; pointer-events: none;
+  }
+  .mesh i {
+    position: absolute; border-radius: 50%; filter: blur(60px); opacity: .35;
+    animation: drift 26s ease-in-out infinite;
+  }
+  .mesh i:nth-child(1) { width: 46vw; height: 46vw; left: -10vw; top: -14vw; background: var(--indigo); animation-duration: 24s; }
+  .mesh i:nth-child(2) { width: 40vw; height: 40vw; right: -12vw; top: -6vw; background: var(--purple); animation-duration: 30s; animation-delay: -6s; }
+  .mesh i:nth-child(3) { width: 42vw; height: 42vw; left: 20vw; bottom: -18vw; background: var(--blue); animation-duration: 28s; animation-delay: -12s; }
+  @media (prefers-color-scheme: dark) { .mesh i { opacity: .28; } }
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(3vw, 2vw) scale(1.08); }
+    66% { transform: translate(-2vw, 3vw) scale(0.96); }
+  }
+
   body {
     font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background:
-      radial-gradient(1200px 600px at 50% -300px, var(--accent-soft), transparent 70%),
-      var(--bg);
+    background: var(--bg);
     color: var(--text);
     margin: 0;
     padding: 2.75rem 1rem 4rem;
     line-height: 1.45;
   }
   .wrap { max-width: 760px; margin: 0 auto; }
-  .brand { display: flex; align-items: center; gap: .6rem; margin-bottom: .35rem; }
-  .brand .dot {
-    width: 30px; height: 30px; border-radius: 9px;
-    background: linear-gradient(135deg, var(--accent), #0e7a41);
-    display: grid; place-items: center; color: #fff; font-size: 1rem;
-    box-shadow: 0 4px 12px rgba(31,157,87,.35);
+
+  /* Header, centered, with the animated network mark up top */
+  .hero { text-align: center; margin-bottom: 1.6rem; }
+  .brand { display: flex; flex-direction: column; align-items: center; gap: .5rem; margin-bottom: .6rem; }
+  .mark { width: 84px; height: 64px; overflow: visible; }
+  .mark .edge {
+    fill: none; stroke-width: 6.5; stroke-linecap: round; stroke-linejoin: round;
+    stroke-dasharray: 56; stroke-dashoffset: 56;
+    animation: draw 2.6s ease-out forwards, glow 4.5s ease-in-out 2.6s infinite;
   }
-  .brand b { font-size: 1.05rem; letter-spacing: -.01em; }
-  h1 { margin: 0; font-size: 1.9rem; letter-spacing: -.02em; font-weight: 750; }
-  .sub { color: var(--muted); margin: .3rem 0 1.6rem; font-size: .9rem; }
+  .mark .e1 { stroke: var(--navy); animation-delay: 0s, 2.6s; }
+  .mark .e2 { stroke: var(--indigo); animation-delay: .18s, 2.78s; }
+  .mark .e3 { stroke: var(--purple); animation-delay: .36s, 2.96s; }
+  .mark .e4 { stroke: var(--blue); animation-delay: .54s, 3.14s; }
+  @media (prefers-color-scheme: dark) { .mark .e1 { stroke: var(--indigo); } }
+  .mark .node { animation: pulse 3.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+  .mark .n1 { fill: var(--navy); animation-delay: 0s; }
+  .mark .n2 { fill: var(--purple); animation-delay: .3s; }
+  .mark .n3 { fill: var(--purple); animation-delay: .6s; }
+  .mark .n4 { fill: var(--blue); animation-delay: .9s; }
+  .mark .n5 { fill: var(--navy); animation-delay: 1.2s; }
+  @media (prefers-color-scheme: dark) { .mark .n1, .mark .n5 { fill: var(--indigo); } }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes glow {
+    0%, 100% { filter: drop-shadow(0 0 0 transparent); }
+    50% { filter: drop-shadow(0 0 4px currentColor); }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.28); opacity: .75; }
+  }
+
+  .brand b { font-size: 1.15rem; letter-spacing: -.01em; }
+  .brand .parent {
+    font-size: .72rem; color: var(--faint); text-decoration: none;
+    padding: .15rem .55rem; border: 1px solid var(--border); border-radius: 999px;
+  }
+  .brand .parent:hover { color: var(--accent); border-color: var(--accent); }
+  h1 {
+    margin: 0; font-size: 2.1rem; letter-spacing: -.02em; font-weight: 750;
+    background: linear-gradient(100deg, var(--navy) 0%, var(--indigo) 45%, var(--purple) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  @media (prefers-color-scheme: dark) {
+    h1 { background: linear-gradient(100deg, var(--indigo) 0%, var(--purple) 60%, var(--blue) 100%); -webkit-background-clip: text; background-clip: text; }
+  }
+  .sub { color: var(--muted); margin: .4rem 0 0; font-size: .9rem; }
   .sub .live { color: var(--accent); font-weight: 600; }
 
-  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; margin-bottom: 1.6rem; }
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; margin: 1.8rem 0 1.6rem; }
   .tile {
     background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
     padding: .85rem .9rem; box-shadow: var(--shadow);
@@ -415,6 +479,7 @@ export function renderHtml(users, meta) {
 
   @media (max-width: 560px) {
     h1 { font-size: 1.5rem; }
+    .mark { width: 60px; height: 46px; }
     .tiles { grid-template-columns: repeat(2, 1fr); }
     .sparkwrap, .spark { display: none; }
     .row { grid-template-columns: 1.4rem 1.9rem 1fr auto; gap: .6rem; }
@@ -424,10 +489,27 @@ export function renderHtml(users, meta) {
 </style>
 </head>
 <body>
+  <div class="mesh"><i></i><i></i><i></i></div>
   <div class="wrap">
-    <div class="brand"><span class="dot">🦗</span><b>Mantis</b></div>
-    <h1>Contributor Leaderboard</h1>
-    <p class="sub">${meta.repos.length} repositories · <span class="live">refreshes hourly</span> · updated ${updated}</p>
+    <div class="hero">
+      <div class="brand">
+        <svg class="mark" viewBox="0 0 100 74" aria-hidden="true">
+          <path class="edge e1" d="M14 60 L30 16" />
+          <path class="edge e2" d="M30 16 L50 38" />
+          <path class="edge e3" d="M50 38 L70 16" />
+          <path class="edge e4" d="M70 16 L86 60" />
+          <circle class="node n1" cx="14" cy="60" r="7"/>
+          <circle class="node n2" cx="30" cy="16" r="7"/>
+          <circle class="node n3" cx="50" cy="38" r="6"/>
+          <circle class="node n4" cx="70" cy="16" r="7"/>
+          <circle class="node n5" cx="86" cy="60" r="7"/>
+        </svg>
+        <b>Mantis</b>
+        <a class="parent" href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">mantis.csail.mit.edu ↗</a>
+      </div>
+      <h1>Contributor Leaderboard</h1>
+      <p class="sub">${meta.repos.length} repositories · <span class="live">refreshes hourly</span> · updated ${updated}</p>
+    </div>
 
     <div class="tiles">${tiles}</div>
 
@@ -446,7 +528,8 @@ export function renderHtml(users, meta) {
 
     <footer>
       Ranked by points earned in the trailing window, not lifetime totals — it's about who's active now.<br/>
-      rules v${meta.rules_version} · read-only, GitHub activity + approved manual credits · <a href="admin.html">log a contribution →</a>
+      rules v${meta.rules_version} · read-only, GitHub activity + approved manual credits · <a href="admin.html">log a contribution →</a><br/>
+      Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
     </footer>
   </div>
 </body>
