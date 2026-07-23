@@ -16,25 +16,25 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **2067** | 107 | 0 | 0 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1110** | 151 | 161 | 0 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **360** | 97 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **323** | 166 | 23 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1766** | 109 | 0 | 0 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1005** | 151 | 161 | 0 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **360** | 96 | 6 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **295** | 167 | 21 | 0 |
 | #5 | [@6namdang](https://github.com/6namdang) | **122** | 9 | 1 | 0 |
-| #6 | [@vinays6](https://github.com/vinays6) | **119** | 30 | 15 | 0 |
-| #7 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
-| #8 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
-| #9 | [@charleywolf](https://github.com/charleywolf) | **90** | 32 | 3 | 0 |
-| #10 | [@dhedhialy](https://github.com/dhedhialy) | **81** | 21 | 3 | 0 |
+| #6 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
+| #7 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **80** | 32 | 3 | 0 |
+| #9 | [@rohan-va](https://github.com/rohan-va) | **73** | 53 | 22 | 0 |
+| #10 | [@dhedhialy](https://github.com/dhedhialy) | **71** | 21 | 3 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **2139** | 107 | 0 | 0 |
+| 🥇 | [@chreia](https://github.com/chreia) | **2195** | 109 | 0 | 0 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1468** | 151 | 161 | 0 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **866** | 97 | 6 | 0 |
-| #4 | [@AnasMaar](https://github.com/AnasMaar) | **474** | 166 | 23 | 0 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **866** | 96 | 6 | 0 |
+| #4 | [@AnasMaar](https://github.com/AnasMaar) | **490** | 167 | 21 | 0 |
 | #5 | [@alex-d4v](https://github.com/alex-d4v) | **153** | 38 | 7 | 0 |
 | #6 | [@vinays6](https://github.com/vinays6) | **139** | 30 | 15 | 0 |
 | #7 | [@6namdang](https://github.com/6namdang) | **122** | 9 | 1 | 0 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@PranavaKCode](https://github.com/PranavaKCode) | **105** | 103 | 1 | 0 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **102** | 7 | 0 | 0 |
 
-_Last updated: Wed, 22 Jul 2026 22:12:03 GMT_
+_Last updated: Thu, 23 Jul 2026 00:07:38 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
