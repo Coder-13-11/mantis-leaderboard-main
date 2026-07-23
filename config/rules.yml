@@ -132,6 +132,24 @@ issues:
   duplicate_labels: ["duplicate", "wontfix", "invalid"]
 
 # -----------------------------------------------------------------------------
+# Manual / off-platform contributions
+# -----------------------------------------------------------------------------
+# Credit for work that never touches the GitHub API — Discord support, blog
+# posts, demos, mentorship, docs hosted elsewhere. Entries live in
+# `data/manual.yml` and count ONLY when approved. Each category has a default
+# point value here; an individual entry may override it with its own `points`.
+# Add or rename categories freely — the dashboard and admin console read this.
+manual_contributions:
+  categories:
+    discord_support: { points: 10, label: "Discord support",  emoji: "💬" }
+    blog_post:       { points: 40, label: "Blog post",         emoji: "✍️" }
+    demo:            { points: 30, label: "Demo / showcase",   emoji: "🎬" }
+    documentation:   { points: 25, label: "Docs (off-repo)",   emoji: "📚" }
+    mentorship:      { points: 35, label: "Mentorship",        emoji: "🧭" }
+    event:           { points: 20, label: "Event / talk",      emoji: "🎤" }
+    other:           { points: 10, label: "Other",             emoji: "⭐" }
+
+# -----------------------------------------------------------------------------
 # Display
 # -----------------------------------------------------------------------------
 display:

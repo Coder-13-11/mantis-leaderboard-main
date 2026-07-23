@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mantis · Log a Contribution</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f7f5; --panel: #fff; --border: #e5e9e5; --text: #14181a;
+    --muted: #62706a; --faint: #97a39d; --accent: #1f9d57; --accent-ink: #fff;
+    --accent-soft: #e7f5ec; --danger: #d1495b;
+    --shadow: 0 1px 2px rgba(20,40,30,.05), 0 18px 40px rgba(20,40,30,.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b0e0c; --panel:#121712; --border:#232a24; --text:#eaf0ec;
+      --muted:#93a29a; --faint:#6b7a72; --accent:#34c47c; --accent-ink:#06110b;
+      --accent-soft:#14251b; --shadow:0 1px 2px rgba(0,0,0,.3), 0 24px 50px rgba(0,0,0,.45); }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background: radial-gradient(1200px 600px at 50% -300px,var(--accent-soft),transparent 70%),var(--bg);
+    color: var(--text); margin: 0; padding: 2.5rem 1rem 4rem; line-height: 1.45; }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  .brand { display:flex; align-items:center; gap:.6rem; margin-bottom:.35rem; }
+  .brand .dot { width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#0e7a41);
+    display:grid;place-items:center;color:#fff;font-size:1rem;box-shadow:0 4px 12px rgba(31,157,87,.35); }
+  .brand b { font-size:1.05rem; }
+  h1 { margin:0; font-size:1.6rem; letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin:.3rem 0 1.6rem; font-size:.9rem; }
+  .sub a { color: var(--accent); }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:16px;
+    padding:1.4rem; box-shadow:var(--shadow); margin-bottom:1.3rem; }
+  .card h2 { margin:0 0 1rem; font-size:1rem; }
+  label.f { display:block; font-size:.78rem; font-weight:600; color:var(--muted); margin:.85rem 0 .3rem; text-transform:uppercase; letter-spacing:.05em; }
+  input, select, textarea { width:100%; padding:.6rem .7rem; border:1px solid var(--border);
+    border-radius:10px; background:var(--bg); color:var(--text); font:inherit; font-size:.9rem; }
+  textarea { resize:vertical; min-height:70px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; }
+  .chk { display:flex; align-items:center; gap:.5rem; margin-top:1rem; font-size:.85rem; color:var(--muted); }
+  .chk input { width:auto; }
+  button { cursor:pointer; font:inherit; font-weight:650; border-radius:10px; border:1px solid transparent; padding:.6rem 1.1rem; font-size:.88rem; }
+  .primary { background:var(--accent); color:var(--accent-ink); margin-top:1.2rem; }
+  .primary:hover { filter:brightness(1.05); }
+  .ghost { background:transparent; border-color:var(--border); color:var(--text); }
+  .row { display:flex; align-items:center; gap:.7rem; padding:.65rem .2rem; border-bottom:1px solid var(--border); }
+  .row:last-child { border-bottom:0; }
+  .row img { width:32px;height:32px;border-radius:50%;border:1px solid var(--border); }
+  .row .info { flex:1; min-width:0; }
+  .row .who { font-weight:650; font-size:.9rem; }
+  .row .desc { color:var(--muted); font-size:.76rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .badge { font-size:.66rem; color:var(--muted); background:var(--accent-soft); border-radius:999px; padding:.1rem .5rem; }
+  .badge.pending { background:transparent; border:1px dashed var(--faint); color:var(--faint); }
+  .pts { font-weight:800; color:var(--accent); font-size:.9rem; }
+  .del { background:none; border:none; color:var(--faint); font-size:1.1rem; padding:.1rem .3rem; }
+  .del:hover { color:var(--danger); }
+  .empty { color:var(--faint); font-size:.85rem; text-align:center; padding:1.2rem 0; }
+  .bar { display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1rem; }
+  #yaml { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.78rem; min-height:150px; margin-top:1rem; }
+  .note { font-size:.78rem; color:var(--muted); background:var(--accent-soft); border-radius:10px; padding:.7rem .85rem; margin-top:1rem; }
+  .note code { background:rgba(0,0,0,.06); padding:.05rem .3rem; border-radius:5px; }
+  .toast { position:fixed; bottom:1.2rem; left:50%; transform:translateX(-50%);
+    background:var(--accent); color:var(--accent-ink); padding:.6rem 1.1rem; border-radius:10px;
+    font-size:.85rem; font-weight:650; opacity:0; transition:opacity .25s; pointer-events:none; }
+  .toast.show { opacity:1; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="dot">🦗</span><b>Mantis</b></div>
+    <h1>Log a Contribution</h1>
+    <p class="sub">Credit off-GitHub work — Discord help, blog posts, demos, mentorship. <a href="index.html">← back to leaderboard</a></p>
+
+    <div class="card">
+      <h2>New entry</h2>
+      <label class="f" for="login">GitHub username</label>
+      <input id="login" placeholder="octocat" autocomplete="off"/>
+      <div class="grid2">
+        <div>
+          <label class="f" for="type">Type</label>
+          <select id="type"></select>
+        </div>
+        <div>
+          <label class="f" for="points">Points</label>
+          <input id="points" type="number" min="0"/>
+        </div>
+      </div>
+      <label class="f" for="desc">Description</label>
+      <input id="desc" placeholder="Answered setup questions in #help all week"/>
+      <div class="grid2">
+        <div>
+          <label class="f" for="date">Date</label>
+          <input id="date" type="date"/>
+        </div>
+        <div>
+          <label class="f" for="source">Source link (optional)</label>
+          <input id="source" placeholder="https://…"/>
+        </div>
+      </div>
+      <label class="chk"><input id="approved" type="checkbox" checked/> Approved (counts immediately once committed)</label>
+      <button class="primary" onclick="addEntry()">Add to queue</button>
+    </div>
+
+    <div class="card">
+      <h2>Queued entries <span id="count" class="badge"></span></h2>
+      <div id="list"></div>
+      <div class="bar">
+        <button class="primary" onclick="buildYaml()">Generate manual.yml</button>
+        <button class="ghost" onclick="clearAll()">Clear queue</button>
+      </div>
+      <div class="note">
+        This console runs entirely in your browser — nothing is sent anywhere. To make points count:
+        <b>Generate</b> → copy or download → replace <code>data/manual.yml</code> in the repo → commit.
+        The next hourly run awards the points. Approval = <code>approved: true</code> in the committed file.
+      </div>
+      <textarea id="yaml" placeholder="Generated YAML appears here…" style="display:none"></textarea>
+      <div class="bar" id="yamlbar" style="display:none">
+        <button class="ghost" onclick="copyYaml()">Copy</button>
+        <button class="ghost" onclick="downloadYaml()">Download manual.yml</button>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+<script>
+// Keep these in sync with `manual_contributions.categories` in config/rules.yml.
+const CATEGORIES = {
+  discord_support: { points: 10, label: "Discord support",  emoji: "💬" },
+  blog_post:       { points: 40, label: "Blog post",         emoji: "✍️" },
+  demo:            { points: 30, label: "Demo / showcase",   emoji: "🎬" },
+  documentation:   { points: 25, label: "Docs (off-repo)",   emoji: "📚" },
+  mentorship:      { points: 35, label: "Mentorship",        emoji: "🧭" },
+  event:           { points: 20, label: "Event / talk",      emoji: "🎤" },
+  other:           { points: 10, label: "Other",             emoji: "⭐" },
+};
+const KEY = "mantis-manual-queue";
+const $ = (id) => document.getElementById(id);
+let queue = JSON.parse(localStorage.getItem(KEY) || "[]");
+
+// Populate the type dropdown + defaults.
+const typeSel = $("type");
+for (const [k, v] of Object.entries(CATEGORIES)) {
+  const o = document.createElement("option");
+  o.value = k; o.textContent = `${v.emoji} ${v.label}`;
+  typeSel.appendChild(o);
+}
+function syncPoints() { $("points").value = CATEGORIES[typeSel.value].points; }
+typeSel.addEventListener("change", syncPoints);
+syncPoints();
+$("date").value = new Date().toISOString().slice(0, 10);
+
+function toast(msg) {
+  const t = $("toast"); t.textContent = msg; t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 1600);
+}
+function save() { localStorage.setItem(KEY, JSON.stringify(queue)); render(); }
+
+function addEntry() {
+  const login = $("login").value.trim().replace(/^@/, "");
+  if (!login) { toast("Username required"); return; }
+  const type = typeSel.value;
+  const points = parseInt($("points").value, 10);
+  queue.push({
+    login, type,
+    points: Number.isFinite(points) ? points : CATEGORIES[type].points,
+    description: $("desc").value.trim(),
+    date: $("date").value,
+    source: $("source").value.trim(),
+    approved: $("approved").checked,
+  });
+  $("login").value = ""; $("desc").value = ""; $("source").value = "";
+  save();
+  toast("Added");
+}
+function removeEntry(i) { queue.splice(i, 1); save(); }
+function toggleApproved(i) { queue[i].approved = !queue[i].approved; save(); }
+function clearAll() { if (confirm("Clear the whole queue?")) { queue = []; save(); } }
+
+function render() {
+  $("count").textContent = queue.length ? queue.length : "";
+  const list = $("list");
+  if (!queue.length) { list.innerHTML = '<div class="empty">No entries yet. Add one above.</div>'; return; }
+  list.innerHTML = queue.map((c, i) => {
+    const cat = CATEGORIES[c.type] || { emoji: "⭐", label: c.type };
+    return `<div class="row">
+      <img src="https://github.com/${encodeURIComponent(c.login)}.png?size=48" alt=""/>
+      <div class="info">
+        <div class="who">@${escapeHtml(c.login)} · <span class="badge ${c.approved ? "" : "pending"}" onclick="toggleApproved(${i})" style="cursor:pointer">${c.approved ? "approved" : "pending"}</span></div>
+        <div class="desc">${cat.emoji} ${escapeHtml(cat.label)}${c.description ? " · " + escapeHtml(c.description) : ""}</div>
+      </div>
+      <span class="pts">+${c.points}</span>
+      <button class="del" title="Remove" onclick="removeEntry(${i})">✕</button>
+    </div>`;
+  }).join("");
+}
+function escapeHtml(s) { return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+// Emit YAML matching data/manual.yml's schema.
+function yamlStr(s) { return '"' + String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"') + '"'; }
+function buildYaml() {
+  if (!queue.length) { toast("Queue is empty"); return; }
+  const today = new Date().toISOString().slice(0, 10);
+  let out = "# Generated by admin.html on " + today + "\n";
+  out += "# Replace data/manual.yml with this file, then commit.\n\n";
+  out += "contributions:\n";
+  for (const c of queue) {
+    out += "  - login: " + yamlStr(c.login) + "\n";
+    out += "    type: " + c.type + "\n";
+    out += "    points: " + c.points + "\n";
+    if (c.description) out += "    description: " + yamlStr(c.description) + "\n";
+    if (c.date) out += "    date: " + c.date + "\n";
+    if (c.source) out += "    source: " + yamlStr(c.source) + "\n";
+    out += "    approved: " + (c.approved ? "true" : "false") + "\n";
+  }
+  const ta = $("yaml"); ta.value = out; ta.style.display = "block";
+  $("yamlbar").style.display = "flex";
+}
+function copyYaml() { navigator.clipboard.writeText($("yaml").value).then(() => toast("Copied")); }
+function downloadYaml() {
+  const blob = new Blob([$("yaml").value], { type: "text/yaml" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "manual.yml"; a.click();
+  URL.revokeObjectURL(a.href);
+}
+render();
+</script>
+</body>
+</html>

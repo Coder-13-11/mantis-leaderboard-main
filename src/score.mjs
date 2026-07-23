@@ -70,9 +70,10 @@ function userOf(users, login) {
       login,
       total: 0,
       days: {},
-      breakdown: { pr: 0, review: 0, issue: 0 },
-      counts: { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0 },
+      breakdown: { pr: 0, review: 0, issue: 0, other: 0 },
+      counts: { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0, manual: 0 },
       sizes: { XS: 0, S: 0, M: 0, L: 0, XL: 0 },
+      contributions: [], // approved manual/off-GitHub entries, for highlights
     };
   }
   return users[login];
@@ -87,7 +88,7 @@ function addPoints(user, category, points, earnedAt) {
   user.days[day] = (user.days[day] || 0) + points;
 }
 
-export function score(activity, rules) {
+export function score(activity, rules, manual = {}) {
   const users = {};
   const pr = rules.pull_requests;
   const rv = rules.reviews;
@@ -194,6 +195,34 @@ export function score(activity, rules) {
       addPoints(u, "issue", bonus, i.closedAt);
       u.counts.fixed_bonuses += 1;
     }
+  }
+
+  // --- Manual / off-GitHub contributions (approval-gated) ---
+  // Only entries with `approved: true` score. Points come from the entry's own
+  // `points`, or the category default in rules.manual_contributions. Dated on
+  // the day the work happened so they flow into the trailing windows like
+  // everything else.
+  const catDefaults = rules.manual_contributions?.categories || {};
+  for (const c of manual?.contributions || []) {
+    if (!c || c.approved !== true) continue;
+    const login = c.login;
+    if (!login || excludeLogins.has(login)) continue;
+    const pts = Number.isFinite(c.points)
+      ? c.points
+      : catDefaults[c.type]?.points ?? 0;
+    if (!pts) continue;
+    const when = c.date ? `${c.date}T12:00:00Z` : new Date().toISOString();
+
+    const u = userOf(users, login);
+    addPoints(u, "other", pts, when);
+    u.counts.manual += 1;
+    u.contributions.push({
+      type: c.type,
+      points: pts,
+      description: c.description || "",
+      date: c.date || when.slice(0, 10),
+      source: c.source || null,
+    });
   }
 
   // Rank by the primary trailing window (first entry in windows_days), not

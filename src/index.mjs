@@ -8,7 +8,7 @@
 // Which repos to track lives in config/rules.yml (`repos:`), not here.
 // -----------------------------------------------------------------------------
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import yaml from "js-yaml";
@@ -43,13 +43,23 @@ async function main() {
   const activity = await fetchActivity(token, rules.repos, rules.lookback_days);
   console.log(`  ${activity.pullRequests.length} merged PRs, ${activity.issues.length} issues`);
 
-  const users = score(activity, rules);
+  // Manual / off-GitHub contributions (approval-gated). Optional file.
+  let manual = { contributions: [] };
+  const manualPath = join(ROOT, "data/manual.yml");
+  if (existsSync(manualPath)) {
+    manual = yaml.load(readFileSync(manualPath, "utf8")) || { contributions: [] };
+  }
+  const approvedManual = (manual.contributions || []).filter((c) => c?.approved === true).length;
+  console.log(`  ${approvedManual} approved manual contributions`);
+
+  const users = score(activity, rules, manual);
   console.log(`  scored ${users.length} contributors`);
 
   const meta = {
     repos: rules.repos,
     lookback_days: rules.lookback_days,
     windows_days: rules.display?.windows_days || [7, 14],
+    manual_categories: rules.manual_contributions?.categories || {},
     rules_version: rules.version,
   };
 
