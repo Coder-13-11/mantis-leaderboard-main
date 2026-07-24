@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@vinays6](https://github.com/vinays6) | **119** | 30 | 15 | 2 |
 | #10 | [@gconsigli](https://github.com/gconsigli) | **115** | 17 | 17 | 53 |
 
-_Last updated: Fri, 24 Jul 2026 21:12:45 GMT_
+_Last updated: Fri, 24 Jul 2026 23:09:04 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
