@@ -16,14 +16,14 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **916** | 117 | 0 | 39 |
+| 🥇 | [@chreia](https://github.com/chreia) | **966** | 118 | 0 | 45 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **870** | 152 | 161 | 269 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **462** | 105 | 6 | 12 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **233** | 40 | 7 | 195 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **220** | 167 | 21 | 17 |
-| #6 | [@rohan-va](https://github.com/rohan-va) | **95** | 53 | 22 | 89 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **94** | 33 | 3 | 52 |
-| #8 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **94** | 7 | 0 | 0 |
+| #6 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
+| #7 | [@rohan-va](https://github.com/rohan-va) | **95** | 53 | 22 | 89 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **94** | 33 | 3 | 52 |
 | #9 | [@6namdang](https://github.com/6namdang) | **80** | 9 | 1 | 7 |
 | #10 | [@dhedhialy](https://github.com/dhedhialy) | **73** | 21 | 3 | 7 |
 
@@ -31,18 +31,18 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **1476** | 152 | 161 | 269 |
-| 🥈 | [@chreia](https://github.com/chreia) | **1460** | 117 | 0 | 39 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1510** | 118 | 0 | 45 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1476** | 152 | 161 | 269 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **720** | 105 | 6 | 12 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **454** | 167 | 21 | 17 |
 | #5 | [@alex-d4v](https://github.com/alex-d4v) | **294** | 40 | 7 | 195 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **194** | 33 | 3 | 52 |
-| #7 | [@6namdang](https://github.com/6namdang) | **139** | 9 | 1 | 7 |
-| #8 | [@rohan-va](https://github.com/rohan-va) | **136** | 53 | 22 | 89 |
-| #9 | [@vinays6](https://github.com/vinays6) | **119** | 30 | 15 | 2 |
-| #10 | [@LucaVor](https://github.com/LucaVor) | **101** | 109 | 6 | 4 |
+| #7 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
+| #8 | [@6namdang](https://github.com/6namdang) | **139** | 9 | 1 | 7 |
+| #9 | [@rohan-va](https://github.com/rohan-va) | **136** | 53 | 22 | 89 |
+| #10 | [@vinays6](https://github.com/vinays6) | **119** | 30 | 15 | 2 |
 
-_Last updated: Sat, 25 Jul 2026 05:53:18 GMT_
+_Last updated: Sat, 25 Jul 2026 08:16:31 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
