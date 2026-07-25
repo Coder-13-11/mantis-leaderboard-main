@@ -18,8 +18,8 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **966** | 62 | 0 | 23 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **870** | 18 | 31 | 19 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **462** | 23 | 0 | 1 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **248** | 3 | 1 | 39 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **494** | 24 | 0 | 1 |
+| #4 | [@alex-d4v](https://github.com/alex-d4v) | **254** | 3 | 1 | 39 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **220** | 10 | 1 | 1 |
 | #6 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **95** | 4 | 0 | 7 |
@@ -33,16 +33,16 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1510** | 104 | 0 | 34 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1476** | 55 | 40 | 38 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **720** | 44 | 0 | 1 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **752** | 45 | 0 | 1 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **454** | 26 | 2 | 1 |
-| #5 | [@alex-d4v](https://github.com/alex-d4v) | **309** | 4 | 1 | 52 |
+| #5 | [@alex-d4v](https://github.com/alex-d4v) | **315** | 4 | 1 | 52 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **194** | 6 | 0 | 12 |
 | #7 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 | #8 | [@6namdang](https://github.com/6namdang) | **139** | 6 | 0 | 5 |
 | #9 | [@rohan-va](https://github.com/rohan-va) | **136** | 4 | 1 | 13 |
 | #10 | [@vinays6](https://github.com/vinays6) | **119** | 3 | 4 | 0 |
 
-_Last updated: Sat, 25 Jul 2026 16:11:27 GMT_
+_Last updated: Sat, 25 Jul 2026 18:04:13 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
