@@ -59,6 +59,7 @@ function userOf(users, login) {
       login,
       total: 0,
       days: {},
+      dayCounts: {}, // day -> { prs, reviews, confirmed_issues, fixed_bonuses, manual }
       breakdown: { pr: 0, review: 0, issue: 0, other: 0 },
       counts: { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0, manual: 0 },
       sizes: { XS: 0, S: 0, M: 0, L: 0, XL: 0 },
@@ -75,6 +76,21 @@ function addPoints(user, category, points, earnedAt) {
   user.breakdown[category] += points;
   const day = dayKey(earnedAt);
   user.days[day] = (user.days[day] || 0) + points;
+}
+
+// Bump a lifetime count AND the same count bucketed by the day it happened,
+// so trailing windows (7-day, 14-day, ...) can be computed for counts too --
+// not just for points. Without this, the "PRs / Reviews / Issues" numbers
+// shown next to a windowed point total are actually all-time counts (over
+// the full `lookback_days`), which is what was making the 7/14-day views
+// look wrong.
+function addCount(user, category, earnedAt) {
+  user.counts[category] += 1;
+  const day = dayKey(earnedAt);
+  if (!user.dayCounts[day]) {
+    user.dayCounts[day] = { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0, manual: 0 };
+  }
+  user.dayCounts[day][category] += 1;
 }
 
 export function score(activity, rules, manual = {}) {
@@ -140,7 +156,7 @@ export function score(activity, rules, manual = {}) {
 
     const u = userOf(users, login);
     addPoints(u, "pr", points, p.mergedAt);
-    u.counts.prs += 1;
+    addCount(u, "prs", p.mergedAt);
     u.sizes[bucket] += 1;
 
     // --- Reviews on this PR (anti-spam) ---
@@ -161,7 +177,7 @@ export function score(activity, rules, manual = {}) {
       creditedReviewers.add(reviewer);
       const ru = userOf(users, reviewer);
       addPoints(ru, "review", rpts, r.submittedAt);
-      ru.counts.reviews += 1;
+      addCount(ru, "reviews", r.submittedAt);
     }
   }
 
@@ -191,12 +207,12 @@ export function score(activity, rules, manual = {}) {
 
     const u = userOf(users, login);
     addPoints(u, "issue", basePoints, i.createdAt);
-    u.counts.confirmed_issues += 1; // "valid issues created"
+    addCount(u, "confirmed_issues", i.createdAt); // "valid issues created"
 
     // Small bonus once it's closed as completed (someone acted on it).
     if (i.closed && i.stateReason !== "NOT_PLANNED" && (is.closed_bonus || 0) > 0) {
       addPoints(u, "issue", is.closed_bonus, i.closedAt || i.createdAt);
-      u.counts.fixed_bonuses += 1;
+      addCount(u, "fixed_bonuses", i.closedAt || i.createdAt);
     }
   }
 
@@ -218,7 +234,7 @@ export function score(activity, rules, manual = {}) {
 
     const u = userOf(users, login);
     addPoints(u, "other", pts, when);
-    u.counts.manual += 1;
+    addCount(u, "manual", when);
     u.contributions.push({
       type: c.type,
       points: pts,
@@ -233,11 +249,17 @@ export function score(activity, rules, manual = {}) {
   // configured window (e.g. 7-day, 14-day) gets computed so the leaderboard
   // can show more than one at once.
   const windowsDays = rules.display?.windows_days || [7, 14];
+  const countCategories = ["prs", "reviews", "confirmed_issues", "fixed_bonuses", "manual"];
   for (const u of Object.values(users)) {
     u.windows = {};
+    u.windowCounts = {};
     for (const n of windowsDays) {
       const days = recentDays(n);
       u.windows[n] = days.reduce((sum, day) => sum + (u.days[day] || 0), 0);
+      u.windowCounts[n] = countCategories.reduce((acc, cat) => {
+        acc[cat] = days.reduce((sum, day) => sum + (u.dayCounts[day]?.[cat] || 0), 0);
+        return acc;
+      }, {});
     }
     u.rolling_total = u.windows[windowsDays[0]];
   }

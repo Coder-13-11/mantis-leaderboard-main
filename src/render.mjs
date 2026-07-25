@@ -58,10 +58,10 @@ export function renderReadmeTable(users, topN, windowsDays) {
     const ranked = rankedFor(users, days, primary);
     const rows = ranked
       .slice(0, topN)
-      .map(
-        (u, idx) =>
-          `| ${medal(idx + 1)} | [@${u.login}](https://github.com/${u.login}) | **${u.windows[days] || 0}** | ${u.counts.prs} | ${u.counts.reviews} | ${u.counts.confirmed_issues} |`
-      )
+      .map((u, idx) => {
+        const c = u.windowCounts?.[days] || {};
+        return `| ${medal(idx + 1)} | [@${u.login}](https://github.com/${u.login}) | **${u.windows[days] || 0}** | ${c.prs || 0} | ${c.reviews || 0} | ${c.confirmed_issues || 0} |`;
+      })
       .join("\n");
     return [
       `#### ${windowLabel(days)}`,
@@ -125,13 +125,14 @@ function sparkline(daysMap, dayKeys) {
 
 function podiumCard(u, days, place) {
   const pts = u.windows?.[days] || 0;
+  const c = u.windowCounts?.[days] || {};
   return `
     <div class="pod pod-${place}">
       <div class="pod-badge">${medal(place)}</div>
       <img class="pod-avatar" src="https://github.com/${esc(u.login)}.png?size=120" alt="" loading="lazy"/>
       <a class="pod-handle" href="https://github.com/${esc(u.login)}">${esc(u.login)}</a>
       <div class="pod-pts">${pts}<span>pts</span></div>
-      <div class="pod-meta">${u.counts.prs} PRs · ${u.counts.reviews} reviews</div>
+      <div class="pod-meta">${c.prs || 0} PRs · ${c.reviews || 0} reviews</div>
     </div>`;
 }
 
@@ -150,13 +151,14 @@ function listRows(ranked, days, dayKeys) {
     .map((u, i) => {
       const rank = i + 4;
       const pts = u.windows?.[days] || 0;
+      const c = u.windowCounts?.[days] || {};
       return `
         <li class="row">
           <span class="rank">${rank}</span>
           <img class="avatar" src="https://github.com/${esc(u.login)}.png?size=48" alt="" loading="lazy"/>
           <span class="who">
             <a class="handle" href="https://github.com/${esc(u.login)}">${esc(u.login)}</a>
-            <span class="meta">${u.counts.prs} PRs · ${u.counts.reviews} reviews · ${u.counts.confirmed_issues} issues${u.counts.manual ? ` · ${u.counts.manual} community` : ""}</span>
+            <span class="meta">${c.prs || 0} PRs · ${c.reviews || 0} reviews · ${c.confirmed_issues || 0} issues${c.manual ? ` · ${c.manual} community` : ""}</span>
             ${breakdownBar(u.breakdown)}
           </span>
           <span class="sparkwrap">${sparkline(u.days, dayKeys)}</span>
