@@ -16,9 +16,9 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **825** | 54 | 0 | 17 |
+| 🥇 | [@chreia](https://github.com/chreia) | **986** | 60 | 0 | 18 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **706** | 15 | 26 | 13 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **608** | 30 | 0 | 1 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **618** | 31 | 0 | 1 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **254** | 3 | 0 | 44 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **215** | 9 | 1 | 1 |
 | #6 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
@@ -31,9 +31,9 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **1568** | 55 | 45 | 37 |
-| 🥈 | [@chreia](https://github.com/chreia) | **1508** | 104 | 0 | 34 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **709** | 37 | 0 | 1 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1669** | 110 | 0 | 35 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1568** | 55 | 45 | 37 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **719** | 38 | 0 | 1 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **454** | 26 | 2 | 1 |
 | #5 | [@alex-d4v](https://github.com/alex-d4v) | **330** | 4 | 1 | 57 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **194** | 6 | 0 | 12 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@rohan-va](https://github.com/rohan-va) | **156** | 4 | 2 | 13 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Sun, 26 Jul 2026 05:35:48 GMT_
+_Last updated: Sun, 26 Jul 2026 08:28:33 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
