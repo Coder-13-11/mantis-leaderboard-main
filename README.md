@@ -66,7 +66,7 @@ name it `ORG_READ_TOKEN`, paste the token.
 
 **3. Run it.**
 Actions tab → "Update Leaderboard" → Run workflow. After that it runs on its
-own every hour (cron's in `.github/workflows/update-leaderboard.yml`).
+own every 2 hours (cron's in `.github/workflows/update-leaderboard.yml`).
 
 **Where results show up:** there's no GitHub Pages site here — Pages needs a
 paid plan for private repos. Instead every run commits the refreshed numbers
@@ -102,7 +102,7 @@ Actions tab → "Daily Discord Digest" → Run workflow. It posts immediately;
 after that it runs on its own every day at 14:00 UTC (cron in
 `.github/workflows/discord-digest.yml` — edit the cron line for a different time).
 
-It reads the `data/leaderboard.json` the hourly refresh already keeps
+It reads the `data/leaderboard.json` the 2-hourly refresh already keeps
 current, so this job never needs `ORG_READ_TOKEN` — it can only read this
 repo's own committed file and POST to the one webhook URL you gave it.
 
@@ -125,6 +125,52 @@ repo's own committed file and POST to the one webhook URL you gave it.
 The first few PRs a day score full; each further same-day PR is worth a
 shrinking fraction. A normal cadence is unaffected. Tunable under
 `pull_requests.daily_diminishing` in `config/rules.yml`.
+
+### Exactly what counts (the questions people actually ask)
+
+**"Is this the total?"** No single number on this page is an unqualified
+lifetime total:
+- The **"Past 7 Days" / "Past 14 Days" tables** above are trailing windows
+  ending today — this is what ranks people.
+- The **stat tiles on `site/index.html`** ("PRs merged", "Reviews", "Issues
+  logged") are a wider, *unranked* count over the full `lookback_days` window
+  (currently 365 days) — not all-time. Anything older than `lookback_days`
+  was never fetched, so those tiles will always undercount true lifetime
+  activity once a repo is older than that. If you want real all-time totals,
+  raise `lookback_days` in `config/rules.yml` (tradeoff: longer run time, and
+  GitHub's search API caps any single query at 1,000 results).
+
+**"What counts as a review?"** A review only scores if *all* of these hold:
+1. State is **Approved** or **Changes requested** — Commented, Dismissed, and
+   Pending reviews never score, no matter how long the comment is. A `/gemini
+   review`-style comment, or a comment-only pass with no formal
+   approve/request-changes, is real work but isn't counted today.
+2. The review body is at least `reviews.min_body_length` characters (15 by
+   default) — kills empty "LGTM" approvals.
+3. You didn't review your own PR (`exclude_self_review: true`).
+4. Only your **first** scored review on a given PR counts
+   (`one_per_pr_per_reviewer: true`) — this is the one that most understates
+   real effort. If you request changes, the author pushes fixes, and you come
+   back and do a second (or third) full review pass before approving, only
+   that *first* requested-changes review is credited — the follow-up review
+   rounds and the eventual approval add nothing further. On a PR with several
+   review rounds, your "Reviews" count only ever goes up by 1 for it, not by
+   the number of times you actually reviewed it. This is intentional
+   anti-spam (stops trivial re-click farming), but it means a thorough,
+   multi-round reviewer's count will look much lower than their actual GitHub
+   activity — worth knowing before assuming the number is wrong.
+5. Reviews are scored independently of which branch the PR merges into —
+   reviewing a PR that targets a non-tracked branch (outside
+   `pull_requests.count_merges_to`) still earns full review credit, even
+   though the PR author gets no points for it.
+
+**"What counts as a merged PR?"** Only PRs GitHub reports as merged
+(`is:merged`), and only merges into `pull_requests.count_merges_to` branches
+(currently `main`/`master` — a PR merged into any other branch, e.g. a
+`develop` or release branch, scores nothing and isn't counted at all). If any
+tracked repo actually uses a different default/integration branch, PRs into
+it will silently not appear anywhere on this leaderboard until that branch
+name is added to `count_merges_to`.
 
 All of this lives in [`config/rules.yml`](config/rules.yml) — point values,
 size buckets, label names, anti-gaming thresholds. Change a number, open a

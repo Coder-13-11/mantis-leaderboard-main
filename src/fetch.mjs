@@ -57,8 +57,16 @@ async function searchAll(token, searchQuery, nodeFields, pageSize = 50) {
   return out;
 }
 
+// `files` and `reviews` each only fetch one page inline (100 items). That
+// covers the overwhelming majority of PRs, but a very active PR (lots of
+// files touched, or lots of re-review rounds) can have more than that -- so
+// each connection's pageInfo comes along too, and fetchActivity() below
+// follows up with extra paginated requests for any PR that actually needs
+// them. Silently truncating past 100 previously undercounted reviews (and
+// misjudged PR size) on those PRs without any way to tell it had happened.
 const PR_FIELDS = `
   ... on PullRequest {
+    id
     number
     title
     additions
@@ -68,8 +76,12 @@ const PR_FIELDS = `
     author { login }
     repository { nameWithOwner }
     labels(first: 20) { nodes { name } }
-    files(first: 50) { nodes { path } }
-    reviews(first: 20) {
+    files(first: 100) {
+      pageInfo { hasNextPage endCursor }
+      nodes { path }
+    }
+    reviews(first: 100) {
+      pageInfo { hasNextPage endCursor }
       nodes {
         state
         body
@@ -78,6 +90,56 @@ const PR_FIELDS = `
       }
     }
   }`;
+
+// Follow-up pagination for a single PR's `files` or `reviews` connection,
+// for the rare PR whose inline first page (100) wasn't everything. Keeps
+// pulling pages via `node(id:)` until exhausted, then hands back every node.
+async function paginateConnection(token, prId, connection, selection, startCursor) {
+  const query = `
+    query($id: ID!, $cursor: String) {
+      node(id: $id) {
+        ... on PullRequest {
+          ${connection}(first: 100, after: $cursor) {
+            pageInfo { hasNextPage endCursor }
+            nodes { ${selection} }
+          }
+        }
+      }
+    }`;
+  let cursor = startCursor;
+  const out = [];
+  let hasNext = true;
+  while (hasNext) {
+    const data = await graphql(token, query, { id: prId, cursor });
+    const conn = data.node[connection];
+    out.push(...conn.nodes);
+    hasNext = conn.pageInfo.hasNextPage;
+    cursor = conn.pageInfo.endCursor;
+  }
+  return out;
+}
+
+// Top off any PR whose inline `files`/`reviews` page was incomplete, so
+// nothing gets silently dropped just because a PR was unusually large or
+// unusually re-reviewed.
+async function completeTruncatedConnections(token, pullRequests) {
+  for (const p of pullRequests) {
+    if (p.files?.pageInfo?.hasNextPage) {
+      const rest = await paginateConnection(token, p.id, "files", "path", p.files.pageInfo.endCursor);
+      p.files.nodes.push(...rest);
+    }
+    if (p.reviews?.pageInfo?.hasNextPage) {
+      const rest = await paginateConnection(
+        token,
+        p.id,
+        "reviews",
+        "state body submittedAt author { login }",
+        p.reviews.pageInfo.endCursor
+      );
+      p.reviews.nodes.push(...rest);
+    }
+  }
+}
 
 const ISSUE_FIELDS = `
   ... on Issue {
@@ -111,6 +173,8 @@ export async function fetchActivity(token, repos, lookbackDays) {
       ...(await searchAll(token, `repo:${repo} is:issue created:>=${since}`, ISSUE_FIELDS))
     );
   }
+
+  await completeTruncatedConnections(token, pullRequests);
 
   return { pullRequests, issues, since };
 }

@@ -4,7 +4,7 @@ name: Update Leaderboard
 # from scratch and commits the refreshed outputs back to THIS repo only.
 on:
   schedule:
-    - cron: "0 * * * *"      # hourly (UTC). Adjust as needed.
+    - cron: "0 */2 * * *"    # every 2 hours (UTC). Adjust as needed.
   workflow_dispatch: {}       # manual "Run workflow" button
 
 # Only permission needed is to write to THIS repo (for the committed
