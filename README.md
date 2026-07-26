@@ -16,9 +16,9 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **999** | 61 | 0 | 18 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **710** | 15 | 26 | 13 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **634** | 32 | 0 | 1 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1027** | 62 | 0 | 24 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **713** | 15 | 26 | 14 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **646** | 34 | 0 | 1 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **366** | 6 | 0 | 56 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **215** | 9 | 1 | 1 |
 | #6 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
@@ -31,18 +31,18 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1682** | 111 | 0 | 35 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1572** | 55 | 45 | 37 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **735** | 39 | 0 | 1 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1710** | 112 | 0 | 41 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1575** | 55 | 45 | 38 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **747** | 41 | 0 | 1 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **454** | 26 | 2 | 1 |
 | #5 | [@alex-d4v](https://github.com/alex-d4v) | **442** | 7 | 1 | 69 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **194** | 6 | 0 | 12 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **177** | 5 | 2 | 14 |
-| #8 | [@gconsigli](https://github.com/gconsigli) | **171** | 2 | 3 | 18 |
-| #9 | [@6namdang](https://github.com/6namdang) | **171** | 8 | 0 | 5 |
+| #8 | [@6namdang](https://github.com/6namdang) | **174** | 8 | 0 | 6 |
+| #9 | [@gconsigli](https://github.com/gconsigli) | **171** | 2 | 3 | 18 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Sun, 26 Jul 2026 19:12:07 GMT_
+_Last updated: Sun, 26 Jul 2026 23:02:36 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
