@@ -61,6 +61,24 @@ async function main() {
     windows_days: rules.display?.windows_days || [7, 14],
     manual_categories: rules.manual_contributions?.categories || {},
     rules_version: rules.version,
+    // Threaded through so the on-page "what counts" explainer is always
+    // derived from the live config, never hand-written prose that can
+    // silently drift out of sync with config/rules.yml.
+    review_rules: {
+      approved_points: rules.reviews.approved_points,
+      changes_requested_points: rules.reviews.changes_requested_points,
+      min_body_length: rules.reviews.min_body_length,
+      exclude_self_review: rules.reviews.exclude_self_review,
+      one_per_pr_per_reviewer: rules.reviews.one_per_pr_per_reviewer,
+    },
+    pr_rules: {
+      count_merges_to: rules.pull_requests.count_merges_to,
+    },
+    issue_rules: {
+      created_points: rules.issues.created_points,
+      closed_bonus: rules.issues.closed_bonus,
+      duplicate_labels: rules.issues.duplicate_labels,
+    },
   };
 
   mkdirSync(join(ROOT, "data"), { recursive: true });

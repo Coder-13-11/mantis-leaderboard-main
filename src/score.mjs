@@ -113,53 +113,67 @@ export function score(activity, rules, manual = {}) {
 
   for (const p of prs) {
     const login = p.author?.login;
-    if (!login || excludeLogins.has(login)) continue;
-    if (pr.count_merges_to && !pr.count_merges_to.includes(p.baseRefName)) continue;
+    // `count_merges_to` gates whether the PR's OWN authorship points count
+    // (size bonus, first-PR bonus, etc.) -- it says nothing about whether
+    // reviewing this PR was valuable. Reviews are scored unconditionally
+    // below, in their own block, so a reviewer isn't penalized just because
+    // the PR they reviewed happened to target a branch outside
+    // `count_merges_to`. (Previously a single `continue` here skipped both,
+    // so reviews on such PRs silently scored nothing -- harmless today since
+    // every tracked repo's PRs merge to main/master, but a real bug waiting
+    // to bite the moment that's no longer true.)
+    const authorEligible =
+      login &&
+      !excludeLogins.has(login) &&
+      (!pr.count_merges_to || pr.count_merges_to.includes(p.baseRefName));
 
-    // --- PR base points from size (excluding generated files) ---
-    const files = (p.files?.nodes || []).map((f) => f.path);
-    const excludedCount = files.filter((f) => pathIsExcluded(f, excludeRes)).length;
-    const excludedRatio = files.length ? excludedCount / files.length : 0;
-    // Approximate the meaningful diff by discounting excluded-file share.
-    const rawLines = (p.additions || 0) + (p.deletions || 0);
-    const meaningful = Math.round(rawLines * (1 - excludedRatio));
+    if (authorEligible) {
+      // --- PR base points from size (excluding generated files) ---
+      const files = (p.files?.nodes || []).map((f) => f.path);
+      const excludedCount = files.filter((f) => pathIsExcluded(f, excludeRes)).length;
+      const excludedRatio = files.length ? excludedCount / files.length : 0;
+      // Approximate the meaningful diff by discounting excluded-file share.
+      const rawLines = (p.additions || 0) + (p.deletions || 0);
+      const meaningful = Math.round(rawLines * (1 - excludedRatio));
 
-    const bucket = sizeBucket(meaningful, pr.size_buckets);
-    let points = pr.size_points[bucket];
+      const bucket = sizeBucket(meaningful, pr.size_buckets);
+      let points = pr.size_points[bucket];
 
-    // --- Multipliers ---
-    const labels = (p.labels?.nodes || []).map((l) => l.name.toLowerCase());
-    const isDoc = (pr.documentation_labels || []).some((d) =>
-      labels.includes(d.toLowerCase())
-    );
-    if (isDoc) points *= pr.multipliers.documentation;
+      // --- Multipliers ---
+      const labels = (p.labels?.nodes || []).map((l) => l.name.toLowerCase());
+      const isDoc = (pr.documentation_labels || []).some((d) =>
+        labels.includes(d.toLowerCase())
+      );
+      if (isDoc) points *= pr.multipliers.documentation;
 
-    const isHighImpact = (pr.impact_labels || []).some((l) => labels.includes(l.toLowerCase()));
-    if (isHighImpact) points *= pr.multipliers.high_impact;
+      const isHighImpact = (pr.impact_labels || []).some((l) => labels.includes(l.toLowerCase()));
+      if (isHighImpact) points *= pr.multipliers.high_impact;
 
-    const isFirst = !seenAuthors.has(login);
-    if (isFirst) points *= pr.multipliers.first_pr;
-    seenAuthors.add(login);
+      const isFirst = !seenAuthors.has(login);
+      if (isFirst) points *= pr.multipliers.first_pr;
+      seenAuthors.add(login);
 
-    // Diminishing returns for many same-day PRs by the same author
-    // (discourages splitting one change into many PRs to farm points).
-    const dd = pr.daily_diminishing;
-    if (dd) {
-      const dk = `${login}|${dayKey(p.mergedAt)}`;
-      const nth = (prPerDay[dk] = (prPerDay[dk] || 0) + 1);
-      if (nth > dd.after) {
-        points *= Math.max(dd.min_factor, dd.decay ** (nth - dd.after));
+      // Diminishing returns for many same-day PRs by the same author
+      // (discourages splitting one change into many PRs to farm points).
+      const dd = pr.daily_diminishing;
+      if (dd) {
+        const dk = `${login}|${dayKey(p.mergedAt)}`;
+        const nth = (prPerDay[dk] = (prPerDay[dk] || 0) + 1);
+        if (nth > dd.after) {
+          points *= Math.max(dd.min_factor, dd.decay ** (nth - dd.after));
+        }
       }
+
+      points = Math.round(points);
+
+      const u = userOf(users, login);
+      addPoints(u, "pr", points, p.mergedAt);
+      addCount(u, "prs", p.mergedAt);
+      u.sizes[bucket] += 1;
     }
 
-    points = Math.round(points);
-
-    const u = userOf(users, login);
-    addPoints(u, "pr", points, p.mergedAt);
-    addCount(u, "prs", p.mergedAt);
-    u.sizes[bucket] += 1;
-
     // --- Reviews on this PR (anti-spam) ---
+    // Scored regardless of `authorEligible` -- see comment above.
     const creditedReviewers = new Set();
     for (const r of p.reviews?.nodes || []) {
       const reviewer = r.author?.login;

@@ -168,8 +168,65 @@ function listRows(ranked, days, dayKeys) {
     .join("");
 }
 
-function statTile(value, label) {
-  return `<div class="tile"><div class="tile-num">${value}</div><div class="tile-lbl">${label}</div></div>`;
+function statTile(value, label, scope) {
+  return `<div class="tile"><div class="tile-num">${value}</div><div class="tile-lbl">${label}</div>${
+    scope ? `<div class="tile-scope">${scope}</div>` : ""
+  }</div>`;
+}
+
+// Concrete, config-derived explanation of what actually counts toward each
+// number on the page -- this exists because "is this in total?" and "what
+// counts as a review?" are exactly the questions people ask when they only
+// see a bare number. Every value here is read from meta (i.e. from
+// config/rules.yml at generation time), so it can't drift out of sync with
+// the actual scoring logic.
+function whatCountsSection(meta) {
+  const rv = meta.review_rules || {};
+  const pr = meta.pr_rules || {};
+  const is = meta.issue_rules || {};
+  const branches = (pr.count_merges_to || []).join(" or ");
+  const dupes = (is.duplicate_labels || []).join(", ");
+  return `
+    <section class="whatcounts">
+      <h2>What counts as what</h2>
+      <div class="wc-grid">
+        <div class="wc">
+          <b>PRs</b>
+          <p>Only pull requests that were <b>merged</b> (not just opened or closed)
+          into <code>${esc(branches)}</code>, merged within the last
+          ${meta.lookback_days} days. Points scale with meaningful lines changed
+          (lockfiles/generated/vendored files excluded).</p>
+        </div>
+        <div class="wc">
+          <b>Reviews</b>
+          <p>Only <b>Approved</b> (+${rv.approved_points}) or <b>Changes requested</b>
+          (+${rv.changes_requested_points}) reviews count. A review needs a body of at
+          least ${rv.min_body_length} characters to count (no "LGTM"-only farming).
+          ${rv.exclude_self_review ? "You can't review your own PR. " : ""}${
+    rv.one_per_pr_per_reviewer
+      ? "Only your first scored review on a given PR counts — if you request changes, then come back later and review again (or approve), those follow-up rounds don't add more. A PR you reviewed 3 times still only adds 1 to your review count."
+      : ""
+  } Plain comments (e.g. bot-triggering slash commands), dismissed, and pending
+          reviews never count. Reviews score independently of which branch the
+          PR merges into — you get full credit for reviewing even a PR whose
+          author won't get PR points for it.</p>
+        </div>
+        <div class="wc">
+          <b>Issues</b>
+          <p>Any issue created earns +${is.created_points}, <i>unless</i> it's closed
+          as ${esc(dupes)} or not-planned — those score nothing. +${is.closed_bonus}
+          extra once it's closed as completed.</p>
+        </div>
+        <div class="wc">
+          <b>"Past 7/14 Days" vs the tiles up top</b>
+          <p>The leaderboard tabs are trailing windows ending today — that's what
+          ranks people. The stat tiles above are a wider, unranked total over the
+          full ${meta.lookback_days}-day lookback, <b>not all-time</b>: activity
+          older than ${meta.lookback_days} days isn't fetched at all, so those
+          tiles will always undercount true lifetime activity for older repos.</p>
+        </div>
+      </div>
+    </section>`;
 }
 
 function highlightsSection(users, categories) {
@@ -247,14 +304,16 @@ export function renderHtml(users, meta) {
     .map((p) => `#tab-${p.id}:checked ~ .tabs label[for="tab-${p.id}"]`)
     .join(", ");
 
+  const lookback = meta.lookback_days;
+  const scopeLbl = `last ${lookback}d, not all-time`;
   const updated = new Date().toUTCString().replace("GMT", "UTC");
   const tiles = [
     statTile(users.length, "Contributors"),
-    statTile(totalPRs.toLocaleString(), "PRs merged"),
-    statTile(totalReviews.toLocaleString(), "Reviews"),
+    statTile(totalPRs.toLocaleString(), "PRs merged", scopeLbl),
+    statTile(totalReviews.toLocaleString(), "Reviews", scopeLbl),
     totalManual
-      ? statTile(totalManual.toLocaleString(), "Community credits")
-      : statTile(totalIssues.toLocaleString(), "Issues logged"),
+      ? statTile(totalManual.toLocaleString(), "Community credits", scopeLbl)
+      : statTile(totalIssues.toLocaleString(), "Issues logged", scopeLbl),
   ].join("");
 
   return `<!doctype html>
@@ -395,6 +454,7 @@ export function renderHtml(users, meta) {
   }
   .tile-num { font-size: 1.45rem; font-weight: 750; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
   .tile-lbl { color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; margin-top: .1rem; }
+  .tile-scope { color: var(--faint); font-size: .66rem; margin-top: .2rem; }
 
   .tabs { display: inline-flex; gap: .25rem; padding: .25rem; margin-bottom: 1.4rem;
     background: var(--panel); border: 1px solid var(--border); border-radius: 999px; box-shadow: var(--shadow); }
@@ -459,6 +519,17 @@ export function renderHtml(users, meta) {
   .legend span { display: inline-flex; align-items: center; gap: .35rem; }
   .legend i { width: 9px; height: 9px; border-radius: 3px; display: inline-block; }
 
+  /* What counts */
+  .whatcounts { margin-top: 2.4rem; }
+  .whatcounts h2 { font-size: 1.05rem; margin: 0 0 .9rem; letter-spacing: -.01em; }
+  .wc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .wc { background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+    padding: .9rem 1rem; box-shadow: var(--shadow); }
+  .wc b { font-size: .88rem; }
+  .wc p { color: var(--muted); font-size: .78rem; margin: .35rem 0 0; line-height: 1.5; }
+  .wc code { background: var(--accent-soft); border-radius: 4px; padding: .05rem .3rem; font-size: .74rem; }
+  @media (max-width: 560px) { .wc-grid { grid-template-columns: 1fr; } }
+
   /* Highlights */
   .highlights { margin-top: 2.4rem; }
   .highlights h2 { font-size: 1.05rem; margin: 0 0 .9rem; letter-spacing: -.01em; }
@@ -510,7 +581,7 @@ export function renderHtml(users, meta) {
         <a class="parent" href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">mantis.csail.mit.edu ↗</a>
       </div>
       <h1>Contributor Leaderboard</h1>
-      <p class="sub">${meta.repos.length} repositories · <span class="live">refreshes hourly</span> · updated ${updated}</p>
+      <p class="sub">${meta.repos.length} repositories · <span class="live">refreshes every 2 hours</span> · updated ${updated}</p>
     </div>
 
     <div class="tiles">${tiles}</div>
@@ -527,6 +598,8 @@ export function renderHtml(users, meta) {
     </div>
 
     ${highlightsSection(users, meta.manual_categories)}
+
+    ${whatCountsSection(meta)}
 
     <footer>
       Ranked by points earned in the trailing window, not lifetime totals — it's about who's active now.<br/>
