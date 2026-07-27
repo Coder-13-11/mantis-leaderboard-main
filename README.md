@@ -18,7 +18,7 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **935** | 50 | 0 | 29 |
 | 🥈 | [@ppxscal](https://github.com/ppxscal) | **506** | 28 | 0 | 2 |
-| 🥉 | [@alex-d4v](https://github.com/alex-d4v) | **345** | 6 | 0 | 49 |
+| 🥉 | [@alex-d4v](https://github.com/alex-d4v) | **348** | 6 | 0 | 50 |
 | #4 | [@MantisCartography](https://github.com/MantisCartography) | **260** | 12 | 4 | 15 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **175** | 7 | 1 | 1 |
 | #6 | [@gconsigli](https://github.com/gconsigli) | **119** | 1 | 3 | 12 |
@@ -34,7 +34,7 @@ who has the biggest all-time score.
 | 🥇 | [@chreia](https://github.com/chreia) | **1827** | 118 | 0 | 52 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1491** | 45 | 45 | 37 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **710** | 39 | 0 | 2 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **427** | 7 | 1 | 64 |
+| #4 | [@alex-d4v](https://github.com/alex-d4v) | **430** | 7 | 1 | 65 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **390** | 21 | 2 | 1 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **194** | 6 | 0 | 12 |
 | #7 | [@gconsigli](https://github.com/gconsigli) | **182** | 2 | 3 | 21 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@6namdang](https://github.com/6namdang) | **174** | 8 | 0 | 6 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Mon, 27 Jul 2026 11:24:01 GMT_
+_Last updated: Mon, 27 Jul 2026 14:35:19 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
