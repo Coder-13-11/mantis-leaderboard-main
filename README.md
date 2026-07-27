@@ -16,12 +16,12 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **844** | 46 | 0 | 17 |
+| 🥇 | [@chreia](https://github.com/chreia) | **935** | 50 | 0 | 29 |
 | 🥈 | [@ppxscal](https://github.com/ppxscal) | **506** | 28 | 0 | 2 |
 | 🥉 | [@alex-d4v](https://github.com/alex-d4v) | **345** | 6 | 0 | 49 |
 | #4 | [@MantisCartography](https://github.com/MantisCartography) | **260** | 12 | 4 | 15 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **175** | 7 | 1 | 1 |
-| #6 | [@gconsigli](https://github.com/gconsigli) | **117** | 1 | 3 | 12 |
+| #6 | [@gconsigli](https://github.com/gconsigli) | **119** | 1 | 3 | 12 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **104** | 3 | 1 | 5 |
 | #8 | [@charleywolf](https://github.com/charleywolf) | **94** | 3 | 0 | 0 |
 | #9 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **88** | 4 | 0 | 0 |
@@ -31,18 +31,18 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1736** | 114 | 0 | 40 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1827** | 118 | 0 | 52 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1491** | 45 | 45 | 37 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **710** | 39 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **427** | 7 | 1 | 64 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **390** | 21 | 2 | 1 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **194** | 6 | 0 | 12 |
-| #7 | [@gconsigli](https://github.com/gconsigli) | **180** | 2 | 3 | 21 |
+| #7 | [@gconsigli](https://github.com/gconsigli) | **182** | 2 | 3 | 21 |
 | #8 | [@rohan-va](https://github.com/rohan-va) | **177** | 5 | 2 | 14 |
 | #9 | [@6namdang](https://github.com/6namdang) | **174** | 8 | 0 | 6 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Mon, 27 Jul 2026 07:34:16 GMT_
+_Last updated: Mon, 27 Jul 2026 11:24:01 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
