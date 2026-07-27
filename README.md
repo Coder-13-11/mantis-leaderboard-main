@@ -22,8 +22,8 @@ who has the biggest all-time score.
 | #4 | [@MantisCartography](https://github.com/MantisCartography) | **260** | 12 | 4 | 15 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **175** | 7 | 1 | 1 |
 | #6 | [@gconsigli](https://github.com/gconsigli) | **119** | 1 | 3 | 12 |
-| #7 | [@rohan-va](https://github.com/rohan-va) | **104** | 3 | 1 | 5 |
-| #8 | [@charleywolf](https://github.com/charleywolf) | **94** | 3 | 0 | 0 |
+| #7 | [@charleywolf](https://github.com/charleywolf) | **109** | 3 | 0 | 5 |
+| #8 | [@rohan-va](https://github.com/rohan-va) | **104** | 3 | 1 | 5 |
 | #9 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **88** | 4 | 0 | 0 |
 | #10 | [@LucaVor](https://github.com/LucaVor) | **84** | 3 | 1 | 0 |
 
@@ -36,13 +36,13 @@ who has the biggest all-time score.
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **710** | 39 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **430** | 7 | 1 | 65 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **390** | 21 | 2 | 1 |
-| #6 | [@charleywolf](https://github.com/charleywolf) | **194** | 6 | 0 | 12 |
+| #6 | [@charleywolf](https://github.com/charleywolf) | **209** | 6 | 0 | 17 |
 | #7 | [@gconsigli](https://github.com/gconsigli) | **182** | 2 | 3 | 21 |
 | #8 | [@rohan-va](https://github.com/rohan-va) | **177** | 5 | 2 | 14 |
 | #9 | [@6namdang](https://github.com/6namdang) | **174** | 8 | 0 | 6 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Mon, 27 Jul 2026 14:35:19 GMT_
+_Last updated: Mon, 27 Jul 2026 17:46:16 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
