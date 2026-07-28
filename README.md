@@ -16,12 +16,12 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1530** | 94 | 0 | 104 |
-| 🥈 | [@ppxscal](https://github.com/ppxscal) | **518** | 29 | 0 | 2 |
-| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **329** | 3 | 13 | 14 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1617** | 102 | 0 | 107 |
+| 🥈 | [@ppxscal](https://github.com/ppxscal) | **528** | 31 | 0 | 2 |
+| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **359** | 3 | 14 | 16 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **316** | 6 | 0 | 44 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **184** | 7 | 0 | 0 |
-| #6 | [@gconsigli](https://github.com/gconsigli) | **119** | 1 | 3 | 14 |
+| #6 | [@gconsigli](https://github.com/gconsigli) | **139** | 2 | 3 | 14 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **95** | 2 | 1 | 5 |
 | #8 | [@LucaVor](https://github.com/LucaVor) | **84** | 3 | 1 | 0 |
 | #9 | [@6namdang](https://github.com/6namdang) | **83** | 4 | 0 | 1 |
@@ -31,18 +31,18 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **2622** | 174 | 0 | 130 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1654** | 37 | 57 | 39 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **768** | 41 | 0 | 2 |
+| 🥇 | [@chreia](https://github.com/chreia) | **2709** | 182 | 0 | 133 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1684** | 37 | 58 | 41 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **778** | 43 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **462** | 8 | 1 | 65 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **454** | 23 | 2 | 1 |
-| #6 | [@gconsigli](https://github.com/gconsigli) | **190** | 2 | 3 | 23 |
-| #7 | [@rohan-va](https://github.com/rohan-va) | **177** | 5 | 2 | 14 |
-| #8 | [@charleywolf](https://github.com/charleywolf) | **177** | 5 | 0 | 17 |
-| #9 | [@6namdang](https://github.com/6namdang) | **171** | 8 | 0 | 5 |
-| #10 | [@vinays6](https://github.com/vinays6) | **162** | 3 | 6 | 1 |
+| #6 | [@gconsigli](https://github.com/gconsigli) | **210** | 3 | 3 | 23 |
+| #7 | [@vinays6](https://github.com/vinays6) | **186** | 4 | 6 | 1 |
+| #8 | [@rohan-va](https://github.com/rohan-va) | **177** | 5 | 2 | 14 |
+| #9 | [@charleywolf](https://github.com/charleywolf) | **177** | 5 | 0 | 17 |
+| #10 | [@6namdang](https://github.com/6namdang) | **171** | 8 | 0 | 5 |
 
-_Last updated: Tue, 28 Jul 2026 21:10:31 GMT_
+_Last updated: Tue, 28 Jul 2026 23:01:29 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
