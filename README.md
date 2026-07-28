@@ -16,7 +16,7 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **781** | 44 | 0 | 26 |
+| 🥇 | [@chreia](https://github.com/chreia) | **847** | 44 | 0 | 48 |
 | 🥈 | [@ppxscal](https://github.com/ppxscal) | **472** | 25 | 0 | 2 |
 | 🥉 | [@alex-d4v](https://github.com/alex-d4v) | **284** | 5 | 0 | 44 |
 | #4 | [@AnasMaar](https://github.com/AnasMaar) | **152** | 6 | 0 | 0 |
@@ -31,7 +31,7 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1873** | 124 | 0 | 52 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1939** | 124 | 0 | 74 |
 | 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1409** | 37 | 45 | 35 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **722** | 37 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **430** | 7 | 1 | 65 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@6namdang](https://github.com/6namdang) | **171** | 8 | 0 | 5 |
 | #10 | [@vinays6](https://github.com/vinays6) | **159** | 3 | 6 | 0 |
 
-_Last updated: Tue, 28 Jul 2026 06:30:12 GMT_
+_Last updated: Tue, 28 Jul 2026 10:38:59 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
