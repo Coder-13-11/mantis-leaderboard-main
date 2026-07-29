@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@charleywolf](https://github.com/charleywolf) | **173** | 5 | 0 | 15 |
 | #10 | [@6namdang](https://github.com/6namdang) | **165** | 8 | 0 | 3 |
 
-_Last updated: Wed, 29 Jul 2026 19:18:56 GMT_
+_Last updated: Wed, 29 Jul 2026 20:58:54 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
