@@ -17,10 +17,10 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1472** | 89 | 0 | 111 |
-| 🥈 | [@ppxscal](https://github.com/ppxscal) | **603** | 36 | 0 | 2 |
-| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **346** | 1 | 14 | 16 |
+| 🥈 | [@ppxscal](https://github.com/ppxscal) | **606** | 37 | 0 | 2 |
+| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **351** | 2 | 14 | 16 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **288** | 6 | 0 | 36 |
-| #5 | [@gconsigli](https://github.com/gconsigli) | **139** | 2 | 3 | 14 |
+| #5 | [@gconsigli](https://github.com/gconsigli) | **141** | 2 | 3 | 14 |
 | #6 | [@AnasMaar](https://github.com/AnasMaar) | **112** | 4 | 0 | 0 |
 | #7 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **56** | 2 | 0 | 0 |
 | #8 | [@rohan-va](https://github.com/rohan-va) | **49** | 1 | 1 | 3 |
@@ -32,17 +32,17 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **2720** | 182 | 0 | 136 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1585** | 31 | 57 | 39 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **901** | 50 | 0 | 2 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1590** | 32 | 57 | 39 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **904** | 51 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **452** | 7 | 1 | 65 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **422** | 21 | 2 | 1 |
-| #6 | [@gconsigli](https://github.com/gconsigli) | **210** | 3 | 3 | 23 |
+| #6 | [@gconsigli](https://github.com/gconsigli) | **212** | 3 | 3 | 23 |
 | #7 | [@vinays6](https://github.com/vinays6) | **186** | 4 | 6 | 1 |
 | #8 | [@rohan-va](https://github.com/rohan-va) | **174** | 5 | 2 | 13 |
-| #9 | [@charleywolf](https://github.com/charleywolf) | **171** | 5 | 0 | 15 |
+| #9 | [@charleywolf](https://github.com/charleywolf) | **173** | 5 | 0 | 15 |
 | #10 | [@6namdang](https://github.com/6namdang) | **165** | 8 | 0 | 3 |
 
-_Last updated: Wed, 29 Jul 2026 14:11:53 GMT_
+_Last updated: Wed, 29 Jul 2026 17:18:52 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
