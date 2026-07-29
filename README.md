@@ -16,9 +16,9 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1445** | 88 | 0 | 108 |
-| 🥈 | [@ppxscal](https://github.com/ppxscal) | **571** | 33 | 0 | 2 |
-| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **341** | 1 | 14 | 15 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1466** | 89 | 0 | 109 |
+| 🥈 | [@ppxscal](https://github.com/ppxscal) | **603** | 36 | 0 | 2 |
+| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **346** | 1 | 14 | 16 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **288** | 6 | 0 | 36 |
 | #5 | [@gconsigli](https://github.com/gconsigli) | **139** | 2 | 3 | 14 |
 | #6 | [@AnasMaar](https://github.com/AnasMaar) | **112** | 4 | 0 | 0 |
@@ -31,9 +31,9 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **2693** | 181 | 0 | 133 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1580** | 31 | 57 | 38 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **869** | 47 | 0 | 2 |
+| 🥇 | [@chreia](https://github.com/chreia) | **2714** | 182 | 0 | 134 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1585** | 31 | 57 | 39 |
+| 🥉 | [@ppxscal](https://github.com/ppxscal) | **901** | 50 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **452** | 7 | 1 | 65 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **422** | 21 | 2 | 1 |
 | #6 | [@gconsigli](https://github.com/gconsigli) | **210** | 3 | 3 | 23 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@charleywolf](https://github.com/charleywolf) | **171** | 5 | 0 | 15 |
 | #10 | [@6namdang](https://github.com/6namdang) | **165** | 8 | 0 | 3 |
 
-_Last updated: Wed, 29 Jul 2026 02:32:26 GMT_
+_Last updated: Wed, 29 Jul 2026 06:34:39 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
