@@ -36,13 +36,13 @@ who has the biggest all-time score.
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **1009** | 59 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **434** | 7 | 1 | 59 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **378** | 20 | 1 | 1 |
-| #6 | [@rohan-va](https://github.com/rohan-va) | **205** | 6 | 2 | 12 |
+| #6 | [@rohan-va](https://github.com/rohan-va) | **203** | 6 | 2 | 12 |
 | #7 | [@charleywolf](https://github.com/charleywolf) | **193** | 6 | 0 | 5 |
 | #8 | [@gconsigli](https://github.com/gconsigli) | **171** | 2 | 3 | 20 |
 | #9 | [@6namdang](https://github.com/6namdang) | **160** | 8 | 0 | 2 |
 | #10 | [@dhedhialy](https://github.com/dhedhialy) | **153** | 10 | 0 | 10 |
 
-_Last updated: Thu, 30 Jul 2026 15:57:22 GMT_
+_Last updated: Thu, 30 Jul 2026 17:30:03 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
