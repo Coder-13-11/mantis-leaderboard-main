@@ -20,7 +20,7 @@ who has the biggest all-time score.
 | 🥈 | [@ppxscal](https://github.com/ppxscal) | **545** | 36 | 0 | 1 |
 | 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **473** | 2 | 21 | 14 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **186** | 4 | 0 | 24 |
-| #5 | [@gconsigli](https://github.com/gconsigli) | **131** | 2 | 2 | 15 |
+| #5 | [@gconsigli](https://github.com/gconsigli) | **134** | 2 | 2 | 16 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **79** | 2 | 0 | 5 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **78** | 2 | 1 | 2 |
 | #8 | [@vinays6](https://github.com/vinays6) | **67** | 1 | 2 | 1 |
@@ -38,11 +38,11 @@ who has the biggest all-time score.
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **284** | 12 | 1 | 1 |
 | #6 | [@rohan-va](https://github.com/rohan-va) | **193** | 6 | 2 | 10 |
 | #7 | [@charleywolf](https://github.com/charleywolf) | **177** | 5 | 0 | 5 |
-| #8 | [@gconsigli](https://github.com/gconsigli) | **172** | 2 | 3 | 19 |
+| #8 | [@gconsigli](https://github.com/gconsigli) | **175** | 2 | 3 | 20 |
 | #9 | [@dhedhialy](https://github.com/dhedhialy) | **153** | 10 | 0 | 10 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Fri, 31 Jul 2026 10:42:35 GMT_
+_Last updated: Fri, 31 Jul 2026 14:07:06 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
