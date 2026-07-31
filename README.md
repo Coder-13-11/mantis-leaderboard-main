@@ -18,31 +18,31 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1403** | 84 | 0 | 116 |
 | 🥈 | [@ppxscal](https://github.com/ppxscal) | **545** | 36 | 0 | 1 |
-| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **473** | 2 | 21 | 14 |
+| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **493** | 2 | 22 | 14 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **186** | 4 | 0 | 24 |
-| #5 | [@gconsigli](https://github.com/gconsigli) | **134** | 2 | 2 | 16 |
+| #5 | [@gconsigli](https://github.com/gconsigli) | **142** | 2 | 2 | 18 |
 | #6 | [@charleywolf](https://github.com/charleywolf) | **79** | 2 | 0 | 5 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **78** | 2 | 1 | 2 |
-| #8 | [@vinays6](https://github.com/vinays6) | **67** | 1 | 2 | 1 |
-| #9 | [@varvarakarenski](https://github.com/varvarakarenski) | **65** | 2 | 0 | 3 |
-| #10 | [@AnasMaar](https://github.com/AnasMaar) | **64** | 2 | 0 | 0 |
+| #8 | [@VishwanathanV](https://github.com/VishwanathanV) | **74** | 5 | 0 | 0 |
+| #9 | [@vinays6](https://github.com/vinays6) | **67** | 1 | 2 | 1 |
+| #10 | [@varvarakarenski](https://github.com/varvarakarenski) | **65** | 2 | 0 | 3 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **2412** | 150 | 0 | 134 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1507** | 23 | 59 | 34 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1527** | 23 | 60 | 34 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **1009** | 59 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **434** | 7 | 1 | 59 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **284** | 12 | 1 | 1 |
 | #6 | [@rohan-va](https://github.com/rohan-va) | **193** | 6 | 2 | 10 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **177** | 5 | 0 | 5 |
-| #8 | [@gconsigli](https://github.com/gconsigli) | **175** | 2 | 3 | 20 |
+| #7 | [@gconsigli](https://github.com/gconsigli) | **183** | 2 | 3 | 22 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **177** | 5 | 0 | 5 |
 | #9 | [@dhedhialy](https://github.com/dhedhialy) | **153** | 10 | 0 | 10 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Fri, 31 Jul 2026 14:07:06 GMT_
+_Last updated: Fri, 31 Jul 2026 17:33:23 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
