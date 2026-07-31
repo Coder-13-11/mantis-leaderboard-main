@@ -17,32 +17,32 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1403** | 84 | 0 | 116 |
-| 🥈 | [@ppxscal](https://github.com/ppxscal) | **661** | 42 | 0 | 1 |
-| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **500** | 3 | 22 | 14 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **192** | 4 | 0 | 26 |
-| #5 | [@gconsigli](https://github.com/gconsigli) | **133** | 2 | 2 | 15 |
-| #6 | [@AnasMaar](https://github.com/AnasMaar) | **88** | 3 | 0 | 0 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **81** | 2 | 0 | 5 |
-| #8 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **80** | 3 | 0 | 0 |
-| #9 | [@rohan-va](https://github.com/rohan-va) | **78** | 2 | 1 | 2 |
-| #10 | [@vinays6](https://github.com/vinays6) | **67** | 1 | 2 | 1 |
+| 🥈 | [@ppxscal](https://github.com/ppxscal) | **545** | 36 | 0 | 1 |
+| 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **473** | 2 | 21 | 14 |
+| #4 | [@alex-d4v](https://github.com/alex-d4v) | **186** | 4 | 0 | 24 |
+| #5 | [@gconsigli](https://github.com/gconsigli) | **131** | 2 | 2 | 15 |
+| #6 | [@charleywolf](https://github.com/charleywolf) | **79** | 2 | 0 | 5 |
+| #7 | [@rohan-va](https://github.com/rohan-va) | **78** | 2 | 1 | 2 |
+| #8 | [@vinays6](https://github.com/vinays6) | **67** | 1 | 2 | 1 |
+| #9 | [@varvarakarenski](https://github.com/varvarakarenski) | **65** | 2 | 0 | 3 |
+| #10 | [@AnasMaar](https://github.com/AnasMaar) | **64** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **2578** | 169 | 0 | 135 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1634** | 32 | 60 | 39 |
+| 🥇 | [@chreia](https://github.com/chreia) | **2412** | 150 | 0 | 134 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1507** | 23 | 59 | 34 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **1009** | 59 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **434** | 7 | 1 | 59 |
-| #5 | [@AnasMaar](https://github.com/AnasMaar) | **378** | 20 | 1 | 1 |
-| #6 | [@rohan-va](https://github.com/rohan-va) | **203** | 6 | 2 | 12 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **195** | 6 | 0 | 5 |
-| #8 | [@gconsigli](https://github.com/gconsigli) | **175** | 2 | 3 | 20 |
-| #9 | [@6namdang](https://github.com/6namdang) | **160** | 8 | 0 | 2 |
-| #10 | [@dhedhialy](https://github.com/dhedhialy) | **153** | 10 | 0 | 10 |
+| #5 | [@AnasMaar](https://github.com/AnasMaar) | **284** | 12 | 1 | 1 |
+| #6 | [@rohan-va](https://github.com/rohan-va) | **193** | 6 | 2 | 10 |
+| #7 | [@charleywolf](https://github.com/charleywolf) | **177** | 5 | 0 | 5 |
+| #8 | [@gconsigli](https://github.com/gconsigli) | **172** | 2 | 3 | 19 |
+| #9 | [@dhedhialy](https://github.com/dhedhialy) | **153** | 10 | 0 | 10 |
+| #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Thu, 30 Jul 2026 21:12:41 GMT_
+_Last updated: Fri, 31 Jul 2026 02:42:59 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
