@@ -21,11 +21,11 @@ who has the biggest all-time score.
 | 🥉 | [@MantisCartography](https://github.com/MantisCartography) | **498** | 2 | 22 | 15 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **188** | 4 | 0 | 24 |
 | #5 | [@gconsigli](https://github.com/gconsigli) | **144** | 2 | 2 | 18 |
-| #6 | [@charleywolf](https://github.com/charleywolf) | **79** | 2 | 0 | 5 |
-| #7 | [@rohan-va](https://github.com/rohan-va) | **78** | 2 | 1 | 2 |
-| #8 | [@VishwanathanV](https://github.com/VishwanathanV) | **74** | 5 | 0 | 0 |
-| #9 | [@vinays6](https://github.com/vinays6) | **67** | 1 | 2 | 1 |
-| #10 | [@varvarakarenski](https://github.com/varvarakarenski) | **65** | 2 | 0 | 3 |
+| #6 | [@varvarakarenski](https://github.com/varvarakarenski) | **89** | 3 | 0 | 3 |
+| #7 | [@charleywolf](https://github.com/charleywolf) | **79** | 2 | 0 | 5 |
+| #8 | [@rohan-va](https://github.com/rohan-va) | **78** | 2 | 1 | 2 |
+| #9 | [@VishwanathanV](https://github.com/VishwanathanV) | **74** | 5 | 0 | 0 |
+| #10 | [@vinays6](https://github.com/vinays6) | **67** | 1 | 2 | 1 |
 
 #### Past 14 Days
 
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@dhedhialy](https://github.com/dhedhialy) | **153** | 10 | 0 | 10 |
 | #10 | [@Cruz-Arnzen](https://github.com/Cruz-Arnzen) | **142** | 9 | 0 | 0 |
 
-_Last updated: Fri, 31 Jul 2026 19:27:35 GMT_
+_Last updated: Fri, 31 Jul 2026 21:11:38 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
