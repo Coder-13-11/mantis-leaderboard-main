@@ -17,7 +17,7 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1008** | 64 | 0 | 92 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **607** | 3 | 28 | 9 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **628** | 4 | 28 | 10 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **351** | 24 | 0 | 0 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **159** | 4 | 0 | 19 |
 | #5 | [@YakshithK](https://github.com/YakshithK) | **79** | 3 | 0 | 5 |
@@ -32,7 +32,7 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1989** | 120 | 0 | 121 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **907** | 15 | 34 | 25 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **928** | 16 | 34 | 26 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **857** | 52 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **507** | 10 | 0 | 69 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **239** | 9 | 1 | 1 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@dhedhialy](https://github.com/dhedhialy) | **131** | 9 | 0 | 10 |
 | #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **90** | 3 | 0 | 2 |
 
-_Last updated: Mon, 03 Aug 2026 19:32:50 GMT_
+_Last updated: Mon, 03 Aug 2026 21:05:42 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
