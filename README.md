@@ -22,7 +22,7 @@ who has the biggest all-time score.
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **159** | 4 | 0 | 19 |
 | #5 | [@YakshithK](https://github.com/YakshithK) | **79** | 3 | 0 | 5 |
 | #6 | [@dhedhialy](https://github.com/dhedhialy) | **74** | 6 | 0 | 4 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **66** | 2 | 0 | 0 |
+| #7 | [@charleywolf](https://github.com/charleywolf) | **69** | 2 | 0 | 1 |
 | #8 | [@AnasMaar](https://github.com/AnasMaar) | **64** | 2 | 0 | 0 |
 | #9 | [@VishwanathanV](https://github.com/VishwanathanV) | **64** | 3 | 0 | 0 |
 | #10 | [@gconsigli](https://github.com/gconsigli) | **62** | 1 | 0 | 10 |
@@ -37,12 +37,12 @@ who has the biggest all-time score.
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **507** | 10 | 0 | 69 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **239** | 9 | 1 | 1 |
 | #6 | [@gconsigli](https://github.com/gconsigli) | **181** | 2 | 3 | 22 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **175** | 5 | 0 | 5 |
+| #7 | [@charleywolf](https://github.com/charleywolf) | **178** | 5 | 0 | 6 |
 | #8 | [@rohan-va](https://github.com/rohan-va) | **163** | 5 | 1 | 6 |
 | #9 | [@dhedhialy](https://github.com/dhedhialy) | **131** | 9 | 0 | 10 |
 | #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **90** | 3 | 0 | 2 |
 
-_Last updated: Mon, 03 Aug 2026 17:54:41 GMT_
+_Last updated: Mon, 03 Aug 2026 19:32:50 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
