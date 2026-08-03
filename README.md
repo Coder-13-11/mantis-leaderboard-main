@@ -17,22 +17,22 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1008** | 64 | 0 | 92 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **628** | 4 | 28 | 10 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **643** | 4 | 29 | 10 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **351** | 24 | 0 | 0 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **159** | 4 | 0 | 19 |
-| #5 | [@YakshithK](https://github.com/YakshithK) | **79** | 3 | 0 | 5 |
-| #6 | [@dhedhialy](https://github.com/dhedhialy) | **74** | 6 | 0 | 4 |
-| #7 | [@charleywolf](https://github.com/charleywolf) | **69** | 2 | 0 | 1 |
-| #8 | [@AnasMaar](https://github.com/AnasMaar) | **64** | 2 | 0 | 0 |
-| #9 | [@VishwanathanV](https://github.com/VishwanathanV) | **64** | 3 | 0 | 0 |
-| #10 | [@gconsigli](https://github.com/gconsigli) | **62** | 1 | 0 | 10 |
+| #5 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **82** | 3 | 0 | 0 |
+| #6 | [@YakshithK](https://github.com/YakshithK) | **79** | 3 | 0 | 5 |
+| #7 | [@dhedhialy](https://github.com/dhedhialy) | **74** | 6 | 0 | 4 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **69** | 2 | 0 | 1 |
+| #9 | [@AnasMaar](https://github.com/AnasMaar) | **64** | 2 | 0 | 0 |
+| #10 | [@VishwanathanV](https://github.com/VishwanathanV) | **64** | 3 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1989** | 120 | 0 | 121 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **928** | 16 | 34 | 26 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **943** | 16 | 35 | 26 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **857** | 52 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **507** | 10 | 0 | 69 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **239** | 9 | 1 | 1 |
@@ -40,9 +40,9 @@ who has the biggest all-time score.
 | #7 | [@charleywolf](https://github.com/charleywolf) | **178** | 5 | 0 | 6 |
 | #8 | [@rohan-va](https://github.com/rohan-va) | **163** | 5 | 1 | 6 |
 | #9 | [@dhedhialy](https://github.com/dhedhialy) | **131** | 9 | 0 | 10 |
-| #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **90** | 3 | 0 | 2 |
+| #10 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **92** | 3 | 0 | 2 |
 
-_Last updated: Mon, 03 Aug 2026 21:05:42 GMT_
+_Last updated: Mon, 03 Aug 2026 23:03:13 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
