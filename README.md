@@ -20,7 +20,7 @@ who has the biggest all-time score.
 | 🥈 | [@ppxscal](https://github.com/ppxscal) | **231** | 16 | 0 | 0 |
 | 🥉 | [@chreia](https://github.com/chreia) | **172** | 6 | 0 | 11 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **152** | 4 | 0 | 25 |
-| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **114** | 7 | 0 | 3 |
+| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **117** | 7 | 0 | 4 |
 | #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **82** | 3 | 0 | 0 |
 | #7 | [@YakshithK](https://github.com/YakshithK) | **79** | 3 | 0 | 5 |
 | #8 | [@charleywolf](https://github.com/charleywolf) | **69** | 2 | 0 | 1 |
@@ -38,11 +38,11 @@ who has the biggest all-time score.
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **184** | 7 | 0 | 0 |
 | #6 | [@gconsigli](https://github.com/gconsigli) | **167** | 2 | 3 | 20 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **151** | 4 | 1 | 5 |
-| #8 | [@PranavaKCode](https://github.com/PranavaKCode) | **114** | 7 | 0 | 3 |
+| #8 | [@PranavaKCode](https://github.com/PranavaKCode) | **117** | 7 | 0 | 4 |
 | #9 | [@charleywolf](https://github.com/charleywolf) | **110** | 3 | 0 | 6 |
 | #10 | [@dhedhialy](https://github.com/dhedhialy) | **92** | 6 | 0 | 10 |
 
-_Last updated: Tue, 04 Aug 2026 10:41:54 GMT_
+_Last updated: Tue, 04 Aug 2026 14:11:37 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
