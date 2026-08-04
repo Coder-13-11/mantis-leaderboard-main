@@ -16,13 +16,13 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **393** | 4 | 17 | 4 |
+| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **453** | 4 | 20 | 4 |
 | 🥈 | [@ppxscal](https://github.com/ppxscal) | **231** | 16 | 0 | 0 |
 | 🥉 | [@chreia](https://github.com/chreia) | **172** | 6 | 0 | 11 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **129** | 3 | 0 | 19 |
-| #5 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **82** | 3 | 0 | 0 |
-| #6 | [@YakshithK](https://github.com/YakshithK) | **79** | 3 | 0 | 5 |
-| #7 | [@PranavaKCode](https://github.com/PranavaKCode) | **75** | 4 | 0 | 3 |
+| #4 | [@alex-d4v](https://github.com/alex-d4v) | **152** | 4 | 0 | 25 |
+| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **114** | 7 | 0 | 3 |
+| #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **82** | 3 | 0 | 0 |
+| #7 | [@YakshithK](https://github.com/YakshithK) | **79** | 3 | 0 | 5 |
 | #8 | [@charleywolf](https://github.com/charleywolf) | **69** | 2 | 0 | 1 |
 | #9 | [@varvarakarenski](https://github.com/varvarakarenski) | **59** | 2 | 0 | 1 |
 | #10 | [@rohan-va](https://github.com/rohan-va) | **58** | 2 | 0 | 0 |
@@ -32,17 +32,17 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1789** | 108 | 0 | 118 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **779** | 7 | 33 | 19 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **839** | 7 | 36 | 19 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **759** | 47 | 0 | 2 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **445** | 9 | 0 | 63 |
+| #4 | [@alex-d4v](https://github.com/alex-d4v) | **468** | 10 | 0 | 69 |
 | #5 | [@AnasMaar](https://github.com/AnasMaar) | **184** | 7 | 0 | 0 |
 | #6 | [@gconsigli](https://github.com/gconsigli) | **167** | 2 | 3 | 20 |
 | #7 | [@rohan-va](https://github.com/rohan-va) | **151** | 4 | 1 | 5 |
-| #8 | [@charleywolf](https://github.com/charleywolf) | **110** | 3 | 0 | 6 |
-| #9 | [@dhedhialy](https://github.com/dhedhialy) | **92** | 6 | 0 | 10 |
-| #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **90** | 3 | 0 | 2 |
+| #8 | [@PranavaKCode](https://github.com/PranavaKCode) | **114** | 7 | 0 | 3 |
+| #9 | [@charleywolf](https://github.com/charleywolf) | **110** | 3 | 0 | 6 |
+| #10 | [@dhedhialy](https://github.com/dhedhialy) | **92** | 6 | 0 | 10 |
 
-_Last updated: Tue, 04 Aug 2026 06:31:33 GMT_
+_Last updated: Tue, 04 Aug 2026 10:41:54 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
