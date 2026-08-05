@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **555** | 3 | 25 | 3 |
+| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **590** | 3 | 27 | 3 |
 | 🥈 | [@alex-d4v](https://github.com/alex-d4v) | **156** | 4 | 0 | 25 |
-| 🥉 | [@PranavaKCode](https://github.com/PranavaKCode) | **145** | 13 | 0 | 4 |
+| 🥉 | [@PranavaKCode](https://github.com/PranavaKCode) | **155** | 14 | 0 | 4 |
 | #4 | [@chreia](https://github.com/chreia) | **108** | 4 | 0 | 7 |
 | #5 | [@ppxscal](https://github.com/ppxscal) | **85** | 6 | 0 | 0 |
 | #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **82** | 3 | 0 | 0 |
-| #7 | [@YakshithK](https://github.com/YakshithK) | **64** | 2 | 0 | 4 |
-| #8 | [@rohan-va](https://github.com/rohan-va) | **60** | 2 | 0 | 0 |
-| #9 | [@varvarakarenski](https://github.com/varvarakarenski) | **59** | 2 | 0 | 1 |
-| #10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **51** | 1 | 0 | 1 |
+| #7 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
+| #8 | [@YakshithK](https://github.com/YakshithK) | **64** | 2 | 0 | 4 |
+| #9 | [@rohan-va](https://github.com/rohan-va) | **60** | 2 | 0 | 0 |
+| #10 | [@varvarakarenski](https://github.com/varvarakarenski) | **59** | 2 | 0 | 1 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1582** | 93 | 0 | 118 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **980** | 5 | 44 | 18 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1015** | 5 | 46 | 18 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **711** | 45 | 0 | 2 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **444** | 10 | 0 | 61 |
 | #5 | [@gconsigli](https://github.com/gconsigli) | **167** | 2 | 3 | 20 |
-| #6 | [@PranavaKCode](https://github.com/PranavaKCode) | **145** | 13 | 0 | 4 |
+| #6 | [@PranavaKCode](https://github.com/PranavaKCode) | **155** | 14 | 0 | 4 |
 | #7 | [@charleywolf](https://github.com/charleywolf) | **144** | 4 | 0 | 6 |
 | #8 | [@AnasMaar](https://github.com/AnasMaar) | **112** | 4 | 0 | 0 |
 | #9 | [@rohan-va](https://github.com/rohan-va) | **109** | 3 | 1 | 3 |
 | #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **90** | 3 | 0 | 2 |
 
-_Last updated: Wed, 05 Aug 2026 14:10:01 GMT_
+_Last updated: Wed, 05 Aug 2026 19:32:45 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
