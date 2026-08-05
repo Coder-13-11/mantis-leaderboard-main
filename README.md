@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@rohan-va](https://github.com/rohan-va) | **109** | 3 | 1 | 3 |
 | #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **90** | 3 | 0 | 2 |
 
-_Last updated: Wed, 05 Aug 2026 10:37:41 GMT_
+_Last updated: Wed, 05 Aug 2026 14:10:01 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
