@@ -16,15 +16,15 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **597** | 2 | 27 | 10 |
-| 🥈 | [@PranavaKCode](https://github.com/PranavaKCode) | **181** | 16 | 0 | 4 |
+| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **617** | 2 | 28 | 10 |
+| 🥈 | [@PranavaKCode](https://github.com/PranavaKCode) | **191** | 17 | 0 | 4 |
 | 🥉 | [@alex-d4v](https://github.com/alex-d4v) | **156** | 4 | 0 | 25 |
 | #4 | [@chreia](https://github.com/chreia) | **131** | 9 | 0 | 1 |
 | #5 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
 | #6 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
 | #7 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **66** | 2 | 0 | 4 |
 | #8 | [@larped-gpu](https://github.com/larped-gpu) | **64** | 1 | 0 | 8 |
-| #9 | [@rohan-va](https://github.com/rohan-va) | **58** | 2 | 0 | 0 |
+| #9 | [@rohan-va](https://github.com/rohan-va) | **60** | 2 | 0 | 0 |
 | #10 | [@Donysus](https://github.com/Donysus) | **40** | 2 | 0 | 0 |
 
 #### Past 14 Days
@@ -32,17 +32,17 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | [@chreia](https://github.com/chreia) | **1534** | 93 | 0 | 117 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1109** | 5 | 50 | 23 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1129** | 5 | 51 | 23 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **663** | 42 | 0 | 1 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **348** | 8 | 0 | 51 |
-| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **181** | 16 | 0 | 4 |
-| #6 | [@gconsigli](https://github.com/gconsigli) | **169** | 2 | 3 | 19 |
+| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **191** | 17 | 0 | 4 |
+| #6 | [@gconsigli](https://github.com/gconsigli) | **171** | 2 | 3 | 19 |
 | #7 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **151** | 5 | 0 | 5 |
-| #8 | [@rohan-va](https://github.com/rohan-va) | **136** | 4 | 1 | 2 |
+| #8 | [@rohan-va](https://github.com/rohan-va) | **138** | 4 | 1 | 2 |
 | #9 | [@charleywolf](https://github.com/charleywolf) | **120** | 3 | 0 | 6 |
 | #10 | [@YakshithK](https://github.com/YakshithK) | **91** | 3 | 0 | 9 |
 
-_Last updated: Thu, 06 Aug 2026 10:41:57 GMT_
+_Last updated: Thu, 06 Aug 2026 14:09:10 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
