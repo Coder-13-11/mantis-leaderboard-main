@@ -16,23 +16,23 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **555** | 2 | 25 | 10 |
+| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **597** | 2 | 27 | 10 |
 | 🥈 | [@PranavaKCode](https://github.com/PranavaKCode) | **181** | 16 | 0 | 4 |
 | 🥉 | [@alex-d4v](https://github.com/alex-d4v) | **156** | 4 | 0 | 25 |
-| #4 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
-| #5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
-| #6 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **66** | 2 | 0 | 4 |
-| #7 | [@larped-gpu](https://github.com/larped-gpu) | **64** | 1 | 0 | 8 |
-| #8 | [@rohan-va](https://github.com/rohan-va) | **58** | 2 | 0 | 0 |
-| #9 | [@chreia](https://github.com/chreia) | **51** | 2 | 0 | 1 |
+| #4 | [@chreia](https://github.com/chreia) | **131** | 9 | 0 | 1 |
+| #5 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
+| #6 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
+| #7 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **66** | 2 | 0 | 4 |
+| #8 | [@larped-gpu](https://github.com/larped-gpu) | **64** | 1 | 0 | 8 |
+| #9 | [@rohan-va](https://github.com/rohan-va) | **58** | 2 | 0 | 0 |
 | #10 | [@Donysus](https://github.com/Donysus) | **40** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1454** | 86 | 0 | 117 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1067** | 5 | 48 | 23 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1534** | 93 | 0 | 117 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1109** | 5 | 50 | 23 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **663** | 42 | 0 | 1 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **348** | 8 | 0 | 51 |
 | #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **181** | 16 | 0 | 4 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | [@charleywolf](https://github.com/charleywolf) | **120** | 3 | 0 | 6 |
 | #10 | [@YakshithK](https://github.com/YakshithK) | **91** | 3 | 0 | 9 |
 
-_Last updated: Thu, 06 Aug 2026 06:33:28 GMT_
+_Last updated: Thu, 06 Aug 2026 10:41:57 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
