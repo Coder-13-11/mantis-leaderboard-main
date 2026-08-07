@@ -20,12 +20,12 @@ who has the biggest all-time score.
 | 🥈 | [@chreia](https://github.com/chreia) | **302** | 45 | 0 | 1 |
 | 🥉 | [@PranavaKCode](https://github.com/PranavaKCode) | **282** | 25 | 0 | 4 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **154** | 4 | 0 | 25 |
-| #5 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **120** | 3 | 1 | 0 |
-| #6 | [@larped-gpu](https://github.com/larped-gpu) | **88** | 2 | 0 | 8 |
-| #7 | [@6namdang](https://github.com/6namdang) | **73** | 2 | 1 | 1 |
-| #8 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
-| #9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
-| #10 | [@charleywolf](https://github.com/charleywolf) | **65** | 2 | 0 | 1 |
+| #5 | [@Chessing234](https://github.com/Chessing234) | **148** | 14 | 0 | 0 |
+| #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **120** | 3 | 1 | 0 |
+| #7 | [@larped-gpu](https://github.com/larped-gpu) | **88** | 2 | 0 | 8 |
+| #8 | [@6namdang](https://github.com/6namdang) | **73** | 2 | 1 | 1 |
+| #9 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
+| #10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
 
 #### Past 14 Days
 
@@ -38,11 +38,11 @@ who has the biggest all-time score.
 | #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **282** | 25 | 0 | 4 |
 | #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **168** | 5 | 1 | 0 |
 | #7 | [@gconsigli](https://github.com/gconsigli) | **166** | 2 | 3 | 18 |
-| #8 | [@charleywolf](https://github.com/charleywolf) | **144** | 4 | 0 | 6 |
-| #9 | [@rohan-va](https://github.com/rohan-va) | **141** | 4 | 1 | 3 |
-| #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **119** | 4 | 0 | 5 |
+| #8 | [@Chessing234](https://github.com/Chessing234) | **148** | 14 | 0 | 0 |
+| #9 | [@charleywolf](https://github.com/charleywolf) | **144** | 4 | 0 | 6 |
+| #10 | [@rohan-va](https://github.com/rohan-va) | **141** | 4 | 1 | 3 |
 
-_Last updated: Fri, 07 Aug 2026 09:02:45 GMT_
+_Last updated: Fri, 07 Aug 2026 10:55:51 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
