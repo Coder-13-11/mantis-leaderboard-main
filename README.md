@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **894** | 2 | 39 | 29 |
-| 🥈 | [@chreia](https://github.com/chreia) | **302** | 45 | 0 | 1 |
+| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **936** | 2 | 39 | 29 |
+| 🥈 | [@chreia](https://github.com/chreia) | **326** | 45 | 0 | 1 |
 | 🥉 | [@PranavaKCode](https://github.com/PranavaKCode) | **282** | 25 | 0 | 4 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **154** | 4 | 0 | 25 |
-| #5 | [@Chessing234](https://github.com/Chessing234) | **148** | 14 | 0 | 0 |
-| #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **120** | 3 | 1 | 0 |
+| #4 | [@Chessing234](https://github.com/Chessing234) | **157** | 14 | 0 | 3 |
+| #5 | [@alex-d4v](https://github.com/alex-d4v) | **156** | 4 | 0 | 25 |
+| #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **126** | 3 | 1 | 0 |
 | #7 | [@larped-gpu](https://github.com/larped-gpu) | **88** | 2 | 0 | 8 |
-| #8 | [@6namdang](https://github.com/6namdang) | **73** | 2 | 1 | 1 |
-| #9 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
-| #10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **81** | 2 | 0 | 1 |
+| #9 | [@YakshithK](https://github.com/YakshithK) | **80** | 2 | 0 | 6 |
+| #10 | [@6namdang](https://github.com/6namdang) | **77** | 2 | 1 | 1 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1705** | 129 | 0 | 117 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1419** | 4 | 63 | 43 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1729** | 129 | 0 | 117 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1461** | 4 | 63 | 43 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **547** | 36 | 0 | 1 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **342** | 8 | 0 | 49 |
+| #4 | [@alex-d4v](https://github.com/alex-d4v) | **344** | 8 | 0 | 49 |
 | #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **282** | 25 | 0 | 4 |
-| #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **168** | 5 | 1 | 0 |
-| #7 | [@gconsigli](https://github.com/gconsigli) | **166** | 2 | 3 | 18 |
-| #8 | [@Chessing234](https://github.com/Chessing234) | **148** | 14 | 0 | 0 |
-| #9 | [@charleywolf](https://github.com/charleywolf) | **144** | 4 | 0 | 6 |
-| #10 | [@rohan-va](https://github.com/rohan-va) | **141** | 4 | 1 | 3 |
+| #6 | [@gconsigli](https://github.com/gconsigli) | **176** | 2 | 3 | 18 |
+| #7 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **174** | 5 | 1 | 0 |
+| #8 | [@charleywolf](https://github.com/charleywolf) | **160** | 4 | 0 | 6 |
+| #9 | [@Chessing234](https://github.com/Chessing234) | **157** | 14 | 0 | 3 |
+| #10 | [@rohan-va](https://github.com/rohan-va) | **153** | 4 | 1 | 3 |
 
-_Last updated: Fri, 07 Aug 2026 10:55:51 GMT_
+_Last updated: Fri, 07 Aug 2026 13:03:49 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
