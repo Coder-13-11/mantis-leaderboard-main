@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T18:26:46.988Z",
+  "generated_at": "2026-08-07T18:33:01.159Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -76,6 +76,16 @@
       "after": 2,
       "decay": 0.55,
       "min_factor": 0.12
+    },
+    "points": {
+      "base": 10,
+      "max_bonus": 12,
+      "half_life_lines": 60
+    },
+    "multipliers": {
+      "documentation": 1.25,
+      "first_pr": 1.5,
+      "high_impact": 1.5
     }
   },
   "issue_rules": {

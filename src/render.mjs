@@ -158,26 +158,66 @@ function personBlock(u, { compact = false } = {}) {
     </a>`;
 }
 
-function podiumCard(u, days, place) {
+function windowBreakdownBar(u, days) {
+  const wb = u.windowBreakdown?.[days];
+  if (wb) return breakdownBar(wb);
+  // Fallback for older snapshots that only have lifetime breakdown.
+  return breakdownBar(u.breakdown || {});
+}
+
+// Human-readable “where did these points come from?” for a trailing window.
+function scoreExplainer(u, days) {
   const pts = u.windows?.[days] || 0;
   const c = u.windowCounts?.[days] || {};
+  const wb = u.windowBreakdown?.[days];
+  const bits = [];
+  if (wb) {
+    if (wb.pr) bits.push(`${wb.pr} from PRs`);
+    if (wb.review) bits.push(`${wb.review} from reviews`);
+    if (wb.issue) bits.push(`${wb.issue} from issues`);
+    if (wb.other) bits.push(`${wb.other} community`);
+  }
+  const activity = [];
+  if (c.prs) activity.push(`${c.prs} PR${c.prs === 1 ? "" : "s"}`);
+  if (c.reviews) activity.push(`${c.reviews} review${c.reviews === 1 ? "" : "s"}`);
+  if (c.confirmed_issues) activity.push(`${c.confirmed_issues} issue${c.confirmed_issues === 1 ? "" : "s"}`);
+  if (c.manual) activity.push(`${c.manual} community`);
+
+  // Show pts/PR only when PRs clearly dominate the window (avoids “45 pts/PR”
+  // when most of the total is actually issues / lifetime-ratio noise).
+  let avg = "";
+  if (c.prs && pts) {
+    const prShare = wb ? (wb.pr || 0) / Math.max(1, pts) : c.prs >= (c.confirmed_issues || 0);
+    if (prShare === true || prShare >= 0.65) {
+      const denom = c.prs;
+      const numer = wb ? wb.pr || pts : pts;
+      avg = ` · ~${Math.max(1, Math.round(numer / denom))} pts per PR this window`;
+    }
+  }
+  const from = bits.length ? bits.join(" · ") : activity.join(" · ") || "no scored activity";
+  return { from, activity: activity.join(" · ") || "—", avg, pts };
+}
+
+function podiumCard(u, days, place) {
+  const explain = scoreExplainer(u, days);
   return `
     <div class="pod pod-${place}">
       <div class="pod-badge">${medal(place)}</div>
       <img class="pod-avatar" src="https://github.com/${esc(u.login)}.png?size=120" alt="" loading="lazy"/>
       ${personBlock(u)}
-      <div class="pod-pts">${pts}<span>pts</span></div>
-      <div class="pod-meta">${c.prs || 0} PRs · ${c.reviews || 0} reviews</div>
+      <div class="pod-pts" title="${esc(explain.from)}">${explain.pts}<span>pts</span></div>
+      <div class="pod-why">${esc(explain.from)}${esc(explain.avg)}</div>
+      <div class="pod-meta">${esc(explain.activity)}</div>
     </div>`;
 }
 
 function podium(ranked, days) {
-  // Visual order left → right: 3rd (smallest), 2nd (mid), 1st (largest / right).
+  // Visual order left → right: 1st (largest), 2nd, 3rd (smallest).
   const [first, second, third] = ranked;
   const cards = [];
-  if (third) cards.push(podiumCard(third, days, 3));
-  if (second) cards.push(podiumCard(second, days, 2));
   if (first) cards.push(podiumCard(first, days, 1));
+  if (second) cards.push(podiumCard(second, days, 2));
+  if (third) cards.push(podiumCard(third, days, 3));
   return `<div class="podium">${cards.join("")}</div>`;
 }
 
@@ -186,19 +226,18 @@ function listRows(ranked, days, dayKeys) {
     .slice(3, SITE_MAX)
     .map((u, i) => {
       const rank = i + 4;
-      const pts = u.windows?.[days] || 0;
-      const c = u.windowCounts?.[days] || {};
+      const explain = scoreExplainer(u, days);
       return `
         <li class="row">
           <span class="rank">${rank}</span>
           <img class="avatar" src="https://github.com/${esc(u.login)}.png?size=48" alt="" loading="lazy"/>
           <span class="who">
             ${personBlock(u, { compact: true })}
-            <span class="meta">${c.prs || 0} PRs · ${c.reviews || 0} reviews · ${c.confirmed_issues || 0} issues${c.manual ? ` · ${c.manual} community` : ""}</span>
-            ${breakdownBar(u.breakdown)}
+            <span class="meta">${esc(explain.activity)}${explain.from.includes("from") ? ` · ${esc(explain.from)}` : ""}</span>
+            ${windowBreakdownBar(u, days)}
           </span>
           <span class="sparkwrap">${sparkline(u.days, dayKeys)}</span>
-          <span class="pts">${pts}</span>
+          <span class="pts" title="${esc(explain.from)}">${explain.pts}</span>
         </li>`;
     })
     .join("");
@@ -218,38 +257,76 @@ function whatCountsSection(meta) {
   const dupes = (is.duplicate_labels || []).join(", ");
   const prDd = pr.daily_diminishing;
   const isDd = is.daily_diminishing;
+  const pp = pr.points || {};
+  const prMin = pp.base ?? 10;
+  const prMax = Math.round((pp.base || 10) + (pp.max_bonus || 12));
   return `
     <section class="whatcounts">
-      <h2>What counts</h2>
+      <h2>How points work</h2>
+      <div class="score-guide">
+        <p class="score-guide-lead">
+          The number next to a name is <b>only activity in the selected window</b>
+          (past 7 or 14 days) — not career total. A score like <b>326</b> usually means
+          “a lot of merged PRs this week,” not millions of issue spam points.
+        </p>
+        <div class="score-math">
+          <div class="sm">
+            <span class="sm-lbl">Typical merged PR</span>
+            <span class="sm-val">${prMin}–${prMax} pts</span>
+            <span class="sm-note">base ${prMin} + size bonus up to ${pp.max_bonus ?? 12} (flattens after ~${pp.half_life_lines ?? 60} lines)</span>
+          </div>
+          <div class="sm">
+            <span class="sm-lbl">Substantive review</span>
+            <span class="sm-val">${rv.changes_requested_points}–${rv.approved_points} pts</span>
+            <span class="sm-note">≥${rv.min_body_length} char body · Approved or Changes requested · once per PR</span>
+          </div>
+          <div class="sm">
+            <span class="sm-lbl">Issue filed / closed</span>
+            <span class="sm-val">+${is.created_points} / +${is.closed_bonus}</span>
+            <span class="sm-note">max <b>${is.max_points_per_day ?? 8} issue pts / day</b> — filing 100 tickets can’t mint a lead</span>
+          </div>
+          <div class="sm">
+            <span class="sm-lbl">Same-day PR flood</span>
+            <span class="sm-val">decays after ${prDd?.after ?? 2}</span>
+            <span class="sm-note">3rd merge ≈ ×${prDd?.decay ?? 0.55}, then keeps falling to a ${Math.round((prDd?.min_factor ?? 0.12) * 100)}% floor — so 45 PRs ≠ 45 × ${prMax}</span>
+          </div>
+        </div>
+        <p class="score-example">
+          <b>Worked example:</b> ~45 merged PRs in a week, many of them on busy days,
+          often lands near <b>300–350 pts</b> after same-day diminishing returns
+          (avg ~7 pts/PR). One high-quality review (20) is worth roughly as much as
+          two tiny burst PRs that already hit the decay floor — by design.
+        </p>
+      </div>
       <div class="wc-grid">
         <div class="wc">
           <b>Pull requests</b>
-          <p>Only <b>merged</b> PRs into <code>${esc(branches)}</code>. Points use a
-          saturating size formula (lockfiles / generated files excluded). Size alone
-          cannot carry the board.
-          ${prDd ? `After ${prDd.after} merges the same day, further same-day PRs decay quickly (×${prDd.decay}, floor ${Math.round((prDd.min_factor || 0) * 100)}%) — so volume farming and AI-split PRs don’t dominate.` : ""}</p>
+          <p>Only <b>merged</b> into <code>${esc(branches)}</code>. Lockfiles / generated /
+          vendored paths are excluded from size. ${prDd ? `Volume farming is damped after ${prDd.after} merges/day.` : ""}</p>
         </div>
         <div class="wc">
           <b>Reviews</b>
           <p>Only <b>Approved</b> (+${rv.approved_points}) or <b>Changes requested</b>
-          (+${rv.changes_requested_points}) with a body of at least
-          ${rv.min_body_length} characters. ${rv.exclude_self_review ? "No self-reviews. " : ""}${
-    rv.one_per_pr_per_reviewer ? "One scored review per PR per person. " : ""
-  }Bots and automated accounts are excluded entirely.</p>
+          (+${rv.changes_requested_points}) with a real body
+          (≥${rv.min_body_length} chars). ${rv.exclude_self_review ? "No self-reviews. " : ""}${
+    rv.one_per_pr_per_reviewer ? "One scored review per PR. " : ""
+  }Bots never appear.</p>
         </div>
         <div class="wc">
           <b>Issues</b>
-          <p>Valid issues earn +${is.created_points} (closed completed +${is.closed_bonus}).
+          <p>+${is.created_points} to open (valid), +${is.closed_bonus} when completed.
           Rejected as ${esc(dupes)} / not-planned score nothing.
-          ${isDd ? `Same-day issue bursts decay after ${isDd.after} (×${isDd.decay}).` : ""}
-          ${Number.isFinite(is.max_points_per_day) ? `Hard cap: <b>${is.max_points_per_day} issue points per person per day</b> — opening 100 tickets cannot buy a leaderboard spot.` : ""}</p>
+          ${isDd ? `Burst decay after ${isDd.after}/day. ` : ""}${
+    Number.isFinite(is.max_points_per_day)
+      ? `<b>Hard cap ${is.max_points_per_day} issue pts/day.</b>`
+      : ""
+  }</p>
         </div>
         <div class="wc">
           <b>Humans only</b>
-          <p>Automated accounts (Dependabot, GitHub Actions, Renovate, and any
-          <code>[bot]</code> login) plus named agents such as MantisCartography
-          never appear. Rankings use trailing 7 / 14-day windows, not lifetime
-          totals — the board is about who’s shipping now.</p>
+          <p>Dependabot, GitHub Actions, Renovate, <code>[bot]</code> accounts, and
+          named agents (e.g. MantisCartography) are excluded. Rankings track
+          who’s actively shipping <i>now</i>.</p>
         </div>
       </div>
     </section>`;
@@ -348,7 +425,7 @@ export function renderHtml(users, meta) {
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Mantis · Contributor Leaderboard</title>
-<link rel="icon" href="mantis-mark.svg" type="image/svg+xml"/>
+<link rel="icon" href="mantis-mark.png" type="image/png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet"/>
@@ -422,10 +499,11 @@ export function renderHtml(users, meta) {
   .hero { text-align: center; margin-bottom: 1.75rem; }
   .brand { display: flex; flex-direction: column; align-items: center; gap: .7rem; margin-bottom: .85rem; }
   .logo {
-    width: min(268px, 70vw); height: auto; display: block;
+    width: min(220px, 62vw); height: auto; display: block;
+    filter: none;
   }
   @media (prefers-color-scheme: dark) {
-    .logo { filter: brightness(1.5) saturate(.92); }
+    .logo { filter: invert(1) brightness(1.05); }
   }
   .brand .parent {
     font-size: .7rem; letter-spacing: .04em; text-transform: uppercase;
@@ -475,10 +553,10 @@ export function renderHtml(users, meta) {
   .boards .panel { display: none; }
   ${boardVisibility}
 
-  /* Podium: left=3rd (small), mid=2nd, right=1st (large) */
+  /* Podium: left=1st (large), mid=2nd, right=3rd (small) */
   .podium {
     display: grid;
-    grid-template-columns: minmax(0, .86fr) minmax(0, 1fr) minmax(0, 1.22fr);
+    grid-template-columns: minmax(0, 1.22fr) minmax(0, 1fr) minmax(0, .86fr);
     align-items: end;
     gap: .7rem;
     margin: 0 0 1.35rem;
@@ -502,7 +580,11 @@ export function renderHtml(users, meta) {
   }
   .pod-pts { font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; line-height: 1.1; }
   .pod-pts span { font-size: .58em; font-weight: 600; color: var(--faint); margin-left: .15rem; }
-  .pod-meta { color: var(--muted); font-size: .7rem; margin-top: .18rem; }
+  .pod-why {
+    color: var(--muted); font-size: .68rem; margin-top: .28rem; line-height: 1.35;
+    max-width: 100%; padding: 0 .25rem;
+  }
+  .pod-meta { color: var(--faint); font-size: .68rem; margin-top: .12rem; }
 
   .pod-3 {
     padding: 1.1rem .5rem .8rem; min-height: 172px;
@@ -512,6 +594,7 @@ export function renderHtml(users, meta) {
   .pod-3 .pod-avatar { width: 48px; height: 48px; outline-color: var(--bronze); }
   .pod-3 .pod-pts { font-size: 1.18rem; }
   .pod-3 .pname { font-size: .78rem; }
+  .pod-3 .pod-why { font-size: .62rem; }
 
   .pod-2 {
     padding: 1.35rem .55rem .9rem; min-height: 208px; margin-bottom: .3rem;
@@ -532,6 +615,7 @@ export function renderHtml(users, meta) {
   .pod-1 .pod-avatar { width: 84px; height: 84px; outline: 3px solid var(--gold); }
   .pod-1 .pod-pts { font-size: 1.72rem; }
   .pod-1 .pname { font-size: .95rem; font-weight: 600; }
+  .pod-1 .pod-why { font-size: .7rem; color: var(--text); }
 
   /* Person labels: full name primary, @login secondary */
   .person {
@@ -609,6 +693,31 @@ export function renderHtml(users, meta) {
     font-family: var(--serif); font-size: 1.15rem; font-weight: 600;
     margin: 0 0 1rem; letter-spacing: -.01em;
   }
+  .score-guide {
+    background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.05rem 1.15rem 1.15rem; box-shadow: var(--shadow); margin-bottom: .85rem;
+  }
+  .score-guide-lead { margin: 0 0 .9rem; color: var(--muted); font-size: .86rem; line-height: 1.55; }
+  .score-math {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: .65rem;
+  }
+  .sm {
+    background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
+    padding: .7rem .8rem; display: flex; flex-direction: column; gap: .15rem;
+  }
+  .sm-lbl { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--faint); font-weight: 600; }
+  .sm-val { font-size: 1.05rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .sm-note { font-size: .72rem; color: var(--muted); line-height: 1.4; }
+  .score-example {
+    margin: .9rem 0 0; padding: .75rem .85rem; border-radius: 10px;
+    background: color-mix(in srgb, var(--accent-soft) 80%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
+    color: var(--muted); font-size: .8rem; line-height: 1.5;
+  }
+  .score-example b { color: var(--text); }
+  @media (max-width: 560px) {
+    .score-math { grid-template-columns: 1fr; }
+  }
   .wc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
   .wc {
     background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
@@ -649,19 +758,19 @@ export function renderHtml(users, meta) {
 
   @media (max-width: 560px) {
     h1 { font-size: 1.45rem; }
-    .logo { width: min(210px, 76vw); }
+    .logo { width: min(180px, 68vw); }
     .tiles { grid-template-columns: repeat(2, 1fr); }
     .sparkwrap, .spark { display: none; }
     .row { grid-template-columns: 1.4rem 1.9rem 1fr auto; gap: .55rem; padding: .65rem .7rem; }
     .hl-grid { grid-template-columns: 1fr; }
     .podium { gap: .45rem; }
+    .pod-meta, .pod-why { font-size: .58rem !important; }
     .pod-3 { min-height: 150px; }
     .pod-3 .pod-avatar { width: 42px; height: 42px; }
     .pod-2 { min-height: 178px; }
     .pod-2 .pod-avatar { width: 54px; height: 54px; }
     .pod-1 { min-height: 214px; }
     .pod-1 .pod-avatar { width: 68px; height: 68px; }
-    .pod-meta { display: none; }
     .pname { font-size: .72rem !important; max-width: 7.2rem; }
   }
 </style>
@@ -670,7 +779,7 @@ export function renderHtml(users, meta) {
   <div class="wrap">
     <header class="hero">
       <div class="brand">
-        <img class="logo" src="mantis-logo.svg" alt="Mantis" width="268" height="65"/>
+        <img class="logo" src="mantis-logo.png" alt="Mantis" width="220" height="74"/>
         <a class="parent" href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">mantis.csail.mit.edu</a>
       </div>
       <h1>Contributor Leaderboard</h1>
@@ -695,8 +804,8 @@ export function renderHtml(users, meta) {
     ${whatCountsSection(meta)}
 
     <footer>
-      Ranked by points in the trailing window — who is active now, not lifetime totals.<br/>
-      Fair scoring: PR size saturates · same-day volume decays · issue points hard-capped per day · bots excluded.<br/>
+      Ranked by points in the selected window only — not lifetime totals.<br/>
+      Why a score looks “small”: same-day PR floods are discounted; issues hard-capped. Hover a total to see the split.<br/>
       rules v${meta.rules_version} · GitHub activity + approved manual credits · <a href="admin.html">log a contribution →</a><br/>
       Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
     </footer>

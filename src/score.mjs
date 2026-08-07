@@ -86,6 +86,7 @@ function userOf(users, login) {
       total: 0,
       days: {},
       dayCounts: {}, // day -> { prs, reviews, confirmed_issues, fixed_bonuses, manual }
+      dayBreakdown: {}, // day -> { pr, review, issue, other } for window explainers
       breakdown: { pr: 0, review: 0, issue: 0, other: 0 },
       counts: { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0, manual: 0 },
       sizes: { XS: 0, S: 0, M: 0, L: 0, XL: 0 },
@@ -103,6 +104,10 @@ function addPoints(user, category, points, earnedAt) {
   user.breakdown[category] += points;
   const day = dayKey(earnedAt);
   user.days[day] = (user.days[day] || 0) + points;
+  if (!user.dayBreakdown[day]) {
+    user.dayBreakdown[day] = { pr: 0, review: 0, issue: 0, other: 0 };
+  }
+  user.dayBreakdown[day][category] += points;
 }
 
 // Bump a lifetime count AND the same count bucketed by the day it happened,
@@ -330,14 +335,20 @@ export function score(activity, rules, manual = {}) {
   // Rank by the primary trailing window (first entry in windows_days).
   const windowsDays = rules.display?.windows_days || [7, 14];
   const countCategories = ["prs", "reviews", "confirmed_issues", "fixed_bonuses", "manual"];
+  const pointCategories = ["pr", "review", "issue", "other"];
   for (const u of Object.values(users)) {
     u.windows = {};
     u.windowCounts = {};
+    u.windowBreakdown = {};
     for (const n of windowsDays) {
       const days = recentDays(n);
       u.windows[n] = days.reduce((sum, day) => sum + (u.days[day] || 0), 0);
       u.windowCounts[n] = countCategories.reduce((acc, cat) => {
         acc[cat] = days.reduce((sum, day) => sum + (u.dayCounts[day]?.[cat] || 0), 0);
+        return acc;
+      }, {});
+      u.windowBreakdown[n] = pointCategories.reduce((acc, cat) => {
+        acc[cat] = days.reduce((sum, day) => sum + (u.dayBreakdown[day]?.[cat] || 0), 0);
         return acc;
       }, {});
     }

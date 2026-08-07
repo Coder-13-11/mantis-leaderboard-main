@@ -69,6 +69,8 @@ async function main() {
     pr_rules: {
       count_merges_to: rules.pull_requests.count_merges_to,
       daily_diminishing: rules.pull_requests.daily_diminishing,
+      points: rules.pull_requests.points,
+      multipliers: rules.pull_requests.multipliers,
     },
     issue_rules: {
       created_points: rules.issues.created_points,

@@ -1,45 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="165 375 950 230" width="950" height="230" role="img" aria-label="Mantis">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" role="img" aria-label="Mantis">
+  <!-- Sailboat mark in circle -->
+  <g fill="currentColor">
+    <circle cx="36" cy="36" r="32"/>
+    <!-- reverse cutouts simulated with hole group via mask -->
+  </g>
   <defs>
-    <linearGradient id="mAB" x1="222" y1="419" x2="211" y2="563" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#081b68"/>
-      <stop offset="1" stop-color="#498af7"/>
-    </linearGradient>
-    <linearGradient id="mAD" x1="222" y1="419" x2="347" y2="542" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#081b68"/>
-      <stop offset="1" stop-color="#498af7"/>
-    </linearGradient>
-    <linearGradient id="mBC" x1="211" y1="563" x2="343" y2="460" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#498af7"/>
-      <stop offset="1" stop-color="#a055ee"/>
-    </linearGradient>
-    <linearGradient id="mDE" x1="347" y1="542" x2="463" y2="419" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#498af7"/>
-      <stop offset="1" stop-color="#a055ee"/>
-    </linearGradient>
-    <linearGradient id="mCF" x1="343" y1="460" x2="477" y2="562" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#a055ee"/>
-      <stop offset="1" stop-color="#081b68"/>
-    </linearGradient>
-    <linearGradient id="mEF" x1="463" y1="419" x2="477" y2="562" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#a055ee"/>
-      <stop offset="1" stop-color="#081b68"/>
-    </linearGradient>
+    <mask id="boatMask">
+      <rect width="280" height="72" fill="black"/>
+      <circle cx="36" cy="36" r="32" fill="white"/>
+      <!-- star -->
+      <path fill="black" transform="translate(46,14) scale(0.9)" d="M8 0 L9.5 5.5 L15 5.5 L10.5 9 L12.2 14.5 L8 11.2 L3.8 14.5 L5.5 9 L1 5.5 L6.5 5.5 Z"/>
+      <!-- sails -->
+      <path fill="black" d="M28 18 L28 44 L48 44 Z"/>
+      <path fill="black" d="M26 22 L26 44 L12 44 Z"/>
+      <!-- hull -->
+      <path fill="black" d="M10 46 h52 l-6 8 H16 Z"/>
+      <!-- waves -->
+      <path fill="black" d="M12 58 Q20 52 28 58 Q36 64 44 58 Q52 52 60 58 L60 62 Q52 56 44 62 Q36 68 28 62 Q20 56 12 62 Z"/>
+    </mask>
   </defs>
-
-  <line x1="222" y1="419" x2="211" y2="563" stroke="url(#mAB)" stroke-width="13" stroke-linecap="round"/>
-  <line x1="222" y1="419" x2="347" y2="542" stroke="url(#mAD)" stroke-width="11" stroke-linecap="round"/>
-  <line x1="211" y1="563" x2="343" y2="460" stroke="url(#mBC)" stroke-width="13" stroke-linecap="round"/>
-  <line x1="347" y1="542" x2="463" y2="419" stroke="url(#mDE)" stroke-width="11" stroke-linecap="round"/>
-  <line x1="343" y1="460" x2="477" y2="562" stroke="url(#mCF)" stroke-width="13" stroke-linecap="round"/>
-  <line x1="463" y1="419" x2="477" y2="562" stroke="url(#mEF)" stroke-width="13" stroke-linecap="round"/>
-
-  <circle cx="222" cy="419" r="35" fill="#081b68"/>
-  <circle cx="211" cy="563" r="35" fill="#498af7"/>
-  <circle cx="343" cy="460" r="15" fill="#a055ee"/>
-  <circle cx="347" cy="542" r="15" fill="#498af7"/>
-  <circle cx="463" cy="419" r="35" fill="#a055ee"/>
-  <circle cx="477" cy="562" r="35" fill="#081b68"/>
-
-  <text x="560" y="500" font-family="Helvetica, Arial, sans-serif" font-size="100" font-weight="600" letter-spacing="6" fill="#081b68">MANTIS</text>
-  <text x="562" y="560" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="500" letter-spacing="4" fill="#4a5578">MAP KNOWLEDGE. DISCOVER INSIGHT.</text>
+  <circle cx="36" cy="36" r="32" fill="currentColor" mask="url(#boatMask)"/>
+  <!-- Wordmark -->
+  <text x="82" y="48" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="38" font-weight="700" letter-spacing="-0.5" fill="currentColor">Mantis</text>
 </svg>
