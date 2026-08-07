@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **326** | 45 | 0 | 1 |
-| 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **292** | 26 | 0 | 5 |
-| 🥉 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **179** | 4 | 0 | 11 |
-| #4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **157** | 14 | 0 | 3 |
-| #5 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **156** | 4 | 0 | 25 |
-| #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **126** | 3 | 1 | 0 |
-| #7 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **93** | 3 | 0 | 1 |
-| #8 | **Sol** ([@larped-gpu](https://github.com/larped-gpu)) | **88** | 2 | 0 | 8 |
-| #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **77** | 2 | 1 | 1 |
-| #10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **76** | 2 | 0 | 6 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **223** | 26 | 0 | 5 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **202** | 45 | 0 | 1 |
+| 🥉 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
+| #4 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **94** | 4 | 0 | 11 |
+| #5 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **88** | 3 | 1 | 0 |
+| #6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **74** | 3 | 1 | 1 |
+| #7 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **72** | 4 | 0 | 25 |
+| #8 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **71** | 3 | 0 | 2 |
+| #9 | **Sol** ([@larped-gpu](https://github.com/larped-gpu)) | **57** | 2 | 0 | 8 |
+| #10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **55** | 2 | 0 | 7 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1729** | 129 | 0 | 117 |
-| 🥈 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **547** | 36 | 0 | 1 |
-| 🥉 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **344** | 8 | 0 | 49 |
-| #4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **292** | 26 | 0 | 5 |
-| #5 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **258** | 6 | 0 | 16 |
-| #6 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **176** | 2 | 3 | 18 |
-| #7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **174** | 5 | 1 | 0 |
-| #8 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **171** | 5 | 1 | 3 |
-| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **157** | 14 | 0 | 3 |
-| #10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **119** | 4 | 0 | 5 |
+| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **684** | 129 | 0 | 117 |
+| 🥈 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **309** | 36 | 0 | 1 |
+| 🥉 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **223** | 26 | 0 | 5 |
+| #4 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **158** | 8 | 0 | 49 |
+| #5 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **142** | 6 | 0 | 16 |
+| #6 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **137** | 5 | 1 | 4 |
+| #7 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **129** | 2 | 3 | 18 |
+| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **125** | 5 | 1 | 0 |
+| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
+| #10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **112** | 5 | 1 | 2 |
 
-_Last updated: Fri, 07 Aug 2026 18:33:01 GMT_
+_Last updated: Fri, 07 Aug 2026 18:58:40 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
