@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **689** | 2 | 29 | 29 |
-| 🥈 | [@chreia](https://github.com/chreia) | **300** | 45 | 0 | 1 |
-| 🥉 | [@PranavaKCode](https://github.com/PranavaKCode) | **191** | 17 | 0 | 4 |
+| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **894** | 2 | 39 | 29 |
+| 🥈 | [@chreia](https://github.com/chreia) | **302** | 45 | 0 | 1 |
+| 🥉 | [@PranavaKCode](https://github.com/PranavaKCode) | **282** | 25 | 0 | 4 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **154** | 4 | 0 | 25 |
-| #5 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **118** | 3 | 1 | 0 |
+| #5 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **120** | 3 | 1 | 0 |
 | #6 | [@larped-gpu](https://github.com/larped-gpu) | **88** | 2 | 0 | 8 |
-| #7 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
-| #8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
-| #9 | [@charleywolf](https://github.com/charleywolf) | **65** | 2 | 0 | 1 |
-| #10 | [@rohan-va](https://github.com/rohan-va) | **63** | 2 | 0 | 1 |
+| #7 | [@6namdang](https://github.com/6namdang) | **73** | 2 | 1 | 1 |
+| #8 | [@YakshithK](https://github.com/YakshithK) | **70** | 2 | 0 | 6 |
+| #9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 2 | 0 | 1 |
+| #10 | [@charleywolf](https://github.com/charleywolf) | **65** | 2 | 0 | 1 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1703** | 129 | 0 | 117 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1214** | 4 | 53 | 43 |
+| 🥇 | [@chreia](https://github.com/chreia) | **1705** | 129 | 0 | 117 |
+| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1419** | 4 | 63 | 43 |
 | 🥉 | [@ppxscal](https://github.com/ppxscal) | **547** | 36 | 0 | 1 |
 | #4 | [@alex-d4v](https://github.com/alex-d4v) | **342** | 8 | 0 | 49 |
-| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **191** | 17 | 0 | 4 |
-| #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **166** | 5 | 1 | 0 |
+| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **282** | 25 | 0 | 4 |
+| #6 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **168** | 5 | 1 | 0 |
 | #7 | [@gconsigli](https://github.com/gconsigli) | **166** | 2 | 3 | 18 |
 | #8 | [@charleywolf](https://github.com/charleywolf) | **144** | 4 | 0 | 6 |
 | #9 | [@rohan-va](https://github.com/rohan-va) | **141** | 4 | 1 | 3 |
 | #10 | [@AryanSudhirDev](https://github.com/AryanSudhirDev) | **119** | 4 | 0 | 5 |
 
-_Last updated: Fri, 07 Aug 2026 02:46:55 GMT_
+_Last updated: Fri, 07 Aug 2026 05:44:18 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
