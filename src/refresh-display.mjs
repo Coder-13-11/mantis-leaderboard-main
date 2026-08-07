@@ -1,11 +1,10 @@
 // -----------------------------------------------------------------------------
-// index.mjs — Orchestrator. Recomputes the leaderboard from scratch each run:
-//   fetch (read-only)  ->  score (config-driven)  ->  render (JSON/HTML/README)
+// refresh-display.mjs — Re-render site/README from data/leaderboard.json without
+// re-fetching GitHub activity. Used when scoring logic is unchanged for the
+// snapshot, but display rules (names, bot exclusion, HTML skin) advanced.
 //
-// Env:
-//   GH_TOKEN   read-only token with read access to the repos in config/rules.yml
-//
-// Which repos to track lives in config/rules.yml (`repos:`), not here.
+// Does NOT recompute fair points from raw events — run `npm run build` with
+// GH_TOKEN for a true rescore under the new rules.
 // -----------------------------------------------------------------------------
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
@@ -13,8 +12,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import yaml from "js-yaml";
 
-import { fetchActivity } from "./fetch.mjs";
-import { score } from "./score.mjs";
+import { buildLoginExcluder } from "./score.mjs";
 import { enrichUserNames } from "./profiles.mjs";
 import { renderJson, renderHtml, renderReadmeTable } from "./render.mjs";
 
@@ -34,42 +32,33 @@ function updateReadme(readmePath, table) {
 }
 
 async function main() {
-  const token = process.env.GH_TOKEN;
-  if (!token) throw new Error("GH_TOKEN is required (read-only token).");
-
   const rules = yaml.load(readFileSync(join(ROOT, "config/rules.yml"), "utf8"));
-  if (!rules.repos?.length) throw new Error("config/rules.yml needs a non-empty `repos` list.");
+  const raw = JSON.parse(readFileSync(join(ROOT, "data/leaderboard.json"), "utf8"));
+  const isExcluded = buildLoginExcluder(rules);
 
-  console.log(`Fetching activity for ${rules.repos.length} repos (last ${rules.lookback_days} days)...`);
-  const activity = await fetchActivity(token, rules.repos, rules.lookback_days);
-  console.log(`  ${activity.pullRequests.length} merged PRs, ${activity.issues.length} issues`);
+  let users = (raw.leaderboard || []).filter((u) => !isExcluded(u.login));
+  // Prefer primary window already on the record
+  const windowsDays = rules.display?.windows_days || raw.windows_days || [7, 14];
+  const primary = windowsDays[0];
+  users.sort((a, b) => (b.windows?.[primary] || 0) - (a.windows?.[primary] || 0));
+  users.forEach((u, i) => {
+    u.rank = i + 1;
+    if (u.name === undefined) u.name = null;
+  });
 
-  // Manual / off-GitHub contributions (approval-gated). Optional file.
-  let manual = { contributions: [] };
-  const manualPath = join(ROOT, "data/manual.yml");
-  if (existsSync(manualPath)) {
-    manual = yaml.load(readFileSync(manualPath, "utf8")) || { contributions: [] };
-  }
-  const approvedManual = (manual.contributions || []).filter((c) => c?.approved === true).length;
-  console.log(`  ${approvedManual} approved manual contributions`);
+  console.log(`After bot filter: ${users.length} contributors (was ${raw.leaderboard?.length || 0})`);
 
-  const users = score(activity, rules, manual);
-  console.log(`  scored ${users.length} human contributors`);
-
-  console.log("Resolving full names from GitHub profiles...");
+  const token = process.env.GH_TOKEN || null;
+  console.log("Resolving full names...");
   await enrichUserNames(users, token);
-  const named = users.filter((u) => u.name).length;
-  console.log(`  ${named}/${users.length} profiles have a public full name`);
+  console.log(`  ${users.filter((u) => u.name).length}/${users.length} have a public full name`);
 
   const meta = {
-    repos: rules.repos,
-    lookback_days: rules.lookback_days,
-    windows_days: rules.display?.windows_days || [7, 14],
-    manual_categories: rules.manual_contributions?.categories || {},
+    repos: raw.repos || rules.repos,
+    lookback_days: raw.lookback_days || rules.lookback_days,
+    windows_days: windowsDays,
+    manual_categories: rules.manual_contributions?.categories || raw.manual_categories || {},
     rules_version: rules.version,
-    // Threaded through so the on-page "what counts" explainer is always
-    // derived from the live config, never hand-written prose that can
-    // silently drift out of sync with config/rules.yml.
     review_rules: {
       approved_points: rules.reviews.approved_points,
       changes_requested_points: rules.reviews.changes_requested_points,
@@ -96,10 +85,10 @@ async function main() {
   writeFileSync(join(ROOT, "site/index.html"), renderHtml(users, meta));
   updateReadme(
     join(ROOT, "README.md"),
-    renderReadmeTable(users, rules.display.top_n_in_readme, meta.windows_days)
+    renderReadmeTable(users, rules.display.top_n_in_readme, windowsDays)
   );
-
   console.log("Wrote data/leaderboard.json, site/index.html, README.md");
+  console.log("NOTE: points are from the previous snapshot. Run GH_TOKEN=… npm run build to rescore under v2 fair rules.");
 }
 
 main().catch((err) => {

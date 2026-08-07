@@ -51,12 +51,38 @@ function recentDays(n) {
   return days;
 }
 
+// Build a login exclusion checker from config (exact logins + patterns).
+// Humans only: listed bots, [bot] suffixes, case-insensitive exact matches.
+export function buildLoginExcluder(rules) {
+  const exact = new Set(
+    (rules.display?.exclude_logins || []).map((l) => String(l).toLowerCase())
+  );
+  const patterns = (rules.display?.exclude_login_patterns || [])
+    .map((p) => {
+      try {
+        return new RegExp(p, "i");
+      } catch {
+        return null;
+      }
+    })
+    .filter(Boolean);
+
+  return (login) => {
+    if (!login) return true;
+    const key = String(login).toLowerCase();
+    if (exact.has(key)) return true;
+    if (key.endsWith("[bot]")) return true;
+    return patterns.some((re) => re.test(login));
+  };
+}
+
 // Create/return a user record in the accumulator.
 function userOf(users, login) {
   if (!login) return null;
   if (!users[login]) {
     users[login] = {
       login,
+      name: null, // filled later by profile enrichment
       total: 0,
       days: {},
       dayCounts: {}, // day -> { prs, reviews, confirmed_issues, fixed_bonuses, manual }
@@ -72,6 +98,7 @@ function userOf(users, login) {
 // Credit points to a user's lifetime total, category breakdown, and the day
 // the points were earned on.
 function addPoints(user, category, points, earnedAt) {
+  if (!points) return;
   user.total += points;
   user.breakdown[category] += points;
   const day = dayKey(earnedAt);
@@ -80,10 +107,7 @@ function addPoints(user, category, points, earnedAt) {
 
 // Bump a lifetime count AND the same count bucketed by the day it happened,
 // so trailing windows (7-day, 14-day, ...) can be computed for counts too --
-// not just for points. Without this, the "PRs / Reviews / Issues" numbers
-// shown next to a windowed point total are actually all-time counts (over
-// the full `lookback_days`), which is what was making the 7/14-day views
-// look wrong.
+// not just for points.
 function addCount(user, category, earnedAt) {
   user.counts[category] += 1;
   const day = dayKey(earnedAt);
@@ -93,18 +117,34 @@ function addCount(user, category, earnedAt) {
   user.dayCounts[day][category] += 1;
 }
 
+// Same-day diminishing factor for the n-th event of a category.
+function diminishingFactor(nth, cfg) {
+  if (!cfg || nth <= cfg.after) return 1;
+  return Math.max(cfg.min_factor ?? 0, (cfg.decay ?? 1) ** (nth - cfg.after));
+}
+
+// Clip `want` so it does not push `used` above `cap`. Returns the allowed amount.
+function clipToCap(want, used, cap) {
+  if (!Number.isFinite(cap)) return want;
+  const remaining = Math.max(0, cap - used);
+  return Math.min(want, remaining);
+}
+
 export function score(activity, rules, manual = {}) {
   const users = {};
   const pr = rules.pull_requests;
   const rv = rules.reviews;
   const is = rules.issues;
   const excludeRes = (pr.exclude_paths || []).map(globToRegExp);
-  const excludeLogins = new Set(rules.display?.exclude_logins || []);
+  const isExcluded = buildLoginExcluder(rules);
 
   // Track which login has already been credited a "first PR" bonus.
   const seenAuthors = new Set();
-  // Count of a user's PRs merged on each calendar day, for diminishing returns.
+  // Count of a user's events on each calendar day, for diminishing returns.
   const prPerDay = {};
+  const issuePerDay = {};
+  // Issue points already credited per login|day, for the hard daily ceiling.
+  const issuePtsPerDay = {};
 
   // Sort PRs chronologically so "first PR" is deterministic.
   const prs = [...activity.pullRequests]
@@ -116,15 +156,10 @@ export function score(activity, rules, manual = {}) {
     // `count_merges_to` gates whether the PR's OWN authorship points count
     // (size bonus, first-PR bonus, etc.) -- it says nothing about whether
     // reviewing this PR was valuable. Reviews are scored unconditionally
-    // below, in their own block, so a reviewer isn't penalized just because
-    // the PR they reviewed happened to target a branch outside
-    // `count_merges_to`. (Previously a single `continue` here skipped both,
-    // so reviews on such PRs silently scored nothing -- harmless today since
-    // every tracked repo's PRs merge to main/master, but a real bug waiting
-    // to bite the moment that's no longer true.)
+    // below, in their own block.
     const authorEligible =
       login &&
-      !excludeLogins.has(login) &&
+      !isExcluded(login) &&
       (!pr.count_merges_to || pr.count_merges_to.includes(p.baseRefName));
 
     if (authorEligible) {
@@ -136,8 +171,18 @@ export function score(activity, rules, manual = {}) {
       const rawLines = (p.additions || 0) + (p.deletions || 0);
       const meaningful = Math.round(rawLines * (1 - excludedRatio));
 
+      // Bucket label is kept for the dashboard's size breakdown only -- it no
+      // longer drives points (see the `points` formula below and its
+      // reasoning in config/rules.yml).
       const bucket = sizeBucket(meaningful, pr.size_buckets);
-      let points = pr.size_points[bucket];
+
+      // Saturating size bonus: grows quickly for the first several dozen
+      // lines, then flattens out hard, so a huge PR earns barely more than a
+      // solid mid-size one. `base` alone rewards just showing up with a
+      // merged PR at all.
+      const { base, max_bonus, half_life_lines } = pr.points;
+      const bonus = max_bonus * (meaningful / (meaningful + half_life_lines));
+      let points = base + bonus;
 
       // --- Multipliers ---
       const labels = (p.labels?.nodes || []).map((l) => l.name.toLowerCase());
@@ -154,15 +199,10 @@ export function score(activity, rules, manual = {}) {
       seenAuthors.add(login);
 
       // Diminishing returns for many same-day PRs by the same author
-      // (discourages splitting one change into many PRs to farm points).
-      const dd = pr.daily_diminishing;
-      if (dd) {
-        const dk = `${login}|${dayKey(p.mergedAt)}`;
-        const nth = (prPerDay[dk] = (prPerDay[dk] || 0) + 1);
-        if (nth > dd.after) {
-          points *= Math.max(dd.min_factor, dd.decay ** (nth - dd.after));
-        }
-      }
+      // (discourages splitting one change into many PRs / AI flood).
+      const dk = `${login}|${dayKey(p.mergedAt)}`;
+      const nth = (prPerDay[dk] = (prPerDay[dk] || 0) + 1);
+      points *= diminishingFactor(nth, pr.daily_diminishing);
 
       points = Math.round(points);
 
@@ -173,11 +213,10 @@ export function score(activity, rules, manual = {}) {
     }
 
     // --- Reviews on this PR (anti-spam) ---
-    // Scored regardless of `authorEligible` -- see comment above.
     const creditedReviewers = new Set();
     for (const r of p.reviews?.nodes || []) {
       const reviewer = r.author?.login;
-      if (!reviewer || excludeLogins.has(reviewer)) continue;
+      if (!reviewer || isExcluded(reviewer)) continue;
       if (rv.exclude_self_review && reviewer === login) continue;
       if (rv.one_per_pr_per_reviewer && creditedReviewers.has(reviewer)) continue;
       const body = (r.body || "").trim();
@@ -195,10 +234,15 @@ export function score(activity, rules, manual = {}) {
     }
   }
 
-  // --- Issues (raw valid issues; difficulty labels override the flat base) ---
-  for (const i of activity.issues) {
+  // --- Issues (low value + steep volume dampening; hard daily ceiling) ---
+  // Sort so "first of the day" is deterministic for diminishing returns.
+  const issues = [...activity.issues].sort(
+    (a, b) => new Date(a.createdAt) - new Date(b.createdAt)
+  );
+
+  for (const i of issues) {
     const login = i.author?.login;
-    if (!login || excludeLogins.has(login)) continue;
+    if (!login || isExcluded(login)) continue;
     const labels = (i.labels?.nodes || []).map((l) => l.name.toLowerCase());
 
     // Drop issues that were rejected — those aren't real contributions.
@@ -209,37 +253,62 @@ export function score(activity, rules, manual = {}) {
     if (isDuplicate) continue;
 
     // A difficulty label's points REPLACE the flat base, when one is present.
-    // Until difficulty labels are in use, every valid issue gets created_points.
-    let basePoints = is.created_points ?? 0;
+    let rawCreate = is.created_points ?? 0;
     for (const [label, pts] of Object.entries(is.difficulty_points || {})) {
       if (labels.includes(label.toLowerCase())) {
-        basePoints = pts;
+        rawCreate = pts;
         break;
       }
     }
-    if (!basePoints) continue;
+    if (!rawCreate) continue;
+
+    const createDay = dayKey(i.createdAt);
+    const createKey = `${login}|${createDay}`;
+    const nth = (issuePerDay[createKey] = (issuePerDay[createKey] || 0) + 1);
+    const factor = diminishingFactor(nth, is.daily_diminishing);
+
+    let createPts = rawCreate * factor;
+    let closedPts = 0;
+    if (i.closed && i.stateReason !== "NOT_PLANNED" && (is.closed_bonus || 0) > 0) {
+      closedPts = (is.closed_bonus || 0) * factor;
+    }
+
+    // Hard daily ceiling on issue-category points (create day).
+    const cap = is.max_points_per_day;
+    const usedCreate = issuePtsPerDay[createKey] || 0;
+    createPts = clipToCap(createPts, usedCreate, cap);
+    issuePtsPerDay[createKey] = usedCreate + createPts;
+
+    // Closed bonus counts against the close day's budget (often same day).
+    if (closedPts > 0) {
+      const closeDay = dayKey(i.closedAt || i.createdAt);
+      const closeKey = `${login}|${closeDay}`;
+      const usedClose = issuePtsPerDay[closeKey] || 0;
+      closedPts = clipToCap(closedPts, usedClose, cap);
+      issuePtsPerDay[closeKey] = usedClose + closedPts;
+    }
+
+    createPts = Math.round(createPts);
+    closedPts = Math.round(closedPts);
 
     const u = userOf(users, login);
-    addPoints(u, "issue", basePoints, i.createdAt);
-    addCount(u, "confirmed_issues", i.createdAt); // "valid issues created"
+    // Activity counts always reflect real issues, even when points are clipped
+    // to zero — so the board still shows "opened 40 issues, earned 8 pts max".
+    addCount(u, "confirmed_issues", i.createdAt);
+    addPoints(u, "issue", createPts, i.createdAt);
 
-    // Small bonus once it's closed as completed (someone acted on it).
-    if (i.closed && i.stateReason !== "NOT_PLANNED" && (is.closed_bonus || 0) > 0) {
-      addPoints(u, "issue", is.closed_bonus, i.closedAt || i.createdAt);
+    if (closedPts > 0) {
+      addPoints(u, "issue", closedPts, i.closedAt || i.createdAt);
       addCount(u, "fixed_bonuses", i.closedAt || i.createdAt);
     }
   }
 
   // --- Manual / off-GitHub contributions (approval-gated) ---
-  // Only entries with `approved: true` score. Points come from the entry's own
-  // `points`, or the category default in rules.manual_contributions. Dated on
-  // the day the work happened so they flow into the trailing windows like
-  // everything else.
   const catDefaults = rules.manual_contributions?.categories || {};
   for (const c of manual?.contributions || []) {
     if (!c || c.approved !== true) continue;
     const login = c.login;
-    if (!login || excludeLogins.has(login)) continue;
+    if (!login || isExcluded(login)) continue;
     const pts = Number.isFinite(c.points)
       ? c.points
       : catDefaults[c.type]?.points ?? 0;
@@ -258,10 +327,7 @@ export function score(activity, rules, manual = {}) {
     });
   }
 
-  // Rank by the primary trailing window (first entry in windows_days), not
-  // lifetime total, so the leaderboard reflects who is active now. Every
-  // configured window (e.g. 7-day, 14-day) gets computed so the leaderboard
-  // can show more than one at once.
+  // Rank by the primary trailing window (first entry in windows_days).
   const windowsDays = rules.display?.windows_days || [7, 14];
   const countCategories = ["prs", "reviews", "confirmed_issues", "fixed_bonuses", "manual"];
   for (const u of Object.values(users)) {

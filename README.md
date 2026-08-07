@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@MantisCartography](https://github.com/MantisCartography) | **986** | 2 | 42 | 29 |
-| 🥈 | [@chreia](https://github.com/chreia) | **326** | 45 | 0 | 1 |
-| 🥉 | [@PranavaKCode](https://github.com/PranavaKCode) | **292** | 26 | 0 | 5 |
-| #4 | [@charleywolf](https://github.com/charleywolf) | **179** | 4 | 0 | 11 |
-| #5 | [@Chessing234](https://github.com/Chessing234) | **157** | 14 | 0 | 3 |
-| #6 | [@alex-d4v](https://github.com/alex-d4v) | **156** | 4 | 0 | 25 |
-| #7 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **126** | 3 | 1 | 0 |
-| #8 | [@rohan-va](https://github.com/rohan-va) | **93** | 3 | 0 | 1 |
-| #9 | [@larped-gpu](https://github.com/larped-gpu) | **88** | 2 | 0 | 8 |
-| #10 | [@6namdang](https://github.com/6namdang) | **77** | 2 | 1 | 1 |
+| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **326** | 45 | 0 | 1 |
+| 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **292** | 26 | 0 | 5 |
+| 🥉 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **179** | 4 | 0 | 11 |
+| #4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **157** | 14 | 0 | 3 |
+| #5 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **156** | 4 | 0 | 25 |
+| #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **126** | 3 | 1 | 0 |
+| #7 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **93** | 3 | 0 | 1 |
+| #8 | **Sol** ([@larped-gpu](https://github.com/larped-gpu)) | **88** | 2 | 0 | 8 |
+| #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **77** | 2 | 1 | 1 |
+| #10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **76** | 2 | 0 | 6 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | [@chreia](https://github.com/chreia) | **1729** | 129 | 0 | 117 |
-| 🥈 | [@MantisCartography](https://github.com/MantisCartography) | **1511** | 4 | 66 | 43 |
-| 🥉 | [@ppxscal](https://github.com/ppxscal) | **547** | 36 | 0 | 1 |
-| #4 | [@alex-d4v](https://github.com/alex-d4v) | **344** | 8 | 0 | 49 |
-| #5 | [@PranavaKCode](https://github.com/PranavaKCode) | **292** | 26 | 0 | 5 |
-| #6 | [@charleywolf](https://github.com/charleywolf) | **258** | 6 | 0 | 16 |
-| #7 | [@gconsigli](https://github.com/gconsigli) | **176** | 2 | 3 | 18 |
-| #8 | [@DemonizedCrush](https://github.com/DemonizedCrush) | **174** | 5 | 1 | 0 |
-| #9 | [@rohan-va](https://github.com/rohan-va) | **171** | 5 | 1 | 3 |
-| #10 | [@Chessing234](https://github.com/Chessing234) | **157** | 14 | 0 | 3 |
+| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1729** | 129 | 0 | 117 |
+| 🥈 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **547** | 36 | 0 | 1 |
+| 🥉 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **344** | 8 | 0 | 49 |
+| #4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **292** | 26 | 0 | 5 |
+| #5 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **258** | 6 | 0 | 16 |
+| #6 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **176** | 2 | 3 | 18 |
+| #7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **174** | 5 | 1 | 0 |
+| #8 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **171** | 5 | 1 | 3 |
+| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **157** | 14 | 0 | 3 |
+| #10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **119** | 4 | 0 | 5 |
 
-_Last updated: Fri, 07 Aug 2026 16:57:51 GMT_
+_Last updated: Fri, 07 Aug 2026 18:26:47 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup

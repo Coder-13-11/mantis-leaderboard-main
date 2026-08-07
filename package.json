@@ -5,7 +5,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "node src/index.mjs"
+    "build": "node src/index.mjs",
+    "refresh-display": "node src/refresh-display.mjs"
   },
   "dependencies": {
     "js-yaml": "^4.1.0"

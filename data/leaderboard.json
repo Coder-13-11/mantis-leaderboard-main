@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T16:57:51.281Z",
+  "generated_at": "2026-08-07T18:26:46.988Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -59,7 +59,7 @@
       "emoji": "⭐"
     }
   },
-  "rules_version": 1,
+  "rules_version": 2,
   "review_rules": {
     "approved_points": 20,
     "changes_requested_points": 15,
@@ -71,1333 +71,29 @@
     "count_merges_to": [
       "main",
       "master"
-    ]
+    ],
+    "daily_diminishing": {
+      "after": 2,
+      "decay": 0.55,
+      "min_factor": 0.12
+    }
   },
   "issue_rules": {
-    "created_points": 3,
-    "closed_bonus": 2,
+    "created_points": 2,
+    "closed_bonus": 1,
     "duplicate_labels": [
       "duplicate",
       "wontfix",
       "invalid"
-    ]
+    ],
+    "daily_diminishing": {
+      "after": 2,
+      "decay": 0.4,
+      "min_factor": 0.05
+    },
+    "max_points_per_day": 8
   },
   "leaderboard": [
-    {
-      "login": "MantisCartography",
-      "total": 7604,
-      "days": {
-        "2025-09-07": 8,
-        "2026-02-07": 5,
-        "2026-02-10": 10,
-        "2026-02-22": 15,
-        "2026-02-26": 10,
-        "2026-03-05": 10,
-        "2026-03-06": 35,
-        "2026-03-07": 46,
-        "2026-03-11": 5,
-        "2026-03-14": 13,
-        "2026-03-17": 17,
-        "2026-03-27": 18,
-        "2026-03-29": 34,
-        "2026-04-02": 16,
-        "2026-04-05": 26,
-        "2026-04-10": 73,
-        "2026-04-13": 25,
-        "2026-04-14": 25,
-        "2026-04-17": 69,
-        "2026-04-24": 23,
-        "2026-04-25": 16,
-        "2026-04-28": 26,
-        "2026-05-06": 20,
-        "2026-05-10": 22,
-        "2026-05-12": 23,
-        "2026-04-16": 32,
-        "2026-05-14": 326,
-        "2026-05-16": 32,
-        "2026-05-24": 10,
-        "2026-05-25": 7,
-        "2026-05-27": 16,
-        "2026-05-28": 52,
-        "2026-05-29": 34,
-        "2026-05-31": 30,
-        "2026-06-03": 24,
-        "2026-06-06": 20,
-        "2026-06-09": 238,
-        "2026-06-10": 274,
-        "2026-06-11": 241,
-        "2026-06-12": 109,
-        "2026-06-14": 10,
-        "2026-06-19": 32,
-        "2026-06-20": 126,
-        "2026-06-21": 1200,
-        "2026-06-22": 78,
-        "2026-06-24": 30,
-        "2026-06-25": 187,
-        "2026-06-26": 27,
-        "2026-06-27": 56,
-        "2026-07-01": 83,
-        "2026-07-05": 32,
-        "2026-07-06": 66,
-        "2026-07-07": 37,
-        "2026-07-10": 18,
-        "2026-07-13": 92,
-        "2026-07-14": 94,
-        "2026-07-15": 104,
-        "2026-07-16": 114,
-        "2026-07-17": 124,
-        "2026-07-20": 461,
-        "2026-07-18": 84,
-        "2026-07-19": 262,
-        "2026-07-21": 188,
-        "2026-07-22": 18,
-        "2026-07-24": 27,
-        "2026-07-28": 274,
-        "2026-07-27": 48,
-        "2026-07-29": 57,
-        "2026-07-30": 96,
-        "2026-07-31": 40,
-        "2026-08-01": 30,
-        "2026-08-02": 31,
-        "2026-08-03": 305,
-        "2026-08-04": 208,
-        "2026-08-05": 100,
-        "2026-08-06": 127,
-        "2026-08-07": 185,
-        "2026-07-25": 3,
-        "2026-07-23": 9,
-        "2026-07-09": 6,
-        "2026-07-11": 5,
-        "2026-07-02": 11,
-        "2026-06-30": 6,
-        "2026-07-26": 7,
-        "2026-06-28": 4,
-        "2026-06-15": 6,
-        "2026-06-18": 2,
-        "2026-06-07": 16,
-        "2026-06-04": 10,
-        "2026-05-26": 3,
-        "2026-05-23": 3,
-        "2026-05-22": 6,
-        "2026-05-30": 4,
-        "2026-05-21": 5,
-        "2026-05-20": 17,
-        "2026-05-19": 21,
-        "2026-05-17": 5,
-        "2026-05-11": 5,
-        "2026-05-13": 2,
-        "2026-05-15": 2,
-        "2026-05-04": 3,
-        "2026-05-05": 2,
-        "2026-05-03": 3,
-        "2026-05-08": 2,
-        "2026-05-01": 3,
-        "2026-05-02": 2,
-        "2026-04-26": 2,
-        "2026-04-21": 14,
-        "2026-04-20": 3,
-        "2026-04-15": 3,
-        "2026-04-12": 15,
-        "2026-04-11": 10,
-        "2026-04-07": 9,
-        "2026-04-01": 18,
-        "2026-04-04": 4,
-        "2026-03-28": 11,
-        "2026-03-25": 14,
-        "2026-03-23": 6,
-        "2026-03-22": 5,
-        "2026-03-19": 3,
-        "2026-03-16": 9,
-        "2026-03-18": 2,
-        "2026-03-15": 5,
-        "2026-03-21": 2,
-        "2026-03-08": 2,
-        "2026-03-03": 5,
-        "2026-03-01": 3,
-        "2026-02-27": 19,
-        "2026-03-04": 2,
-        "2026-04-03": 5,
-        "2026-02-25": 3,
-        "2026-02-24": 5,
-        "2026-01-19": 10,
-        "2026-02-21": 2,
-        "2026-01-10": 7,
-        "2026-01-09": 11,
-        "2026-01-26": 2,
-        "2026-01-08": 18,
-        "2026-01-11": 2,
-        "2026-02-16": 2,
-        "2025-12-06": 10,
-        "2025-11-26": 3,
-        "2025-12-30": 4,
-        "2025-11-06": 3,
-        "2025-11-03": 10,
-        "2025-11-01": 3,
-        "2025-10-05": 5,
-        "2025-10-04": 15,
-        "2025-10-01": 8,
-        "2025-10-02": 2,
-        "2025-09-27": 10,
-        "2026-07-12": 6,
-        "2026-06-08": 2,
-        "2026-06-01": 12,
-        "2026-04-18": 3,
-        "2026-03-31": 3,
-        "2026-03-20": 10,
-        "2026-02-12": 3
-      },
-      "dayCounts": {
-        "2025-09-07": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-02-07": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-02-10": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-02-22": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-02-26": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-05": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-06": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-07": {
-          "prs": 4,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-11": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-14": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-17": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-03-27": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-29": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-04-02": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-04-05": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-04-10": {
-          "prs": 0,
-          "reviews": 3,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-04-13": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-04-14": {
-          "prs": 3,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-04-17": {
-          "prs": 0,
-          "reviews": 3,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-04-24": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 5,
-          "manual": 0
-        },
-        "2026-04-25": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 4,
-          "manual": 0
-        },
-        "2026-04-28": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-06": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-10": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-12": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-04-16": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-14": {
-          "prs": 7,
-          "reviews": 14,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-05-16": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 7,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-05-24": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-25": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-27": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-28": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 10,
-          "manual": 0
-        },
-        "2026-05-29": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-31": {
-          "prs": 4,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-03": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-06": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-09": {
-          "prs": 9,
-          "reviews": 6,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 4,
-          "manual": 0
-        },
-        "2026-06-10": {
-          "prs": 1,
-          "reviews": 13,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-06-11": {
-          "prs": 6,
-          "reviews": 10,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-06-12": {
-          "prs": 2,
-          "reviews": 4,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-06-14": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-19": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-20": {
-          "prs": 12,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-06-21": {
-          "prs": 0,
-          "reviews": 60,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-22": {
-          "prs": 5,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-24": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 7,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-06-25": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 51,
-          "fixed_bonuses": 5,
-          "manual": 0
-        },
-        "2026-06-26": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-06-27": {
-          "prs": 1,
-          "reviews": 1,
-          "confirmed_issues": 6,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-07-01": {
-          "prs": 3,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-05": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-06": {
-          "prs": 0,
-          "reviews": 3,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-07-07": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 4,
-          "manual": 0
-        },
-        "2026-07-10": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-07-13": {
-          "prs": 10,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-07-14": {
-          "prs": 8,
-          "reviews": 0,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-15": {
-          "prs": 6,
-          "reviews": 1,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-07-16": {
-          "prs": 1,
-          "reviews": 5,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-07-17": {
-          "prs": 9,
-          "reviews": 1,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-07-20": {
-          "prs": 3,
-          "reviews": 22,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 4,
-          "manual": 0
-        },
-        "2026-07-18": {
-          "prs": 3,
-          "reviews": 3,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-19": {
-          "prs": 3,
-          "reviews": 10,
-          "confirmed_issues": 7,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-07-21": {
-          "prs": 9,
-          "reviews": 3,
-          "confirmed_issues": 7,
-          "fixed_bonuses": 17,
-          "manual": 0
-        },
-        "2026-07-22": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-24": {
-          "prs": 1,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-07-28": {
-          "prs": 0,
-          "reviews": 13,
-          "confirmed_issues": 6,
-          "fixed_bonuses": 8,
-          "manual": 0
-        },
-        "2026-07-27": {
-          "prs": 0,
-          "reviews": 2,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-07-29": {
-          "prs": 1,
-          "reviews": 3,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-07-30": {
-          "prs": 1,
-          "reviews": 4,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-07-31": {
-          "prs": 0,
-          "reviews": 2,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-08-01": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 5,
-          "manual": 0
-        },
-        "2026-08-02": {
-          "prs": 1,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-08-03": {
-          "prs": 1,
-          "reviews": 15,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-08-04": {
-          "prs": 0,
-          "reviews": 10,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 4,
-          "manual": 0
-        },
-        "2026-08-05": {
-          "prs": 0,
-          "reviews": 5,
-          "confirmed_issues": 5,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-08-06": {
-          "prs": 0,
-          "reviews": 6,
-          "confirmed_issues": 5,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-08-07": {
-          "prs": 0,
-          "reviews": 4,
-          "confirmed_issues": 18,
-          "fixed_bonuses": 28,
-          "manual": 0
-        },
-        "2026-07-25": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-23": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-09": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-11": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-07-02": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-06-30": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-07-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-06-28": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-06-15": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-18": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-06-07": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-06-04": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-05-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-23": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-22": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-30": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-05-21": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-20": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 5,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-19": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 7,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-17": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-11": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-13": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-15": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-04": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-05": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-03": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-08": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-05-01": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-05-02": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-04-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-04-21": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-04-20": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-04-15": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-04-12": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-04-11": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-04-07": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-04-01": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2026-04-04": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-03-28": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-25": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 4,
-          "manual": 0
-        },
-        "2026-03-23": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-22": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-19": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-16": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-18": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-15": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-21": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-08": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-03": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-03-01": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-02-27": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 5,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-03-04": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-04-03": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-02-25": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-02-24": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-01-19": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-02-21": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-01-10": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-01-09": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-01-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-01-08": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 6,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-01-11": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-02-16": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2025-12-06": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2025-11-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2025-12-30": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2025-11-06": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2025-11-03": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2025-11-01": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2025-10-05": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2025-10-04": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 3,
-          "manual": 0
-        },
-        "2025-10-01": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2025-10-02": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2025-09-27": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-07-12": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-06-08": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 1,
-          "manual": 0
-        },
-        "2026-06-01": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-04-18": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-31": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        },
-        "2026-03-20": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 2,
-          "manual": 0
-        },
-        "2026-02-12": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0
-        }
-      },
-      "breakdown": {
-        "pr": 1705,
-        "review": 4500,
-        "issue": 1399,
-        "other": 0
-      },
-      "counts": {
-        "prs": 156,
-        "reviews": 233,
-        "confirmed_issues": 311,
-        "fixed_bonuses": 233,
-        "manual": 0
-      },
-      "sizes": {
-        "XS": 47,
-        "S": 37,
-        "M": 46,
-        "L": 19,
-        "XL": 7
-      },
-      "contributions": [],
-      "windows": {
-        "7": 986,
-        "14": 1511
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 2,
-          "reviews": 42,
-          "confirmed_issues": 29,
-          "fixed_bonuses": 41,
-          "manual": 0
-        },
-        "14": {
-          "prs": 4,
-          "reviews": 66,
-          "confirmed_issues": 43,
-          "fixed_bonuses": 57,
-          "manual": 0
-        }
-      },
-      "rolling_total": 986,
-      "rank": 1
-    },
     {
       "login": "chreia",
       "total": 3511,
@@ -1751,7 +447,8 @@
         }
       },
       "rolling_total": 326,
-      "rank": 2
+      "rank": 1,
+      "name": "Sebastien Kawada"
     },
     {
       "login": "PranavaKCode",
@@ -2002,7 +699,8 @@
         }
       },
       "rolling_total": 292,
-      "rank": 3
+      "rank": 2,
+      "name": "Pranava Kumar"
     },
     {
       "login": "charleywolf",
@@ -2549,7 +1247,8 @@
         }
       },
       "rolling_total": 179,
-      "rank": 4
+      "rank": 3,
+      "name": null
     },
     {
       "login": "Chessing234",
@@ -2640,7 +1339,8 @@
         }
       },
       "rolling_total": 157,
-      "rank": 5
+      "rank": 4,
+      "name": "Taksh Kothari"
     },
     {
       "login": "alex-d4v",
@@ -3459,7 +2159,8 @@
         }
       },
       "rolling_total": 156,
-      "rank": 6
+      "rank": 5,
+      "name": "alex_d4v"
     },
     {
       "login": "DemonizedCrush",
@@ -4558,7 +3259,8 @@
         }
       },
       "rolling_total": 126,
-      "rank": 7
+      "rank": 6,
+      "name": "Arjun Kulkarni"
     },
     {
       "login": "rohan-va",
@@ -5513,7 +4215,8 @@
         }
       },
       "rolling_total": 93,
-      "rank": 8
+      "rank": 7,
+      "name": "Rohan Vaidya"
     },
     {
       "login": "larped-gpu",
@@ -5572,7 +4275,8 @@
         }
       },
       "rolling_total": 88,
-      "rank": 9
+      "rank": 8,
+      "name": "Sol"
     },
     {
       "login": "6namdang",
@@ -5767,7 +4471,8 @@
         }
       },
       "rolling_total": 77,
-      "rank": 10
+      "rank": 9,
+      "name": "Hoang"
     },
     {
       "login": "YakshithK",
@@ -5986,7 +4691,8 @@
         }
       },
       "rolling_total": 76,
-      "rank": 11
+      "rank": 10,
+      "name": "Yakshith"
     },
     {
       "login": "alexandragreenwood",
@@ -6061,7 +4767,8 @@
         }
       },
       "rolling_total": 69,
-      "rank": 12
+      "rank": 11,
+      "name": null
     },
     {
       "login": "AryanSudhirDev",
@@ -6208,7 +4915,8 @@
         }
       },
       "rolling_total": 61,
-      "rank": 13
+      "rank": 12,
+      "name": "Aryan Sudhir"
     },
     {
       "login": "gconsigli",
@@ -6771,7 +5479,8 @@
         }
       },
       "rolling_total": 32,
-      "rank": 14
+      "rank": 13,
+      "name": "Griffin Consigli"
     },
     {
       "login": "vili179",
@@ -6854,7 +5563,8 @@
         }
       },
       "rolling_total": 24,
-      "rank": 15
+      "rank": 14,
+      "name": null
     },
     {
       "login": "ark248",
@@ -7449,7 +6159,8 @@
         }
       },
       "rolling_total": 22,
-      "rank": 16
+      "rank": 15,
+      "name": "Adhiban Arulselvan"
     },
     {
       "login": "Premrshah",
@@ -7900,7 +6611,8 @@
         }
       },
       "rolling_total": 12,
-      "rank": 17
+      "rank": 16,
+      "name": null
     },
     {
       "login": "Siddharthakhandelwal",
@@ -8079,7 +6791,8 @@
         }
       },
       "rolling_total": 12,
-      "rank": 18
+      "rank": 17,
+      "name": null
     },
     {
       "login": "dhedhialy",
@@ -8314,7 +7027,8 @@
         }
       },
       "rolling_total": 12,
-      "rank": 19
+      "rank": 18,
+      "name": "Aly Dhedhi"
     },
     {
       "login": "absol761",
@@ -8453,7 +7167,8 @@
         }
       },
       "rolling_total": 12,
-      "rank": 20
+      "rank": 19,
+      "name": "Ilan Barts"
     },
     {
       "login": "LucaVor",
@@ -8848,7 +7563,8 @@
         }
       },
       "rolling_total": 8,
-      "rank": 21
+      "rank": 20,
+      "name": null
     },
     {
       "login": "hongning-wang",
@@ -9667,7 +8383,8 @@
         }
       },
       "rolling_total": 6,
-      "rank": 22
+      "rank": 21,
+      "name": null
     },
     {
       "login": "ZeidAl-Ruzouq",
@@ -9750,7 +8467,8 @@
         }
       },
       "rolling_total": 6,
-      "rank": 23
+      "rank": 22,
+      "name": null
     },
     {
       "login": "edoardopanella",
@@ -9865,7 +8583,8 @@
         }
       },
       "rolling_total": 4,
-      "rank": 24
+      "rank": 23,
+      "name": null
     },
     {
       "login": "redaq",
@@ -10020,7 +8739,8 @@
         }
       },
       "rolling_total": 4,
-      "rank": 25
+      "rank": 24,
+      "name": "Dandi Qiao"
     },
     {
       "login": "einstefer",
@@ -10095,7 +8815,8 @@
         }
       },
       "rolling_total": 4,
-      "rank": 26
+      "rank": 25,
+      "name": "Vasu Ganesa"
     },
     {
       "login": "Rouler4wd",
@@ -10178,7 +8899,8 @@
         }
       },
       "rolling_total": 4,
-      "rank": 27
+      "rank": 26,
+      "name": "Pranauv Muthuraman"
     },
     {
       "login": "varvarakarenski",
@@ -10333,7 +9055,8 @@
         }
       },
       "rolling_total": 3,
-      "rank": 28
+      "rank": 27,
+      "name": null
     },
     {
       "login": "shubhrasingh-24",
@@ -10392,7 +9115,8 @@
         }
       },
       "rolling_total": 3,
-      "rank": 29
+      "rank": 28,
+      "name": "Shubhra Singh"
     },
     {
       "login": "muskaansaraf-hue",
@@ -10451,7 +9175,8 @@
         }
       },
       "rolling_total": 3,
-      "rank": 30
+      "rank": 29,
+      "name": "Muskaan Saraf"
     },
     {
       "login": "Gun-Akash",
@@ -10526,7 +9251,8 @@
         }
       },
       "rolling_total": 3,
-      "rank": 31
+      "rank": 30,
+      "name": "Akash Gundimeda"
     },
     {
       "login": "ppxscal",
@@ -11137,7 +9863,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 32
+      "rank": 31,
+      "name": "Pascal Passigan"
     },
     {
       "login": "onlineinfoh",
@@ -11244,7 +9971,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 33
+      "rank": 32,
+      "name": "Tianxi Liang"
     },
     {
       "login": "TaherMerchant25",
@@ -11375,7 +10103,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 34
+      "rank": 33,
+      "name": "Taher Merchant"
     },
     {
       "login": "SamDadmi",
@@ -11522,7 +10251,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 35
+      "rank": 34,
+      "name": "Sameeksha Dadmi"
     },
     {
       "login": "Cypherspec",
@@ -11605,7 +10335,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 36
+      "rank": 35,
+      "name": "Nischay Kommisetty"
     },
     {
       "login": "NisargOza",
@@ -11696,7 +10427,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 37
+      "rank": 36,
+      "name": null
     },
     {
       "login": "Quinn1108",
@@ -11763,7 +10495,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 38
+      "rank": 37,
+      "name": "Qs0612"
     },
     {
       "login": "f3z8",
@@ -11838,7 +10571,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 39
+      "rank": 38,
+      "name": null
     },
     {
       "login": "trenchard",
@@ -11905,7 +10639,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 40
+      "rank": 39,
+      "name": "Mark Trenchard"
     },
     {
       "login": "nabirarashid",
@@ -11972,7 +10707,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 41
+      "rank": 40,
+      "name": null
     },
     {
       "login": "August-H",
@@ -12039,7 +10775,8 @@
         }
       },
       "rolling_total": 2,
-      "rank": 42
+      "rank": 41,
+      "name": "August Hayes"
     },
     {
       "login": "0xCUB3",
@@ -12346,7 +11083,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 43
+      "rank": 42,
+      "name": "Alexander Skula"
     },
     {
       "login": "ayanopt",
@@ -12405,7 +11143,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 44
+      "rank": 43,
+      "name": "Ayan Goswami"
     },
     {
       "login": "Arun-V18",
@@ -12720,7 +11459,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 45
+      "rank": 44,
+      "name": "Arun Vinayagam"
     },
     {
       "login": "advaith55",
@@ -12795,7 +11535,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 46
+      "rank": 45,
+      "name": null
     },
     {
       "login": "deanliang06",
@@ -12862,7 +11603,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 47
+      "rank": 46,
+      "name": "Dean Liang"
     },
     {
       "login": "AnasMaar",
@@ -13553,7 +12295,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 48
+      "rank": 47,
+      "name": "Anas Maarouf"
     },
     {
       "login": "kamchettysadhika",
@@ -13748,7 +12491,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 49
+      "rank": 48,
+      "name": "Sadhika Kamchetty"
     },
     {
       "login": "thanosan23",
@@ -13815,7 +12559,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 50
+      "rank": 49,
+      "name": "Thanosan Prathifkumar"
     },
     {
       "login": "levtechs",
@@ -13874,7 +12619,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 51
+      "rank": 50,
+      "name": "Lev Smolsky"
     },
     {
       "login": "Soham2020sam",
@@ -14037,7 +12783,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 52
+      "rank": 51,
+      "name": "Soham Samanta"
     },
     {
       "login": "UncleEddie1",
@@ -14144,7 +12891,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 53
+      "rank": 52,
+      "name": "Edward Kang"
     },
     {
       "login": "vinays6",
@@ -14467,7 +13215,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 54
+      "rank": 53,
+      "name": "Vinay S"
     },
     {
       "login": "jophy-ye",
@@ -14534,7 +13283,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 55
+      "rank": 54,
+      "name": "Jophy Chon Hou Ye"
     },
     {
       "login": "Donysus",
@@ -14601,7 +13351,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 56
+      "rank": 55,
+      "name": "Raghav"
     },
     {
       "login": "phi-jkim",
@@ -14716,7 +13467,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 57
+      "rank": 56,
+      "name": "Jinha Kim"
     },
     {
       "login": "MaitreyaM",
@@ -14799,7 +13551,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 58
+      "rank": 57,
+      "name": "Maitreya Mishra"
     },
     {
       "login": "Krishiv-Thakuria",
@@ -14866,7 +13619,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 59
+      "rank": 58,
+      "name": null
     },
     {
       "login": "Ardbiu",
@@ -15101,7 +13855,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 60
+      "rank": 59,
+      "name": "Aradhya Dixit"
     },
     {
       "login": "saisanjana22",
@@ -15200,7 +13955,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 61
+      "rank": 60,
+      "name": null
     },
     {
       "login": "adityasngpta",
@@ -15267,7 +14023,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 62
+      "rank": 61,
+      "name": null
     },
     {
       "login": "alexkana",
@@ -15326,7 +14083,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 63
+      "rank": 62,
+      "name": null
     },
     {
       "login": "excel-8",
@@ -15441,7 +14199,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 64
+      "rank": 63,
+      "name": null
     },
     {
       "login": "joshwu108",
@@ -15620,7 +14379,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 65
+      "rank": 64,
+      "name": null
     },
     {
       "login": "Zopu23",
@@ -16055,7 +14815,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 66
+      "rank": 65,
+      "name": null
     },
     {
       "login": "samuelsurr",
@@ -16146,7 +14907,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 67
+      "rank": 66,
+      "name": null
     },
     {
       "login": "kaeskiio",
@@ -16269,7 +15031,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 68
+      "rank": 67,
+      "name": null
     },
     {
       "login": "HridhayJ",
@@ -16424,7 +15187,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 69
+      "rank": 68,
+      "name": null
     },
     {
       "login": "aritroBh",
@@ -16643,7 +15407,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 70
+      "rank": 69,
+      "name": null
     },
     {
       "login": "msun170",
@@ -16774,7 +15539,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 71
+      "rank": 70,
+      "name": null
     },
     {
       "login": "VishwanathanV",
@@ -16897,7 +15663,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 72
+      "rank": 71,
+      "name": null
     },
     {
       "login": "siridesai",
@@ -16964,7 +15731,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 73
+      "rank": 72,
+      "name": null
     },
     {
       "login": "dianeferragu",
@@ -17031,7 +15799,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 74
+      "rank": 73,
+      "name": null
     },
     {
       "login": "themayankjashnani",
@@ -17090,7 +15859,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 75
+      "rank": 74,
+      "name": null
     },
     {
       "login": "ElpidaPi",
@@ -17149,7 +15919,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 76
+      "rank": 75,
+      "name": null
     },
     {
       "login": "tenzinmchemey",
@@ -17248,7 +16019,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 77
+      "rank": 76,
+      "name": null
     },
     {
       "login": "TheAmrReticoStaderGuy",
@@ -17323,7 +16095,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 78
+      "rank": 77,
+      "name": null
     },
     {
       "login": "pranilraichura",
@@ -17518,7 +16291,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 79
+      "rank": 78,
+      "name": null
     },
     {
       "login": "manolik",
@@ -17577,7 +16351,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 80
+      "rank": 79,
+      "name": null
     },
     {
       "login": "kritgun-1907",
@@ -17644,7 +16419,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 81
+      "rank": 80,
+      "name": null
     },
     {
       "login": "copilot-swe-agent",
@@ -17703,7 +16479,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 82
+      "rank": 81,
+      "name": null
     },
     {
       "login": "SufianTA",
@@ -17778,7 +16555,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 83
+      "rank": 82,
+      "name": null
     },
     {
       "login": "imranmk007",
@@ -17853,7 +16631,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 84
+      "rank": 83,
+      "name": null
     },
     {
       "login": "Muhammadabrarrayhan2",
@@ -18096,7 +16875,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 85
+      "rank": 84,
+      "name": null
     },
     {
       "login": "ChinmayKamjith1",
@@ -18155,7 +16935,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 86
+      "rank": 85,
+      "name": null
     },
     {
       "login": "RonKat2008",
@@ -18262,7 +17043,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 87
+      "rank": 86,
+      "name": null
     },
     {
       "login": "airjan-airlines",
@@ -18321,7 +17103,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 88
+      "rank": 87,
+      "name": null
     },
     {
       "login": "Akshaj-G",
@@ -18388,7 +17171,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 89
+      "rank": 88,
+      "name": null
     },
     {
       "login": "ArjunSubramanian22",
@@ -18447,7 +17231,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 90
+      "rank": 89,
+      "name": null
     },
     {
       "login": "Coder-13-11",
@@ -18562,7 +17347,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 91
+      "rank": 90,
+      "name": null
     },
     {
       "login": "pandeylakshya207-max",
@@ -18637,7 +17423,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 92
+      "rank": 91,
+      "name": null
     },
     {
       "login": "ThomasdeChillaz",
@@ -18696,7 +17483,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 93
+      "rank": 92,
+      "name": null
     },
     {
       "login": "kaapra081",
@@ -18771,7 +17559,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 94
+      "rank": 93,
+      "name": null
     },
     {
       "login": "JerryChen1974",
@@ -18830,7 +17619,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 95
+      "rank": 94,
+      "name": null
     },
     {
       "login": "Cruz-Arnzen",
@@ -18905,7 +17695,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 96
+      "rank": 95,
+      "name": null
     },
     {
       "login": "amywang2010",
@@ -19004,7 +17795,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 97
+      "rank": 96,
+      "name": null
     },
     {
       "login": "vedshah01",
@@ -19063,7 +17855,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 98
+      "rank": 97,
+      "name": null
     },
     {
       "login": "oliva-victor",
@@ -19130,7 +17923,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 99
+      "rank": 98,
+      "name": null
     },
     {
       "login": "NagaSaiDhirajK",
@@ -19189,7 +17983,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 100
+      "rank": 99,
+      "name": null
     },
     {
       "login": "Vodiboi",
@@ -19280,7 +18075,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 101
+      "rank": 100,
+      "name": null
     },
     {
       "login": "SohamSen15",
@@ -19347,7 +18143,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 102
+      "rank": 101,
+      "name": null
     },
     {
       "login": "nicole-0",
@@ -19414,7 +18211,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 103
+      "rank": 102,
+      "name": null
     },
     {
       "login": "abigailmerchant",
@@ -19489,7 +18287,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 104
+      "rank": 103,
+      "name": null
     },
     {
       "login": "koshuajim",
@@ -19556,7 +18355,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 105
+      "rank": 104,
+      "name": null
     },
     {
       "login": "laurenap",
@@ -19639,7 +18439,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 106
+      "rank": 105,
+      "name": null
     },
     {
       "login": "Akshay-Bhaskar1",
@@ -19706,7 +18507,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 107
+      "rank": 106,
+      "name": null
     },
     {
       "login": "bobsbuiscuit123",
@@ -19773,7 +18575,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 108
+      "rank": 107,
+      "name": null
     },
     {
       "login": "sadhiika",
@@ -19840,7 +18643,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 109
+      "rank": 108,
+      "name": null
     },
     {
       "login": "vittesh12345",
@@ -19931,7 +18735,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 110
+      "rank": 109,
+      "name": null
     },
     {
       "login": "achen318",
@@ -19990,7 +18795,8 @@
         }
       },
       "rolling_total": 0,
-      "rank": 111
+      "rank": 110,
+      "name": null
     }
   ]
 }

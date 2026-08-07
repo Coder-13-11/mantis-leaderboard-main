@@ -6,7 +6,7 @@
 # No code changes needed. Every edit should go through a reviewed PR.
 # =============================================================================
 
-version: 1
+version: 2
 
 # How far back to look. The leaderboard is recomputed from scratch each run,
 # so this just bounds the API queries.
@@ -36,20 +36,30 @@ repos:
 # Pull Requests
 # -----------------------------------------------------------------------------
 pull_requests:
-  # Points by PR size. Size is derived from (additions + deletions) AFTER
-  # excluding generated/vendored files (see `exclude_paths`).
+  # Points = base + a SATURATING bonus from size, not a linear/step function of
+  # line count. Common-sense reasoning: the difference between a 5-line and a
+  # 50-line PR is real (the second is genuinely more work); the difference
+  # between an 800-line and an 8000-line PR mostly isn't (it's the same "big
+  # PR" either way, and often just means it wasn't split up). So the bonus
+  # grows quickly at first and then flattens out hard -- more lines stops
+  # buying more points well before "huge".
   #
-  # Deliberately flat: XS to XL is only a 6.4x spread (it used to be 24x).
-  # Line count alone should never be able to carry the leaderboard -- someone
-  # merging one 1000-line PR shouldn't beat a week of careful smaller work.
-  size_points:
-    XS: 5
-    S: 10
-    M: 16
-    L: 24
-    XL: 32
+  # bonus(lines) = max_bonus * lines / (lines + half_life_lines)
+  # points = base + bonus(meaningful_lines), meaningful_lines excludes
+  # generated/vendored files (see `exclude_paths` below).
+  #
+  # With the defaults: 1 line -> ~10.5, 10 lines -> ~12, 50 lines -> ~15,
+  # 250 lines -> ~19, 1000 -> ~21.5, 10000 -> ~22 (basically capped). Every
+  # merged PR is worth something; a monster PR is worth barely more than a
+  # solid mid-size one.
+  points:
+    base: 10            # every merged PR starts here, regardless of size
+    max_bonus: 12        # the most size alone can ever add
+    half_life_lines: 60  # lines at which you've earned half of max_bonus
 
-  # Upper bound of net changed lines for each bucket. XL = anything larger.
+  # Purely for the dashboard's size breakdown / sparkline display -- NOT used
+  # in scoring anymore (see `points` above). Upper bound of net changed lines
+  # for each label; XL = anything larger.
   size_buckets:
     XS: 10
     S: 50
@@ -89,14 +99,15 @@ pull_requests:
 
   # Anti-gaming: diminishing returns when one person merges many PRs on the
   # SAME DAY. The main way to farm this board is splitting one change into lots
-  # of small PRs, so after `after` PRs in a day each further same-day PR is
-  # worth a shrinking fraction (previous x `decay`), never below `min_factor`.
-  # A normal cadence (a few PRs/day) is untouched; burst-splitting is damped.
-  # Set `after` very high (e.g. 999) to effectively turn this off.
+  # of small PRs (or automated AI agents flooding merges), so after `after`
+  # PRs in a day each further same-day PR is worth a shrinking fraction
+  # (previous x `decay`), never below `min_factor`.
+  # A normal human cadence (1–2 solid PRs/day) is barely touched; burst
+  # splitting and volume farming collapse quickly.
   daily_diminishing:
-    after: 3          # first 3 PRs each day score at full value
-    decay: 0.8        # 4th = 0.8x, 5th = 0.64x, 6th = 0.51x, ...
-    min_factor: 0.3   # never drops below 30% of the PR's normal points
+    after: 2          # first 2 PRs each day score at full value
+    decay: 0.55       # 3rd ≈ 0.55x, 4th ≈ 0.30x, 5th ≈ min
+    min_factor: 0.12  # never below 12% of the PR's normal points
 
 # -----------------------------------------------------------------------------
 # Reviews  (anti-spam: only substantive reviews score)
@@ -118,16 +129,25 @@ reviews:
 # -----------------------------------------------------------------------------
 # Issues
 # -----------------------------------------------------------------------------
-# For now: any *valid* issue created earns a small flat base. "Valid" just means
-# it wasn't closed as duplicate / invalid / wontfix / not-planned. Kept low on
-# purpose — opening issues is the easiest thing to farm, so it shouldn't be
-# worth much until difficulty is judged (below).
+# Opening issues is the easiest thing to farm (including by AI / bulk scripts),
+# so points stay low and collapse fast with volume. "Valid" = not closed as
+# duplicate / invalid / wontfix / not-planned. Real impact still comes from
+# merged PRs and substantive reviews, not ticket spam.
 issues:
-  created_points: 3          # a valid issue created
+  created_points: 2          # a valid issue created — deliberately low
+  closed_bonus: 1            # tiny completion kick; does not accumulate via spam
 
-  # Small extra once the issue is closed as completed (someone acted on it) —
-  # rewards issues that turn out to be real without needing a triage label.
-  closed_bonus: 2
+  # Same-day diminishing: first few issues on a day count; the 20th issue that
+  # day is nearly free of points. Stops "open 100 issues → millions of points".
+  daily_diminishing:
+    after: 2          # first 2 issues / day at full value
+    decay: 0.4        # steeper than PRs — issues are cheaper to farm
+    min_factor: 0.05  # floor at 5% of the flat base
+
+  # Hard ceiling on issue POINTS earned in a single calendar day (created +
+  # closed bonuses on that day). Even if decay were disabled, one day of
+  # issues can never dominate a week of real PR work.
+  max_points_per_day: 8
 
   # FUTURE — difficulty scoring. When you start applying a difficulty label
   # (1 = trivial … 6 = very hard), that label's points REPLACE created_points,
@@ -135,12 +155,12 @@ issues:
   # without one of these labels just gets created_points. Rename the label keys
   # to match whatever you actually create (e.g. "difficulty: 3", "level-3").
   difficulty_points:
-    "difficulty: 1": 2
-    "difficulty: 2": 4
-    "difficulty: 3": 7
-    "difficulty: 4": 11
-    "difficulty: 5": 16
-    "difficulty: 6": 24
+    "difficulty: 1": 1
+    "difficulty: 2": 2
+    "difficulty: 3": 4
+    "difficulty: 4": 7
+    "difficulty: 5": 11
+    "difficulty: 6": 16
 
   # Issues closed as duplicate / invalid / wontfix (or not-planned) score
   # nothing — these labels exist in the Mantis repos already.
@@ -169,7 +189,20 @@ manual_contributions:
 # -----------------------------------------------------------------------------
 display:
   top_n_in_readme: 10
-  exclude_logins: ["dependabot[bot]", "github-actions[bot]", "renovate[bot]"]
+  # Logins never shown / never scored. Humans only on this board.
+  # MantisCartography is an automated review/coding agent (self-identifies as
+  # "Hermes Agent" / "OpenClaw PR review bot" in its own PR comments) -- not
+  # suffixed [bot] on GitHub, so it has to be listed by name. Confirmed via
+  # its GitHub activity graph and its own self-identifying review comments.
+  exclude_logins:
+    - "dependabot[bot]"
+    - "github-actions[bot]"
+    - "renovate[bot]"
+    - "MantisCartography"
+  # Any login matching these regexes is also dropped (case-insensitive).
+  # Catches * [bot] accounts GitHub marks as bots even if not listed above.
+  exclude_login_patterns:
+    - "\\[bot\\]$"
   # Trailing windows, in days, shown on the leaderboard -- not lifetime
   # total, so it's about who's active NOW. The first entry is the primary
   # one used for ranking (the "weekly spotlight"); the rest are shown
