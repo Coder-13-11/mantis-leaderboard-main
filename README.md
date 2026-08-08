@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
 | #10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **96** | 4 | 0 | 5 |
 
-_Last updated: Sat, 08 Aug 2026 08:42:36 GMT_
+_Last updated: Sat, 08 Aug 2026 10:34:26 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
