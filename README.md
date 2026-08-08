@@ -16,7 +16,7 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **316** | 50 | 0 | 5 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **318** | 51 | 0 | 5 |
 | 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **203** | 45 | 0 | 1 |
 | 🥉 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **104** | 7 | 0 | 2 |
@@ -32,7 +32,7 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **638** | 127 | 0 | 111 |
-| 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **316** | 50 | 0 | 5 |
+| 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **318** | 51 | 0 | 5 |
 | 🥉 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **268** | 33 | 0 | 1 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **170** | 9 | 1 | 4 |
 | #5 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **152** | 8 | 0 | 38 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
 | #10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **96** | 4 | 0 | 5 |
 
-_Last updated: Sat, 08 Aug 2026 01:27:42 GMT_
+_Last updated: Sat, 08 Aug 2026 03:28:30 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
