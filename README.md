@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **223** | 26 | 0 | 5 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **202** | 45 | 0 | 1 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **316** | 50 | 0 | 5 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **203** | 45 | 0 | 1 |
 | 🥉 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
-| #4 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **94** | 4 | 0 | 11 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **92** | 4 | 0 | 2 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **104** | 7 | 0 | 2 |
+| #5 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **94** | 4 | 0 | 11 |
 | #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **88** | 3 | 1 | 0 |
-| #7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **83** | 5 | 1 | 1 |
-| #8 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **72** | 4 | 0 | 25 |
+| #7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **85** | 6 | 1 | 1 |
+| #8 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **71** | 4 | 0 | 25 |
 | #9 | **Sol** ([@larped-gpu](https://github.com/larped-gpu)) | **57** | 2 | 0 | 8 |
-| #10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **55** | 2 | 0 | 7 |
+| #10 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **53** | 2 | 0 | 1 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **684** | 129 | 0 | 117 |
-| 🥈 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **309** | 36 | 0 | 1 |
-| 🥉 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **223** | 26 | 0 | 5 |
-| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **158** | 6 | 1 | 4 |
-| #5 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **158** | 8 | 0 | 49 |
+| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **638** | 127 | 0 | 111 |
+| 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **316** | 50 | 0 | 5 |
+| 🥉 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **268** | 33 | 0 | 1 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **170** | 9 | 1 | 4 |
+| #5 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **152** | 8 | 0 | 38 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **142** | 6 | 0 | 16 |
-| #7 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **129** | 2 | 3 | 18 |
-| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **125** | 5 | 1 | 0 |
-| #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **121** | 7 | 1 | 2 |
-| #10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
+| #7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **125** | 5 | 1 | 0 |
+| #8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **123** | 8 | 1 | 2 |
+| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **115** | 14 | 0 | 3 |
+| #10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **96** | 4 | 0 | 5 |
 
-_Last updated: Fri, 07 Aug 2026 22:37:39 GMT_
+_Last updated: Sat, 08 Aug 2026 01:27:42 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
