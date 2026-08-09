@@ -17,32 +17,32 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **413** | 97 | 0 | 5 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **280** | 75 | 0 | 1 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **242** | 73 | 0 | 0 |
 | 🥉 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **116** | 14 | 0 | 3 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **104** | 7 | 0 | 2 |
 | #5 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **94** | 4 | 0 | 11 |
 | #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **88** | 3 | 1 | 0 |
 | #7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **85** | 6 | 1 | 1 |
 | #8 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **71** | 4 | 0 | 25 |
-| #9 | **Sol** ([@larped-gpu](https://github.com/larped-gpu)) | **57** | 2 | 0 | 8 |
-| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **54** | 4 | 0 | 0 |
+| #9 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **60** | 0 | 3 | 0 |
+| #10 | **Sol** ([@larped-gpu](https://github.com/larped-gpu)) | **57** | 2 | 0 | 8 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **715** | 157 | 0 | 111 |
+| 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **632** | 148 | 0 | 104 |
 | 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **413** | 97 | 0 | 5 |
-| 🥉 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **268** | 33 | 0 | 1 |
-| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **170** | 9 | 1 | 4 |
-| #5 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **152** | 8 | 0 | 38 |
-| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **142** | 6 | 0 | 16 |
-| #7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **125** | 5 | 1 | 0 |
-| #8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **123** | 8 | 1 | 2 |
-| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **116** | 14 | 0 | 3 |
-| #10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **96** | 4 | 0 | 5 |
+| 🥉 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **197** | 24 | 0 | 0 |
+| #4 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **142** | 6 | 0 | 16 |
+| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **128** | 8 | 0 | 3 |
+| #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **125** | 5 | 1 | 0 |
+| #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **116** | 14 | 0 | 3 |
+| #8 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **95** | 5 | 0 | 26 |
+| #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **85** | 6 | 1 | 1 |
+| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **81** | 6 | 0 | 1 |
 
-_Last updated: Sat, 08 Aug 2026 22:31:06 GMT_
+_Last updated: Sun, 09 Aug 2026 01:32:52 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
