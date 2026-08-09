@@ -34,7 +34,7 @@ who has the biggest all-time score.
 | 🥇 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **632** | 148 | 0 | 104 |
 | 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **413** | 97 | 0 | 5 |
 | 🥉 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **197** | 24 | 0 | 0 |
-| #4 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **143** | 6 | 0 | 16 |
+| #4 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **142** | 6 | 0 | 16 |
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **139** | 9 | 0 | 3 |
 | #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **127** | 5 | 1 | 1 |
 | #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **105** | 7 | 1 | 1 |
 | #10 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **95** | 5 | 0 | 26 |
 
-_Last updated: Sun, 09 Aug 2026 20:34:01 GMT_
+_Last updated: Sun, 09 Aug 2026 22:32:55 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
