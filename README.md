@@ -23,9 +23,9 @@ who has the biggest all-time score.
 | #5 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **94** | 4 | 0 | 11 |
 | #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **88** | 3 | 1 | 0 |
 | #7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **85** | 6 | 1 | 1 |
-| #8 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **71** | 4 | 0 | 25 |
-| #9 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **60** | 0 | 3 | 0 |
-| #10 | **Sol** ([@larped-gpu](https://github.com/larped-gpu)) | **57** | 2 | 0 | 8 |
+| #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **76** | 6 | 0 | 0 |
+| #9 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **71** | 4 | 0 | 25 |
+| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **60** | 0 | 3 | 0 |
 
 #### Past 14 Days
 
@@ -38,11 +38,11 @@ who has the biggest all-time score.
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **128** | 8 | 0 | 3 |
 | #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **125** | 5 | 1 | 0 |
 | #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **116** | 14 | 0 | 3 |
-| #8 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **95** | 5 | 0 | 26 |
-| #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **85** | 6 | 1 | 1 |
-| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **81** | 6 | 0 | 1 |
+| #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **105** | 8 | 0 | 1 |
+| #9 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **95** | 5 | 0 | 26 |
+| #10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **85** | 6 | 1 | 1 |
 
-_Last updated: Sun, 09 Aug 2026 12:49:20 GMT_
+_Last updated: Sun, 09 Aug 2026 14:37:10 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
