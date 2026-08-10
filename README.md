@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **105** | 7 | 1 | 1 |
 | #10 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **93** | 5 | 0 | 25 |
 
-_Last updated: Mon, 10 Aug 2026 09:24:21 GMT_
+_Last updated: Mon, 10 Aug 2026 11:11:44 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
