@@ -19,8 +19,8 @@ who has the biggest all-time score.
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **303** | 84 | 0 | 0 |
 | 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **242** | 73 | 0 | 0 |
 | 🥉 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
-| #4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **102** | 7 | 1 | 0 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **94** | 7 | 0 | 2 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **104** | 8 | 0 | 2 |
+| #5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **102** | 7 | 1 | 0 |
 | #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **89** | 2 | 2 | 1 |
 | #7 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **82** | 4 | 0 | 10 |
 | #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **82** | 7 | 0 | 0 |
@@ -35,14 +35,14 @@ who has the biggest all-time score.
 | 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **366** | 79 | 0 | 11 |
 | 🥉 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **149** | 7 | 0 | 11 |
 | #4 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **148** | 5 | 2 | 1 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **137** | 9 | 0 | 2 |
+| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **147** | 10 | 0 | 2 |
 | #6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **132** | 16 | 0 | 0 |
 | #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
 | #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **111** | 9 | 0 | 1 |
 | #9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **105** | 7 | 1 | 1 |
-| #10 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **96** | 5 | 0 | 0 |
+| #10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **105** | 4 | 0 | 15 |
 
-_Last updated: Tue, 11 Aug 2026 01:32:56 GMT_
+_Last updated: Tue, 11 Aug 2026 03:46:41 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
