@@ -24,8 +24,8 @@ who has the biggest all-time score.
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **95** | 5 | 0 | 10 |
 | #7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **89** | 2 | 2 | 1 |
 | #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **82** | 7 | 0 | 0 |
-| #9 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **60** | 0 | 3 | 0 |
-| #10 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **59** | 3 | 0 | 0 |
+| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **63** | 2 | 0 | 10 |
+| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **60** | 0 | 3 | 0 |
 
 #### Past 14 Days
 
@@ -36,13 +36,13 @@ who has the biggest all-time score.
 | 🥉 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **162** | 8 | 0 | 11 |
 | #4 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **148** | 5 | 2 | 1 |
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **147** | 10 | 0 | 2 |
-| #6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **132** | 16 | 0 | 0 |
+| #6 | Name not found ([@ppxscal](https://github.com/ppxscal)) | **132** | 16 | 0 | 0 |
 | #7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **129** | 8 | 1 | 2 |
-| #8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
-| #9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **111** | 9 | 0 | 1 |
-| #10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **105** | 4 | 0 | 15 |
+| #8 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **125** | 5 | 0 | 15 |
+| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
+| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **111** | 9 | 0 | 1 |
 
-_Last updated: Tue, 11 Aug 2026 19:05:31 GMT_
+_Last updated: Tue, 11 Aug 2026 20:46:35 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
