@@ -16,15 +16,15 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **303** | 84 | 0 | 0 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **264** | 81 | 0 | 0 |
 | 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **242** | 73 | 0 | 0 |
-| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **126** | 8 | 1 | 1 |
-| #4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
+| 🥉 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
+| #4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **106** | 8 | 0 | 1 |
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **104** | 8 | 0 | 2 |
 | #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 8 | 0 | 0 |
 | #7 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **95** | 5 | 0 | 10 |
-| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **89** | 2 | 2 | 1 |
-| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **63** | 2 | 0 | 10 |
+| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **69** | 2 | 1 | 1 |
+| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **61** | 2 | 0 | 9 |
 | #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **60** | 0 | 3 | 0 |
 
 #### Past 14 Days
@@ -32,17 +32,17 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **411** | 97 | 0 | 4 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **366** | 79 | 0 | 11 |
-| 🥉 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **162** | 8 | 0 | 11 |
-| #4 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **148** | 5 | 2 | 1 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **147** | 10 | 0 | 2 |
-| #6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **132** | 16 | 0 | 0 |
-| #7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **129** | 8 | 1 | 2 |
-| #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **127** | 10 | 0 | 1 |
-| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **125** | 5 | 0 | 15 |
-| #10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **319** | 77 | 0 | 7 |
+| 🥉 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **148** | 5 | 2 | 1 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **147** | 10 | 0 | 2 |
+| #5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **129** | 8 | 1 | 2 |
+| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **119** | 6 | 0 | 11 |
+| #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
+| #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **112** | 9 | 0 | 1 |
+| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **109** | 4 | 0 | 14 |
+| #10 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **96** | 5 | 0 | 0 |
 
-_Last updated: Tue, 11 Aug 2026 22:44:09 GMT_
+_Last updated: Wed, 12 Aug 2026 01:51:33 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
