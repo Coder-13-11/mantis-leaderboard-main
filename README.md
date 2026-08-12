@@ -23,7 +23,7 @@ who has the biggest all-time score.
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **104** | 8 | 0 | 2 |
 | #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 8 | 0 | 0 |
 | #7 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **96** | 5 | 0 | 10 |
-| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **69** | 2 | 1 | 1 |
+| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **89** | 2 | 2 | 1 |
 | #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **61** | 2 | 0 | 9 |
 | #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **60** | 0 | 3 | 0 |
 
@@ -33,16 +33,16 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **411** | 97 | 0 | 4 |
 | 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **319** | 77 | 0 | 7 |
-| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **150** | 8 | 2 | 2 |
-| #4 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **148** | 5 | 2 | 1 |
+| 🥉 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **168** | 5 | 3 | 1 |
+| #4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **150** | 8 | 2 | 2 |
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **147** | 10 | 0 | 2 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **120** | 6 | 0 | 11 |
 | #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
 | #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **112** | 9 | 0 | 1 |
 | #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **109** | 4 | 0 | 14 |
-| #10 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **99** | 4 | 0 | 3 |
+| #10 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **102** | 4 | 0 | 5 |
 
-_Last updated: Wed, 12 Aug 2026 17:00:45 GMT_
+_Last updated: Wed, 12 Aug 2026 19:05:35 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
