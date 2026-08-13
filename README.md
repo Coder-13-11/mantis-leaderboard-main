@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **112** | 9 | 0 | 1 |
 | #10 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **102** | 4 | 0 | 5 |
 
-_Last updated: Thu, 13 Aug 2026 09:15:26 GMT_
+_Last updated: Thu, 13 Aug 2026 11:05:52 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
