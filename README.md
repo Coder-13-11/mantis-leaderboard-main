@@ -16,8 +16,8 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **251** | 81 | 0 | 0 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **145** | 42 | 0 | 0 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **249** | 80 | 0 | 0 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **184** | 45 | 0 | 0 |
 | 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **127** | 8 | 1 | 1 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **103** | 8 | 0 | 2 |
 | #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 8 | 0 | 0 |
@@ -31,8 +31,8 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **421** | 99 | 0 | 4 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **281** | 75 | 0 | 1 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **411** | 97 | 0 | 4 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **320** | 78 | 0 | 1 |
 | 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **150** | 8 | 2 | 2 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **148** | 10 | 0 | 3 |
 | #5 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **132** | 3 | 3 | 1 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **112** | 9 | 0 | 1 |
 | #10 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **102** | 4 | 0 | 5 |
 
-_Last updated: Thu, 13 Aug 2026 07:28:23 GMT_
+_Last updated: Thu, 13 Aug 2026 09:15:26 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
