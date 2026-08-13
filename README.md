@@ -17,8 +17,8 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **249** | 80 | 0 | 0 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **184** | 45 | 0 | 0 |
-| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **171** | 12 | 1 | 1 |
+| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **191** | 12 | 2 | 1 |
+| 🥉 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **184** | 45 | 0 | 0 |
 | #4 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **115** | 5 | 3 | 0 |
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **103** | 8 | 0 | 2 |
 | #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 8 | 0 | 0 |
@@ -33,7 +33,7 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **411** | 97 | 0 | 4 |
 | 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **320** | 78 | 0 | 1 |
-| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **194** | 12 | 2 | 2 |
+| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **214** | 12 | 3 | 2 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **148** | 10 | 0 | 3 |
 | #5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **133** | 5 | 0 | 21 |
 | #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **132** | 3 | 3 | 1 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **115** | 5 | 3 | 0 |
 | #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **112** | 9 | 0 | 1 |
 
-_Last updated: Thu, 13 Aug 2026 20:44:33 GMT_
+_Last updated: Thu, 13 Aug 2026 22:44:32 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
