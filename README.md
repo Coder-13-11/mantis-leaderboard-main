@@ -16,16 +16,16 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **92** | 4 | 0 | 12 |
-| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **90** | 6 | 2 | 1 |
-| 🥉 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **72** | 8 | 0 | 0 |
-| #4 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **57** | 3 | 0 | 0 |
-| #5 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **51** | 2 | 0 | 5 |
-| #6 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **47** | 3 | 0 | 1 |
-| #7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **46** | 33 | 0 | 0 |
-| #8 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **45** | 3 | 1 | 1 |
-| #9 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **37** | 71 | 0 | 0 |
-| #10 | **Raghav** ([@Donysus](https://github.com/Donysus)) | **36** | 2 | 0 | 0 |
+| 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 5 | 0 | 12 |
+| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **70** | 6 | 2 | 1 |
+| 🥉 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **69** | 9 | 0 | 0 |
+| #4 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 4 | 0 | 25 |
+| #5 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **42** | 2 | 0 | 6 |
+| #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **41** | 4 | 0 | 0 |
+| #7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **41** | 33 | 0 | 7 |
+| #8 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **40** | 3 | 0 | 0 |
+| #9 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **39** | 3 | 0 | 1 |
+| #10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **37** | 71 | 0 | 0 |
 
 #### Past 14 Days
 
