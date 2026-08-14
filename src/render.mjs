@@ -179,8 +179,13 @@ function scoreExplainer(u, days) {
   }
   const activity = [];
   if (c.prs) activity.push(`${c.prs} PR${c.prs === 1 ? "" : "s"}`);
-  if (c.reviews) activity.push(`${c.reviews} review${c.reviews === 1 ? "" : "s"}`);
-  if (c.confirmed_issues) activity.push(`${c.confirmed_issues} issue${c.confirmed_issues === 1 ? "" : "s"}`);
+  if (c.prs_coauthored) activity.push(`${c.prs_coauthored} co-authored`);
+  if (c.reviews) {
+    const subs = c.review_submissions && c.review_submissions !== c.reviews ? ` (${c.review_submissions} submissions)` : "";
+    activity.push(`${c.reviews} review${c.reviews === 1 ? "" : "s"}${subs}`);
+  }
+  if (c.confirmed_issues) activity.push(`${c.confirmed_issues} issue${c.confirmed_issues === 1 ? "" : "s"} opened`);
+  if (c.issues_closed) activity.push(`${c.issues_closed} closed`);
   if (c.manual) activity.push(`${c.manual} community`);
 
   // Show pts/PR only when PRs clearly dominate the window (avoids “45 pts/PR”
@@ -241,6 +246,31 @@ function listRows(ranked, days, dayKeys) {
         </li>`;
     })
     .join("");
+}
+
+function qualityBanner(meta) {
+  const q = meta.sync;
+  if (!q) return "";
+  const warns = q.warnings || [];
+  const ok = q.checksum_ok !== false && !warns.some((w) => /checksum miss/i.test(w));
+  const cls = ok ? (warns.length ? "quality warn" : "quality ok") : "quality bad";
+  const events = q.event_counts || {};
+  const mode = q.mode || "sync";
+  const bits = [
+    `GitHub <b>listing</b> (not Search) · ${mode} sync`,
+    events.prs != null ? `${Number(events.prs).toLocaleString()} PRs stored` : null,
+    events.reviews != null ? `${Number(events.reviews).toLocaleString()} reviews` : null,
+    events.review_comments != null ? `${Number(events.review_comments).toLocaleString()} inline comments` : null,
+    events.issues != null ? `${Number(events.issues).toLocaleString()} issues` : null,
+  ].filter(Boolean);
+  const miss = (q.checksums || []).filter((c) => (c.pr_delta || 0) > 0 || (c.issue_delta || 0) > 0);
+  const extra = miss.length
+    ? ` Checksum: ${miss.map((c) => `${c.repo} PRs ${c.listed_merged}/${c.search_merged}`).join("; ")}.`
+    : ok
+      ? " Search checksum matches the listing."
+      : "";
+  const warnLine = warns.length ? ` ${warns.length} warning${warns.length === 1 ? "" : "s"} — see the latest Actions log.` : "";
+  return `<div class="${cls}"><b>Data quality.</b> ${bits.join(" · ")}.${extra}${warnLine}</div>`;
 }
 
 function statTile(value, label, scope) {
@@ -318,16 +348,15 @@ function whatCountsSection(meta) {
       <div class="wc-grid">
         <div class="wc">
           <b>Pull requests</b>
-          <p>Only <b>merged</b> into <code>${esc(branches)}</code>. Lockfiles / generated /
-          vendored paths are excluded from size. ${prDd ? `After ${prDd.after} merges/day, further PRs decay toward zero. ` : ""}${
+          <p>Counts = every merged PR you authored, any branch. Points only for merges into <code>${esc(branches)}</code>. Lockfiles / generated / vendored paths are subtracted from size using per-file line counts. ${prDd ? `After ${prDd.after} merges/day, further PRs decay toward zero. ` : ""}${
             Number.isFinite(prDayCap) ? `<b>Hard cap ${prDayCap} PR pts/day.</b>` : ""
           }</p>
         </div>
         <div class="wc">
           <b>Reviews</b>
-          <p><b>Commented</b> (+${rv.commented_points ?? 0}, ≥${rv.commented_min_body_length ?? rv.min_body_length} chars),
+          <p>Counts = unique PRs you reviewed (submitted review or inline comments), including open and unmerged PRs. Points: <b>Commented</b> (+${rv.commented_points ?? 0}, ≥${rv.commented_min_body_length ?? rv.min_body_length} chars),
           <b>Approved</b> (+${rv.approved_points}), or <b>Changes requested</b>
-          (+${rv.changes_requested_points}, ≥${rv.min_body_length} chars). ${
+          (+${rv.changes_requested_points}, ≥${rv.min_body_length} chars). Inline comments add to body length. ${
             rv.exclude_self_review ? "No self-reviews. " : ""
           }${
             rv.one_per_pr_per_reviewer ? "Best review per PR (not the first click). " : ""
@@ -335,7 +364,7 @@ function whatCountsSection(meta) {
         </div>
         <div class="wc">
           <b>Issues</b>
-          <p>+${is.created_points} to open (valid), +${is.closed_bonus} when completed.
+          <p>Counts = issues you opened (including duplicates). Close bonus (+${is.closed_bonus}) goes to the person who closed it. +${is.created_points} to open a valid issue.
           Rejected as ${esc(dupes)} / not-planned score nothing.
           ${isDd ? `Burst decay after ${isDd.after}/day. ` : ""}${
     Number.isFinite(is.max_points_per_day)
@@ -558,6 +587,15 @@ export function renderHtml(users, meta) {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem;
     margin: 1.7rem 0 1.5rem;
   }
+  .quality {
+    margin: .85rem 0 0; padding: .65rem .8rem; border-radius: 10px;
+    font-size: .74rem; line-height: 1.5; color: var(--muted);
+    border: 1px solid var(--border); background: var(--panel);
+  }
+  .quality b { color: var(--text); }
+  .quality.ok { border-color: color-mix(in srgb, #2f9e62 35%, var(--border)); }
+  .quality.warn { border-color: color-mix(in srgb, var(--gold) 45%, var(--border)); }
+  .quality.bad { border-color: color-mix(in srgb, #c45c4a 50%, var(--border)); color: var(--text); }
   .tile {
     background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
     padding: .9rem 1rem; box-shadow: var(--shadow);
@@ -822,7 +860,8 @@ export function renderHtml(users, meta) {
         </nav>
       </div>
       <h1>Contributor Leaderboard</h1>
-      <p class="sub">${meta.repos.length} repositories · humans only · <span class="live">updates every 2 hours</span> · ${updated}</p>
+      <p class="sub">${meta.repos.length} repositories · humans only · <span class="live">lists every PR, review, and issue from GitHub</span> · ${updated}</p>
+      ${qualityBanner(meta)}
     </header>
 
     <div class="tiles">${tiles}</div>
@@ -844,8 +883,9 @@ export function renderHtml(users, meta) {
 
     <footer>
       Ranked by points in the selected window only — not lifetime totals.<br/>
+      PR / review / issue columns are raw activity counts (no daily cap). Points still cap and decay.<br/>
       Why a score looks “small”: same-day PR floods are discounted; issues hard-capped. Hover a total to see the split.<br/>
-      rules v${meta.rules_version} · GitHub activity + approved manual credits<br/>
+      rules v${meta.rules_version} · GitHub listing + event log + approved manual credits<br/>
       Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
     </footer>
   </div>

@@ -1,11 +1,10 @@
 // -----------------------------------------------------------------------------
-// index.mjs — Orchestrator. Recomputes the leaderboard from scratch each run:
-//   fetch (read-only)  ->  score (config-driven)  ->  render (JSON/HTML/README)
+// index.mjs — Orchestrator.
+//   list GitHub (read-only)  ->  event store  ->  score  ->  render
 //
 // Env:
-//   GH_TOKEN   read-only token with read access to the repos in config/rules.yml
-//
-// Which repos to track lives in config/rules.yml (`repos:`), not here.
+//   GH_TOKEN    read-only token for the org repos in config/rules.yml
+//   SYNC_MODE   incremental | full   (empty store always does full)
 // -----------------------------------------------------------------------------
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
@@ -14,12 +13,14 @@ import { dirname, join } from "node:path";
 import yaml from "js-yaml";
 
 import { fetchActivity } from "./fetch.mjs";
+import { rememberName, saveStore } from "./store.mjs";
 import { score } from "./score.mjs";
 import { enrichUserNames } from "./profiles.mjs";
 import { renderJson, renderHtml, renderReadmeTable } from "./render.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
+const STORE_DIR = join(ROOT, "data/store");
 
 function updateReadme(readmePath, table) {
   let md;
@@ -40,11 +41,21 @@ async function main() {
   const rules = yaml.load(readFileSync(join(ROOT, "config/rules.yml"), "utf8"));
   if (!rules.repos?.length) throw new Error("config/rules.yml needs a non-empty `repos` list.");
 
-  console.log(`Fetching activity for ${rules.repos.length} repos (last ${rules.lookback_days} days)...`);
-  const activity = await fetchActivity(token, rules.repos, rules.lookback_days);
-  console.log(`  ${activity.pullRequests.length} merged PRs, ${activity.issues.length} issues`);
+  const mode = process.env.SYNC_MODE || "incremental";
+  console.log(`Fetching activity (mode=${mode}, lookback=${rules.lookback_days}d)...`);
+  const activity = await fetchActivity(token, rules.repos, rules.lookback_days, {
+    rules,
+    storeDir: STORE_DIR,
+    mode,
+  });
+  const q = activity.quality || {};
+  console.log(
+    `  store: ${q.event_counts?.prs ?? "?"} PRs, ${q.event_counts?.reviews ?? "?"} reviews, ${q.event_counts?.review_comments ?? "?"} inline comments, ${q.event_counts?.issues ?? "?"} issues`
+  );
+  if (q.warnings?.length) {
+    for (const w of q.warnings) console.warn(`  ! ${w}`);
+  }
 
-  // Manual / off-GitHub contributions (approval-gated). Optional file.
   let manual = { contributions: [] };
   const manualPath = join(ROOT, "data/manual.yml");
   if (existsSync(manualPath)) {
@@ -53,23 +64,31 @@ async function main() {
   const approvedManual = (manual.contributions || []).filter((c) => c?.approved === true).length;
   console.log(`  ${approvedManual} approved manual contributions`);
 
-  const users = score(activity, rules, manual);
+  const identities = activity.store?.identities || {};
+  const users = score(activity, rules, manual, identities);
   console.log(`  scored ${users.length} human contributors`);
+
+  for (const u of users) {
+    if (!u.name && identities[u.login]?.name) u.name = identities[u.login].name;
+  }
 
   console.log("Resolving full names from GitHub profiles...");
   await enrichUserNames(users, token);
   const named = users.filter((u) => u.name).length;
   console.log(`  ${named}/${users.length} profiles have a public full name`);
 
+  if (activity.store) {
+    for (const u of users) rememberName(activity.store.identities, u.login, u.name);
+    saveStore(STORE_DIR, activity.store);
+  }
+
   const meta = {
-    repos: rules.repos,
+    repos: activity.repos || rules.repos,
     lookback_days: rules.lookback_days,
     windows_days: rules.display?.windows_days || [7, 14],
     manual_categories: rules.manual_contributions?.categories || {},
     rules_version: rules.version,
-    // Threaded through so the on-page "what counts" explainer is always
-    // derived from the live config, never hand-written prose that can
-    // silently drift out of sync with config/rules.yml.
+    sync: q,
     review_rules: {
       approved_points: rules.reviews.approved_points,
       changes_requested_points: rules.reviews.changes_requested_points,
@@ -91,6 +110,7 @@ async function main() {
     issue_rules: {
       created_points: rules.issues.created_points,
       closed_bonus: rules.issues.closed_bonus,
+      closed_bonus_to: rules.issues.closed_bonus_to,
       duplicate_labels: rules.issues.duplicate_labels,
       daily_diminishing: rules.issues.daily_diminishing,
       max_points_per_day: rules.issues.max_points_per_day,
@@ -106,7 +126,7 @@ async function main() {
     renderReadmeTable(users, rules.display.top_n_in_readme, meta.windows_days)
   );
 
-  console.log("Wrote data/leaderboard.json, site/index.html, README.md");
+  console.log("Wrote data/store/*, data/leaderboard.json, site/index.html, README.md");
 }
 
 main().catch((err) => {

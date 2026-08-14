@@ -31,18 +31,18 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **136** | 97 | 0 | 4 |
-| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **119** | 12 | 3 | 2 |
-| 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **110** | 7 | 0 | 17 |
-| #4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **110** | 78 | 0 | 8 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **94** | 10 | 1 | 4 |
-| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **87** | 8 | 0 | 11 |
-| #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **79** | 4 | 0 | 7 |
-| #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **76** | 10 | 0 | 0 |
-| #9 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **66** | 4 | 1 | 25 |
-| #10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **63** | 3 | 3 | 1 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **148** | 97 | 0 | 4 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **142** | 78 | 0 | 1 |
+| 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 6 | 0 | 17 |
+| #4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **139** | 12 | 3 | 2 |
+| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **131** | 10 | 1 | 3 |
+| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **122** | 7 | 0 | 11 |
+| #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **104** | 4 | 0 | 6 |
+| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **88** | 3 | 3 | 1 |
+| #9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **79** | 9 | 0 | 0 |
+| #10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **60** | 14 | 0 | 3 |
 
-_Last updated: Fri, 14 Aug 2026 20:34:56 GMT_
+_Last updated: Fri, 14 Aug 2026 20:58:01 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
@@ -51,9 +51,11 @@ _Last updated: Fri, 14 Aug 2026 20:34:56 GMT_
 GitHub → Settings → Developer settings → Fine-grained tokens → New token.
 
 - Resource owner: the org
-- Repository access: pick exactly the repos listed under `repos:` in
-  [`config/rules.yml`](config/rules.yml) — not "All repositories". If a repo
-  isn't in that list, the token shouldn't be able to see it.
+- Repository access: **All repositories** in the org if you want new Mantis
+  repos to show up automatically (`repo_discovery` in
+  [`config/rules.yml`](config/rules.yml)). Otherwise pick exactly the repos
+  listed under `repos:` — if a repo isn't visible to the token, the job
+  **fails** rather than silently reporting zero activity.
 - Permissions, set only these to Read, everything else No access:
   Contents, Pull requests, Issues, Metadata (auto-required).
 
@@ -65,8 +67,7 @@ Repo → Settings → Secrets and variables → Actions → New repository secre
 name it `ORG_READ_TOKEN`, paste the token.
 
 **3. Run it.**
-Actions tab → "Update Leaderboard" → Run workflow. After that it runs on its
-own every 2 hours (cron's in `.github/workflows/update-leaderboard.yml`).
+Actions tab → "Update Leaderboard" → Run workflow (choose **full** the first time). After that it lists GitHub every 30 minutes, does a full audit once a day, and can also wake on a webhook (below).
 
 **Where results show up:** there's no GitHub Pages site here — Pages needs a
 paid plan for private repos. Instead every run commits the refreshed numbers
@@ -74,13 +75,15 @@ straight into the repo:
 
 - this README's table above, updates itself
 - `site/index.html` — pull the repo and open it in a browser
-- `data/leaderboard.json` — raw scored data if you want to build on top of it
+- `data/leaderboard.json` — scored snapshot
+- `data/store/` — the event log (every PR, review, inline comment, and issue). This is the database. Scores are recomputed from it each run.
 
 **Running it locally:**
 
 ```bash
 npm install
-GH_TOKEN=your_token npm run build
+npm test
+GH_TOKEN=your_token SYNC_MODE=full npm run build
 open site/index.html
 ```
 
@@ -102,9 +105,30 @@ Actions tab → "Daily Discord Digest" → Run workflow. It posts immediately;
 after that it runs on its own every day at 14:00 UTC (cron in
 `.github/workflows/discord-digest.yml` — edit the cron line for a different time).
 
-It reads the `data/leaderboard.json` the 2-hourly refresh already keeps
-current, so this job never needs `ORG_READ_TOKEN` — it can only read this
-repo's own committed file and POST to the one webhook URL you gave it.
+It reads the `data/leaderboard.json` the refresh already keeps current, so this
+job never needs `ORG_READ_TOKEN` — it can only read this repo's own committed
+file and POST to the one webhook URL you gave it.
+
+## Near-real-time GitHub webhook (optional)
+
+The 30-minute poll is the backbone. To refresh within a minute of a merge or
+review, add an **organization webhook** (or one webhook per tracked repo):
+
+1. GitHub org → Settings → Webhooks → Add webhook.
+2. Payload URL: `https://<your-vercel>/api/github-webhook`
+3. Content type: `application/json`
+4. Secret: generate one, save it as Vercel env `GITHUB_WEBHOOK_SECRET`.
+5. Events: Pull requests, Pull request reviews, Pull request review comments, Issues.
+
+Also set on Vercel:
+
+- `LEADERBOARD_DISPATCH_TOKEN` — a PAT that can dispatch workflows on **this**
+  leaderboard repo only (`actions: write`). Do **not** reuse `ORG_READ_TOKEN`.
+- `LEADERBOARD_REPO` — `owner/Mantis-Leaderboard`
+
+The endpoint verifies the HMAC, ignores uninteresting events, skips the
+dispatch if a leaderboard run is already in progress, and never writes to
+Mantis codebases.
 
 ## How scoring works
 
@@ -133,22 +157,27 @@ only way to stack. Tunable in [`config/rules.yml`](config/rules.yml).
 **"Is this the total?"** No single number on this page is an unqualified
 lifetime total:
 - The **"Past 7 Days" / "Past 14 Days" tables** above are trailing windows
-  ending today — this is what ranks people.
-- The **stat tiles on `site/index.html`** ("PRs merged", "Reviews", "Issues
-  logged") are a wider, *unranked* count over the full `lookback_days` window
+  ending today — this is what ranks people. The **PRs / Reviews / Issues
+  columns are raw activity counts** (no daily cap). Points still cap.
+- The **stat tiles on `site/index.html`** ("PRs merged", "Reviews", "Issues")
+  are a wider, *unranked* count over the full `lookback_days` window
   (currently 365 days) — not all-time. Anything older than `lookback_days`
-  was never fetched, so those tiles will always undercount true lifetime
-  activity once a repo is older than that. If you want real all-time totals,
-  raise `lookback_days` in `config/rules.yml` (tradeoff: longer run time, and
-  GitHub's search API caps any single query at 1,000 results).
+  was never fetched. The event log in `data/store/` is the replayable source;
+  GitHub Search is only used as a checksum of totals (it still cannot
+  *return* more than 1,000 hits per query, which is why we no longer list
+  via Search).
 
-**"What counts as a review?"** A review scores if *all* of these hold:
-1. State is **Approved**, **Changes requested**, or **Commented** (a finished
-   review with a real body). Dismissed and Pending never score. Inline-only
-   comments with no review body still don't score — GitHub doesn't attach
-   those to the review node we fetch.
+**"What counts as a review?"** A review is **counted** if you submitted a
+finished review (Approved / Changes requested / Commented / Dismissed) or left
+inline comments on someone else's PR — including open and unmerged PRs. It
+**scores** if *all* of these hold:
+1. State is **Approved**, **Changes requested**, or **Commented** (or
+   inline-only comments treated as Commented). Dismissed and Pending never
+   score. Inline comments are fetched separately and add to body length, so
+   a short “lgtm” plus a real line comment can still score.
 2. Body length: ≥ `reviews.min_body_length` (20) for Approve / Request
-   changes, ≥ `reviews.commented_min_body_length` (40) for Commented.
+   changes, ≥ `reviews.commented_min_body_length` (40) for Commented
+   (review body + inline comments).
 3. You didn't review your own PR (`exclude_self_review: true`).
 4. One credit per (reviewer, PR): the **highest-value** review type wins
    (comment then approve pays 8, not 6). Follow-up rounds on the same PR
@@ -158,18 +187,16 @@ lifetime total:
    even though the author gets no merge points for it.
 6. Review points also hard-cap at `reviews.max_points_per_day` (20).
 
-**"What counts as a merged PR?"** Only PRs GitHub reports as merged
-(`is:merged`), and only merges into `pull_requests.count_merges_to` branches
-(currently `main`/`master` — a PR merged into any other branch, e.g. a
-`develop` or release branch, scores nothing and isn't counted at all). If any
-tracked repo actually uses a different default/integration branch, PRs into
-it will silently not appear anywhere on this leaderboard until that branch
-name is added to `count_merges_to`. Unreviewed merges (no scoring peer
-review) pay `unreviewed_multiplier` (0.5). PR *points* then hard-cap at
+**"What counts as a merged PR?"** The **PRs column** counts every PR GitHub
+reports as merged (`mergedAt` set), any target branch, authored by you.
+**Points** only for merges into `pull_requests.count_merges_to` branches
+(currently `main`/`master`). Unreviewed merges (no scoring peer review, including
+inline comments) pay `unreviewed_multiplier` (0.5). PR *points* then hard-cap at
 `max_points_per_day` (36) per person per UTC day — counts still show all
-the merges.
+the merges. Co-authors are stored and counted separately; they do not take
+the author's merge.
 
 All of this lives in [`config/rules.yml`](config/rules.yml). Point values
 and caps change without code; new *kinds* of events (e.g. commented
 reviews, a PR daily cap) needed a scorer change once and are now
-config-driven. It recomputes from scratch on the next `npm run build`.
+config-driven. Scores recompute from the event log on the next `npm run build`.

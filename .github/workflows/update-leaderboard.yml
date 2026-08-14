@@ -1,29 +1,32 @@
 name: Update Leaderboard
 
-# Runs on a schedule and on manual trigger. Recomputes the whole leaderboard
-# from scratch and commits the refreshed outputs back to THIS repo only.
+# Incremental listing every 30 minutes, plus a daily full audit, plus
+# repository_dispatch from the GitHub webhook proxy. Recomputes scores from
+# the event log and commits outputs to THIS repo only.
 on:
   schedule:
-    - cron: "0 */2 * * *"    # every 2 hours (UTC). Adjust as needed.
-  workflow_dispatch: {}       # manual "Run workflow" button
+    - cron: "7,37 * * * *"   # twice an hour (UTC). The 07:07 run is a full audit.
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Sync mode
+        type: choice
+        options: [incremental, full]
+        default: incremental
+  repository_dispatch:
+    types: [github-activity]
 
-# Only permission needed is to write to THIS repo (for the committed
-# outputs). It has NO access to other repos.
-#
-# No Pages deploy job: Pages requires a paid plan for private repos. The
-# leaderboard is viewable via the auto-updated README table and
-# site/index.html (open it locally, or re-add a Pages deploy job later if
-# the repo goes public or gets a Pro plan).
 permissions:
   contents: write
 
 concurrency:
   group: leaderboard
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -33,18 +36,36 @@ jobs:
 
       - run: npm ci
 
+      - run: npm test
+
+      - name: Decide sync mode
+        run: |
+          EVENT="${{ github.event_name }}"
+          INPUT="${{ github.event.inputs.mode }}"
+          HOUR=$(date -u +%H)
+          MIN=$(date -u +%M)
+          if [ "$EVENT" = "workflow_dispatch" ] && [ -n "$INPUT" ]; then
+            MODE="$INPUT"
+          elif [ "$EVENT" = "schedule" ] && [ "$HOUR" = "07" ] && [ "$MIN" -lt "20" ]; then
+            MODE=full
+          elif [ "$EVENT" = "repository_dispatch" ]; then
+            MODE=incremental
+          else
+            MODE=incremental
+          fi
+          echo "SYNC_MODE=$MODE" >> "$GITHUB_ENV"
+          echo "Using SYNC_MODE=$MODE"
+
       - name: Build leaderboard
         env:
-          # ORG_READ_TOKEN: a fine-grained PAT with READ-ONLY access, scoped
-          # to exactly the repos listed in config/rules.yml. Stored as a
-          # repo secret. See README.md.
           GH_TOKEN: ${{ secrets.ORG_READ_TOKEN }}
+          SYNC_MODE: ${{ env.SYNC_MODE }}
         run: npm run build
 
       - name: Commit refreshed outputs
         run: |
           git config user.name "leaderboard-bot"
           git config user.email "actions@github.com"
-          git add data/leaderboard.json site/index.html README.md
+          git add data/leaderboard.json data/store site/index.html README.md
           git diff --cached --quiet || git commit -m "chore: refresh leaderboard [skip ci]"
           git push

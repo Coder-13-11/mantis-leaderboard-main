@@ -84,11 +84,20 @@ function userOf(users, login) {
       login,
       name: null, // filled later by profile enrichment
       total: 0,
-      days: {},
-      dayCounts: {}, // day -> { prs, reviews, confirmed_issues, fixed_bonuses, manual }
+        days: {},
+      dayCounts: {}, // day -> { prs, reviews, confirmed_issues, fixed_bonuses, manual, prs_coauthored, issues_closed, review_submissions }
       dayBreakdown: {}, // day -> { pr, review, issue, other } for window explainers
       breakdown: { pr: 0, review: 0, issue: 0, other: 0 },
-      counts: { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0, manual: 0 },
+      counts: {
+        prs: 0,
+        reviews: 0,
+        confirmed_issues: 0,
+        fixed_bonuses: 0,
+        manual: 0,
+        prs_coauthored: 0,
+        issues_closed: 0,
+        review_submissions: 0,
+      },
       sizes: { XS: 0, S: 0, M: 0, L: 0, XL: 0 },
       contributions: [], // approved manual/off-GitHub entries, for highlights
     };
@@ -113,13 +122,22 @@ function addPoints(user, category, points, earnedAt) {
 // Bump a lifetime count AND the same count bucketed by the day it happened,
 // so trailing windows (7-day, 14-day, ...) can be computed for counts too --
 // not just for points.
-function addCount(user, category, earnedAt) {
-  user.counts[category] += 1;
+function addCount(user, category, earnedAt, n = 1) {
+  user.counts[category] = (user.counts[category] || 0) + n;
   const day = dayKey(earnedAt);
   if (!user.dayCounts[day]) {
-    user.dayCounts[day] = { prs: 0, reviews: 0, confirmed_issues: 0, fixed_bonuses: 0, manual: 0 };
+    user.dayCounts[day] = {
+      prs: 0,
+      reviews: 0,
+      confirmed_issues: 0,
+      fixed_bonuses: 0,
+      manual: 0,
+      prs_coauthored: 0,
+      issues_closed: 0,
+      review_submissions: 0,
+    };
   }
-  user.dayCounts[day][category] += 1;
+  user.dayCounts[day][category] = (user.dayCounts[day][category] || 0) + n;
 }
 
 // Same-day diminishing factor for the n-th event of a category.
@@ -149,24 +167,64 @@ function reviewPointsFor(state, bodyLen, rv) {
   return 0;
 }
 
-// Best scoring review per non-author reviewer on this PR.
-// Map<login, { points, submittedAt }>.
-function peerReviewsByLogin(p, authorLogin, rv, isExcluded) {
-  const byReviewer = new Map();
+// Collect every human who reviewed this PR (submitted review and/or inline
+// comments). Scoring still uses quality thresholds; counts do not.
+function collectReviewers(p, authorLogin, rv, isExcluded) {
+  const comments = p.reviewComments?.nodes || [];
+  const inlineByLogin = new Map();
+  for (const c of comments) {
+    const login = c.author?.login;
+    if (!login || isExcluded(login)) continue;
+    if (rv.exclude_self_review && login === authorLogin) continue;
+    const at = c.createdAt || c.submittedAt;
+    const cur = inlineByLogin.get(login) || { bodyLen: 0, submittedAt: at };
+    cur.bodyLen += (c.body || "").trim().length;
+    if (at && (!cur.submittedAt || at > cur.submittedAt)) cur.submittedAt = at;
+    inlineByLogin.set(login, cur);
+  }
+
+  const counted = new Map();
+  const scoring = new Map();
+
   for (const r of p.reviews?.nodes || []) {
     const reviewer = r.author?.login;
     if (!reviewer || isExcluded(reviewer)) continue;
     if (rv.exclude_self_review && reviewer === authorLogin) continue;
-    const pts = reviewPointsFor(r.state, (r.body || "").trim().length, rv);
-    if (!pts) continue;
-    const prev = byReviewer.get(reviewer);
-    const newer = !prev || pts > prev.points || (pts === prev.points && r.submittedAt > prev.submittedAt);
-    if (newer) byReviewer.set(reviewer, { points: pts, submittedAt: r.submittedAt });
+    if (r.state === "PENDING") continue;
+    const inline = inlineByLogin.get(reviewer);
+    const bodyLen = (r.body || "").trim().length + (inline?.bodyLen || 0);
+    const submittedAt = r.submittedAt || inline?.submittedAt;
+    const prevCount = counted.get(reviewer) || { submittedAt, submissions: 0 };
+    prevCount.submissions += 1;
+    if (submittedAt && (!prevCount.submittedAt || submittedAt > prevCount.submittedAt)) {
+      prevCount.submittedAt = submittedAt;
+    }
+    counted.set(reviewer, prevCount);
+
+    const pts = reviewPointsFor(r.state, bodyLen, rv);
+    const prev = scoring.get(reviewer);
+    const newer =
+      !prev || pts > prev.points || (pts === prev.points && submittedAt > prev.submittedAt);
+    if (newer) scoring.set(reviewer, { points: pts, submittedAt, state: r.state });
   }
-  return byReviewer;
+
+  for (const [login, inline] of inlineByLogin) {
+    if (!counted.has(login)) {
+      counted.set(login, { submittedAt: inline.submittedAt, submissions: 1, inlineOnly: true });
+    }
+    if (!scoring.has(login)) {
+      scoring.set(login, {
+        points: reviewPointsFor("COMMENTED", inline.bodyLen, rv),
+        submittedAt: inline.submittedAt,
+        state: "COMMENTED",
+      });
+    }
+  }
+
+  return { scoring, counted };
 }
 
-export function score(activity, rules, manual = {}) {
+export function score(activity, rules, manual = {}, identities = {}) {
   const users = {};
   const pr = rules.pull_requests;
   const rv = rules.reviews;
@@ -186,30 +244,51 @@ export function score(activity, rules, manual = {}) {
 
   // Sort PRs chronologically so "first PR" is deterministic.
   const prs = [...activity.pullRequests]
-    .filter((p) => p.mergedAt)
-    .sort((a, b) => new Date(a.mergedAt) - new Date(b.mergedAt));
+    .filter((p) => p.mergedAt || p.state === "OPEN" || p.state === "CLOSED" || (p.reviews?.nodes || []).length)
+    .sort((a, b) => new Date(a.mergedAt || a.updatedAt || a.createdAt) - new Date(b.mergedAt || b.updatedAt || b.createdAt));
 
   for (const p of prs) {
     const login = p.author?.login;
-    // `count_merges_to` gates whether the PR's OWN authorship points count
-    // (size bonus, first-PR bonus, etc.) -- it says nothing about whether
-    // reviewing this PR was valuable. Reviews are scored unconditionally
-    // below, in their own block.
-    const peers = peerReviewsByLogin(p, login, rv, isExcluded);
+    const peers = collectReviewers(p, login, rv, isExcluded);
 
+    const merged = Boolean(p.mergedAt);
     const authorEligible =
+      merged &&
       login &&
       !isExcluded(login) &&
       (!pr.count_merges_to || pr.count_merges_to.includes(p.baseRefName));
 
+    if (merged && login && !isExcluded(login)) {
+      const u = userOf(users, login);
+      addCount(u, "prs", p.mergedAt);
+    }
+
+    for (const co of p.coauthors || []) {
+      if (!co || isExcluded(co) || co === login || !merged) continue;
+      addCount(userOf(users, co), "prs_coauthored", p.mergedAt);
+    }
+
     if (authorEligible) {
       // --- PR base points from size (excluding generated files) ---
-      const files = (p.files?.nodes || []).map((f) => f.path);
-      const excludedCount = files.filter((f) => pathIsExcluded(f, excludeRes)).length;
-      const excludedRatio = files.length ? excludedCount / files.length : 0;
-      // Approximate the meaningful diff by discounting excluded-file share.
+      const files = (p.files?.nodes || []).map((f) => ({
+        path: typeof f === "string" ? f : f.path,
+        additions: typeof f === "string" ? null : f.additions,
+        deletions: typeof f === "string" ? null : f.deletions,
+      }));
+      const excluded = files.filter((f) => pathIsExcluded(f.path, excludeRes));
       const rawLines = (p.additions || 0) + (p.deletions || 0);
-      const meaningful = Math.round(rawLines * (1 - excludedRatio));
+      const havePerFileLines = files.some((f) => Number.isFinite(f.additions) || Number.isFinite(f.deletions));
+      let meaningful;
+      if (havePerFileLines) {
+        const excludedLines = excluded.reduce(
+          (s, f) => s + (f.additions || 0) + (f.deletions || 0),
+          0
+        );
+        meaningful = Math.max(0, rawLines - excludedLines);
+      } else {
+        const excludedRatio = files.length ? excluded.length / files.length : 0;
+        meaningful = Math.round(rawLines * (1 - excludedRatio));
+      }
 
       // Bucket label is kept for the dashboard's size breakdown only -- it no
       // longer drives points (see the `points` formula below and its
@@ -234,13 +313,15 @@ export function score(activity, rules, manual = {}) {
       const isHighImpact = (pr.impact_labels || []).some((l) => labels.includes(l.toLowerCase()));
       if (isHighImpact) points *= pr.multipliers.high_impact;
 
-      const isFirst = !seenAuthors.has(login);
+      const knownFirst = identities[login]?.firstMergedAt;
+      const isFirst = !seenAuthors.has(login) && (!knownFirst || knownFirst >= p.mergedAt);
       if (isFirst) points *= pr.multipliers.first_pr;
       seenAuthors.add(login);
 
       // Unreviewed self-merges pay half. Burst dumps almost never have a
       // peer review; a normal reviewed fix does.
-      if (peers.size === 0) {
+      const hasScoringPeer = [...peers.scoring.values()].some((s) => s.points > 0);
+      if (!hasScoringPeer) {
         points *= pr.unreviewed_multiplier ?? 1;
       }
 
@@ -256,22 +337,26 @@ export function score(activity, rules, manual = {}) {
       prPtsPerDay[dk] = used + points;
 
       const u = userOf(users, login);
-      addCount(u, "prs", p.mergedAt);
       addPoints(u, "pr", points, p.mergedAt);
       u.sizes[bucket] += 1;
     }
 
-    // --- Reviews on this PR (anti-spam; best-of per reviewer) ---
-    for (const [reviewer, best] of peers) {
+    // --- Reviews: count every human who touched the PR; score the best one ---
+    for (const [reviewer, info] of peers.counted) {
+      const ru = userOf(users, reviewer);
+      addCount(ru, "reviews", info.submittedAt || p.updatedAt || p.mergedAt);
+      if (info.submissions) {
+        addCount(ru, "review_submissions", info.submittedAt || p.updatedAt, info.submissions);
+      }
+    }
+    for (const [reviewer, best] of peers.scoring) {
+      if (!best.submittedAt || !best.points) continue;
       let rpts = best.points;
       const rk = `${reviewer}|${dayKey(best.submittedAt)}`;
       const used = reviewPtsPerDay[rk] || 0;
       rpts = Math.round(clipToCap(rpts, used, rv.max_points_per_day));
       reviewPtsPerDay[rk] = used + rpts;
-
-      const ru = userOf(users, reviewer);
-      addCount(ru, "reviews", best.submittedAt);
-      addPoints(ru, "review", rpts, best.submittedAt);
+      addPoints(userOf(users, reviewer), "review", rpts, best.submittedAt);
     }
   }
 
@@ -283,17 +368,23 @@ export function score(activity, rules, manual = {}) {
 
   for (const i of issues) {
     const login = i.author?.login;
-    if (!login || isExcluded(login)) continue;
     const labels = (i.labels?.nodes || []).map((l) => l.name.toLowerCase());
+    const openerOk = login && !isExcluded(login);
 
-    // Drop issues that were rejected — those aren't real contributions.
+    if (openerOk) addCount(userOf(users, login), "confirmed_issues", i.createdAt);
+
+    const closerLogin = i.closedBy?.login || (typeof i.closedBy === "string" ? i.closedBy : null);
+    const closerOk = Boolean(i.closed && closerLogin && !isExcluded(closerLogin));
+    if (closerOk) {
+      addCount(userOf(users, closerLogin), "issues_closed", i.closedAt || i.createdAt);
+    }
+
     const isDuplicate =
       (is.duplicate_labels || []).some((d) => labels.includes(d.toLowerCase())) ||
       i.stateReason === "DUPLICATE" ||
       i.stateReason === "NOT_PLANNED";
     if (isDuplicate) continue;
 
-    // A difficulty label's points REPLACE the flat base, when one is present.
     let rawCreate = is.created_points ?? 0;
     for (const [label, pts] of Object.entries(is.difficulty_points || {})) {
       if (labels.includes(label.toLowerCase())) {
@@ -301,29 +392,39 @@ export function score(activity, rules, manual = {}) {
         break;
       }
     }
-    if (!rawCreate) continue;
+
+    const cap = is.max_points_per_day;
+    const factorLogin = openerOk ? login : closerOk ? closerLogin : null;
+    if (!factorLogin) continue;
 
     const createDay = dayKey(i.createdAt);
-    const createKey = `${login}|${createDay}`;
-    const nth = (issuePerDay[createKey] = (issuePerDay[createKey] || 0) + 1);
-    const factor = diminishingFactor(nth, is.daily_diminishing);
+    const createKey = `${factorLogin}|${createDay}`;
+    const nth = openerOk ? (issuePerDay[createKey] = (issuePerDay[createKey] || 0) + 1) : 1;
+    const factor = openerOk ? diminishingFactor(nth, is.daily_diminishing) : 1;
 
-    let createPts = rawCreate * factor;
+    let createPts = openerOk && rawCreate ? rawCreate * factor : 0;
     let closedPts = 0;
     if (i.closed && i.stateReason !== "NOT_PLANNED" && (is.closed_bonus || 0) > 0) {
-      closedPts = (is.closed_bonus || 0) * factor;
+      closedPts = (is.closed_bonus || 0) * (openerOk ? factor : 1);
     }
 
-    // Hard daily ceiling on issue-category points (create day).
-    const cap = is.max_points_per_day;
-    const usedCreate = issuePtsPerDay[createKey] || 0;
-    createPts = clipToCap(createPts, usedCreate, cap);
-    issuePtsPerDay[createKey] = usedCreate + createPts;
+    if (createPts) {
+      const usedCreate = issuePtsPerDay[createKey] || 0;
+      createPts = clipToCap(createPts, usedCreate, cap);
+      issuePtsPerDay[createKey] = usedCreate + createPts;
+    }
 
-    // Closed bonus counts against the close day's budget (often same day).
-    if (closedPts > 0) {
+    const bonusTo = is.closed_bonus_to || "closer";
+    let closedRecipient = openerOk ? login : null;
+    if (bonusTo === "closer" && closerOk) closedRecipient = closerLogin;
+    else if (bonusTo === "closer" && closerLogin && isExcluded(closerLogin) && openerOk) {
+      closedRecipient = login;
+    }
+    if (!closedRecipient) closedPts = 0;
+
+    if (closedPts > 0 && closedRecipient) {
       const closeDay = dayKey(i.closedAt || i.createdAt);
-      const closeKey = `${login}|${closeDay}`;
+      const closeKey = `${closedRecipient}|${closeDay}`;
       const usedClose = issuePtsPerDay[closeKey] || 0;
       closedPts = clipToCap(closedPts, usedClose, cap);
       issuePtsPerDay[closeKey] = usedClose + closedPts;
@@ -332,15 +433,11 @@ export function score(activity, rules, manual = {}) {
     createPts = Math.round(createPts);
     closedPts = Math.round(closedPts);
 
-    const u = userOf(users, login);
-    // Activity counts always reflect real issues, even when points are clipped
-    // to zero — so the board still shows "opened 40 issues, earned 8 pts max".
-    addCount(u, "confirmed_issues", i.createdAt);
-    addPoints(u, "issue", createPts, i.createdAt);
+    if (createPts && openerOk) addPoints(userOf(users, login), "issue", createPts, i.createdAt);
 
-    if (closedPts > 0) {
-      addPoints(u, "issue", closedPts, i.closedAt || i.createdAt);
-      addCount(u, "fixed_bonuses", i.closedAt || i.createdAt);
+    if (closedPts > 0 && closedRecipient) {
+      addPoints(userOf(users, closedRecipient), "issue", closedPts, i.closedAt || i.createdAt);
+      addCount(userOf(users, closedRecipient), "fixed_bonuses", i.closedAt || i.createdAt);
     }
   }
 
@@ -370,7 +467,16 @@ export function score(activity, rules, manual = {}) {
 
   // Rank by the primary trailing window (first entry in windows_days).
   const windowsDays = rules.display?.windows_days || [7, 14];
-  const countCategories = ["prs", "reviews", "confirmed_issues", "fixed_bonuses", "manual"];
+  const countCategories = [
+    "prs",
+    "reviews",
+    "confirmed_issues",
+    "fixed_bonuses",
+    "manual",
+    "prs_coauthored",
+    "issues_closed",
+    "review_submissions",
+  ];
   const pointCategories = ["pr", "review", "issue", "other"];
   for (const u of Object.values(users)) {
     u.windows = {};
