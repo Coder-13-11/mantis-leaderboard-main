@@ -346,7 +346,7 @@ function whatCountsSection(meta) {
         <div class="wc">
           <b>Humans only</b>
           <p>Dependabot, GitHub Actions, Renovate, <code>[bot]</code> accounts, and
-          named agents (e.g. MantisCartography) are excluded. Rankings track
+          named agents (MantisCartography, Codex, Copilot) are excluded. Rankings track
           who’s actively shipping <i>now</i>.</p>
         </div>
       </div>
@@ -518,32 +518,21 @@ export function renderHtml(users, meta) {
   }
   .wrap { max-width: 820px; margin: 0 auto; }
 
-  .hero { text-align: center; margin-bottom: 1.75rem; }
-  .brand { display: flex; flex-direction: column; align-items: center; gap: .7rem; margin-bottom: .85rem; }
+  .hero { margin-bottom: 1.5rem; }
+  .masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; flex-wrap: wrap; margin-bottom: 1.15rem;
+  }
+  .brand { display: flex; align-items: center; }
   .logo {
-    width: min(220px, 62vw); height: auto; display: block;
+    width: min(168px, 52vw); height: auto; display: block;
     filter: none;
   }
   @media (prefers-color-scheme: dark) {
     .logo { filter: invert(1) brightness(1.05); }
   }
-  .brand .parent {
-    font-size: .7rem; letter-spacing: .04em; text-transform: uppercase;
-    color: var(--faint); text-decoration: none;
-    padding: .28rem .7rem; border: 1px solid var(--border); border-radius: 999px;
-    background: color-mix(in srgb, var(--panel) 80%, transparent);
-  }
-  .brand .parent:hover { color: var(--accent); border-color: var(--accent); }
-  h1 {
-    margin: 0; font-family: var(--serif); font-weight: 600;
-    font-size: clamp(1.65rem, 4vw, 2.15rem); letter-spacing: -.02em;
-    color: var(--text);
-  }
-  .sub { color: var(--muted); margin: .45rem 0 0; font-size: .88rem; }
-  .sub .live { color: var(--accent); font-weight: 600; }
   .topnav {
-    display: flex; justify-content: center; flex-wrap: wrap; gap: .4rem;
-    margin-top: 1rem;
+    display: flex; flex-wrap: wrap; gap: .4rem;
   }
   .topnav a {
     font-size: .78rem; font-weight: 600; letter-spacing: .01em;
@@ -556,6 +545,13 @@ export function renderHtml(users, meta) {
     color: var(--accent); border-color: var(--accent);
     background: var(--accent-soft);
   }
+  h1 {
+    margin: 0; font-family: var(--serif); font-weight: 600;
+    font-size: clamp(1.65rem, 4vw, 2.15rem); letter-spacing: -.02em;
+    color: var(--text);
+  }
+  .sub { color: var(--muted); margin: .4rem 0 0; font-size: .88rem; }
+  .sub .live { color: var(--accent); font-weight: 600; }
 
   .tiles {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem;
@@ -815,15 +811,17 @@ export function renderHtml(users, meta) {
 <body>
   <div class="wrap">
     <header class="hero">
-      <div class="brand">
-        <img class="logo" src="mantis-logo.png" alt="Mantis" width="220" height="74"/>
+      <div class="masthead">
+        <a class="brand" href="index.html">
+          <img class="logo" src="mantis-logo.png" alt="Mantis" width="220" height="74"/>
+        </a>
+        <nav class="topnav">
+          <a class="active" href="index.html">Leaderboard</a>
+          <a href="admin.html">Log a contribution</a>
+        </nav>
       </div>
       <h1>Contributor Leaderboard</h1>
       <p class="sub">${meta.repos.length} repositories · humans only · <span class="live">updates every 2 hours</span> · ${updated}</p>
-      <nav class="topnav">
-        <a class="active" href="index.html">Leaderboard</a>
-        <a href="admin.html">Log a contribution</a>
-      </nav>
     </header>
 
     <div class="tiles">${tiles}</div>

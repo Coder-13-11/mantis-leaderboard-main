@@ -173,14 +173,19 @@ manual_contributions:
 # -----------------------------------------------------------------------------
 display:
   top_n_in_readme: 10
-  # Humans only. MantisCartography is an agent without a [bot] suffix.
+  # Humans only. Agents without a [bot] suffix still need an exact login.
   exclude_logins:
     - "dependabot[bot]"
     - "github-actions[bot]"
     - "renovate[bot]"
     - "MantisCartography"
+    - "chatgpt-codex-connector"
+    - "copilot-pull-request-reviewer"
+    - "copilot-swe-agent"
   exclude_login_patterns:
     - "\\[bot\\]$"
+    - "codex-connector"
+    - "^copilot-"
   # Ranked by the first window. 7 days = who's active now; 14 = the same
   # idea, slower. Consistency across days beats a single dump in both.
   windows_days: [7, 14]
