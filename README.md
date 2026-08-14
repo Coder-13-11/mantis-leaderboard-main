@@ -108,23 +108,25 @@ repo's own committed file and POST to the one webhook URL you gave it.
 
 ## How scoring works
 
+Mantis already codes a lot, often as many small PRs. The unit of value is a
+**day of work**, not a PR. Two solid merges fill a shipping day; the 71st
+merge that day is still that same day.
+
 | Contribution | Points | Notes |
 | ------------ | ------ | ----- |
-| Merged PR | 5 / 10 / 16 / 24 / 32 | XS / S / M / L / XL by meaningful lines changed — deliberately flat, size alone can't dominate |
-| Doc PR | ×1.25 | PR labeled `documentation` |
-| High-impact PR | ×1.5 | PR labeled `priority: critical`/`priority: high`/`impact: high` — the counterweight to line-count scoring |
-| First PR | ×1.5 | contributor's first merged PR |
-| Approved review | 20 | must have a real body (anti-spam) |
-| Changes requested | 15 | must have a real body |
-| Issue created | 3 | any valid issue (not duplicate/invalid/wontfix/not-planned) — kept low, it's the easiest thing to farm |
-| Issue closed | +2 | small bonus once someone acts on it and closes it as completed |
-| Issue difficulty (future) | 2 → 24 | a `difficulty: 1…6` label *replaces* the flat 3 — harder issues worth more. Dormant until you apply the labels |
+| Merged PR | 10–22 | saturating size bonus (not XS–XL buckets). Unreviewed (no peer review) ×0.5 |
+| Doc / first / high-impact PR | ×1.25 / ×1.5 / ×1.5 | labels, or first merged PR in the lookback |
+| PR points per person per day | cap 36 | ~2 typical PRs. Burst merges cannot exceed a normal coding day |
+| Commented review | 6 | Finish-review comment, body ≥ 40 chars |
+| Approved review | 8 | body ≥ 20 chars |
+| Changes requested | 10 | body ≥ 20 chars; finding problems pays more than LGTM |
+| Review points per person per day | cap 20 | a review day cannot beat a shipping day |
+| Issue created / closed | 2 / +1 | cap 6 issue pts/day |
+| Issue difficulty (future) | 1 → 16 | a `difficulty: 1…6` label *replaces* the flat 2. Dormant until labeled |
 
-**Anti-gaming:** merging many PRs on the *same day* hits diminishing returns
-(the main way to farm this is splitting one change into lots of small PRs).
-The first few PRs a day score full; each further same-day PR is worth a
-shrinking fraction. A normal cadence is unaffected. Tunable under
-`pull_requests.daily_diminishing` in `config/rules.yml`.
+**Anti-gaming:** same-day extra PRs decay to zero after the second merge,
+*and* PR points hard-cap at 36/day. Spreading work across the week is the
+only way to stack. Tunable in [`config/rules.yml`](config/rules.yml).
 
 ### Exactly what counts (the questions people actually ask)
 
@@ -140,29 +142,21 @@ lifetime total:
   raise `lookback_days` in `config/rules.yml` (tradeoff: longer run time, and
   GitHub's search API caps any single query at 1,000 results).
 
-**"What counts as a review?"** A review only scores if *all* of these hold:
-1. State is **Approved** or **Changes requested** — Commented, Dismissed, and
-   Pending reviews never score, no matter how long the comment is. A `/gemini
-   review`-style comment, or a comment-only pass with no formal
-   approve/request-changes, is real work but isn't counted today.
-2. The review body is at least `reviews.min_body_length` characters (15 by
-   default) — kills empty "LGTM" approvals.
+**"What counts as a review?"** A review scores if *all* of these hold:
+1. State is **Approved**, **Changes requested**, or **Commented** (a finished
+   review with a real body). Dismissed and Pending never score. Inline-only
+   comments with no review body still don't score — GitHub doesn't attach
+   those to the review node we fetch.
+2. Body length: ≥ `reviews.min_body_length` (20) for Approve / Request
+   changes, ≥ `reviews.commented_min_body_length` (40) for Commented.
 3. You didn't review your own PR (`exclude_self_review: true`).
-4. Only your **first** scored review on a given PR counts
-   (`one_per_pr_per_reviewer: true`) — this is the one that most understates
-   real effort. If you request changes, the author pushes fixes, and you come
-   back and do a second (or third) full review pass before approving, only
-   that *first* requested-changes review is credited — the follow-up review
-   rounds and the eventual approval add nothing further. On a PR with several
-   review rounds, your "Reviews" count only ever goes up by 1 for it, not by
-   the number of times you actually reviewed it. This is intentional
-   anti-spam (stops trivial re-click farming), but it means a thorough,
-   multi-round reviewer's count will look much lower than their actual GitHub
-   activity — worth knowing before assuming the number is wrong.
-5. Reviews are scored independently of which branch the PR merges into —
-   reviewing a PR that targets a non-tracked branch (outside
-   `pull_requests.count_merges_to`) still earns full review credit, even
-   though the PR author gets no points for it.
+4. One credit per (reviewer, PR): the **highest-value** review type wins
+   (comment then approve pays 8, not 6). Follow-up rounds on the same PR
+   do not stack. Intentional anti-spam.
+5. Reviews are scored even if the PR targets a branch outside
+   `pull_requests.count_merges_to` — reviewing that work still counts,
+   even though the author gets no merge points for it.
+6. Review points also hard-cap at `reviews.max_points_per_day` (20).
 
 **"What counts as a merged PR?"** Only PRs GitHub reports as merged
 (`is:merged`), and only merges into `pull_requests.count_merges_to` branches
@@ -170,9 +164,12 @@ lifetime total:
 `develop` or release branch, scores nothing and isn't counted at all). If any
 tracked repo actually uses a different default/integration branch, PRs into
 it will silently not appear anywhere on this leaderboard until that branch
-name is added to `count_merges_to`.
+name is added to `count_merges_to`. Unreviewed merges (no scoring peer
+review) pay `unreviewed_multiplier` (0.5). PR *points* then hard-cap at
+`max_points_per_day` (36) per person per UTC day — counts still show all
+the merges.
 
-All of this lives in [`config/rules.yml`](config/rules.yml) — point values,
-size buckets, label names, anti-gaming thresholds. Change a number, open a
-PR, done. No code changes needed, and it recomputes from scratch on the next
-run so nothing needs migrating.
+All of this lives in [`config/rules.yml`](config/rules.yml). Point values
+and caps change without code; new *kinds* of events (e.g. commented
+reviews, a PR daily cap) needed a scorer change once and are now
+config-driven. It recomputes from scratch on the next `npm run build`.

@@ -135,6 +135,37 @@ function clipToCap(want, used, cap) {
   return Math.min(want, remaining);
 }
 
+// Points for a single review node, or 0 if it doesn't meet the bar.
+function reviewPointsFor(state, bodyLen, rv) {
+  const min = rv.min_body_length ?? 0;
+  const cmin = rv.commented_min_body_length ?? min;
+  if (state === "APPROVED" && bodyLen >= min) return rv.approved_points ?? 0;
+  if (state === "CHANGES_REQUESTED" && bodyLen >= min) {
+    return rv.changes_requested_points ?? 0;
+  }
+  if (state === "COMMENTED" && (rv.commented_points ?? 0) > 0 && bodyLen >= cmin) {
+    return rv.commented_points;
+  }
+  return 0;
+}
+
+// Best scoring review per non-author reviewer on this PR.
+// Map<login, { points, submittedAt }>.
+function peerReviewsByLogin(p, authorLogin, rv, isExcluded) {
+  const byReviewer = new Map();
+  for (const r of p.reviews?.nodes || []) {
+    const reviewer = r.author?.login;
+    if (!reviewer || isExcluded(reviewer)) continue;
+    if (rv.exclude_self_review && reviewer === authorLogin) continue;
+    const pts = reviewPointsFor(r.state, (r.body || "").trim().length, rv);
+    if (!pts) continue;
+    const prev = byReviewer.get(reviewer);
+    const newer = !prev || pts > prev.points || (pts === prev.points && r.submittedAt > prev.submittedAt);
+    if (newer) byReviewer.set(reviewer, { points: pts, submittedAt: r.submittedAt });
+  }
+  return byReviewer;
+}
+
 export function score(activity, rules, manual = {}) {
   const users = {};
   const pr = rules.pull_requests;
@@ -148,7 +179,9 @@ export function score(activity, rules, manual = {}) {
   // Count of a user's events on each calendar day, for diminishing returns.
   const prPerDay = {};
   const issuePerDay = {};
-  // Issue points already credited per login|day, for the hard daily ceiling.
+  // Points already credited per login|day, for hard daily ceilings.
+  const prPtsPerDay = {};
+  const reviewPtsPerDay = {};
   const issuePtsPerDay = {};
 
   // Sort PRs chronologically so "first PR" is deterministic.
@@ -162,6 +195,8 @@ export function score(activity, rules, manual = {}) {
     // (size bonus, first-PR bonus, etc.) -- it says nothing about whether
     // reviewing this PR was valuable. Reviews are scored unconditionally
     // below, in their own block.
+    const peers = peerReviewsByLogin(p, login, rv, isExcluded);
+
     const authorEligible =
       login &&
       !isExcluded(login) &&
@@ -203,6 +238,12 @@ export function score(activity, rules, manual = {}) {
       if (isFirst) points *= pr.multipliers.first_pr;
       seenAuthors.add(login);
 
+      // Unreviewed self-merges pay half. Burst dumps almost never have a
+      // peer review; a normal reviewed fix does.
+      if (peers.size === 0) {
+        points *= pr.unreviewed_multiplier ?? 1;
+      }
+
       // Diminishing returns for many same-day PRs by the same author
       // (discourages splitting one change into many PRs / AI flood).
       const dk = `${login}|${dayKey(p.mergedAt)}`;
@@ -210,32 +251,27 @@ export function score(activity, rules, manual = {}) {
       points *= diminishingFactor(nth, pr.daily_diminishing);
 
       points = Math.round(points);
+      const used = prPtsPerDay[dk] || 0;
+      points = Math.round(clipToCap(points, used, pr.max_points_per_day));
+      prPtsPerDay[dk] = used + points;
 
       const u = userOf(users, login);
-      addPoints(u, "pr", points, p.mergedAt);
       addCount(u, "prs", p.mergedAt);
+      addPoints(u, "pr", points, p.mergedAt);
       u.sizes[bucket] += 1;
     }
 
-    // --- Reviews on this PR (anti-spam) ---
-    const creditedReviewers = new Set();
-    for (const r of p.reviews?.nodes || []) {
-      const reviewer = r.author?.login;
-      if (!reviewer || isExcluded(reviewer)) continue;
-      if (rv.exclude_self_review && reviewer === login) continue;
-      if (rv.one_per_pr_per_reviewer && creditedReviewers.has(reviewer)) continue;
-      const body = (r.body || "").trim();
-      if (body.length < rv.min_body_length) continue;
+    // --- Reviews on this PR (anti-spam; best-of per reviewer) ---
+    for (const [reviewer, best] of peers) {
+      let rpts = best.points;
+      const rk = `${reviewer}|${dayKey(best.submittedAt)}`;
+      const used = reviewPtsPerDay[rk] || 0;
+      rpts = Math.round(clipToCap(rpts, used, rv.max_points_per_day));
+      reviewPtsPerDay[rk] = used + rpts;
 
-      let rpts = 0;
-      if (r.state === "APPROVED") rpts = rv.approved_points;
-      else if (r.state === "CHANGES_REQUESTED") rpts = rv.changes_requested_points;
-      else continue; // COMMENTED / DISMISSED / PENDING don't score
-
-      creditedReviewers.add(reviewer);
       const ru = userOf(users, reviewer);
-      addPoints(ru, "review", rpts, r.submittedAt);
-      addCount(ru, "reviews", r.submittedAt);
+      addCount(ru, "reviews", best.submittedAt);
+      addPoints(ru, "review", rpts, best.submittedAt);
     }
   }
 
