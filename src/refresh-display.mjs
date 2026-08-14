@@ -62,7 +62,7 @@ async function main() {
     lookback_days: raw.lookback_days || rules.lookback_days,
     windows_days: windowsDays,
     manual_categories: rules.manual_contributions?.categories || raw.manual_categories || {},
-    rules_version: rules.version,
+    sync: raw.sync || null,
     review_rules: {
       approved_points: rules.reviews.approved_points,
       changes_requested_points: rules.reviews.changes_requested_points,

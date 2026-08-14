@@ -32,7 +32,8 @@ function buildEmbed(data) {
 
   const lines = top.map((u, i) => {
     const pts = u.windows?.[days] ?? u.rolling_total ?? 0;
-    return `${rankPrefix(i)} **${u.login}** — ${pts} pts _(${u.counts.prs} PRs · ${u.counts.reviews} reviews · ${u.counts.confirmed_issues} issues)_`;
+    const wc = u.windowCounts?.[days] || {};
+    return `${rankPrefix(i)} **${u.login}** — ${pts} pts _(${wc.prs ?? 0} PRs · ${wc.reviews ?? 0} reviews · ${wc.confirmed_issues ?? 0} issues)_`;
   });
 
   const siteUrl = process.env.SITE_URL || "https://mantis-leaderboard.vercel.app";

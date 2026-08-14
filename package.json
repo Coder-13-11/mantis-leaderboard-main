@@ -6,6 +6,8 @@
   "private": true,
   "scripts": {
     "build": "node src/index.mjs",
+    "build:full": "SYNC_MODE=full node src/index.mjs",
+    "test": "node --test test/*.test.mjs",
     "refresh-display": "node src/refresh-display.mjs"
   },
   "dependencies": {

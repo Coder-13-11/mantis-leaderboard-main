@@ -116,6 +116,15 @@
     display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem;
     margin: 1.7rem 0 1.5rem;
   }
+  .quality {
+    margin: .85rem 0 0; padding: .65rem .8rem; border-radius: 10px;
+    font-size: .74rem; line-height: 1.5; color: var(--muted);
+    border: 1px solid var(--border); background: var(--panel);
+  }
+  .quality b { color: var(--text); }
+  .quality.ok { border-color: color-mix(in srgb, #2f9e62 35%, var(--border)); }
+  .quality.warn { border-color: color-mix(in srgb, var(--gold) 45%, var(--border)); }
+  .quality.bad { border-color: color-mix(in srgb, #c45c4a 50%, var(--border)); color: var(--text); }
   .tile {
     background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
     padding: .9rem 1rem; box-shadow: var(--shadow);
@@ -381,7 +390,8 @@
         </nav>
       </div>
       <h1>Contributor Leaderboard</h1>
-      <p class="sub">15 repositories · humans only · <span class="live">updates every 2 hours</span> · Fri, 14 Aug 2026 03:48:03 UTC</p>
+      <p class="sub">15 repositories · humans only · <span class="live">lists every PR, review, and issue from GitHub</span> · Fri, 14 Aug 2026 20:58:01 UTC</p>
+      
     </header>
 
     <div class="tiles"><div class="tile"><div class="tile-num">107</div><div class="tile-lbl">Contributors</div></div><div class="tile"><div class="tile-num">1,733</div><div class="tile-lbl">PRs merged</div><div class="tile-scope">last 365d</div></div><div class="tile"><div class="tile-num">1,499</div><div class="tile-lbl">Reviews</div><div class="tile-scope">last 365d</div></div><div class="tile"><div class="tile-num">1,242</div><div class="tile-lbl">Issues</div><div class="tile-scope">last 365d</div></div></div>
@@ -399,7 +409,7 @@
     </a>
       <div class="pod-pts" title="75 from PRs · 17 from issues">92<span>pts</span></div>
       <div class="pod-why">75 from PRs · 17 from issues · ~19 pts per PR this window</div>
-      <div class="pod-meta">4 PRs · 12 issues</div>
+      <div class="pod-meta">4 PRs · 12 issues opened</div>
     </div>
     <div class="pod pod-2">
       <div class="pod-badge">🥈</div>
@@ -410,7 +420,7 @@
     </a>
       <div class="pod-pts" title="71 from PRs · 16 from reviews · 3 from issues">90<span>pts</span></div>
       <div class="pod-why">71 from PRs · 16 from reviews · 3 from issues · ~12 pts per PR this window</div>
-      <div class="pod-meta">6 PRs · 2 reviews · 1 issue</div>
+      <div class="pod-meta">6 PRs · 2 reviews · 1 issue opened</div>
     </div>
     <div class="pod pod-3">
       <div class="pod-badge">🥉</div>
@@ -449,7 +459,7 @@
       <span class="pname pname-missing">Name not found</span>
       <span class="plogin">@alexandragreenwood</span>
     </a>
-            <span class="meta">2 PRs · 5 issues · 40 from PRs · 11 from issues</span>
+            <span class="meta">2 PRs · 5 issues opened · 40 from PRs · 11 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:40"></span><span class="seg seg-issue" style="flex:11"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -466,7 +476,7 @@
       <span class="pname pname-missing">Name not found</span>
       <span class="plogin">@Cruz-Arnzen</span>
     </a>
-            <span class="meta">3 PRs · 1 issue · 44 from PRs · 3 from issues</span>
+            <span class="meta">3 PRs · 1 issue opened · 44 from PRs · 3 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:44"></span><span class="seg seg-issue" style="flex:3"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -500,7 +510,7 @@
       <span class="pname">Rohan Vaidya</span>
       <span class="plogin">@rohan-va</span>
     </a>
-            <span class="meta">3 PRs · 1 review · 1 issue · 36 from PRs · 6 from reviews · 3 from issues</span>
+            <span class="meta">3 PRs · 1 review · 1 issue opened · 36 from PRs · 6 from reviews · 3 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:36"></span><span class="seg seg-review" style="flex:6"></span><span class="seg seg-issue" style="flex:3"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -602,7 +612,7 @@
       <span class="pname">Griffin Consigli</span>
       <span class="plogin">@gconsigli</span>
     </a>
-            <span class="meta">1 PR · 14 issues · 15 from PRs · 13 from issues</span>
+            <span class="meta">1 PR · 14 issues opened · 15 from PRs · 13 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:15"></span><span class="seg seg-issue" style="flex:13"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -640,7 +650,7 @@
     </a>
       <div class="pod-pts" title="140 from PRs · 8 from issues">148<span>pts</span></div>
       <div class="pod-why">140 from PRs · 8 from issues · ~1 pts per PR this window</div>
-      <div class="pod-meta">97 PRs · 4 issues</div>
+      <div class="pod-meta">97 PRs · 4 issues opened</div>
     </div>
     <div class="pod pod-2">
       <div class="pod-badge">🥈</div>
@@ -651,7 +661,7 @@
     </a>
       <div class="pod-pts" title="133 from PRs · 9 from issues">142<span>pts</span></div>
       <div class="pod-why">133 from PRs · 9 from issues · ~2 pts per PR this window</div>
-      <div class="pod-meta">78 PRs · 1 issue</div>
+      <div class="pod-meta">78 PRs · 1 issue opened</div>
     </div>
     <div class="pod pod-3">
       <div class="pod-badge">🥉</div>
@@ -662,7 +672,7 @@
     </a>
       <div class="pod-pts" title="111 from PRs · 30 from issues">141<span>pts</span></div>
       <div class="pod-why">111 from PRs · 30 from issues · ~19 pts per PR this window</div>
-      <div class="pod-meta">6 PRs · 17 issues</div>
+      <div class="pod-meta">6 PRs · 17 issues opened</div>
     </div></div>
         <ol class="board">
         <li class="row">
@@ -673,7 +683,7 @@
       <span class="pname">Hoang</span>
       <span class="plogin">@6namdang</span>
     </a>
-            <span class="meta">12 PRs · 3 reviews · 2 issues · 107 from PRs · 24 from reviews · 8 from issues</span>
+            <span class="meta">12 PRs · 3 reviews · 2 issues opened · 107 from PRs · 24 from reviews · 8 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:107"></span><span class="seg seg-review" style="flex:24"></span><span class="seg seg-issue" style="flex:8"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -690,7 +700,7 @@
       <span class="pname">Rohan Vaidya</span>
       <span class="plogin">@rohan-va</span>
     </a>
-            <span class="meta">10 PRs · 1 review · 3 issues · 113 from PRs · 6 from reviews · 12 from issues</span>
+            <span class="meta">10 PRs · 1 review · 3 issues opened · 113 from PRs · 6 from reviews · 12 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:113"></span><span class="seg seg-review" style="flex:6"></span><span class="seg seg-issue" style="flex:12"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -707,7 +717,7 @@
       <span class="pname pname-missing">Name not found</span>
       <span class="plogin">@charleywolf</span>
     </a>
-            <span class="meta">7 PRs · 11 issues · 113 from PRs · 9 from issues</span>
+            <span class="meta">7 PRs · 11 issues opened · 113 from PRs · 9 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:113"></span><span class="seg seg-issue" style="flex:9"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -724,7 +734,7 @@
       <span class="pname pname-missing">Name not found</span>
       <span class="plogin">@alexandragreenwood</span>
     </a>
-            <span class="meta">4 PRs · 6 issues · 90 from PRs · 14 from issues</span>
+            <span class="meta">4 PRs · 6 issues opened · 90 from PRs · 14 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:90"></span><span class="seg seg-issue" style="flex:14"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -741,7 +751,7 @@
       <span class="pname">Arjun Kulkarni</span>
       <span class="plogin">@DemonizedCrush</span>
     </a>
-            <span class="meta">3 PRs · 3 reviews · 1 issue · 58 from PRs · 24 from reviews · 6 from issues</span>
+            <span class="meta">3 PRs · 3 reviews · 1 issue opened · 58 from PRs · 24 from reviews · 6 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:58"></span><span class="seg seg-review" style="flex:24"></span><span class="seg seg-issue" style="flex:6"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -775,7 +785,7 @@
       <span class="pname">Taksh Kothari</span>
       <span class="plogin">@Chessing234</span>
     </a>
-            <span class="meta">14 PRs · 3 issues · 53 from PRs · 7 from issues</span>
+            <span class="meta">14 PRs · 3 issues opened · 53 from PRs · 7 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:53"></span><span class="seg seg-issue" style="flex:7"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -826,7 +836,7 @@
       <span class="pname">alex_d4v</span>
       <span class="plogin">@alex-d4v</span>
     </a>
-            <span class="meta">4 PRs · 25 issues · 41 from PRs · 14 from issues</span>
+            <span class="meta">4 PRs · 25 issues opened · 41 from PRs · 14 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:41"></span><span class="seg seg-issue" style="flex:14"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -843,7 +853,7 @@
       <span class="pname">Aryan Sudhir</span>
       <span class="plogin">@AryanSudhirDev</span>
     </a>
-            <span class="meta">2 PRs · 3 issues · 40 from PRs · 8 from issues</span>
+            <span class="meta">2 PRs · 3 issues opened · 40 from PRs · 8 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:40"></span><span class="seg seg-issue" style="flex:8"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -860,7 +870,7 @@
       <span class="pname pname-missing">Name not found</span>
       <span class="plogin">@Cruz-Arnzen</span>
     </a>
-            <span class="meta">3 PRs · 1 issue · 44 from PRs · 3 from issues</span>
+            <span class="meta">3 PRs · 1 issue opened · 44 from PRs · 3 from issues</span>
             <span class="split"><span class="seg seg-pr" style="flex:44"></span><span class="seg seg-issue" style="flex:3"></span></span>
           </span>
           <span class="sparkwrap"><svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none" aria-hidden="true">
@@ -922,18 +932,17 @@
       <div class="wc-grid">
         <div class="wc">
           <b>Pull requests</b>
-          <p>Only <b>merged</b> into <code>main or master</code>. Lockfiles / generated /
-          vendored paths are excluded from size. After 2 merges/day, further PRs decay toward zero. <b>Hard cap 36 PR pts/day.</b></p>
+          <p>Counts = every merged PR you authored, any branch. Points only for merges into <code>main or master</code>. Lockfiles / generated / vendored paths are subtracted from size using per-file line counts. After 2 merges/day, further PRs decay toward zero. <b>Hard cap 36 PR pts/day.</b></p>
         </div>
         <div class="wc">
           <b>Reviews</b>
-          <p><b>Commented</b> (+6, ≥40 chars),
+          <p>Counts = unique PRs you reviewed (submitted review or inline comments), including open and unmerged PRs. Points: <b>Commented</b> (+6, ≥40 chars),
           <b>Approved</b> (+8), or <b>Changes requested</b>
-          (+10, ≥20 chars). No self-reviews. Best review per PR (not the first click). Cap 20 pts/day. Bots never appear.</p>
+          (+10, ≥20 chars). Inline comments add to body length. No self-reviews. Best review per PR (not the first click). Cap 20 pts/day. Bots never appear.</p>
         </div>
         <div class="wc">
           <b>Issues</b>
-          <p>+2 to open (valid), +1 when completed.
+          <p>Counts = issues you opened (including duplicates). Close bonus (+1) goes to the person who closed it. +2 to open a valid issue.
           Rejected as duplicate, wontfix, invalid / not-planned score nothing.
           Burst decay after 2/day. <b>Hard cap 6 issue pts/day.</b></p>
         </div>
@@ -948,8 +957,9 @@
 
     <footer>
       Ranked by points in the selected window only — not lifetime totals.<br/>
+      PR / review / issue columns are raw activity counts (no daily cap). Points still cap and decay.<br/>
       Why a score looks “small”: same-day PR floods are discounted; issues hard-capped. Hover a total to see the split.<br/>
-      rules v3 · GitHub activity + approved manual credits<br/>
+      rules vundefined · GitHub listing + event log + approved manual credits<br/>
       Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
     </footer>
   </div>

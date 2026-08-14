@@ -13,9 +13,15 @@
 
 version: 3
 
-# How far back to look. The leaderboard is recomputed from scratch each run,
-# so this just bounds the API queries.
+# How far back to look. Incremental sync only fetches what changed since the
+# last successful run; a daily full audit re-lists the whole window and
+# checksums against Search issueCount (Search cannot return >1000 hits, but
+# it still reports the true total).
 lookback_days: 365
+
+# Organization used for repo discovery. The explicit `repos:` list is always
+# fetched; discovery ADDS matching repos the token can see.
+org: KellisLab
 
 # Exactly which repos this leaderboard tracks (owner/name). Add a line when
 # a new Mantis repo exists; nothing else needs to change. This is also what
@@ -36,6 +42,24 @@ repos:
   - KellisLab/Mantis-verticals
   - KellisLab/generator-mantis
   - KellisLab/mantis-cli
+
+repo_discovery:
+  enabled: true
+  include_archived: false
+  include_forks: false
+  include_patterns:
+    - "^Mantis"
+    - "^mantis"
+    - "^auto-meeting-minutes$"
+    - "^generator-mantis$"
+  extra: []
+  exclude: []
+
+# Listing sync. Search is a checksum only — never the source of truth.
+sync:
+  overlap_minutes: 120
+  checksum_search: true
+  fail_on_checksum_miss: false
 
 # -----------------------------------------------------------------------------
 # Pull Requests
@@ -132,6 +156,10 @@ reviews:
 issues:
   created_points: 2
   closed_bonus: 1
+  # Who gets the +1 when an issue is completed. `closer` is the person who
+  # actually closed it (bots fall back to the opener). Counts of issues
+  # opened vs closed are tracked separately either way.
+  closed_bonus_to: closer
 
   daily_diminishing:
     after: 2
