@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **78** | 3 | 19 | 1 |
 | #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 27 |
 
-_Last updated: Fri, 14 Aug 2026 21:58:18 GMT_
+_Last updated: Fri, 14 Aug 2026 22:36:10 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
