@@ -16,16 +16,16 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **249** | 80 | 0 | 0 |
-| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **191** | 12 | 2 | 1 |
-| 🥉 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **184** | 45 | 0 | 0 |
-| #4 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **115** | 5 | 3 | 0 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **103** | 8 | 0 | 2 |
-| #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 8 | 0 | 0 |
-| #7 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **80** | 3 | 0 | 13 |
-| #8 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **75** | 4 | 0 | 10 |
-| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **68** | 9 | 0 | 3 |
-| #10 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **59** | 3 | 0 | 0 |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **190** | 71 | 0 | 0 |
+| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **129** | 6 | 2 | 1 |
+| 🥉 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **117** | 33 | 0 | 0 |
+| #4 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **97** | 8 | 0 | 0 |
+| #5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **96** | 4 | 0 | 12 |
+| #6 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **59** | 3 | 0 | 0 |
+| #7 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **55** | 5 | 0 | 0 |
+| #8 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **55** | 3 | 0 | 1 |
+| #9 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **51** | 2 | 0 | 5 |
+| #10 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **48** | 3 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -34,15 +34,15 @@ who has the biggest all-time score.
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **411** | 97 | 0 | 4 |
 | 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **320** | 78 | 0 | 1 |
 | 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **214** | 12 | 3 | 2 |
-| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **148** | 10 | 0 | 3 |
-| #5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **133** | 5 | 0 | 21 |
-| #6 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **132** | 3 | 3 | 1 |
-| #7 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **120** | 6 | 0 | 11 |
+| #4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **149** | 6 | 0 | 17 |
+| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **148** | 10 | 0 | 3 |
+| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **142** | 7 | 0 | 11 |
+| #7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **132** | 3 | 3 | 1 |
 | #8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
 | #9 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **115** | 5 | 3 | 0 |
-| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **112** | 9 | 0 | 1 |
+| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 9 | 0 | 0 |
 
-_Last updated: Thu, 13 Aug 2026 22:44:32 GMT_
+_Last updated: Fri, 14 Aug 2026 01:51:16 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
