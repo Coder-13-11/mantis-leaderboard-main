@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mantis">
+  <defs>
+    <mask id="boat">
+      <rect width="64" height="64" fill="black"/>
+      <circle cx="32" cy="32" r="30" fill="white"/>
+      <path fill="black" transform="translate(38 9) scale(0.82)" d="M8 0 L9.5 5.5 L15 5.5 L10.5 9 L12.2 14.5 L8 11.2 L3.8 14.5 L5.5 9 L1 5.5 L6.5 5.5 Z"/>
+      <path fill="black" d="M25 16 L25 40 L44 40 Z"/>
+      <path fill="black" d="M23 20 L23 40 L11 40 Z"/>
+      <path fill="black" d="M9 42 h46 l-5 7 H14 Z"/>
+      <path fill="black" d="M11 52 Q19 47 27 52 Q35 57 43 52 Q51 47 55 52 L55 56 Q51 51 43 56 Q35 61 27 56 Q19 51 11 56 Z"/>
+    </mask>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#0b1140" mask="url(#boat)"/>
+</svg>
