@@ -19,11 +19,11 @@ who has the biggest all-time score.
 | 🥇 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **70** | 6 | 2 | 1 |
 | 🥈 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **67** | 4 | 0 | 12 |
 | 🥉 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **59** | 8 | 0 | 0 |
-| #4 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **40** | 3 | 0 | 0 |
-| #5 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **40** | 2 | 0 | 5 |
-| #6 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **39** | 3 | 0 | 1 |
-| #7 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **37** | 71 | 0 | 0 |
-| #8 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 33 | 0 | 0 |
+| #4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **41** | 33 | 0 | 7 |
+| #5 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **40** | 3 | 0 | 0 |
+| #6 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **40** | 2 | 0 | 5 |
+| #7 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **39** | 3 | 0 | 1 |
+| #8 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **37** | 71 | 0 | 0 |
 | #9 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **29** | 3 | 1 | 1 |
 | #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **28** | 1 | 0 | 14 |
 
@@ -33,16 +33,16 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **136** | 97 | 0 | 4 |
 | 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **119** | 12 | 3 | 2 |
-| 🥉 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **105** | 78 | 0 | 1 |
+| 🥉 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **110** | 78 | 0 | 8 |
 | #4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **100** | 6 | 0 | 17 |
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **92** | 10 | 1 | 3 |
 | #6 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **77** | 4 | 0 | 6 |
-| #7 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **76** | 7 | 0 | 11 |
+| #7 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **77** | 7 | 0 | 11 |
 | #8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **66** | 9 | 0 | 0 |
 | #9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **63** | 3 | 3 | 1 |
 | #10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **50** | 14 | 0 | 3 |
 
-_Last updated: Fri, 14 Aug 2026 04:10:46 GMT_
+_Last updated: Fri, 14 Aug 2026 07:27:04 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
