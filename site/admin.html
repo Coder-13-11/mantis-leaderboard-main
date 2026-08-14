@@ -3,73 +3,163 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mantis · Log a Contribution</title>
+<title>Mantis · Contribute</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet"/>
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #f5f7f5; --panel: #fff; --border: #e5e9e5; --text: #14181a;
-    --muted: #62706a; --faint: #97a39d; --accent: #1f9d57; --accent-ink: #fff;
-    --accent-soft: #e7f5ec; --danger: #d1495b;
-    --shadow: 0 1px 2px rgba(20,40,30,.05), 0 18px 40px rgba(20,40,30,.07);
+    --navy: #0b1140;
+    --indigo: #2f45b8;
+    --sky: #4a7fe0;
+    --bg: #eef1f8;
+    --bg-deep: #e4e9f4;
+    --panel: #ffffff;
+    --panel-2: #f8f9fd;
+    --border: #d5dbea;
+    --text: #12162e;
+    --muted: #5a6280;
+    --faint: #8b92ad;
+    --accent: var(--indigo);
+    --accent-ink: #ffffff;
+    --accent-soft: #e8ecfa;
+    --danger: #c45c6a;
+    --shadow: 0 1px 0 rgba(12,18,48,.04), 0 12px 32px rgba(12,18,48,.06);
+    --radius: 12px;
+    --font: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    --serif: "IBM Plex Serif", "Iowan Old Style", Georgia, serif;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#0b0e0c; --panel:#121712; --border:#232a24; --text:#eaf0ec;
-      --muted:#93a29a; --faint:#6b7a72; --accent:#34c47c; --accent-ink:#06110b;
-      --accent-soft:#14251b; --shadow:0 1px 2px rgba(0,0,0,.3), 0 24px 50px rgba(0,0,0,.45); }
+    :root {
+      --bg: #0a0c18;
+      --bg-deep: #070912;
+      --panel: #12162a;
+      --panel-2: #161b32;
+      --border: #262b48;
+      --text: #eef0fa;
+      --muted: #9aa1c0;
+      --faint: #6d7396;
+      --indigo: #7b8fff;
+      --sky: #7fb0ff;
+      --accent: var(--indigo);
+      --accent-ink: #0a0c18;
+      --accent-soft: #1a1f3c;
+      --shadow: 0 1px 0 rgba(0,0,0,.25), 0 18px 40px rgba(0,0,0,.45);
+    }
   }
   * { box-sizing: border-box; }
-  body { font-family: ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background: radial-gradient(1200px 600px at 50% -300px,var(--accent-soft),transparent 70%),var(--bg);
-    color: var(--text); margin: 0; padding: 2.5rem 1rem 4rem; line-height: 1.45; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font);
+    color: var(--text);
+    line-height: 1.45;
+    background:
+      radial-gradient(900px 420px at 12% -8%, color-mix(in srgb, var(--indigo) 14%, transparent), transparent 60%),
+      radial-gradient(700px 380px at 92% 0%, color-mix(in srgb, var(--sky) 12%, transparent), transparent 55%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+    padding: 2.5rem 1.1rem 4rem;
+  }
   .wrap { max-width: 680px; margin: 0 auto; }
-  .brand { display:flex; align-items:center; gap:.6rem; margin-bottom:.35rem; }
-  .brand .dot { width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#0e7a41);
-    display:grid;place-items:center;color:#fff;font-size:1rem;box-shadow:0 4px 12px rgba(31,157,87,.35); }
-  .brand b { font-size:1.05rem; }
-  h1 { margin:0; font-size:1.6rem; letter-spacing:-.02em; }
-  .sub { color:var(--muted); margin:.3rem 0 1.6rem; font-size:.9rem; }
-  .sub a { color: var(--accent); }
-  .card { background:var(--panel); border:1px solid var(--border); border-radius:16px;
-    padding:1.4rem; box-shadow:var(--shadow); margin-bottom:1.3rem; }
-  .card h2 { margin:0 0 1rem; font-size:1rem; }
-  label.f { display:block; font-size:.78rem; font-weight:600; color:var(--muted); margin:.85rem 0 .3rem; text-transform:uppercase; letter-spacing:.05em; }
-  input, select, textarea { width:100%; padding:.6rem .7rem; border:1px solid var(--border);
-    border-radius:10px; background:var(--bg); color:var(--text); font:inherit; font-size:.9rem; }
-  textarea { resize:vertical; min-height:70px; }
-  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; }
-  .chk { display:flex; align-items:center; gap:.5rem; margin-top:1rem; font-size:.85rem; color:var(--muted); }
-  .chk input { width:auto; }
-  button { cursor:pointer; font:inherit; font-weight:650; border-radius:10px; border:1px solid transparent; padding:.6rem 1.1rem; font-size:.88rem; }
-  .primary { background:var(--accent); color:var(--accent-ink); margin-top:1.2rem; }
-  .primary:hover { filter:brightness(1.05); }
-  .ghost { background:transparent; border-color:var(--border); color:var(--text); }
-  .row { display:flex; align-items:center; gap:.7rem; padding:.65rem .2rem; border-bottom:1px solid var(--border); }
-  .row:last-child { border-bottom:0; }
-  .row img { width:32px;height:32px;border-radius:50%;border:1px solid var(--border); }
-  .row .info { flex:1; min-width:0; }
-  .row .who { font-weight:650; font-size:.9rem; }
-  .row .desc { color:var(--muted); font-size:.76rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .badge { font-size:.66rem; color:var(--muted); background:var(--accent-soft); border-radius:999px; padding:.1rem .5rem; }
-  .badge.pending { background:transparent; border:1px dashed var(--faint); color:var(--faint); }
-  .pts { font-weight:800; color:var(--accent); font-size:.9rem; }
-  .del { background:none; border:none; color:var(--faint); font-size:1.1rem; padding:.1rem .3rem; }
-  .del:hover { color:var(--danger); }
-  .empty { color:var(--faint); font-size:.85rem; text-align:center; padding:1.2rem 0; }
-  .bar { display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1rem; }
-  #yaml { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.78rem; min-height:150px; margin-top:1rem; }
-  .note { font-size:.78rem; color:var(--muted); background:var(--accent-soft); border-radius:10px; padding:.7rem .85rem; margin-top:1rem; }
-  .note code { background:rgba(0,0,0,.06); padding:.05rem .3rem; border-radius:5px; }
-  .toast { position:fixed; bottom:1.2rem; left:50%; transform:translateX(-50%);
-    background:var(--accent); color:var(--accent-ink); padding:.6rem 1.1rem; border-radius:10px;
-    font-size:.85rem; font-weight:650; opacity:0; transition:opacity .25s; pointer-events:none; }
-  .toast.show { opacity:1; }
+  .hero { text-align: center; margin-bottom: 1.6rem; }
+  .brand { display: flex; flex-direction: column; align-items: center; gap: .7rem; margin-bottom: .85rem; }
+  .logo { width: min(220px, 62vw); height: auto; display: block; }
+  @media (prefers-color-scheme: dark) {
+    .logo { filter: invert(1) brightness(1.05); }
+  }
+  h1 {
+    margin: 0; font-family: var(--serif); font-weight: 600;
+    font-size: clamp(1.65rem, 4vw, 2.15rem); letter-spacing: -.02em;
+  }
+  .sub { color: var(--muted); margin: .45rem 0 0; font-size: .88rem; }
+  .topnav {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: .4rem;
+    margin-top: 1rem;
+  }
+  .topnav a {
+    font-size: .78rem; font-weight: 600; letter-spacing: .01em;
+    color: var(--muted); text-decoration: none;
+    padding: .38rem .95rem; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--panel);
+  }
+  .topnav a:hover { color: var(--accent); border-color: var(--accent); }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.35rem 1.4rem; box-shadow: var(--shadow); margin-bottom: 1.15rem;
+  }
+  .card h2 { margin: 0 0 1rem; font-size: .95rem; font-weight: 650; }
+  label.f {
+    display: block; font-size: .7rem; font-weight: 600; color: var(--muted);
+    margin: .85rem 0 .3rem; text-transform: uppercase; letter-spacing: .06em;
+  }
+  input, select, textarea {
+    width: 100%; padding: .6rem .7rem; border: 1px solid var(--border);
+    border-radius: 10px; background: var(--panel-2); color: var(--text);
+    font: inherit; font-size: .9rem;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset: 1px; border-color: var(--accent);
+  }
+  textarea { resize: vertical; min-height: 70px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  @media (max-width: 520px) { .grid2 { grid-template-columns: 1fr; } }
+  .chk { display: flex; align-items: center; gap: .5rem; margin-top: 1rem; font-size: .85rem; color: var(--muted); }
+  .chk input { width: auto; }
+  button { cursor: pointer; font: inherit; font-weight: 650; border-radius: 10px; border: 1px solid transparent; padding: .58rem 1.05rem; font-size: .88rem; }
+  .primary { background: var(--accent); color: var(--accent-ink); margin-top: 1.15rem; }
+  .primary:hover { filter: brightness(1.06); }
+  .ghost { background: transparent; border-color: var(--border); color: var(--text); }
+  .ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .row { display: flex; align-items: center; gap: .7rem; padding: .7rem .15rem; border-bottom: 1px solid var(--border); }
+  .row:last-child { border-bottom: 0; }
+  .row img { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border); }
+  .row .info { flex: 1; min-width: 0; }
+  .row .who { font-weight: 650; font-size: .9rem; }
+  .row .desc { color: var(--muted); font-size: .76rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .badge { font-size: .66rem; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: .12rem .5rem; font-weight: 600; }
+  .badge.pending { background: transparent; border: 1px dashed var(--faint); color: var(--faint); }
+  .pts { font-weight: 800; color: var(--accent); font-size: .9rem; font-variant-numeric: tabular-nums; }
+  .del { background: none; border: none; color: var(--faint); font-size: 1.05rem; padding: .1rem .3rem; }
+  .del:hover { color: var(--danger); }
+  .empty { color: var(--faint); font-size: .85rem; text-align: center; padding: 1.2rem 0; }
+  .bar { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1rem; }
+  .bar .primary { margin-top: 0; }
+  #yaml { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem; min-height: 150px; margin-top: 1rem; }
+  .note { font-size: .78rem; color: var(--muted); background: var(--accent-soft); border-radius: 10px; padding: .75rem .9rem; margin-top: 1rem; }
+  .note code { background: color-mix(in srgb, var(--text) 8%, transparent); padding: .05rem .3rem; border-radius: 5px; font-size: .76rem; }
+  footer { margin-top: 1.6rem; text-align: center; color: var(--faint); font-size: .75rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .toast {
+    position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: var(--accent-ink); padding: .6rem 1.1rem; border-radius: 10px;
+    font-size: .85rem; font-weight: 650; opacity: 0; transition: opacity .25s; pointer-events: none;
+  }
+  .toast.show { opacity: 1; }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="brand"><span class="dot">🦗</span><b>Mantis</b></div>
-    <h1>Log a Contribution</h1>
-    <p class="sub">Credit off-GitHub work — Discord help, blog posts, demos, mentorship. <a href="index.html">← back to leaderboard</a></p>
+    <header class="hero">
+      <div class="brand">
+        <img class="logo" src="mantis-logo.png" alt="Mantis" width="220" height="74"/>
+      </div>
+      <h1>Log a contribution</h1>
+      <p class="sub">Credit off-GitHub work — Discord help, blog posts, demos, mentorship.</p>
+      <nav class="topnav">
+        <a href="index.html">Leaderboard</a>
+        <a class="active" href="admin.html">Log a contribution</a>
+      </nav>
+    </header>
 
     <div class="card">
       <h2>New entry</h2>
@@ -111,7 +201,7 @@
       <div class="note">
         This console runs entirely in your browser — nothing is sent anywhere. To make points count:
         <b>Generate</b> → copy or download → replace <code>data/manual.yml</code> in the repo → commit.
-        The next hourly run awards the points. Approval = <code>approved: true</code> in the committed file.
+        The next scheduled run awards the points. Approval = <code>approved: true</code> in the committed file.
       </div>
       <textarea id="yaml" placeholder="Generated YAML appears here…" style="display:none"></textarea>
       <div class="bar" id="yamlbar" style="display:none">
@@ -119,6 +209,10 @@
         <button class="ghost" onclick="downloadYaml()">Download manual.yml</button>
       </div>
     </div>
+
+    <footer>
+      Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
+    </footer>
   </div>
   <div class="toast" id="toast"></div>
 
@@ -137,7 +231,6 @@ const KEY = "mantis-manual-queue";
 const $ = (id) => document.getElementById(id);
 let queue = JSON.parse(localStorage.getItem(KEY) || "[]");
 
-// Populate the type dropdown + defaults.
 const typeSel = $("type");
 for (const [k, v] of Object.entries(CATEGORIES)) {
   const o = document.createElement("option");
@@ -195,7 +288,6 @@ function render() {
 }
 function escapeHtml(s) { return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
 
-// Emit YAML matching data/manual.yml's schema.
 function yamlStr(s) { return '"' + String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"') + '"'; }
 function buildYaml() {
   if (!queue.length) { toast("Queue is empty"); return; }

@@ -445,8 +445,9 @@ export function renderHtml(users, meta) {
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mantis · Contributor Leaderboard</title>
-<link rel="icon" href="mantis-mark.png" type="image/png"/>
+<title>Mantis Leaderboard</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="favicon.svg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet"/>
@@ -540,6 +541,21 @@ export function renderHtml(users, meta) {
   }
   .sub { color: var(--muted); margin: .45rem 0 0; font-size: .88rem; }
   .sub .live { color: var(--accent); font-weight: 600; }
+  .topnav {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: .4rem;
+    margin-top: 1rem;
+  }
+  .topnav a {
+    font-size: .78rem; font-weight: 600; letter-spacing: .01em;
+    color: var(--muted); text-decoration: none;
+    padding: .38rem .95rem; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--panel);
+  }
+  .topnav a:hover { color: var(--accent); border-color: var(--accent); }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: var(--accent-soft);
+  }
 
   .tiles {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem;
@@ -801,10 +817,13 @@ export function renderHtml(users, meta) {
     <header class="hero">
       <div class="brand">
         <img class="logo" src="mantis-logo.png" alt="Mantis" width="220" height="74"/>
-        <a class="parent" href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">mantis.csail.mit.edu</a>
       </div>
       <h1>Contributor Leaderboard</h1>
       <p class="sub">${meta.repos.length} repositories · humans only · <span class="live">updates every 2 hours</span> · ${updated}</p>
+      <nav class="topnav">
+        <a class="active" href="index.html">Leaderboard</a>
+        <a href="admin.html">Log a contribution</a>
+      </nav>
     </header>
 
     <div class="tiles">${tiles}</div>
@@ -827,7 +846,7 @@ export function renderHtml(users, meta) {
     <footer>
       Ranked by points in the selected window only — not lifetime totals.<br/>
       Why a score looks “small”: same-day PR floods are discounted; issues hard-capped. Hover a total to see the split.<br/>
-      rules v${meta.rules_version} · GitHub activity + approved manual credits · <a href="admin.html">log a contribution →</a><br/>
+      rules v${meta.rules_version} · GitHub activity + approved manual credits<br/>
       Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
     </footer>
   </div>
