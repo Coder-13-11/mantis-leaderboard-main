@@ -16,33 +16,33 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **190** | 71 | 0 | 0 |
-| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **129** | 6 | 2 | 1 |
-| 🥉 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **117** | 33 | 0 | 0 |
-| #4 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **97** | 8 | 0 | 0 |
-| #5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **96** | 4 | 0 | 12 |
-| #6 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **59** | 3 | 0 | 0 |
-| #7 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **55** | 5 | 0 | 0 |
-| #8 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **55** | 3 | 0 | 1 |
-| #9 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **51** | 2 | 0 | 5 |
-| #10 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **48** | 3 | 0 | 0 |
+| 🥇 | Name not found ([@chatgpt-codex-connector](https://github.com/chatgpt-codex-connector)) | **106** | 0 | 42 | 0 |
+| 🥈 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **92** | 4 | 0 | 12 |
+| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **90** | 6 | 2 | 1 |
+| #4 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **72** | 8 | 0 | 0 |
+| #5 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **57** | 3 | 0 | 0 |
+| #6 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **51** | 2 | 0 | 5 |
+| #7 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **47** | 3 | 0 | 1 |
+| #8 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **46** | 33 | 0 | 0 |
+| #9 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **45** | 3 | 1 | 1 |
+| #10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **37** | 71 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **411** | 97 | 0 | 4 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **320** | 78 | 0 | 1 |
-| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **214** | 12 | 3 | 2 |
-| #4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **149** | 6 | 0 | 17 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **148** | 10 | 0 | 3 |
-| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **142** | 7 | 0 | 11 |
-| #7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **132** | 3 | 3 | 1 |
-| #8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **117** | 14 | 0 | 3 |
-| #9 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **115** | 5 | 3 | 0 |
-| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 9 | 0 | 0 |
+| 🥇 | Name not found ([@chatgpt-codex-connector](https://github.com/chatgpt-codex-connector)) | **210** | 0 | 107 | 0 |
+| 🥈 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **148** | 97 | 0 | 4 |
+| 🥉 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **142** | 78 | 0 | 1 |
+| #4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 6 | 0 | 17 |
+| #5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **139** | 12 | 3 | 2 |
+| #6 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **131** | 10 | 1 | 3 |
+| #7 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **122** | 7 | 0 | 11 |
+| #8 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **104** | 4 | 0 | 6 |
+| #9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **88** | 3 | 3 | 1 |
+| #10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **79** | 9 | 0 | 0 |
 
-_Last updated: Fri, 14 Aug 2026 01:51:16 GMT_
+_Last updated: Fri, 14 Aug 2026 03:38:38 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
