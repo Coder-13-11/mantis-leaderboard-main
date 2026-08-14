@@ -62,15 +62,20 @@ async function main() {
     review_rules: {
       approved_points: rules.reviews.approved_points,
       changes_requested_points: rules.reviews.changes_requested_points,
+      commented_points: rules.reviews.commented_points,
       min_body_length: rules.reviews.min_body_length,
+      commented_min_body_length: rules.reviews.commented_min_body_length,
       exclude_self_review: rules.reviews.exclude_self_review,
       one_per_pr_per_reviewer: rules.reviews.one_per_pr_per_reviewer,
+      max_points_per_day: rules.reviews.max_points_per_day,
     },
     pr_rules: {
       count_merges_to: rules.pull_requests.count_merges_to,
       daily_diminishing: rules.pull_requests.daily_diminishing,
       points: rules.pull_requests.points,
       multipliers: rules.pull_requests.multipliers,
+      unreviewed_multiplier: rules.pull_requests.unreviewed_multiplier,
+      max_points_per_day: rules.pull_requests.max_points_per_day,
     },
     issue_rules: {
       created_points: rules.issues.created_points,
@@ -90,7 +95,7 @@ async function main() {
     renderReadmeTable(users, rules.display.top_n_in_readme, windowsDays)
   );
   console.log("Wrote data/leaderboard.json, site/index.html, README.md");
-  console.log("NOTE: points are from the previous snapshot. Run GH_TOKEN=… npm run build to rescore under v2 fair rules.");
+  console.log("NOTE: points are from the previous snapshot. Run GH_TOKEN=… npm run build to rescore under current rules.");
 }
 
 main().catch((err) => {

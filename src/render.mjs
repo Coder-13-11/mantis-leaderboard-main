@@ -260,57 +260,78 @@ function whatCountsSection(meta) {
   const pp = pr.points || {};
   const prMin = pp.base ?? 10;
   const prMax = Math.round((pp.base || 10) + (pp.max_bonus || 12));
+  const prDayCap = pr.max_points_per_day;
+  const rvDayCap = rv.max_points_per_day;
+  const unrev = pr.unreviewed_multiplier;
+  const reviewLo = Math.min(
+    ...[rv.commented_points, rv.approved_points, rv.changes_requested_points].filter((n) =>
+      Number.isFinite(n)
+    )
+  );
+  const reviewHi = Math.max(
+    ...[rv.commented_points, rv.approved_points, rv.changes_requested_points].filter((n) =>
+      Number.isFinite(n)
+    )
+  );
   return `
     <section class="whatcounts">
       <h2>How points work</h2>
       <div class="score-guide">
         <p class="score-guide-lead">
-          The number next to a name is <b>only activity in the selected window</b>
-          (past 7 or 14 days) — not career total. A score like <b>326</b> usually means
-          “a lot of merged PRs this week,” not millions of issue spam points.
+          Ranked by the <b>selected window</b> (past 7 or 14 days), not career total.
+          A day of shipping and a day of reviewing are in the same band. Merging
+          70 times in one day is still one day.
         </p>
         <div class="score-math">
           <div class="sm">
             <span class="sm-lbl">Typical merged PR</span>
             <span class="sm-val">${prMin}–${prMax} pts</span>
-            <span class="sm-note">base ${prMin} + size bonus up to ${pp.max_bonus ?? 12} (flattens after ~${pp.half_life_lines ?? 60} lines)</span>
+            <span class="sm-note">base ${prMin} + size bonus up to ${pp.max_bonus ?? 12} (flattens after ~${pp.half_life_lines ?? 60} lines)${
+              Number.isFinite(unrev) && unrev < 1
+                ? ` · unreviewed ×${unrev}`
+                : ""
+            }</span>
+          </div>
+          <div class="sm">
+            <span class="sm-lbl">A day of shipping</span>
+            <span class="sm-val">cap ${prDayCap ?? "—"} pts</span>
+            <span class="sm-note">~2 solid PRs. Extra merges the same day add nothing once the cap is hit</span>
           </div>
           <div class="sm">
             <span class="sm-lbl">Substantive review</span>
-            <span class="sm-val">${rv.changes_requested_points}–${rv.approved_points} pts</span>
-            <span class="sm-note">≥${rv.min_body_length} char body · Approved or Changes requested · once per PR</span>
+            <span class="sm-val">${reviewLo}–${reviewHi} pts</span>
+            <span class="sm-note">comment / approve / request-changes · one per PR · cap ${rvDayCap ?? "—"} pts/day</span>
           </div>
           <div class="sm">
             <span class="sm-lbl">Issue filed / closed</span>
             <span class="sm-val">+${is.created_points} / +${is.closed_bonus}</span>
-            <span class="sm-note">max <b>${is.max_points_per_day ?? 8} issue pts / day</b> — filing 100 tickets can’t mint a lead</span>
-          </div>
-          <div class="sm">
-            <span class="sm-lbl">Same-day PR flood</span>
-            <span class="sm-val">decays after ${prDd?.after ?? 2}</span>
-            <span class="sm-note">3rd merge ≈ ×${prDd?.decay ?? 0.55}, then keeps falling to a ${Math.round((prDd?.min_factor ?? 0.12) * 100)}% floor — so 45 PRs ≠ 45 × ${prMax}</span>
+            <span class="sm-note">max <b>${is.max_points_per_day ?? 6} issue pts / day</b></span>
           </div>
         </div>
         <p class="score-example">
-          <b>Worked example:</b> ~45 merged PRs in a week, many of them on busy days,
-          often lands near <b>300–350 pts</b> after same-day diminishing returns
-          (avg ~7 pts/PR). One high-quality review (20) is worth roughly as much as
-          two tiny burst PRs that already hit the decay floor — by design.
+          <b>Worked example:</b> two reviewed PRs in a day ≈ ${prDayCap ?? 36} pts (the daily cap).
+          Seventy-one unreviewed merges that same day still ≈ ${prDayCap ?? 36} pts — not 190.
+          Coding five days that way beats one dump. A review (${rv.approved_points ?? 8}–${rv.changes_requested_points ?? 10})
+          is part of a day, not a substitute for a week of shipping.
         </p>
       </div>
       <div class="wc-grid">
         <div class="wc">
           <b>Pull requests</b>
           <p>Only <b>merged</b> into <code>${esc(branches)}</code>. Lockfiles / generated /
-          vendored paths are excluded from size. ${prDd ? `Volume farming is damped after ${prDd.after} merges/day.` : ""}</p>
+          vendored paths are excluded from size. ${prDd ? `After ${prDd.after} merges/day, further PRs decay toward zero. ` : ""}${
+            Number.isFinite(prDayCap) ? `<b>Hard cap ${prDayCap} PR pts/day.</b>` : ""
+          }</p>
         </div>
         <div class="wc">
           <b>Reviews</b>
-          <p>Only <b>Approved</b> (+${rv.approved_points}) or <b>Changes requested</b>
-          (+${rv.changes_requested_points}) with a real body
-          (≥${rv.min_body_length} chars). ${rv.exclude_self_review ? "No self-reviews. " : ""}${
-    rv.one_per_pr_per_reviewer ? "One scored review per PR. " : ""
-  }Bots never appear.</p>
+          <p><b>Commented</b> (+${rv.commented_points ?? 0}, ≥${rv.commented_min_body_length ?? rv.min_body_length} chars),
+          <b>Approved</b> (+${rv.approved_points}), or <b>Changes requested</b>
+          (+${rv.changes_requested_points}, ≥${rv.min_body_length} chars). ${
+            rv.exclude_self_review ? "No self-reviews. " : ""
+          }${
+            rv.one_per_pr_per_reviewer ? "Best review per PR (not the first click). " : ""
+          }${Number.isFinite(rvDayCap) ? `Cap ${rvDayCap} pts/day. ` : ""}Bots never appear.</p>
         </div>
         <div class="wc">
           <b>Issues</b>
