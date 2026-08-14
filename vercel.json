@@ -3,5 +3,10 @@
   "cleanUrls": true,
   "buildCommand": "echo 'static site — generated in CI, nothing to build here'",
   "installCommand": "echo 'no install needed'",
-  "outputDirectory": "site"
+  "outputDirectory": "site",
+  "functions": {
+    "api/contribute.js": {
+      "maxDuration": 10
+    }
+  }
 }

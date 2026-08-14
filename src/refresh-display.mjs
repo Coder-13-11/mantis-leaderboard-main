@@ -7,7 +7,7 @@
 // GH_TOKEN for a true rescore under the new rules.
 // -----------------------------------------------------------------------------
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import yaml from "js-yaml";
@@ -49,9 +49,13 @@ async function main() {
   console.log(`After bot filter: ${users.length} contributors (was ${raw.leaderboard?.length || 0})`);
 
   const token = process.env.GH_TOKEN || null;
-  console.log("Resolving full names...");
-  await enrichUserNames(users, token);
-  console.log(`  ${users.filter((u) => u.name).length}/${users.length} have a public full name`);
+  if (token) {
+    console.log("Resolving full names...");
+    await enrichUserNames(users, token);
+    console.log(`  ${users.filter((u) => u.name).length}/${users.length} have a public full name`);
+  } else {
+    console.log("Keeping existing names (no GH_TOKEN).");
+  }
 
   const meta = {
     repos: raw.repos || rules.repos,

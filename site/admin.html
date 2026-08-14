@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet"/>
+<script src="config.js"></script>
 <style>
   :root {
     color-scheme: light dark;
@@ -27,6 +28,7 @@
     --accent-ink: #ffffff;
     --accent-soft: #e8ecfa;
     --danger: #c45c6a;
+    --ok: #1f7a4d;
     --shadow: 0 1px 0 rgba(12,18,48,.04), 0 12px 32px rgba(12,18,48,.06);
     --radius: 12px;
     --font: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
@@ -47,6 +49,7 @@
       --accent: var(--indigo);
       --accent-ink: #0a0c18;
       --accent-soft: #1a1f3c;
+      --ok: #7dcea0;
       --shadow: 0 1px 0 rgba(0,0,0,.25), 0 18px 40px rgba(0,0,0,.45);
     }
   }
@@ -65,21 +68,17 @@
     padding: 2.5rem 1.1rem 4rem;
   }
   .wrap { max-width: 680px; margin: 0 auto; }
-  .hero { text-align: center; margin-bottom: 1.6rem; }
-  .brand { display: flex; flex-direction: column; align-items: center; gap: .7rem; margin-bottom: .85rem; }
-  .logo { width: min(220px, 62vw); height: auto; display: block; }
+  .hero { margin-bottom: 1.5rem; }
+  .masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; flex-wrap: wrap; margin-bottom: 1.15rem;
+  }
+  .brand { display: flex; align-items: center; }
+  .logo { width: min(168px, 52vw); height: auto; display: block; }
   @media (prefers-color-scheme: dark) {
     .logo { filter: invert(1) brightness(1.05); }
   }
-  h1 {
-    margin: 0; font-family: var(--serif); font-weight: 600;
-    font-size: clamp(1.65rem, 4vw, 2.15rem); letter-spacing: -.02em;
-  }
-  .sub { color: var(--muted); margin: .45rem 0 0; font-size: .88rem; }
-  .topnav {
-    display: flex; justify-content: center; flex-wrap: wrap; gap: .4rem;
-    margin-top: 1rem;
-  }
+  .topnav { display: flex; flex-wrap: wrap; gap: .4rem; }
   .topnav a {
     font-size: .78rem; font-weight: 600; letter-spacing: .01em;
     color: var(--muted); text-decoration: none;
@@ -91,6 +90,11 @@
     color: var(--accent); border-color: var(--accent);
     background: var(--accent-soft);
   }
+  h1 {
+    margin: 0; font-family: var(--serif); font-weight: 600;
+    font-size: clamp(1.65rem, 4vw, 2.15rem); letter-spacing: -.02em;
+  }
+  .sub { color: var(--muted); margin: .4rem 0 0; font-size: .88rem; }
   .card {
     background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
     padding: 1.35rem 1.4rem; box-shadow: var(--shadow); margin-bottom: 1.15rem;
@@ -112,112 +116,82 @@
   textarea { resize: vertical; min-height: 70px; }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
   @media (max-width: 520px) { .grid2 { grid-template-columns: 1fr; } }
-  .chk { display: flex; align-items: center; gap: .5rem; margin-top: 1rem; font-size: .85rem; color: var(--muted); }
-  .chk input { width: auto; }
   button { cursor: pointer; font: inherit; font-weight: 650; border-radius: 10px; border: 1px solid transparent; padding: .58rem 1.05rem; font-size: .88rem; }
   .primary { background: var(--accent); color: var(--accent-ink); margin-top: 1.15rem; }
   .primary:hover { filter: brightness(1.06); }
-  .ghost { background: transparent; border-color: var(--border); color: var(--text); }
-  .ghost:hover { border-color: var(--accent); color: var(--accent); }
-  .row { display: flex; align-items: center; gap: .7rem; padding: .7rem .15rem; border-bottom: 1px solid var(--border); }
-  .row:last-child { border-bottom: 0; }
-  .row img { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border); }
-  .row .info { flex: 1; min-width: 0; }
-  .row .who { font-weight: 650; font-size: .9rem; }
-  .row .desc { color: var(--muted); font-size: .76rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .badge { font-size: .66rem; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: .12rem .5rem; font-weight: 600; }
-  .badge.pending { background: transparent; border: 1px dashed var(--faint); color: var(--faint); }
-  .pts { font-weight: 800; color: var(--accent); font-size: .9rem; font-variant-numeric: tabular-nums; }
-  .del { background: none; border: none; color: var(--faint); font-size: 1.05rem; padding: .1rem .3rem; }
-  .del:hover { color: var(--danger); }
-  .empty { color: var(--faint); font-size: .85rem; text-align: center; padding: 1.2rem 0; }
-  .bar { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1rem; }
-  .bar .primary { margin-top: 0; }
-  #yaml { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem; min-height: 150px; margin-top: 1rem; }
+  .primary:disabled { opacity: .55; cursor: wait; filter: none; }
   .note { font-size: .78rem; color: var(--muted); background: var(--accent-soft); border-radius: 10px; padding: .75rem .9rem; margin-top: 1rem; }
   .note code { background: color-mix(in srgb, var(--text) 8%, transparent); padding: .05rem .3rem; border-radius: 5px; font-size: .76rem; }
+  .status {
+    display: none; margin-top: 1rem; padding: .75rem .9rem; border-radius: 10px;
+    font-size: .85rem; font-weight: 600;
+  }
+  .status.show { display: block; }
+  .status.ok { background: color-mix(in srgb, var(--ok) 16%, var(--panel)); color: var(--ok); }
+  .status.err { background: color-mix(in srgb, var(--danger) 14%, var(--panel)); color: var(--danger); }
+  .status.wait { background: var(--accent-soft); color: var(--muted); }
   footer { margin-top: 1.6rem; text-align: center; color: var(--faint); font-size: .75rem; }
   footer a { color: var(--accent); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
-  .toast {
-    position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%);
-    background: var(--accent); color: var(--accent-ink); padding: .6rem 1.1rem; border-radius: 10px;
-    font-size: .85rem; font-weight: 650; opacity: 0; transition: opacity .25s; pointer-events: none;
-  }
-  .toast.show { opacity: 1; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <header class="hero">
-      <div class="brand">
-        <img class="logo" src="mantis-logo.png" alt="Mantis" width="220" height="74"/>
+      <div class="masthead">
+        <a class="brand" href="index.html">
+          <img class="logo" src="mantis-logo.png" alt="Mantis" width="220" height="74"/>
+        </a>
+        <nav class="topnav">
+          <a href="index.html">Leaderboard</a>
+          <a class="active" href="admin.html">Log a contribution</a>
+        </nav>
       </div>
       <h1>Log a contribution</h1>
       <p class="sub">Credit off-GitHub work — Discord help, blog posts, demos, mentorship.</p>
-      <nav class="topnav">
-        <a href="index.html">Leaderboard</a>
-        <a class="active" href="admin.html">Log a contribution</a>
-      </nav>
     </header>
 
-    <div class="card">
+    <form class="card" id="contrib-form">
       <h2>New entry</h2>
       <label class="f" for="login">GitHub username</label>
-      <input id="login" placeholder="octocat" autocomplete="off"/>
+      <input id="login" name="login" placeholder="octocat" autocomplete="username" required/>
       <div class="grid2">
         <div>
           <label class="f" for="type">Type</label>
-          <select id="type"></select>
+          <select id="type" name="type"></select>
         </div>
         <div>
           <label class="f" for="points">Points</label>
-          <input id="points" type="number" min="0"/>
+          <input id="points" name="points" type="number" min="0"/>
         </div>
       </div>
       <label class="f" for="desc">Description</label>
-      <input id="desc" placeholder="Answered setup questions in #help all week"/>
+      <input id="desc" name="description" placeholder="Answered setup questions in #help all week"/>
       <div class="grid2">
         <div>
           <label class="f" for="date">Date</label>
-          <input id="date" type="date"/>
+          <input id="date" name="date" type="date"/>
         </div>
         <div>
           <label class="f" for="source">Source link (optional)</label>
-          <input id="source" placeholder="https://…"/>
+          <input id="source" name="source" placeholder="https://…"/>
         </div>
       </div>
-      <label class="chk"><input id="approved" type="checkbox" checked/> Approved (counts immediately once committed)</label>
-      <button class="primary" onclick="addEntry()">Add to queue</button>
-    </div>
-
-    <div class="card">
-      <h2>Queued entries <span id="count" class="badge"></span></h2>
-      <div id="list"></div>
-      <div class="bar">
-        <button class="primary" onclick="buildYaml()">Generate manual.yml</button>
-        <button class="ghost" onclick="clearAll()">Clear queue</button>
-      </div>
+      <button class="primary" id="submit-btn" type="submit">Submit</button>
+      <div class="status" id="status" role="status"></div>
       <div class="note">
-        This console runs entirely in your browser — nothing is sent anywhere. To make points count:
-        <b>Generate</b> → copy or download → replace <code>data/manual.yml</code> in the repo → commit.
-        The next scheduled run awards the points. Approval = <code>approved: true</code> in the committed file.
+        Posts JSON to your backend. Default path is <code>/api/contribute</code>
+        (forwards to the <code>CONTRIBUTE_WEBHOOK_URL</code> env var). Override with
+        <code>window.MANTIS_CONTRIBUTE_URL</code> in <code>site/config.js</code>.
       </div>
-      <textarea id="yaml" placeholder="Generated YAML appears here…" style="display:none"></textarea>
-      <div class="bar" id="yamlbar" style="display:none">
-        <button class="ghost" onclick="copyYaml()">Copy</button>
-        <button class="ghost" onclick="downloadYaml()">Download manual.yml</button>
-      </div>
-    </div>
+    </form>
 
     <footer>
       Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
     </footer>
   </div>
-  <div class="toast" id="toast"></div>
 
 <script>
-// Keep these in sync with `manual_contributions.categories` in config/rules.yml.
 const CATEGORIES = {
   discord_support: { points: 10, label: "Discord support",  emoji: "💬" },
   blog_post:       { points: 40, label: "Blog post",         emoji: "✍️" },
@@ -227,9 +201,10 @@ const CATEGORIES = {
   event:           { points: 20, label: "Event / talk",      emoji: "🎤" },
   other:           { points: 10, label: "Other",             emoji: "⭐" },
 };
-const KEY = "mantis-manual-queue";
 const $ = (id) => document.getElementById(id);
-let queue = JSON.parse(localStorage.getItem(KEY) || "[]");
+const endpoint = () =>
+  (typeof window.MANTIS_CONTRIBUTE_URL === "string" && window.MANTIS_CONTRIBUTE_URL.trim())
+    || "/api/contribute";
 
 const typeSel = $("type");
 for (const [k, v] of Object.entries(CATEGORIES)) {
@@ -242,79 +217,56 @@ typeSel.addEventListener("change", syncPoints);
 syncPoints();
 $("date").value = new Date().toISOString().slice(0, 10);
 
-function toast(msg) {
-  const t = $("toast"); t.textContent = msg; t.classList.add("show");
-  setTimeout(() => t.classList.remove("show"), 1600);
+function setStatus(kind, msg) {
+  const el = $("status");
+  el.className = "status show " + kind;
+  el.textContent = msg;
 }
-function save() { localStorage.setItem(KEY, JSON.stringify(queue)); render(); }
 
-function addEntry() {
+$("contrib-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
   const login = $("login").value.trim().replace(/^@/, "");
-  if (!login) { toast("Username required"); return; }
+  if (!login) { setStatus("err", "Username required"); return; }
   const type = typeSel.value;
   const points = parseInt($("points").value, 10);
-  queue.push({
-    login, type,
+  const payload = {
+    login,
+    type,
     points: Number.isFinite(points) ? points : CATEGORIES[type].points,
     description: $("desc").value.trim(),
     date: $("date").value,
     source: $("source").value.trim(),
-    approved: $("approved").checked,
-  });
-  $("login").value = ""; $("desc").value = ""; $("source").value = "";
-  save();
-  toast("Added");
-}
-function removeEntry(i) { queue.splice(i, 1); save(); }
-function toggleApproved(i) { queue[i].approved = !queue[i].approved; save(); }
-function clearAll() { if (confirm("Clear the whole queue?")) { queue = []; save(); } }
+  };
 
-function render() {
-  $("count").textContent = queue.length ? queue.length : "";
-  const list = $("list");
-  if (!queue.length) { list.innerHTML = '<div class="empty">No entries yet. Add one above.</div>'; return; }
-  list.innerHTML = queue.map((c, i) => {
-    const cat = CATEGORIES[c.type] || { emoji: "⭐", label: c.type };
-    return `<div class="row">
-      <img src="https://github.com/${encodeURIComponent(c.login)}.png?size=48" alt=""/>
-      <div class="info">
-        <div class="who">@${escapeHtml(c.login)} · <span class="badge ${c.approved ? "" : "pending"}" onclick="toggleApproved(${i})" style="cursor:pointer">${c.approved ? "approved" : "pending"}</span></div>
-        <div class="desc">${cat.emoji} ${escapeHtml(cat.label)}${c.description ? " · " + escapeHtml(c.description) : ""}</div>
-      </div>
-      <span class="pts">+${c.points}</span>
-      <button class="del" title="Remove" onclick="removeEntry(${i})">✕</button>
-    </div>`;
-  }).join("");
-}
-function escapeHtml(s) { return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
-
-function yamlStr(s) { return '"' + String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"') + '"'; }
-function buildYaml() {
-  if (!queue.length) { toast("Queue is empty"); return; }
-  const today = new Date().toISOString().slice(0, 10);
-  let out = "# Generated by admin.html on " + today + "\n";
-  out += "# Replace data/manual.yml with this file, then commit.\n\n";
-  out += "contributions:\n";
-  for (const c of queue) {
-    out += "  - login: " + yamlStr(c.login) + "\n";
-    out += "    type: " + c.type + "\n";
-    out += "    points: " + c.points + "\n";
-    if (c.description) out += "    description: " + yamlStr(c.description) + "\n";
-    if (c.date) out += "    date: " + c.date + "\n";
-    if (c.source) out += "    source: " + yamlStr(c.source) + "\n";
-    out += "    approved: " + (c.approved ? "true" : "false") + "\n";
+  const btn = $("submit-btn");
+  btn.disabled = true;
+  setStatus("wait", "Sending…");
+  try {
+    const res = await fetch(endpoint(), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    let data = {};
+    try { data = await res.json(); } catch { /* ignore */ }
+    if (res.ok && data.ok) {
+      setStatus("ok", "Sent. Your backend has the payload.");
+      $("login").value = "";
+      $("desc").value = "";
+      $("source").value = "";
+      return;
+    }
+    if (res.status === 501) {
+      setStatus("err", data.error || "Backend not connected yet. Set CONTRIBUTE_WEBHOOK_URL or window.MANTIS_CONTRIBUTE_URL.");
+      return;
+    }
+    setStatus("err", data.error || `Request failed (${res.status})`);
+  } catch (err) {
+    setStatus("err", "Could not reach the backend. Check the URL in site/config.js.");
+  } finally {
+    btn.disabled = false;
   }
-  const ta = $("yaml"); ta.value = out; ta.style.display = "block";
-  $("yamlbar").style.display = "flex";
-}
-function copyYaml() { navigator.clipboard.writeText($("yaml").value).then(() => toast("Copied")); }
-function downloadYaml() {
-  const blob = new Blob([$("yaml").value], { type: "text/yaml" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob); a.download = "manual.yml"; a.click();
-  URL.revokeObjectURL(a.href);
-}
-render();
+});
 </script>
 </body>
 </html>
