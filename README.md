@@ -19,7 +19,7 @@ who has the biggest all-time score.
 | 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **75** | 5 | 0 | 12 |
 | 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **70** | 7 | 9 | 1 |
 | 🥉 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **70** | 9 | 0 | 0 |
-| #4 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 4 | 1 | 25 |
+| #4 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 4 | 1 | 27 |
 | #5 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **48** | 71 | 2 | 0 |
 | #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **41** | 4 | 0 | 0 |
 | #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **41** | 2 | 0 | 6 |
@@ -40,9 +40,9 @@ who has the biggest all-time score.
 | #7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **82** | 10 | 0 | 0 |
 | #8 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **78** | 4 | 0 | 7 |
 | #9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **78** | 3 | 19 | 1 |
-| #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 25 |
+| #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 27 |
 
-_Last updated: Fri, 14 Aug 2026 21:29:11 GMT_
+_Last updated: Fri, 14 Aug 2026 21:38:02 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
