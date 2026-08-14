@@ -16,7 +16,7 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **75** | 5 | 0 | 12 |
+| 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **79** | 6 | 0 | 12 |
 | 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **70** | 7 | 9 | 1 |
 | 🥉 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **70** | 9 | 0 | 0 |
 | #4 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 4 | 1 | 27 |
@@ -33,7 +33,7 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **151** | 97 | 2 | 5 |
 | 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **116** | 13 | 12 | 2 |
-| 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **105** | 7 | 0 | 19 |
+| 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **109** | 8 | 0 | 19 |
 | #4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **104** | 78 | 0 | 8 |
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **99** | 10 | 3 | 4 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **86** | 8 | 0 | 11 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **78** | 3 | 19 | 1 |
 | #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 27 |
 
-_Last updated: Fri, 14 Aug 2026 21:38:02 GMT_
+_Last updated: Fri, 14 Aug 2026 21:58:18 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
