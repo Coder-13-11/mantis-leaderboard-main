@@ -38,11 +38,11 @@ who has the biggest all-time score.
 | #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **99** | 10 | 3 | 4 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **86** | 8 | 0 | 11 |
 | #7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **82** | 10 | 0 | 0 |
-| #8 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **78** | 4 | 0 | 7 |
-| #9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **78** | 3 | 19 | 1 |
+| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **80** | 3 | 19 | 2 |
+| #9 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **78** | 4 | 0 | 7 |
 | #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 27 |
 
-_Last updated: Fri, 14 Aug 2026 22:57:39 GMT_
+_Last updated: Fri, 14 Aug 2026 23:33:01 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
