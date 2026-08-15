@@ -19,7 +19,7 @@ who has the biggest all-time score.
 | 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 11 |
 | 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **70** | 7 | 9 | 1 |
 | 🥉 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **53** | 4 | 1 | 27 |
-| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **42** | 4 | 2 | 2 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **50** | 5 | 2 | 2 |
 | #5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **41** | 4 | 0 | 0 |
 | #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **41** | 6 | 0 | 0 |
 | #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **41** | 2 | 0 | 6 |
@@ -32,8 +32,8 @@ who has the biggest all-time score.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **151** | 97 | 2 | 5 |
-| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **116** | 13 | 12 | 2 |
-| 🥉 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **109** | 11 | 3 | 4 |
+| 🥈 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **117** | 12 | 3 | 4 |
+| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **116** | 13 | 12 | 2 |
 | #4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **104** | 78 | 0 | 8 |
 | #5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **88** | 6 | 0 | 19 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **86** | 8 | 0 | 11 |
@@ -42,7 +42,7 @@ who has the biggest all-time score.
 | #9 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **78** | 4 | 0 | 7 |
 | #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 27 |
 
-_Last updated: Sat, 15 Aug 2026 03:01:38 GMT_
+_Last updated: Sat, 15 Aug 2026 03:50:56 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
