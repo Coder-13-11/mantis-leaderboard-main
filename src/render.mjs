@@ -88,19 +88,19 @@ export function renderReadmeTable(users, topN, windowsDays) {
     const rows = ranked
       .slice(0, topN)
       .map((u, idx) => {
-        const b = u.windowBreakdown?.[days] || {};
+        const c = u.windowCounts?.[days] || {};
         const p = personLabel(u);
         const label = p.hasName
           ? `**${p.primary}** ([@${u.login}](https://github.com/${u.login}))`
           : `Name not found ([@${u.login}](https://github.com/${u.login}))`;
-        return `| ${medal(idx + 1)} | ${label} | **${u.windows[days] || 0}** | ${b.pr || 0} | ${b.review || 0} | ${b.issue || 0} |`;
+        return `| ${medal(idx + 1)} | ${label} | **${u.windows[days] || 0}** | ${c.prs || 0} | ${c.reviews || 0} | ${c.confirmed_issues || 0} |`;
       })
       .join("\n");
     return [
       `#### ${windowLabel(days)}`,
       "",
-      "| Rank | Contributor | Total | Code | Review | Issues |",
-      "| :--: | :---------- | ----: | ---: | -----: | -----: |",
+      "| Rank | Contributor | Points | PRs | Reviews | Issues |",
+      "| :--: | :---------- | -----: | --: | ------: | -----: |",
       rows,
     ].join("\n");
   });
@@ -385,15 +385,15 @@ function whatCountsSection(meta) {
             <span class="sm-note">outcome (comment / approve / request-changes)${rv.inline_comment_bonus ? ` · +${rv.inline_comment_bonus} for inline comments` : ""}${rv.addressed_changes_bonus ? ` · +${rv.addressed_changes_bonus} if requested changes later merge` : ""}. Authors are not penalized for lack of review.</span>
           </div>
           <div class="sm">
-            <span class="sm-lbl">Issue filed / closed</span>
-            <span class="sm-val">+${is.created_points} / +${is.closed_bonus}</span>
-            <span class="sm-note">${is.bug_points ? `unlabeled bug +${is.bug_points}. ` : ""}A <code>difficulty: 1…6</code> label replaces the flat file points (${diffRange}). Finding a real bug can beat a tiny PR.</span>
+            <span class="sm-lbl">Ordinary issues</span>
+            <span class="sm-val">0 pts</span>
+            <span class="sm-note">Counted in the Issues column, not the ranking. Closing a ticket is not a score. Only <code>confirmed</code> / high-impact / <code>difficulty: 1…6</code> issues add points (${is.confirmed_points ?? 10} / ${is.impact_points ?? 16} / ${diffRange}).</span>
           </div>
         </div>
         <p class="score-example">
           <b>Worked example:</b> two PRs in 24h both score in full. A third is worth 80%, a sixth+ still 35% — never zero.
           A 71-PR burst is still a burst (most of those PRs sit on the 35% floor), but a 7-PR day is worth more than a 2-PR day.
-          First contribution is a badge, not a point multiplier.
+          Twenty-seven ordinary issues do not move the ranking. First contribution is a badge, not a point multiplier.
         </p>
       </div>
       <div class="wc-grid">
@@ -409,9 +409,9 @@ function whatCountsSection(meta) {
         </div>
         <div class="wc">
           <b>Issues</b>
-          <p>Counts = issues you opened (including duplicates). Close bonus (+${is.closed_bonus}) goes to the person who closed it. +${is.created_points} to open a valid issue${is.bug_points ? `, +${is.bug_points} if labeled bug` : ""}.
-          Rejected as ${esc(dupes)} / not-planned score nothing.
-          Apply <code>difficulty: 1…6</code> when the bug actually mattered — that is the intended quality signal.</p>
+          <p>Counts = issues you opened (including duplicates and chores). Ordinary issues and ordinary closes score <b>nothing</b> — they stay visible so activity is honest, without overpowering shipping.
+          Points only for maintainer-confirmed work: <code>confirmed</code> (+${is.confirmed_points ?? 10}), high-impact (+${is.impact_points ?? 16}), or <code>difficulty: 1…6</code> (${diffRange}).
+          Rejected as ${esc(dupes)} / not-planned score nothing.</p>
         </div>
         <div class="wc">
           <b>Humans only</b>

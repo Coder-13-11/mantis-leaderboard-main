@@ -33,11 +33,13 @@ const rules = {
     daily_diminishing: { window_hours: 24, factors: FACTORS },
   },
   issues: {
-    created_points: 5,
-    closed_bonus: 3,
+    created_points: 0,
+    closed_bonus: 0,
     closed_bonus_to: "closer",
-    bug_labels: ["bug"],
-    bug_points: 8,
+    confirmed_labels: ["confirmed"],
+    confirmed_points: 10,
+    impact_labels: ["impact: high"],
+    impact_points: 16,
     daily_diminishing: { window_hours: 24, factors: FACTORS },
     duplicate_labels: ["duplicate"],
     difficulty_points: { "difficulty: 6": 36 },
@@ -173,7 +175,7 @@ test("lockfile lines are subtracted from size, not ratio-guessed", () => {
   assert.equal(small.breakdown.pr, lock.breakdown.pr);
 });
 
-test("issues opened are counted even when duplicate; closer gets close bonus", () => {
+test("ordinary issues are counted but do not score; closing them does not score", () => {
   const now = new Date().toISOString();
   const activity = {
     pullRequests: [],
@@ -207,8 +209,8 @@ test("issues opened are counted even when duplicate; closer gets close bonus", (
   const carol = users.find((u) => u.login === "carol");
   assert.equal(alice.counts.confirmed_issues, 2);
   assert.equal(carol.counts.issues_closed, 2);
-  assert.ok(carol.breakdown.issue >= 3);
-  assert.ok(alice.breakdown.issue >= 5);
+  assert.equal(alice.breakdown.issue || 0, 0);
+  assert.equal(carol.breakdown.issue || 0, 0);
 });
 
 test("coauthors are counted separately and do not take the merge", () => {
@@ -392,6 +394,69 @@ test("difficulty-labeled issues outrank unlabeled chore tickets", () => {
   const alice = users.find((u) => u.login === "alice");
   assert.equal(alice.breakdown.issue, 36);
   assert.ok(alice.badges.some((b) => b.id === "first_issue"));
+});
+
+test("Griffin-style: 27 ordinary issues cannot outrank a merged PR", () => {
+  const now = Date.now();
+  const issues = Array.from({ length: 27 }, (_, i) => ({
+    author: { login: "griffin" },
+    createdAt: new Date(now - i * 60_000).toISOString(),
+    closed: true,
+    closedAt: new Date(now - i * 60_000 + 1000).toISOString(),
+    closedBy: { login: "griffin" },
+    stateReason: "COMPLETED",
+    labels: { nodes: [] },
+    repository: { nameWithOwner: "KellisLab/Mantis" },
+    number: i + 1,
+  }));
+  const users = score(
+    {
+      pullRequests: [
+        pr({ id: "ship", author: "alice", number: 100, mergedAt: new Date(now).toISOString() }),
+      ],
+      issues,
+    },
+    rules
+  );
+  const griffin = users.find((u) => u.login === "griffin");
+  const alice = users.find((u) => u.login === "alice");
+  assert.equal(griffin.counts.confirmed_issues, 27);
+  assert.equal(griffin.breakdown.issue || 0, 0);
+  assert.equal(griffin.windows[7], 0);
+  assert.ok(alice.windows[7] > griffin.windows[7]);
+  assert.ok(alice.rank < griffin.rank);
+});
+
+test("a self-serve bug label is not enough; confirmed or high-impact issues score", () => {
+  const now = new Date().toISOString();
+  const users = score(
+    {
+      pullRequests: [],
+      issues: [
+        {
+          author: { login: "alice" },
+          createdAt: now,
+          closed: false,
+          labels: { nodes: [{ name: "bug" }] },
+          repository: { nameWithOwner: "KellisLab/Mantis" },
+          number: 1,
+        },
+        {
+          author: { login: "bob" },
+          createdAt: now,
+          closed: false,
+          labels: { nodes: [{ name: "confirmed" }] },
+          repository: { nameWithOwner: "KellisLab/Mantis" },
+          number: 2,
+        },
+      ],
+    },
+    rules
+  );
+  const alice = users.find((u) => u.login === "alice");
+  const bob = users.find((u) => u.login === "bob");
+  assert.equal(alice.breakdown.issue || 0, 0);
+  assert.equal(bob.breakdown.issue, 10);
 });
 
 test("score is auditable: ledger + window breakdown sum to the total", () => {

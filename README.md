@@ -146,19 +146,22 @@ any person to see the ledger.
 | Docs PR | same 10–14 | classified separately, not a flat +25% |
 | Extra PRs in 24h | ×100 / 100 / 80 / 65 / 50 / 35% | 1st…6th+. Rolling 24 hours, **no hard cap** |
 | Commented / approved / changes requested | 4 / 6 / 8 | outcome, not character count. +3 inline, +2 nontrivial PR, +4 if requested changes later merge |
-| Issue created / closed | 5 / +3 | unlabeled `bug` = 8 to file. `difficulty: 1…6` *replaces* the flat file points (3–36) |
+| Issue opened / closed | 0 | Visible in the Issues column. Does not move the ranking |
+| Confirmed / high-impact issue | 10 / 16 | Maintainer `confirmed` or `priority`/`impact` label |
+| `difficulty: 1…6` | 3–36 | Replaces confirmed points when labeled. Closing still pays 0 |
 | First PR / review / bug | badge | not a point multiplier |
 
-**Anti-gaming:** diminishing returns in a rolling 24-hour window. Spam still
-shows up; it does not dominate. Tunable in [`config/rules.yml`](config/rules.yml).
+**Anti-gaming:** diminishing returns on PRs and reviews in a rolling 24-hour
+window. Ordinary issues are listed, not scored — opening 27 tickets cannot
+overtake a merged PR. Tunable in [`config/rules.yml`](config/rules.yml).
 
 ### Exactly what counts (the questions people actually ask)
 
 **"Is this the total?"** No single number on this page is an unqualified
 lifetime total:
 - The **"Past 7 Days" / "Past 14 Days" tables** above are rolling windows
-  ending now — this is what ranks people. **Total / Code / Review / Issues
-  are points** (open the site for counts and the event ledger).
+  ending now — this is what ranks people. **PRs / Reviews / Issues are raw
+  activity counts.** Ordinary issues do not add points.
 - The **stat tiles on `site/index.html`** ("PRs merged", "Reviews", "Issues")
   are a wider, *unranked* count over the full `lookback_days` window
   (currently 365 days) — not all-time. Anything older than `lookback_days`
