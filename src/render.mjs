@@ -561,15 +561,6 @@ export function renderHtml(users, meta) {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem;
     margin: 1.7rem 0 1.5rem;
   }
-  .quality {
-    margin: .85rem 0 0; padding: .65rem .8rem; border-radius: 10px;
-    font-size: .74rem; line-height: 1.5; color: var(--muted);
-    border: 1px solid var(--border); background: var(--panel);
-  }
-  .quality b { color: var(--text); }
-  .quality.ok { border-color: color-mix(in srgb, #2f9e62 35%, var(--border)); }
-  .quality.warn { border-color: color-mix(in srgb, var(--gold) 45%, var(--border)); }
-  .quality.bad { border-color: color-mix(in srgb, #c45c4a 50%, var(--border)); color: var(--text); }
   .tile {
     background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
     padding: .9rem 1rem; box-shadow: var(--shadow);
@@ -835,7 +826,6 @@ export function renderHtml(users, meta) {
       </div>
       <h1>Contributor Leaderboard</h1>
       <p class="sub">${meta.repos.length} repositories · humans only · <span class="live">lists every PR, review, and issue from GitHub</span> · ${updated}</p>
-      ${qualityBanner(meta)}
     </header>
 
     <div class="tiles">${tiles}</div>
