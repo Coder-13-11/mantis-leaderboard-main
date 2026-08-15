@@ -18,7 +18,7 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 7 | 9 | 1 |
-| 🥈 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **82** | 6 | 0 | 12 |
+| 🥈 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **81** | 6 | 0 | 11 |
 | 🥉 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **74** | 6 | 0 | 6 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **66** | 5 | 2 | 2 |
 | #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **64** | 7 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
 | #10 | Name not found ([@Copilot](https://github.com/Copilot)) | **84** | 0 | 10 | 0 |
 
-_Last updated: Sat, 15 Aug 2026 21:32:10 GMT_
+_Last updated: Sat, 15 Aug 2026 21:53:19 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
