@@ -15,35 +15,35 @@ code / review / issues ledger.
 <!-- LEADERBOARD:START -->
 #### Past 7 Days
 
-| Rank | Contributor | Points | PRs | Reviews | Issues |
-| :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 11 |
-| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **70** | 7 | 9 | 1 |
-| 🥉 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **53** | 4 | 1 | 27 |
-| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **50** | 5 | 2 | 2 |
-| #5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **41** | 4 | 0 | 0 |
-| #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **41** | 6 | 0 | 0 |
-| #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **41** | 2 | 0 | 6 |
-| #8 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **40** | 3 | 0 | 0 |
-| #9 | **Raghav** ([@Donysus](https://github.com/Donysus)) | **36** | 2 | 0 | 0 |
-| #10 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **34** | 4 | 0 | 0 |
+| Rank | Contributor | Total | Code | Review | Issues |
+| :--: | :---------- | ----: | ---: | -----: | -----: |
+| 🥇 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **157** | 44 | 0 | 113 |
+| 🥈 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **135** | 77 | 0 | 58 |
+| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **93** | 69 | 16 | 8 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **80** | 58 | 6 | 16 |
+| #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **75** | 72 | 0 | 3 |
+| #6 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **60** | 32 | 0 | 28 |
+| #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **58** | 26 | 0 | 32 |
+| #8 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **56** | 48 | 0 | 8 |
+| #9 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 54 | 0 | 0 |
+| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 49 | 0 | 0 |
 
 #### Past 14 Days
 
-| Rank | Contributor | Points | PRs | Reviews | Issues |
-| :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **151** | 97 | 2 | 5 |
-| 🥈 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **117** | 12 | 3 | 4 |
-| 🥉 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **116** | 13 | 12 | 2 |
-| #4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **104** | 78 | 0 | 8 |
-| #5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **88** | 6 | 0 | 19 |
-| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **86** | 8 | 0 | 11 |
-| #7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **82** | 10 | 0 | 0 |
-| #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **81** | 3 | 19 | 2 |
-| #9 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **78** | 4 | 0 | 7 |
-| #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 27 |
+| Rank | Contributor | Total | Code | Review | Issues |
+| :--: | :---------- | ----: | ---: | -----: | -----: |
+| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **533** | 435 | 9 | 71 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **449** | 402 | 0 | 43 |
+| 🥉 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **218** | 41 | 0 | 177 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **180** | 133 | 12 | 35 |
+| #5 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **168** | 44 | 8 | 116 |
+| #6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **160** | 123 | 24 | 13 |
+| #7 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **157** | 77 | 0 | 80 |
+| #8 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **156** | 101 | 0 | 55 |
+| #9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **119** | 93 | 0 | 26 |
+| #10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **106** | 42 | 27 | 37 |
 
-_Last updated: Sat, 15 Aug 2026 13:39:28 GMT_
+_Last updated: Sat, 15 Aug 2026 14:27:03 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
