@@ -39,11 +39,11 @@ code / review / issues ledger.
 | #5 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **104** | 8 | 0 | 11 |
 | #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **96** | 10 | 0 | 0 |
 | #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **95** | 14 | 0 | 3 |
-| #8 | Name not found ([@Copilot](https://github.com/Copilot)) | **86** | 0 | 10 | 0 |
-| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
-| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **84** | 5 | 5 | 0 |
+| #8 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
+| #9 | Name not found ([@Copilot](https://github.com/Copilot)) | **84** | 0 | 10 | 0 |
+| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **83** | 5 | 5 | 0 |
 
-_Last updated: Sat, 15 Aug 2026 15:01:39 GMT_
+_Last updated: Sat, 15 Aug 2026 15:32:32 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
