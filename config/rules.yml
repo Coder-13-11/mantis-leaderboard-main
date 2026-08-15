@@ -1,17 +1,19 @@
 # =============================================================================
-# Mantis Leaderboard — Scoring Rules (v3)
+# Mantis Leaderboard — Scoring Rules (v4)
 # -----------------------------------------------------------------------------
 # This file is the SINGLE SOURCE OF TRUTH for how points are awarded.
 # Change point values here and the leaderboard recomputes on the next run.
 #
-# Design for how Mantis actually works: lots of people already code, often
-# with AI, often as many small PRs. The board should rank a week of real
-# work, not who merged the most times. A solid day of shipping ≈ a solid
-# day of reviewing ≈ a small amount of issue triage. One burst-merge day
-# cannot buy the week.
+# Design: rank people who make Mantis better, not who generated the most
+# GitHub events. Shipping, reviewing, and finding bugs are different jobs —
+# they share one overall score, and they also have their own boards.
+#
+# Extra work the same day still counts. It just counts a bit less, so a
+# 70-PR burst cannot look like a month of work, and a 7-PR day is still
+# worth more than a 2-PR day.
 # =============================================================================
 
-version: 3
+version: 4
 
 # How far back to look. Incremental sync only fetches what changed since the
 # last successful run; a daily full audit re-lists the whole window and
@@ -64,17 +66,18 @@ sync:
 # -----------------------------------------------------------------------------
 # Pull Requests
 # -----------------------------------------------------------------------------
-# Unit of value = a DAY of shipping, not a PR. Two merged PRs is a full
-# coding day. The 71st PR that day is the same day of work, not 71 days.
+# A merged PR is a ship, not a day of work. Size is a small bonus, not the
+# definition of value. High-impact / bug-fix labels are the quality signal.
 pull_requests:
   # bonus(lines) = max_bonus * lines / (lines + half_life_lines)
-  # 1 line -> ~10.5, 50 -> ~15, 250 -> ~19, 1000+ -> ~22 (flat).
+  # Size can add at most 4 pts. A 50-line fix and a 1,500-line refactor
+  # should not be an order of magnitude apart.
   points:
-    base: 10            # every merged PR starts here, regardless of size
-    max_bonus: 12        # the most size alone can ever add
-    half_life_lines: 60  # lines at which you've earned half of max_bonus
+    base: 10            # every merged PR starts here
+    max_bonus: 4        # the most size alone can ever add
+    half_life_lines: 80 # lines at which you've earned half of max_bonus
 
-  # Dashboard size breakdown only — not used in scoring.
+  # Dashboard size breakdown only — not used as the main score.
   size_buckets:
     XS: 10
     S: 50
@@ -83,22 +86,21 @@ pull_requests:
     # XL: everything above L
 
   multipliers:
-    documentation: 1.25   # PR has a label in `documentation_labels` below
-    first_pr: 1.5         # contributor's first merged PR in the lookback window
     high_impact: 1.5      # PR has a label in `impact_labels` below
 
   documentation_labels: ["documentation", "docs"]
 
-  # Maintainer-applied. Dormant until those labels are used; size is then
-  # the only quality proxy. Rename to match labels the repos actually have.
+  # Docs PRs are classified separately (their own breakdown line), not
+  # given a flat +25%. A one-line README fix and a real guide then differ
+  # by size / impact labels like any other ship.
+
+  # Maintainer-applied. Dormant until those labels are used.
   impact_labels: ["priority: critical", "priority: high", "impact: high"]
 
-  # Self-merged / unreviewed PRs are common here (AI dumps, merge-queue
-  # bursts). They still count — shipping is shipping — but they pay half,
-  # so a reviewed 50-line fix beats an unreviewed 50-line dump.
-  # "Reviewed" = at least one non-author review that itself would score
-  # (Approved, Changes requested, or a substantive Comment).
-  unreviewed_multiplier: 0.5
+  # Bug-fix PRs: small additive bonus on top of the ship, and they also
+  # show up on the bug board via the issue they close when labeled.
+  bug_labels: ["bug", "bugfix", "fix"]
+  bug_fix_bonus: 4
 
   exclude_paths:
     - "**/package-lock.json"
@@ -113,71 +115,75 @@ pull_requests:
 
   count_merges_to: ["main", "master"]
 
-  # First 2 PRs/day at full value (a normal Mantis cadence). After that,
-  # decay to zero — the daily cap is the real brake, not a 12% floor that
-  # still pays for the 71st merge.
+  # Rolling 24-hour window, not UTC midnight. 1st and 2nd PR at full
+  # value; later PRs still count, at a declining rate. No hard ceiling.
   daily_diminishing:
-    after: 2
-    decay: 0.4
-    min_factor: 0
-
-  # Hard ceiling on PR POINTS per person per UTC day. ~2 typical PRs
-  # (10–22 each). 71 merges on Aug 8 and 2 solid PRs the same day both
-  # land here. Spreading work across the week is the only way to stack.
-  max_points_per_day: 36
+    window_hours: 24
+    factors: [1.0, 1.0, 0.80, 0.65, 0.50, 0.35]
 
 # -----------------------------------------------------------------------------
 # Reviews
 # -----------------------------------------------------------------------------
-# Mantis barely uses formal Approve (3 scored reviews in a live week).
-# Real review here is comments. Count those, but never let reviewing
-# outrun a day of shipping.
+# Reward review *outcome* and a few cheap quality signals, not character
+# count. A short comment that names a race condition should beat a long
+# padded LGTM. Authors are not punished when nobody reviews their PR —
+# the reviewer is rewarded instead.
 reviews:
-  approved_points: 8
-  changes_requested_points: 10   # finding problems is worth more than LGTM
-  commented_points: 6            # Finish-review comment with a real body
+  approved_points: 6
+  changes_requested_points: 8   # finding problems is worth more than LGTM
+  commented_points: 4            # finish-review comment with a real body
 
-  min_body_length: 20            # Approved / Changes requested
+  # Quality signals on top of the outcome (all optional, all additive):
+  inline_comment_bonus: 3        # at least one substantive inline comment
+  nontrivial_pr_bonus: 2         # reviewed a PR above `nontrivial_pr_lines`
+  addressed_changes_bonus: 4     # CHANGES_REQUESTED and the PR later merged
+  nontrivial_pr_lines: 40
+  min_inline_length: 15
+
+  min_body_length: 20            # Approved / Changes requested, unless inline
   commented_min_body_length: 40  # comments need more than "lgtm" / "nice"
 
   exclude_self_review: true
 
   # One credit per (reviewer, PR). The HIGHEST-value review type wins
-  # (so comment-then-approve pays 8, not 6). Re-clicking does not stack.
+  # (so comment-then-approve pays 6, not 4). Re-clicking does not stack.
   one_per_pr_per_reviewer: true
 
-  # ~2–3 substantive reviews. A review day cannot beat a shipping day.
-  max_points_per_day: 20
+  daily_diminishing:
+    window_hours: 24
+    factors: [1.0, 1.0, 0.80, 0.65, 0.50, 0.35]
 
 # -----------------------------------------------------------------------------
 # Issues
 # -----------------------------------------------------------------------------
-# Cheap to open, including by script. Keep them as a side-channel.
+# Finding a real Mantis bug can be worth more than a tiny PR. Unlabeled
+# issues are a side-channel; a `difficulty: N` label *replaces* the flat
+# created points and is the intended quality signal.
 issues:
-  created_points: 2
-  closed_bonus: 1
-  # Who gets the +1 when an issue is completed. `closer` is the person who
-  # actually closed it (bots fall back to the opener). Counts of issues
-  # opened vs closed are tracked separately either way.
+  created_points: 5
+  closed_bonus: 3
+  # Who gets the close bonus. `closer` is the person who actually closed
+  # it (bots fall back to the opener). Counts of issues opened vs closed
+  # are tracked separately either way.
   closed_bonus_to: closer
 
+  # Unlabeled `bug` issues (no difficulty yet) still outrank a chore ticket.
+  bug_labels: ["bug", "defect"]
+  bug_points: 8
+
   daily_diminishing:
-    after: 2
-    decay: 0.4
-    min_factor: 0.05
+    window_hours: 24
+    factors: [1.0, 1.0, 0.80, 0.65, 0.50, 0.35]
 
-  # 7 days × 6 = 42, less than two coding days. Filing tickets all week
-  # cannot look like shipping all week.
-  max_points_per_day: 6
-
-  # Dormant until the labels exist. A labeled issue REPLACES created_points.
+  # A labeled issue REPLACES created_points. Tune this — it is the main
+  # lever for "this bug actually mattered."
   difficulty_points:
-    "difficulty: 1": 1
-    "difficulty: 2": 2
-    "difficulty: 3": 4
-    "difficulty: 4": 7
-    "difficulty: 5": 11
-    "difficulty: 6": 16
+    "difficulty: 1": 3
+    "difficulty: 2": 6
+    "difficulty: 3": 10
+    "difficulty: 4": 16
+    "difficulty: 5": 24
+    "difficulty: 6": 36
 
   duplicate_labels: ["duplicate", "wontfix", "invalid"]
 
@@ -214,6 +220,6 @@ display:
     - "\\[bot\\]$"
     - "codex-connector"
     - "^copilot-"
-  # Ranked by the first window. 7 days = who's active now; 14 = the same
-  # idea, slower. Consistency across days beats a single dump in both.
+  # Ranked by the first window. Rolling 7 × 24h = who's active now;
+  # 14 = the same idea, slower. Midnight UTC is not a scoring boundary.
   windows_days: [7, 14]

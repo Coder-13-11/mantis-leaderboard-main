@@ -1,4 +1,5 @@
-// Shared time / repo helpers. UTC everywhere — daily caps and windows are UTC days.
+// Shared time / repo helpers. Listing watermarks stay UTC; scoring windows
+// are rolling 24h / Nd from now, not calendar midnight.
 
 export function lookbackSinceIso(lookbackDays) {
   const d = new Date(Date.now() - lookbackDays * 86400_000);
