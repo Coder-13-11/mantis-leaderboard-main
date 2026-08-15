@@ -86,6 +86,7 @@ async function main() {
     issue_rules: {
       created_points: rules.issues.created_points,
       closed_bonus: rules.issues.closed_bonus,
+      bug_points: rules.issues.bug_points,
       confirmed_points: rules.issues.confirmed_points,
       impact_points: rules.issues.impact_points,
       duplicate_labels: rules.issues.duplicate_labels,

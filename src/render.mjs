@@ -385,15 +385,15 @@ function whatCountsSection(meta) {
             <span class="sm-note">outcome (comment / approve / request-changes)${rv.inline_comment_bonus ? ` · +${rv.inline_comment_bonus} for inline comments` : ""}${rv.addressed_changes_bonus ? ` · +${rv.addressed_changes_bonus} if requested changes later merge` : ""}. Authors are not penalized for lack of review.</span>
           </div>
           <div class="sm">
-            <span class="sm-lbl">Ordinary issues</span>
-            <span class="sm-val">0 pts</span>
-            <span class="sm-note">Counted in the Issues column, not the ranking. Closing a ticket is not a score. Only <code>confirmed</code> / high-impact / <code>difficulty: 1…6</code> issues add points (${is.confirmed_points ?? 10} / ${is.impact_points ?? 16} / ${diffRange}).</span>
+            <span class="sm-lbl">Issues and bugs</span>
+            <span class="sm-val">+${is.created_points ?? 1} to file${is.bug_points ? ` · +${is.bug_points} bug` : ""}</span>
+            <span class="sm-note">Closing a ticket is 0 — too easy to farm. Confirmed / high-impact / <code>difficulty: 1…6</code> pay ${is.confirmed_points ?? 10} / ${is.impact_points ?? 16} / ${diffRange}. Issue volume decays faster than PRs.</span>
           </div>
         </div>
         <p class="score-example">
           <b>Worked example:</b> two PRs in 24h both score in full. A third is worth 80%, a sixth+ still 35% — never zero.
           A 71-PR burst is still a burst (most of those PRs sit on the 35% floor), but a 7-PR day is worth more than a 2-PR day.
-          Twenty-seven ordinary issues do not move the ranking. First contribution is a badge, not a point multiplier.
+          Twenty-seven ordinary issues still cannot beat a merged PR. First contribution is a badge, not a point multiplier.
         </p>
       </div>
       <div class="wc-grid">
@@ -409,9 +409,9 @@ function whatCountsSection(meta) {
         </div>
         <div class="wc">
           <b>Issues</b>
-          <p>Counts = issues you opened (including duplicates and chores). Ordinary issues and ordinary closes score <b>nothing</b> — they stay visible so activity is honest, without overpowering shipping.
-          Points only for maintainer-confirmed work: <code>confirmed</code> (+${is.confirmed_points ?? 10}), high-impact (+${is.impact_points ?? 16}), or <code>difficulty: 1…6</code> (${diffRange}).
-          Rejected as ${esc(dupes)} / not-planned score nothing.</p>
+          <p>Counts = issues you opened (including duplicates and chores). Opening scores a little (+${is.created_points ?? 1}); a <code>bug</code> label scores more (+${is.bug_points ?? 6}). Closing a ticket scores <b>nothing</b> — that is too easy to farm.
+          Maintainer-confirmed work pays more: <code>confirmed</code> (+${is.confirmed_points ?? 10}), high-impact (+${is.impact_points ?? 16}), or <code>difficulty: 1…6</code> (${diffRange}).
+          Rejected as ${esc(dupes)} / not-planned score nothing. Issue volume decays faster than PRs, so 27 chores cannot overtake a ship.</p>
         </div>
         <div class="wc">
           <b>Humans only</b>

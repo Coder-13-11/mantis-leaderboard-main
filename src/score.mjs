@@ -528,10 +528,23 @@ export function score(activity, rules, manual = {}, identities = {}) {
       i.stateReason === "NOT_PLANNED";
     if (isDuplicate) continue;
 
-    // Ordinary issues are a visible statistic only. Points require a
-    // maintainer-applied confirmation: difficulty, confirmed, or high-impact.
-    let rawCreate = 0;
+    // Opening an issue scores a little; a `bug` / confirmed / difficulty
+    // label scores more. Closing a ticket never scores — that is too easy
+    // to farm. Duplicates and not-planned issues pay nothing.
+    let rawCreate = is.created_points ?? 0;
     let qualityNote = null;
+    if (hasAnyLabel(labels, is.bug_labels) && (is.bug_points || 0) > 0) {
+      rawCreate = is.bug_points;
+      qualityNote = "bug";
+    }
+    if (hasAnyLabel(labels, is.confirmed_labels) && (is.confirmed_points || 0) > 0) {
+      rawCreate = is.confirmed_points;
+      qualityNote = "confirmed";
+    }
+    if (hasAnyLabel(labels, is.impact_labels) && (is.impact_points || 0) > 0) {
+      rawCreate = is.impact_points;
+      qualityNote = "high impact";
+    }
     for (const [label, pts] of Object.entries(is.difficulty_points || {})) {
       if (labels.includes(label.toLowerCase())) {
         rawCreate = pts;
@@ -539,17 +552,7 @@ export function score(activity, rules, manual = {}, identities = {}) {
         break;
       }
     }
-    if (!qualityNote && hasAnyLabel(labels, is.confirmed_labels) && (is.confirmed_points || 0) > 0) {
-      rawCreate = is.confirmed_points;
-      qualityNote = "confirmed";
-    }
-    if (!qualityNote && hasAnyLabel(labels, is.impact_labels) && (is.impact_points || 0) > 0) {
-      rawCreate = is.impact_points;
-      qualityNote = "high impact";
-    }
 
-    // Opening or closing a chore ticket must not consume the 24h window
-    // or pay anything. Closing only scores if the issue itself was confirmed.
     if (!rawCreate) continue;
 
     const factorLogin = openerOk ? login : closerOk ? closerLogin : null;
