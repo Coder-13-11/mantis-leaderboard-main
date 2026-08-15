@@ -528,19 +528,29 @@ export function score(activity, rules, manual = {}, identities = {}) {
       i.stateReason === "NOT_PLANNED";
     if (isDuplicate) continue;
 
-    let rawCreate = is.created_points ?? 0;
-    let difficultyNote = null;
+    // Ordinary issues are a visible statistic only. Points require a
+    // maintainer-applied confirmation: difficulty, confirmed, or high-impact.
+    let rawCreate = 0;
+    let qualityNote = null;
     for (const [label, pts] of Object.entries(is.difficulty_points || {})) {
       if (labels.includes(label.toLowerCase())) {
         rawCreate = pts;
-        difficultyNote = label;
+        qualityNote = label;
         break;
       }
     }
-    if (!difficultyNote && hasAnyLabel(labels, is.bug_labels) && Number.isFinite(is.bug_points)) {
-      rawCreate = is.bug_points;
-      difficultyNote = "bug";
+    if (!qualityNote && hasAnyLabel(labels, is.confirmed_labels) && (is.confirmed_points || 0) > 0) {
+      rawCreate = is.confirmed_points;
+      qualityNote = "confirmed";
     }
+    if (!qualityNote && hasAnyLabel(labels, is.impact_labels) && (is.impact_points || 0) > 0) {
+      rawCreate = is.impact_points;
+      qualityNote = "high impact";
+    }
+
+    // Opening or closing a chore ticket must not consume the 24h window
+    // or pay anything. Closing only scores if the issue itself was confirmed.
+    if (!rawCreate) continue;
 
     const factorLogin = openerOk ? login : closerOk ? closerLogin : null;
     if (!factorLogin) continue;
@@ -554,7 +564,7 @@ export function score(activity, rules, manual = {}, identities = {}) {
       createFactor = d.factor;
     }
 
-    let createPts = openerOk && rawCreate ? rawCreate * createFactor : 0;
+    let createPts = openerOk ? rawCreate * createFactor : 0;
     let closedPts = 0;
     if (i.closed && i.stateReason !== "NOT_PLANNED" && (is.closed_bonus || 0) > 0) {
       closedPts = (is.closed_bonus || 0) * (openerOk && closerLogin === login ? createFactor : 1);
@@ -601,7 +611,7 @@ export function score(activity, rules, manual = {}, identities = {}) {
 
     if (createPts && openerOk) {
       const notes = [];
-      if (difficultyNote) notes.push(difficultyNote);
+      if (qualityNote) notes.push(qualityNote);
       if (createNth > 1) notes.push(`${createNth}th in 24h ×${createFactor}`);
       addPoints(userOf(users, login), "issue", createPts, i.createdAt, {
         kind: "issue",
