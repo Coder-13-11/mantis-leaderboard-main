@@ -16,16 +16,16 @@ who has the biggest all-time score.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **79** | 6 | 0 | 12 |
+| 🥇 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 11 |
 | 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **70** | 7 | 9 | 1 |
-| 🥉 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **70** | 9 | 0 | 0 |
-| #4 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 4 | 1 | 27 |
-| #5 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **48** | 71 | 2 | 0 |
-| #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **41** | 4 | 0 | 0 |
+| 🥉 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **53** | 4 | 1 | 27 |
+| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **42** | 4 | 2 | 2 |
+| #5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **41** | 4 | 0 | 0 |
+| #6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **41** | 6 | 0 | 0 |
 | #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **41** | 2 | 0 | 6 |
 | #8 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **40** | 3 | 0 | 0 |
-| #9 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **40** | 33 | 0 | 7 |
-| #10 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **38** | 3 | 0 | 1 |
+| #9 | **Raghav** ([@Donysus](https://github.com/Donysus)) | **36** | 2 | 0 | 0 |
+| #10 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **34** | 4 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -33,16 +33,16 @@ who has the biggest all-time score.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **151** | 97 | 2 | 5 |
 | 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **116** | 13 | 12 | 2 |
-| 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **109** | 8 | 0 | 19 |
+| 🥉 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **109** | 11 | 3 | 4 |
 | #4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **104** | 78 | 0 | 8 |
-| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **99** | 10 | 3 | 4 |
+| #5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **88** | 6 | 0 | 19 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **86** | 8 | 0 | 11 |
 | #7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **82** | 10 | 0 | 0 |
 | #8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **80** | 3 | 19 | 2 |
 | #9 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **78** | 4 | 0 | 7 |
 | #10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **62** | 4 | 3 | 27 |
 
-_Last updated: Fri, 14 Aug 2026 23:56:46 GMT_
+_Last updated: Sat, 15 Aug 2026 01:47:02 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
