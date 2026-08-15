@@ -248,31 +248,6 @@ function listRows(ranked, days, dayKeys) {
     .join("");
 }
 
-function qualityBanner(meta) {
-  const q = meta.sync;
-  if (!q) return "";
-  const warns = q.warnings || [];
-  const ok = q.checksum_ok !== false && !warns.some((w) => /checksum miss/i.test(w));
-  const cls = ok ? (warns.length ? "quality warn" : "quality ok") : "quality bad";
-  const events = q.event_counts || {};
-  const mode = q.mode || "sync";
-  const bits = [
-    `GitHub <b>listing</b> (not Search) · ${mode} sync`,
-    events.prs != null ? `${Number(events.prs).toLocaleString()} PRs stored` : null,
-    events.reviews != null ? `${Number(events.reviews).toLocaleString()} reviews` : null,
-    events.review_comments != null ? `${Number(events.review_comments).toLocaleString()} inline comments` : null,
-    events.issues != null ? `${Number(events.issues).toLocaleString()} issues` : null,
-  ].filter(Boolean);
-  const miss = (q.checksums || []).filter((c) => (c.pr_delta || 0) > 0 || (c.issue_delta || 0) > 0);
-  const extra = miss.length
-    ? ` Checksum: ${miss.map((c) => `${c.repo} PRs ${c.listed_merged}/${c.search_merged}`).join("; ")}.`
-    : ok
-      ? " Search checksum matches the listing."
-      : "";
-  const warnLine = warns.length ? ` ${warns.length} warning${warns.length === 1 ? "" : "s"} — see the latest Actions log.` : "";
-  return `<div class="${cls}"><b>Data quality.</b> ${bits.join(" · ")}.${extra}${warnLine}</div>`;
-}
-
 function statTile(value, label, scope) {
   return `<div class="tile"><div class="tile-num">${value}</div><div class="tile-lbl">${label}</div>${
     scope ? `<div class="tile-scope">${scope}</div>` : ""
@@ -587,15 +562,6 @@ export function renderHtml(users, meta) {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem;
     margin: 1.7rem 0 1.5rem;
   }
-  .quality {
-    margin: .85rem 0 0; padding: .65rem .8rem; border-radius: 10px;
-    font-size: .74rem; line-height: 1.5; color: var(--muted);
-    border: 1px solid var(--border); background: var(--panel);
-  }
-  .quality b { color: var(--text); }
-  .quality.ok { border-color: color-mix(in srgb, #2f9e62 35%, var(--border)); }
-  .quality.warn { border-color: color-mix(in srgb, var(--gold) 45%, var(--border)); }
-  .quality.bad { border-color: color-mix(in srgb, #c45c4a 50%, var(--border)); color: var(--text); }
   .tile {
     background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
     padding: .9rem 1rem; box-shadow: var(--shadow);
@@ -861,7 +827,6 @@ export function renderHtml(users, meta) {
       </div>
       <h1>Contributor Leaderboard</h1>
       <p class="sub">${meta.repos.length} repositories · humans only · <span class="live">lists every PR, review, and issue from GitHub</span> · ${updated}</p>
-      ${qualityBanner(meta)}
     </header>
 
     <div class="tiles">${tiles}</div>
