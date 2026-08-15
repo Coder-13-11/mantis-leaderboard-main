@@ -247,7 +247,6 @@ function listRows(ranked, days, dayKeys) {
     })
     .join("");
 }
-
 function statTile(value, label, scope) {
   return `<div class="tile"><div class="tile-num">${value}</div><div class="tile-lbl">${label}</div>${
     scope ? `<div class="tile-scope">${scope}</div>` : ""
