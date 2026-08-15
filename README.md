@@ -21,12 +21,12 @@ code / review / issues ledger.
 | 🥈 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **85** | 9 | 0 | 0 |
 | 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **82** | 6 | 0 | 12 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **66** | 5 | 2 | 2 |
-| #5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
-| #6 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **50** | 4 | 1 | 27 |
-| #7 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 5 | 0 | 0 |
-| #8 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **48** | 4 | 0 | 0 |
-| #9 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **39** | 3 | 0 | 0 |
-| #10 | Name not found ([@Cruz-Arnzen](https://github.com/Cruz-Arnzen)) | **37** | 3 | 0 | 0 |
+| #5 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **65** | 5 | 0 | 6 |
+| #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
+| #7 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **50** | 4 | 1 | 27 |
+| #8 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 5 | 0 | 0 |
+| #9 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **48** | 4 | 0 | 0 |
+| #10 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **39** | 3 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -39,11 +39,11 @@ code / review / issues ledger.
 | #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **109** | 11 | 0 | 0 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **104** | 8 | 0 | 11 |
 | #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **95** | 14 | 0 | 3 |
-| #8 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
-| #9 | Name not found ([@Copilot](https://github.com/Copilot)) | **84** | 0 | 10 | 0 |
-| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **83** | 5 | 5 | 0 |
+| #8 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **93** | 7 | 0 | 7 |
+| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
+| #10 | Name not found ([@Copilot](https://github.com/Copilot)) | **84** | 0 | 10 | 0 |
 
-_Last updated: Sat, 15 Aug 2026 17:32:37 GMT_
+_Last updated: Sat, 15 Aug 2026 17:54:09 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
