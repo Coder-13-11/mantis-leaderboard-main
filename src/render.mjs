@@ -247,32 +247,6 @@ function listRows(ranked, days, dayKeys) {
     })
     .join("");
 }
-
-function qualityBanner(meta) {
-  const q = meta.sync;
-  if (!q) return "";
-  const warns = q.warnings || [];
-  const ok = q.checksum_ok !== false && !warns.some((w) => /checksum miss/i.test(w));
-  const cls = ok ? (warns.length ? "quality warn" : "quality ok") : "quality bad";
-  const events = q.event_counts || {};
-  const mode = q.mode || "sync";
-  const bits = [
-    `GitHub <b>listing</b> (not Search) · ${mode} sync`,
-    events.prs != null ? `${Number(events.prs).toLocaleString()} PRs stored` : null,
-    events.reviews != null ? `${Number(events.reviews).toLocaleString()} reviews` : null,
-    events.review_comments != null ? `${Number(events.review_comments).toLocaleString()} inline comments` : null,
-    events.issues != null ? `${Number(events.issues).toLocaleString()} issues` : null,
-  ].filter(Boolean);
-  const miss = (q.checksums || []).filter((c) => (c.pr_delta || 0) > 0 || (c.issue_delta || 0) > 0);
-  const extra = miss.length
-    ? ` Checksum: ${miss.map((c) => `${c.repo} PRs ${c.listed_merged}/${c.search_merged}`).join("; ")}.`
-    : ok
-      ? " Search checksum matches the listing."
-      : "";
-  const warnLine = warns.length ? ` ${warns.length} warning${warns.length === 1 ? "" : "s"} — see the latest Actions log.` : "";
-  return `<div class="${cls}"><b>Data quality.</b> ${bits.join(" · ")}.${extra}${warnLine}</div>`;
-}
-
 function statTile(value, label, scope) {
   return `<div class="tile"><div class="tile-num">${value}</div><div class="tile-lbl">${label}</div>${
     scope ? `<div class="tile-scope">${scope}</div>` : ""
