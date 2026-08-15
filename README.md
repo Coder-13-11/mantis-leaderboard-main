@@ -146,14 +146,16 @@ any person to see the ledger.
 | Docs PR | same 10–14 | classified separately, not a flat +25% |
 | Extra PRs in 24h | ×100 / 100 / 80 / 65 / 50 / 35% | 1st…6th+. Rolling 24 hours, **no hard cap** |
 | Commented / approved / changes requested | 4 / 6 / 8 | outcome, not character count. +3 inline, +2 nontrivial PR, +4 if requested changes later merge |
-| Issue opened / closed | 0 | Visible in the Issues column. Does not move the ranking |
+| Issue opened | 1 | Scored, with steeper 24h decay than PRs so volume cannot dominate |
+| Issue closed | 0 | Closing a ticket is not the work — too easy to farm |
+| Bug report | 6 | `bug` / `defect` label |
 | Confirmed / high-impact issue | 10 / 16 | Maintainer `confirmed` or `priority`/`impact` label |
-| `difficulty: 1…6` | 3–36 | Replaces confirmed points when labeled. Closing still pays 0 |
+| `difficulty: 1…6` | 3–36 | Replaces the file points when labeled |
 | First PR / review / bug | badge | not a point multiplier |
 
 **Anti-gaming:** diminishing returns on PRs and reviews in a rolling 24-hour
-window. Ordinary issues are listed, not scored — opening 27 tickets cannot
-overtake a merged PR. Tunable in [`config/rules.yml`](config/rules.yml).
+window. Issues decay faster: 27 chores cannot overtake a merged PR. Closing
+a ticket scores nothing. Tunable in [`config/rules.yml`](config/rules.yml).
 
 ### Exactly what counts (the questions people actually ask)
 
@@ -161,7 +163,8 @@ overtake a merged PR. Tunable in [`config/rules.yml`](config/rules.yml).
 lifetime total:
 - The **"Past 7 Days" / "Past 14 Days" tables** above are rolling windows
   ending now — this is what ranks people. **PRs / Reviews / Issues are raw
-  activity counts.** Ordinary issues do not add points.
+  activity counts.** Issue *points* come from opening work (bugs score more);
+  closing a ticket does not.
 - The **stat tiles on `site/index.html`** ("PRs merged", "Reviews", "Issues")
   are a wider, *unranked* count over the full `lookback_days` window
   (currently 365 days) — not all-time. Anything older than `lookback_days`

@@ -33,14 +33,16 @@ const rules = {
     daily_diminishing: { window_hours: 24, factors: FACTORS },
   },
   issues: {
-    created_points: 0,
+    created_points: 1,
     closed_bonus: 0,
     closed_bonus_to: "closer",
+    bug_labels: ["bug"],
+    bug_points: 6,
     confirmed_labels: ["confirmed"],
     confirmed_points: 10,
     impact_labels: ["impact: high"],
     impact_points: 16,
-    daily_diminishing: { window_hours: 24, factors: FACTORS },
+    daily_diminishing: { window_hours: 24, factors: [1.0, 0.75, 0.45, 0.25, 0.12, 0.06] },
     duplicate_labels: ["duplicate"],
     difficulty_points: { "difficulty: 6": 36 },
   },
@@ -175,7 +177,7 @@ test("lockfile lines are subtracted from size, not ratio-guessed", () => {
   assert.equal(small.breakdown.pr, lock.breakdown.pr);
 });
 
-test("ordinary issues are counted but do not score; closing them does not score", () => {
+test("opening an issue scores a little; closing it scores nothing", () => {
   const now = new Date().toISOString();
   const activity = {
     pullRequests: [],
@@ -209,7 +211,7 @@ test("ordinary issues are counted but do not score; closing them does not score"
   const carol = users.find((u) => u.login === "carol");
   assert.equal(alice.counts.confirmed_issues, 2);
   assert.equal(carol.counts.issues_closed, 2);
-  assert.equal(alice.breakdown.issue || 0, 0);
+  assert.equal(alice.breakdown.issue, 1);
   assert.equal(carol.breakdown.issue || 0, 0);
 });
 
@@ -421,13 +423,12 @@ test("Griffin-style: 27 ordinary issues cannot outrank a merged PR", () => {
   const griffin = users.find((u) => u.login === "griffin");
   const alice = users.find((u) => u.login === "alice");
   assert.equal(griffin.counts.confirmed_issues, 27);
-  assert.equal(griffin.breakdown.issue || 0, 0);
-  assert.equal(griffin.windows[7], 0);
-  assert.ok(alice.windows[7] > griffin.windows[7]);
+  assert.ok(griffin.breakdown.issue > 0, "opening issues must score something");
+  assert.ok(griffin.breakdown.issue < alice.windows[7], "27 chores cannot beat a merged PR");
   assert.ok(alice.rank < griffin.rank);
 });
 
-test("a self-serve bug label is not enough; confirmed or high-impact issues score", () => {
+test("bug reports score more than chores; confirmed issues score more than bugs", () => {
   const now = new Date().toISOString();
   const users = score(
     {
@@ -455,7 +456,7 @@ test("a self-serve bug label is not enough; confirmed or high-impact issues scor
   );
   const alice = users.find((u) => u.login === "alice");
   const bob = users.find((u) => u.login === "bob");
-  assert.equal(alice.breakdown.issue || 0, 0);
+  assert.equal(alice.breakdown.issue, 6);
   assert.equal(bob.breakdown.issue, 10);
 });
 
