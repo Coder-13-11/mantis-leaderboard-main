@@ -5,9 +5,10 @@ merged PRs, real code reviews, confirmed bugs. It only reads GitHub, never
 writes anything back except to this repo, and it can't touch the actual
 Mantis codebases.
 
-It's ranked by points earned in the past 7 days (with a 14-day view
+It's ranked by points earned in a rolling 7-day window (with a 14-day view
 alongside it), not lifetime totals, so it's about who's active *now*, not
-who has the biggest all-time score.
+who has the biggest all-time score. Click anyone on the site for a
+code / review / issues ledger.
 
 ## Live leaderboard
 
@@ -132,33 +133,32 @@ Mantis codebases.
 
 ## How scoring works
 
-Mantis already codes a lot, often as many small PRs. The unit of value is a
-**day of work**, not a PR. Two solid merges fill a shipping day; the 71st
-merge that day is still that same day.
+The unit of value is a **contribution**, not a calendar day. Extra PRs the
+same day still count — they just count a bit less, so a 70-PR burst cannot
+look like a month of work, and a 7-PR day is still worth more than a 2-PR
+day. Shipping, reviewing, and finding bugs are different jobs: they share
+one overall score, and each has its own board on `site/index.html`. Open
+any person to see the ledger.
 
 | Contribution | Points | Notes |
 | ------------ | ------ | ----- |
-| Merged PR | 10–22 | saturating size bonus (not XS–XL buckets). Unreviewed (no peer review) ×0.5 |
-| Doc / first / high-impact PR | ×1.25 / ×1.5 / ×1.5 | labels, or first merged PR in the lookback |
-| PR points per person per day | cap 36 | ~2 typical PRs. Burst merges cannot exceed a normal coding day |
-| Commented review | 6 | Finish-review comment, body ≥ 40 chars |
-| Approved review | 8 | body ≥ 20 chars |
-| Changes requested | 10 | body ≥ 20 chars; finding problems pays more than LGTM |
-| Review points per person per day | cap 20 | a review day cannot beat a shipping day |
-| Issue created / closed | 2 / +1 | cap 6 issue pts/day |
-| Issue difficulty (future) | 1 → 16 | a `difficulty: 1…6` label *replaces* the flat 2. Dormant until labeled |
+| Merged PR | 10–14 | small saturating size bonus (at most +4). High-impact label ×1.5. Bug-fix label +4 |
+| Docs PR | same 10–14 | classified separately, not a flat +25% |
+| Extra PRs in 24h | ×100 / 100 / 80 / 65 / 50 / 35% | 1st…6th+. Rolling 24 hours, **no hard cap** |
+| Commented / approved / changes requested | 4 / 6 / 8 | outcome, not character count. +3 inline, +2 nontrivial PR, +4 if requested changes later merge |
+| Issue created / closed | 5 / +3 | unlabeled `bug` = 8 to file. `difficulty: 1…6` *replaces* the flat file points (3–36) |
+| First PR / review / bug | badge | not a point multiplier |
 
-**Anti-gaming:** same-day extra PRs decay to zero after the second merge,
-*and* PR points hard-cap at 36/day. Spreading work across the week is the
-only way to stack. Tunable in [`config/rules.yml`](config/rules.yml).
+**Anti-gaming:** diminishing returns in a rolling 24-hour window. Spam still
+shows up; it does not dominate. Tunable in [`config/rules.yml`](config/rules.yml).
 
 ### Exactly what counts (the questions people actually ask)
 
 **"Is this the total?"** No single number on this page is an unqualified
 lifetime total:
-- The **"Past 7 Days" / "Past 14 Days" tables** above are trailing windows
-  ending today — this is what ranks people. The **PRs / Reviews / Issues
-  columns are raw activity counts** (no daily cap). Points still cap.
+- The **"Past 7 Days" / "Past 14 Days" tables** above are rolling windows
+  ending now — this is what ranks people. **Total / Code / Review / Issues
+  are points** (open the site for counts and the event ledger).
 - The **stat tiles on `site/index.html`** ("PRs merged", "Reviews", "Issues")
   are a wider, *unranked* count over the full `lookback_days` window
   (currently 365 days) — not all-time. Anything older than `lookback_days`
@@ -173,30 +173,27 @@ inline comments on someone else's PR — including open and unmerged PRs. It
 **scores** if *all* of these hold:
 1. State is **Approved**, **Changes requested**, or **Commented** (or
    inline-only comments treated as Commented). Dismissed and Pending never
-   score. Inline comments are fetched separately and add to body length, so
-   a short “lgtm” plus a real line comment can still score.
-2. Body length: ≥ `reviews.min_body_length` (20) for Approve / Request
-   changes, ≥ `reviews.commented_min_body_length` (40) for Commented
-   (review body + inline comments).
+   score. A short body still scores when there is a substantive inline
+   comment — character count is a gate, not the quality signal.
+2. Quality bonuses (additive): at least one inline comment, reviewing a
+   nontrivial PR, and **Changes requested** on a PR that later merged
+   (the change was addressed).
 3. You didn't review your own PR (`exclude_self_review: true`).
-4. One credit per (reviewer, PR): the **highest-value** review type wins
-   (comment then approve pays 8, not 6). Follow-up rounds on the same PR
-   do not stack. Intentional anti-spam.
+4. One credit per (reviewer, PR): the **highest-value** review type wins.
+   Follow-up rounds on the same PR do not stack.
 5. Reviews are scored even if the PR targets a branch outside
    `pull_requests.count_merges_to` — reviewing that work still counts,
    even though the author gets no merge points for it.
-6. Review points also hard-cap at `reviews.max_points_per_day` (20).
+6. Same rolling 24h diminishing curve as PRs. Authors are **not** penalized
+   when nobody reviews their PR; the reviewer is rewarded instead.
 
-**"What counts as a merged PR?"** The **PRs column** counts every PR GitHub
-reports as merged (`mergedAt` set), any target branch, authored by you.
+**"What counts as a merged PR?"** Every PR GitHub reports as merged
+(`mergedAt` set), any target branch, authored by you, is **counted**.
 **Points** only for merges into `pull_requests.count_merges_to` branches
-(currently `main`/`master`). Unreviewed merges (no scoring peer review, including
-inline comments) pay `unreviewed_multiplier` (0.5). PR *points* then hard-cap at
-`max_points_per_day` (36) per person per UTC day — counts still show all
-the merges. Co-authors are stored and counted separately; they do not take
-the author's merge.
+(currently `main`/`master`). Size is a small bonus, not the definition of
+value. Docs-only PRs go to the docs line, not code shipping. Co-authors are
+stored and counted separately; they do not take the author's merge.
 
 All of this lives in [`config/rules.yml`](config/rules.yml). Point values
-and caps change without code; new *kinds* of events (e.g. commented
-reviews, a PR daily cap) needed a scorer change once and are now
-config-driven. Scores recompute from the event log on the next `npm run build`.
+and diminishing tables change without code. Scores recompute from the event
+log on the next `npm run build`.

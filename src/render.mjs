@@ -8,12 +8,28 @@
 
 const SITE_MAX = 15; // contributors shown on the dashboard (podium + list)
 
+const BOARDS = [
+  { id: "overall", label: "Overall" },
+  { id: "shipping", label: "Code shipping" },
+  { id: "review", label: "Code review" },
+  { id: "bugs", label: "Bug finding" },
+];
+
 function medal(rank) {
   return rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : `#${rank}`;
 }
 
 function windowLabel(days) {
   return `Past ${days} Days`;
+}
+
+function dimScore(u, days, board = "overall") {
+  const d = u.windowDimensions?.[days];
+  const b = u.windowBreakdown?.[days];
+  if (board === "shipping") return d?.shipping ?? b?.pr ?? 0;
+  if (board === "review") return d?.review ?? b?.review ?? 0;
+  if (board === "bugs") return d?.bugs ?? b?.issue ?? 0;
+  return u.windows?.[days] || 0;
 }
 
 function esc(s) {
@@ -40,12 +56,8 @@ export function personLabel(u) {
   return { primary: "Name not found", secondary: `@${u.login}`, hasName: false };
 }
 
-// `users` is already ranked by the primary (first) window. For every other
-// window, re-sort a copy by that window's points instead.
-function rankedFor(users, days, primaryDays) {
-  return days === primaryDays
-    ? users
-    : [...users].sort((a, b) => (b.windows[days] || 0) - (a.windows[days] || 0));
+function rankedFor(users, days, board = "overall") {
+  return [...users].sort((a, b) => dimScore(b, days, board) - dimScore(a, days, board));
 }
 
 // The last `n` calendar-day keys ("2026-07-21"), oldest first.
@@ -71,25 +83,24 @@ export function renderJson(users, meta) {
 }
 
 export function renderReadmeTable(users, topN, windowsDays) {
-  const primary = windowsDays[0];
   const sections = windowsDays.map((days) => {
-    const ranked = rankedFor(users, days, primary);
+    const ranked = rankedFor(users, days, "overall");
     const rows = ranked
       .slice(0, topN)
       .map((u, idx) => {
-        const c = u.windowCounts?.[days] || {};
+        const b = u.windowBreakdown?.[days] || {};
         const p = personLabel(u);
         const label = p.hasName
           ? `**${p.primary}** ([@${u.login}](https://github.com/${u.login}))`
           : `Name not found ([@${u.login}](https://github.com/${u.login}))`;
-        return `| ${medal(idx + 1)} | ${label} | **${u.windows[days] || 0}** | ${c.prs || 0} | ${c.reviews || 0} | ${c.confirmed_issues || 0} |`;
+        return `| ${medal(idx + 1)} | ${label} | **${u.windows[days] || 0}** | ${b.pr || 0} | ${b.review || 0} | ${b.issue || 0} |`;
       })
       .join("\n");
     return [
       `#### ${windowLabel(days)}`,
       "",
-      "| Rank | Contributor | Points | PRs | Reviews | Issues |",
-      "| :--: | :---------- | -----: | --: | ------: | -----: |",
+      "| Rank | Contributor | Total | Code | Review | Issues |",
+      "| :--: | :---------- | ----: | ---: | -----: | -----: |",
       rows,
     ].join("\n");
   });
@@ -112,6 +123,7 @@ function breakdownBar(breakdown) {
     ["pr", breakdown.pr || 0],
     ["review", breakdown.review || 0],
     ["issue", breakdown.issue || 0],
+    ["docs", breakdown.docs || 0],
     ["other", breakdown.other || 0],
   ];
   const sum = parts.reduce((a, [, v]) => a + v, 0);
@@ -165,16 +177,82 @@ function windowBreakdownBar(u, days) {
   return breakdownBar(u.breakdown || {});
 }
 
-// Human-readable “where did these points come from?” for a trailing window.
-function scoreExplainer(u, days) {
+function badgeRow(u) {
+  if (!u.badges?.length) return "";
+  return `<div class="chips">${u.badges
+    .map((b) => `<span class="chip">${esc(b.label)}</span>`)
+    .join("")}</div>`;
+}
+
+function ledgerList(u, days) {
+  const items = (u.windowLedger?.[days] || []).slice().reverse();
+  if (!items.length) return `<p class="led-empty">No scored events in this window.</p>`;
+  const shown = items.slice(0, 14);
+  const more = items.length - shown.length;
+  const lis = shown
+    .map((e) => {
+      const note = (e.notes || []).join(" · ");
+      const ref = e.url
+        ? `<a href="${esc(e.url)}">${esc(e.ref || e.kind)}</a>`
+        : esc(e.ref || e.kind);
+      const title = e.title ? ` — ${esc(e.title)}` : "";
+      return `<li><span class="led-pts">+${e.points}</span> ${ref}${title}${
+        note ? `<span class="led-note">${esc(note)}</span>` : ""
+      }</li>`;
+    })
+    .join("");
+  return `<ol class="ledger">${lis}</ol>${
+    more > 0 ? `<p class="led-more">${more} more in this window</p>` : ""
+  }`;
+}
+
+function auditBlock(u, days) {
   const pts = u.windows?.[days] || 0;
+  const b = u.windowBreakdown?.[days] || {};
+  const c = u.windowCounts?.[days] || {};
+  const rows = [
+    ["Code", b.pr || 0],
+    ["Reviews", b.review || 0],
+    ["Issues", b.issue || 0],
+    ["Docs", b.docs || 0],
+    ["Community", b.other || 0],
+  ];
+  const grid = rows
+    .map(
+      ([k, v]) =>
+        `<div class="audit-k">${k}</div><div class="audit-v">${v}</div>`
+    )
+    .join("");
+  const activity = [];
+  if (c.prs) activity.push(`${c.prs} merged PR${c.prs === 1 ? "" : "s"}`);
+  if (c.docs_prs) activity.push(`${c.docs_prs} docs PR${c.docs_prs === 1 ? "" : "s"}`);
+  if (c.reviews) activity.push(`${c.reviews} review${c.reviews === 1 ? "" : "s"}`);
+  if (c.confirmed_issues) activity.push(`${c.confirmed_issues} issue${c.confirmed_issues === 1 ? "" : "s"} opened`);
+  if (c.issues_closed) activity.push(`${c.issues_closed} closed`);
+  if (c.manual) activity.push(`${c.manual} community`);
+  return `
+    <div class="audit">
+      <div class="audit-score">${days}-day score: <b>${pts}</b></div>
+      <div class="audit-activity">${esc(activity.join(" · ") || "no scored activity")}</div>
+      ${badgeRow(u)}
+      <div class="audit-grid">${grid}
+        <div class="audit-k audit-total">Total</div><div class="audit-v audit-total">${pts}</div>
+      </div>
+      ${ledgerList(u, days)}
+    </div>`;
+}
+
+// Human-readable “where did these points come from?” for a trailing window.
+function scoreExplainer(u, days, board = "overall") {
+  const pts = dimScore(u, days, board);
   const c = u.windowCounts?.[days] || {};
   const wb = u.windowBreakdown?.[days];
   const bits = [];
   if (wb) {
-    if (wb.pr) bits.push(`${wb.pr} from PRs`);
-    if (wb.review) bits.push(`${wb.review} from reviews`);
-    if (wb.issue) bits.push(`${wb.issue} from issues`);
+    if (wb.pr) bits.push(`${wb.pr} code`);
+    if (wb.review) bits.push(`${wb.review} reviews`);
+    if (wb.issue) bits.push(`${wb.issue} issues`);
+    if (wb.docs) bits.push(`${wb.docs} docs`);
     if (wb.other) bits.push(`${wb.other} community`);
   }
   const activity = [];
@@ -188,61 +266,58 @@ function scoreExplainer(u, days) {
   if (c.issues_closed) activity.push(`${c.issues_closed} closed`);
   if (c.manual) activity.push(`${c.manual} community`);
 
-  // Show pts/PR only when PRs clearly dominate the window (avoids “45 pts/PR”
-  // when most of the total is actually issues / lifetime-ratio noise).
-  let avg = "";
-  if (c.prs && pts) {
-    const prShare = wb ? (wb.pr || 0) / Math.max(1, pts) : c.prs >= (c.confirmed_issues || 0);
-    if (prShare === true || prShare >= 0.65) {
-      const denom = c.prs;
-      const numer = wb ? wb.pr || pts : pts;
-      avg = ` · ~${Math.max(1, Math.round(numer / denom))} pts per PR this window`;
-    }
-  }
   const from = bits.length ? bits.join(" · ") : activity.join(" · ") || "no scored activity";
-  return { from, activity: activity.join(" · ") || "—", avg, pts };
+  return { from, activity: activity.join(" · ") || "—", pts };
 }
 
-function podiumCard(u, days, place) {
-  const explain = scoreExplainer(u, days);
+function podiumCard(u, days, place, board = "overall") {
+  const explain = scoreExplainer(u, days, board);
   return `
-    <div class="pod pod-${place}">
+    <details class="pod-wrap">
+    <summary class="pod pod-${place}">
       <div class="pod-badge">${medal(place)}</div>
       <img class="pod-avatar" src="https://github.com/${esc(u.login)}.png?size=120" alt="" loading="lazy"/>
       ${personBlock(u)}
       <div class="pod-pts" title="${esc(explain.from)}">${explain.pts}<span>pts</span></div>
-      <div class="pod-why">${esc(explain.from)}${esc(explain.avg)}</div>
+      <div class="pod-why">${esc(explain.from)}</div>
       <div class="pod-meta">${esc(explain.activity)}</div>
-    </div>`;
+      ${badgeRow(u)}
+    </summary>
+    ${auditBlock(u, days)}
+    </details>`;
 }
 
-function podium(ranked, days) {
-  // Visual order left → right: 1st (largest), 2nd, 3rd (smallest).
+function podium(ranked, days, board = "overall") {
   const [first, second, third] = ranked;
   const cards = [];
-  if (first) cards.push(podiumCard(first, days, 1));
-  if (second) cards.push(podiumCard(second, days, 2));
-  if (third) cards.push(podiumCard(third, days, 3));
+  if (first) cards.push(podiumCard(first, days, 1, board));
+  if (second) cards.push(podiumCard(second, days, 2, board));
+  if (third) cards.push(podiumCard(third, days, 3, board));
   return `<div class="podium">${cards.join("")}</div>`;
 }
 
-function listRows(ranked, days, dayKeys) {
+function listRows(ranked, days, dayKeys, board = "overall") {
   return ranked
     .slice(3, SITE_MAX)
     .map((u, i) => {
       const rank = i + 4;
-      const explain = scoreExplainer(u, days);
+      const explain = scoreExplainer(u, days, board);
       return `
-        <li class="row">
+        <li>
+        <details class="row-details">
+          <summary class="row">
           <span class="rank">${rank}</span>
           <img class="avatar" src="https://github.com/${esc(u.login)}.png?size=48" alt="" loading="lazy"/>
           <span class="who">
             ${personBlock(u, { compact: true })}
-            <span class="meta">${esc(explain.activity)}${explain.from.includes("from") ? ` · ${esc(explain.from)}` : ""}</span>
+            <span class="meta">${esc(explain.activity)}${explain.from.includes("code") || explain.from.includes("review") || explain.from.includes("issue") ? ` · ${esc(explain.from)}` : ""}</span>
             ${windowBreakdownBar(u, days)}
           </span>
           <span class="sparkwrap">${sparkline(u.days, dayKeys)}</span>
           <span class="pts" title="${esc(explain.from)}">${explain.pts}</span>
+          </summary>
+          ${auditBlock(u, days)}
+        </details>
         </li>`;
     })
     .join("");
@@ -260,13 +335,15 @@ function whatCountsSection(meta) {
   const branches = (pr.count_merges_to || []).join(" or ");
   const dupes = (is.duplicate_labels || []).join(", ");
   const prDd = pr.daily_diminishing;
-  const isDd = is.daily_diminishing;
+  const factors = prDd?.factors || [];
+  const factorNote = factors.length
+    ? factors
+        .map((f, i) => `${i + 1}${i === factors.length - 1 ? "+" : ""}=${Math.round(f * 100)}%`)
+        .join(", ")
+    : "";
   const pp = pr.points || {};
   const prMin = pp.base ?? 10;
-  const prMax = Math.round((pp.base || 10) + (pp.max_bonus || 12));
-  const prDayCap = pr.max_points_per_day;
-  const rvDayCap = rv.max_points_per_day;
-  const unrev = pr.unreviewed_multiplier;
+  const prMax = Math.round((pp.base || 10) + (pp.max_bonus || 4));
   const reviewLo = Math.min(
     ...[rv.commented_points, rv.approved_points, rv.changes_requested_points].filter((n) =>
       Number.isFinite(n)
@@ -277,80 +354,70 @@ function whatCountsSection(meta) {
       Number.isFinite(n)
     )
   );
+  const diff = is.difficulty_points || {};
+  const diffRange = Object.values(diff).length
+    ? `${Math.min(...Object.values(diff))}–${Math.max(...Object.values(diff))}`
+    : "—";
   return `
     <section class="whatcounts">
       <h2>How points work</h2>
       <div class="score-guide">
         <p class="score-guide-lead">
-          Ranked by the <b>selected window</b> (past 7 or 14 days), not career total.
-          A day of shipping and a day of reviewing are in the same band. Merging
-          70 times in one day is still one day.
+          Ranked by a <b>rolling ${meta.windows_days?.[0] ?? 7}- or ${meta.windows_days?.[1] ?? 14}-day window</b>,
+          not career total and not UTC midnight. Shipping, reviewing, and finding bugs
+          are different jobs — they share one overall score, and each has its own board.
+          Open any person to see the ledger.
         </p>
         <div class="score-math">
           <div class="sm">
             <span class="sm-lbl">Typical merged PR</span>
             <span class="sm-val">${prMin}–${prMax} pts</span>
-            <span class="sm-note">base ${prMin} + size bonus up to ${pp.max_bonus ?? 12} (flattens after ~${pp.half_life_lines ?? 60} lines)${
-              Number.isFinite(unrev) && unrev < 1
-                ? ` · unreviewed ×${unrev}`
-                : ""
-            }</span>
+            <span class="sm-note">base ${prMin} + size bonus up to ${pp.max_bonus ?? 4} (a small input, not the definition of value). High-impact labels ×${pr.multipliers?.high_impact ?? 1.5}${pr.bug_fix_bonus ? ` · bug-fix +${pr.bug_fix_bonus}` : ""}</span>
           </div>
           <div class="sm">
-            <span class="sm-lbl">A day of shipping</span>
-            <span class="sm-val">cap ${prDayCap ?? "—"} pts</span>
-            <span class="sm-note">~2 solid PRs. Extra merges the same day add nothing once the cap is hit</span>
+            <span class="sm-lbl">Same-day extra PRs</span>
+            <span class="sm-val">diminishing, no cap</span>
+            <span class="sm-note">${factorNote || "1st and 2nd full value; later PRs still count"}. Rolling 24 hours, not a UTC-day reset.</span>
           </div>
           <div class="sm">
             <span class="sm-lbl">Substantive review</span>
             <span class="sm-val">${reviewLo}–${reviewHi} pts</span>
-            <span class="sm-note">comment / approve / request-changes · one per PR · cap ${rvDayCap ?? "—"} pts/day</span>
+            <span class="sm-note">outcome (comment / approve / request-changes)${rv.inline_comment_bonus ? ` · +${rv.inline_comment_bonus} for inline comments` : ""}${rv.addressed_changes_bonus ? ` · +${rv.addressed_changes_bonus} if requested changes later merge` : ""}. Authors are not penalized for lack of review.</span>
           </div>
           <div class="sm">
             <span class="sm-lbl">Issue filed / closed</span>
             <span class="sm-val">+${is.created_points} / +${is.closed_bonus}</span>
-            <span class="sm-note">max <b>${is.max_points_per_day ?? 6} issue pts / day</b></span>
+            <span class="sm-note">${is.bug_points ? `unlabeled bug +${is.bug_points}. ` : ""}A <code>difficulty: 1…6</code> label replaces the flat file points (${diffRange}). Finding a real bug can beat a tiny PR.</span>
           </div>
         </div>
         <p class="score-example">
-          <b>Worked example:</b> two reviewed PRs in a day ≈ ${prDayCap ?? 36} pts (the daily cap).
-          Seventy-one unreviewed merges that same day still ≈ ${prDayCap ?? 36} pts — not 190.
-          Coding five days that way beats one dump. A review (${rv.approved_points ?? 8}–${rv.changes_requested_points ?? 10})
-          is part of a day, not a substitute for a week of shipping.
+          <b>Worked example:</b> two PRs in 24h both score in full. A third is worth 80%, a sixth+ still 35% — never zero.
+          A 71-PR burst is still a burst (most of those PRs sit on the 35% floor), but a 7-PR day is worth more than a 2-PR day.
+          First contribution is a badge, not a point multiplier.
         </p>
       </div>
       <div class="wc-grid">
         <div class="wc">
           <b>Pull requests</b>
-          <p>Counts = every merged PR you authored, any branch. Points only for merges into <code>${esc(branches)}</code>. Lockfiles / generated / vendored paths are subtracted from size using per-file line counts. ${prDd ? `After ${prDd.after} merges/day, further PRs decay toward zero. ` : ""}${
-            Number.isFinite(prDayCap) ? `<b>Hard cap ${prDayCap} PR pts/day.</b>` : ""
-          }</p>
+          <p>Counts = every merged PR you authored, any branch. Points only for merges into <code>${esc(branches)}</code>. Lockfiles / generated / vendored paths are subtracted from size. Docs-only PRs are classified separately (not a flat +25%). ${factorNote ? `24h diminishing: ${esc(factorNote)}.` : ""}</p>
         </div>
         <div class="wc">
           <b>Reviews</b>
-          <p>Counts = unique PRs you reviewed (submitted review or inline comments), including open and unmerged PRs. Points: <b>Commented</b> (+${rv.commented_points ?? 0}, ≥${rv.commented_min_body_length ?? rv.min_body_length} chars),
-          <b>Approved</b> (+${rv.approved_points}), or <b>Changes requested</b>
-          (+${rv.changes_requested_points}, ≥${rv.min_body_length} chars). Inline comments add to body length. ${
+          <p>Counts = unique PRs you reviewed (submitted review or inline comments), including open and unmerged PRs. Points follow <b>outcome</b>, plus bonuses for inline comments, reviewing a nontrivial PR, and requested changes that later merge. A short review that names a real defect still scores; a padded LGTM does not. ${
             rv.exclude_self_review ? "No self-reviews. " : ""
-          }${
-            rv.one_per_pr_per_reviewer ? "Best review per PR (not the first click). " : ""
-          }${Number.isFinite(rvDayCap) ? `Cap ${rvDayCap} pts/day. ` : ""}Bots never appear.</p>
+          }${rv.one_per_pr_per_reviewer ? "Best review per PR. " : ""}Bots never appear.</p>
         </div>
         <div class="wc">
           <b>Issues</b>
-          <p>Counts = issues you opened (including duplicates). Close bonus (+${is.closed_bonus}) goes to the person who closed it. +${is.created_points} to open a valid issue.
+          <p>Counts = issues you opened (including duplicates). Close bonus (+${is.closed_bonus}) goes to the person who closed it. +${is.created_points} to open a valid issue${is.bug_points ? `, +${is.bug_points} if labeled bug` : ""}.
           Rejected as ${esc(dupes)} / not-planned score nothing.
-          ${isDd ? `Burst decay after ${isDd.after}/day. ` : ""}${
-    Number.isFinite(is.max_points_per_day)
-      ? `<b>Hard cap ${is.max_points_per_day} issue pts/day.</b>`
-      : ""
-  }</p>
+          Apply <code>difficulty: 1…6</code> when the bug actually mattered — that is the intended quality signal.</p>
         </div>
         <div class="wc">
           <b>Humans only</b>
           <p>Dependabot, GitHub Actions, Renovate, <code>[bot]</code> accounts, and
           named agents (MantisCartography, Codex, Copilot) are excluded. Rankings track
-          who’s actively shipping <i>now</i>.</p>
+          who’s actively shipping <i>now</i>. First PR / first review / first bug report are badges, not extra points.</p>
         </div>
       </div>
     </section>`;
@@ -396,7 +463,6 @@ function highlightsSection(users, categories) {
 // -----------------------------------------------------------------------------
 export function renderHtml(users, meta) {
   const windowsDays = meta.windows_days || [7, 14];
-  const primary = windowsDays[0];
   const dayKeys = lastDayKeys(Math.max(...windowsDays));
 
   const totalPRs = users.reduce((a, u) => a + u.counts.prs, 0);
@@ -404,32 +470,51 @@ export function renderHtml(users, meta) {
   const totalIssues = users.reduce((a, u) => a + u.counts.confirmed_issues, 0);
   const totalManual = users.reduce((a, u) => a + (u.counts.manual || 0), 0);
 
-  const panels = windowsDays.map((days, i) => {
-    const ranked = rankedFor(users, days, primary);
-    return { days, id: `w${days}`, first: i === 0, ranked };
-  });
+  const windowInputs = windowsDays
+    .map((days, i) => `<input type="radio" name="window" id="tab-w${days}" ${i === 0 ? "checked" : ""}/>`)
+    .join("");
+  const boardInputs = BOARDS.map(
+    (b, i) => `<input type="radio" name="board" id="board-${b.id}" ${i === 0 ? "checked" : ""}/>`
+  ).join("");
+  const windowLabels = windowsDays
+    .map((days) => `<label for="tab-w${days}">${windowLabel(days)}</label>`)
+    .join("");
+  const boardLabels = BOARDS.map((b) => `<label for="board-${b.id}">${b.label}</label>`).join("");
 
-  const tabInputs = panels
-    .map((p) => `<input type="radio" name="window" id="tab-${p.id}" ${p.first ? "checked" : ""}/>`)
-    .join("");
-  const tabLabels = panels
-    .map((p) => `<label for="tab-${p.id}">${windowLabel(p.days)}</label>`)
-    .join("");
-  const boards = panels
+  const panels = [];
+  for (const days of windowsDays) {
+    for (const board of BOARDS) {
+      const ranked = rankedFor(users, days, board.id);
+      panels.push({
+        key: `w${days}-${board.id}`,
+        days,
+        board: board.id,
+        ranked,
+      });
+    }
+  }
+  const boardsHtml = panels
     .map(
-      (p) => `<section class="panel" data-for="tab-${p.id}">
-        ${podium(p.ranked, p.days)}
-        <ol class="board">${listRows(p.ranked, p.days, dayKeys)}</ol>
+      (p) => `<section class="panel" data-window="w${p.days}" data-board="${p.board}">
+        ${podium(p.ranked, p.days, p.board)}
+        <ol class="board">${listRows(p.ranked, p.days, dayKeys, p.board)}</ol>
         ${p.ranked.length > SITE_MAX ? `<p class="more">…and ${p.ranked.length - SITE_MAX} more contributors</p>` : ""}
       </section>`
     )
     .join("");
+
   const boardVisibility = panels
-    .map((p) => `#tab-${p.id}:checked ~ .boards .panel[data-for="tab-${p.id}"] { display: block; }`)
+    .map(
+      (p) =>
+        `.wrap:has(#tab-w${p.days}:checked):has(#board-${p.board}:checked) .panel[data-window="w${p.days}"][data-board="${p.board}"] { display: block; }`
+    )
     .join("\n    ");
-  const activeTab = panels
-    .map((p) => `#tab-${p.id}:checked ~ .tabs label[for="tab-${p.id}"]`)
+  const activeWindowTab = windowsDays
+    .map((days) => `.wrap:has(#tab-w${days}:checked) .tabs-window label[for="tab-w${days}"]`)
     .join(", ");
+  const activeBoardTab = BOARDS.map(
+    (b) => `.wrap:has(#board-${b.id}:checked) .tabs-board label[for="board-${b.id}"]`
+  ).join(", ");
 
   const lookback = meta.lookback_days;
   const scopeLbl = `last ${lookback}d`;
@@ -480,6 +565,7 @@ export function renderHtml(users, meta) {
     --c-pr: var(--indigo);
     --c-review: var(--sky);
     --c-issue: #c9a227;
+    --c-docs: #2a9d8f;
     --c-other: #6b5bd4;
     --shadow: 0 1px 0 rgba(12,18,48,.04), 0 12px 32px rgba(12,18,48,.06);
     --radius: 12px;
@@ -576,16 +662,21 @@ export function renderHtml(users, meta) {
   .tile-scope { color: var(--faint); font-size: .66rem; margin-top: .2rem; }
 
   .tabs {
-    display: inline-flex; gap: .2rem; padding: .22rem; margin-bottom: 1.35rem;
+    display: inline-flex; gap: .2rem; padding: .22rem;
     background: var(--panel); border: 1px solid var(--border); border-radius: 999px;
     box-shadow: var(--shadow);
   }
-  input[type="radio"][name="window"] { position: absolute; opacity: 0; pointer-events: none; }
+  .tab-rows {
+    display: flex; flex-wrap: wrap; gap: .55rem; align-items: center;
+    margin-bottom: 1.35rem;
+  }
+  input[type="radio"][name="window"],
+  input[type="radio"][name="board"] { position: absolute; opacity: 0; pointer-events: none; }
   .tabs label {
     cursor: pointer; padding: .42rem 1.05rem; border-radius: 999px; font-size: .8rem;
     font-weight: 600; color: var(--muted); transition: color .15s, background .15s;
   }
-  ${activeTab} { color: var(--accent-ink); background: var(--accent); }
+  ${activeWindowTab}, ${activeBoardTab} { color: var(--accent-ink); background: var(--accent); }
 
   .boards .panel { display: none; }
   ${boardVisibility}
@@ -599,6 +690,9 @@ export function renderHtml(users, meta) {
     margin: 0 0 1.35rem;
     padding-top: 1.15rem;
   }
+  .pod-wrap { min-width: 0; }
+  .pod-wrap > summary { list-style: none; cursor: pointer; }
+  .pod-wrap > summary::-webkit-details-marker { display: none; }
   .pod {
     position: relative; text-align: center;
     background: var(--panel);
@@ -681,12 +775,15 @@ export function renderHtml(users, meta) {
     background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
     box-shadow: var(--shadow); overflow: hidden;
   }
+  .board > li { border-bottom: 1px solid var(--border); }
+  .board > li:last-child { border-bottom: 0; }
+  .row-details > summary { list-style: none; cursor: pointer; }
+  .row-details > summary::-webkit-details-marker { display: none; }
   .row {
     display: grid; grid-template-columns: 1.7rem 2.2rem 1fr auto auto;
     align-items: center; gap: .75rem; padding: .72rem .9rem;
-    border-bottom: 1px solid var(--border);
   }
-  .row:last-child { border-bottom: 0; }
+  .row-details[open] > summary,
   .row:hover { background: var(--panel-2); }
   .rank {
     text-align: center; color: var(--faint); font-weight: 700;
@@ -707,7 +804,8 @@ export function renderHtml(users, meta) {
     background: var(--border); margin-top: .14rem; max-width: 240px;
   }
   .seg-pr { background: var(--c-pr); } .seg-review { background: var(--c-review); }
-  .seg-issue { background: var(--c-issue); } .seg-other { background: var(--c-other); }
+  .seg-issue { background: var(--c-issue); } .seg-docs { background: var(--c-docs); }
+  .seg-other { background: var(--c-other); }
   .sparkwrap { width: 96px; }
   .spark { width: 96px; height: 28px; display: block; }
   .spark-line { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
@@ -717,6 +815,37 @@ export function renderHtml(users, meta) {
     font-variant-numeric: tabular-nums; min-width: 3ch;
   }
   .more { text-align: center; color: var(--faint); font-size: .8rem; margin: 1rem 0 0; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: .25rem; justify-content: center; margin-top: .35rem; }
+  .who .chips { justify-content: flex-start; }
+  .chip {
+    font-size: .62rem; font-weight: 600; letter-spacing: .02em;
+    color: var(--muted); background: var(--accent-soft);
+    border-radius: 999px; padding: .08rem .45rem; white-space: nowrap;
+  }
+  .audit {
+    margin: 0 .75rem .85rem; padding: .85rem .95rem;
+    background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
+    text-align: left;
+  }
+  .pod-wrap[open] .audit { margin: .45rem 0 .2rem; }
+  .audit-score { font-size: .92rem; margin-bottom: .2rem; }
+  .audit-activity { color: var(--muted); font-size: .78rem; margin-bottom: .55rem; }
+  .audit-grid {
+    display: grid; grid-template-columns: 1fr auto; gap: .18rem .9rem;
+    font-variant-numeric: tabular-nums; font-size: .84rem;
+    max-width: 16rem; margin: .35rem 0 .7rem;
+  }
+  .audit-k { color: var(--muted); }
+  .audit-v { text-align: right; font-weight: 600; }
+  .audit-total { border-top: 1px solid var(--border); padding-top: .35rem; margin-top: .15rem; color: var(--text); font-weight: 700; }
+  .ledger { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .28rem; }
+  .ledger li { font-size: .75rem; color: var(--muted); line-height: 1.4; }
+  .ledger a { color: var(--accent); text-decoration: none; }
+  .ledger a:hover { text-decoration: underline; }
+  .led-pts { font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; margin-right: .35rem; }
+  .led-note { display: block; color: var(--faint); font-size: .7rem; }
+  .led-more, .led-empty { color: var(--faint); font-size: .72rem; margin: .4rem 0 0; }
 
   .legend {
     display: flex; flex-wrap: wrap; gap: .9rem; margin: 1.25rem 0 0;
@@ -830,14 +959,18 @@ export function renderHtml(users, meta) {
 
     <div class="tiles">${tiles}</div>
 
-    ${tabInputs}
-    <div class="tabs">${tabLabels}</div>
-    <div class="boards">${boards}</div>
+    ${windowInputs}${boardInputs}
+    <div class="tab-rows">
+      <div class="tabs tabs-window">${windowLabels}</div>
+      <div class="tabs tabs-board">${boardLabels}</div>
+    </div>
+    <div class="boards">${boardsHtml}</div>
 
     <div class="legend">
-      <span><i style="background:var(--c-pr)"></i>Pull requests</span>
+      <span><i style="background:var(--c-pr)"></i>Code</span>
       <span><i style="background:var(--c-review)"></i>Reviews</span>
       <span><i style="background:var(--c-issue)"></i>Issues</span>
+      <span><i style="background:var(--c-docs)"></i>Docs</span>
       <span><i style="background:var(--c-other)"></i>Community</span>
     </div>
 
@@ -846,9 +979,9 @@ export function renderHtml(users, meta) {
     ${whatCountsSection(meta)}
 
     <footer>
-      Ranked by points in the selected window only — not lifetime totals.<br/>
-      PR / review / issue columns are raw activity counts (no daily cap). Points still cap and decay.<br/>
-      Why a score looks “small”: same-day PR floods are discounted; issues hard-capped. Hover a total to see the split.<br/>
+      Ranked by points in a rolling window — not lifetime totals, not UTC midnight.<br/>
+      Open any person for the ledger: code / reviews / issues / docs, event by event.<br/>
+      Extra PRs the same day still count, at a declining rate. There is no hard daily ceiling.<br/>
       rules v${meta.rules_version} · GitHub listing + event log + approved manual credits<br/>
       Part of <a href="https://mantis.csail.mit.edu" target="_blank" rel="noopener">Mantis @ MIT CSAIL</a>
     </footer>
