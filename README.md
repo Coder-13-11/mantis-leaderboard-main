@@ -20,8 +20,8 @@ code / review / issues ledger.
 | 🥇 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 7 | 9 | 1 |
 | 🥈 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **85** | 9 | 0 | 0 |
 | 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **82** | 6 | 0 | 12 |
-| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **66** | 5 | 2 | 2 |
-| #5 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **65** | 5 | 0 | 6 |
+| #4 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **74** | 6 | 0 | 6 |
+| #5 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **66** | 5 | 2 | 2 |
 | #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
 | #7 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **50** | 4 | 1 | 27 |
 | #8 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 5 | 0 | 0 |
@@ -38,12 +38,12 @@ code / review / issues ledger.
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **149** | 12 | 3 | 4 |
 | #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **109** | 11 | 0 | 0 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **104** | 8 | 0 | 11 |
-| #7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **95** | 14 | 0 | 3 |
-| #8 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **93** | 7 | 0 | 7 |
+| #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **102** | 8 | 0 | 7 |
+| #8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **95** | 14 | 0 | 3 |
 | #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
 | #10 | Name not found ([@Copilot](https://github.com/Copilot)) | **84** | 0 | 10 | 0 |
 
-_Last updated: Sat, 15 Aug 2026 17:54:09 GMT_
+_Last updated: Sat, 15 Aug 2026 18:44:16 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
