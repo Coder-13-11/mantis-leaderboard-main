@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T15:53:56.726Z",
+  "generated_at": "2026-08-16T16:38:23.910Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-16T15:53:12.611Z",
+    "run_started_at": "2026-08-16T16:37:18.248Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-16T00:00:00.000Z",
     "repos": [
@@ -90,7 +90,7 @@
     "checksum_ok": true,
     "event_counts": {
       "prs": 3404,
-      "issues": 2079,
+      "issues": 2080,
       "reviews": 10023,
       "review_comments": 13932
     }
@@ -2686,7 +2686,7 @@
         "2026-08-16": {
           "prs": 2,
           "reviews": 0,
-          "confirmed_issues": 0,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
@@ -3613,7 +3613,7 @@
       "counts": {
         "prs": 69,
         "reviews": 75,
-        "confirmed_issues": 97,
+        "confirmed_issues": 98,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 69,
@@ -4753,7 +4753,7 @@
         "7": {
           "prs": 7,
           "reviews": 2,
-          "confirmed_issues": 3,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 6,
@@ -4765,7 +4765,7 @@
         "14": {
           "prs": 14,
           "reviews": 3,
-          "confirmed_issues": 5,
+          "confirmed_issues": 6,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 9,
@@ -13472,24 +13472,24 @@
         }
       ],
       "windows": {
-        "7": 43,
-        "14": 109
+        "7": 38,
+        "14": 98
       },
       "windowCounts": {
         "7": {
-          "prs": 4,
+          "prs": 3,
           "reviews": 0,
           "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 2,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 1,
           "bug_prs": 0
         },
         "14": {
-          "prs": 11,
+          "prs": 10,
           "reviews": 0,
           "confirmed_issues": 1,
           "fixed_bonuses": 0,
@@ -13503,14 +13503,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 30,
+          "pr": 25,
           "review": 0,
           "issue": 0,
           "docs": 13,
           "other": 0
         },
         "14": {
-          "pr": 96,
+          "pr": 85,
           "review": 0,
           "issue": 0,
           "docs": 13,
@@ -13519,15 +13519,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 43,
-          "shipping": 30,
+          "overall": 38,
+          "shipping": 25,
           "review": 0,
           "bugs": 0,
           "docs": 13
         },
         "14": {
-          "overall": 109,
-          "shipping": 96,
+          "overall": 98,
+          "shipping": 85,
           "review": 0,
           "bugs": 0,
           "docs": 13
@@ -13535,18 +13535,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-08-09T16:12:46Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2493",
-            "title": "fix: stop corrupting US-format dates in serialize_dates ingest",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2493",
-            "notes": [
-              "6th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-11T22:32:16Z",
             "category": "pr",
@@ -13582,16 +13570,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-02T15:58:53Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3359",
-            "title": "fix(layout): stop duplicate theme toggle on leaderboard, usage, developer pages",
-            "url": "https://github.com/KellisLab/Mantis/pull/3359",
-            "notes": []
-          },
           {
             "at": "2026-08-08T01:54:29Z",
             "category": "pr",
@@ -13709,7 +13687,7 @@
           }
         ]
       },
-      "rolling_total": 43,
+      "rolling_total": 38,
       "rank": 9
     },
     {
@@ -36168,7 +36146,7 @@
         "7": {
           "prs": 0,
           "reviews": 3,
-          "confirmed_issues": 2,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
