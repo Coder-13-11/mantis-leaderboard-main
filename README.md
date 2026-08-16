@@ -17,33 +17,33 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **88** | 7 | 2 | 3 |
-| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 7 | 9 | 1 |
-| 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **81** | 6 | 0 | 11 |
-| #4 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **74** | 6 | 0 | 6 |
-| #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **58** | 6 | 0 | 1 |
-| #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
-| #7 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **49** | 4 | 0 | 0 |
-| #8 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 5 | 0 | 0 |
-| #9 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **48** | 4 | 1 | 23 |
-| #10 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **48** | 4 | 0 | 0 |
+| 1 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **98** | 6 | 0 | 6 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **94** | 6 | 0 | 11 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **88** | 7 | 2 | 3 |
+| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **74** | 7 | 9 | 1 |
+| 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **62** | 6 | 0 | 1 |
+| 6 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **58** | 4 | 1 | 23 |
+| 7 | [@charleywolf](https://github.com/charleywolf) | **56** | 4 | 0 | 0 |
+| 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
+| 9 | [@VishwanathanV](https://github.com/VishwanathanV) | **49** | 4 | 0 | 0 |
+| 10 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **467** | 97 | 2 | 5 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **408** | 78 | 0 | 7 |
-| 🥉 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **171** | 14 | 3 | 5 |
-| #4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **149** | 13 | 12 | 2 |
-| #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 11 | 0 | 1 |
-| #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **104** | 8 | 0 | 11 |
-| #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **102** | 8 | 0 | 7 |
-| #8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **95** | 14 | 0 | 3 |
-| #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
-| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **83** | 5 | 5 | 0 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **485** | 78 | 0 | 7 |
+| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **471** | 97 | 2 | 5 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **211** | 14 | 3 | 5 |
+| 4 | [@charleywolf](https://github.com/charleywolf) | **161** | 8 | 0 | 11 |
+| 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **141** | 13 | 12 | 2 |
+| 6 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **130** | 8 | 0 | 7 |
+| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **118** | 11 | 0 | 1 |
+| 8 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **111** | 6 | 0 | 19 |
+| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **103** | 14 | 0 | 3 |
+| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **91** | 3 | 19 | 2 |
 
-_Last updated: Sun, 16 Aug 2026 04:19:12 GMT_
+_Last updated: Sun, 16 Aug 2026 04:32:31 GMT_
 <!-- LEADERBOARD:END -->
 
 
