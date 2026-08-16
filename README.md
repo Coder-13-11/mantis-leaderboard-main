@@ -17,33 +17,33 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 🥇 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 7 | 9 | 1 |
-| 🥈 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **81** | 6 | 0 | 11 |
-| 🥉 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **74** | 6 | 0 | 6 |
-| #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **67** | 5 | 2 | 3 |
+| 🥇 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **88** | 7 | 2 | 3 |
+| 🥈 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 7 | 9 | 1 |
+| 🥉 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **81** | 6 | 0 | 11 |
+| #4 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **74** | 6 | 0 | 6 |
 | #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **58** | 6 | 0 | 1 |
 | #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
-| #7 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 5 | 0 | 0 |
-| #8 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **48** | 4 | 1 | 23 |
-| #9 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **48** | 4 | 0 | 0 |
-| #10 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **39** | 3 | 0 | 0 |
+| #7 | Name not found ([@VishwanathanV](https://github.com/VishwanathanV)) | **49** | 4 | 0 | 0 |
+| #8 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 5 | 0 | 0 |
+| #9 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **48** | 4 | 1 | 23 |
+| #10 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **48** | 4 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 🥇 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **467** | 97 | 2 | 5 |
-| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **409** | 78 | 0 | 8 |
-| 🥉 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **150** | 12 | 3 | 5 |
+| 🥈 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **408** | 78 | 0 | 7 |
+| 🥉 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **171** | 14 | 3 | 5 |
 | #4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **149** | 13 | 12 | 2 |
 | #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 11 | 0 | 1 |
 | #6 | Name not found ([@charleywolf](https://github.com/charleywolf)) | **104** | 8 | 0 | 11 |
 | #7 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **102** | 8 | 0 | 7 |
 | #8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **95** | 14 | 0 | 3 |
 | #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
-| #10 | Name not found ([@Copilot](https://github.com/Copilot)) | **84** | 0 | 10 | 0 |
+| #10 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **83** | 5 | 5 | 0 |
 
-_Last updated: Sun, 16 Aug 2026 03:10:32 GMT_
+_Last updated: Sun, 16 Aug 2026 04:19:12 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup
