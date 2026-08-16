@@ -81,6 +81,9 @@ function toIssueRecord(i) {
     updatedAt: i.updatedAt,
     author: i.author?.login || null,
     labels: (i.labels?.nodes || []).map((l) => (typeof l === "string" ? l : l.name)),
+    // { "imp:8": "MantisCartography", ... } — who applied each label, so the
+    // scorer can ignore severity labels the filer put on their own issue.
+    labelActors: i.labelActors || null,
   };
 }
 

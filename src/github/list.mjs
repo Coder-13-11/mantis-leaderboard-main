@@ -170,6 +170,14 @@ export async function listIssues(token, repo, sinceIso) {
   return { nodes, warnings: [] };
 }
 
+// Pulls the close actor AND who applied each label, for closed issues only.
+//
+// The label actor matters because severity labels are only trustworthy when
+// somebody other than the filer applied them: measured across Mantis +
+// MantisAPI, 44 of 55 `diff:N` labelling events were the issue's own author
+// labelling their own ticket. Scoring a self-applied severity label would let
+// people set their own payout. Both event types come back in one query on the
+// same chunks, so this costs no extra round trips.
 async function hydrateIssueClosers(token, issues) {
   const closed = issues.filter((i) => i.closed || i.state === "CLOSED");
   const query = `
@@ -185,6 +193,14 @@ async function hydrateIssueClosers(token, issues) {
               }
             }
           }
+          labelEvents: timelineItems(first: 60, itemTypes: [LABELED_EVENT]) {
+            nodes {
+              ... on LabeledEvent {
+                actor { login }
+                label { name }
+              }
+            }
+          }
         }
       }
       rateLimit { remaining resetAt }
@@ -194,9 +210,18 @@ async function hydrateIssueClosers(token, issues) {
     const data = await graphql(token, query, { ids: chunk.map((x) => x.id) });
     const byId = new Map((data?.nodes || []).filter(Boolean).map((n) => [n.id, n]));
     for (const issue of chunk) {
-      const events = byId.get(issue.id)?.timelineItems?.nodes || [];
+      const node = byId.get(issue.id);
+      const events = node?.timelineItems?.nodes || [];
       const last = [...events].reverse().find((e) => e?.actor || e?.createdAt) || events[events.length - 1];
       issue.closedBy = last?.actor?.login || null;
+
+      // label name (lowercased) -> login that applied it. Last writer wins.
+      const actors = {};
+      for (const e of node?.labelEvents?.nodes || []) {
+        const name = e?.label?.name;
+        if (name) actors[String(name).toLowerCase()] = e?.actor?.login || null;
+      }
+      issue.labelActors = actors;
     }
   }
 }

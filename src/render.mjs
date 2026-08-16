@@ -393,14 +393,15 @@ function whatCountsSection(meta) {
           </div>
           <div class="sm">
             <span class="sm-lbl">Issues and bugs</span>
-            <span class="sm-val">+${is.created_points ?? 1} to file${is.bug_points ? ` · +${is.bug_points} bug` : ""}</span>
-            <span class="sm-note">Closing a ticket is 0 — too easy to farm. Confirmed / high-impact / <code>difficulty: 1…6</code> pay ${is.confirmed_points ?? 10} / ${is.impact_points ?? 16} / ${diffRange}. Issue volume decays faster than PRs.</span>
+            <span class="sm-val">+${is.created_points ?? 1} to file · +${is.closed_bonus ?? 8} when fixed</span>
+            <span class="sm-note">Filing is nearly free and capped at ${is.max_points_per_day ?? 6} pts/day — anyone can open a ticket. The points land when <b>someone else</b> closes your report as completed${is.severity_bonus?.high ? `, plus up to +${is.severity_bonus.high} if a maintainer or the triage agent tagged it high severity` : ""}. Closing your own issue pays nothing, and the fix bonus is never capped or decayed.</span>
           </div>
         </div>
         <p class="score-example">
           <b>Worked example:</b> two PRs in 24h both score in full. A third is worth 80%, a sixth+ still 35% — never zero.
           A 71-PR burst is still a burst (most of those PRs sit on the 35% floor), but a 7-PR day is worth more than a 2-PR day.
-          Twenty-seven ordinary issues still cannot beat a merged PR.
+          Twenty-seven tickets nobody acts on still cannot beat a merged PR — but twenty-seven that <i>get fixed</i> beat it many times over,
+          and that is the point: finding real bugs is valuable, filing is not.
         </p>
       </div>
       <div class="wc-grid">
