@@ -21,7 +21,7 @@ code / review / issues ledger.
 | 🥈 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **81** | 6 | 0 | 11 |
 | 🥉 | Name not found ([@alexandragreenwood](https://github.com/alexandragreenwood)) | **74** | 6 | 0 | 6 |
 | #4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **67** | 5 | 2 | 3 |
-| #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **64** | 7 | 0 | 0 |
+| #5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **57** | 6 | 0 | 0 |
 | #6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
 | #7 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **50** | 4 | 1 | 27 |
 | #8 | Name not found ([@SufianTA](https://github.com/SufianTA)) | **49** | 5 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | #9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 6 | 0 | 19 |
 | #10 | Name not found ([@Copilot](https://github.com/Copilot)) | **84** | 0 | 10 | 0 |
 
-_Last updated: Sat, 15 Aug 2026 23:53:09 GMT_
+_Last updated: Sun, 16 Aug 2026 01:55:12 GMT_
 <!-- LEADERBOARD:END -->
 
 ## Setup

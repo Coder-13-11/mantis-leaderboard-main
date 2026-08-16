@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T23:53:09.392Z",
+  "generated_at": "2026-08-16T01:55:12.862Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -62,9 +62,9 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-15T23:52:07.978Z",
+    "run_started_at": "2026-08-16T01:54:03.051Z",
     "lookback_days": 365,
-    "lookback_since": "2025-08-15T00:00:00.000Z",
+    "lookback_since": "2025-08-16T00:00:00.000Z",
     "repos": [
       "KellisLab/Mantis",
       "KellisLab/MantisAPI",
@@ -88,10 +88,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3397,
+      "prs": 3398,
       "issues": 2061,
-      "reviews": 9966,
-      "review_comments": 13920
+      "reviews": 9969,
+      "review_comments": 13922
     }
   },
   "review_rules": {
@@ -9054,12 +9054,12 @@
         }
       ],
       "windows": {
-        "7": 64,
+        "7": 57,
         "14": 109
       },
       "windowCounts": {
         "7": {
-          "prs": 7,
+          "prs": 6,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -9085,7 +9085,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 51,
+          "pr": 44,
           "review": 0,
           "issue": 0,
           "docs": 13,
@@ -9101,8 +9101,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 64,
-          "shipping": 51,
+          "overall": 57,
+          "shipping": 44,
           "review": 0,
           "bugs": 0,
           "docs": 13
@@ -9117,18 +9117,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-08-09T01:14:33Z",
-            "category": "pr",
-            "points": 7,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3357",
-            "title": "fix(map): pass semantic zoom to bag declutter instead of raw camera zoom",
-            "url": "https://github.com/KellisLab/Mantis/pull/3357",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
           {
             "at": "2026-08-09T13:35:27Z",
             "category": "pr",
@@ -9327,7 +9315,7 @@
           }
         ]
       },
-      "rolling_total": 64,
+      "rolling_total": 57,
       "rank": 5
     },
     {
@@ -40816,8 +40804,8 @@
         "2026-08-04": 16,
         "2026-08-08": 18,
         "2026-07-14": 9,
-        "2026-08-05": 7,
-        "2026-08-11": 9
+        "2026-08-11": 9,
+        "2026-08-05": 7
       },
       "dayCounts": {
         "2025-07-06": {
@@ -41840,7 +41828,7 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
-        "2026-08-05": {
+        "2026-08-11": {
           "prs": 0,
           "reviews": 1,
           "confirmed_issues": 0,
@@ -41852,7 +41840,7 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
-        "2026-08-11": {
+        "2026-08-05": {
           "prs": 0,
           "reviews": 1,
           "confirmed_issues": 0,
@@ -42363,16 +42351,16 @@
           "docs": 0,
           "other": 0
         },
-        "2026-08-05": {
+        "2026-08-11": {
           "pr": 0,
-          "review": 7,
+          "review": 9,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
-        "2026-08-11": {
+        "2026-08-05": {
           "pr": 0,
-          "review": 9,
+          "review": 7,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -43983,21 +43971,6 @@
           ]
         },
         {
-          "at": "2026-08-05T14:57:39Z",
-          "category": "review",
-          "points": 7,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#3549",
-          "title": "fix(space): bound synthesis map polling with a retryable timeout",
-          "url": "https://github.com/KellisLab/Mantis/pull/3549",
-          "notes": [
-            "commented",
-            "inline comments",
-            "nontrivial PR",
-            "3th review in 24h ×0.8"
-          ]
-        },
-        {
           "at": "2026-08-03T15:49:38Z",
           "category": "review",
           "points": 7,
@@ -44022,6 +43995,21 @@
             "commented",
             "inline comments",
             "nontrivial PR"
+          ]
+        },
+        {
+          "at": "2026-08-05T14:57:39Z",
+          "category": "review",
+          "points": 7,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#3549",
+          "title": "fix(space): bound synthesis map polling with a retryable timeout",
+          "url": "https://github.com/KellisLab/Mantis/pull/3549",
+          "notes": [
+            "commented",
+            "inline comments",
+            "nontrivial PR",
+            "3th review in 24h ×0.8"
           ]
         }
       ],
@@ -44213,21 +44201,6 @@
             ]
           },
           {
-            "at": "2026-08-05T14:57:39Z",
-            "category": "review",
-            "points": 7,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#3549",
-            "title": "fix(space): bound synthesis map polling with a retryable timeout",
-            "url": "https://github.com/KellisLab/Mantis/pull/3549",
-            "notes": [
-              "commented",
-              "inline comments",
-              "nontrivial PR",
-              "3th review in 24h ×0.8"
-            ]
-          },
-          {
             "at": "2026-08-03T15:49:38Z",
             "category": "review",
             "points": 7,
@@ -44252,6 +44225,21 @@
               "commented",
               "inline comments",
               "nontrivial PR"
+            ]
+          },
+          {
+            "at": "2026-08-05T14:57:39Z",
+            "category": "review",
+            "points": 7,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#3549",
+            "title": "fix(space): bound synthesis map polling with a retryable timeout",
+            "url": "https://github.com/KellisLab/Mantis/pull/3549",
+            "notes": [
+              "commented",
+              "inline comments",
+              "nontrivial PR",
+              "3th review in 24h ×0.8"
             ]
           }
         ]
@@ -93092,19 +93080,6 @@
           ]
         },
         {
-          "at": "2026-06-24T19:17:28Z",
-          "category": "review",
-          "points": 1,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1653",
-          "title": "feat(openclaw): bake trusted-proxy user identity patches into Docker image",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1653",
-          "notes": [
-            "commented",
-            "8th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2026-07-19T08:37:04Z",
           "category": "review",
           "points": 2,
@@ -93329,20 +93304,6 @@
           ]
         },
         {
-          "at": "2026-05-23T16:34:25Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1311",
-          "title": "Optimize API key and pricing list query shapes",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1311",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "12th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2026-05-23T16:04:54Z",
           "category": "review",
           "points": 2,
@@ -93381,103 +93342,6 @@
           "notes": [
             "commented",
             "14th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-01-04T21:00:45Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#845",
-          "title": "knowledge graph embeddings",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/845",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "14th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-05-23T17:53:50Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1317",
-          "title": "Use env-aware upload credentials for OpenClaw S3 backups",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1317",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "20th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-05-24T11:25:44Z",
-          "category": "review",
-          "points": 1,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1331",
-          "title": "Deploying Mercury",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1331",
-          "notes": [
-            "commented",
-            "31th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-05-26T19:47:43Z",
-          "category": "review",
-          "points": 4,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1339",
-          "title": "extended sc tasks",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1339",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "4th review in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-06-04T15:16:35Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1382",
-          "title": "Autoingestion Revamp (backend)",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1382",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "9th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-06-05T04:08:14Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1383",
-          "title": "GeneAgent",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1383",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "11th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-06-15T16:24:21Z",
-          "category": "review",
-          "points": 4,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1434",
-          "title": "FinAgent (Backend)",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1434",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "4th review in 24h ×0.65"
           ]
         },
         {
@@ -93526,27 +93390,13 @@
           "category": "review",
           "points": 2,
           "kind": "review",
-          "ref": "KellisLab/MantisAPI#2046",
-          "title": "Enable Rich Metadata Extraction for OpenAlex Search",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2046",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "38th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-07-21T17:33:10Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
           "ref": "KellisLab/MantisAPI#2043",
           "title": "Avoid duplicate user creation during NextAuth sync",
           "url": "https://github.com/KellisLab/MantisAPI/pull/2043",
           "notes": [
             "commented",
             "nontrivial PR",
-            "39th review in 24h ×0.35"
+            "38th review in 24h ×0.35"
           ]
         },
         {
@@ -93620,6 +93470,33 @@
           ]
         },
         {
+          "at": "2026-07-21T17:33:10Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2046",
+          "title": "Enable Rich Metadata Extraction for OpenAlex Search",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2046",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "41th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-06-24T19:17:28Z",
+          "category": "review",
+          "points": 1,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1653",
+          "title": "feat(openclaw): bake trusted-proxy user identity patches into Docker image",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1653",
+          "notes": [
+            "commented",
+            "8th review in 24h ×0.35"
+          ]
+        },
+        {
           "at": "2026-06-18T19:13:00Z",
           "category": "review",
           "points": 2,
@@ -93631,6 +93508,117 @@
             "commented",
             "nontrivial PR",
             "13th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-06-15T16:24:21Z",
+          "category": "review",
+          "points": 4,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1434",
+          "title": "FinAgent (Backend)",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1434",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "4th review in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-06-05T04:08:14Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1383",
+          "title": "GeneAgent",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1383",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "10th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-06-04T15:16:35Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1382",
+          "title": "Autoingestion Revamp (backend)",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1382",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "9th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-05-26T19:47:43Z",
+          "category": "review",
+          "points": 4,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1339",
+          "title": "extended sc tasks",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1339",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "4th review in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-05-24T11:25:44Z",
+          "category": "review",
+          "points": 1,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1331",
+          "title": "Deploying Mercury",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1331",
+          "notes": [
+            "commented",
+            "29th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-05-23T17:53:50Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1317",
+          "title": "Use env-aware upload credentials for OpenClaw S3 backups",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1317",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "19th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-05-23T16:34:25Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1311",
+          "title": "Optimize API key and pricing list query shapes",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1311",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "13th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-01-04T21:00:45Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#845",
+          "title": "knowledge graph embeddings",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/845",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "14th review in 24h ×0.35"
           ]
         }
       ],
