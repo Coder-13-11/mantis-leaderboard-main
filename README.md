@@ -46,69 +46,6 @@ code / review / issues ledger.
 _Last updated: Sun, 16 Aug 2026 04:19:12 GMT_
 <!-- LEADERBOARD:END -->
 
-## Setup
-
-**1. Create a read-only token.**
-GitHub → Settings → Developer settings → Fine-grained tokens → New token.
-
-- Resource owner: the org
-- Repository access: **All repositories** in the org if you want new Mantis
-  repos to show up automatically (`repo_discovery` in
-  [`config/rules.yml`](config/rules.yml)). Otherwise pick exactly the repos
-  listed under `repos:` — if a repo isn't visible to the token, the job
-  **fails** rather than silently reporting zero activity.
-- Permissions, set only these to Read, everything else No access:
-  Contents, Pull requests, Issues, Metadata (auto-required).
-
-Zero write permissions means this thing is physically incapable of changing
-anything else, even if there's a bug in it somewhere.
-
-**2. Add it as a secret.**
-Repo → Settings → Secrets and variables → Actions → New repository secret →
-name it `ORG_READ_TOKEN`, paste the token.
-
-**3. Run it.**
-Actions tab → "Update Leaderboard" → Run workflow (choose **full** the first time). After that it lists GitHub every 30 minutes, does a full audit once a day, and can also wake on a webhook (below).
-
-**Where results show up:** there's no GitHub Pages site here — Pages needs a
-paid plan for private repos. Instead every run commits the refreshed numbers
-straight into the repo:
-
-- this README's table above, updates itself
-- `site/index.html` — pull the repo and open it in a browser
-- `data/leaderboard.json` — scored snapshot
-- `data/store/` — the event log (every PR, review, inline comment, and issue). This is the database. Scores are recomputed from it each run.
-
-**Running it locally:**
-
-```bash
-npm install
-npm test
-GH_TOKEN=your_token SYNC_MODE=full npm run build
-open site/index.html
-```
-
-## Daily Discord digest
-
-A separate workflow posts the top 10 to a Discord channel once a day —
-just a webhook POST, no bot process to run or host.
-
-**1. Create an Incoming Webhook in Discord.**
-Channel → Edit Channel → Integrations → Webhooks → New Webhook → name it
-(e.g. "Mantis Leaderboard") → **Copy Webhook URL**.
-
-**2. Add it as a secret.**
-Repo → Settings → Secrets and variables → Actions → New repository secret →
-name it `DISCORD_WEBHOOK_URL`, paste the URL.
-
-**3. Test it.**
-Actions tab → "Daily Discord Digest" → Run workflow. It posts immediately;
-after that it runs on its own every day at 14:00 UTC (cron in
-`.github/workflows/discord-digest.yml` — edit the cron line for a different time).
-
-It reads the `data/leaderboard.json` the refresh already keeps current, so this
-job never needs `ORG_READ_TOKEN` — it can only read this repo's own committed
-file and POST to the one webhook URL you gave it.
 
 ## Near-real-time GitHub webhook (optional)
 
