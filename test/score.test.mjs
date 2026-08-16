@@ -28,14 +28,15 @@ const rules = {
     min_inline_length: 15,
     min_body_length: 20,
     commented_min_body_length: 40,
+    approved_min_body_length: 60,
     exclude_self_review: true,
     one_per_pr_per_reviewer: true,
     daily_diminishing: { window_hours: 24, factors: FACTORS },
   },
   issues: {
     created_points: 1,
-    closed_bonus: 0,
-    closed_bonus_to: "closer",
+    closed_bonus: 4,
+    closed_bonus_to: "reporter",
     bug_labels: ["bug"],
     bug_points: 6,
     confirmed_labels: ["confirmed"],
@@ -112,6 +113,81 @@ test("PR counts include non-main branches; points do not", () => {
   assert.equal(alice.breakdown.pr, 0);
 });
 
+test("a bare rubber-stamp approval scores nothing", () => {
+  const now = new Date().toISOString();
+  const stamp = (body) => ({
+    pullRequests: [
+      pr({
+        author: "alice",
+        reviews: [{ id: "r1", state: "APPROVED", body, submittedAt: now, author: { login: "bob" } }],
+      }),
+    ],
+    issues: [],
+  });
+  // 22 chars: clears the old shared min_body_length of 20, but not the
+  // approval-specific bar — this is exactly the LGTM case.
+  const rubber = score(stamp("LGTM, looks good to me"), rules).find((u) => u.login === "bob");
+  assert.equal(rubber?.breakdown.review ?? 0, 0);
+
+  // A real approval that explains what was checked still scores.
+  const real = score(
+    stamp("Approved — pulled this locally and verified the migration is idempotent against a seeded DB."),
+    rules
+  ).find((u) => u.login === "bob");
+  assert.ok(real.breakdown.review >= 6);
+});
+
+test("a short approval still scores when it carries a substantive inline comment", () => {
+  const now = new Date().toISOString();
+  const users = score(
+    {
+      pullRequests: [
+        pr({
+          author: "alice",
+          reviews: [{ id: "r1", state: "APPROVED", body: "lgtm", submittedAt: now, author: { login: "bob" } }],
+          reviewComments: [
+            {
+              author: { login: "bob" },
+              body: "this retry loop will spin forever if the socket is half-open",
+              createdAt: now,
+            },
+          ],
+        }),
+      ],
+      issues: [],
+    },
+    rules
+  );
+  const bob = users.find((u) => u.login === "bob");
+  assert.ok(bob.breakdown.review >= 6);
+});
+
+test("finding problems keeps the lower bar: a short CHANGES_REQUESTED still scores", () => {
+  const now = new Date().toISOString();
+  const users = score(
+    {
+      pullRequests: [
+        pr({
+          author: "alice",
+          reviews: [
+            {
+              id: "r1",
+              state: "CHANGES_REQUESTED",
+              body: "this leaks a db connection", // 26 chars — under the approval bar
+              submittedAt: now,
+              author: { login: "bob" },
+            },
+          ],
+        }),
+      ],
+      issues: [],
+    },
+    rules
+  );
+  const bob = users.find((u) => u.login === "bob");
+  assert.ok(bob.breakdown.review >= 8);
+});
+
 test("short LGTM still counts as a review; inline comments can make it score", () => {
   const now = new Date().toISOString();
   const activity = {
@@ -177,7 +253,7 @@ test("lockfile lines are subtracted from size, not ratio-guessed", () => {
   assert.equal(small.breakdown.pr, lock.breakdown.pr);
 });
 
-test("opening an issue scores a little; closing it scores nothing", () => {
+test("duplicates pay nothing; the closer is never paid for closing", () => {
   const now = new Date().toISOString();
   const activity = {
     pullRequests: [],
@@ -211,7 +287,11 @@ test("opening an issue scores a little; closing it scores nothing", () => {
   const carol = users.find((u) => u.login === "carol");
   assert.equal(alice.counts.confirmed_issues, 2);
   assert.equal(carol.counts.issues_closed, 2);
-  assert.equal(alice.breakdown.issue, 1);
+  // Issue #1 is a duplicate and pays nothing at all. Issue #2 pays Alice
+  // 1 for filing + a 4pt finder's fee, because Carol (not Alice) closed it.
+  assert.equal(alice.breakdown.issue, 5);
+  // Carol did the closing and earns nothing for it: closing is too easy to
+  // farm, so the value flows to whoever reported the thing worth fixing.
   assert.equal(carol.breakdown.issue || 0, 0);
 });
 
@@ -228,7 +308,7 @@ test("coauthors are counted separately and do not take the merge", () => {
   assert.equal(dave.counts.prs_coauthored, 1);
 });
 
-test("first PR is a badge, not a point multiplier", () => {
+test("a contributor's first PR is scored exactly like any other PR", () => {
   const now = new Date().toISOString();
   const activity = { pullRequests: [pr({ author: "alice", mergedAt: now })], issues: [] };
   const withHistory = score(activity, rules, {}, { alice: { firstMergedAt: "2024-01-01T00:00:00Z" } });
@@ -236,8 +316,10 @@ test("first PR is a badge, not a point multiplier", () => {
   const a1 = withHistory.find((u) => u.login === "alice");
   const a2 = without.find((u) => u.login === "alice");
   assert.equal(a1.breakdown.pr, a2.breakdown.pr);
-  assert.equal(a1.badges.some((b) => b.id === "first_pr"), false);
-  assert.equal(a2.badges.some((b) => b.id === "first_pr"), true);
+  // No first-* badges are emitted: they were window-relative and so mislabelled
+  // long-standing contributors as newcomers.
+  assert.equal(a1.badges, undefined);
+  assert.equal(a2.badges, undefined);
 });
 
 test("bots never appear", () => {
@@ -264,7 +346,9 @@ test("unreviewed PRs are not penalized; the reviewer is rewarded instead", () =>
             {
               id: "r",
               state: "APPROVED",
-              body: "looks good to me, nice work here",
+              // Must clear approved_min_body_length: this test is about the
+              // reviewer being rewarded, not about the rubber-stamp gate.
+              body: "Approved — I walked the error paths and confirmed the new index covers the slow query.",
               submittedAt: now,
               author: { login: "bob" },
             },
@@ -395,7 +479,79 @@ test("difficulty-labeled issues outrank unlabeled chore tickets", () => {
   );
   const alice = users.find((u) => u.login === "alice");
   assert.equal(alice.breakdown.issue, 36);
-  assert.ok(alice.badges.some((b) => b.id === "first_issue"));
+});
+
+const mkIssue = (over = {}) => ({
+  author: { login: "griffin" },
+  createdAt: new Date().toISOString(),
+  closed: false,
+  labels: { nodes: [] },
+  repository: { nameWithOwner: "KellisLab/Mantis" },
+  number: 1,
+  ...over,
+});
+
+test("the reporter is paid when someone else closes their issue as completed", () => {
+  const now = new Date().toISOString();
+  const users = score(
+    {
+      pullRequests: [],
+      issues: [mkIssue({ closed: true, closedAt: now, closedBy: { login: "maintainer" } })],
+    },
+    rules
+  );
+  const griffin = users.find((u) => u.login === "griffin");
+  // 1 for filing + 4 finder's fee.
+  assert.equal(griffin.breakdown.issue, 5);
+  assert.ok(griffin.ledger.some((e) => e.kind === "issue_closed"));
+});
+
+test("closing your own issue pays no finder's fee", () => {
+  const now = new Date().toISOString();
+  const users = score(
+    {
+      pullRequests: [],
+      issues: [mkIssue({ closed: true, closedAt: now, closedBy: { login: "griffin" } })],
+    },
+    rules
+  );
+  const griffin = users.find((u) => u.login === "griffin");
+  assert.equal(griffin.breakdown.issue, 1); // filing only — no self-close bonus
+  assert.ok(!griffin.ledger.some((e) => e.kind === "issue_closed"));
+});
+
+test("an unresolved pile of issues stays nearly worthless", () => {
+  const now = Date.now();
+  const users = score(
+    {
+      pullRequests: [],
+      issues: Array.from({ length: 25 }, (_, i) =>
+        mkIssue({ createdAt: new Date(now - i * 60_000).toISOString(), number: 100 + i })
+      ),
+    },
+    rules
+  );
+  const griffin = users.find((u) => u.login === "griffin");
+  // 25 unverified tickets in one burst: the decay floor keeps this tiny.
+  assert.ok(griffin.breakdown.issue < 4, `expected <4, got ${griffin.breakdown.issue}`);
+});
+
+test("decayed issues accumulate instead of each rounding to zero", () => {
+  const now = Date.now();
+  const users = score(
+    {
+      pullRequests: [],
+      issues: Array.from({ length: 6 }, (_, i) =>
+        mkIssue({ createdAt: new Date(now - i * 60_000).toISOString(), number: 200 + i })
+      ),
+    },
+    rules
+  );
+  const griffin = users.find((u) => u.login === "griffin");
+  // Raw: 1 + .75 + .45 + .25 + .12 + .06 = 2.63. Rounding each event to an
+  // integer first would have thrown away everything from the 3rd on and
+  // yielded 2 — the cliff this guards against.
+  assert.ok(griffin.breakdown.issue > 2.5, `expected >2.5, got ${griffin.breakdown.issue}`);
 });
 
 test("Griffin-style: 27 ordinary issues cannot outrank a merged PR", () => {

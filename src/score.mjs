@@ -22,11 +22,11 @@ const COUNT_CATEGORIES = [
   "bug_prs",
 ];
 
-const BADGE_LABELS = {
-  first_pr: "First Contribution",
-  first_review: "First Review",
-  first_issue: "First Bug Report",
-};
+// NOTE: "First Contribution" / "First Review" / "First Bug Report" badges were
+// removed. They were computed against the `lookback_days` window, not real
+// history, so a multi-year contributor whose earlier work fell outside the
+// window got labelled a first-timer. A badge that is wrong for exactly the
+// people who have been here longest is worse than no badge.
 
 const DOC_PATH_RE = /\.(md|mdx|rst|txt|adoc)$/i;
 const DOC_DIR_RE = /(^|\/)(docs|documentation)\//;
@@ -70,6 +70,12 @@ function dayKey(dateStr) {
 function parseTime(dateStr) {
   const t = Date.parse(dateStr);
   return Number.isFinite(t) ? t : 0;
+}
+
+// Keep two decimal places so small decayed values survive accumulation
+// instead of being rounded to zero one event at a time.
+function round2(n) {
+  return Math.round(n * 100) / 100;
 }
 
 function repoRef(p) {
@@ -142,17 +148,11 @@ function userOf(users, login) {
       sizes: { XS: 0, S: 0, M: 0, L: 0, XL: 0 },
       contributions: [], // approved manual/off-GitHub entries, for highlights
       ledger: [], // auditable scored events
-      badges: [],
       timed: [], // { t, category, points } — rolling windows
       timedCounts: [], // { t, category, n }
     };
   }
   return users[login];
-}
-
-function addBadge(user, id, at) {
-  if (!user || user.badges.some((b) => b.id === id)) return;
-  user.badges.push({ id, at, label: BADGE_LABELS[id] || id });
 }
 
 function addLedger(user, entry) {
@@ -248,11 +248,19 @@ function isDocsPr(p, labels, prCfg, excludeRes) {
 }
 
 // Points for a single review node, or 0 if it doesn't meet the bar.
+//
+// The bar is per-state on purpose. A bare "LGTM 👍" approval carries no
+// information and must score nothing, so APPROVED has its own, higher body
+// threshold. CHANGES_REQUESTED keeps the lower bar: "this leaks a connection"
+// is nine words and genuinely useful — the state itself is the quality signal.
+// Any review with a substantive inline comment qualifies regardless of body
+// length, since that's where real review feedback usually lives.
 function reviewBasePoints(state, bodyLen, inlineSubstantive, rv) {
   const min = rv.min_body_length ?? 0;
   const cmin = rv.commented_min_body_length ?? min;
-  const qualifies =
-    bodyLen >= (state === "COMMENTED" ? cmin : min) || inlineSubstantive > 0;
+  const amin = rv.approved_min_body_length ?? min;
+  const bar = state === "COMMENTED" ? cmin : state === "APPROVED" ? amin : min;
+  const qualifies = bodyLen >= bar || inlineSubstantive > 0;
   if (!qualifies) return 0;
   if (state === "APPROVED") return rv.approved_points ?? 0;
   if (state === "CHANGES_REQUESTED") return rv.changes_requested_points ?? 0;
@@ -392,7 +400,6 @@ export function score(activity, rules, manual = {}, identities = {}) {
   const excludeRes = (pr.exclude_paths || []).map(globToRegExp);
   const isExcluded = buildLoginExcluder(rules);
 
-  const seenAuthors = new Set();
   const prTimes = {};
   const reviewTimes = {};
   const issueTimes = {};
@@ -445,10 +452,6 @@ export function score(activity, rules, manual = {}, identities = {}) {
       if (isHighImpact) points *= pr.multipliers?.high_impact ?? 1;
       if (isBug && (pr.bug_fix_bonus || 0) > 0) points += pr.bug_fix_bonus;
 
-      const knownFirst = identities[login]?.firstMergedAt;
-      const isFirst = !seenAuthors.has(login) && (!knownFirst || knownFirst >= p.mergedAt);
-      seenAuthors.add(login);
-
       const t = parseTime(p.mergedAt);
       const { nth, factor } = applyDiminishing(login, t, prTimes, pr.daily_diminishing);
       points *= factor;
@@ -458,7 +461,6 @@ export function score(activity, rules, manual = {}, identities = {}) {
       const category = docsPr ? "docs" : "pr";
       const u = userOf(users, login);
       const notes = [];
-      if (isFirst) notes.push("first contribution");
       if (isHighImpact) notes.push("high impact");
       if (isBug) notes.push("bug fix");
       if (docsPr) notes.push("documentation");
@@ -471,7 +473,6 @@ export function score(activity, rules, manual = {}, identities = {}) {
         notes,
       });
       u.sizes[bucket] += 1;
-      if (isFirst) addBadge(u, "first_pr", p.mergedAt);
     }
 
     for (const [reviewer, info] of peers.counted) {
@@ -502,7 +503,6 @@ export function score(activity, rules, manual = {}, identities = {}) {
           url: githubUrl(p, "pull"),
           notes: [best.state.toLowerCase().replace(/_/g, " "), ...notes],
         });
-        addBadge(ru, "first_review", best.submittedAt);
       }
     }
   }
@@ -584,7 +584,15 @@ export function score(activity, rules, manual = {}, identities = {}) {
 
     const bonusTo = is.closed_bonus_to || "closer";
     let closedRecipient = openerOk ? login : null;
-    if (bonusTo === "closer" && closerOk) closedRecipient = closerLogin;
+    if (bonusTo === "reporter") {
+      // Finder's fee: paid to whoever FILED the issue, and only when somebody
+      // ELSE closed it as completed. That independent close is the whole
+      // point — it is the moment a report is confirmed to have been worth
+      // acting on, which is something you cannot know at filing time.
+      // A self-close pays nothing, or filing-and-closing your own tickets
+      // would be free points.
+      closedRecipient = openerOk && closerLogin && closerLogin !== login ? login : null;
+    } else if (bonusTo === "closer" && closerOk) closedRecipient = closerLogin;
     else if (bonusTo === "closer" && closerLogin && isExcluded(closerLogin) && openerOk) {
       closedRecipient = login;
     }
@@ -592,7 +600,11 @@ export function score(activity, rules, manual = {}, identities = {}) {
 
     if (closedPts > 0 && closedRecipient) {
       const closeT = parseTime(i.closedAt || i.createdAt);
-      if (closedRecipient !== login || !openerOk) {
+      // The reporter's fee is deliberately NOT decayed by same-day volume.
+      // Volume dampening exists to stop unverified filing from minting points;
+      // this bonus is already gated on someone else doing real work, so it
+      // cannot be farmed by filing more.
+      if (bonusTo !== "reporter" && (closedRecipient !== login || !openerOk)) {
         const d = applyDiminishing(closedRecipient, closeT, issueTimes, is.daily_diminishing);
         closedPts *= d.factor;
       }
@@ -606,8 +618,17 @@ export function score(activity, rules, manual = {}, identities = {}) {
       );
     }
 
-    createPts = Math.round(createPts);
-    closedPts = Math.round(closedPts);
+    // Issue points are kept to 2dp rather than rounded to an integer here.
+    // With `created_points: 1` an integer round turns the decay curve into a
+    // cliff: the 3rd issue in 24h is worth 1 x 0.45 = 0.45, which rounds to
+    // ZERO. That contradicts this file's own stated intent ("extra work the
+    // same day still counts, it just counts a bit less") and it is why a
+    // 27-issue week scored 6 while a spread-out 6-issue week scored 5.
+    // Fractions accumulate and are rounded once, at render time.
+    // PRs and reviews are unaffected: their bases are high enough (10 and 6)
+    // that even the steepest factor never rounds away.
+    createPts = round2(createPts);
+    closedPts = round2(closedPts);
 
     const issueRef = repoRef(i);
     const issueUrl = githubUrl(i, "issues");
@@ -623,7 +644,6 @@ export function score(activity, rules, manual = {}, identities = {}) {
         url: issueUrl,
         notes,
       });
-      addBadge(userOf(users, login), "first_issue", i.createdAt);
     }
 
     if (closedPts > 0 && closedRecipient) {

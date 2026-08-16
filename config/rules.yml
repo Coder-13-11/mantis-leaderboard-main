@@ -140,8 +140,14 @@ reviews:
   nontrivial_pr_lines: 40
   min_inline_length: 15
 
-  min_body_length: 20            # Approved / Changes requested, unless inline
+  min_body_length: 20            # Changes requested, unless inline comments
   commented_min_body_length: 40  # comments need more than "lgtm" / "nice"
+  # A rubber-stamp approval is the easiest review to fake, so a bare APPROVED
+  # needs a real body — "LGTM, looks good to me!" (22 chars) scores nothing.
+  # An approval carrying a substantive inline comment always qualifies, however
+  # short its body: that's a real review. Finding problems keeps the lower bar
+  # above, because a nine-word CHANGES_REQUESTED can be entirely legitimate.
+  approved_min_body_length: 60
 
   exclude_self_review: true
 
@@ -162,12 +168,29 @@ reviews:
 # a maintainer `difficulty:` / `confirmed` tag is worth more than a chore.
 issues:
   created_points: 1
-  closed_bonus: 0
-  closed_bonus_to: closer
+
+  # Filing is cheap and unverified, so it stays near-free above. The real
+  # money is here: when somebody ELSE closes your issue as completed, that is
+  # the moment the report is confirmed to have been worth acting on — which is
+  # something nobody can judge at filing time. Paid to the reporter, never
+  # decayed by same-day volume, and never paid on a self-close.
+  #
+  # This is what makes high-volume bug reporting fair without making it
+  # farmable: you cannot inflate it without convincing a maintainer to
+  # actually do the work. 25 tickets nobody acts on stay worth almost nothing.
+  closed_bonus: 4
+  closed_bonus_to: reporter
 
   bug_labels: ["bug", "defect"]
   bug_points: 6
 
+  # VERIFIED DORMANT (audited 2026-08-16 against all 15 repos via the API):
+  # none of these labels exist anywhere in the org, so `confirmed_points` and
+  # `impact_points` have never once been awarded. Closest real labels are
+  # `priority: medium`, `priority-medium` and `importance: normal` — none of
+  # which mean "critical". Left in place, deliberately not remapped: see the
+  # note on `difficulty_points` below for why the org's real severity labels
+  # are not safe to score yet.
   confirmed_labels: ["confirmed", "accepted"]
   confirmed_points: 10
   impact_labels: ["priority: critical", "priority: high", "impact: high"]
@@ -178,6 +201,26 @@ issues:
     window_hours: 24
     factors: [1.0, 0.75, 0.45, 0.25, 0.12, 0.06]
 
+  # VERIFIED DORMANT — and intentionally left that way. Two separate problems,
+  # both measured on 2026-08-16 against Mantis + MantisAPI + Mantis-verticals:
+  #
+  #  1. WRONG NAMES. No repo has a `difficulty: N` label. The real ones are
+  #     `diff:1` … `diff:10` (three repos). So these keys match nothing today.
+  #
+  #  2. SELF-GRADED — the reason not to simply rename them. Of 55 `diff:N`
+  #     labelling events on human-authored issues, 44 were the issue's own
+  #     author labelling their own ticket, and 42 of 62 landed within one
+  #     minute of the issue being filed. People pick their own difficulty as
+  #     they type. Paying points for that is paying people to grade their own
+  #     homework, and it is the most gameable rule we could ship.
+  #     Coverage is only 18% of human-authored issues, too.
+  #
+  # `imp:N` / `pri:N` are the better signal — 60% coverage, and ~74% applied by
+  # the MantisCartography triage agent rather than the filer. The safe way to
+  # turn any of this on is to score a label ONLY when the actor who applied it
+  # is not the issue author (GraphQL `LabeledEvent.actor` exposes this), and
+  # only once PR->issue linkage is healthy: just 27% of merged PRs currently
+  # carry a `closes #N`, so a label-driven scheme would reach ~16% of work.
   difficulty_points:
     "difficulty: 1": 3
     "difficulty: 2": 6
