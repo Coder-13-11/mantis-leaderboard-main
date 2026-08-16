@@ -17,33 +17,33 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **123** | 6 | 0 | 6 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **109** | 6 | 0 | 11 |
-| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **88** | 7 | 2 | 3 |
-| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **78** | 7 | 9 | 1 |
-| 5 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **75** | 4 | 1 | 23 |
-| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **66** | 6 | 0 | 1 |
-| 7 | [@charleywolf](https://github.com/charleywolf) | **64** | 4 | 0 | 0 |
-| 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
-| 9 | [@VishwanathanV](https://github.com/VishwanathanV) | **49** | 4 | 0 | 0 |
-| 10 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
+| 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **85** | 7 | 2 | 3 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 11 |
+| 3 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **69** | 7 | 9 | 1 |
+| 4 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 6 | 0 | 6 |
+| 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **57** | 6 | 0 | 1 |
+| 6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
+| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **49** | 4 | 0 | 0 |
+| 8 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
+| 9 | [@charleywolf](https://github.com/charleywolf) | **48** | 4 | 0 | 0 |
+| 10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **44** | 4 | 1 | 23 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **538** | 76 | 0 | 7 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **478** | 97 | 2 | 5 |
-| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **251** | 14 | 3 | 5 |
-| 4 | [@charleywolf](https://github.com/charleywolf) | **221** | 8 | 0 | 11 |
-| 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **159** | 8 | 0 | 7 |
-| 6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **157** | 13 | 12 | 2 |
-| 7 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **139** | 6 | 0 | 19 |
-| 8 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **134** | 4 | 3 | 27 |
-| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **126** | 11 | 0 | 1 |
-| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **112** | 14 | 0 | 3 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **462** | 97 | 2 | 5 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **381** | 76 | 0 | 7 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **166** | 14 | 3 | 5 |
+| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **123** | 13 | 12 | 2 |
+| 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **109** | 11 | 0 | 1 |
+| 6 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 11 |
+| 7 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **96** | 8 | 0 | 7 |
+| 8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
+| 9 | [@SufianTA](https://github.com/SufianTA) | **83** | 5 | 5 | 0 |
+| 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 19 |
 
-_Last updated: Sun, 16 Aug 2026 05:13:47 GMT_
+_Last updated: Sun, 16 Aug 2026 05:23:08 GMT_
 <!-- LEADERBOARD:END -->
 
 
