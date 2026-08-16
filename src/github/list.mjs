@@ -190,10 +190,12 @@ async function hydrateIssueClosers(token, issues) {
               ... on ClosedEvent {
                 createdAt
                 actor { login }
-                # `closer` is the PR (or commit) that closed this issue, as
-                # opposed to `actor`, who merely clicked. This is what lets a
+                # closer is the PR (or commit) that closed this issue, as
+                # opposed to actor, who merely clicked. This is what lets a
                 # self-close still pay: filing a bug and fixing it yourself is
                 # normal, and a merged PR is proof the fix was real.
+                # (No backticks in here -- this block sits inside a JS
+                # template literal, so a backtick would terminate the string.)
                 closer {
                   __typename
                   ... on PullRequest { number merged }
