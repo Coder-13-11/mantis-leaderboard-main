@@ -520,7 +520,7 @@ test("the reporter is paid when someone else closes their issue as completed", (
   assert.ok(griffin.ledger.some((e) => e.kind === "issue_closed"));
 });
 
-test("closing your own issue pays no finder's fee", () => {
+test("a bare manual self-close pays no finder's fee", () => {
   const now = new Date().toISOString();
   const users = score(
     {
@@ -530,8 +530,29 @@ test("closing your own issue pays no finder's fee", () => {
     rules
   );
   const griffin = users.find((u) => u.login === "griffin");
-  assert.equal(griffin.breakdown.issue, 1); // filing only — no self-close bonus
+  assert.equal(griffin.breakdown.issue, 1); // filing only
   assert.ok(!griffin.ledger.some((e) => e.kind === "issue_closed"));
+});
+
+test("self-close DOES pay when a merged PR closed the issue", () => {
+  const now = new Date().toISOString();
+  const users = score(
+    {
+      pullRequests: [],
+      issues: [
+        mkIssue({
+          closed: true,
+          closedAt: now,
+          closedBy: { login: "griffin" }, // filed it and fixed it himself
+          closedByMergedPr: true,
+        }),
+      ],
+    },
+    rules
+  );
+  const griffin = users.find((u) => u.login === "griffin");
+  assert.equal(griffin.breakdown.issue, 9); // 1 filing + 8 confirmed
+  assert.ok(griffin.ledger.some((e) => e.kind === "issue_closed"));
 });
 
 test("an unresolved pile of issues stays nearly worthless", () => {

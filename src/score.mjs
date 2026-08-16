@@ -616,13 +616,20 @@ export function score(activity, rules, manual = {}, identities = {}) {
     const bonusTo = is.closed_bonus_to || "closer";
     let closedRecipient = openerOk ? login : null;
     if (bonusTo === "reporter") {
-      // Finder's fee: paid to whoever FILED the issue, and only when somebody
-      // ELSE closed it as completed. That independent close is the whole
-      // point — it is the moment a report is confirmed to have been worth
-      // acting on, which is something you cannot know at filing time.
-      // A self-close pays nothing, or filing-and-closing your own tickets
-      // would be free points.
-      closedRecipient = openerOk && closerLogin && closerLogin !== login ? login : null;
+      // Finder's fee: paid to whoever FILED the issue, once the report is
+      // CONFIRMED — something you cannot judge at filing time. Confirmation
+      // means one of two things:
+      //
+      //   1. Somebody else closed it as completed, or
+      //   2. a MERGED pull request closed it, even your own. Filing a bug and
+      //      fixing it yourself is normal and shouldn't be penalised; the
+      //      merged PR is independent proof the fix was real.
+      //
+      // A bare manual self-close with no merged PR behind it pays nothing —
+      // that's the one path anybody could farm at will.
+      const confirmedByOther = Boolean(closerLogin) && closerLogin !== login;
+      const confirmedByMergedPr = Boolean(i.closedByMergedPr);
+      closedRecipient = openerOk && (confirmedByOther || confirmedByMergedPr) ? login : null;
     } else if (bonusTo === "closer" && closerOk) closedRecipient = closerLogin;
     else if (bonusTo === "closer" && closerLogin && isExcluded(closerLogin) && openerOk) {
       closedRecipient = login;

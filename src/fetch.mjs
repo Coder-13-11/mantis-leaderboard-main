@@ -76,6 +76,7 @@ function toIssueRecord(i) {
     closed: Boolean(i.closed || i.state === "CLOSED"),
     closedAt: i.closedAt || null,
     closedBy: i.closedBy || null,
+    closedByMergedPr: Boolean(i.closedByMergedPr),
     stateReason: i.stateReason || null,
     createdAt: i.createdAt,
     updatedAt: i.updatedAt,

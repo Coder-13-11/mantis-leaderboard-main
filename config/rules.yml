@@ -170,10 +170,17 @@ issues:
   created_points: 1
 
   # Filing is cheap and unverified, so it stays near-free above. The real
-  # money is here: when somebody ELSE closes your issue as completed, that is
-  # the moment the report is confirmed to have been worth acting on — which is
-  # something nobody can judge at filing time. Paid to the reporter, never
-  # decayed by same-day volume, and never paid on a self-close.
+  # money is here: when your issue is CONFIRMED, which is something nobody can
+  # judge at filing time. Confirmed means either somebody else closed it as
+  # completed, OR a merged PR closed it — including your own. Filing a bug and
+  # fixing it yourself is normal work, and the merged PR is independent proof
+  # the fix was real. A bare manual self-close with no PR behind it pays
+  # nothing, since that is the one path anyone could farm at will.
+  # Paid to the reporter, never decayed by volume, never capped.
+  #
+  # CAVEAT: this leans on `closes #N` linkage, which is only ~27% of merged PRs
+  # today. Until a PR template pushes that up, plenty of genuine self-fixes
+  # will go unpaid. Raising linkage is the highest-leverage follow-up here.
   #
   # This is what makes high-volume bug reporting fair without making it
   # farmable: you cannot inflate it without convincing a maintainer to
