@@ -15,8 +15,23 @@ const BOARDS = [
   { id: "bugs", label: "Bug finding" },
 ];
 
-function medal(rank) {
-  return rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : `#${rank}`;
+// Issue points accumulate fractionally (see round2 in score.mjs) so that a
+// decayed event isn't rounded away to zero one at a time. Everything the page
+// shows as a score is rounded once, here.
+const nPts = (v) => Math.round(Number(v) || 0);
+
+// The per-event ledger is the exception: a sub-point event must read as
+// "+0.45", not a baffling "+0", so the decay is visible rather than hidden.
+function fmtEventPts(v) {
+  const x = Number(v) || 0;
+  return x < 1 ? String(Math.round(x * 100) / 100) : String(Math.round(x));
+}
+
+// Rank is shown as a numeral, not an emoji. The top three are distinguished
+// by the metallic ring/tint on the podium card itself (see .pod-badge CSS),
+// which reads as a rank without a cartoon medal glyph.
+function rankLabel(rank) {
+  return `${rank}`;
 }
 
 function windowLabel(days) {
@@ -38,8 +53,10 @@ function esc(s) {
   );
 }
 
-// Full name when GitHub has one; otherwise "Name not found" with the @login
-// kept as secondary so the board still identifies the person.
+// Full name when GitHub has one, otherwise just the @login on its own.
+// Not setting a display name on GitHub is a normal choice, not a failure, so
+// the board must not print "Name not found" next to those people — it reads
+// like the leaderboard is broken and it singles them out for nothing.
 function looksLikeLogin(name, login) {
   const norm = (s) => String(s || "")
     .toLowerCase()
@@ -53,7 +70,9 @@ export function personLabel(u) {
   if (name && !looksLikeLogin(name, u.login)) {
     return { primary: name, secondary: `@${u.login}`, hasName: true };
   }
-  return { primary: "Name not found", secondary: `@${u.login}`, hasName: false };
+  // No display name: promote the login to primary and leave secondary empty,
+  // rather than showing a placeholder where a name would go.
+  return { primary: `@${u.login}`, secondary: "", hasName: false };
 }
 
 function rankedFor(users, days, board = "overall") {
@@ -92,8 +111,8 @@ export function renderReadmeTable(users, topN, windowsDays) {
         const p = personLabel(u);
         const label = p.hasName
           ? `**${p.primary}** ([@${u.login}](https://github.com/${u.login}))`
-          : `Name not found ([@${u.login}](https://github.com/${u.login}))`;
-        return `| ${medal(idx + 1)} | ${label} | **${u.windows[days] || 0}** | ${c.prs || 0} | ${c.reviews || 0} | ${c.confirmed_issues || 0} |`;
+          : `[@${u.login}](https://github.com/${u.login})`;
+        return `| ${rankLabel(idx + 1)} | ${label} | **${nPts(u.windows[days])}** | ${c.prs || 0} | ${c.reviews || 0} | ${c.confirmed_issues || 0} |`;
       })
       .join("\n");
     return [
@@ -157,16 +176,13 @@ function sparkline(daysMap, dayKeys) {
 
 function personBlock(u, { compact = false } = {}) {
   const p = personLabel(u);
-  const nameCls = p.hasName ? "pname" : "pname pname-missing";
-  if (compact) {
-    return `<a class="person" href="https://github.com/${esc(u.login)}">
-      <span class="${nameCls}">${esc(p.primary)}</span>
-      <span class="plogin">${esc(p.secondary)}</span>
-    </a>`;
-  }
-  return `<a class="person person-pod" href="https://github.com/${esc(u.login)}">
-      <span class="${nameCls}">${esc(p.primary)}</span>
-      <span class="plogin">${esc(p.secondary)}</span>
+  // Secondary line is omitted entirely when there's no display name, so the
+  // card doesn't reserve an empty row under the login.
+  const secondary = p.secondary ? `<span class="plogin">${esc(p.secondary)}</span>` : "";
+  const cls = compact ? "person" : "person person-pod";
+  return `<a class="${cls}" href="https://github.com/${esc(u.login)}">
+      <span class="pname">${esc(p.primary)}</span>
+      ${secondary}
     </a>`;
 }
 
@@ -175,13 +191,6 @@ function windowBreakdownBar(u, days) {
   if (wb) return breakdownBar(wb);
   // Fallback for older snapshots that only have lifetime breakdown.
   return breakdownBar(u.breakdown || {});
-}
-
-function badgeRow(u) {
-  if (!u.badges?.length) return "";
-  return `<div class="chips">${u.badges
-    .map((b) => `<span class="chip">${esc(b.label)}</span>`)
-    .join("")}</div>`;
 }
 
 function ledgerList(u, days) {
@@ -196,7 +205,7 @@ function ledgerList(u, days) {
         ? `<a href="${esc(e.url)}">${esc(e.ref || e.kind)}</a>`
         : esc(e.ref || e.kind);
       const title = e.title ? ` — ${esc(e.title)}` : "";
-      return `<li><span class="led-pts">+${e.points}</span> ${ref}${title}${
+      return `<li><span class="led-pts">+${fmtEventPts(e.points)}</span> ${ref}${title}${
         note ? `<span class="led-note">${esc(note)}</span>` : ""
       }</li>`;
     })
@@ -207,15 +216,15 @@ function ledgerList(u, days) {
 }
 
 function auditBlock(u, days) {
-  const pts = u.windows?.[days] || 0;
+  const pts = nPts(u.windows?.[days]);
   const b = u.windowBreakdown?.[days] || {};
   const c = u.windowCounts?.[days] || {};
   const rows = [
-    ["Code", b.pr || 0],
-    ["Reviews", b.review || 0],
-    ["Issues", b.issue || 0],
-    ["Docs", b.docs || 0],
-    ["Community", b.other || 0],
+    ["Code", nPts(b.pr)],
+    ["Reviews", nPts(b.review)],
+    ["Issues", nPts(b.issue)],
+    ["Docs", nPts(b.docs)],
+    ["Community", nPts(b.other)],
   ];
   const grid = rows
     .map(
@@ -234,7 +243,6 @@ function auditBlock(u, days) {
     <div class="audit">
       <div class="audit-score">${days}-day score: <b>${pts}</b></div>
       <div class="audit-activity">${esc(activity.join(" · ") || "no scored activity")}</div>
-      ${badgeRow(u)}
       <div class="audit-grid">${grid}
         <div class="audit-k audit-total">Total</div><div class="audit-v audit-total">${pts}</div>
       </div>
@@ -244,16 +252,16 @@ function auditBlock(u, days) {
 
 // Human-readable “where did these points come from?” for a trailing window.
 function scoreExplainer(u, days, board = "overall") {
-  const pts = dimScore(u, days, board);
+  const pts = nPts(dimScore(u, days, board));
   const c = u.windowCounts?.[days] || {};
   const wb = u.windowBreakdown?.[days];
   const bits = [];
   if (wb) {
-    if (wb.pr) bits.push(`${wb.pr} code`);
-    if (wb.review) bits.push(`${wb.review} reviews`);
-    if (wb.issue) bits.push(`${wb.issue} issues`);
-    if (wb.docs) bits.push(`${wb.docs} docs`);
-    if (wb.other) bits.push(`${wb.other} community`);
+    if (nPts(wb.pr)) bits.push(`${nPts(wb.pr)} code`);
+    if (nPts(wb.review)) bits.push(`${nPts(wb.review)} reviews`);
+    if (nPts(wb.issue)) bits.push(`${nPts(wb.issue)} issues`);
+    if (nPts(wb.docs)) bits.push(`${nPts(wb.docs)} docs`);
+    if (nPts(wb.other)) bits.push(`${nPts(wb.other)} community`);
   }
   const activity = [];
   if (c.prs) activity.push(`${c.prs} PR${c.prs === 1 ? "" : "s"}`);
@@ -275,13 +283,12 @@ function podiumCard(u, days, place, board = "overall") {
   return `
     <details class="pod-wrap">
     <summary class="pod pod-${place}">
-      <div class="pod-badge">${medal(place)}</div>
+      <div class="pod-badge"><span class="pod-rank">${rankLabel(place)}</span></div>
       <img class="pod-avatar" src="https://github.com/${esc(u.login)}.png?size=120" alt="" loading="lazy"/>
       ${personBlock(u)}
       <div class="pod-pts" title="${esc(explain.from)}">${explain.pts}<span>pts</span></div>
       <div class="pod-why">${esc(explain.from)}</div>
       <div class="pod-meta">${esc(explain.activity)}</div>
-      ${badgeRow(u)}
     </summary>
     ${auditBlock(u, days)}
     </details>`;
@@ -393,7 +400,7 @@ function whatCountsSection(meta) {
         <p class="score-example">
           <b>Worked example:</b> two PRs in 24h both score in full. A third is worth 80%, a sixth+ still 35% — never zero.
           A 71-PR burst is still a burst (most of those PRs sit on the 35% floor), but a 7-PR day is worth more than a 2-PR day.
-          Twenty-seven ordinary issues still cannot beat a merged PR. First contribution is a badge, not a point multiplier.
+          Twenty-seven ordinary issues still cannot beat a merged PR.
         </p>
       </div>
       <div class="wc-grid">
@@ -417,7 +424,7 @@ function whatCountsSection(meta) {
           <b>Humans only</b>
           <p>Dependabot, GitHub Actions, Renovate, <code>[bot]</code> accounts, and
           named agents (MantisCartography, Codex, Copilot) are excluded. Rankings track
-          who’s actively shipping <i>now</i>. First PR / first review / first bug report are badges, not extra points.</p>
+          who’s actively shipping <i>now</i> — every point comes from work inside the selected window.</p>
         </div>
       </div>
     </section>`;
@@ -701,9 +708,20 @@ export function renderHtml(users, meta) {
     box-shadow: var(--shadow);
     display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
   }
+  /* Rank badge: a numeral in a metallic ring, not an emoji medal. The tier is
+     carried by the ring colour + size, which matches the card's own border. */
   .pod-badge {
     position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
-    line-height: 1; filter: drop-shadow(0 2px 4px rgba(12,18,48,.12));
+    display: grid; place-items: center;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--panel);
+    border: 1.5px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  .pod-rank {
+    font-family: var(--serif); font-weight: 600;
+    font-variant-numeric: tabular-nums; line-height: 1;
+    font-size: .82rem; color: var(--muted);
   }
   .pod-avatar {
     border-radius: 50%; border: 2.5px solid var(--panel);
@@ -721,7 +739,8 @@ export function renderHtml(users, meta) {
     padding: 1.1rem .5rem .8rem; min-height: 172px;
     border-color: color-mix(in srgb, var(--bronze) 38%, var(--border));
   }
-  .pod-3 .pod-badge { font-size: 1.1rem; }
+  .pod-3 .pod-badge { border-color: color-mix(in srgb, var(--bronze) 70%, var(--border)); }
+  .pod-3 .pod-rank { color: var(--bronze); }
   .pod-3 .pod-avatar { width: 48px; height: 48px; outline-color: var(--bronze); }
   .pod-3 .pod-pts { font-size: 1.18rem; }
   .pod-3 .pname { font-size: .78rem; }
@@ -731,7 +750,11 @@ export function renderHtml(users, meta) {
     padding: 1.35rem .55rem .9rem; min-height: 208px; margin-bottom: .3rem;
     border-color: color-mix(in srgb, var(--silver) 42%, var(--border));
   }
-  .pod-2 .pod-badge { font-size: 1.3rem; }
+  .pod-2 .pod-badge {
+    width: 32px; height: 32px; top: -17px;
+    border-color: color-mix(in srgb, var(--silver) 75%, var(--border));
+  }
+  .pod-2 .pod-rank { font-size: .92rem; color: var(--silver); }
   .pod-2 .pod-avatar { width: 64px; height: 64px; outline-color: var(--silver); }
   .pod-2 .pod-pts { font-size: 1.4rem; }
   .pod-2 .pname { font-size: .86rem; }
@@ -742,7 +765,12 @@ export function renderHtml(users, meta) {
     background:
       linear-gradient(180deg, var(--gold-soft) 0%, var(--panel) 42%);
   }
-  .pod-1 .pod-badge { font-size: 1.6rem; top: -18px; }
+  .pod-1 .pod-badge {
+    width: 38px; height: 38px; top: -20px;
+    border: 2px solid var(--gold);
+    background: linear-gradient(180deg, var(--gold-soft) 0%, var(--panel) 70%);
+  }
+  .pod-1 .pod-rank { font-size: 1.1rem; font-weight: 700; color: var(--gold); }
   .pod-1 .pod-avatar { width: 84px; height: 84px; outline: 3px solid var(--gold); }
   .pod-1 .pod-pts { font-size: 1.72rem; }
   .pod-1 .pname { font-size: .95rem; font-weight: 600; }
@@ -761,7 +789,6 @@ export function renderHtml(users, meta) {
     line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
     max-width: 100%;
   }
-  .pname-missing { color: var(--faint); font-style: italic; font-weight: 500; }
   .plogin {
     font-family: var(--font); font-size: .72rem; font-weight: 500; color: var(--muted);
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
@@ -816,13 +843,6 @@ export function renderHtml(users, meta) {
   }
   .more { text-align: center; color: var(--faint); font-size: .8rem; margin: 1rem 0 0; }
 
-  .chips { display: flex; flex-wrap: wrap; gap: .25rem; justify-content: center; margin-top: .35rem; }
-  .who .chips { justify-content: flex-start; }
-  .chip {
-    font-size: .62rem; font-weight: 600; letter-spacing: .02em;
-    color: var(--muted); background: var(--accent-soft);
-    border-radius: 999px; padding: .08rem .45rem; white-space: nowrap;
-  }
   .audit {
     margin: 0 .75rem .85rem; padding: .85rem .95rem;
     background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
