@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 9 | 1 |
+| 1 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 10 | 1 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **86** | 7 | 2 | 4 |
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 8 |
 | 4 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 6 | 0 | 6 |
@@ -35,7 +35,7 @@ code / review / issues ledger.
 | 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **462** | 97 | 2 | 5 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **381** | 76 | 0 | 23 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **177** | 15 | 3 | 6 |
-| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 12 | 2 |
+| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 13 | 2 |
 | 5 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 11 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 10 | 0 | 1 |
 | 7 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **96** | 8 | 0 | 7 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@SufianTA](https://github.com/SufianTA) | **83** | 5 | 5 | 0 |
 | 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 19 |
 
-_Last updated: Sun, 16 Aug 2026 20:34:48 GMT_
+_Last updated: Sun, 16 Aug 2026 20:55:29 GMT_
 <!-- LEADERBOARD:END -->
 
 
