@@ -559,10 +559,12 @@ export function renderHtml(users, meta) {
   // Empty when there's no bugs board; emitting a bare `{...}` with no selector
   // would be invalid CSS and take the whole stylesheet down with it.
   const pinnedWindowTabCss = hasBugBoard
-    ? `${windowsDays
-        .filter((days) => days !== bugDays)
-        .map((days) => `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${days}"]`)
-        .join(", ")} { opacity: .35; pointer-events: none; cursor: default; }`
+    ? `/* Bug finding pins its own window: the other window tabs go inert so
+     the highlighted tab always matches the data on screen. */
+  ${windowsDays
+    .filter((days) => days !== bugDays)
+    .map((days) => `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${days}"]`)
+    .join(", ")} { opacity: .35; pointer-events: none; cursor: default; }`
     : "";
   const activeBoardTab = BOARDS.map(
     (b) => `.wrap:has(#board-${b.id}:checked) .tabs-board label[for="board-${b.id}"]`
@@ -730,9 +732,6 @@ export function renderHtml(users, meta) {
   }
   ${activeWindowTab}, ${activeBoardTab} { color: var(--accent-ink); background: var(--accent); }
 
-  /* Bug finding pins its own window: the other window tabs go inert so the
-     highlighted tab always matches the data on screen. Empty unless that
-     board exists. */
   ${pinnedWindowTabCss}
 
   .panel-note {
