@@ -22,11 +22,11 @@ code / review / issues ledger.
 | 3 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **69** | 7 | 9 | 1 |
 | 4 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 6 | 0 | 6 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
-| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **50** | 5 | 0 | 1 |
-| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **49** | 4 | 0 | 0 |
-| 8 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
-| 9 | [@charleywolf](https://github.com/charleywolf) | **48** | 4 | 0 | 0 |
-| 10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **44** | 4 | 2 | 23 |
+| 6 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
+| 7 | [@charleywolf](https://github.com/charleywolf) | **48** | 4 | 0 | 0 |
+| 8 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **44** | 4 | 2 | 23 |
+| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **43** | 4 | 0 | 1 |
+| 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **36** | 3 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@SufianTA](https://github.com/SufianTA) | **83** | 5 | 5 | 0 |
 | 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 19 |
 
-_Last updated: Sun, 16 Aug 2026 13:40:23 GMT_
+_Last updated: Sun, 16 Aug 2026 14:35:08 GMT_
 <!-- LEADERBOARD:END -->
 
 
