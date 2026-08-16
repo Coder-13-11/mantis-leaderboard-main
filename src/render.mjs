@@ -489,21 +489,35 @@ export function renderHtml(users, meta) {
     .join("");
   const boardLabels = BOARDS.map((b) => `<label for="board-${b.id}">${b.label}</label>`).join("");
 
+  // Bug finding is pinned to its own window whichever window tab is selected:
+  // a confirmed find depends on someone else closing your report, which lags
+  // filing by weeks. `tabWindow` is what the user clicked; `days` is the data
+  // actually shown.
+  const bugDays = windowsDays.includes(meta.bug_board_window_days)
+    ? meta.bug_board_window_days
+    : windowsDays[windowsDays.length - 1];
+
   const panels = [];
-  for (const days of windowsDays) {
+  for (const tabWindow of windowsDays) {
     for (const board of BOARDS) {
-      const ranked = rankedFor(users, days, board.id);
+      const days = board.id === "bugs" ? bugDays : tabWindow;
       panels.push({
-        key: `w${days}-${board.id}`,
+        key: `w${tabWindow}-${board.id}`,
+        tabWindow,
         days,
         board: board.id,
-        ranked,
+        ranked: rankedFor(users, days, board.id),
       });
     }
   }
   const boardsHtml = panels
     .map(
-      (p) => `<section class="panel" data-window="w${p.days}" data-board="${p.board}">
+      (p) => `<section class="panel" data-window="w${p.tabWindow}" data-board="${p.board}">
+        ${
+          p.board === "bugs"
+            ? `<p class="panel-note">Ranked on <b>confirmed finds</b> — reports someone else closed as completed, or that a merged PR closed. Always a ${bugDays}-day window, because confirmations lag filing by weeks.</p>`
+            : ""
+        }
         ${podium(p.ranked, p.days, p.board)}
         <ol class="board">${listRows(p.ranked, p.days, dayKeys, p.board)}</ol>
         ${p.ranked.length > SITE_MAX ? `<p class="more">…and ${p.ranked.length - SITE_MAX} more contributors</p>` : ""}
@@ -514,11 +528,24 @@ export function renderHtml(users, meta) {
   const boardVisibility = panels
     .map(
       (p) =>
-        `.wrap:has(#tab-w${p.days}:checked):has(#board-${p.board}:checked) .panel[data-window="w${p.days}"][data-board="${p.board}"] { display: block; }`
+        `.wrap:has(#tab-w${p.tabWindow}:checked):has(#board-${p.board}:checked) .panel[data-window="w${p.tabWindow}"][data-board="${p.board}"] { display: block; }`
     )
     .join("\n    ");
-  const activeWindowTab = windowsDays
-    .map((days) => `.wrap:has(#tab-w${days}:checked) .tabs-window label[for="tab-w${days}"]`)
+  // A CSS radio group cannot flip another radio group, so selecting Bug
+  // finding cannot literally move the window radio. Instead the window tabs
+  // FOLLOW the board: the bug window reads as active and the others are
+  // visibly disabled, and the panel underneath genuinely shows that window's
+  // data. What the user sees selected is always what they are looking at.
+  const activeWindowTab = [
+    ...windowsDays.map(
+      (days) =>
+        `.wrap:not(:has(#board-bugs:checked)):has(#tab-w${days}:checked) .tabs-window label[for="tab-w${days}"]`
+    ),
+    `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${bugDays}"]`,
+  ].join(", ");
+  const pinnedWindowTab = windowsDays
+    .filter((days) => days !== bugDays)
+    .map((days) => `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${days}"]`)
     .join(", ");
   const activeBoardTab = BOARDS.map(
     (b) => `.wrap:has(#board-${b.id}:checked) .tabs-board label[for="board-${b.id}"]`
@@ -685,6 +712,18 @@ export function renderHtml(users, meta) {
     font-weight: 600; color: var(--muted); transition: color .15s, background .15s;
   }
   ${activeWindowTab}, ${activeBoardTab} { color: var(--accent-ink); background: var(--accent); }
+
+  /* Bug finding pins its own window: the other window tabs go inert so the
+     highlighted tab always matches the data on screen. */
+  ${pinnedWindowTab} {
+    opacity: .35; pointer-events: none; cursor: default;
+  }
+
+  .panel-note {
+    margin: 0 0 1rem; padding: .6rem .8rem; font-size: .78rem; line-height: 1.5;
+    color: var(--muted); background: var(--panel-2);
+    border: 1px solid var(--border); border-radius: 10px;
+  }
 
   .boards .panel { display: none; }
   ${boardVisibility}

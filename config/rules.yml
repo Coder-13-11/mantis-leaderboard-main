@@ -315,3 +315,10 @@ display:
   # Ranked by the first window. Rolling 7 × 24h = who's active now;
   # 14 = the same idea, slower. Midnight UTC is not a scoring boundary.
   windows_days: [7, 14]
+
+  # The Bug finding board always uses this window, whichever window tab is
+  # selected. A confirmed find depends on somebody ELSE closing your report,
+  # and that lags filing by weeks — over 7 days the board mostly measures who
+  # happened to get closes that week rather than who finds real bugs. Must be
+  # one of `windows_days` so the tab can highlight correctly.
+  bug_board_window_days: 14
