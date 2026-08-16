@@ -18,8 +18,8 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 9 | 1 |
-| 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **85** | 7 | 2 | 4 |
-| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 11 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 9 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **75** | 6 | 2 | 4 |
 | 4 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 6 | 0 | 6 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
 | 6 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 5 | 2 | 23 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@SufianTA](https://github.com/SufianTA) | **83** | 5 | 5 | 0 |
 | 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 19 |
 
-_Last updated: Sun, 16 Aug 2026 16:38:23 GMT_
+_Last updated: Sun, 16 Aug 2026 17:31:10 GMT_
 <!-- LEADERBOARD:END -->
 
 
