@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T22:33:10.292Z",
+  "generated_at": "2026-08-16T22:54:00.543Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-16T22:32:25.229Z",
+    "run_started_at": "2026-08-16T22:53:18.360Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-16T00:00:00.000Z",
     "repos": [
@@ -91,7 +91,7 @@
     "event_counts": {
       "prs": 3417,
       "issues": 2089,
-      "reviews": 10034,
+      "reviews": 10036,
       "review_comments": 13941
     }
   },
@@ -1278,7 +1278,7 @@
     {
       "login": "rohan-va",
       "name": "Rohan Vaidya",
-      "total": 1046,
+      "total": 1053,
       "days": {
         "2025-09-22": 10,
         "2025-09-25": 10,
@@ -1350,7 +1350,7 @@
         "2026-08-12": 13,
         "2026-08-15": 25,
         "2026-07-27": 10,
-        "2026-08-16": 32
+        "2026-08-16": 39
       },
       "dayCounts": {
         "2025-09-22": {
@@ -2674,7 +2674,7 @@
           "bug_prs": 0
         },
         "2026-08-16": {
-          "prs": 3,
+          "prs": 4,
           "reviews": 0,
           "confirmed_issues": 1,
           "fixed_bonuses": 0,
@@ -3586,7 +3586,7 @@
           "other": 0
         },
         "2026-08-16": {
-          "pr": 32,
+          "pr": 39,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -3594,14 +3594,14 @@
         }
       },
       "breakdown": {
-        "pr": 776,
+        "pr": 783,
         "review": 260,
         "issue": 0,
         "docs": 10,
         "other": 0
       },
       "counts": {
-        "prs": 70,
+        "prs": 71,
         "reviews": 75,
         "confirmed_issues": 98,
         "fixed_bonuses": 0,
@@ -3614,7 +3614,7 @@
       },
       "sizes": {
         "XS": 19,
-        "S": 14,
+        "S": 15,
         "M": 16,
         "L": 13,
         "XL": 8
@@ -4745,15 +4745,27 @@
           "notes": [
             "3th in 24h ×0.8"
           ]
+        },
+        {
+          "at": "2026-08-16T22:47:13Z",
+          "category": "pr",
+          "points": 7,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4008",
+          "title": "[BUG07-Security]: fix usage of wrong production WS host",
+          "url": "https://github.com/KellisLab/Mantis/pull/4008",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
         }
       ],
       "windows": {
-        "7": 86,
-        "14": 177
+        "7": 93,
+        "14": 184
       },
       "windowCounts": {
         "7": {
-          "prs": 7,
+          "prs": 8,
           "reviews": 2,
           "confirmed_issues": 4,
           "fixed_bonuses": 0,
@@ -4765,7 +4777,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 15,
+          "prs": 16,
           "reviews": 3,
           "confirmed_issues": 6,
           "fixed_bonuses": 0,
@@ -4779,14 +4791,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 80,
+          "pr": 87,
           "review": 6,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 165,
+          "pr": 172,
           "review": 12,
           "issue": 0,
           "docs": 0,
@@ -4795,15 +4807,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 86,
-          "shipping": 80,
+          "overall": 93,
+          "shipping": 87,
           "review": 6,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 177,
-          "shipping": 165,
+          "overall": 184,
+          "shipping": 172,
           "review": 12,
           "bugs": 0,
           "docs": 0
@@ -4898,6 +4910,18 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/2544",
             "notes": [
               "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-08-16T22:47:13Z",
+            "category": "pr",
+            "points": 7,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4008",
+            "title": "[BUG07-Security]: fix usage of wrong production WS host",
+            "url": "https://github.com/KellisLab/Mantis/pull/4008",
+            "notes": [
+              "4th in 24h ×0.65"
             ]
           }
         ],
@@ -5091,10 +5115,22 @@
             "notes": [
               "3th in 24h ×0.8"
             ]
+          },
+          {
+            "at": "2026-08-16T22:47:13Z",
+            "category": "pr",
+            "points": 7,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4008",
+            "title": "[BUG07-Security]: fix usage of wrong production WS host",
+            "url": "https://github.com/KellisLab/Mantis/pull/4008",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
           }
         ]
       },
-      "rolling_total": 86,
+      "rolling_total": 93,
       "rank": 2
     },
     {
