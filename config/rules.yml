@@ -160,64 +160,68 @@ reviews:
     factors: [1.0, 1.0, 0.80, 0.65, 0.50, 0.35]
 
 # -----------------------------------------------------------------------------
-# Issues
+# Issues — SCORING DISABLED
 # -----------------------------------------------------------------------------
-# Opening an issue is real work (a bug report, a gap). Closing a ticket is
-# not — that is too easy to farm, so close pays 0. Volume is dampened
-# harder than PRs: 27 chores cannot outrank a merged PR. A labeled bug or
-# a maintainer `difficulty:` / `confirmed` tag is worth more than a chore.
+# Issues award ZERO points. The board ranks on code shipped and code reviewed,
+# nothing else.
+#
+# WHY: no pricing of issue *filing* survived contact with the data. Filing is
+# unverified at the moment it happens, so any value you attach to it rewards
+# typing rather than finding. Every variant we measured put someone with a
+# handful of tickets above people with a hundred real contributions —
+# a 0-5 point board where the ranking was essentially noise. Pricing the
+# verified side instead (paying the reporter once a fix lands) was defensible,
+# but it depends on `closes #N` linkage that sits at 27%, so it silently
+# ignored ~300 genuine finds. Rather than ship a ranking nobody can defend,
+# issues score nothing until the linkage problem is fixed.
+#
+# Issue COUNTS are still collected and still shown as activity ("3 issues
+# opened") — they are true and useful. They just do not move the ranking.
+#
+# TO RE-ENABLE: the engine is fully intact and unit-tested; only these values
+# were zeroed. Restore the numbers in the comments below and put the "bugs"
+# entry back in BOARDS in src/render.mjs. Do the PR-template work first — it
+# is the thing that makes any of this fair.
 issues:
-  created_points: 1
+  created_points: 0        # was 1
 
-  # Filing is cheap and unverified, so it stays near-free above. The real
-  # money is here: when your issue is CONFIRMED, which is something nobody can
-  # judge at filing time. Confirmed means either somebody else closed it as
-  # completed, OR a merged PR closed it — including your own. Filing a bug and
-  # fixing it yourself is normal work, and the merged PR is independent proof
-  # the fix was real. A bare manual self-close with no PR behind it pays
-  # nothing, since that is the one path anyone could farm at will.
-  # Paid to the reporter, never decayed by volume, never capped.
-  #
-  # CAVEAT: this leans on `closes #N` linkage, which is only ~27% of merged PRs
-  # today. Until a PR template pushes that up, plenty of genuine self-fixes
-  # will go unpaid. Raising linkage is the highest-leverage follow-up here.
-  #
-  # This is what makes high-volume bug reporting fair without making it
-  # farmable: you cannot inflate it without convincing a maintainer to
-  # actually do the work. 25 tickets nobody acts on stay worth almost nothing.
-  closed_bonus: 8
+  # Reporter's fee once a fix lands. Was 8, paid to the filer when either
+  # somebody else closed the issue as completed, or a merged PR closed it
+  # (including their own). `closed_bonus_to: reporter` is kept so the wiring
+  # stays correct if this is switched back on.
+  closed_bonus: 0          # was 8
   closed_bonus_to: reporter
 
-  # A small, capped kicker when the thing you found was genuinely significant.
-  # Deliberately modest: a top-severity verified report lands at 1 + 8 + 4 = 13,
-  # about one merged PR. It can never turn bug filing into the dominant board.
-  #
-  # ONLY counted when somebody other than the filer applied the label. That
-  # gate is the whole reason this is safe to score — see the audit note under
-  # `difficulty_points`. Self-applied severity labels are ignored outright, so
-  # nobody can set their own payout.
+  # Capped severity kicker, counted ONLY when somebody other than the filer
+  # applied the label (44 of 55 diff:N labels are self-applied — see the audit
+  # note under `difficulty_points`). Was high: 4 / medium: 2.
   severity_bonus:
-    high: 4            # imp:7-9, pri:7-9, diff:7-10, or `super-issue`
-    medium: 2          # imp:4-6, pri:4-6, diff:4-6
+    high: 0                # was 4
+    medium: 0              # was 2
     high_labels: ["imp:7", "imp:8", "imp:9", "pri:7", "pri:8", "pri:9",
                   "diff:7", "diff:8", "diff:9", "diff:10", "super-issue"]
     medium_labels: ["imp:4", "imp:5", "imp:6", "pri:4", "pri:5", "pri:6",
                     "diff:4", "diff:5", "diff:6"]
 
+  # IMPORTANT: each of the *_points below OVERRIDES `created_points` in
+  # score.mjs when its label matches — they are not additive. So zeroing
+  # `created_points` alone does NOT disable issue scoring; every tier has to
+  # be zeroed too. `bug` in particular exists in all 15 repos, so leaving
+  # bug_points at 6 would have kept most issues scoring.
   bug_labels: ["bug", "defect"]
-  bug_points: 6
+  bug_points: 0            # was 6
 
-  # VERIFIED DORMANT (audited 2026-08-16 against all 15 repos via the API):
-  # none of these labels exist anywhere in the org, so `confirmed_points` and
-  # `impact_points` have never once been awarded. Closest real labels are
+  # Also VERIFIED DORMANT (audited 2026-08-16 against all 15 repos via the
+  # API): none of these labels exist anywhere in the org, so these two never
+  # awarded anything even before being zeroed. Closest real labels are
   # `priority: medium`, `priority-medium` and `importance: normal` — none of
-  # which mean "critical". Left in place, deliberately not remapped: see the
-  # note on `difficulty_points` below for why the org's real severity labels
-  # are not safe to score yet.
+  # which mean "critical". Deliberately not remapped: see the note on
+  # `difficulty_points` for why the org's real severity labels aren't safe
+  # to score.
   confirmed_labels: ["confirmed", "accepted"]
-  confirmed_points: 10
+  confirmed_points: 0      # was 10
   impact_labels: ["priority: critical", "priority: high", "impact: high"]
-  impact_points: 16
+  impact_points: 0         # was 16
 
   # Filing in bursts is how triage actually works — sitting down and writing
   # up twenty things you found is normal, not abuse. The old curve bottomed out
@@ -269,13 +273,12 @@ issues:
   # points, so everything from tier 4 up would silently collapse to 10 and the
   # top of the scale would do nothing. Raise the ceiling, or move difficulty
   # onto the verified-fix side, before switching these on.
-  difficulty_points:
-    "difficulty: 1": 3
-    "difficulty: 2": 6
-    "difficulty: 3": 10
-    "difficulty: 4": 16
-    "difficulty: 5": 24
-    "difficulty: 6": 36
+  # Emptied along with every other issue tier. These also OVERRIDE
+  # `created_points`, so leaving values here would have kept issue scoring
+  # alive for any labelled ticket. Former values, for whenever this comes
+  # back: 1:3, 2:6, 3:10, 4:16, 5:24, 6:36 — and note the keys were wrong
+  # anyway (the real labels are diff:1..diff:10).
+  difficulty_points: {}
 
   duplicate_labels: ["duplicate", "wontfix", "invalid"]
 
