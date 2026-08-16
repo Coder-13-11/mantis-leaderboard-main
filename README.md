@@ -32,8 +32,8 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **485** | 78 | 0 | 7 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **471** | 97 | 2 | 5 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **471** | 97 | 2 | 5 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **460** | 76 | 0 | 7 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **211** | 14 | 3 | 5 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **161** | 8 | 0 | 11 |
 | 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **141** | 13 | 12 | 2 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **103** | 14 | 0 | 3 |
 | 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **91** | 3 | 19 | 2 |
 
-_Last updated: Sun, 16 Aug 2026 04:32:31 GMT_
+_Last updated: Sun, 16 Aug 2026 05:04:43 GMT_
 <!-- LEADERBOARD:END -->
 
 
