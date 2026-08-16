@@ -170,6 +170,14 @@ export async function listIssues(token, repo, sinceIso) {
   return { nodes, warnings: [] };
 }
 
+// Pulls the close actor AND who applied each label, for closed issues only.
+//
+// The label actor matters because severity labels are only trustworthy when
+// somebody other than the filer applied them: measured across Mantis +
+// MantisAPI, 44 of 55 `diff:N` labelling events were the issue's own author
+// labelling their own ticket. Scoring a self-applied severity label would let
+// people set their own payout. Both event types come back in one query on the
+// same chunks, so this costs no extra round trips.
 async function hydrateIssueClosers(token, issues) {
   const closed = issues.filter((i) => i.closed || i.state === "CLOSED");
   const query = `
@@ -182,6 +190,22 @@ async function hydrateIssueClosers(token, issues) {
               ... on ClosedEvent {
                 createdAt
                 actor { login }
+                # `closer` is the PR (or commit) that closed this issue, as
+                # opposed to `actor`, who merely clicked. This is what lets a
+                # self-close still pay: filing a bug and fixing it yourself is
+                # normal, and a merged PR is proof the fix was real.
+                closer {
+                  __typename
+                  ... on PullRequest { number merged }
+                }
+              }
+            }
+          }
+          labelEvents: timelineItems(first: 60, itemTypes: [LABELED_EVENT]) {
+            nodes {
+              ... on LabeledEvent {
+                actor { login }
+                label { name }
               }
             }
           }
@@ -194,9 +218,22 @@ async function hydrateIssueClosers(token, issues) {
     const data = await graphql(token, query, { ids: chunk.map((x) => x.id) });
     const byId = new Map((data?.nodes || []).filter(Boolean).map((n) => [n.id, n]));
     for (const issue of chunk) {
-      const events = byId.get(issue.id)?.timelineItems?.nodes || [];
+      const node = byId.get(issue.id);
+      const events = node?.timelineItems?.nodes || [];
       const last = [...events].reverse().find((e) => e?.actor || e?.createdAt) || events[events.length - 1];
       issue.closedBy = last?.actor?.login || null;
+      // True when a MERGED pull request closed this issue, whoever clicked.
+      issue.closedByMergedPr = events.some(
+        (e) => e?.closer?.__typename === "PullRequest" && e.closer.merged === true
+      );
+
+      // label name (lowercased) -> login that applied it. Last writer wins.
+      const actors = {};
+      for (const e of node?.labelEvents?.nodes || []) {
+        const name = e?.label?.name;
+        if (name) actors[String(name).toLowerCase()] = e?.actor?.login || null;
+      }
+      issue.labelActors = actors;
     }
   }
 }

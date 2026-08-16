@@ -86,6 +86,7 @@ async function main() {
     repos: activity.repos || rules.repos,
     lookback_days: rules.lookback_days,
     windows_days: rules.display?.windows_days || [7, 14],
+    bug_board_window_days: rules.display?.bug_board_window_days || 14,
     manual_categories: rules.manual_contributions?.categories || {},
     rules_version: rules.version,
     sync: q,

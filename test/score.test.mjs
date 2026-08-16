@@ -35,8 +35,15 @@ const rules = {
   },
   issues: {
     created_points: 1,
-    closed_bonus: 4,
+    closed_bonus: 8,
     closed_bonus_to: "reporter",
+    max_points_per_day: 10,
+    severity_bonus: {
+      high: 4,
+      medium: 2,
+      high_labels: ["imp:8", "super-issue"],
+      medium_labels: ["imp:5"],
+    },
     bug_labels: ["bug"],
     bug_points: 6,
     confirmed_labels: ["confirmed"],
@@ -288,8 +295,8 @@ test("duplicates pay nothing; the closer is never paid for closing", () => {
   assert.equal(alice.counts.confirmed_issues, 2);
   assert.equal(carol.counts.issues_closed, 2);
   // Issue #1 is a duplicate and pays nothing at all. Issue #2 pays Alice
-  // 1 for filing + a 4pt finder's fee, because Carol (not Alice) closed it.
-  assert.equal(alice.breakdown.issue, 5);
+  // 1 for filing + an 8pt finder's fee, because Carol (not Alice) closed it.
+  assert.equal(alice.breakdown.issue, 9);
   // Carol did the closing and earns nothing for it: closing is too easy to
   // farm, so the value flows to whoever reported the thing worth fixing.
   assert.equal(carol.breakdown.issue || 0, 0);
@@ -478,7 +485,14 @@ test("difficulty-labeled issues outrank unlabeled chore tickets", () => {
     rules
   );
   const alice = users.find((u) => u.login === "alice");
-  assert.equal(alice.breakdown.issue, 36);
+  // The raw difficulty tier is 36, but filing points are bounded by
+  // `max_points_per_day` (10). That ceiling is intentional — it bounds what
+  // filing alone can ever be worth in a day — and it means the high end of
+  // the difficulty scale is unreachable while these labels stay dormant.
+  // The property that matters here is that a labeled issue still far
+  // outranks an unlabeled chore (1 pt).
+  assert.equal(alice.breakdown.issue, 10);
+  assert.ok(alice.breakdown.issue > 1);
 });
 
 const mkIssue = (over = {}) => ({
@@ -501,12 +515,12 @@ test("the reporter is paid when someone else closes their issue as completed", (
     rules
   );
   const griffin = users.find((u) => u.login === "griffin");
-  // 1 for filing + 4 finder's fee.
-  assert.equal(griffin.breakdown.issue, 5);
+  // 1 for filing + 8 finder's fee.
+  assert.equal(griffin.breakdown.issue, 9);
   assert.ok(griffin.ledger.some((e) => e.kind === "issue_closed"));
 });
 
-test("closing your own issue pays no finder's fee", () => {
+test("a bare manual self-close pays no finder's fee", () => {
   const now = new Date().toISOString();
   const users = score(
     {
@@ -516,8 +530,29 @@ test("closing your own issue pays no finder's fee", () => {
     rules
   );
   const griffin = users.find((u) => u.login === "griffin");
-  assert.equal(griffin.breakdown.issue, 1); // filing only — no self-close bonus
+  assert.equal(griffin.breakdown.issue, 1); // filing only
   assert.ok(!griffin.ledger.some((e) => e.kind === "issue_closed"));
+});
+
+test("self-close DOES pay when a merged PR closed the issue", () => {
+  const now = new Date().toISOString();
+  const users = score(
+    {
+      pullRequests: [],
+      issues: [
+        mkIssue({
+          closed: true,
+          closedAt: now,
+          closedBy: { login: "griffin" }, // filed it and fixed it himself
+          closedByMergedPr: true,
+        }),
+      ],
+    },
+    rules
+  );
+  const griffin = users.find((u) => u.login === "griffin");
+  assert.equal(griffin.breakdown.issue, 9); // 1 filing + 8 confirmed
+  assert.ok(griffin.ledger.some((e) => e.kind === "issue_closed"));
 });
 
 test("an unresolved pile of issues stays nearly worthless", () => {
@@ -552,6 +587,59 @@ test("decayed issues accumulate instead of each rounding to zero", () => {
   // integer first would have thrown away everything from the 3rd on and
   // yielded 2 — the cliff this guards against.
   assert.ok(griffin.breakdown.issue > 2.5, `expected >2.5, got ${griffin.breakdown.issue}`);
+});
+
+test("severity bonus applies only when someone else applied the label", () => {
+  const now = new Date().toISOString();
+  const run = (labelActors) =>
+    score(
+      {
+        pullRequests: [],
+        issues: [
+          mkIssue({
+            closed: true,
+            closedAt: now,
+            closedBy: { login: "maintainer" },
+            labels: { nodes: [{ name: "imp:8" }] },
+            labelActors,
+          }),
+        ],
+      },
+      rules
+    ).find((u) => u.login === "griffin");
+
+  // Triage agent applied it: 1 filing + 8 fix + 4 severity.
+  assert.equal(run({ "imp:8": "MantisCartography" }).breakdown.issue, 13);
+  // Filer applied it to their own issue: no severity kicker.
+  assert.equal(run({ "imp:8": "griffin" }).breakdown.issue, 9);
+  // Applier unknown (old snapshot): withhold rather than guess in their favour.
+  assert.equal(run(null).breakdown.issue, 9);
+});
+
+test("filing is capped per day but verified fixes are not", () => {
+  const now = Date.now();
+  const mk = (n, over = {}) =>
+    Array.from({ length: n }, (_, i) =>
+      mkIssue({ createdAt: new Date(now - i * 60_000).toISOString(), number: 300 + i, ...over })
+    );
+
+  const filedOnly = score({ pullRequests: [], issues: mk(27) }, rules).find(
+    (u) => u.login === "griffin"
+  );
+  assert.ok(
+    filedOnly.breakdown.issue <= 6,
+    `filing should be capped at 6, got ${filedOnly.breakdown.issue}`
+  );
+
+  const allFixed = score(
+    {
+      pullRequests: [],
+      issues: mk(10, { closed: true, closedAt: new Date(now).toISOString(), closedBy: { login: "maintainer" } }),
+    },
+    rules
+  ).find((u) => u.login === "griffin");
+  // 10 verified fixes x 8 = 80, uncapped, plus capped filing.
+  assert.ok(allFixed.breakdown.issue >= 80, `expected >=80, got ${allFixed.breakdown.issue}`);
 });
 
 test("Griffin-style: 27 ordinary issues cannot outrank a merged PR", () => {

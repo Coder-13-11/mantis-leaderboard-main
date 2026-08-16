@@ -99,6 +99,24 @@ function hasAnyLabel(labels, wanted) {
   return wanted.some((d) => set.has(String(d).toLowerCase()));
 }
 
+// True only if `wanted` includes a label on this issue that somebody OTHER
+// than the filer applied. Severity labels are overwhelmingly self-applied
+// (44 of 55 diff:N events across Mantis + MantisAPI), so a self-applied label
+// must never move points — that would be setting your own payout. When the
+// applier is unknown (older snapshots with no labelActors) we withhold the
+// bonus rather than guess in the claimant's favour.
+function hasThirdPartyLabel(entity, wanted, filerLogin) {
+  if (!wanted?.length) return false;
+  const actors = entity.labelActors;
+  if (!actors) return false;
+  return wanted.some((w) => {
+    const key = String(w).toLowerCase();
+    if (!(key in actors)) return false;
+    const actor = actors[key];
+    return Boolean(actor) && actor !== filerLogin;
+  });
+}
+
 // Build a login exclusion checker from config (exact logins + patterns).
 // Humans only: listed bots, [bot] suffixes, case-insensitive exact matches.
 export function buildLoginExcluder(rules) {
@@ -569,8 +587,21 @@ export function score(activity, rules, manual = {}, identities = {}) {
 
     let createPts = openerOk ? rawCreate * createFactor : 0;
     let closedPts = 0;
+    let severityNote = null;
     if (i.closed && i.stateReason !== "NOT_PLANNED" && (is.closed_bonus || 0) > 0) {
       closedPts = (is.closed_bonus || 0) * (openerOk && closerLogin === login ? createFactor : 1);
+
+      // Capped severity kicker, third-party labels only.
+      const sev = is.severity_bonus;
+      if (sev) {
+        if (hasThirdPartyLabel(i, sev.high_labels, login)) {
+          closedPts += sev.high || 0;
+          severityNote = "high severity";
+        } else if (hasThirdPartyLabel(i, sev.medium_labels, login)) {
+          closedPts += sev.medium || 0;
+          severityNote = "medium severity";
+        }
+      }
     }
 
     createPts = maybeClip(
@@ -585,13 +616,20 @@ export function score(activity, rules, manual = {}, identities = {}) {
     const bonusTo = is.closed_bonus_to || "closer";
     let closedRecipient = openerOk ? login : null;
     if (bonusTo === "reporter") {
-      // Finder's fee: paid to whoever FILED the issue, and only when somebody
-      // ELSE closed it as completed. That independent close is the whole
-      // point — it is the moment a report is confirmed to have been worth
-      // acting on, which is something you cannot know at filing time.
-      // A self-close pays nothing, or filing-and-closing your own tickets
-      // would be free points.
-      closedRecipient = openerOk && closerLogin && closerLogin !== login ? login : null;
+      // Finder's fee: paid to whoever FILED the issue, once the report is
+      // CONFIRMED — something you cannot judge at filing time. Confirmation
+      // means one of two things:
+      //
+      //   1. Somebody else closed it as completed, or
+      //   2. a MERGED pull request closed it, even your own. Filing a bug and
+      //      fixing it yourself is normal and shouldn't be penalised; the
+      //      merged PR is independent proof the fix was real.
+      //
+      // A bare manual self-close with no merged PR behind it pays nothing —
+      // that's the one path anybody could farm at will.
+      const confirmedByOther = Boolean(closerLogin) && closerLogin !== login;
+      const confirmedByMergedPr = Boolean(i.closedByMergedPr);
+      closedRecipient = openerOk && (confirmedByOther || confirmedByMergedPr) ? login : null;
     } else if (bonusTo === "closer" && closerOk) closedRecipient = closerLogin;
     else if (bonusTo === "closer" && closerLogin && isExcluded(closerLogin) && openerOk) {
       closedRecipient = login;
@@ -608,12 +646,16 @@ export function score(activity, rules, manual = {}, identities = {}) {
         const d = applyDiminishing(closedRecipient, closeT, issueTimes, is.daily_diminishing);
         closedPts *= d.factor;
       }
+      // The reporter's verified-fix bonus is exempt from the daily ceiling for
+      // the same reason it's exempt from decay: it is already gated on someone
+      // else doing the work. The ceiling exists to bound UNVERIFIED filing.
+      // If ten of your reports get fixed in one day, you earned all ten.
       closedPts = maybeClip(
         closedPts,
         closedRecipient,
         closeT,
         issuePtsWindow,
-        is.max_points_per_day,
+        bonusTo === "reporter" ? undefined : is.max_points_per_day,
         is.daily_diminishing
       );
     }
@@ -652,7 +694,7 @@ export function score(activity, rules, manual = {}, identities = {}) {
         ref: issueRef,
         title: i.title || "",
         url: issueUrl,
-        notes: ["closed"],
+        notes: severityNote ? ["fix confirmed", severityNote] : ["fix confirmed"],
       });
       addCount(userOf(users, closedRecipient), "fixed_bonuses", i.closedAt || i.createdAt);
     }
@@ -715,7 +757,13 @@ export function score(activity, rules, manual = {}, identities = {}) {
         overall: u.windows[n],
         shipping: b.pr || 0,
         review: b.review || 0,
-        bugs: b.issue || 0,
+        // Bug finding ranks on CONFIRMED finds only — reports somebody else
+        // closed as completed — not on how many tickets you typed. Ranking on
+        // filed-plus-fixed is what put a contributor with 8 lifetime issues
+        // above one with 105.
+        bugs: u.ledger
+          .filter((e) => e.kind === "issue_closed" && parseTime(e.at) >= cutoff)
+          .reduce((sum, e) => sum + e.points, 0),
         docs: b.docs || 0,
       };
       u.windowLedger[n] = u.ledger.filter((e) => parseTime(e.at) >= cutoff);

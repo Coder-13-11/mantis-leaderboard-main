@@ -170,16 +170,39 @@ issues:
   created_points: 1
 
   # Filing is cheap and unverified, so it stays near-free above. The real
-  # money is here: when somebody ELSE closes your issue as completed, that is
-  # the moment the report is confirmed to have been worth acting on — which is
-  # something nobody can judge at filing time. Paid to the reporter, never
-  # decayed by same-day volume, and never paid on a self-close.
+  # money is here: when your issue is CONFIRMED, which is something nobody can
+  # judge at filing time. Confirmed means either somebody else closed it as
+  # completed, OR a merged PR closed it — including your own. Filing a bug and
+  # fixing it yourself is normal work, and the merged PR is independent proof
+  # the fix was real. A bare manual self-close with no PR behind it pays
+  # nothing, since that is the one path anyone could farm at will.
+  # Paid to the reporter, never decayed by volume, never capped.
+  #
+  # CAVEAT: this leans on `closes #N` linkage, which is only ~27% of merged PRs
+  # today. Until a PR template pushes that up, plenty of genuine self-fixes
+  # will go unpaid. Raising linkage is the highest-leverage follow-up here.
   #
   # This is what makes high-volume bug reporting fair without making it
   # farmable: you cannot inflate it without convincing a maintainer to
   # actually do the work. 25 tickets nobody acts on stay worth almost nothing.
-  closed_bonus: 4
+  closed_bonus: 8
   closed_bonus_to: reporter
+
+  # A small, capped kicker when the thing you found was genuinely significant.
+  # Deliberately modest: a top-severity verified report lands at 1 + 8 + 4 = 13,
+  # about one merged PR. It can never turn bug filing into the dominant board.
+  #
+  # ONLY counted when somebody other than the filer applied the label. That
+  # gate is the whole reason this is safe to score — see the audit note under
+  # `difficulty_points`. Self-applied severity labels are ignored outright, so
+  # nobody can set their own payout.
+  severity_bonus:
+    high: 4            # imp:7-9, pri:7-9, diff:7-10, or `super-issue`
+    medium: 2          # imp:4-6, pri:4-6, diff:4-6
+    high_labels: ["imp:7", "imp:8", "imp:9", "pri:7", "pri:8", "pri:9",
+                  "diff:7", "diff:8", "diff:9", "diff:10", "super-issue"]
+    medium_labels: ["imp:4", "imp:5", "imp:6", "pri:4", "pri:5", "pri:6",
+                    "diff:4", "diff:5", "diff:6"]
 
   bug_labels: ["bug", "defect"]
   bug_points: 6
@@ -196,10 +219,30 @@ issues:
   impact_labels: ["priority: critical", "priority: high", "impact: high"]
   impact_points: 16
 
-  # Steeper than PRs. 1st and 2nd count; after that it falls off fast.
+  # Filing in bursts is how triage actually works — sitting down and writing
+  # up twenty things you found is normal, not abuse. The old curve bottomed out
+  # at 6%, which is what produced a "Bug finding" board whose entire range was
+  # 0-5 points and ranked someone with 8 lifetime issues above someone with
+  # 105. Volume still decays; it no longer collapses.
+  # NOTE: the verified-fix bonus above is never decayed by this at all.
   daily_diminishing:
     window_hours: 24
-    factors: [1.0, 0.75, 0.45, 0.25, 0.12, 0.06]
+    factors: [1.0, 0.9, 0.8, 0.7, 0.6, 0.5]
+
+  # Ceiling on points from FILING alone in any rolling 24h. The verified-fix
+  # bonus is exempt (see score.mjs) — if ten of your reports get fixed in one
+  # day you earned all ten.
+  #
+  # Why this is needed: with the softer 50% floor above, 27 filed-but-unfixed
+  # issues would total 15 points and outrank a merged PR (10-14), inverting the
+  # invariant the test suite protects. Capping filing at 10 pulls that back
+  # under a merged PR while leaving burst triage clearly worth doing. All the
+  # real upside stays on the verified side.
+  #
+  # 10 is chosen so the cap bounds VOLUME without clipping QUALITY: a single
+  # `bug`-labeled report (6) sits comfortably under it, and a `confirmed` one
+  # (10) exactly reaches it. Lower values start punishing one good report.
+  max_points_per_day: 10
 
   # VERIFIED DORMANT — and intentionally left that way. Two separate problems,
   # both measured on 2026-08-16 against Mantis + MantisAPI + Mantis-verticals:
@@ -221,6 +264,11 @@ issues:
   # is not the issue author (GraphQL `LabeledEvent.actor` exposes this), and
   # only once PR->issue linkage is healthy: just 27% of merged PRs currently
   # carry a `closes #N`, so a label-driven scheme would reach ~16% of work.
+  #
+  # HEADS UP if you ever enable these: `max_points_per_day` (10) clips FILING
+  # points, so everything from tier 4 up would silently collapse to 10 and the
+  # top of the scale would do nothing. Raise the ceiling, or move difficulty
+  # onto the verified-fix side, before switching these on.
   difficulty_points:
     "difficulty: 1": 3
     "difficulty: 2": 6
@@ -267,3 +315,10 @@ display:
   # Ranked by the first window. Rolling 7 × 24h = who's active now;
   # 14 = the same idea, slower. Midnight UTC is not a scoring boundary.
   windows_days: [7, 14]
+
+  # The Bug finding board always uses this window, whichever window tab is
+  # selected. A confirmed find depends on somebody ELSE closing your report,
+  # and that lags filing by weeks — over 7 days the board mostly measures who
+  # happened to get closes that week rather than who finds real bugs. Must be
+  # one of `windows_days` so the tab can highlight correctly.
+  bug_board_window_days: 14

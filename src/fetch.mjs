@@ -76,11 +76,15 @@ function toIssueRecord(i) {
     closed: Boolean(i.closed || i.state === "CLOSED"),
     closedAt: i.closedAt || null,
     closedBy: i.closedBy || null,
+    closedByMergedPr: Boolean(i.closedByMergedPr),
     stateReason: i.stateReason || null,
     createdAt: i.createdAt,
     updatedAt: i.updatedAt,
     author: i.author?.login || null,
     labels: (i.labels?.nodes || []).map((l) => (typeof l === "string" ? l : l.name)),
+    // { "imp:8": "MantisCartography", ... } — who applied each label, so the
+    // scorer can ignore severity labels the filer put on their own issue.
+    labelActors: i.labelActors || null,
   };
 }
 
