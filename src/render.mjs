@@ -8,12 +8,16 @@
 
 const SITE_MAX = 15; // contributors shown on the dashboard (podium + list)
 
+// "Bug finding" is intentionally absent: issues score zero (see the Issues
+// section of config/rules.yml for why). Put it back here alongside restoring
+// the point values there if issue scoring is ever re-enabled.
 const BOARDS = [
   { id: "overall", label: "Overall" },
   { id: "shipping", label: "Code shipping" },
   { id: "review", label: "Code review" },
-  { id: "bugs", label: "Bug finding" },
 ];
+
+const hasBugBoard = BOARDS.some((b) => b.id === "bugs");
 
 // Issue points accumulate fractionally (see round2 in score.mjs) so that a
 // decayed event isn't rounded away to zero one at a time. Everything the page
@@ -371,7 +375,7 @@ function whatCountsSection(meta) {
       <div class="score-guide">
         <p class="score-guide-lead">
           Ranked by a <b>rolling ${meta.windows_days?.[0] ?? 7}- or ${meta.windows_days?.[1] ?? 14}-day window</b>,
-          not career total and not UTC midnight. Shipping, reviewing, and finding bugs
+          not career total and not UTC midnight. Shipping code and reviewing code
           are different jobs — they share one overall score, and each has its own board.
           Open any person to see the ledger.
         </p>
@@ -392,9 +396,9 @@ function whatCountsSection(meta) {
             <span class="sm-note">outcome (comment / approve / request-changes)${rv.inline_comment_bonus ? ` · +${rv.inline_comment_bonus} for inline comments` : ""}${rv.addressed_changes_bonus ? ` · +${rv.addressed_changes_bonus} if requested changes later merge` : ""}. Authors are not penalized for lack of review.</span>
           </div>
           <div class="sm">
-            <span class="sm-lbl">Issues and bugs</span>
-            <span class="sm-val">+${is.created_points ?? 1} to file · +${is.closed_bonus ?? 8} when fixed</span>
-            <span class="sm-note">Filing is nearly free and capped at ${is.max_points_per_day ?? 6} pts/day — anyone can open a ticket. The points land when <b>someone else</b> closes your report as completed${is.severity_bonus?.high ? `, plus up to +${is.severity_bonus.high} if a maintainer or the triage agent tagged it high severity` : ""}. Closing your own issue pays nothing, and the fix bonus is never capped or decayed.</span>
+            <span class="sm-lbl">Issues</span>
+            <span class="sm-val">0 pts</span>
+            <span class="sm-note">Issues are tracked and shown as activity, but they do not affect the ranking. Nobody could price filing fairly: it is unverified at the moment it happens, so every version of it rewarded typing tickets over doing work. The board ranks code shipped and code reviewed.</span>
           </div>
         </div>
         <p class="score-example">
@@ -417,9 +421,12 @@ function whatCountsSection(meta) {
         </div>
         <div class="wc">
           <b>Issues</b>
-          <p>Counts = issues you opened (including duplicates and chores). Opening scores a little (+${is.created_points ?? 1}); a <code>bug</code> label scores more (+${is.bug_points ?? 6}). Closing a ticket scores <b>nothing</b> — that is too easy to farm.
-          Maintainer-confirmed work pays more: <code>confirmed</code> (+${is.confirmed_points ?? 10}), high-impact (+${is.impact_points ?? 16}), or <code>difficulty: 1…6</code> (${diffRange}).
-          Rejected as ${esc(dupes)} / not-planned score nothing. Issue volume decays faster than PRs, so 27 chores cannot overtake a ship.</p>
+          <p>Counts = issues you opened, shown as activity next to your name. They score
+          <b>zero points</b> and do not affect your rank.
+          Filing an issue is unverified at the moment it happens, so any price put on it
+          rewarded writing tickets rather than finding real problems — every variant tried
+          pushed people with a handful of tickets above people with a hundred merged PRs.
+          Bug reporting still matters; it just is not what this board measures right now.</p>
         </div>
         <div class="wc">
           <b>Humans only</b>
@@ -536,17 +543,27 @@ export function renderHtml(users, meta) {
   // FOLLOW the board: the bug window reads as active and the others are
   // visibly disabled, and the panel underneath genuinely shows that window's
   // data. What the user sees selected is always what they are looking at.
-  const activeWindowTab = [
-    ...windowsDays.map(
-      (days) =>
-        `.wrap:not(:has(#board-bugs:checked)):has(#tab-w${days}:checked) .tabs-window label[for="tab-w${days}"]`
-    ),
-    `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${bugDays}"]`,
-  ].join(", ");
-  const pinnedWindowTab = windowsDays
-    .filter((days) => days !== bugDays)
-    .map((days) => `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${days}"]`)
-    .join(", ");
+  const activeWindowTab = (
+    hasBugBoard
+      ? [
+          ...windowsDays.map(
+            (days) =>
+              `.wrap:not(:has(#board-bugs:checked)):has(#tab-w${days}:checked) .tabs-window label[for="tab-w${days}"]`
+          ),
+          `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${bugDays}"]`,
+        ]
+      : windowsDays.map(
+          (days) => `.wrap:has(#tab-w${days}:checked) .tabs-window label[for="tab-w${days}"]`
+        )
+  ).join(", ");
+  // Empty when there's no bugs board; emitting a bare `{...}` with no selector
+  // would be invalid CSS and take the whole stylesheet down with it.
+  const pinnedWindowTabCss = hasBugBoard
+    ? `${windowsDays
+        .filter((days) => days !== bugDays)
+        .map((days) => `.wrap:has(#board-bugs:checked) .tabs-window label[for="tab-w${days}"]`)
+        .join(", ")} { opacity: .35; pointer-events: none; cursor: default; }`
+    : "";
   const activeBoardTab = BOARDS.map(
     (b) => `.wrap:has(#board-${b.id}:checked) .tabs-board label[for="board-${b.id}"]`
   ).join(", ");
@@ -714,10 +731,9 @@ export function renderHtml(users, meta) {
   ${activeWindowTab}, ${activeBoardTab} { color: var(--accent-ink); background: var(--accent); }
 
   /* Bug finding pins its own window: the other window tabs go inert so the
-     highlighted tab always matches the data on screen. */
-  ${pinnedWindowTab} {
-    opacity: .35; pointer-events: none; cursor: default;
-  }
+     highlighted tab always matches the data on screen. Empty unless that
+     board exists. */
+  ${pinnedWindowTabCss}
 
   .panel-note {
     margin: 0 0 1rem; padding: .6rem .8rem; font-size: .78rem; line-height: 1.5;
