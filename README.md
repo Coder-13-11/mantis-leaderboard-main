@@ -17,9 +17,9 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **134** | 9 | 8 | 4 |
+| 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **131** | 9 | 8 | 4 |
 | 2 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 10 | 1 |
-| 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **90** | 11 | 0 | 1 |
+| 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 8 |
 | 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 6 | 0 | 6 |
 | 6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **54** | 4 | 0 | 0 |
@@ -34,16 +34,16 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **462** | 97 | 2 | 5 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **381** | 76 | 0 | 23 |
-| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **225** | 17 | 9 | 6 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **228** | 17 | 9 | 6 |
 | 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 13 | 2 |
 | 5 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 11 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 10 | 0 | 1 |
 | 7 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **96** | 8 | 0 | 7 |
-| 8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
-| 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **90** | 11 | 1 | 3 |
+| 8 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 1 | 3 |
+| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 | 10 | [@SufianTA](https://github.com/SufianTA) | **83** | 5 | 5 | 0 |
 
-_Last updated: Mon, 17 Aug 2026 03:10:00 GMT_
+_Last updated: Mon, 17 Aug 2026 04:23:23 GMT_
 <!-- LEADERBOARD:END -->
 
 
