@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 11 | 0 | 1 |
 | 6 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **108** | 9 | 0 | 7 |
 | 7 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 10 |
-| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **97** | 5 | 19 | 2 |
-| 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 1 | 3 |
-| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
+| 8 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 1 | 3 |
+| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
+| 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **91** | 7 | 0 | 19 |
 
-_Last updated: Mon, 17 Aug 2026 22:36:59 GMT_
+_Last updated: Mon, 17 Aug 2026 22:59:18 GMT_
 <!-- LEADERBOARD:END -->
 
 
