@@ -18,10 +18,10 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **131** | 9 | 8 | 4 |
-| 2 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 10 | 1 |
+| 2 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 11 | 1 |
 | 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 8 |
-| 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **69** | 6 | 0 | 6 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **91** | 7 | 0 | 8 |
+| 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 0 | 6 |
 | 6 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 5 | 2 | 18 |
 | 7 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
 | 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **40** | 3 | 0 | 0 |
@@ -35,15 +35,15 @@ code / review / issues ledger.
 | 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **438** | 95 | 2 | 4 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **381** | 76 | 0 | 23 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **215** | 16 | 9 | 6 |
-| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 13 | 2 |
-| 5 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 11 |
-| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 10 | 0 | 1 |
-| 7 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **96** | 8 | 0 | 7 |
+| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 14 | 2 |
+| 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **108** | 9 | 0 | 7 |
+| 6 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 10 |
+| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 10 | 0 | 1 |
 | 8 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 1 | 3 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
-| 10 | [@SufianTA](https://github.com/SufianTA) | **83** | 5 | 5 | 0 |
+| 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **91** | 7 | 0 | 19 |
 
-_Last updated: Mon, 17 Aug 2026 17:40:58 GMT_
+_Last updated: Mon, 17 Aug 2026 18:55:03 GMT_
 <!-- LEADERBOARD:END -->
 
 
