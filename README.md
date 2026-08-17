@@ -18,32 +18,32 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **131** | 9 | 8 | 4 |
-| 2 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 11 | 1 |
+| 2 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 13 | 1 |
 | 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **91** | 7 | 0 | 7 |
 | 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 0 | 6 |
 | 6 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 5 | 2 | 18 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **50** | 4 | 0 | 1 |
 | 8 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
-| 9 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **40** | 3 | 1 | 0 |
-| 10 | [@charleywolf](https://github.com/charleywolf) | **38** | 3 | 0 | 0 |
+| 9 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **44** | 4 | 0 | 23 |
+| 10 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **40** | 3 | 1 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **438** | 95 | 2 | 4 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **381** | 76 | 0 | 23 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **450** | 96 | 2 | 4 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **393** | 77 | 0 | 23 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **215** | 16 | 9 | 6 |
-| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 14 | 2 |
+| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 16 | 2 |
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 11 | 0 | 1 |
 | 6 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **108** | 9 | 0 | 7 |
 | 7 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 10 |
-| 8 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 1 | 3 |
-| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
-| 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **91** | 7 | 0 | 19 |
+| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **97** | 5 | 19 | 2 |
+| 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 1 | 3 |
+| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Mon, 17 Aug 2026 19:58:43 GMT_
+_Last updated: Mon, 17 Aug 2026 20:39:49 GMT_
 <!-- LEADERBOARD:END -->
 
 
