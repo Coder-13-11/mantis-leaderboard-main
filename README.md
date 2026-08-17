@@ -32,9 +32,9 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **462** | 97 | 2 | 5 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **462** | 97 | 2 | 4 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **381** | 76 | 0 | 23 |
-| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **228** | 17 | 9 | 6 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **215** | 16 | 9 | 6 |
 | 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 13 | 2 |
 | 5 | [@charleywolf](https://github.com/charleywolf) | **101** | 8 | 0 | 11 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **98** | 10 | 0 | 1 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 | 10 | [@SufianTA](https://github.com/SufianTA) | **83** | 5 | 5 | 0 |
 
-_Last updated: Mon, 17 Aug 2026 06:04:28 GMT_
+_Last updated: Mon, 17 Aug 2026 07:37:29 GMT_
 <!-- LEADERBOARD:END -->
 
 
