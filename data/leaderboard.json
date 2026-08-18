@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T01:47:50.964Z",
+  "generated_at": "2026-08-18T03:05:47.826Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-18T01:46:44.702Z",
+    "run_started_at": "2026-08-18T03:05:01.229Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-18T00:00:00.000Z",
     "repos": [
@@ -91,8 +91,8 @@
     "event_counts": {
       "prs": 3447,
       "issues": 2103,
-      "reviews": 10209,
-      "review_comments": 13954
+      "reviews": 10217,
+      "review_comments": 13961
     }
   },
   "review_rules": {
@@ -173,7 +173,7 @@
     {
       "login": "rohan-va",
       "name": "Rohan Vaidya",
-      "total": 1107,
+      "total": 1118,
       "days": {
         "2025-09-22": 10,
         "2025-09-25": 10,
@@ -247,7 +247,7 @@
         "2026-08-16": 53,
         "2026-08-17": 30,
         "2026-07-27": 10,
-        "2026-08-18": 10
+        "2026-08-18": 21
       },
       "dayCounts": {
         "2025-09-22": {
@@ -1595,14 +1595,14 @@
           "bug_prs": 0
         },
         "2026-08-18": {
-          "prs": 0,
+          "prs": 1,
           "reviews": 1,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 0,
-          "review_submissions": 1,
+          "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
         },
@@ -2521,7 +2521,7 @@
           "other": 0
         },
         "2026-08-18": {
-          "pr": 0,
+          "pr": 11,
           "review": 10,
           "issue": 0,
           "docs": 0,
@@ -2529,27 +2529,27 @@
         }
       },
       "breakdown": {
-        "pr": 788,
+        "pr": 799,
         "review": 309,
         "issue": 0,
         "docs": 10,
         "other": 0
       },
       "counts": {
-        "prs": 72,
+        "prs": 73,
         "reviews": 82,
         "confirmed_issues": 98,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 75,
         "issues_closed": 87,
-        "review_submissions": 117,
+        "review_submissions": 118,
         "docs_prs": 1,
         "bug_prs": 0
       },
       "sizes": {
         "XS": 19,
-        "S": 16,
+        "S": 17,
         "M": 16,
         "L": 13,
         "XL": 8
@@ -3750,6 +3750,16 @@
           ]
         },
         {
+          "at": "2026-08-18T02:55:17Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2667",
+          "title": "[H-02 -> Security]: Resolve unauthenticated endpoints in /inference",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2667",
+          "notes": []
+        },
+        {
           "at": "2026-08-18T01:34:20Z",
           "category": "review",
           "points": 10,
@@ -3764,8 +3774,8 @@
         }
       ],
       "windows": {
-        "7": 141,
-        "14": 225
+        "7": 142,
+        "14": 236
       },
       "windowCounts": {
         "7": {
@@ -3776,33 +3786,33 @@
           "manual": 0,
           "prs_coauthored": 11,
           "issues_closed": 3,
-          "review_submissions": 12,
+          "review_submissions": 13,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 16,
+          "prs": 17,
           "reviews": 10,
           "confirmed_issues": 6,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 15,
           "issues_closed": 4,
-          "review_submissions": 13,
+          "review_submissions": 14,
           "docs_prs": 0,
           "bug_prs": 0
         }
       },
       "windowBreakdown": {
         "7": {
-          "pr": 92,
+          "pr": 93,
           "review": 49,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 164,
+          "pr": 175,
           "review": 61,
           "issue": 0,
           "docs": 0,
@@ -3811,15 +3821,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 141,
-          "shipping": 92,
+          "overall": 142,
+          "shipping": 93,
           "review": 49,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 225,
-          "shipping": 164,
+          "overall": 236,
+          "shipping": 175,
           "review": 61,
           "bugs": 0,
           "docs": 0
@@ -3827,16 +3837,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-08-11T01:58:27Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2534",
-            "title": "Remove static media",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2534",
-            "notes": []
-          },
           {
             "at": "2026-08-12T19:05:38Z",
             "category": "pr",
@@ -3970,6 +3970,16 @@
               "change addressed",
               "3th review in 24h ×0.8"
             ]
+          },
+          {
+            "at": "2026-08-18T02:55:17Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2667",
+            "title": "[H-02 -> Security]: Resolve unauthenticated endpoints in /inference",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2667",
+            "notes": []
           },
           {
             "at": "2026-08-18T01:34:20Z",
@@ -4235,6 +4245,16 @@
             ]
           },
           {
+            "at": "2026-08-18T02:55:17Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2667",
+            "title": "[H-02 -> Security]: Resolve unauthenticated endpoints in /inference",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2667",
+            "notes": []
+          },
+          {
             "at": "2026-08-18T01:34:20Z",
             "category": "review",
             "points": 10,
@@ -4249,7 +4269,7 @@
           }
         ]
       },
-      "rolling_total": 141,
+      "rolling_total": 142,
       "rank": 1
     },
     {
