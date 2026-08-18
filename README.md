@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 9 | 4 |
+| 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 8 | 4 |
 | 2 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 0 | 1 |
 | 3 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 12 | 0 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 7 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **94** | 8 | 1 | 10 |
 | 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Tue, 18 Aug 2026 22:59:51 GMT_
+_Last updated: Tue, 18 Aug 2026 23:33:37 GMT_
 <!-- LEADERBOARD:END -->
 
 
