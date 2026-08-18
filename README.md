@@ -40,10 +40,10 @@ code / review / issues ledger.
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 11 | 0 | 1 |
 | 7 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
 | 8 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **104** | 8 | 0 | 19 |
-| 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **94** | 8 | 1 | 11 |
+| 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **94** | 8 | 1 | 10 |
 | 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Tue, 18 Aug 2026 19:36:29 GMT_
+_Last updated: Tue, 18 Aug 2026 19:55:30 GMT_
 <!-- LEADERBOARD:END -->
 
 
