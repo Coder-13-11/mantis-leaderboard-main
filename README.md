@@ -20,8 +20,8 @@ code / review / issues ledger.
 | 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 9 | 4 |
 | 2 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 0 | 1 |
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **90** | 7 | 0 | 7 |
-| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 13 | 0 |
-| 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 9 |
+| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 12 | 0 |
+| 5 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **67** | 6 | 1 | 9 |
 | 6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **63** | 5 | 3 | 0 |
 | 7 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 5 | 2 | 18 |
 | 8 | [@charleywolf](https://github.com/charleywolf) | **52** | 4 | 0 | 0 |
@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | [@charleywolf](https://github.com/charleywolf) | **112** | 9 | 0 | 10 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **110** | 11 | 0 | 1 |
 | 7 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
-| 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **108** | 9 | 1 | 11 |
-| 9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **104** | 8 | 0 | 19 |
+| 8 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **104** | 8 | 0 | 19 |
+| 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **94** | 8 | 1 | 11 |
 | 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Tue, 18 Aug 2026 18:53:55 GMT_
+_Last updated: Tue, 18 Aug 2026 19:36:29 GMT_
 <!-- LEADERBOARD:END -->
 
 
