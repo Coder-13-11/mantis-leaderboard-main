@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **418** | 91 | 2 | 2 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **418** | 91 | 2 | 1 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **393** | 77 | 0 | 23 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **240** | 17 | 10 | 6 |
 | 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 16 | 2 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 | 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **91** | 7 | 0 | 19 |
 
-_Last updated: Tue, 18 Aug 2026 11:59:20 GMT_
+_Last updated: Tue, 18 Aug 2026 13:05:07 GMT_
 <!-- LEADERBOARD:END -->
 
 
