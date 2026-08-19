@@ -21,7 +21,7 @@ code / review / issues ledger.
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **133** | 8 | 8 | 4 |
 | 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **89** | 7 | 3 | 0 |
-| 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 8 | 8 | 0 |
+| 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 8 | 7 | 0 |
 | 6 | [@charleywolf](https://github.com/charleywolf) | **79** | 6 | 0 | 0 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
 | 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Wed, 19 Aug 2026 21:58:54 GMT_
+_Last updated: Wed, 19 Aug 2026 22:37:19 GMT_
 <!-- LEADERBOARD:END -->
 
 
