@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T07:25:17.931Z",
+  "generated_at": "2026-08-19T07:50:34.972Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -62,8 +62,8 @@
   },
   "rules_version": 4,
   "sync": {
-    "mode": "full",
-    "run_started_at": "2026-08-19T07:01:01.061Z",
+    "mode": "incremental",
+    "run_started_at": "2026-08-19T07:49:16.509Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-19T00:00:00.000Z",
     "repos": [
@@ -86,143 +86,7 @@
     "warnings": [
       "KellisLab/mantis-docs is in config and matches discovery patterns but was not returned by the org listing — token may not see it"
     ],
-    "checksums": [
-      {
-        "repo": "KellisLab/Mantis",
-        "search_merged": 1236,
-        "listed_merged": 1237,
-        "search_issues_created": 1204,
-        "listed_issues_created": 1204,
-        "pr_delta": -1,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisAPI",
-        "search_merged": 966,
-        "listed_merged": 966,
-        "search_issues_created": 629,
-        "listed_issues_created": 629,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisIntegrations",
-        "search_merged": 1,
-        "listed_merged": 1,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis-Public",
-        "search_merged": 1,
-        "listed_merged": 1,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis_SDK",
-        "search_merged": 6,
-        "listed_merged": 6,
-        "search_issues_created": 2,
-        "listed_issues_created": 2,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisExtensions",
-        "search_merged": 1,
-        "listed_merged": 1,
-        "search_issues_created": 4,
-        "listed_issues_created": 4,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisExtensionsBackend",
-        "search_merged": 2,
-        "listed_merged": 2,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/auto-meeting-minutes",
-        "search_merged": 8,
-        "listed_merged": 8,
-        "search_issues_created": 6,
-        "listed_issues_created": 6,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis-Discord-Bot",
-        "search_merged": 8,
-        "listed_merged": 9,
-        "search_issues_created": 28,
-        "listed_issues_created": 28,
-        "pr_delta": -1,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis_transcribe_minutes",
-        "search_merged": 0,
-        "listed_merged": 0,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis-docs",
-        "search_merged": 3,
-        "listed_merged": 3,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis_course",
-        "search_merged": 0,
-        "listed_merged": 0,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis-verticals",
-        "search_merged": 2,
-        "listed_merged": 2,
-        "search_issues_created": 12,
-        "listed_issues_created": 12,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/generator-mantis",
-        "search_merged": 0,
-        "listed_merged": 0,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis-cli",
-        "search_merged": 3,
-        "listed_merged": 3,
-        "search_issues_created": 1,
-        "listed_issues_created": 1,
-        "pr_delta": 0,
-        "issue_delta": 0
-      }
-    ],
+    "checksums": [],
     "checksum_ok": true,
     "event_counts": {
       "prs": 3462,
@@ -9361,6 +9225,18 @@
           ]
         },
         {
+          "at": "2026-08-19T05:18:42Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4074",
+          "title": "Ignore right-click and middle-click on the canvas drawing tool",
+          "url": "https://github.com/KellisLab/Mantis/pull/4074",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
           "at": "2026-08-18T22:18:34Z",
           "category": "review",
           "points": 10,
@@ -9371,18 +9247,6 @@
           "notes": [
             "changes requested",
             "nontrivial PR"
-          ]
-        },
-        {
-          "at": "2026-08-19T05:18:42Z",
-          "category": "pr",
-          "points": 8,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4074",
-          "title": "Ignore right-click and middle-click on the canvas drawing tool",
-          "url": "https://github.com/KellisLab/Mantis/pull/4074",
-          "notes": [
-            "3th in 24h ×0.8"
           ]
         }
       ],
@@ -9506,6 +9370,18 @@
             ]
           },
           {
+            "at": "2026-08-19T05:18:42Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4074",
+            "title": "Ignore right-click and middle-click on the canvas drawing tool",
+            "url": "https://github.com/KellisLab/Mantis/pull/4074",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
             "at": "2026-08-18T22:18:34Z",
             "category": "review",
             "points": 10,
@@ -9516,18 +9392,6 @@
             "notes": [
               "changes requested",
               "nontrivial PR"
-            ]
-          },
-          {
-            "at": "2026-08-19T05:18:42Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4074",
-            "title": "Ignore right-click and middle-click on the canvas drawing tool",
-            "url": "https://github.com/KellisLab/Mantis/pull/4074",
-            "notes": [
-              "3th in 24h ×0.8"
             ]
           }
         ],
@@ -9680,6 +9544,18 @@
             ]
           },
           {
+            "at": "2026-08-19T05:18:42Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4074",
+            "title": "Ignore right-click and middle-click on the canvas drawing tool",
+            "url": "https://github.com/KellisLab/Mantis/pull/4074",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
             "at": "2026-08-18T22:18:34Z",
             "category": "review",
             "points": 10,
@@ -9690,18 +9566,6 @@
             "notes": [
               "changes requested",
               "nontrivial PR"
-            ]
-          },
-          {
-            "at": "2026-08-19T05:18:42Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4074",
-            "title": "Ignore right-click and middle-click on the canvas drawing tool",
-            "url": "https://github.com/KellisLab/Mantis/pull/4074",
-            "notes": [
-              "3th in 24h ×0.8"
             ]
           }
         ]
@@ -86653,20 +86517,6 @@
           ]
         },
         {
-          "at": "2026-07-13T14:25:49Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#2971",
-          "title": "feat: create map from workspace CSV in file browser",
-          "url": "https://github.com/KellisLab/Mantis/pull/2971",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "28th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2026-07-13T00:58:25Z",
           "category": "review",
           "points": 2,
@@ -86705,48 +86555,6 @@
             "commented",
             "nontrivial PR",
             "5th review in 24h ×0.5"
-          ]
-        },
-        {
-          "at": "2026-07-04T17:20:01Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1783",
-          "title": "Add dynamic-embedding-space endpoint for the minimap panel",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1783",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "6th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-06-30T15:25:02Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1746",
-          "title": "fix: rewrite container file writes to work with FUSE mounts",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1746",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "9th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-02-11T03:43:28Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#960",
-          "title": "Squashed MCP fix",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/960",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "8th review in 24h ×0.35"
           ]
         },
         {
@@ -86789,6 +86597,62 @@
             "commented",
             "nontrivial PR",
             "14th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-07-13T14:25:49Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#2971",
+          "title": "feat: create map from workspace CSV in file browser",
+          "url": "https://github.com/KellisLab/Mantis/pull/2971",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "30th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-07-04T17:20:01Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1783",
+          "title": "Add dynamic-embedding-space endpoint for the minimap panel",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1783",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "6th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-06-30T15:25:02Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1746",
+          "title": "fix: rewrite container file writes to work with FUSE mounts",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1746",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "9th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-02-11T03:43:28Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#960",
+          "title": "Squashed MCP fix",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/960",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "8th review in 24h ×0.35"
           ]
         }
       ],
