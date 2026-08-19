@@ -20,11 +20,11 @@ code / review / issues ledger.
 | 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 8 | 4 |
 | 2 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **90** | 7 | 0 | 8 |
-| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 11 | 0 |
-| 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
-| 6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **76** | 6 | 3 | 0 |
-| 7 | [@charleywolf](https://github.com/charleywolf) | **65** | 5 | 0 | 0 |
-| 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 7 |
+| 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 8 | 11 | 0 |
+| 5 | [@charleywolf](https://github.com/charleywolf) | **79** | 6 | 0 | 0 |
+| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
+| 7 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **76** | 6 | 3 | 0 |
+| 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
 | 9 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
 | 10 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **44** | 4 | 0 | 23 |
 
@@ -37,13 +37,13 @@ code / review / issues ledger.
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **240** | 17 | 10 | 6 |
 | 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 15 | 1 |
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
-| 6 | [@charleywolf](https://github.com/charleywolf) | **125** | 10 | 0 | 10 |
+| 6 | [@charleywolf](https://github.com/charleywolf) | **139** | 11 | 0 | 10 |
 | 7 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **117** | 9 | 0 | 20 |
 | 8 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
 | 9 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **102** | 8 | 3 | 0 |
-| 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **94** | 8 | 1 | 10 |
+| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Wed, 19 Aug 2026 17:37:32 GMT_
+_Last updated: Wed, 19 Aug 2026 17:58:51 GMT_
 <!-- LEADERBOARD:END -->
 
 
