@@ -22,7 +22,7 @@ code / review / issues ledger.
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **90** | 7 | 0 | 8 |
 | 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 12 | 0 |
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
-| 6 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **67** | 6 | 1 | 9 |
+| 6 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **67** | 6 | 1 | 8 |
 | 7 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **63** | 5 | 3 | 0 |
 | 8 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **54** | 5 | 2 | 15 |
 | 9 | [@charleywolf](https://github.com/charleywolf) | **52** | 4 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **94** | 8 | 1 | 10 |
 | 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Wed, 19 Aug 2026 14:48:36 GMT_
+_Last updated: Wed, 19 Aug 2026 15:42:14 GMT_
 <!-- LEADERBOARD:END -->
 
 
