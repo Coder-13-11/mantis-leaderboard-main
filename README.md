@@ -26,14 +26,14 @@ code / review / issues ledger.
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
 | 9 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
-| 10 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **44** | 4 | 0 | 23 |
+| 10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **43** | 4 | 2 | 13 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **393** | 77 | 0 | 23 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **379** | 82 | 2 | 1 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **379** | 82 | 2 | 1 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **331** | 70 | 0 | 23 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **220** | 16 | 10 | 6 |
 | 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 15 | 1 |
 | 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **165** | 15 | 0 | 19 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
 | 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
 
-_Last updated: Thu, 20 Aug 2026 05:42:09 GMT_
+_Last updated: Thu, 20 Aug 2026 07:52:51 GMT_
 <!-- LEADERBOARD:END -->
 
 
