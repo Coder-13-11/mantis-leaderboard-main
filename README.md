@@ -41,9 +41,9 @@ code / review / issues ledger.
 | 7 | [@charleywolf](https://github.com/charleywolf) | **139** | 11 | 0 | 10 |
 | 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **115** | 9 | 3 | 0 |
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
-| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **93** | 14 | 0 | 3 |
+| 10 | [@SufianTA](https://github.com/SufianTA) | **84** | 5 | 5 | 0 |
 
-_Last updated: Thu, 20 Aug 2026 08:53:19 GMT_
+_Last updated: Thu, 20 Aug 2026 09:47:08 GMT_
 <!-- LEADERBOARD:END -->
 
 
