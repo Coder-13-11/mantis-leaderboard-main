@@ -24,7 +24,7 @@ code / review / issues ledger.
 | 5 | [@charleywolf](https://github.com/charleywolf) | **79** | 6 | 0 | 0 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **61** | 4 | 7 | 0 |
-| 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
+| 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 5 |
 | 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 6 | 0 |
 | 10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **43** | 4 | 2 | 13 |
 
@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 15 | 1 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
 | 7 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
-| 8 | [@charleywolf](https://github.com/charleywolf) | **139** | 11 | 0 | 10 |
+| 8 | [@charleywolf](https://github.com/charleywolf) | **125** | 10 | 0 | 10 |
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Thu, 20 Aug 2026 19:40:21 GMT_
+_Last updated: Thu, 20 Aug 2026 20:40:56 GMT_
 <!-- LEADERBOARD:END -->
 
 
