@@ -25,8 +25,8 @@ code / review / issues ledger.
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **61** | 4 | 7 | 0 |
 | 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
-| 9 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
-| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 6 | 0 |
+| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 6 | 0 |
+| 10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **43** | 4 | 2 | 13 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Thu, 20 Aug 2026 17:40:22 GMT_
+_Last updated: Thu, 20 Aug 2026 18:56:11 GMT_
 <!-- LEADERBOARD:END -->
 
 
