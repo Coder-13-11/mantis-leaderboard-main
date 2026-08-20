@@ -35,7 +35,7 @@ code / review / issues ledger.
 | 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **372** | 81 | 2 | 1 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **331** | 70 | 0 | 23 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **220** | 16 | 10 | 5 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **170** | 16 | 0 | 16 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **170** | 16 | 0 | 15 |
 | 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 15 | 1 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
 | 7 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Thu, 20 Aug 2026 21:39:32 GMT_
+_Last updated: Thu, 20 Aug 2026 22:40:13 GMT_
 <!-- LEADERBOARD:END -->
 
 
