@@ -25,14 +25,14 @@ code / review / issues ledger.
 | 6 | [@charleywolf](https://github.com/charleywolf) | **79** | 6 | 0 | 0 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
-| 9 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
-| 10 | **Griffin Consigli** ([@gconsigli](https://github.com/gconsigli)) | **43** | 4 | 2 | 13 |
+| 9 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 4 | 0 |
+| 10 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **379** | 82 | 2 | 1 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **372** | 81 | 2 | 1 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **331** | 70 | 0 | 23 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **220** | 16 | 10 | 6 |
 | 4 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **167** | 17 | 15 | 1 |
@@ -41,9 +41,9 @@ code / review / issues ledger.
 | 7 | [@charleywolf](https://github.com/charleywolf) | **139** | 11 | 0 | 10 |
 | 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **115** | 9 | 3 | 0 |
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
-| 10 | [@SufianTA](https://github.com/SufianTA) | **84** | 5 | 5 | 0 |
+| 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 6 | 4 | 0 |
 
-_Last updated: Thu, 20 Aug 2026 13:13:18 GMT_
+_Last updated: Thu, 20 Aug 2026 14:19:10 GMT_
 <!-- LEADERBOARD:END -->
 
 
