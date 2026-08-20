@@ -18,14 +18,14 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **133** | 8 | 8 | 3 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **126** | 12 | 0 | 9 |
-| 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
-| 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **89** | 7 | 3 | 0 |
-| 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 8 | 7 | 0 |
-| 6 | [@charleywolf](https://github.com/charleywolf) | **79** | 6 | 0 | 0 |
-| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
-| 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
-| 9 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 4 | 0 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **126** | 12 | 0 | 2 |
+| 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **98** | 8 | 3 | 0 |
+| 4 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
+| 5 | [@charleywolf](https://github.com/charleywolf) | **79** | 6 | 0 | 0 |
+| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
+| 7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **75** | 7 | 7 | 0 |
+| 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **61** | 3 | 7 | 0 |
+| 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 6 |
 | 10 | [@SufianTA](https://github.com/SufianTA) | **49** | 5 | 0 | 0 |
 
 #### Past 14 Days
@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **165** | 15 | 0 | 19 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
 | 7 | [@charleywolf](https://github.com/charleywolf) | **139** | 11 | 0 | 10 |
-| 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **115** | 9 | 3 | 0 |
+| 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **124** | 10 | 3 | 0 |
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 3 |
-| 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 6 | 4 | 0 |
+| 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 6 | 7 | 0 |
 
-_Last updated: Thu, 20 Aug 2026 14:19:10 GMT_
+_Last updated: Thu, 20 Aug 2026 15:09:25 GMT_
 <!-- LEADERBOARD:END -->
 
 
