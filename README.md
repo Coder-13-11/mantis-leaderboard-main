@@ -18,7 +18,7 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **133** | 8 | 8 | 2 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **125** | 13 | 0 | 5 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **114** | 12 | 0 | 5 |
 | 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Fri, 21 Aug 2026 21:35:57 GMT_
+_Last updated: Fri, 21 Aug 2026 21:58:31 GMT_
 <!-- LEADERBOARD:END -->
 
 
