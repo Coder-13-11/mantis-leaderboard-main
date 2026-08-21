@@ -18,7 +18,7 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **133** | 8 | 8 | 2 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **114** | 12 | 0 | 5 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **125** | 13 | 0 | 5 |
 | 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
@@ -34,16 +34,16 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **382** | 81 | 2 | 0 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **207** | 15 | 10 | 4 |
-| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **186** | 34 | 0 | 23 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **180** | 17 | 0 | 17 |
+| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **191** | 18 | 0 | 17 |
+| 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **186** | 34 | 0 | 23 |
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
 | 6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 7 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
-| 8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **123** | 13 | 15 | 1 |
+| 8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **117** | 12 | 13 | 1 |
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Fri, 21 Aug 2026 19:53:45 GMT_
+_Last updated: Fri, 21 Aug 2026 20:37:07 GMT_
 <!-- LEADERBOARD:END -->
 
 
