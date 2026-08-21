@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
 | 6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 7 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
-| 8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **117** | 12 | 13 | 1 |
+| 8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Fri, 21 Aug 2026 22:59:34 GMT_
+_Last updated: Fri, 21 Aug 2026 23:35:21 GMT_
 <!-- LEADERBOARD:END -->
 
 
