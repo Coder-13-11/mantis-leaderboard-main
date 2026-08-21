@@ -26,13 +26,13 @@ code / review / issues ledger.
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **61** | 4 | 7 | 0 |
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 5 |
-| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 6 | 0 |
+| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 5 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **387** | 82 | 2 | 1 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **382** | 81 | 2 | 0 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **220** | 16 | 10 | 5 |
 | 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **186** | 34 | 0 | 23 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **170** | 16 | 0 | 15 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Fri, 21 Aug 2026 13:57:06 GMT_
+_Last updated: Fri, 21 Aug 2026 14:49:43 GMT_
 <!-- LEADERBOARD:END -->
 
 
