@@ -33,9 +33,9 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **382** | 81 | 2 | 0 |
-| 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **193** | 14 | 10 | 4 |
-| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **191** | 18 | 0 | 17 |
-| 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **186** | 34 | 0 | 23 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **191** | 18 | 0 | 17 |
+| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **186** | 34 | 0 | 23 |
+| 4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **172** | 11 | 10 | 4 |
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
 | 6 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 7 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Fri, 21 Aug 2026 22:37:03 GMT_
+_Last updated: Fri, 21 Aug 2026 22:59:34 GMT_
 <!-- LEADERBOARD:END -->
 
 
