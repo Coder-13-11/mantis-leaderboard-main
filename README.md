@@ -17,11 +17,11 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **144** | 15 | 0 | 12 |
-| 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **108** | 6 | 8 | 2 |
-| 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
-| 4 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
-| 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **144** | 15 | 0 | 13 |
+| 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **108** | 6 | 8 | 1 |
+| 3 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
+| 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
+| 5 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **83** | 11 | 0 | 0 |
 | 6 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **61** | 4 | 7 | 0 |
 | 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **52** | 4 | 1 | 2 |
@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **221** | 21 | 0 | 23 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **221** | 21 | 0 | 24 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **172** | 11 | 10 | 4 |
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Sat, 22 Aug 2026 22:55:27 GMT_
+_Last updated: Sat, 22 Aug 2026 23:31:53 GMT_
 <!-- LEADERBOARD:END -->
 
 
