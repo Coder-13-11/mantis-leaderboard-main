@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **137** | 13 | 1 | 2 |
 | 6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
 | 7 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
-| 8 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **104** | 14 | 2 | 0 |
-| 9 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
+| 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
+| 9 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **87** | 12 | 1 | 0 |
 | 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 
-_Last updated: Sat, 22 Aug 2026 14:33:46 GMT_
+_Last updated: Sat, 22 Aug 2026 14:55:15 GMT_
 <!-- LEADERBOARD:END -->
 
 
