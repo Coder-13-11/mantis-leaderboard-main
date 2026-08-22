@@ -17,8 +17,8 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **133** | 8 | 8 | 2 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **114** | 12 | 0 | 5 |
+| 1 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **120** | 7 | 8 | 2 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **114** | 12 | 0 | 7 |
 | 3 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
@@ -32,8 +32,8 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **382** | 81 | 2 | 0 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **191** | 18 | 0 | 17 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **277** | 56 | 2 | 0 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **191** | 18 | 0 | 19 |
 | 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **186** | 34 | 0 | 23 |
 | 4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **172** | 11 | 10 | 4 |
 | 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **150** | 14 | 1 | 2 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 
-_Last updated: Fri, 21 Aug 2026 23:56:56 GMT_
+_Last updated: Sat, 22 Aug 2026 01:47:03 GMT_
 <!-- LEADERBOARD:END -->
 
 

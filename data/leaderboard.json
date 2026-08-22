@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T23:56:56.779Z",
+  "generated_at": "2026-08-22T01:47:03.849Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,9 +63,9 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-21T23:56:13.030Z",
+    "run_started_at": "2026-08-22T01:46:16.181Z",
     "lookback_days": 365,
-    "lookback_since": "2025-08-21T00:00:00.000Z",
+    "lookback_since": "2025-08-22T00:00:00.000Z",
     "repos": [
       "KellisLab/Mantis",
       "KellisLab/MantisAPI",
@@ -90,7 +90,7 @@
     "checksum_ok": true,
     "event_counts": {
       "prs": 3485,
-      "issues": 2121,
+      "issues": 2123,
       "reviews": 10428,
       "review_comments": 13914
     }
@@ -3775,12 +3775,12 @@
         }
       ],
       "windows": {
-        "7": 133,
+        "7": 120,
         "14": 172
       },
       "windowCounts": {
         "7": {
-          "prs": 8,
+          "prs": 7,
           "reviews": 8,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
@@ -3797,7 +3797,7 @@
           "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 15,
+          "prs_coauthored": 14,
           "issues_closed": 3,
           "review_submissions": 14,
           "docs_prs": 0,
@@ -3806,7 +3806,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 80,
+          "pr": 67,
           "review": 53,
           "issue": 0,
           "docs": 0,
@@ -3822,8 +3822,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 133,
-          "shipping": 80,
+          "overall": 120,
+          "shipping": 67,
           "review": 53,
           "bugs": 0,
           "docs": 0
@@ -3838,16 +3838,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-08-15T01:26:12Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3935",
-            "title": "FE-03: Fix localStorage token authentication",
-            "url": "https://github.com/KellisLab/Mantis/pull/3935",
-            "notes": []
-          },
           {
             "at": "2026-08-15T03:02:55Z",
             "category": "pr",
@@ -4181,7 +4171,7 @@
           }
         ]
       },
-      "rolling_total": 133,
+      "rolling_total": 120,
       "rank": 1
     },
     {
@@ -4588,6 +4578,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-08-22": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -4700,7 +4702,7 @@
       "counts": {
         "prs": 27,
         "reviews": 0,
-        "confirmed_issues": 46,
+        "confirmed_issues": 48,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 4,
@@ -5031,7 +5033,7 @@
         "7": {
           "prs": 12,
           "reviews": 0,
-          "confirmed_issues": 5,
+          "confirmed_issues": 7,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -5043,7 +5045,7 @@
         "14": {
           "prs": 18,
           "reviews": 0,
-          "confirmed_issues": 17,
+          "confirmed_issues": 19,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
@@ -15039,7 +15041,7 @@
       ],
       "windows": {
         "7": 78,
-        "14": 382
+        "14": 277
       },
       "windowCounts": {
         "7": {
@@ -15055,13 +15057,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 81,
+          "prs": 56,
           "reviews": 2,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 5,
-          "issues_closed": 9,
+          "issues_closed": 6,
           "review_submissions": 2,
           "docs_prs": 2,
           "bug_prs": 0
@@ -15076,7 +15078,7 @@
           "other": 0
         },
         "14": {
-          "pr": 365,
+          "pr": 260,
           "review": 9,
           "issue": 0,
           "docs": 8,
@@ -15092,8 +15094,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 382,
-          "shipping": 365,
+          "overall": 277,
+          "shipping": 260,
           "review": 9,
           "bugs": 0,
           "docs": 8
@@ -15219,306 +15221,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-08T00:23:00Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2366",
-            "title": "Authorize synthesis progress WebSocket streams",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2366",
-            "notes": [
-              "10th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:23:29Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3610",
-            "title": "Optimize journey log analysis",
-            "url": "https://github.com/KellisLab/Mantis/pull/3610",
-            "notes": [
-              "11th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:30:28Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2408",
-            "title": "fix(security): stop tracking runtime credentials",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2408",
-            "notes": [
-              "12th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:38:06Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2405",
-            "title": "fix(settings): redact validation diagnostics",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2405",
-            "notes": [
-              "13th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:38:58Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3592",
-            "title": "Optimize Ansatz faithfulness lookups",
-            "url": "https://github.com/KellisLab/Mantis/pull/3592",
-            "notes": [
-              "14th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:39:12Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3594",
-            "title": "Optimize Quicksheet column ordering",
-            "url": "https://github.com/KellisLab/Mantis/pull/3594",
-            "notes": [
-              "15th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:44:37Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3595",
-            "title": "Optimize voice agent selection lookups",
-            "url": "https://github.com/KellisLab/Mantis/pull/3595",
-            "notes": [
-              "16th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:46:08Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3575",
-            "title": "Optimize feature selection statistics",
-            "url": "https://github.com/KellisLab/Mantis/pull/3575",
-            "notes": [
-              "17th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:46:08Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2351",
-            "title": "Optimize hospital surrogate workload aggregation",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2351",
-            "notes": [
-              "18th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:47:02Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2398",
-            "title": "Optimize metadata category frequency scoring",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2398",
-            "notes": [
-              "19th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:47:46Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2344",
-            "title": "fix(conduit): bound map socket database connections",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2344",
-            "notes": [
-              "20th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:48:29Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3601",
-            "title": "Optimize contour parent lookups",
-            "url": "https://github.com/KellisLab/Mantis/pull/3601",
-            "notes": [
-              "21th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:51:42Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3619",
-            "title": "Optimize UsagePanel endpoint chart shaping",
-            "url": "https://github.com/KellisLab/Mantis/pull/3619",
-            "notes": [
-              "22th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:53:29Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3597",
-            "title": "Optimize link rule field lookups",
-            "url": "https://github.com/KellisLab/Mantis/pull/3597",
-            "notes": [
-              "23th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:54:02Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3613",
-            "title": "Optimize custom Python parse caching",
-            "url": "https://github.com/KellisLab/Mantis/pull/3613",
-            "notes": [
-              "24th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:54:33Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3607",
-            "title": "Optimize agent execution log indexing",
-            "url": "https://github.com/KellisLab/Mantis/pull/3607",
-            "notes": [
-              "25th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:57:43Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2412",
-            "title": "Optimize workflow agent model loading",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2412",
-            "notes": [
-              "26th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T00:59:01Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3628",
-            "title": "Reduce redundant LoD websocket updates",
-            "url": "https://github.com/KellisLab/Mantis/pull/3628",
-            "notes": [
-              "27th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T01:00:30Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2356",
-            "title": "Optimize filesystem consistency lookups",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2356",
-            "notes": [
-              "28th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T01:01:52Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3598",
-            "title": "Optimize Point Analysis feature lookups",
-            "url": "https://github.com/KellisLab/Mantis/pull/3598",
-            "notes": [
-              "29th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T01:06:29Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1604",
-            "title": "fix: return ok for non-periodic source lookups",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1604",
-            "notes": [
-              "30th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T01:11:54Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3583",
-            "title": "Optimize linked-view bag reconciliation",
-            "url": "https://github.com/KellisLab/Mantis/pull/3583",
-            "notes": [
-              "31th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T01:12:16Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3582",
-            "title": "Optimize highlighted bag set operations",
-            "url": "https://github.com/KellisLab/Mantis/pull/3582",
-            "notes": [
-              "32th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T01:16:02Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3600",
-            "title": "Optimize hydration priority lookups",
-            "url": "https://github.com/KellisLab/Mantis/pull/3600",
-            "notes": [
-              "33th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T01:24:28Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3616",
-            "title": "Optimize agent store filtering",
-            "url": "https://github.com/KellisLab/Mantis/pull/3616",
-            "notes": [
-              "34th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-08T04:06:42Z",
             "category": "docs",
@@ -85539,34 +85241,6 @@
           ]
         },
         {
-          "at": "2026-07-13T16:00:58Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1896",
-          "title": "Add principal-bound ChatGPT Apps provider",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1896",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "20th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-07-12T22:57:25Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1878",
-          "title": "docs: draft scalable point-pyramid v3 contract",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1878",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "20th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2026-07-02T13:04:37Z",
           "category": "review",
           "points": 2,
@@ -88293,7 +87967,7 @@
           "notes": [
             "commented",
             "nontrivial PR",
-            "28th review in 24h ×0.35"
+            "27th review in 24h ×0.35"
           ]
         },
         {
@@ -88307,7 +87981,7 @@
           "notes": [
             "commented",
             "nontrivial PR",
-            "22th review in 24h ×0.35"
+            "20th review in 24h ×0.35"
           ]
         },
         {
@@ -88321,7 +87995,7 @@
           "notes": [
             "commented",
             "nontrivial PR",
-            "24th review in 24h ×0.35"
+            "22th review in 24h ×0.35"
           ]
         },
         {
@@ -89406,7 +89080,7 @@
           "notes": [
             "commented",
             "nontrivial PR",
-            "22th review in 24h ×0.35"
+            "21th review in 24h ×0.35"
           ]
         },
         {
@@ -89657,7 +89331,7 @@
           "notes": [
             "commented",
             "nontrivial PR",
-            "28th review in 24h ×0.35"
+            "27th review in 24h ×0.35"
           ]
         },
         {
@@ -89685,7 +89359,7 @@
           "notes": [
             "commented",
             "nontrivial PR",
-            "24th review in 24h ×0.35"
+            "23th review in 24h ×0.35"
           ]
         },
         {
@@ -89713,7 +89387,7 @@
           "notes": [
             "commented",
             "nontrivial PR",
-            "25th review in 24h ×0.35"
+            "24th review in 24h ×0.35"
           ]
         },
         {
@@ -89741,6 +89415,34 @@
             "commented",
             "nontrivial PR",
             "5th review in 24h ×0.5"
+          ]
+        },
+        {
+          "at": "2026-07-13T16:00:58Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1896",
+          "title": "Add principal-bound ChatGPT Apps provider",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1896",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "27th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-07-12T22:57:25Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1878",
+          "title": "docs: draft scalable point-pyramid v3 contract",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1878",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "24th review in 24h ×0.35"
           ]
         }
       ],
@@ -123128,7 +122830,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 7,
+          "prs_coauthored": 6,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
