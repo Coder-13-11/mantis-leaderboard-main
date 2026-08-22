@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T13:40:50.382Z",
+  "generated_at": "2026-08-22T14:33:46.930Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-22T13:39:46.034Z",
+    "run_started_at": "2026-08-22T14:32:50.556Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-22T00:00:00.000Z",
     "repos": [
@@ -89,10 +89,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3488,
+      "prs": 3489,
       "issues": 2125,
-      "reviews": 10443,
-      "review_comments": 13915
+      "reviews": 10445,
+      "review_comments": 13917
     }
   },
   "review_rules": {
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 298,
+      "total": 307,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -188,7 +188,8 @@
         "2026-08-18": 13,
         "2026-08-19": 61,
         "2026-08-20": 5,
-        "2026-08-21": 21
+        "2026-08-21": 21,
+        "2026-08-22": 9
       },
       "dayCounts": {
         "2026-06-30": {
@@ -363,6 +364,18 @@
           "prs": 2,
           "reviews": 0,
           "confirmed_issues": 3,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-22": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -574,18 +587,6 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
-        },
-        "2026-08-22": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -686,17 +687,24 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-08-22": {
+          "pr": 9,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 298,
+        "pr": 307,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 27,
+        "prs": 28,
         "reviews": 0,
         "confirmed_issues": 50,
         "fixed_bonuses": 0,
@@ -710,7 +718,7 @@
       "sizes": {
         "XS": 3,
         "S": 4,
-        "M": 8,
+        "M": 9,
         "L": 7,
         "XL": 5
       },
@@ -1019,15 +1027,27 @@
           "notes": [
             "2th in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-08-22T13:40:33Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2705",
+          "title": "Fix: prefer populated maps when serving space previews",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2705",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
         }
       ],
       "windows": {
-        "7": 114,
-        "14": 191
+        "7": 123,
+        "14": 200
       },
       "windowCounts": {
         "7": {
-          "prs": 12,
+          "prs": 13,
           "reviews": 0,
           "confirmed_issues": 9,
           "fixed_bonuses": 0,
@@ -1039,7 +1059,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 18,
+          "prs": 19,
           "reviews": 0,
           "confirmed_issues": 21,
           "fixed_bonuses": 0,
@@ -1053,14 +1073,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 114,
+          "pr": 123,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 191,
+          "pr": 200,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1069,15 +1089,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 114,
-          "shipping": 114,
+          "overall": 123,
+          "shipping": 123,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 191,
-          "shipping": 191,
+          "overall": 200,
+          "shipping": 200,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1223,6 +1243,18 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4095",
             "notes": [
               "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-08-22T13:40:33Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2705",
+            "title": "Fix: prefer populated maps when serving space previews",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2705",
+            "notes": [
+              "3th in 24h ×0.8"
             ]
           }
         ],
@@ -1434,10 +1466,22 @@
             "notes": [
               "2th in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-08-22T13:40:33Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2705",
+            "title": "Fix: prefer populated maps when serving space previews",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2705",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ]
       },
-      "rolling_total": 114,
+      "rolling_total": 123,
       "rank": 1
     },
     {
@@ -15029,7 +15073,7 @@
       ],
       "windows": {
         "7": 78,
-        "14": 108
+        "14": 104
       },
       "windowCounts": {
         "7": {
@@ -15045,7 +15089,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 15,
+          "prs": 14,
           "reviews": 2,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -15066,7 +15110,7 @@
           "other": 0
         },
         "14": {
-          "pr": 99,
+          "pr": 95,
           "review": 9,
           "issue": 0,
           "docs": 0,
@@ -15082,8 +15126,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 108,
-          "shipping": 99,
+          "overall": 104,
+          "shipping": 95,
           "review": 9,
           "bugs": 0,
           "docs": 0
@@ -15209,18 +15253,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-08T14:05:46Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1579",
-            "title": "Optimize NASA API parameter cleaning",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1579",
-            "notes": [
-              "68th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-08T14:39:51Z",
             "category": "pr",
