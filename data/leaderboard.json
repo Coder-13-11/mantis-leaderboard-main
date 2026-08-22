@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T07:40:47.986Z",
+  "generated_at": "2026-08-22T08:43:43.344Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-22T07:40:03.570Z",
+    "run_started_at": "2026-08-22T08:42:40.381Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-22T00:00:00.000Z",
     "repos": [
@@ -89,9 +89,9 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3485,
-      "issues": 2124,
-      "reviews": 10437,
+      "prs": 3486,
+      "issues": 2125,
+      "reviews": 10439,
       "review_comments": 13914
     }
   },
@@ -578,7 +578,7 @@
         "2026-08-22": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 3,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -698,7 +698,7 @@
       "counts": {
         "prs": 27,
         "reviews": 0,
-        "confirmed_issues": 49,
+        "confirmed_issues": 50,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 4,
@@ -1029,7 +1029,7 @@
         "7": {
           "prs": 12,
           "reviews": 0,
-          "confirmed_issues": 8,
+          "confirmed_issues": 9,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -1041,7 +1041,7 @@
         "14": {
           "prs": 18,
           "reviews": 0,
-          "confirmed_issues": 20,
+          "confirmed_issues": 21,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
@@ -5067,7 +5067,7 @@
           "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 14,
+          "prs_coauthored": 13,
           "issues_closed": 3,
           "review_submissions": 14,
           "docs_prs": 0,
@@ -15029,7 +15029,7 @@
       ],
       "windows": {
         "7": 78,
-        "14": 192
+        "14": 108
       },
       "windowCounts": {
         "7": {
@@ -15045,7 +15045,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 36,
+          "prs": 15,
           "reviews": 2,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -15066,7 +15066,7 @@
           "other": 0
         },
         "14": {
-          "pr": 183,
+          "pr": 99,
           "review": 9,
           "issue": 0,
           "docs": 0,
@@ -15082,8 +15082,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 192,
-          "shipping": 183,
+          "overall": 108,
+          "shipping": 99,
           "review": 9,
           "bugs": 0,
           "docs": 0
@@ -15209,258 +15209,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-08T07:58:58Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3615",
-            "title": "Fix journey filter layout overlap",
-            "url": "https://github.com/KellisLab/Mantis/pull/3615",
-            "notes": [
-              "47th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:01:10Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1598",
-            "title": "Optimize agent dedupe query loading",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1598",
-            "notes": [
-              "48th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:03:10Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1571",
-            "title": "Optimize usage endpoint series aggregation",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1571",
-            "notes": [
-              "49th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:04:17Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3612",
-            "title": "Optimize workflow ancestor traversal",
-            "url": "https://github.com/KellisLab/Mantis/pull/3612",
-            "notes": [
-              "50th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:06:14Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1565",
-            "title": "Optimize agent session token encoding",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1565",
-            "notes": [
-              "51th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:09:12Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1574",
-            "title": "Optimize Ollama batch result collection",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1574",
-            "notes": [
-              "52th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:11:22Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1588",
-            "title": "Optimize Google Doc export timeout",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1588",
-            "notes": [
-              "53th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:15:13Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1594",
-            "title": "Optimize issue space existing number scan",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1594",
-            "notes": [
-              "54th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:15:48Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1564",
-            "title": "Optimize API billing cache buckets",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1564",
-            "notes": [
-              "55th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:17:15Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3608",
-            "title": "Optimize collaboration bag serialization",
-            "url": "https://github.com/KellisLab/Mantis/pull/3608",
-            "notes": [
-              "56th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:17:59Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3614",
-            "title": "Optimize workflow connection deserialization",
-            "url": "https://github.com/KellisLab/Mantis/pull/3614",
-            "notes": [
-              "57th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:20:01Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1592",
-            "title": "Optimize people issue space identifiers",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1592",
-            "notes": [
-              "58th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:22:08Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1582",
-            "title": "Optimize PubMed summary batching",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1582",
-            "notes": [
-              "59th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:22:31Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1581",
-            "title": "Add multimedia session cleanup regression coverage",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1581",
-            "notes": [
-              "60th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:23:36Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1585",
-            "title": "Optimize Global Volcanism request handling",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1585",
-            "notes": [
-              "61th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:26:06Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3609",
-            "title": "Optimize summarizer snapshot term collection",
-            "url": "https://github.com/KellisLab/Mantis/pull/3609",
-            "notes": [
-              "62th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:28:52Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1611",
-            "title": "Optimize space config row iteration",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1611",
-            "notes": [
-              "63th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:29:42Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1610",
-            "title": "Optimize dormancy participation loading",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1610",
-            "notes": [
-              "64th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:30:37Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1607",
-            "title": "Optimize legacy sampling query iteration",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1607",
-            "notes": [
-              "65th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:31:40Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1606",
-            "title": "Optimize data sampling query iteration",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1606",
-            "notes": [
-              "66th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T08:34:43Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#1589",
-            "title": "Optimize Google Sheet sync timeout",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/1589",
-            "notes": [
-              "67th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-08T14:05:46Z",
             "category": "pr",
@@ -102890,7 +102638,7 @@
         "7": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 2,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -122180,7 +121928,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 3,
+          "prs_coauthored": 1,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
