@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T20:57:39.597Z",
+  "generated_at": "2026-08-22T21:32:47.811Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-22T20:56:39.918Z",
+    "run_started_at": "2026-08-22T21:31:49.348Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-22T00:00:00.000Z",
     "repos": [
@@ -89,10 +89,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3490,
-      "issues": 2126,
-      "reviews": 10454,
-      "review_comments": 13920
+      "prs": 3491,
+      "issues": 2127,
+      "reviews": 10458,
+      "review_comments": 13921
     }
   },
   "review_rules": {
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 307,
+      "total": 318,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -189,7 +189,7 @@
         "2026-08-19": 61,
         "2026-08-20": 5,
         "2026-08-21": 21,
-        "2026-08-22": 9
+        "2026-08-22": 20
       },
       "dayCounts": {
         "2026-06-30": {
@@ -373,9 +373,9 @@
           "bug_prs": 0
         },
         "2026-08-22": {
-          "prs": 1,
+          "prs": 2,
           "reviews": 0,
-          "confirmed_issues": 5,
+          "confirmed_issues": 6,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -689,7 +689,7 @@
           "other": 0
         },
         "2026-08-22": {
-          "pr": 9,
+          "pr": 20,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -697,16 +697,16 @@
         }
       },
       "breakdown": {
-        "pr": 307,
+        "pr": 318,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 28,
+        "prs": 29,
         "reviews": 0,
-        "confirmed_issues": 51,
+        "confirmed_issues": 52,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 4,
@@ -717,7 +717,7 @@
       },
       "sizes": {
         "XS": 3,
-        "S": 4,
+        "S": 5,
         "M": 9,
         "L": 7,
         "XL": 5
@@ -1039,17 +1039,29 @@
           "notes": [
             "3th in 24h ×0.8"
           ]
+        },
+        {
+          "at": "2026-08-22T20:56:46Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4107",
+          "title": "fix(notebooks): define webpack public path global so notebooks load under Turbopack",
+          "url": "https://github.com/KellisLab/Mantis/pull/4107",
+          "notes": [
+            "2th in 24h ×1"
+          ]
         }
       ],
       "windows": {
-        "7": 123,
-        "14": 200
+        "7": 134,
+        "14": 211
       },
       "windowCounts": {
         "7": {
-          "prs": 13,
+          "prs": 14,
           "reviews": 0,
-          "confirmed_issues": 10,
+          "confirmed_issues": 11,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -1059,9 +1071,9 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 19,
+          "prs": 20,
           "reviews": 0,
-          "confirmed_issues": 22,
+          "confirmed_issues": 23,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
@@ -1073,14 +1085,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 123,
+          "pr": 134,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 200,
+          "pr": 211,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1089,15 +1101,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 123,
-          "shipping": 123,
+          "overall": 134,
+          "shipping": 134,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 200,
-          "shipping": 200,
+          "overall": 211,
+          "shipping": 211,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1255,6 +1267,18 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/2705",
             "notes": [
               "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-08-22T20:56:46Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4107",
+            "title": "fix(notebooks): define webpack public path global so notebooks load under Turbopack",
+            "url": "https://github.com/KellisLab/Mantis/pull/4107",
+            "notes": [
+              "2th in 24h ×1"
             ]
           }
         ],
@@ -1478,10 +1502,22 @@
             "notes": [
               "3th in 24h ×0.8"
             ]
+          },
+          {
+            "at": "2026-08-22T20:56:46Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4107",
+            "title": "fix(notebooks): define webpack public path global so notebooks load under Turbopack",
+            "url": "https://github.com/KellisLab/Mantis/pull/4107",
+            "notes": [
+              "2th in 24h ×1"
+            ]
           }
         ]
       },
-      "rolling_total": 123,
+      "rolling_total": 134,
       "rank": 1
     },
     {
@@ -16925,7 +16961,7 @@
       ],
       "windows": {
         "7": 52,
-        "14": 137
+        "14": 116
       },
       "windowCounts": {
         "7": {
@@ -16941,7 +16977,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 13,
+          "prs": 11,
           "reviews": 1,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
@@ -16962,7 +16998,7 @@
           "other": 0
         },
         "14": {
-          "pr": 114,
+          "pr": 93,
           "review": 10,
           "issue": 0,
           "docs": 13,
@@ -16978,8 +17014,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 137,
-          "shipping": 114,
+          "overall": 116,
+          "shipping": 93,
           "review": 10,
           "bugs": 0,
           "docs": 13
@@ -17046,30 +17082,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-08T21:07:11Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3573",
-            "title": "Guard semantic search response handling against page crashes",
-            "url": "https://github.com/KellisLab/Mantis/pull/3573",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-08T21:07:13Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2492",
-            "title": "fix: run chardet encoding fallback for non-UTF-8 CSV uploads",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2492",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-08-09T01:14:33Z",
             "category": "pr",
