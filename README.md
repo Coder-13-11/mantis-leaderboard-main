@@ -40,10 +40,10 @@ code / review / issues ledger.
 | 6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
 | 7 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
-| 9 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **82** | 11 | 1 | 0 |
-| 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
+| 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
+| 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Sat, 22 Aug 2026 17:54:26 GMT_
+_Last updated: Sat, 22 Aug 2026 18:46:29 GMT_
 <!-- LEADERBOARD:END -->
 
 
