@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T06:56:21.485Z",
+  "generated_at": "2026-08-22T07:40:47.986Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-22T06:55:32.610Z",
+    "run_started_at": "2026-08-22T07:40:03.570Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-22T00:00:00.000Z",
     "repos": [
@@ -15029,7 +15029,7 @@
       ],
       "windows": {
         "7": 78,
-        "14": 196
+        "14": 192
       },
       "windowCounts": {
         "7": {
@@ -15045,7 +15045,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 37,
+          "prs": 36,
           "reviews": 2,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -15066,7 +15066,7 @@
           "other": 0
         },
         "14": {
-          "pr": 187,
+          "pr": 183,
           "review": 9,
           "issue": 0,
           "docs": 0,
@@ -15082,8 +15082,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 196,
-          "shipping": 187,
+          "overall": 192,
+          "shipping": 183,
           "review": 9,
           "bugs": 0,
           "docs": 0
@@ -15209,18 +15209,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-08T07:11:07Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2401",
-            "title": "Optimize pipeline artifact manifest merging",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2401",
-            "notes": [
-              "46th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-08T07:58:58Z",
             "category": "pr",
@@ -29249,7 +29237,7 @@
       ],
       "windows": {
         "7": 12,
-        "14": 186
+        "14": 44
       },
       "windowCounts": {
         "7": {
@@ -29265,7 +29253,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 34,
+          "prs": 4,
           "reviews": 0,
           "confirmed_issues": 23,
           "fixed_bonuses": 0,
@@ -29286,7 +29274,7 @@
           "other": 0
         },
         "14": {
-          "pr": 186,
+          "pr": 44,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -29302,8 +29290,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 186,
-          "shipping": 186,
+          "overall": 44,
+          "shipping": 44,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -29323,364 +29311,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-08T07:01:05Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2494",
-            "title": "feat(request_utils): add shared parse_query_int helper",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2494",
-            "notes": []
-          },
-          {
-            "at": "2026-08-08T07:01:09Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2497",
-            "title": "fix(orchestration): validate limit on list_executions",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2497",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:12Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2498",
-            "title": "fix(orchestration): validate limit on benchmark run list",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2498",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:16Z",
-            "category": "pr",
-            "points": 7,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2499",
-            "title": "fix(orchestration): validate limit on training run list",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2499",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:19Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2504",
-            "title": "fix(workbench): validate limit on recent executions list",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2504",
-            "notes": [
-              "5th in 24h ×0.5"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:23Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2508",
-            "title": "fix(api_v1): validate days on usage summary and events",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2508",
-            "notes": [
-              "6th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:26Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2509",
-            "title": "fix(agent_execution): null-safe strip for user_email and provider",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2509",
-            "notes": [
-              "7th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:30Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2510",
-            "title": "fix(user_analytics): null-safe search strip on history list",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2510",
-            "notes": [
-              "8th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:33Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2511",
-            "title": "fix(user_analytics): null-safe q strip on search",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2511",
-            "notes": [
-              "9th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:37Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2512",
-            "title": "fix(multimedia): type-check connection_params and query on DB connect",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2512",
-            "notes": [
-              "10th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:40Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2513",
-            "title": "fix(workbench): null-safe prompt strip before enhance",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2513",
-            "notes": [
-              "11th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:43Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3754",
-            "title": "fix(workflow): stop monitor client reconnect after disconnect",
-            "url": "https://github.com/KellisLab/Mantis/pull/3754",
-            "notes": [
-              "12th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:47Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3755",
-            "title": "fix(workflow): stop useAssistant WS reconnect after unmount",
-            "url": "https://github.com/KellisLab/Mantis/pull/3755",
-            "notes": [
-              "13th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:50Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3756",
-            "title": "refactor(new-space): use safeJsonParse in shared progress WS hooks",
-            "url": "https://github.com/KellisLab/Mantis/pull/3756",
-            "notes": [
-              "14th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:54Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3757",
-            "title": "fix(ws): use safeJsonParse for progress and log frame hotspots",
-            "url": "https://github.com/KellisLab/Mantis/pull/3757",
-            "notes": [
-              "15th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:01:57Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3758",
-            "title": "fix(panels): safe parse and dispose ProjectionPanel log WebSocket",
-            "url": "https://github.com/KellisLab/Mantis/pull/3758",
-            "notes": [
-              "16th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:02:01Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3759",
-            "title": "fix(audio): guard upload progress WS setState after unmount",
-            "url": "https://github.com/KellisLab/Mantis/pull/3759",
-            "notes": [
-              "17th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:02:04Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3760",
-            "title": "fix(chat): null-safe voice socket send and frame parse",
-            "url": "https://github.com/KellisLab/Mantis/pull/3760",
-            "notes": [
-              "18th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:02:08Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2495",
-            "title": "fix(orchestration): validate limit query on saved workflow list",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2495",
-            "notes": [
-              "19th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:02:11Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2500",
-            "title": "fix(orchestration): validate training population body integers",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2500",
-            "notes": [
-              "20th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:02:14Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2501",
-            "title": "fix(conduit): validate limit on map search query",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2501",
-            "notes": [
-              "21th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:02:17Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2503",
-            "title": "fix(conduit): validate min_age_days on ghost space detect",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2503",
-            "notes": [
-              "22th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:02:21Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2505",
-            "title": "fix(synthesis): validate h5ad create numeric parameters",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2505",
-            "notes": [
-              "23th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:05:59Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2507",
-            "title": "fix(gradients): validate point_count query parameter",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2507",
-            "notes": [
-              "24th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:06:03Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2502",
-            "title": "fix(conduit): validate limit on nearest-points query",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2502",
-            "notes": [
-              "25th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:06:07Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2506",
-            "title": "fix(synthesis): validate offset and limit on source features list",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2506",
-            "notes": [
-              "26th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:06:10Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2496",
-            "title": "fix(orchestration): validate limit on workflows collection GET",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2496",
-            "notes": [
-              "27th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:06:50Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3752",
-            "title": "fix(progress): stop synthesis log WS reconnect after unmount",
-            "url": "https://github.com/KellisLab/Mantis/pull/3752",
-            "notes": [
-              "28th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:06:53Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3753",
-            "title": "fix(space): stop LoggingPanel WS reconnect after unmount",
-            "url": "https://github.com/KellisLab/Mantis/pull/3753",
-            "notes": [
-              "29th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:06:57Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3761",
-            "title": "chore: remove dead commented socket effects",
-            "url": "https://github.com/KellisLab/Mantis/pull/3761",
-            "notes": [
-              "30th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-13T07:25:50Z",
             "category": "pr",
@@ -37969,7 +37599,7 @@
       ],
       "windows": {
         "7": 9,
-        "14": 36
+        "14": 18
       },
       "windowCounts": {
         "7": {
@@ -37986,13 +37616,13 @@
         },
         "14": {
           "prs": 0,
-          "reviews": 4,
+          "reviews": 2,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 0,
-          "review_submissions": 4,
+          "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -38007,7 +37637,7 @@
         },
         "14": {
           "pr": 0,
-          "review": 36,
+          "review": 18,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -38022,9 +37652,9 @@
           "docs": 0
         },
         "14": {
-          "overall": 36,
+          "overall": 18,
           "shipping": 0,
-          "review": 36,
+          "review": 18,
           "bugs": 0,
           "docs": 0
         }
@@ -38047,34 +37677,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-08T07:26:01Z",
-            "category": "review",
-            "points": 9,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#3762",
-            "title": "Frontend needed for #2514 MantisAPI PR (Performance Metrics to show on the Chart Panel)",
-            "url": "https://github.com/KellisLab/Mantis/pull/3762",
-            "notes": [
-              "commented",
-              "inline comments",
-              "nontrivial PR"
-            ]
-          },
-          {
-            "at": "2026-08-08T07:04:31Z",
-            "category": "review",
-            "points": 9,
-            "kind": "review",
-            "ref": "KellisLab/MantisAPI#2514",
-            "title": "Added Performance Metrics in the Chart Panel to reflect real model Capabilities",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2514",
-            "notes": [
-              "commented",
-              "inline comments",
-              "nontrivial PR"
-            ]
-          },
           {
             "at": "2026-08-11T00:03:10Z",
             "category": "review",

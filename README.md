@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **196** | 37 | 2 | 0 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **192** | 36 | 2 | 0 |
 | 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **191** | 18 | 0 | 20 |
-| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **186** | 34 | 0 | 23 |
-| 4 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **172** | 11 | 10 | 4 |
-| 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
-| 6 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
-| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **137** | 13 | 1 | 2 |
-| 8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
-| 9 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
-| 10 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **172** | 11 | 10 | 4 |
+| 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
+| 5 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
+| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **137** | 13 | 1 | 2 |
+| 7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
+| 8 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
+| 9 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
+| 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 
-_Last updated: Sat, 22 Aug 2026 06:56:21 GMT_
+_Last updated: Sat, 22 Aug 2026 07:40:48 GMT_
 <!-- LEADERBOARD:END -->
 
 
