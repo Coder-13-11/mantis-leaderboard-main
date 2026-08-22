@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **211** | 20 | 0 | 23 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **211** | 20 | 0 | 22 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **172** | 11 | 10 | 4 |
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Sat, 22 Aug 2026 21:32:47 GMT_
+_Last updated: Sat, 22 Aug 2026 21:54:17 GMT_
 <!-- LEADERBOARD:END -->
 
 
