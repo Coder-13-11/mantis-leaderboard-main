@@ -24,9 +24,9 @@ code / review / issues ledger.
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
 | 6 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **61** | 4 | 7 | 0 |
-| 8 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **55** | 5 | 1 | 4 |
-| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **52** | 4 | 1 | 2 |
-| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 4 | 0 |
+| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **52** | 4 | 1 | 2 |
+| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 4 | 0 |
+| 10 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **42** | 6 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **82** | 11 | 1 | 0 |
 | 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 
-_Last updated: Sat, 22 Aug 2026 17:32:29 GMT_
+_Last updated: Sat, 22 Aug 2026 17:54:26 GMT_
 <!-- LEADERBOARD:END -->
 
 
