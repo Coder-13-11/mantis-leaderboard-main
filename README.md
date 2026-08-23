@@ -37,13 +37,13 @@ code / review / issues ledger.
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
 | 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
-| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **109** | 10 | 1 | 2 |
-| 7 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
+| 6 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
+| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **102** | 9 | 1 | 2 |
 | 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Sun, 23 Aug 2026 12:59:06 GMT_
+_Last updated: Sun, 23 Aug 2026 13:41:24 GMT_
 <!-- LEADERBOARD:END -->
 
 
