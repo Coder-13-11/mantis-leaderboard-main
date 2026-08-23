@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **144** | 15 | 0 | 13 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **144** | 15 | 0 | 14 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **108** | 6 | 8 | 1 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **221** | 21 | 0 | 24 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **221** | 21 | 0 | 25 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **172** | 11 | 10 | 4 |
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
-| 5 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **116** | 11 | 1 | 2 |
-| 6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
+| 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
+| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **109** | 10 | 1 | 2 |
 | 7 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
 | 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Sat, 22 Aug 2026 23:53:25 GMT_
+_Last updated: Sun, 23 Aug 2026 01:57:29 GMT_
 <!-- LEADERBOARD:END -->
 
 
