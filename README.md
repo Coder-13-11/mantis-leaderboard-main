@@ -38,12 +38,12 @@ code / review / issues ledger.
 | 4 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
 | 5 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **113** | 11 | 13 | 1 |
 | 6 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 1 | 1 |
-| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **102** | 9 | 1 | 2 |
-| 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **100** | 7 | 7 | 0 |
+| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **95** | 8 | 1 | 2 |
+| 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **87** | 6 | 7 | 0 |
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Sun, 23 Aug 2026 13:41:24 GMT_
+_Last updated: Sun, 23 Aug 2026 14:35:40 GMT_
 <!-- LEADERBOARD:END -->
 
 
