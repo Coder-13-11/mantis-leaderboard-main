@@ -25,8 +25,8 @@ code / review / issues ledger.
 | 6 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **52** | 4 | 1 | 1 |
 | 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
-| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **44** | 4 | 4 | 0 |
-| 10 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **42** | 6 | 0 | 0 |
+| 9 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **42** | 6 | 0 | 0 |
+| 10 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **40** | 4 | 0 | 1 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Sun, 23 Aug 2026 14:35:40 GMT_
+_Last updated: Sun, 23 Aug 2026 14:57:40 GMT_
 <!-- LEADERBOARD:END -->
 
 
