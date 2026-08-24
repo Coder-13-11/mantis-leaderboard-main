@@ -19,11 +19,11 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **182** | 20 | 0 | 21 |
 | 2 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
-| 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
+| 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 2 | 0 |
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 | 5 | [@VishwanathanV](https://github.com/VishwanathanV) | **68** | 3 | 11 | 0 |
 | 6 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
-| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **52** | 4 | 1 | 1 |
+| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **40** | 3 | 1 | 1 |
 | 8 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **40** | 4 | 0 | 0 |
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 3 | 0 |
 | 10 | [@edoardopanella](https://github.com/edoardopanella) | **27** | 2 | 0 | 3 |
@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **273** | 27 | 0 | 29 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **273** | 27 | 0 | 28 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **156** | 10 | 9 | 4 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **127** | 10 | 1 | 0 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **126** | 11 | 3 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Mon, 24 Aug 2026 18:56:06 GMT_
+_Last updated: Mon, 24 Aug 2026 19:39:02 GMT_
 <!-- LEADERBOARD:END -->
 
 
