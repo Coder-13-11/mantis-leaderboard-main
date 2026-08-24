@@ -24,7 +24,7 @@ code / review / issues ledger.
 | 5 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **52** | 4 | 1 | 1 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
-| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **50** | 3 | 3 | 0 |
+| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 3 | 0 |
 | 9 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **40** | 4 | 0 | 1 |
 | 10 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **25** | 1 | 1 | 0 |
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Mon, 24 Aug 2026 09:29:06 GMT_
+_Last updated: Mon, 24 Aug 2026 10:21:23 GMT_
 <!-- LEADERBOARD:END -->
 
 
