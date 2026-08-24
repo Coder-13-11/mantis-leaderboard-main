@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **154** | 16 | 0 | 20 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **154** | 16 | 0 | 21 |
 | 2 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 3 | 0 |
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
@@ -26,13 +26,13 @@ code / review / issues ledger.
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **50** | 3 | 3 | 0 |
 | 9 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **40** | 4 | 0 | 1 |
-| 10 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **30** | 5 | 0 | 0 |
+| 10 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **25** | 1 | 3 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **231** | 22 | 0 | 28 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **231** | 22 | 0 | 29 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **162** | 10 | 10 | 4 |
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **140** | 12 | 3 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **137** | 11 | 1 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Mon, 24 Aug 2026 01:54:47 GMT_
+_Last updated: Mon, 24 Aug 2026 03:14:04 GMT_
 <!-- LEADERBOARD:END -->
 
 
