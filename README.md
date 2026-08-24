@@ -26,7 +26,7 @@ code / review / issues ledger.
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 3 | 0 |
 | 9 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **40** | 4 | 0 | 1 |
-| 10 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **25** | 1 | 1 | 0 |
+| 10 | [@edoardopanella](https://github.com/edoardopanella) | **27** | 2 | 0 | 3 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Mon, 24 Aug 2026 13:09:55 GMT_
+_Last updated: Mon, 24 Aug 2026 14:23:06 GMT_
 <!-- LEADERBOARD:END -->
 
 
