@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T14:02:31.668Z",
+  "generated_at": "2026-08-25T14:59:32.291Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-25T14:01:21.653Z",
+    "run_started_at": "2026-08-25T14:58:17.236Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-25T00:00:00.000Z",
     "repos": [
@@ -89,10 +89,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3496,
+      "prs": 3500,
       "issues": 2151,
-      "reviews": 10672,
-      "review_comments": 13929
+      "reviews": 10682,
+      "review_comments": 13938
     }
   },
   "review_rules": {
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 388,
+      "total": 395,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -192,7 +192,7 @@
         "2026-08-22": 30,
         "2026-08-23": 10,
         "2026-08-24": 42,
-        "2026-08-25": 8
+        "2026-08-25": 15
       },
       "dayCounts": {
         "2026-06-30": {
@@ -412,13 +412,13 @@
           "bug_prs": 0
         },
         "2026-08-25": {
-          "prs": 1,
+          "prs": 2,
           "reviews": 0,
           "confirmed_issues": 5,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -749,7 +749,7 @@
           "other": 0
         },
         "2026-08-25": {
-          "pr": 8,
+          "pr": 15,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -757,20 +757,20 @@
         }
       },
       "breakdown": {
-        "pr": 388,
+        "pr": 395,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 37,
+        "prs": 38,
         "reviews": 0,
         "confirmed_issues": 67,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 4,
-        "issues_closed": 15,
+        "issues_closed": 16,
         "review_submissions": 0,
         "docs_prs": 0,
         "bug_prs": 0
@@ -780,7 +780,7 @@
         "S": 6,
         "M": 14,
         "L": 9,
-        "XL": 5
+        "XL": 6
       },
       "contributions": [],
       "ledger": [
@@ -1207,33 +1207,45 @@
           "notes": [
             "4th in 24h ×0.65"
           ]
+        },
+        {
+          "at": "2026-08-25T14:47:40Z",
+          "category": "pr",
+          "points": 7,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2735",
+          "title": "CPU builds stop shipping NVIDIA CUDA wheels; server image goes multi-stage",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2735",
+          "notes": [
+            "5th in 24h ×0.5"
+          ]
         }
       ],
       "windows": {
-        "7": 190,
-        "14": 267
+        "7": 197,
+        "14": 274
       },
       "windowCounts": {
         "7": {
-          "prs": 21,
+          "prs": 22,
           "reviews": 0,
           "confirmed_issues": 26,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 9,
+          "issues_closed": 10,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 27,
+          "prs": 28,
           "reviews": 0,
           "confirmed_issues": 33,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
-          "issues_closed": 14,
+          "issues_closed": 15,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -1241,14 +1253,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 190,
+          "pr": 197,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 267,
+          "pr": 274,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1257,15 +1269,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 190,
-          "shipping": 190,
+          "overall": 197,
+          "shipping": 197,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 267,
-          "shipping": 267,
+          "overall": 274,
+          "shipping": 274,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1521,6 +1533,18 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4126",
             "notes": [
               "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-08-25T14:47:40Z",
+            "category": "pr",
+            "points": 7,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2735",
+            "title": "CPU builds stop shipping NVIDIA CUDA wheels; server image goes multi-stage",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2735",
+            "notes": [
+              "5th in 24h ×0.5"
             ]
           }
         ],
@@ -1842,10 +1866,22 @@
             "notes": [
               "4th in 24h ×0.65"
             ]
+          },
+          {
+            "at": "2026-08-25T14:47:40Z",
+            "category": "pr",
+            "points": 7,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2735",
+            "title": "CPU builds stop shipping NVIDIA CUDA wheels; server image goes multi-stage",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2735",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
           }
         ]
       },
-      "rolling_total": 190,
+      "rolling_total": 197,
       "rank": 1
     },
     {
@@ -114946,7 +114982,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 100
+        "14": 86
       },
       "windowCounts": {
         "7": {
@@ -114962,9 +114998,9 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 10,
+          "prs": 9,
           "reviews": 13,
-          "confirmed_issues": 1,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
@@ -114983,7 +115019,7 @@
           "other": 0
         },
         "14": {
-          "pr": 100,
+          "pr": 86,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -114999,8 +115035,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 100,
-          "shipping": 100,
+          "overall": 86,
+          "shipping": 86,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -115009,16 +115045,6 @@
       "windowLedger": {
         "7": [],
         "14": [
-          {
-            "at": "2026-08-11T14:12:40Z",
-            "category": "pr",
-            "points": 14,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2527",
-            "title": "Hardening",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2527",
-            "notes": []
-          },
           {
             "at": "2026-08-13T14:43:58Z",
             "category": "pr",

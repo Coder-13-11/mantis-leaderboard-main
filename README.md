@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **190** | 21 | 0 | 26 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **197** | 22 | 0 | 26 |
 | 2 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 2 | 0 |
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **66** | 9 | 0 | 0 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **267** | 27 | 0 | 33 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **274** | 28 | 0 | 33 |
 | 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 9 | 4 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **127** | 10 | 1 | 0 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **126** | 11 | 3 | 0 |
 | 5 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 0 | 1 |
-| 6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 13 | 1 |
-| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 5 | 11 | 0 |
-| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **90** | 7 | 1 | 2 |
+| 6 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 5 | 11 | 0 |
+| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **90** | 7 | 1 | 2 |
+| 8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 13 | 0 |
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 
-_Last updated: Tue, 25 Aug 2026 14:02:31 GMT_
+_Last updated: Tue, 25 Aug 2026 14:59:32 GMT_
 <!-- LEADERBOARD:END -->
 
 
