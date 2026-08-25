@@ -41,9 +41,9 @@ code / review / issues ledger.
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 5 | 11 | 0 |
 | 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **90** | 7 | 1 | 2 |
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
-| 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
+| 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 
-_Last updated: Tue, 25 Aug 2026 13:07:21 GMT_
+_Last updated: Tue, 25 Aug 2026 14:02:31 GMT_
 <!-- LEADERBOARD:END -->
 
 
