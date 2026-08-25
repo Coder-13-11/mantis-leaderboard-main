@@ -17,24 +17,24 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **189** | 22 | 0 | 26 |
-| 2 | [@charleywolf](https://github.com/charleywolf) | **77** | 6 | 1 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **189** | 22 | 0 | 27 |
+| 2 | [@charleywolf](https://github.com/charleywolf) | **109** | 9 | 1 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **66** | 9 | 0 | 0 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **64** | 6 | 1 | 0 |
 | 5 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 | 6 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **40** | 3 | 1 | 1 |
-| 9 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **19** | 2 | 0 | 0 |
-| 10 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
+| 9 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
+| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **14** | 1 | 3 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **279** | 29 | 0 | 33 |
-| 2 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 9 | 4 |
-| 3 | [@charleywolf](https://github.com/charleywolf) | **129** | 10 | 1 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **279** | 29 | 0 | 34 |
+| 2 | [@charleywolf](https://github.com/charleywolf) | **161** | 13 | 1 | 0 |
+| 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 9 | 4 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **127** | 11 | 3 | 0 |
 | 5 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 0 | 1 |
 | 6 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 5 | 11 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 9 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 
-_Last updated: Tue, 25 Aug 2026 17:41:37 GMT_
+_Last updated: Tue, 25 Aug 2026 18:54:23 GMT_
 <!-- LEADERBOARD:END -->
 
 
