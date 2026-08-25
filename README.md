@@ -21,12 +21,12 @@ code / review / issues ledger.
 | 2 | [@charleywolf](https://github.com/charleywolf) | **109** | 9 | 1 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **66** | 9 | 0 | 0 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **64** | 6 | 1 | 0 |
-| 5 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
+| 5 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 5 | 0 | 0 |
 | 6 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
-| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **40** | 3 | 1 | 1 |
+| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **30** | 3 | 0 | 0 |
 | 9 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
-| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **14** | 1 | 3 | 0 |
+| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **14** | 1 | 3 | 1 |
 
 #### Past 14 Days
 
@@ -38,12 +38,12 @@ code / review / issues ledger.
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **127** | 11 | 3 | 0 |
 | 5 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 0 | 1 |
 | 6 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 5 | 11 | 0 |
-| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **90** | 7 | 1 | 2 |
-| 8 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 12 | 0 |
-| 9 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
+| 7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 12 | 0 |
+| 8 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
+| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **67** | 6 | 1 | 9 |
 
-_Last updated: Tue, 25 Aug 2026 21:39:45 GMT_
+_Last updated: Tue, 25 Aug 2026 22:40:15 GMT_
 <!-- LEADERBOARD:END -->
 
 
