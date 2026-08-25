@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:28:28.739Z",
+  "generated_at": "2026-08-25T07:56:10.894Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -62,8 +62,8 @@
   },
   "rules_version": 4,
   "sync": {
-    "mode": "full",
-    "run_started_at": "2026-08-25T07:03:59.779Z",
+    "mode": "incremental",
+    "run_started_at": "2026-08-25T07:54:54.496Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-25T00:00:00.000Z",
     "repos": [
@@ -86,143 +86,7 @@
     "warnings": [
       "KellisLab/mantis-docs is in config and matches discovery patterns but was not returned by the org listing — token may not see it"
     ],
-    "checksums": [
-      {
-        "repo": "KellisLab/Mantis",
-        "search_merged": 1247,
-        "listed_merged": 1248,
-        "search_issues_created": 1216,
-        "listed_issues_created": 1216,
-        "pr_delta": -1,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisAPI",
-        "search_merged": 982,
-        "listed_merged": 982,
-        "search_issues_created": 646,
-        "listed_issues_created": 646,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisIntegrations",
-        "search_merged": 1,
-        "listed_merged": 1,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis-Public",
-        "search_merged": 0,
-        "listed_merged": 0,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis_SDK",
-        "search_merged": 4,
-        "listed_merged": 4,
-        "search_issues_created": 2,
-        "listed_issues_created": 2,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisExtensions",
-        "search_merged": 1,
-        "listed_merged": 1,
-        "search_issues_created": 4,
-        "listed_issues_created": 4,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/MantisExtensionsBackend",
-        "search_merged": 2,
-        "listed_merged": 2,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/auto-meeting-minutes",
-        "search_merged": 7,
-        "listed_merged": 7,
-        "search_issues_created": 6,
-        "listed_issues_created": 6,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis-Discord-Bot",
-        "search_merged": 10,
-        "listed_merged": 11,
-        "search_issues_created": 28,
-        "listed_issues_created": 28,
-        "pr_delta": -1,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis_transcribe_minutes",
-        "search_merged": 0,
-        "listed_merged": 0,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis-docs",
-        "search_merged": 3,
-        "listed_merged": 3,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis_course",
-        "search_merged": 0,
-        "listed_merged": 0,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/Mantis-verticals",
-        "search_merged": 2,
-        "listed_merged": 2,
-        "search_issues_created": 12,
-        "listed_issues_created": 12,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/generator-mantis",
-        "search_merged": 0,
-        "listed_merged": 0,
-        "search_issues_created": 0,
-        "listed_issues_created": 0,
-        "pr_delta": 0,
-        "issue_delta": 0
-      },
-      {
-        "repo": "KellisLab/mantis-cli",
-        "search_merged": 3,
-        "listed_merged": 3,
-        "search_issues_created": 1,
-        "listed_issues_created": 1,
-        "pr_delta": 0,
-        "issue_delta": 0
-      }
-    ],
+    "checksums": [],
     "checksum_ok": true,
     "event_counts": {
       "prs": 3495,
