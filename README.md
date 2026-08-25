@@ -21,12 +21,12 @@ code / review / issues ledger.
 | 2 | [@charleywolf](https://github.com/charleywolf) | **89** | 7 | 1 | 0 |
 | 3 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **86** | 8 | 2 | 0 |
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **66** | 9 | 0 | 0 |
-| 5 | [@VishwanathanV](https://github.com/VishwanathanV) | **57** | 3 | 10 | 0 |
+| 5 | [@VishwanathanV](https://github.com/VishwanathanV) | **58** | 3 | 10 | 0 |
 | 6 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **40** | 3 | 1 | 1 |
 | 8 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **40** | 4 | 0 | 0 |
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **27** | 2 | 0 | 3 |
-| 10 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **25** | 1 | 1 | 0 |
+| 10 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
 
 #### Past 14 Days
 
@@ -38,12 +38,12 @@ code / review / issues ledger.
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **126** | 11 | 3 | 0 |
 | 5 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 0 | 1 |
 | 6 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **100** | 10 | 13 | 1 |
-| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **90** | 5 | 11 | 0 |
+| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **91** | 5 | 11 | 0 |
 | 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **90** | 7 | 1 | 2 |
 | 9 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **81** | 7 | 1 | 10 |
 | 10 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 1 | 0 |
 
-_Last updated: Mon, 24 Aug 2026 23:54:18 GMT_
+_Last updated: Tue, 25 Aug 2026 01:49:23 GMT_
 <!-- LEADERBOARD:END -->
 
 
