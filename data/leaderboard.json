@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T23:34:59.606Z",
+  "generated_at": "2026-08-25T23:57:10.366Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-25T23:33:54.839Z",
+    "run_started_at": "2026-08-25T23:56:00.061Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-25T00:00:00.000Z",
     "repos": [
@@ -84,7 +84,8 @@
       "KellisLab/mantis-cli"
     ],
     "warnings": [
-      "KellisLab/mantis-docs is in config and matches discovery patterns but was not returned by the org listing — token may not see it"
+      "KellisLab/mantis-docs is in config and matches discovery patterns but was not returned by the org listing — token may not see it",
+      "KellisLab/MantisAPI pullRequests page 1 not UPDATED_AT-monotonic; not stopping early"
     ],
     "checksums": [],
     "checksum_ok": true,
@@ -74750,34 +74751,6 @@
           ]
         },
         {
-          "at": "2026-07-13T00:58:43Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#1880",
-          "title": "Codex/point pyramid v3 backend",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1880",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "24th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-01-04T21:00:45Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#845",
-          "title": "knowledge graph embeddings",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/845",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "14th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2026-07-13T00:58:25Z",
           "category": "review",
           "points": 2,
@@ -74834,17 +74807,16 @@
           ]
         },
         {
-          "at": "2026-05-26T19:47:43Z",
+          "at": "2026-06-25T03:13:54Z",
           "category": "review",
-          "points": 4,
+          "points": 1,
           "kind": "review",
-          "ref": "KellisLab/MantisAPI#1339",
-          "title": "extended sc tasks",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1339",
+          "ref": "KellisLab/mantis-docs#4",
+          "title": "Fix onboarding guide wording and Explorer image",
+          "url": "https://github.com/KellisLab/mantis-docs/pull/4",
           "notes": [
             "commented",
-            "nontrivial PR",
-            "4th review in 24h ×0.65"
+            "7th review in 24h ×0.35"
           ]
         },
         {
@@ -74875,16 +74847,45 @@
           ]
         },
         {
-          "at": "2026-06-25T03:13:54Z",
+          "at": "2026-07-13T00:58:43Z",
           "category": "review",
-          "points": 1,
+          "points": 2,
           "kind": "review",
-          "ref": "KellisLab/mantis-docs#4",
-          "title": "Fix onboarding guide wording and Explorer image",
-          "url": "https://github.com/KellisLab/mantis-docs/pull/4",
+          "ref": "KellisLab/MantisAPI#1880",
+          "title": "Codex/point pyramid v3 backend",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1880",
           "notes": [
             "commented",
-            "7th review in 24h ×0.35"
+            "nontrivial PR",
+            "25th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-05-26T19:47:43Z",
+          "category": "review",
+          "points": 4,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#1339",
+          "title": "extended sc tasks",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1339",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "4th review in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-01-04T21:00:45Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#845",
+          "title": "knowledge graph embeddings",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/845",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "14th review in 24h ×0.35"
           ]
         }
       ],
@@ -98820,7 +98821,7 @@
           "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 12,
+          "prs_coauthored": 11,
           "issues_closed": 3,
           "review_submissions": 11,
           "docs_prs": 0,
@@ -100953,7 +100954,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 108
+        "14": 95
       },
       "windowCounts": {
         "7": {
@@ -100969,13 +100970,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 13,
+          "prs": 12,
           "reviews": 0,
           "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 2,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -100990,7 +100991,7 @@
           "other": 0
         },
         "14": {
-          "pr": 108,
+          "pr": 95,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -101006,8 +101007,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 108,
-          "shipping": 108,
+          "overall": 95,
+          "shipping": 95,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -101016,16 +101017,6 @@
       "windowLedger": {
         "7": [],
         "14": [
-          {
-            "at": "2026-08-11T23:40:07Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3836",
-            "title": "Drag from Sidebar + Retaining Transfer",
-            "url": "https://github.com/KellisLab/Mantis/pull/3836",
-            "notes": []
-          },
           {
             "at": "2026-08-15T23:20:07Z",
             "category": "pr",
@@ -112732,7 +112723,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 8,
+          "prs_coauthored": 7,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,

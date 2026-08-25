@@ -36,14 +36,14 @@ code / review / issues ledger.
 | 2 | [@charleywolf](https://github.com/charleywolf) | **161** | 13 | 1 | 0 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **146** | 9 | 8 | 4 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **127** | 11 | 3 | 0 |
-| 5 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **108** | 13 | 0 | 1 |
+| 5 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **95** | 12 | 0 | 1 |
 | 6 | [@VishwanathanV](https://github.com/VishwanathanV) | **91** | 5 | 11 | 0 |
 | 7 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **86** | 9 | 12 | 0 |
 | 8 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **78** | 10 | 0 | 0 |
 | 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **67** | 6 | 1 | 9 |
 
-_Last updated: Tue, 25 Aug 2026 23:34:59 GMT_
+_Last updated: Tue, 25 Aug 2026 23:57:10 GMT_
 <!-- LEADERBOARD:END -->
 
 
