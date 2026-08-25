@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:21:30.023Z",
+  "generated_at": "2026-08-25T05:10:02.365Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-25T04:20:14.888Z",
+    "run_started_at": "2026-08-25T05:08:50.393Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-25T00:00:00.000Z",
     "repos": [
@@ -89,10 +89,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3501,
-      "issues": 2149,
-      "reviews": 10653,
-      "review_comments": 13947
+      "prs": 3502,
+      "issues": 2150,
+      "reviews": 10657,
+      "review_comments": 13950
     }
   },
   "review_rules": {
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 380,
+      "total": 388,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -191,7 +191,8 @@
         "2026-08-21": 21,
         "2026-08-22": 30,
         "2026-08-23": 10,
-        "2026-08-24": 42
+        "2026-08-24": 42,
+        "2026-08-25": 8
       },
       "dayCounts": {
         "2026-06-30": {
@@ -410,6 +411,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-08-25": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 4,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-06-27": {
           "prs": 0,
           "reviews": 0,
@@ -613,18 +626,6 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
-        },
-        "2026-08-25": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 3,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -746,19 +747,26 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-08-25": {
+          "pr": 8,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 380,
+        "pr": 388,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 36,
+        "prs": 37,
         "reviews": 0,
-        "confirmed_issues": 65,
+        "confirmed_issues": 66,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 4,
@@ -770,7 +778,7 @@
       "sizes": {
         "XS": 3,
         "S": 6,
-        "M": 13,
+        "M": 14,
         "L": 9,
         "XL": 5
       },
@@ -1187,17 +1195,29 @@
           "notes": [
             "6th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-08-25T04:41:08Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4126",
+          "title": "perf(plotly): register only the traces the app uses",
+          "url": "https://github.com/KellisLab/Mantis/pull/4126",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
         }
       ],
       "windows": {
-        "7": 182,
-        "14": 259
+        "7": 190,
+        "14": 267
       },
       "windowCounts": {
         "7": {
-          "prs": 20,
+          "prs": 21,
           "reviews": 0,
-          "confirmed_issues": 24,
+          "confirmed_issues": 25,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -1207,9 +1227,9 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 26,
+          "prs": 27,
           "reviews": 0,
-          "confirmed_issues": 31,
+          "confirmed_issues": 32,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
@@ -1221,14 +1241,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 182,
+          "pr": 190,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 259,
+          "pr": 267,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1237,15 +1257,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 182,
-          "shipping": 182,
+          "overall": 190,
+          "shipping": 190,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 259,
-          "shipping": 259,
+          "overall": 267,
+          "shipping": 267,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1489,6 +1509,18 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/2471",
             "notes": [
               "6th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-08-25T04:41:08Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4126",
+            "title": "perf(plotly): register only the traces the app uses",
+            "url": "https://github.com/KellisLab/Mantis/pull/4126",
+            "notes": [
+              "4th in 24h ×0.65"
             ]
           }
         ],
@@ -1798,10 +1830,22 @@
             "notes": [
               "6th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-08-25T04:41:08Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4126",
+            "title": "perf(plotly): register only the traces the app uses",
+            "url": "https://github.com/KellisLab/Mantis/pull/4126",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
           }
         ]
       },
-      "rolling_total": 182,
+      "rolling_total": 190,
       "rank": 1
     },
     {
@@ -87100,7 +87144,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 3,
+          "prs_coauthored": 2,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -127027,7 +127071,7 @@
         "7": {
           "prs": 0,
           "reviews": 1,
-          "confirmed_issues": 2,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
