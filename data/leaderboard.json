@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T14:23:25.095Z",
+  "generated_at": "2026-08-26T16:04:42.383Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-26T14:22:07.704Z",
+    "run_started_at": "2026-08-26T16:03:38.651Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-26T00:00:00.000Z",
     "repos": [
@@ -91,7 +91,7 @@
     "event_counts": {
       "prs": 3516,
       "issues": 2160,
-      "reviews": 10741,
+      "reviews": 10757,
       "review_comments": 13951
     }
   },
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 400,
+      "total": 409,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -192,7 +192,8 @@
         "2026-08-22": 30,
         "2026-08-23": 10,
         "2026-08-24": 42,
-        "2026-08-25": 20
+        "2026-08-25": 20,
+        "2026-08-26": 9
       },
       "dayCounts": {
         "2026-06-30": {
@@ -423,6 +424,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-08-26": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 6,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-06-27": {
           "prs": 0,
           "reviews": 0,
@@ -626,18 +639,6 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
-        },
-        "2026-08-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 6,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -766,23 +767,30 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-08-26": {
+          "pr": 9,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 400,
+        "pr": 409,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 39,
+        "prs": 40,
         "reviews": 0,
         "confirmed_issues": 75,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 4,
-        "issues_closed": 16,
+        "issues_closed": 17,
         "review_submissions": 0,
         "docs_prs": 0,
         "bug_prs": 0
@@ -790,7 +798,7 @@
       "sizes": {
         "XS": 3,
         "S": 7,
-        "M": 14,
+        "M": 15,
         "L": 9,
         "XL": 6
       },
@@ -1243,33 +1251,45 @@
           "notes": [
             "5th in 24h ×0.5"
           ]
+        },
+        {
+          "at": "2026-08-26T14:24:36Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4103",
+          "title": "fix(composer): center every transcript content type",
+          "url": "https://github.com/KellisLab/Mantis/pull/4103",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
         }
       ],
       "windows": {
-        "7": 176,
-        "14": 266
+        "7": 185,
+        "14": 275
       },
       "windowCounts": {
         "7": {
-          "prs": 21,
+          "prs": 22,
           "reviews": 0,
           "confirmed_issues": 33,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 9,
+          "issues_closed": 10,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 28,
+          "prs": 29,
           "reviews": 0,
           "confirmed_issues": 41,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
-          "issues_closed": 15,
+          "issues_closed": 16,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -1277,14 +1297,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 176,
+          "pr": 185,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 266,
+          "pr": 275,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1293,15 +1313,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 176,
-          "shipping": 176,
+          "overall": 185,
+          "shipping": 185,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 266,
-          "shipping": 266,
+          "overall": 275,
+          "shipping": 275,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1557,6 +1577,18 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/2723",
             "notes": [
               "5th in 24h ×0.5"
+            ]
+          },
+          {
+            "at": "2026-08-26T14:24:36Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4103",
+            "title": "fix(composer): center every transcript content type",
+            "url": "https://github.com/KellisLab/Mantis/pull/4103",
+            "notes": [
+              "3th in 24h ×0.8"
             ]
           }
         ],
@@ -1890,10 +1922,22 @@
             "notes": [
               "5th in 24h ×0.5"
             ]
+          },
+          {
+            "at": "2026-08-26T14:24:36Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4103",
+            "title": "fix(composer): center every transcript content type",
+            "url": "https://github.com/KellisLab/Mantis/pull/4103",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ]
       },
-      "rolling_total": 176,
+      "rolling_total": 185,
       "rank": 1
     },
     {
@@ -4455,13 +4499,13 @@
         },
         "2026-08-24": {
           "prs": 1,
-          "reviews": 4,
+          "reviews": 2,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 1,
-          "review_submissions": 4,
+          "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
         },
@@ -4479,13 +4523,13 @@
         },
         "2026-08-26": {
           "prs": 0,
-          "reviews": 2,
+          "reviews": 4,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 0,
-          "review_submissions": 2,
+          "review_submissions": 6,
           "docs_prs": 0,
           "bug_prs": 0
         },
@@ -4669,7 +4713,7 @@
         "manual": 0,
         "prs_coauthored": 5,
         "issues_closed": 7,
-        "review_submissions": 14,
+        "review_submissions": 16,
         "docs_prs": 0,
         "bug_prs": 0
       },
@@ -4932,32 +4976,6 @@
           ]
         },
         {
-          "at": "2026-08-24T15:34:33Z",
-          "category": "review",
-          "points": 6,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4103",
-          "title": "fix(composer): center every transcript content type",
-          "url": "https://github.com/KellisLab/Mantis/pull/4103",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "2th review in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-08-24T15:29:17Z",
-          "category": "review",
-          "points": 4,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4104",
-          "title": "fix(composer): default model picker to GLM 5.2",
-          "url": "https://github.com/KellisLab/Mantis/pull/4104",
-          "notes": [
-            "commented"
-          ]
-        },
-        {
           "at": "2026-08-26T14:14:02Z",
           "category": "review",
           "points": 8,
@@ -4983,6 +5001,32 @@
             "nontrivial PR",
             "2th review in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-08-24T15:34:33Z",
+          "category": "review",
+          "points": 6,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4103",
+          "title": "fix(composer): center every transcript content type",
+          "url": "https://github.com/KellisLab/Mantis/pull/4103",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "2th review in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-08-24T15:29:17Z",
+          "category": "review",
+          "points": 4,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4104",
+          "title": "fix(composer): default model picker to GLM 5.2",
+          "url": "https://github.com/KellisLab/Mantis/pull/4104",
+          "notes": [
+            "commented"
+          ]
         }
       ],
       "windows": {
@@ -4998,7 +5042,7 @@
           "manual": 0,
           "prs_coauthored": 2,
           "issues_closed": 1,
-          "review_submissions": 10,
+          "review_submissions": 12,
           "docs_prs": 0,
           "bug_prs": 0
         },
@@ -5010,7 +5054,7 @@
           "manual": 0,
           "prs_coauthored": 5,
           "issues_closed": 1,
-          "review_submissions": 14,
+          "review_submissions": 16,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -5095,32 +5139,6 @@
             ]
           },
           {
-            "at": "2026-08-24T15:34:33Z",
-            "category": "review",
-            "points": 6,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4103",
-            "title": "fix(composer): center every transcript content type",
-            "url": "https://github.com/KellisLab/Mantis/pull/4103",
-            "notes": [
-              "commented",
-              "nontrivial PR",
-              "2th review in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-24T15:29:17Z",
-            "category": "review",
-            "points": 4,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4104",
-            "title": "fix(composer): default model picker to GLM 5.2",
-            "url": "https://github.com/KellisLab/Mantis/pull/4104",
-            "notes": [
-              "commented"
-            ]
-          },
-          {
             "at": "2026-08-26T14:14:02Z",
             "category": "review",
             "points": 8,
@@ -5145,6 +5163,32 @@
               "changes requested",
               "nontrivial PR",
               "2th review in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-08-24T15:34:33Z",
+            "category": "review",
+            "points": 6,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4103",
+            "title": "fix(composer): center every transcript content type",
+            "url": "https://github.com/KellisLab/Mantis/pull/4103",
+            "notes": [
+              "commented",
+              "nontrivial PR",
+              "2th review in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-08-24T15:29:17Z",
+            "category": "review",
+            "points": 4,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4104",
+            "title": "fix(composer): default model picker to GLM 5.2",
+            "url": "https://github.com/KellisLab/Mantis/pull/4104",
+            "notes": [
+              "commented"
             ]
           }
         ],
@@ -5241,32 +5285,6 @@
             ]
           },
           {
-            "at": "2026-08-24T15:34:33Z",
-            "category": "review",
-            "points": 6,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4103",
-            "title": "fix(composer): center every transcript content type",
-            "url": "https://github.com/KellisLab/Mantis/pull/4103",
-            "notes": [
-              "commented",
-              "nontrivial PR",
-              "2th review in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-24T15:29:17Z",
-            "category": "review",
-            "points": 4,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4104",
-            "title": "fix(composer): default model picker to GLM 5.2",
-            "url": "https://github.com/KellisLab/Mantis/pull/4104",
-            "notes": [
-              "commented"
-            ]
-          },
-          {
             "at": "2026-08-26T14:14:02Z",
             "category": "review",
             "points": 8,
@@ -5291,6 +5309,32 @@
               "changes requested",
               "nontrivial PR",
               "2th review in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-08-24T15:34:33Z",
+            "category": "review",
+            "points": 6,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4103",
+            "title": "fix(composer): center every transcript content type",
+            "url": "https://github.com/KellisLab/Mantis/pull/4103",
+            "notes": [
+              "commented",
+              "nontrivial PR",
+              "2th review in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-08-24T15:29:17Z",
+            "category": "review",
+            "points": 4,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4104",
+            "title": "fix(composer): default model picker to GLM 5.2",
+            "url": "https://github.com/KellisLab/Mantis/pull/4104",
+            "notes": [
+              "commented"
             ]
           }
         ]
@@ -127105,7 +127149,7 @@
         "14": {
           "prs": 6,
           "reviews": 1,
-          "confirmed_issues": 9,
+          "confirmed_issues": 8,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
