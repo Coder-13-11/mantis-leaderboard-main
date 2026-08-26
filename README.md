@@ -21,9 +21,9 @@ code / review / issues ledger.
 | 2 | [@charleywolf](https://github.com/charleywolf) | **109** | 9 | 1 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **66** | 9 | 0 | 0 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **64** | 6 | 1 | 0 |
-| 5 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 5 | 0 | 0 |
-| 6 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
-| 7 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
+| 5 | [@VishwanathanV](https://github.com/VishwanathanV) | **51** | 3 | 7 | 0 |
+| 6 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
+| 7 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **20** | 2 | 0 | 0 |
 | 8 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **14** | 1 | 4 | 1 |
 | 10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **13** | 1 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **78** | 6 | 1 | 2 |
 | 10 | [@alexandragreenwood](https://github.com/alexandragreenwood) | **67** | 6 | 1 | 9 |
 
-_Last updated: Wed, 26 Aug 2026 06:04:14 GMT_
+_Last updated: Wed, 26 Aug 2026 07:28:19 GMT_
 <!-- LEADERBOARD:END -->
 
 
