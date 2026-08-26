@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T19:18:36.838Z",
+  "generated_at": "2026-08-26T22:28:48.800Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-26T19:17:24.066Z",
+    "run_started_at": "2026-08-26T22:27:58.556Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-26T00:00:00.000Z",
     "repos": [
@@ -89,10 +89,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3518,
-      "issues": 2160,
-      "reviews": 10759,
-      "review_comments": 13953
+      "prs": 3521,
+      "issues": 2161,
+      "reviews": 10772,
+      "review_comments": 13955
     }
   },
   "review_rules": {
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 420,
+      "total": 429,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -193,7 +193,7 @@
         "2026-08-23": 10,
         "2026-08-24": 42,
         "2026-08-25": 20,
-        "2026-08-26": 20
+        "2026-08-26": 29
       },
       "dayCounts": {
         "2026-06-30": {
@@ -425,7 +425,7 @@
           "bug_prs": 0
         },
         "2026-08-26": {
-          "prs": 2,
+          "prs": 3,
           "reviews": 0,
           "confirmed_issues": 6,
           "fixed_bonuses": 0,
@@ -769,7 +769,7 @@
           "other": 0
         },
         "2026-08-26": {
-          "pr": 20,
+          "pr": 29,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -777,14 +777,14 @@
         }
       },
       "breakdown": {
-        "pr": 420,
+        "pr": 429,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 41,
+        "prs": 42,
         "reviews": 0,
         "confirmed_issues": 75,
         "fixed_bonuses": 0,
@@ -798,7 +798,7 @@
       "sizes": {
         "XS": 3,
         "S": 8,
-        "M": 15,
+        "M": 16,
         "L": 9,
         "XL": 6
       },
@@ -1275,27 +1275,39 @@
           "notes": [
             "2th in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-08-26T20:54:47Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2745",
+          "title": "fix: unblock test suite after the consumer auth series",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2745",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
         }
       ],
       "windows": {
-        "7": 171,
-        "14": 286
+        "7": 157,
+        "14": 295
       },
       "windowCounts": {
         "7": {
-          "prs": 21,
+          "prs": 18,
           "reviews": 0,
           "confirmed_issues": 32,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 12,
+          "issues_closed": 9,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 30,
+          "prs": 31,
           "reviews": 0,
           "confirmed_issues": 41,
           "fixed_bonuses": 0,
@@ -1309,14 +1321,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 171,
+          "pr": 157,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 286,
+          "pr": 295,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1325,15 +1337,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 171,
-          "shipping": 171,
+          "overall": 157,
+          "shipping": 157,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 286,
-          "shipping": 286,
+          "overall": 295,
+          "shipping": 295,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1341,54 +1353,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-08-19T19:18:47Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2694",
-            "title": "fix(composer): stop agent-runtime WebSocket connect crash-loop (stale DB conns)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2694",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-08-19T20:33:53Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3775",
-            "title": "fix: point SPHINX panel at the live SPHINX-FlyBase deployment",
-            "url": "https://github.com/KellisLab/Mantis/pull/3775",
-            "notes": [
-              "5th in 24h ×0.5"
-            ]
-          },
-          {
-            "at": "2026-08-19T20:34:02Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3896",
-            "title": "Dedupe csv_synthesis Map Name / \"Match Space\" logic",
-            "url": "https://github.com/KellisLab/Mantis/pull/3896",
-            "notes": [
-              "6th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-19T21:11:38Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3898",
-            "title": "Migrate remaining new-space creation pages to shared UI primitives",
-            "url": "https://github.com/KellisLab/Mantis/pull/3898",
-            "notes": [
-              "7th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-20T15:26:24Z",
             "category": "pr",
@@ -1589,6 +1553,18 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4104",
             "notes": [
               "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-08-26T20:54:47Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2745",
+            "title": "fix: unblock test suite after the consumer auth series",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2745",
+            "notes": [
+              "3th in 24h ×0.8"
             ]
           }
         ],
@@ -1946,10 +1922,22 @@
             "notes": [
               "2th in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-08-26T20:54:47Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2745",
+            "title": "fix: unblock test suite after the consumer auth series",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2745",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ]
       },
-      "rolling_total": 171,
+      "rolling_total": 157,
       "rank": 1
     },
     {
@@ -5732,6 +5720,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-08-26": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 3,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -5904,7 +5904,7 @@
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 11,
-        "issues_closed": 34,
+        "issues_closed": 37,
         "review_submissions": 3,
         "docs_prs": 5,
         "bug_prs": 0
@@ -8442,7 +8442,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 3,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -8454,7 +8454,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 0,
+          "issues_closed": 3,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -11142,362 +11142,6 @@
       },
       "rolling_total": 38,
       "rank": 6
-    },
-    {
-      "login": "Penguinz3",
-      "name": "Anikait Rana",
-      "total": 55,
-      "days": {
-        "2026-08-19": 42,
-        "2026-08-23": 13
-      },
-      "dayCounts": {
-        "2026-08-09": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-13": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-14": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-18": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-19": {
-          "prs": 4,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-20": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-23": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-08-19": {
-          "pr": 42,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-08-23": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 55,
-        "review": 0,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 7,
-        "reviews": 0,
-        "confirmed_issues": 0,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 6,
-        "issues_closed": 0,
-        "review_submissions": 0,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 0,
-        "S": 2,
-        "M": 3,
-        "L": 0,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-08-19T06:18:37Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4079",
-          "title": "Stop persisting workflow execution results",
-          "url": "https://github.com/KellisLab/Mantis/pull/4079",
-          "notes": []
-        },
-        {
-          "at": "2026-08-19T06:28:57Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2692",
-          "title": "Restrict YouTube ingestion hosts",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-08-19T06:39:03Z",
-          "category": "pr",
-          "points": 9,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4054",
-          "title": "Correct Code panel Python helper syntax",
-          "url": "https://github.com/KellisLab/Mantis/pull/4054",
-          "notes": [
-            "3th in 24h ×0.8"
-          ]
-        },
-        {
-          "at": "2026-08-19T21:45:42Z",
-          "category": "pr",
-          "points": 7,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4053",
-          "title": "Route Jupyter HTTP through the authenticated proxy",
-          "url": "https://github.com/KellisLab/Mantis/pull/4053",
-          "notes": [
-            "4th in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-08-23T18:07:14Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2717",
-          "title": "Restore GitHub repository synthesis pipeline",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
-          "notes": []
-        }
-      ],
-      "windows": {
-        "7": 20,
-        "14": 55
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 2,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 7,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 5,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 20,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 55,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 20,
-          "shipping": 20,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 55,
-          "shipping": 55,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [
-          {
-            "at": "2026-08-19T21:45:42Z",
-            "category": "pr",
-            "points": 7,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4053",
-            "title": "Route Jupyter HTTP through the authenticated proxy",
-            "url": "https://github.com/KellisLab/Mantis/pull/4053",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-08-23T18:07:14Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2717",
-            "title": "Restore GitHub repository synthesis pipeline",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
-            "notes": []
-          }
-        ],
-        "14": [
-          {
-            "at": "2026-08-19T06:18:37Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4079",
-            "title": "Stop persisting workflow execution results",
-            "url": "https://github.com/KellisLab/Mantis/pull/4079",
-            "notes": []
-          },
-          {
-            "at": "2026-08-19T06:28:57Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2692",
-            "title": "Restrict YouTube ingestion hosts",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-19T06:39:03Z",
-            "category": "pr",
-            "points": 9,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4054",
-            "title": "Correct Code panel Python helper syntax",
-            "url": "https://github.com/KellisLab/Mantis/pull/4054",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-08-19T21:45:42Z",
-            "category": "pr",
-            "points": 7,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4053",
-            "title": "Route Jupyter HTTP through the authenticated proxy",
-            "url": "https://github.com/KellisLab/Mantis/pull/4053",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-08-23T18:07:14Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2717",
-            "title": "Restore GitHub repository synthesis pipeline",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
-            "notes": []
-          }
-        ]
-      },
-      "rolling_total": 20,
-      "rank": 7
     },
     {
       "login": "Copilot",
@@ -14941,7 +14585,7 @@
         ]
       },
       "rolling_total": 16,
-      "rank": 8
+      "rank": 7
     },
     {
       "login": "DemonizedCrush",
@@ -19707,7 +19351,7 @@
         ]
       },
       "rolling_total": 14,
-      "rank": 9
+      "rank": 8
     },
     {
       "login": "6namdang",
@@ -20520,13 +20164,13 @@
         },
         "14": {
           "prs": 9,
-          "reviews": 9,
+          "reviews": 7,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
           "issues_closed": 0,
-          "review_submissions": 9,
+          "review_submissions": 7,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -20682,7 +20326,7 @@
         ]
       },
       "rolling_total": 13,
-      "rank": 10
+      "rank": 9
     },
     {
       "login": "AryanSudhirDev",
@@ -21227,6 +20871,350 @@
             "ref": "KellisLab/MantisAPI#2696",
             "title": "fix: queue GitHub action item sync",
             "url": "https://github.com/KellisLab/MantisAPI/pull/2696",
+            "notes": []
+          }
+        ]
+      },
+      "rolling_total": 13,
+      "rank": 10
+    },
+    {
+      "login": "Penguinz3",
+      "name": "Anikait Rana",
+      "total": 55,
+      "days": {
+        "2026-08-19": 42,
+        "2026-08-23": 13
+      },
+      "dayCounts": {
+        "2026-08-09": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-13": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-14": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-18": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-19": {
+          "prs": 4,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-20": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-23": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-26": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-08-19": {
+          "pr": 42,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-08-23": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 55,
+        "review": 0,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 7,
+        "reviews": 0,
+        "confirmed_issues": 0,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 6,
+        "issues_closed": 0,
+        "review_submissions": 0,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 0,
+        "S": 2,
+        "M": 3,
+        "L": 0,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-08-19T06:18:37Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4079",
+          "title": "Stop persisting workflow execution results",
+          "url": "https://github.com/KellisLab/Mantis/pull/4079",
+          "notes": []
+        },
+        {
+          "at": "2026-08-19T06:28:57Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2692",
+          "title": "Restrict YouTube ingestion hosts",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-08-19T06:39:03Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4054",
+          "title": "Correct Code panel Python helper syntax",
+          "url": "https://github.com/KellisLab/Mantis/pull/4054",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-08-19T21:45:42Z",
+          "category": "pr",
+          "points": 7,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4053",
+          "title": "Route Jupyter HTTP through the authenticated proxy",
+          "url": "https://github.com/KellisLab/Mantis/pull/4053",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-08-23T18:07:14Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2717",
+          "title": "Restore GitHub repository synthesis pipeline",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
+          "notes": []
+        }
+      ],
+      "windows": {
+        "7": 13,
+        "14": 55
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 2,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 7,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 5,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 55,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 13,
+          "shipping": 13,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 55,
+          "shipping": 55,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [
+          {
+            "at": "2026-08-23T18:07:14Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2717",
+            "title": "Restore GitHub repository synthesis pipeline",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
+            "notes": []
+          }
+        ],
+        "14": [
+          {
+            "at": "2026-08-19T06:18:37Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4079",
+            "title": "Stop persisting workflow execution results",
+            "url": "https://github.com/KellisLab/Mantis/pull/4079",
+            "notes": []
+          },
+          {
+            "at": "2026-08-19T06:28:57Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2692",
+            "title": "Restrict YouTube ingestion hosts",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-08-19T06:39:03Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4054",
+            "title": "Correct Code panel Python helper syntax",
+            "url": "https://github.com/KellisLab/Mantis/pull/4054",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-08-19T21:45:42Z",
+            "category": "pr",
+            "points": 7,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4053",
+            "title": "Route Jupyter HTTP through the authenticated proxy",
+            "url": "https://github.com/KellisLab/Mantis/pull/4053",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-08-23T18:07:14Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2717",
+            "title": "Restore GitHub repository synthesis pipeline",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
             "notes": []
           }
         ]
@@ -22957,12 +22945,12 @@
     {
       "login": "Chessing234",
       "name": "Taksh Kothari",
-      "total": 206,
+      "total": 208,
       "days": {
         "2026-07-04": 10,
         "2026-07-05": 14,
         "2026-07-24": 34,
-        "2026-07-29": 34,
+        "2026-07-29": 36,
         "2026-08-06": 47,
         "2026-08-07": 46,
         "2026-08-24": 12,
@@ -23138,7 +23126,7 @@
         },
         "2026-07-29": {
           "pr": 0,
-          "review": 34,
+          "review": 36,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -23174,7 +23162,7 @@
       },
       "breakdown": {
         "pr": 129,
-        "review": 77,
+        "review": 79,
         "issue": 0,
         "docs": 0,
         "other": 0
@@ -23523,23 +23511,9 @@
           ]
         },
         {
-          "at": "2026-07-29T14:55:31Z",
-          "category": "review",
-          "points": 4,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#3345",
-          "title": "fix(map): make Document Zoom actually move the camera",
-          "url": "https://github.com/KellisLab/Mantis/pull/3345",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "4th review in 24h ×0.65"
-          ]
-        },
-        {
           "at": "2026-07-29T15:02:22Z",
           "category": "review",
-          "points": 2,
+          "points": 4,
           "kind": "review",
           "ref": "KellisLab/Mantis#3348",
           "title": "3343 bug report screenshots come out blank where the map is webgl not captured",
@@ -23547,7 +23521,7 @@
           "notes": [
             "commented",
             "inline comments",
-            "6th review in 24h ×0.35"
+            "5th review in 24h ×0.5"
           ]
         },
         {
@@ -23586,6 +23560,20 @@
             "commented",
             "inline comments",
             "nontrivial PR"
+          ]
+        },
+        {
+          "at": "2026-07-29T14:55:31Z",
+          "category": "review",
+          "points": 4,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#3345",
+          "title": "fix(map): make Document Zoom actually move the camera",
+          "url": "https://github.com/KellisLab/Mantis/pull/3345",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "4th review in 24h ×0.65"
           ]
         }
       ],
@@ -87770,7 +87758,7 @@
         "14": {
           "prs": 4,
           "reviews": 2,
-          "confirmed_issues": 15,
+          "confirmed_issues": 13,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 11,
@@ -123878,6 +123866,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-08-26": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -123994,7 +123994,7 @@
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 3,
-        "issues_closed": 5,
+        "issues_closed": 6,
         "review_submissions": 1,
         "docs_prs": 1,
         "bug_prs": 0
@@ -124265,7 +124265,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -124277,7 +124277,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 2,
+          "issues_closed": 3,
           "review_submissions": 1,
           "docs_prs": 1,
           "bug_prs": 0
@@ -127771,7 +127771,7 @@
         "14": {
           "prs": 1,
           "reviews": 0,
-          "confirmed_issues": 2,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
