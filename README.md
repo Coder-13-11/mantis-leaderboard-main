@@ -17,22 +17,22 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **168** | 19 | 0 | 32 |
-| 2 | [@charleywolf](https://github.com/charleywolf) | **82** | 7 | 1 | 0 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **66** | 9 | 0 | 0 |
-| 4 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
-| 5 | [@VishwanathanV](https://github.com/VishwanathanV) | **48** | 1 | 6 | 0 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **25** | 2 | 0 | 0 |
-| 7 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **22** | 2 | 0 | 2 |
-| 8 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
-| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **14** | 1 | 5 | 1 |
-| 10 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **13** | 1 | 0 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **168** | 19 | 0 | 35 |
+| 2 | [@charleywolf](https://github.com/charleywolf) | **68** | 6 | 1 | 0 |
+| 3 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
+| 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **48** | 1 | 6 | 0 |
+| 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **25** | 2 | 0 | 0 |
+| 6 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **22** | 2 | 0 | 2 |
+| 7 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
+| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **14** | 1 | 5 | 1 |
+| 9 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **13** | 1 | 0 | 0 |
+| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **13** | 1 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **299** | 32 | 0 | 34 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **285** | 31 | 0 | 37 |
 | 2 | [@charleywolf](https://github.com/charleywolf) | **147** | 12 | 1 | 0 |
 | 3 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **133** | 8 | 8 | 3 |
 | 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **127** | 11 | 3 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **57** | 5 | 6 | 0 |
 | 10 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 
-_Last updated: Thu, 27 Aug 2026 23:59:37 GMT_
+_Last updated: Fri, 28 Aug 2026 11:17:28 GMT_
 <!-- LEADERBOARD:END -->
 
 
