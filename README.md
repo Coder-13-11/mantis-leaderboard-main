@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **168** | 19 | 0 | 29 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **168** | 19 | 0 | 28 |
 | 2 | [@VishwanathanV](https://github.com/VishwanathanV) | **70** | 1 | 11 | 0 |
 | 3 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **45** | 4 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **57** | 5 | 4 | 0 |
 | 10 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 
-_Last updated: Sat, 29 Aug 2026 03:22:47 GMT_
+_Last updated: Sat, 29 Aug 2026 10:25:12 GMT_
 <!-- LEADERBOARD:END -->
 
 
