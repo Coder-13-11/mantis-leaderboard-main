@@ -17,10 +17,10 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **148** | 17 | 0 | 23 |
-| 2 | [@charleywolf](https://github.com/charleywolf) | **85** | 8 | 0 | 0 |
-| 3 | [@VishwanathanV](https://github.com/VishwanathanV) | **70** | 1 | 11 | 0 |
-| 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **64** | 9 | 0 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **177** | 20 | 0 | 23 |
+| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **92** | 16 | 0 | 0 |
+| 3 | [@charleywolf](https://github.com/charleywolf) | **85** | 8 | 0 | 0 |
+| 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **70** | 1 | 11 | 0 |
 | 5 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
 | 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
@@ -32,9 +32,9 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **292** | 32 | 0 | 37 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **321** | 35 | 0 | 37 |
 | 2 | [@charleywolf](https://github.com/charleywolf) | **174** | 15 | 1 | 0 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **142** | 19 | 0 | 0 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **170** | 26 | 0 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **121** | 4 | 18 | 0 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **110** | 10 | 3 | 0 |
 | 6 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **87** | 4 | 8 | 1 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **57** | 5 | 4 | 0 |
 | 10 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 
-_Last updated: Sun, 30 Aug 2026 05:46:17 GMT_
+_Last updated: Sun, 30 Aug 2026 11:50:33 GMT_
 <!-- LEADERBOARD:END -->
 
 
