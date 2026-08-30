@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T11:50:33.572Z",
+  "generated_at": "2026-08-30T16:37:32.529Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-08-30T11:49:30.329Z",
+    "run_started_at": "2026-08-30T16:36:39.585Z",
     "lookback_days": 365,
     "lookback_since": "2025-08-30T00:00:00.000Z",
     "repos": [
@@ -91,7 +91,7 @@
     "event_counts": {
       "prs": 3580,
       "issues": 2208,
-      "reviews": 11024,
+      "reviews": 11026,
       "review_comments": 14081
     }
   },
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 505,
+      "total": 511,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -196,7 +196,7 @@
         "2026-08-26": 29,
         "2026-08-27": 16,
         "2026-08-28": 21,
-        "2026-08-30": 39
+        "2026-08-30": 45
       },
       "dayCounts": {
         "2026-06-30": {
@@ -464,13 +464,13 @@
           "bug_prs": 0
         },
         "2026-08-30": {
-          "prs": 4,
+          "prs": 5,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 1,
+          "issues_closed": 2,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -829,7 +829,7 @@
           "other": 0
         },
         "2026-08-30": {
-          "pr": 39,
+          "pr": 45,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -837,20 +837,20 @@
         }
       },
       "breakdown": {
-        "pr": 505,
+        "pr": 511,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 50,
+        "prs": 51,
         "reviews": 0,
         "confirmed_issues": 78,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 5,
-        "issues_closed": 22,
+        "issues_closed": 23,
         "review_submissions": 0,
         "docs_prs": 0,
         "bug_prs": 0
@@ -858,7 +858,7 @@
       "sizes": {
         "XS": 5,
         "S": 11,
-        "M": 17,
+        "M": 18,
         "L": 11,
         "XL": 6
       },
@@ -1441,33 +1441,45 @@
           "notes": [
             "4th in 24h ×0.65"
           ]
+        },
+        {
+          "at": "2026-08-30T16:13:57Z",
+          "category": "pr",
+          "points": 6,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2772",
+          "title": "security(celery): JSON-only broker transport, disable remote control",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2772",
+          "notes": [
+            "5th in 24h ×0.5"
+          ]
         }
       ],
       "windows": {
-        "7": 177,
-        "14": 321
+        "7": 183,
+        "14": 327
       },
       "windowCounts": {
         "7": {
-          "prs": 20,
+          "prs": 21,
           "reviews": 0,
           "confirmed_issues": 23,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 10,
+          "issues_closed": 11,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 35,
+          "prs": 36,
           "reviews": 0,
           "confirmed_issues": 37,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 17,
+          "issues_closed": 18,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -1475,14 +1487,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 177,
+          "pr": 183,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 321,
+          "pr": 327,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1491,15 +1503,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 177,
-          "shipping": 177,
+          "overall": 183,
+          "shipping": 183,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 321,
-          "shipping": 321,
+          "overall": 327,
+          "shipping": 327,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1743,6 +1755,18 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4128",
             "notes": [
               "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-08-30T16:13:57Z",
+            "category": "pr",
+            "points": 6,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2772",
+            "title": "security(celery): JSON-only broker transport, disable remote control",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2772",
+            "notes": [
+              "5th in 24h ×0.5"
             ]
           }
         ],
@@ -2160,10 +2184,22 @@
             "notes": [
               "4th in 24h ×0.65"
             ]
+          },
+          {
+            "at": "2026-08-30T16:13:57Z",
+            "category": "pr",
+            "points": 6,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2772",
+            "title": "security(celery): JSON-only broker transport, disable remote control",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2772",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
           }
         ]
       },
-      "rolling_total": 177,
+      "rolling_total": 183,
       "rank": 1
     },
     {
@@ -10021,7 +10057,7 @@
         "7": {
           "prs": 4,
           "reviews": 0,
-          "confirmed_issues": 3,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -17169,7 +17205,7 @@
       ],
       "windows": {
         "7": 22,
-        "14": 32
+        "14": 22
       },
       "windowCounts": {
         "7": {
@@ -17185,7 +17221,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 3,
+          "prs": 2,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
@@ -17206,7 +17242,7 @@
           "other": 0
         },
         "14": {
-          "pr": 32,
+          "pr": 22,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -17222,8 +17258,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 32,
-          "shipping": 32,
+          "overall": 22,
+          "shipping": 22,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -17253,16 +17289,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-16T13:25:56Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3995",
-            "title": "fix export dropdown white text bug",
-            "url": "https://github.com/KellisLab/Mantis/pull/3995",
-            "notes": []
-          },
           {
             "at": "2026-08-23T18:07:19Z",
             "category": "pr",
@@ -25469,7 +25495,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
-          "issues_closed": 9,
+          "issues_closed": 8,
           "review_submissions": 7,
           "docs_prs": 0,
           "bug_prs": 0
@@ -26364,7 +26390,7 @@
       ],
       "windows": {
         "7": 13,
-        "14": 57
+        "14": 13
       },
       "windowCounts": {
         "7": {
@@ -26380,7 +26406,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 5,
+          "prs": 1,
           "reviews": 4,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -26401,7 +26427,7 @@
           "other": 0
         },
         "14": {
-          "pr": 57,
+          "pr": 13,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -26417,8 +26443,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 57,
-          "shipping": 57,
+          "overall": 13,
+          "shipping": 13,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -26438,52 +26464,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-16T14:35:23Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2556",
-            "title": "security: gate workflow-engine inline code execution (authenticated RCE)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2556",
-            "notes": []
-          },
-          {
-            "at": "2026-08-16T14:35:27Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2557",
-            "title": "security: enforce session identity on headmaster chat/memory endpoints (IDOR)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2557",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-16T14:35:32Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2558",
-            "title": "security: enforce ownership on journeys ModelViewSet default verbs (IDOR)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2558",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-08-16T14:37:46Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3927",
-            "title": "Gate server API routes on NextAuth session",
-            "url": "https://github.com/KellisLab/Mantis/pull/3927",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
           {
             "at": "2026-08-26T18:48:13Z",
             "category": "pr",
@@ -89648,7 +89628,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 10
+        "14": 0
       },
       "windowCounts": {
         "7": {
@@ -89664,14 +89644,14 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 1,
-          "reviews": 1,
+          "prs": 0,
+          "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 5,
           "issues_closed": 0,
-          "review_submissions": 1,
+          "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -89685,7 +89665,7 @@
           "other": 0
         },
         "14": {
-          "pr": 10,
+          "pr": 0,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -89701,8 +89681,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 10,
-          "shipping": 10,
+          "overall": 0,
+          "shipping": 0,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -89710,18 +89690,7 @@
       },
       "windowLedger": {
         "7": [],
-        "14": [
-          {
-            "at": "2026-08-16T15:02:20Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2659",
-            "title": "Fix: Team Assignment Workflow Fails",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2659",
-            "notes": []
-          }
-        ]
+        "14": []
       },
       "rolling_total": 0,
       "rank": 48
@@ -100343,10 +100312,10 @@
         "14": {
           "prs": 4,
           "reviews": 8,
-          "confirmed_issues": 1,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 10,
+          "prs_coauthored": 7,
           "issues_closed": 0,
           "review_submissions": 11,
           "docs_prs": 0,
