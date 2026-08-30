@@ -17,33 +17,33 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **177** | 21 | 0 | 21 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **102** | 18 | 0 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **177** | 21 | 0 | 19 |
+| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **85** | 8 | 0 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **70** | 1 | 11 | 0 |
-| 5 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 0 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
-| 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
-| 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **24** | 2 | 0 | 0 |
-| 9 | [@Copilot](https://github.com/Copilot) | **16** | 0 | 2 | 0 |
-| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **14** | 1 | 4 | 1 |
+| 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
+| 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
+| 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 3 | 0 | 0 |
+| 8 | [@edoardopanella](https://github.com/edoardopanella) | **35** | 3 | 0 | 0 |
+| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
+| 10 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **24** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **331** | 37 | 0 | 37 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **180** | 28 | 0 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **331** | 37 | 0 | 38 |
+| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **192** | 31 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **174** | 15 | 1 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **121** | 4 | 18 | 0 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **110** | 10 | 3 | 0 |
 | 6 | **Adhiban Arulselvan** ([@ark248](https://github.com/ark248)) | **83** | 11 | 0 | 0 |
 | 7 | **Rohan Vaidya** ([@rohan-va](https://github.com/rohan-va)) | **76** | 3 | 8 | 0 |
-| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **64** | 5 | 1 | 1 |
+| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **75** | 6 | 1 | 1 |
 | 9 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 | 10 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 
-_Last updated: Sun, 30 Aug 2026 19:27:09 GMT_
+_Last updated: Sun, 30 Aug 2026 22:03:15 GMT_
 <!-- LEADERBOARD:END -->
 
 
