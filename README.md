@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **177** | 21 | 0 | 20 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **166** | 23 | 0 | 21 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **85** | 8 | 0 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **70** | 1 | 11 | 0 |
@@ -25,25 +25,25 @@ code / review / issues ledger.
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
 | 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 3 | 0 | 0 |
 | 8 | [@edoardopanella](https://github.com/edoardopanella) | **35** | 3 | 0 | 0 |
-| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
-| 10 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **24** | 2 | 0 | 0 |
+| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 1 |
+| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **331** | 37 | 0 | 40 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **345** | 41 | 0 | 42 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **192** | 31 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **174** | 15 | 1 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **121** | 4 | 18 | 0 |
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **110** | 10 | 3 | 0 |
 | 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **75** | 6 | 1 | 1 |
-| 7 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
-| 8 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
-| 9 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **48** | 4 | 0 | 0 |
-| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 7 | 1 |
+| 7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **70** | 5 | 7 | 1 |
+| 8 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
+| 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
+| 10 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **48** | 4 | 0 | 0 |
 
-_Last updated: Mon, 31 Aug 2026 00:29:36 GMT_
+_Last updated: Mon, 31 Aug 2026 06:04:02 GMT_
 <!-- LEADERBOARD:END -->
 
 
