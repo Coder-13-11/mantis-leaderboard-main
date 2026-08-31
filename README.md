@@ -17,33 +17,33 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **170** | 24 | 0 | 21 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **153** | 21 | 0 | 21 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
-| 3 | [@charleywolf](https://github.com/charleywolf) | **85** | 8 | 0 | 0 |
-| 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **70** | 1 | 11 | 0 |
+| 3 | [@charleywolf](https://github.com/charleywolf) | **99** | 9 | 0 | 0 |
+| 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **40** | 0 | 9 | 0 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
 | 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 3 | 0 | 0 |
-| 8 | [@edoardopanella](https://github.com/edoardopanella) | **35** | 3 | 0 | 0 |
-| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 1 |
-| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
+| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 1 |
+| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
+| 10 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **24** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **349** | 42 | 0 | 42 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **335** | 41 | 0 | 42 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **192** | 31 | 0 | 0 |
-| 3 | [@charleywolf](https://github.com/charleywolf) | **174** | 15 | 1 | 0 |
-| 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **121** | 4 | 18 | 0 |
-| 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **110** | 10 | 3 | 0 |
-| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **75** | 6 | 1 | 1 |
-| 7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **70** | 5 | 7 | 1 |
+| 3 | [@charleywolf](https://github.com/charleywolf) | **188** | 16 | 1 | 0 |
+| 4 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **110** | 10 | 2 | 0 |
+| 5 | [@VishwanathanV](https://github.com/VishwanathanV) | **108** | 3 | 18 | 0 |
+| 6 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **63** | 5 | 1 | 1 |
+| 7 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **56** | 4 | 7 | 1 |
 | 8 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 7 | 0 | 0 |
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 10 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **48** | 4 | 0 | 0 |
 
-_Last updated: Mon, 31 Aug 2026 13:37:00 GMT_
+_Last updated: Mon, 31 Aug 2026 19:40:19 GMT_
 <!-- LEADERBOARD:END -->
 
 
