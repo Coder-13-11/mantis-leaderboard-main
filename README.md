@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **145** | 20 | 0 | 17 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **138** | 19 | 0 | 17 |
 | 2 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **50** | 0 | 10 | 0 |
@@ -25,8 +25,8 @@ code / review / issues ledger.
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
 | 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 3 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 1 |
-| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
-| 10 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **24** | 2 | 0 | 0 |
+| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **26** | 2 | 0 | 0 |
+| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
 | 10 | **Muskaan Saraf** ([@muskaansaraf-hue](https://github.com/muskaansaraf-hue)) | **40** | 4 | 0 | 0 |
 
-_Last updated: Tue, 01 Sep 2026 10:00:49 GMT_
+_Last updated: Tue, 01 Sep 2026 14:48:38 GMT_
 <!-- LEADERBOARD:END -->
 
 
