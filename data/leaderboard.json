@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T01:22:09.713Z",
+  "generated_at": "2026-09-02T06:24:26.181Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-02T01:20:51.060Z",
+    "run_started_at": "2026-09-02T06:23:01.139Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-02T00:00:00.000Z",
     "repos": [
@@ -91,8 +91,8 @@
     "event_counts": {
       "prs": 3621,
       "issues": 2223,
-      "reviews": 11179,
-      "review_comments": 14231
+      "reviews": 11184,
+      "review_comments": 14232
     }
   },
   "review_rules": {
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 533,
+      "total": 547,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -197,7 +197,8 @@
         "2026-08-27": 16,
         "2026-08-28": 21,
         "2026-08-30": 49,
-        "2026-08-31": 18
+        "2026-08-31": 18,
+        "2026-09-02": 14
       },
       "dayCounts": {
         "2026-06-30": {
@@ -484,6 +485,18 @@
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 2,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-02": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -866,17 +879,24 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-09-02": {
+          "pr": 14,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 529,
+        "pr": 543,
         "review": 0,
         "issue": 0,
         "docs": 4,
         "other": 0
       },
       "counts": {
-        "prs": 57,
+        "prs": 58,
         "reviews": 0,
         "confirmed_issues": 84,
         "fixed_bonuses": 0,
@@ -892,7 +912,7 @@
         "S": 12,
         "M": 20,
         "L": 12,
-        "XL": 7
+        "XL": 8
       },
       "contributions": [],
       "ledger": [
@@ -1546,15 +1566,25 @@
           "notes": [
             "9th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-09-02T02:48:32Z",
+          "category": "pr",
+          "points": 14,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2825",
+          "title": "feat(composer): context breakdown modal",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2825",
+          "notes": []
         }
       ],
       "windows": {
-        "7": 133,
-        "14": 322
+        "7": 147,
+        "14": 323
       },
       "windowCounts": {
         "7": {
-          "prs": 18,
+          "prs": 19,
           "reviews": 0,
           "confirmed_issues": 9,
           "fixed_bonuses": 0,
@@ -1568,7 +1598,7 @@
         "14": {
           "prs": 40,
           "reviews": 0,
-          "confirmed_issues": 43,
+          "confirmed_issues": 42,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
@@ -1580,14 +1610,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 129,
+          "pr": 143,
           "review": 0,
           "issue": 0,
           "docs": 4,
           "other": 0
         },
         "14": {
-          "pr": 318,
+          "pr": 319,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -1596,15 +1626,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 133,
-          "shipping": 129,
+          "overall": 147,
+          "shipping": 143,
           "review": 0,
           "bugs": 0,
           "docs": 4
         },
         "14": {
-          "overall": 322,
-          "shipping": 318,
+          "overall": 323,
+          "shipping": 319,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -1814,21 +1844,19 @@
             "notes": [
               "9th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-09-02T02:48:32Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2825",
+            "title": "feat(composer): context breakdown modal",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2825",
+            "notes": []
           }
         ],
         "14": [
-          {
-            "at": "2026-08-19T05:40:25Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2691",
-            "title": "Fix tests broken by PR #2686's error message sanitization",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2691",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
           {
             "at": "2026-08-19T19:01:54Z",
             "category": "pr",
@@ -2281,10 +2309,20 @@
             "notes": [
               "9th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-09-02T02:48:32Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2825",
+            "title": "feat(composer): context breakdown modal",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2825",
+            "notes": []
           }
         ]
       },
-      "rolling_total": 133,
+      "rolling_total": 147,
       "rank": 1
     },
     {
@@ -26388,7 +26426,7 @@
       ],
       "windows": {
         "7": 23,
-        "14": 31
+        "14": 23
       },
       "windowCounts": {
         "7": {
@@ -26404,7 +26442,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 3,
+          "prs": 2,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -26425,7 +26463,7 @@
           "other": 0
         },
         "14": {
-          "pr": 31,
+          "pr": 23,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -26441,8 +26479,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 31,
-          "shipping": 31,
+          "overall": 23,
+          "shipping": 23,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -26472,18 +26510,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-19T05:18:42Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4074",
-            "title": "Ignore right-click and middle-click on the canvas drawing tool",
-            "url": "https://github.com/KellisLab/Mantis/pull/4074",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-08-29T21:01:42Z",
             "category": "pr",
@@ -27194,8 +27220,8 @@
         "2026-08-24": 7,
         "2026-08-28": 9,
         "2026-03-29": 9,
-        "2026-09-01": 9,
-        "2026-08-11": 9
+        "2026-08-11": 9,
+        "2026-09-01": 9
       },
       "dayCounts": {
         "2025-07-06": {
@@ -28254,7 +28280,7 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
-        "2026-09-01": {
+        "2026-08-11": {
           "prs": 0,
           "reviews": 1,
           "confirmed_issues": 0,
@@ -28266,7 +28292,7 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
-        "2026-08-11": {
+        "2026-09-01": {
           "prs": 0,
           "reviews": 1,
           "confirmed_issues": 0,
@@ -28798,14 +28824,14 @@
           "docs": 0,
           "other": 0
         },
-        "2026-09-01": {
+        "2026-08-11": {
           "pr": 0,
           "review": 9,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
-        "2026-08-11": {
+        "2026-09-01": {
           "pr": 0,
           "review": 9,
           "issue": 0,
@@ -30474,20 +30500,6 @@
           ]
         },
         {
-          "at": "2026-09-01T18:10:01Z",
-          "category": "review",
-          "points": 9,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#2825",
-          "title": "feat(composer): context breakdown modal",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2825",
-          "notes": [
-            "commented",
-            "inline comments",
-            "nontrivial PR"
-          ]
-        },
-        {
           "at": "2026-08-11T00:03:10Z",
           "category": "review",
           "points": 9,
@@ -30495,6 +30507,20 @@
           "ref": "KellisLab/Mantis#3804",
           "title": "feat: open .mpanel files client-side when the composer calls open_mpanel",
           "url": "https://github.com/KellisLab/Mantis/pull/3804",
+          "notes": [
+            "commented",
+            "inline comments",
+            "nontrivial PR"
+          ]
+        },
+        {
+          "at": "2026-09-01T18:10:01Z",
+          "category": "review",
+          "points": 9,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2825",
+          "title": "feat(composer): context breakdown modal",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2825",
           "notes": [
             "commented",
             "inline comments",
@@ -32267,7 +32293,7 @@
       ],
       "windows": {
         "7": 13,
-        "14": 25
+        "14": 13
       },
       "windowCounts": {
         "7": {
@@ -32283,13 +32309,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 2,
+          "prs": 1,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 2,
-          "issues_closed": 3,
+          "prs_coauthored": 1,
+          "issues_closed": 2,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -32304,7 +32330,7 @@
           "other": 0
         },
         "14": {
-          "pr": 25,
+          "pr": 13,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -32320,8 +32346,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 25,
-          "shipping": 25,
+          "overall": 13,
+          "shipping": 13,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -32341,16 +32367,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-19T05:05:22Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4078",
-            "title": "fix: send creation-page back button to home instead of the guided picker",
-            "url": "https://github.com/KellisLab/Mantis/pull/4078",
-            "notes": []
-          },
           {
             "at": "2026-08-29T21:45:46Z",
             "category": "pr",
@@ -115816,7 +115832,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 12,
+          "prs_coauthored": 11,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -129735,7 +129751,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 55
+        "14": 42
       },
       "windowCounts": {
         "7": {
@@ -129751,12 +129767,12 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 5,
+          "prs": 4,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 3,
+          "prs_coauthored": 2,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -129772,7 +129788,7 @@
           "other": 0
         },
         "14": {
-          "pr": 55,
+          "pr": 42,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -129788,8 +129804,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 55,
-          "shipping": 55,
+          "overall": 42,
+          "shipping": 42,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -129798,16 +129814,6 @@
       "windowLedger": {
         "7": [],
         "14": [
-          {
-            "at": "2026-08-19T06:18:37Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4079",
-            "title": "Stop persisting workflow execution results",
-            "url": "https://github.com/KellisLab/Mantis/pull/4079",
-            "notes": []
-          },
           {
             "at": "2026-08-19T06:28:57Z",
             "category": "pr",
