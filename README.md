@@ -25,8 +25,8 @@ code / review / issues ledger.
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
 | 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 3 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 2 | 0 |
-| 9 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
-| 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **25** | 2 | 0 | 0 |
+| 9 | [@Copilot](https://github.com/Copilot) | **27** | 0 | 3 | 0 |
+| 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **75** | 7 | 1 | 0 |
 | 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **56** | 5 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
-| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
-| 9 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **42** | 4 | 0 | 0 |
+| 8 | [@Copilot](https://github.com/Copilot) | **43** | 0 | 5 | 0 |
+| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
 | 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
 
-_Last updated: Wed, 02 Sep 2026 06:24:26 GMT_
+_Last updated: Wed, 02 Sep 2026 11:42:07 GMT_
 <!-- LEADERBOARD:END -->
 
 
