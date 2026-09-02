@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **133** | 18 | 0 | 15 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **133** | 18 | 0 | 9 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **50** | 0 | 10 | 0 |
@@ -39,11 +39,11 @@ code / review / issues ledger.
 | 5 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **75** | 7 | 1 | 0 |
 | 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **56** | 5 | 0 | 0 |
 | 7 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **55** | 5 | 0 | 0 |
-| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **53** | 5 | 0 | 0 |
-| 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
-| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
+| 8 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
+| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
+| 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
 
-_Last updated: Tue, 01 Sep 2026 23:33:33 GMT_
+_Last updated: Wed, 02 Sep 2026 01:22:09 GMT_
 <!-- LEADERBOARD:END -->
 
 
