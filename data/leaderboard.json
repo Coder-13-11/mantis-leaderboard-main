@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T19:30:01.043Z",
+  "generated_at": "2026-09-02T21:58:22.562Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-02T19:28:41.713Z",
+    "run_started_at": "2026-09-02T21:57:13.001Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-02T00:00:00.000Z",
     "repos": [
@@ -90,9 +90,9 @@
     "checksum_ok": true,
     "event_counts": {
       "prs": 3625,
-      "issues": 2234,
-      "reviews": 11193,
-      "review_comments": 14254
+      "issues": 2237,
+      "reviews": 11197,
+      "review_comments": 14262
     }
   },
   "review_rules": {
@@ -1591,12 +1591,12 @@
         }
       ],
       "windows": {
-        "7": 141,
-        "14": 304
+        "7": 132,
+        "14": 289
       },
       "windowCounts": {
         "7": {
-          "prs": 18,
+          "prs": 17,
           "reviews": 0,
           "confirmed_issues": 11,
           "fixed_bonuses": 0,
@@ -1608,13 +1608,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 38,
+          "prs": 35,
           "reviews": 0,
           "confirmed_issues": 43,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 17,
+          "issues_closed": 14,
           "review_submissions": 0,
           "docs_prs": 1,
           "bug_prs": 0
@@ -1622,14 +1622,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 137,
+          "pr": 128,
           "review": 0,
           "issue": 0,
           "docs": 4,
           "other": 0
         },
         "14": {
-          "pr": 300,
+          "pr": 285,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -1638,15 +1638,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 141,
-          "shipping": 137,
+          "overall": 132,
+          "shipping": 128,
           "review": 0,
           "bugs": 0,
           "docs": 4
         },
         "14": {
-          "overall": 304,
-          "shipping": 300,
+          "overall": 289,
+          "shipping": 285,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -1654,18 +1654,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-08-26T20:54:47Z",
-            "category": "pr",
-            "points": 9,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2745",
-            "title": "fix: unblock test suite after the consumer auth series",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2745",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-08-27T13:49:37Z",
             "category": "pr",
@@ -1857,42 +1845,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-19T20:33:53Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3775",
-            "title": "fix: point SPHINX panel at the live SPHINX-FlyBase deployment",
-            "url": "https://github.com/KellisLab/Mantis/pull/3775",
-            "notes": [
-              "5th in 24h ×0.5"
-            ]
-          },
-          {
-            "at": "2026-08-19T20:34:02Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3896",
-            "title": "Dedupe csv_synthesis Map Name / \"Match Space\" logic",
-            "url": "https://github.com/KellisLab/Mantis/pull/3896",
-            "notes": [
-              "6th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-08-19T21:11:38Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3898",
-            "title": "Migrate remaining new-space creation pages to shared UI primitives",
-            "url": "https://github.com/KellisLab/Mantis/pull/3898",
-            "notes": [
-              "7th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-20T15:26:24Z",
             "category": "pr",
@@ -2298,7 +2250,7 @@
           }
         ]
       },
-      "rolling_total": 141,
+      "rolling_total": 132,
       "rank": 1
     },
     {
@@ -5713,7 +5665,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 9,
-          "issues_closed": 28,
+          "issues_closed": 26,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -29450,7 +29402,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 1,
+          "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -129855,7 +129807,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 20
+        "14": 13
       },
       "windowCounts": {
         "7": {
@@ -129871,7 +129823,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 2,
+          "prs": 1,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -129892,7 +129844,7 @@
           "other": 0
         },
         "14": {
-          "pr": 20,
+          "pr": 13,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -129908,8 +129860,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 20,
-          "shipping": 20,
+          "overall": 13,
+          "shipping": 13,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -129918,18 +129870,6 @@
       "windowLedger": {
         "7": [],
         "14": [
-          {
-            "at": "2026-08-19T21:45:42Z",
-            "category": "pr",
-            "points": 7,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4053",
-            "title": "Route Jupyter HTTP through the authenticated proxy",
-            "url": "https://github.com/KellisLab/Mantis/pull/4053",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
           {
             "at": "2026-08-23T18:07:14Z",
             "category": "pr",

@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 18 | 0 | 11 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **132** | 17 | 0 | 11 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **44** | 4 | 0 | 0 |
@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **304** | 38 | 0 | 43 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **289** | 35 | 0 | 43 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **180** | 30 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **160** | 14 | 1 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **102** | 3 | 15 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
 | 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
 
-_Last updated: Wed, 02 Sep 2026 19:30:01 GMT_
+_Last updated: Wed, 02 Sep 2026 21:58:22 GMT_
 <!-- LEADERBOARD:END -->
 
 
