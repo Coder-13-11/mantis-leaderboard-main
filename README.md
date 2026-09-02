@@ -17,13 +17,13 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **147** | 19 | 0 | 9 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **138** | 18 | 0 | 9 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
-| 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **50** | 0 | 10 | 0 |
-| 5 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **44** | 4 | 0 | 0 |
-| 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
-| 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 3 | 0 | 0 |
+| 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **44** | 4 | 0 | 0 |
+| 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
+| 6 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **36** | 3 | 0 | 0 |
+| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **32** | 0 | 6 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 2 | 0 |
 | 9 | [@Copilot](https://github.com/Copilot) | **27** | 0 | 3 | 0 |
 | 10 | **Hoang** ([@6namdang](https://github.com/6namdang)) | **25** | 2 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
 | 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
 
-_Last updated: Wed, 02 Sep 2026 11:42:07 GMT_
+_Last updated: Wed, 02 Sep 2026 16:31:35 GMT_
 <!-- LEADERBOARD:END -->
 
 
