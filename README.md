@@ -17,13 +17,13 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **142** | 18 | 0 | 11 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **142** | 18 | 0 | 12 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **57** | 5 | 0 | 0 |
-| 5 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **49** | 4 | 0 | 0 |
-| 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
-| 7 | [@Copilot](https://github.com/Copilot) | **36** | 0 | 4 | 0 |
+| 5 | [@Copilot](https://github.com/Copilot) | **49** | 0 | 6 | 0 |
+| 6 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **49** | 4 | 0 | 0 |
+| 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
 | 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **32** | 0 | 6 | 0 |
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 2 | 0 |
 | 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **25** | 2 | 0 | 0 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **299** | 36 | 0 | 43 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **299** | 36 | 0 | 44 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **180** | 30 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **160** | 14 | 1 | 0 |
 | 4 | [@VishwanathanV](https://github.com/VishwanathanV) | **102** | 3 | 15 | 0 |
 | 5 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **69** | 6 | 0 | 0 |
-| 6 | [@Copilot](https://github.com/Copilot) | **52** | 0 | 6 | 0 |
+| 6 | [@Copilot](https://github.com/Copilot) | **65** | 0 | 8 | 0 |
 | 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **49** | 4 | 0 | 0 |
 | 8 | **Arun Vinayagam** ([@Arun-V18](https://github.com/Arun-V18)) | **49** | 5 | 0 | 0 |
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
 
-_Last updated: Thu, 03 Sep 2026 00:08:27 GMT_
+_Last updated: Thu, 03 Sep 2026 04:20:31 GMT_
 <!-- LEADERBOARD:END -->
 
 
