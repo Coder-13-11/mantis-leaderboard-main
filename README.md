@@ -20,11 +20,11 @@ code / review / issues ledger.
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **126** | 16 | 0 | 12 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
-| 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
-| 5 | [@Copilot](https://github.com/Copilot) | **51** | 0 | 6 | 0 |
-| 6 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **49** | 4 | 0 | 0 |
-| 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
-| 8 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **36** | 3 | 0 | 0 |
+| 4 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **76** | 7 | 0 | 0 |
+| 5 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
+| 6 | [@Copilot](https://github.com/Copilot) | **51** | 0 | 6 | 0 |
+| 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **49** | 4 | 0 | 0 |
+| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
 | 9 | [@VishwanathanV](https://github.com/VishwanathanV) | **32** | 0 | 6 | 0 |
 | 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 2 | 0 |
 
@@ -37,13 +37,13 @@ code / review / issues ledger.
 | 3 | [@charleywolf](https://github.com/charleywolf) | **160** | 14 | 1 | 0 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **85** | 6 | 2 | 0 |
 | 5 | [@VishwanathanV](https://github.com/VishwanathanV) | **80** | 1 | 12 | 0 |
-| 6 | [@Copilot](https://github.com/Copilot) | **67** | 0 | 8 | 0 |
-| 7 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **49** | 4 | 0 | 0 |
-| 8 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
-| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
-| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **42** | 3 | 6 | 1 |
+| 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **76** | 7 | 0 | 0 |
+| 7 | [@Copilot](https://github.com/Copilot) | **67** | 0 | 8 | 0 |
+| 8 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **49** | 4 | 0 | 0 |
+| 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
+| 10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
 
-_Last updated: Thu, 03 Sep 2026 20:57:58 GMT_
+_Last updated: Thu, 03 Sep 2026 23:15:08 GMT_
 <!-- LEADERBOARD:END -->
 
 
