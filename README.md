@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **126** | 16 | 0 | 9 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **117** | 15 | 0 | 9 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **109** | 12 | 0 | 1 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
@@ -25,15 +25,15 @@ code / review / issues ledger.
 | 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
 | 8 | [@Copilot](https://github.com/Copilot) | **43** | 0 | 5 | 0 |
-| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 3 | 0 |
+| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 0 |
 | 10 | **Lakshya Pandey** ([@pandeylakshya207-max](https://github.com/pandeylakshya207-max)) | **24** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **306** | 36 | 0 | 44 |
-| 2 | [@charleywolf](https://github.com/charleywolf) | **146** | 13 | 1 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **306** | 36 | 0 | 42 |
+| 2 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **109** | 12 | 0 | 1 |
 | 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
 
-_Last updated: Fri, 04 Sep 2026 16:17:37 GMT_
+_Last updated: Fri, 04 Sep 2026 19:07:14 GMT_
 <!-- LEADERBOARD:END -->
 
 
