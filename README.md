@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **130** | 16 | 0 | 9 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 17 | 0 | 9 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **109** | 12 | 0 | 1 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **298** | 35 | 0 | 41 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **309** | 36 | 0 | 41 |
 | 2 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **109** | 12 | 0 | 1 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
 
-_Last updated: Fri, 04 Sep 2026 21:26:21 GMT_
+_Last updated: Fri, 04 Sep 2026 23:16:16 GMT_
 <!-- LEADERBOARD:END -->
 
 

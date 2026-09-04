@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T21:26:21.348Z",
+  "generated_at": "2026-09-04T23:16:16.501Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -63,7 +63,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-04T21:25:14.837Z",
+    "run_started_at": "2026-09-04T23:15:21.113Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-04T00:00:00.000Z",
     "repos": [
@@ -91,7 +91,7 @@
     "event_counts": {
       "prs": 3662,
       "issues": 2248,
-      "reviews": 11279,
+      "reviews": 11281,
       "review_comments": 14314
     }
   },
@@ -173,7 +173,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 596,
+      "total": 607,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -199,7 +199,7 @@
         "2026-08-30": 49,
         "2026-08-31": 18,
         "2026-09-02": 38,
-        "2026-09-04": 25
+        "2026-09-04": 36
       },
       "dayCounts": {
         "2026-06-30": {
@@ -503,13 +503,13 @@
           "bug_prs": 0
         },
         "2026-09-04": {
-          "prs": 2,
+          "prs": 3,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -913,7 +913,7 @@
           "other": 0
         },
         "2026-09-04": {
-          "pr": 25,
+          "pr": 36,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -921,20 +921,20 @@
         }
       },
       "breakdown": {
-        "pr": 592,
+        "pr": 603,
         "review": 0,
         "issue": 0,
         "docs": 4,
         "other": 0
       },
       "counts": {
-        "prs": 62,
+        "prs": 63,
         "reviews": 0,
         "confirmed_issues": 87,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 5,
-        "issues_closed": 26,
+        "issues_closed": 27,
         "review_submissions": 0,
         "docs_prs": 1,
         "bug_prs": 0
@@ -943,7 +943,7 @@
         "XS": 5,
         "S": 12,
         "M": 23,
-        "L": 13,
+        "L": 14,
         "XL": 8
       },
       "contributions": [],
@@ -1654,33 +1654,45 @@
           "notes": [
             "2th in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-09-04T21:31:25Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2821",
+          "title": "fix: replace pickle.loads with restricted unpickler for sklearn model blobs",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2821",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
         }
       ],
       "windows": {
-        "7": 130,
-        "14": 298
+        "7": 141,
+        "14": 309
       },
       "windowCounts": {
         "7": {
-          "prs": 16,
+          "prs": 17,
           "reviews": 0,
           "confirmed_issues": 9,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 5,
+          "issues_closed": 6,
           "review_submissions": 0,
           "docs_prs": 1,
           "bug_prs": 0
         },
         "14": {
-          "prs": 35,
+          "prs": 36,
           "reviews": 0,
           "confirmed_issues": 41,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 14,
+          "issues_closed": 15,
           "review_submissions": 0,
           "docs_prs": 1,
           "bug_prs": 0
@@ -1688,14 +1700,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 126,
+          "pr": 137,
           "review": 0,
           "issue": 0,
           "docs": 4,
           "other": 0
         },
         "14": {
-          "pr": 294,
+          "pr": 305,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -1704,15 +1716,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 130,
-          "shipping": 126,
+          "overall": 141,
+          "shipping": 137,
           "review": 0,
           "bugs": 0,
           "docs": 4
         },
         "14": {
-          "overall": 298,
-          "shipping": 294,
+          "overall": 309,
+          "shipping": 305,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -1893,6 +1905,18 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/2779",
             "notes": [
               "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-04T21:31:25Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2821",
+            "title": "fix: replace pickle.loads with restricted unpickler for sklearn model blobs",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2821",
+            "notes": [
+              "3th in 24h ×0.8"
             ]
           }
         ],
@@ -2299,10 +2323,22 @@
             "notes": [
               "2th in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-09-04T21:31:25Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2821",
+            "title": "fix: replace pickle.loads with restricted unpickler for sklearn model blobs",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2821",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ]
       },
-      "rolling_total": 130,
+      "rolling_total": 141,
       "rank": 1
     },
     {
