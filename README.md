@@ -17,9 +17,9 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 17 | 0 | 9 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 17 | 0 | 11 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **138** | 15 | 0 | 5 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **101** | 20 | 0 | 0 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 6 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **44** | 4 | 0 | 2 |
@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **289** | 34 | 0 | 35 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **279** | 33 | 0 | 36 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **138** | 15 | 0 | 5 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **63** | 5 | 0 | 3 |
 | 10 | [@Copilot](https://github.com/Copilot) | **59** | 0 | 7 | 0 |
 
-_Last updated: Sat, 05 Sep 2026 21:10:14 GMT_
+_Last updated: Sat, 05 Sep 2026 23:15:15 GMT_
 <!-- LEADERBOARD:END -->
 
 
