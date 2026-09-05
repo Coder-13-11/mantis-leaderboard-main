@@ -18,32 +18,32 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 17 | 0 | 9 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **127** | 14 | 0 | 3 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **138** | 15 | 0 | 5 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
 | 5 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
-| 8 | [@Copilot](https://github.com/Copilot) | **41** | 0 | 5 | 0 |
-| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 0 |
-| 10 | **Lakshya Pandey** ([@pandeylakshya207-max](https://github.com/pandeylakshya207-max)) | **24** | 2 | 0 | 0 |
+| 8 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **44** | 4 | 0 | 2 |
+| 9 | [@Copilot](https://github.com/Copilot) | **43** | 0 | 5 | 0 |
+| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **309** | 36 | 0 | 38 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **127** | 14 | 0 | 3 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **309** | 36 | 0 | 37 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **138** | 15 | 0 | 5 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
 | 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **85** | 6 | 2 | 0 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **80** | 1 | 12 | 0 |
-| 8 | [@Copilot](https://github.com/Copilot) | **57** | 0 | 7 | 0 |
-| 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
-| 10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
+| 8 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **66** | 6 | 0 | 4 |
+| 9 | [@edoardopanella](https://github.com/edoardopanella) | **63** | 5 | 0 | 3 |
+| 10 | [@Copilot](https://github.com/Copilot) | **59** | 0 | 7 | 0 |
 
-_Last updated: Sat, 05 Sep 2026 06:18:17 GMT_
+_Last updated: Sat, 05 Sep 2026 10:54:33 GMT_
 <!-- LEADERBOARD:END -->
 
 
