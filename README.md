@@ -18,11 +18,11 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 17 | 0 | 9 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
-| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **109** | 12 | 0 | 1 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **127** | 14 | 0 | 3 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **78** | 7 | 0 | 0 |
-| 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **76** | 9 | 0 | 0 |
-| 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
+| 5 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
+| 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 7 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
 | 8 | [@Copilot](https://github.com/Copilot) | **41** | 0 | 5 | 0 |
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 0 |
@@ -32,10 +32,10 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **309** | 36 | 0 | 41 |
-| 2 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
-| 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **109** | 12 | 0 | 1 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **309** | 36 | 0 | 38 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **127** | 14 | 0 | 3 |
+| 3 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
+| 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
 | 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **85** | 6 | 2 | 0 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **80** | 1 | 12 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **49** | 4 | 0 | 3 |
 | 10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **48** | 4 | 0 | 0 |
 
-_Last updated: Sat, 05 Sep 2026 01:22:22 GMT_
+_Last updated: Sat, 05 Sep 2026 06:18:17 GMT_
 <!-- LEADERBOARD:END -->
 
 
