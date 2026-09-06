@@ -18,15 +18,15 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **138** | 15 | 0 | 5 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **115** | 14 | 0 | 11 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **109** | 13 | 0 | 11 |
 | 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 4 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **44** | 4 | 0 | 2 |
 | 6 | [@Copilot](https://github.com/Copilot) | **43** | 0 | 5 | 0 |
 | 7 | [@charleywolf](https://github.com/charleywolf) | **38** | 3 | 0 | 0 |
-| 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **36** | 2 | 6 | 0 |
-| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **36** | 3 | 0 | 0 |
-| 10 | **Lakshya Pandey** ([@pandeylakshya207-max](https://github.com/pandeylakshya207-max)) | **24** | 2 | 0 | 0 |
+| 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **36** | 3 | 0 | 0 |
+| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 6 | 0 |
+| 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **28** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -40,10 +40,10 @@ code / review / issues ledger.
 | 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **85** | 6 | 2 | 0 |
 | 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **80** | 1 | 12 | 0 |
 | 8 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **66** | 6 | 0 | 4 |
-| 9 | [@edoardopanella](https://github.com/edoardopanella) | **63** | 5 | 0 | 3 |
+| 9 | [@edoardopanella](https://github.com/edoardopanella) | **63** | 5 | 1 | 0 |
 | 10 | [@Copilot](https://github.com/Copilot) | **59** | 0 | 7 | 0 |
 
-_Last updated: Sun, 06 Sep 2026 14:23:14 GMT_
+_Last updated: Sun, 06 Sep 2026 17:20:41 GMT_
 <!-- LEADERBOARD:END -->
 
 
