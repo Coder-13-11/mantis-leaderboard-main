@@ -21,12 +21,12 @@ code / review / issues ledger.
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **114** | 13 | 0 | 5 |
 | 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **74** | 1 | 15 | 0 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
-| 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
-| 6 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **44** | 4 | 0 | 2 |
-| 7 | [@Copilot](https://github.com/Copilot) | **41** | 0 | 5 | 0 |
-| 8 | [@charleywolf](https://github.com/charleywolf) | **38** | 3 | 0 | 0 |
-| 9 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
-| 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **28** | 2 | 0 | 0 |
+| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **55** | 5 | 0 | 2 |
+| 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
+| 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **48** | 4 | 0 | 0 |
+| 8 | [@Copilot](https://github.com/Copilot) | **42** | 0 | 5 | 0 |
+| 9 | [@charleywolf](https://github.com/charleywolf) | **38** | 3 | 0 | 0 |
+| 10 | [@edoardopanella](https://github.com/edoardopanella) | **28** | 2 | 1 | 0 |
 
 #### Past 14 Days
 
@@ -38,12 +38,12 @@ code / review / issues ledger.
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
 | 6 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **86** | 2 | 15 | 0 |
-| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **80** | 1 | 12 | 0 |
-| 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **76** | 6 | 0 | 0 |
-| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
-| 10 | [@Copilot](https://github.com/Copilot) | **57** | 0 | 7 | 0 |
+| 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **86** | 7 | 0 | 0 |
+| 8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
+| 9 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **65** | 6 | 0 | 3 |
+| 10 | [@Copilot](https://github.com/Copilot) | **58** | 0 | 7 | 0 |
 
-_Last updated: Mon, 07 Sep 2026 09:40:54 GMT_
+_Last updated: Mon, 07 Sep 2026 15:48:02 GMT_
 <!-- LEADERBOARD:END -->
 
 
