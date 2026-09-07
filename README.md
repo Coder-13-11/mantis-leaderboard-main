@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **149** | 17 | 0 | 11 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **135** | 13 | 0 | 10 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **114** | 13 | 0 | 5 |
 | 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **74** | 1 | 15 | 0 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
@@ -26,24 +26,24 @@ code / review / issues ledger.
 | 7 | [@Copilot](https://github.com/Copilot) | **41** | 0 | 5 | 0 |
 | 8 | [@charleywolf](https://github.com/charleywolf) | **38** | 3 | 0 | 0 |
 | 9 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **38** | 3 | 0 | 0 |
-| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **28** | 2 | 4 | 0 |
+| 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **28** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **326** | 38 | 0 | 30 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **301** | 36 | 0 | 31 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **150** | 16 | 0 | 5 |
 | 3 | [@charleywolf](https://github.com/charleywolf) | **123** | 11 | 0 | 0 |
 | 4 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 5 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
 | 6 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **86** | 2 | 15 | 0 |
-| 7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **85** | 6 | 2 | 0 |
-| 8 | [@VishwanathanV](https://github.com/VishwanathanV) | **80** | 1 | 12 | 0 |
-| 9 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **76** | 6 | 0 | 0 |
+| 7 | [@VishwanathanV](https://github.com/VishwanathanV) | **80** | 1 | 12 | 0 |
+| 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **76** | 6 | 0 | 0 |
+| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | [@Copilot](https://github.com/Copilot) | **57** | 0 | 7 | 0 |
 
-_Last updated: Sun, 06 Sep 2026 23:49:05 GMT_
+_Last updated: Mon, 07 Sep 2026 04:28:09 GMT_
 <!-- LEADERBOARD:END -->
 
 
