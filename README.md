@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **135** | 13 | 0 | 10 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **131** | 12 | 0 | 10 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **114** | 13 | 0 | 5 |
 | 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **74** | 1 | 15 | 0 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | [@Copilot](https://github.com/Copilot) | **57** | 0 | 7 | 0 |
 
-_Last updated: Mon, 07 Sep 2026 04:28:09 GMT_
+_Last updated: Mon, 07 Sep 2026 09:40:54 GMT_
 <!-- LEADERBOARD:END -->
 
 
