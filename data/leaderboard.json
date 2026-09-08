@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T01:08:40.850Z",
+  "generated_at": "2026-09-08T06:31:35.635Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-08T01:07:46.444Z",
+    "run_started_at": "2026-09-08T06:30:31.469Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-08T00:00:00.000Z",
     "repos": [
@@ -92,9 +92,9 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3707,
+      "prs": 3710,
       "issues": 2285,
-      "reviews": 11460,
+      "reviews": 11465,
       "review_comments": 14470
     }
   },
@@ -1819,7 +1819,7 @@
       ],
       "windows": {
         "7": 150,
-        "14": 303
+        "14": 295
       },
       "windowCounts": {
         "7": {
@@ -1835,9 +1835,9 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 35,
+          "prs": 34,
           "reviews": 0,
-          "confirmed_issues": 31,
+          "confirmed_issues": 26,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -1856,7 +1856,7 @@
           "other": 0
         },
         "14": {
-          "pr": 299,
+          "pr": 291,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -1872,8 +1872,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 303,
-          "shipping": 299,
+          "overall": 295,
+          "shipping": 291,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -2045,18 +2045,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-25T04:41:08Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4126",
-            "title": "perf(plotly): register only the traces the app uses",
-            "url": "https://github.com/KellisLab/Mantis/pull/4126",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
           {
             "at": "2026-08-25T14:47:40Z",
             "category": "pr",
@@ -6984,7 +6972,7 @@
           "confirmed_issues": 5,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 1,
+          "prs_coauthored": 0,
           "issues_closed": 3,
           "review_submissions": 2,
           "docs_prs": 1,
@@ -8464,19 +8452,6 @@
           ]
         },
         {
-          "at": "2026-09-06T21:56:42Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#2826",
-          "title": "fix: clamp LLM discussion titles to 500 chars (fixes 3-day meeting-ingestion outage)",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2826",
-          "notes": [
-            "approved",
-            "7th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2026-09-06T21:57:00Z",
           "category": "review",
           "points": 3,
@@ -8487,7 +8462,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "8th review in 24h ×0.35"
+            "7th review in 24h ×0.35"
           ]
         },
         {
@@ -8500,7 +8475,7 @@
           "url": "https://github.com/KellisLab/Mantis/pull/3926",
           "notes": [
             "approved",
-            "9th review in 24h ×0.35"
+            "8th review in 24h ×0.35"
           ]
         },
         {
@@ -8514,7 +8489,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "10th review in 24h ×0.35"
+            "9th review in 24h ×0.35"
           ]
         },
         {
@@ -8527,7 +8502,7 @@
           "url": "https://github.com/KellisLab/Mantis/pull/4180",
           "notes": [
             "approved",
-            "11th review in 24h ×0.35"
+            "10th review in 24h ×0.35"
           ]
         },
         {
@@ -8541,7 +8516,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "9th review in 24h ×0.35"
+            "8th review in 24h ×0.35"
           ]
         },
         {
@@ -8555,7 +8530,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "13th review in 24h ×0.35"
+            "12th review in 24h ×0.35"
           ]
         },
         {
@@ -8569,7 +8544,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "8th review in 24h ×0.35"
+            "7th review in 24h ×0.35"
           ]
         },
         {
@@ -8583,7 +8558,20 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "9th review in 24h ×0.35"
+            "8th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:56:42Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2826",
+          "title": "fix: clamp LLM discussion titles to 500 chars (fixes 3-day meeting-ingestion outage)",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2826",
+          "notes": [
+            "approved",
+            "7th review in 24h ×0.35"
           ]
         }
       ],
@@ -8745,19 +8733,6 @@
             ]
           },
           {
-            "at": "2026-09-06T21:56:42Z",
-            "category": "review",
-            "points": 2,
-            "kind": "review",
-            "ref": "KellisLab/MantisAPI#2826",
-            "title": "fix: clamp LLM discussion titles to 500 chars (fixes 3-day meeting-ingestion outage)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2826",
-            "notes": [
-              "approved",
-              "7th review in 24h ×0.35"
-            ]
-          },
-          {
             "at": "2026-09-06T21:57:00Z",
             "category": "review",
             "points": 3,
@@ -8768,7 +8743,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "8th review in 24h ×0.35"
+              "7th review in 24h ×0.35"
             ]
           },
           {
@@ -8781,7 +8756,7 @@
             "url": "https://github.com/KellisLab/Mantis/pull/3926",
             "notes": [
               "approved",
-              "9th review in 24h ×0.35"
+              "8th review in 24h ×0.35"
             ]
           },
           {
@@ -8795,7 +8770,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "10th review in 24h ×0.35"
+              "9th review in 24h ×0.35"
             ]
           },
           {
@@ -8808,7 +8783,7 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4180",
             "notes": [
               "approved",
-              "11th review in 24h ×0.35"
+              "10th review in 24h ×0.35"
             ]
           },
           {
@@ -8822,7 +8797,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "9th review in 24h ×0.35"
+              "8th review in 24h ×0.35"
             ]
           },
           {
@@ -8836,7 +8811,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "13th review in 24h ×0.35"
+              "12th review in 24h ×0.35"
             ]
           },
           {
@@ -8850,7 +8825,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "8th review in 24h ×0.35"
+              "7th review in 24h ×0.35"
             ]
           },
           {
@@ -8864,7 +8839,20 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "9th review in 24h ×0.35"
+              "8th review in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-06T21:56:42Z",
+            "category": "review",
+            "points": 2,
+            "kind": "review",
+            "ref": "KellisLab/MantisAPI#2826",
+            "title": "fix: clamp LLM discussion titles to 500 chars (fixes 3-day meeting-ingestion outage)",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2826",
+            "notes": [
+              "approved",
+              "7th review in 24h ×0.35"
             ]
           }
         ],
@@ -8973,19 +8961,6 @@
             ]
           },
           {
-            "at": "2026-09-06T21:56:42Z",
-            "category": "review",
-            "points": 2,
-            "kind": "review",
-            "ref": "KellisLab/MantisAPI#2826",
-            "title": "fix: clamp LLM discussion titles to 500 chars (fixes 3-day meeting-ingestion outage)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2826",
-            "notes": [
-              "approved",
-              "7th review in 24h ×0.35"
-            ]
-          },
-          {
             "at": "2026-09-06T21:57:00Z",
             "category": "review",
             "points": 3,
@@ -8996,7 +8971,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "8th review in 24h ×0.35"
+              "7th review in 24h ×0.35"
             ]
           },
           {
@@ -9009,7 +8984,7 @@
             "url": "https://github.com/KellisLab/Mantis/pull/3926",
             "notes": [
               "approved",
-              "9th review in 24h ×0.35"
+              "8th review in 24h ×0.35"
             ]
           },
           {
@@ -9023,7 +8998,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "10th review in 24h ×0.35"
+              "9th review in 24h ×0.35"
             ]
           },
           {
@@ -9036,7 +9011,7 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4180",
             "notes": [
               "approved",
-              "11th review in 24h ×0.35"
+              "10th review in 24h ×0.35"
             ]
           },
           {
@@ -9050,7 +9025,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "9th review in 24h ×0.35"
+              "8th review in 24h ×0.35"
             ]
           },
           {
@@ -9064,7 +9039,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "13th review in 24h ×0.35"
+              "12th review in 24h ×0.35"
             ]
           },
           {
@@ -9078,7 +9053,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "8th review in 24h ×0.35"
+              "7th review in 24h ×0.35"
             ]
           },
           {
@@ -9092,7 +9067,20 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "9th review in 24h ×0.35"
+              "8th review in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-06T21:56:42Z",
+            "category": "review",
+            "points": 2,
+            "kind": "review",
+            "ref": "KellisLab/MantisAPI#2826",
+            "title": "fix: clamp LLM discussion titles to 500 chars (fixes 3-day meeting-ingestion outage)",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2826",
+            "notes": [
+              "approved",
+              "7th review in 24h ×0.35"
             ]
           }
         ]
@@ -15261,7 +15249,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 1,
+          "prs_coauthored": 0,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -112871,7 +112859,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 4,
+          "prs_coauthored": 3,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -126006,7 +125994,7 @@
     },
     {
       "login": "Cypherspec",
-      "name": "Nischay Kommisetty",
+      "name": null,
       "total": 68,
       "days": {
         "2026-06-26": 10,
