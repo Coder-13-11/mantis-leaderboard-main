@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **178** | 16 | 0 | 9 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **164** | 15 | 0 | 10 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **140** | 13 | 2 | 5 |
 | 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **74** | 1 | 15 | 0 |
 | 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **69** | 6 | 0 | 1 |
@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **311** | 34 | 0 | 24 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **311** | 34 | 0 | 19 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **176** | 16 | 2 | 5 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | [@Copilot](https://github.com/Copilot) | **60** | 0 | 7 | 0 |
 
-_Last updated: Wed, 09 Sep 2026 00:07:54 GMT_
+_Last updated: Wed, 09 Sep 2026 04:37:59 GMT_
 <!-- LEADERBOARD:END -->
 
 

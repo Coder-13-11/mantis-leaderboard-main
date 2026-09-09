@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T00:07:54.290Z",
+  "generated_at": "2026-09-09T04:37:59.739Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-09T00:06:47.037Z",
+    "run_started_at": "2026-09-09T04:36:45.115Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-09T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3726,
-      "issues": 2290,
-      "reviews": 11505,
-      "review_comments": 14496
+      "prs": 3737,
+      "issues": 2293,
+      "reviews": 11518,
+      "review_comments": 14500
     }
   },
   "review_rules": {
@@ -795,6 +795,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-09-09": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -1005,7 +1017,7 @@
       "counts": {
         "prs": 73,
         "reviews": 0,
-        "confirmed_issues": 93,
+        "confirmed_issues": 94,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 5,
@@ -1860,14 +1872,14 @@
         }
       ],
       "windows": {
-        "7": 178,
+        "7": 164,
         "14": 311
       },
       "windowCounts": {
         "7": {
-          "prs": 16,
+          "prs": 15,
           "reviews": 0,
-          "confirmed_issues": 9,
+          "confirmed_issues": 10,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -1879,7 +1891,7 @@
         "14": {
           "prs": 34,
           "reviews": 0,
-          "confirmed_issues": 24,
+          "confirmed_issues": 19,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -1891,7 +1903,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 178,
+          "pr": 164,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1907,8 +1919,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 178,
-          "shipping": 178,
+          "overall": 164,
+          "shipping": 164,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -1923,16 +1935,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-02T02:48:32Z",
-            "category": "pr",
-            "points": 14,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2825",
-            "title": "feat(composer): context breakdown modal",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2825",
-            "notes": []
-          },
           {
             "at": "2026-09-02T17:27:31Z",
             "category": "pr",
@@ -2498,7 +2500,7 @@
           }
         ]
       },
-      "rolling_total": 178,
+      "rolling_total": 164,
       "rank": 1
     },
     {
@@ -6995,6 +6997,20 @@
           "notes": []
         },
         {
+          "at": "2026-09-07T21:25:11Z",
+          "category": "review",
+          "points": 13,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4264",
+          "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
+          "url": "https://github.com/KellisLab/Mantis/pull/4264",
+          "notes": [
+            "changes requested",
+            "inline comments",
+            "nontrivial PR"
+          ]
+        },
+        {
           "at": "2026-09-07T21:25:09Z",
           "category": "review",
           "points": 13,
@@ -7006,21 +7022,6 @@
             "changes requested",
             "inline comments",
             "nontrivial PR"
-          ]
-        },
-        {
-          "at": "2026-09-07T21:25:11Z",
-          "category": "review",
-          "points": 13,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4264",
-          "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
-          "url": "https://github.com/KellisLab/Mantis/pull/4264",
-          "notes": [
-            "changes requested",
-            "inline comments",
-            "nontrivial PR",
-            "2th review in 24h ×1"
           ]
         }
       ],
@@ -7227,6 +7228,20 @@
             "notes": []
           },
           {
+            "at": "2026-09-07T21:25:11Z",
+            "category": "review",
+            "points": 13,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4264",
+            "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
+            "url": "https://github.com/KellisLab/Mantis/pull/4264",
+            "notes": [
+              "changes requested",
+              "inline comments",
+              "nontrivial PR"
+            ]
+          },
+          {
             "at": "2026-09-07T21:25:09Z",
             "category": "review",
             "points": 13,
@@ -7238,21 +7253,6 @@
               "changes requested",
               "inline comments",
               "nontrivial PR"
-            ]
-          },
-          {
-            "at": "2026-09-07T21:25:11Z",
-            "category": "review",
-            "points": 13,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4264",
-            "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
-            "url": "https://github.com/KellisLab/Mantis/pull/4264",
-            "notes": [
-              "changes requested",
-              "inline comments",
-              "nontrivial PR",
-              "2th review in 24h ×1"
             ]
           }
         ],
@@ -7430,6 +7430,20 @@
             "notes": []
           },
           {
+            "at": "2026-09-07T21:25:11Z",
+            "category": "review",
+            "points": 13,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4264",
+            "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
+            "url": "https://github.com/KellisLab/Mantis/pull/4264",
+            "notes": [
+              "changes requested",
+              "inline comments",
+              "nontrivial PR"
+            ]
+          },
+          {
             "at": "2026-09-07T21:25:09Z",
             "category": "review",
             "points": 13,
@@ -7441,21 +7455,6 @@
               "changes requested",
               "inline comments",
               "nontrivial PR"
-            ]
-          },
-          {
-            "at": "2026-09-07T21:25:11Z",
-            "category": "review",
-            "points": 13,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4264",
-            "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
-            "url": "https://github.com/KellisLab/Mantis/pull/4264",
-            "notes": [
-              "changes requested",
-              "inline comments",
-              "nontrivial PR",
-              "2th review in 24h ×1"
             ]
           }
         ]
@@ -8544,20 +8543,6 @@
           ]
         },
         {
-          "at": "2026-09-06T21:57:22Z",
-          "category": "review",
-          "points": 3,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4167",
-          "title": "Make Reader and file previews release temporary resources",
-          "url": "https://github.com/KellisLab/Mantis/pull/4167",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "9th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2026-09-06T21:57:23Z",
           "category": "review",
           "points": 2,
@@ -8567,7 +8552,7 @@
           "url": "https://github.com/KellisLab/Mantis/pull/4180",
           "notes": [
             "approved",
-            "10th review in 24h ×0.35"
+            "9th review in 24h ×0.35"
           ]
         },
         {
@@ -8595,7 +8580,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "12th review in 24h ×0.35"
+            "11th review in 24h ×0.35"
           ]
         },
         {
@@ -8637,6 +8622,20 @@
           "notes": [
             "approved",
             "7th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:57:22Z",
+          "category": "review",
+          "points": 3,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4167",
+          "title": "Make Reader and file previews release temporary resources",
+          "url": "https://github.com/KellisLab/Mantis/pull/4167",
+          "notes": [
+            "approved",
+            "nontrivial PR",
+            "13th review in 24h ×0.35"
           ]
         }
       ],
@@ -8825,20 +8824,6 @@
             ]
           },
           {
-            "at": "2026-09-06T21:57:22Z",
-            "category": "review",
-            "points": 3,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4167",
-            "title": "Make Reader and file previews release temporary resources",
-            "url": "https://github.com/KellisLab/Mantis/pull/4167",
-            "notes": [
-              "approved",
-              "nontrivial PR",
-              "9th review in 24h ×0.35"
-            ]
-          },
-          {
             "at": "2026-09-06T21:57:23Z",
             "category": "review",
             "points": 2,
@@ -8848,7 +8833,7 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4180",
             "notes": [
               "approved",
-              "10th review in 24h ×0.35"
+              "9th review in 24h ×0.35"
             ]
           },
           {
@@ -8876,7 +8861,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "12th review in 24h ×0.35"
+              "11th review in 24h ×0.35"
             ]
           },
           {
@@ -8918,6 +8903,20 @@
             "notes": [
               "approved",
               "7th review in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-06T21:57:22Z",
+            "category": "review",
+            "points": 3,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4167",
+            "title": "Make Reader and file previews release temporary resources",
+            "url": "https://github.com/KellisLab/Mantis/pull/4167",
+            "notes": [
+              "approved",
+              "nontrivial PR",
+              "13th review in 24h ×0.35"
             ]
           }
         ],
@@ -9043,20 +9042,6 @@
             ]
           },
           {
-            "at": "2026-09-06T21:57:22Z",
-            "category": "review",
-            "points": 3,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4167",
-            "title": "Make Reader and file previews release temporary resources",
-            "url": "https://github.com/KellisLab/Mantis/pull/4167",
-            "notes": [
-              "approved",
-              "nontrivial PR",
-              "9th review in 24h ×0.35"
-            ]
-          },
-          {
             "at": "2026-09-06T21:57:23Z",
             "category": "review",
             "points": 2,
@@ -9066,7 +9051,7 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4180",
             "notes": [
               "approved",
-              "10th review in 24h ×0.35"
+              "9th review in 24h ×0.35"
             ]
           },
           {
@@ -9094,7 +9079,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "12th review in 24h ×0.35"
+              "11th review in 24h ×0.35"
             ]
           },
           {
@@ -9136,6 +9121,20 @@
             "notes": [
               "approved",
               "7th review in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-06T21:57:22Z",
+            "category": "review",
+            "points": 3,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4167",
+            "title": "Make Reader and file previews release temporary resources",
+            "url": "https://github.com/KellisLab/Mantis/pull/4167",
+            "notes": [
+              "approved",
+              "nontrivial PR",
+              "13th review in 24h ×0.35"
             ]
           }
         ]
@@ -26453,6 +26452,259 @@
       "rank": 13
     },
     {
+      "login": "VihanAggarwal",
+      "name": null,
+      "total": 17,
+      "days": {
+        "2026-09-09": 17
+      },
+      "dayCounts": {
+        "2026-09-09": {
+          "prs": 0,
+          "reviews": 3,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 3,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-09-09": {
+          "pr": 0,
+          "review": 17,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 0,
+        "review": 17,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 0,
+        "reviews": 3,
+        "confirmed_issues": 1,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 0,
+        "issues_closed": 0,
+        "review_submissions": 3,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 0,
+        "S": 0,
+        "M": 0,
+        "L": 0,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-09-09T04:34:29Z",
+          "category": "review",
+          "points": 6,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4202",
+          "title": "Optimize bag point membership comparison",
+          "url": "https://github.com/KellisLab/Mantis/pull/4202",
+          "notes": [
+            "commented",
+            "nontrivial PR"
+          ]
+        },
+        {
+          "at": "2026-09-09T04:34:30Z",
+          "category": "review",
+          "points": 6,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#3922",
+          "title": "fix(composer): ignore stale message and notebook loads after chat switches",
+          "url": "https://github.com/KellisLab/Mantis/pull/3922",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "2th review in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-09T04:34:31Z",
+          "category": "review",
+          "points": 5,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4167",
+          "title": "Make Reader and file previews release temporary resources",
+          "url": "https://github.com/KellisLab/Mantis/pull/4167",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "3th review in 24h ×0.8"
+          ]
+        }
+      ],
+      "windows": {
+        "7": 17,
+        "14": 17
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 0,
+          "reviews": 3,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 3,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 0,
+          "reviews": 3,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 3,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 0,
+          "review": 17,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 0,
+          "review": 17,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 17,
+          "shipping": 0,
+          "review": 17,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 17,
+          "shipping": 0,
+          "review": 17,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [
+          {
+            "at": "2026-09-09T04:34:29Z",
+            "category": "review",
+            "points": 6,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4202",
+            "title": "Optimize bag point membership comparison",
+            "url": "https://github.com/KellisLab/Mantis/pull/4202",
+            "notes": [
+              "commented",
+              "nontrivial PR"
+            ]
+          },
+          {
+            "at": "2026-09-09T04:34:30Z",
+            "category": "review",
+            "points": 6,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#3922",
+            "title": "fix(composer): ignore stale message and notebook loads after chat switches",
+            "url": "https://github.com/KellisLab/Mantis/pull/3922",
+            "notes": [
+              "commented",
+              "nontrivial PR",
+              "2th review in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-09T04:34:31Z",
+            "category": "review",
+            "points": 5,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4167",
+            "title": "Make Reader and file previews release temporary resources",
+            "url": "https://github.com/KellisLab/Mantis/pull/4167",
+            "notes": [
+              "commented",
+              "nontrivial PR",
+              "3th review in 24h ×0.8"
+            ]
+          }
+        ],
+        "14": [
+          {
+            "at": "2026-09-09T04:34:29Z",
+            "category": "review",
+            "points": 6,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4202",
+            "title": "Optimize bag point membership comparison",
+            "url": "https://github.com/KellisLab/Mantis/pull/4202",
+            "notes": [
+              "commented",
+              "nontrivial PR"
+            ]
+          },
+          {
+            "at": "2026-09-09T04:34:30Z",
+            "category": "review",
+            "points": 6,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#3922",
+            "title": "fix(composer): ignore stale message and notebook loads after chat switches",
+            "url": "https://github.com/KellisLab/Mantis/pull/3922",
+            "notes": [
+              "commented",
+              "nontrivial PR",
+              "2th review in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-09T04:34:31Z",
+            "category": "review",
+            "points": 5,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4167",
+            "title": "Make Reader and file previews release temporary resources",
+            "url": "https://github.com/KellisLab/Mantis/pull/4167",
+            "notes": [
+              "commented",
+              "nontrivial PR",
+              "3th review in 24h ×0.8"
+            ]
+          }
+        ]
+      },
+      "rolling_total": 17,
+      "rank": 14
+    },
+    {
       "login": "pandeylakshya207-max",
       "name": "Lakshya Pandey",
       "total": 70,
@@ -26796,7 +27048,7 @@
         ]
       },
       "rolling_total": 12,
-      "rank": 14
+      "rank": 15
     },
     {
       "login": "Penguinz3",
@@ -27124,7 +27376,7 @@
         ]
       },
       "rolling_total": 11,
-      "rank": 15
+      "rank": 16
     },
     {
       "login": "alvinzhengq",
@@ -27304,7 +27556,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 16
+      "rank": 17
     },
     {
       "login": "mtybadger",
@@ -27421,7 +27673,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 17
+      "rank": 18
     },
     {
       "login": "evbxll",
@@ -27559,7 +27811,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 18
+      "rank": 19
     },
     {
       "login": "zacmar0",
@@ -27733,7 +27985,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 19
+      "rank": 20
     },
     {
       "login": "GatlenCulp",
@@ -27919,7 +28171,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 20
+      "rank": 21
     },
     {
       "login": "JRahala",
@@ -28036,7 +28288,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 21
+      "rank": 22
     },
     {
       "login": "joshwu108",
@@ -28954,7 +29206,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 22
+      "rank": 23
     },
     {
       "login": "isaacgutterman",
@@ -29143,7 +29395,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 23
+      "rank": 24
     },
     {
       "login": "lebinary",
@@ -29539,7 +29791,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 24
+      "rank": 25
     },
     {
       "login": "jophy-ye",
@@ -30477,7 +30729,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 25
+      "rank": 26
     },
     {
       "login": "DavidBShan",
@@ -30663,7 +30915,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 26
+      "rank": 27
     },
     {
       "login": "deanliang06",
@@ -31077,7 +31329,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 27
+      "rank": 28
     },
     {
       "login": "DemonizedCrush",
@@ -35912,7 +36164,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 28
+      "rank": 29
     },
     {
       "login": "vinays6",
@@ -37753,7 +38005,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 29
+      "rank": 30
     },
     {
       "login": "alex-d4v",
@@ -40508,7 +40760,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 30
+      "rank": 31
     },
     {
       "login": "gemini-code-assist",
@@ -77910,7 +78162,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 31
+      "rank": 32
     },
     {
       "login": "AnasMaar",
@@ -81937,7 +82189,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 32
+      "rank": 33
     },
     {
       "login": "LucaVor",
@@ -84615,7 +84867,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 33
+      "rank": 34
     },
     {
       "login": "Arun-V18",
@@ -86392,7 +86644,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 34
+      "rank": 35
     },
     {
       "login": "NIcolasp14",
@@ -86542,7 +86794,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 35
+      "rank": 36
     },
     {
       "login": "0xCUB3",
@@ -88844,7 +89096,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 36
+      "rank": 37
     },
     {
       "login": "kaeskiio",
@@ -89418,7 +89670,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 37
+      "rank": 38
     },
     {
       "login": "JustinZ1903718",
@@ -89622,7 +89874,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 38
+      "rank": 39
     },
     {
       "login": "farhan132",
@@ -89739,7 +89991,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 39
+      "rank": 40
     },
     {
       "login": "michaelyang28",
@@ -89856,7 +90108,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 40
+      "rank": 41
     },
     {
       "login": "excel-8",
@@ -90271,7 +90523,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 41
+      "rank": 42
     },
     {
       "login": "levtechs",
@@ -90567,7 +90819,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 42
+      "rank": 43
     },
     {
       "login": "ayanopt",
@@ -90768,7 +91020,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 43
+      "rank": 44
     },
     {
       "login": "awcheng23",
@@ -90906,7 +91158,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 44
+      "rank": 45
     },
     {
       "login": "gconsigli",
@@ -92877,7 +93129,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 45
+      "rank": 46
     },
     {
       "login": "advaith55",
@@ -93130,7 +93382,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 46
+      "rank": 47
     },
     {
       "login": "ZeidAl-Ruzouq",
@@ -93544,7 +93796,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 47
+      "rank": 48
     },
     {
       "login": "Soham2020sam",
@@ -94420,7 +94672,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 48
+      "rank": 49
     },
     {
       "login": "dianeferragu",
@@ -94726,7 +94978,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 49
+      "rank": 50
     },
     {
       "login": "laurenap",
@@ -95020,7 +95272,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 50
+      "rank": 51
     },
     {
       "login": "kamchettysadhika",
@@ -95448,7 +95700,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 51
+      "rank": 52
     },
     {
       "login": "thanosan23",
@@ -95598,7 +95850,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 52
+      "rank": 53
     },
     {
       "login": "naman-sonawane",
@@ -95778,7 +96030,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 53
+      "rank": 54
     },
     {
       "login": "bluesk1",
@@ -95895,7 +96147,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 54
+      "rank": 55
     },
     {
       "login": "VishwanathanV",
@@ -96897,7 +97149,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 55
+      "rank": 56
     },
     {
       "login": "hongning-wang",
@@ -99935,7 +100187,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 56
+      "rank": 57
     },
     {
       "login": "epic-riff",
@@ -100073,7 +100325,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 57
+      "rank": 58
     },
     {
       "login": "onlineinfoh",
@@ -100402,7 +100654,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 58
+      "rank": 59
     },
     {
       "login": "rohan-va",
@@ -104075,7 +104327,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 59
+      "rank": 60
     },
     {
       "login": "ark248",
@@ -106070,7 +106322,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 60
+      "rank": 61
     },
     {
       "login": "TheBigBener",
@@ -106199,7 +106451,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 61
+      "rank": 62
     },
     {
       "login": "shreeya-12",
@@ -106349,7 +106601,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 62
+      "rank": 63
     },
     {
       "login": "vittesh12345",
@@ -106526,7 +106778,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 63
+      "rank": 64
     },
     {
       "login": "UncleEddie1",
@@ -106858,7 +107110,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 64
+      "rank": 65
     },
     {
       "login": "Krishiv-Thakuria",
@@ -107161,7 +107413,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 65
+      "rank": 66
     },
     {
       "login": "Donysus",
@@ -107395,7 +107647,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 66
+      "rank": 67
     },
     {
       "login": "SufianTA",
@@ -107973,7 +108225,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 67
+      "rank": 68
     },
     {
       "login": "phi-jkim",
@@ -108557,7 +108809,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 68
+      "rank": 69
     },
     {
       "login": "samuelsurr",
@@ -108798,7 +109050,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 69
+      "rank": 70
     },
     {
       "login": "MaitreyaM",
@@ -109134,7 +109386,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 70
+      "rank": 71
     },
     {
       "login": "KrishivThakuria",
@@ -109251,7 +109503,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 71
+      "rank": 72
     },
     {
       "login": "Ardbiu",
@@ -110027,7 +110279,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 72
+      "rank": 73
     },
     {
       "login": "alexkana",
@@ -110249,7 +110501,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 73
+      "rank": 74
     },
     {
       "login": "saisanjana22",
@@ -110441,7 +110693,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 74
+      "rank": 75
     },
     {
       "login": "adityasngpta",
@@ -110609,7 +110861,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 75
+      "rank": 76
     },
     {
       "login": "w2sg-arnav",
@@ -110750,7 +111002,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 76
+      "rank": 77
     },
     {
       "login": "kamilfuks",
@@ -110867,7 +111119,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 77
+      "rank": 78
     },
     {
       "login": "RishabhMakker",
@@ -110996,7 +111248,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 78
+      "rank": 79
     },
     {
       "login": "legitHacker23",
@@ -111113,7 +111365,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 79
+      "rank": 80
     },
     {
       "login": "Premrshah",
@@ -112215,7 +112467,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 80
+      "rank": 81
     },
     {
       "login": "claude",
@@ -113016,7 +113268,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 81
+      "rank": 82
     },
     {
       "login": "HridhayJ",
@@ -113336,7 +113588,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 82
+      "rank": 83
     },
     {
       "login": "aritroBh",
@@ -114266,7 +114518,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 83
+      "rank": 84
     },
     {
       "login": "msun170",
@@ -114832,7 +115084,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 84
+      "rank": 85
     },
     {
       "login": "rushilm10",
@@ -114997,7 +115249,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 85
+      "rank": 86
     },
     {
       "login": "sohamsen15",
@@ -115138,7 +115390,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 86
+      "rank": 87
     },
     {
       "login": "cursoragent",
@@ -115687,7 +115939,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 87
+      "rank": 88
     },
     {
       "login": "redaq",
@@ -116217,7 +116469,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 88
+      "rank": 89
     },
     {
       "login": "siridesai",
@@ -116399,7 +116651,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 89
+      "rank": 90
     },
     {
       "login": "Akshay-Bhaskar1",
@@ -116589,7 +116841,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 90
+      "rank": 91
     },
     {
       "login": "miclovich",
@@ -116730,7 +116982,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 91
+      "rank": 92
     },
     {
       "login": "tenzinmchemey",
@@ -117030,7 +117282,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 92
+      "rank": 93
     },
     {
       "login": "themayankjashnani",
@@ -117192,7 +117444,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 93
+      "rank": 94
     },
     {
       "login": "ElpidaPi",
@@ -117330,7 +117582,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 94
+      "rank": 95
     },
     {
       "login": "PranavaKCode",
@@ -121050,7 +121302,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 95
+      "rank": 96
     },
     {
       "login": "TheAmrReticoStaderGuy",
@@ -121250,7 +121502,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 96
+      "rank": 97
     },
     {
       "login": "6namdang",
@@ -122162,7 +122414,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 97
+      "rank": 98
     },
     {
       "login": "Priya",
@@ -122291,7 +122543,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 98
+      "rank": 99
     },
     {
       "login": "pranilraichura",
@@ -123087,7 +123339,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 99
+      "rank": 100
     },
     {
       "login": "manolik",
@@ -123249,7 +123501,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 100
+      "rank": 101
     },
     {
       "login": "kritgun-1907",
@@ -123429,7 +123681,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 101
+      "rank": 102
     },
     {
       "login": "imranmk007",
@@ -123663,7 +123915,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 102
+      "rank": 103
     },
     {
       "login": "Muhammadabrarrayhan2",
@@ -124717,7 +124969,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 103
+      "rank": 104
     },
     {
       "login": "ChinmayKamjith1",
@@ -124867,7 +125119,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 104
+      "rank": 105
     },
     {
       "login": "TaherMerchant25",
@@ -125077,7 +125329,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 105
+      "rank": 106
     },
     {
       "login": "RonKat2008",
@@ -125341,7 +125593,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 106
+      "rank": 107
     },
     {
       "login": "ronitkatikaneni",
@@ -125470,7 +125722,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 107
+      "rank": 108
     },
     {
       "login": "ArjunSubramanian22",
@@ -125656,7 +125908,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 108
+      "rank": 109
     },
     {
       "login": "LuuOW",
@@ -125797,7 +126049,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 109
+      "rank": 110
     },
     {
       "login": "airjan-airlines",
@@ -125935,7 +126187,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 110
+      "rank": 111
     },
     {
       "login": "Akshaj-G",
@@ -126103,7 +126355,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 111
+      "rank": 112
     },
     {
       "login": "Cypherspec",
@@ -126413,7 +126665,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 112
+      "rank": 113
     },
     {
       "login": "NisargOza",
@@ -126563,7 +126815,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 113
+      "rank": 114
     },
     {
       "login": "vili179",
@@ -126773,7 +127025,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 114
+      "rank": 115
     },
     {
       "login": "AryanSudhirDev",
@@ -127342,7 +127594,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 115
+      "rank": 116
     },
     {
       "login": "varvarakarenski",
@@ -127780,7 +128032,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 116
+      "rank": 117
     },
     {
       "login": "Coder-13-11",
@@ -128246,7 +128498,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 117
+      "rank": 118
     },
     {
       "login": "gnosisHermes",
@@ -128411,7 +128663,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 118
+      "rank": 119
     },
     {
       "login": "ThomasdeChillaz",
@@ -128616,7 +128868,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 119
+      "rank": 120
     },
     {
       "login": "kaapra081",
@@ -128838,7 +129090,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 120
+      "rank": 121
     },
     {
       "login": "Rafa-Ross",
@@ -128979,7 +129231,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 121
+      "rank": 122
     },
     {
       "login": "JerryChen1974",
@@ -129117,7 +129369,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 122
+      "rank": 123
     },
     {
       "login": "Cruz-Arnzen",
@@ -129627,7 +129879,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 123
+      "rank": 124
     },
     {
       "login": "amywang2010",
@@ -129855,7 +130107,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 124
+      "rank": 125
     },
     {
       "login": "github-code-quality",
@@ -129984,7 +130236,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 125
+      "rank": 126
     },
     {
       "login": "einstefer",
@@ -130189,7 +130441,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 126
+      "rank": 127
     },
     {
       "login": "devesht01",
@@ -130318,7 +130570,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 127
+      "rank": 128
     },
     {
       "login": "Rouler4wd",
@@ -130483,7 +130735,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 128
+      "rank": 129
     },
     {
       "login": "alexandragreenwood",
@@ -130859,7 +131111,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 129
+      "rank": 130
     },
     {
       "login": "larpedsol",
@@ -131092,7 +131344,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 130
+      "rank": 131
     },
     {
       "login": "vedshah01",
@@ -131244,7 +131496,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 131
+      "rank": 132
     },
     {
       "login": "muskaansaraf-hue",
@@ -131502,7 +131754,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 132
+      "rank": 133
     },
     {
       "login": "PARTHANAND0009",
@@ -131714,7 +131966,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 133
+      "rank": 134
     },
     {
       "login": "f3z8",
@@ -131864,7 +132116,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 134
+      "rank": 135
     },
     {
       "login": "alexgreenwood28",
@@ -132029,7 +132281,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 135
+      "rank": 136
     },
     {
       "login": "nitin-keshavan",
@@ -132167,7 +132419,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 136
+      "rank": 137
     },
     {
       "login": "FungousLand1941",
@@ -132322,7 +132574,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 137
+      "rank": 138
     },
     {
       "login": "AadhavP",
@@ -132439,7 +132691,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 138
+      "rank": 139
     },
     {
       "login": "tobochi22",
@@ -132616,7 +132868,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 139
+      "rank": 140
     },
     {
       "login": "chu-json",
@@ -132769,7 +133021,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 140
+      "rank": 141
     },
     {
       "login": "vaydr",
@@ -132886,7 +133138,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 141
+      "rank": 142
     },
     {
       "login": "aryanahou",
@@ -133039,7 +133291,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 142
+      "rank": 143
     },
     {
       "login": "suvan24",
@@ -133156,7 +133408,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 143
+      "rank": 144
     },
     {
       "login": "prsuyal",
@@ -133273,7 +133525,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 144
+      "rank": 145
     },
     {
       "login": "leshoya",
@@ -133402,7 +133654,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 145
+      "rank": 146
     },
     {
       "login": "dsert1",
@@ -133519,7 +133771,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 146
+      "rank": 147
     },
     {
       "login": "IshaanSanghvi",
@@ -133648,7 +133900,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 147
+      "rank": 148
     },
     {
       "login": "Aaditya019Jain",
@@ -133765,7 +134017,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 148
+      "rank": 149
     },
     {
       "login": "riannasantra",
@@ -133894,7 +134146,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 149
+      "rank": 150
     },
     {
       "login": "AdvithKota14",
@@ -134011,7 +134263,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 150
+      "rank": 151
     },
     {
       "login": "oliva-victor",
@@ -134140,7 +134392,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 151
+      "rank": 152
     },
     {
       "login": "MinionGames",
@@ -134269,7 +134521,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 152
+      "rank": 153
     },
     {
       "login": "21Lotus",
@@ -134386,7 +134638,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 153
+      "rank": 154
     },
     {
       "login": "achen318",
@@ -134503,7 +134755,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 154
+      "rank": 155
     },
     {
       "login": "koshuajim",
@@ -134632,7 +134884,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 155
+      "rank": 156
     },
     {
       "login": "August-H",
@@ -134749,7 +135001,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 156
+      "rank": 157
     },
     {
       "login": "Vodiboi",
@@ -134902,7 +135154,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 157
+      "rank": 158
     },
     {
       "login": "Maplesyxy",
@@ -135019,7 +135271,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 158
+      "rank": 159
     },
     {
       "login": "Gun-Akash",
@@ -135160,7 +135412,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 159
+      "rank": 160
     },
     {
       "login": "abigailmerchant",
@@ -135277,7 +135529,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 160
+      "rank": 161
     },
     {
       "login": "nicole-0",
@@ -135394,7 +135646,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 161
+      "rank": 162
     },
     {
       "login": "sudeeps1",
@@ -135511,7 +135763,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 162
+      "rank": 163
     },
     {
       "login": "NagaSaiDhirajK",
@@ -135628,7 +135880,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 163
+      "rank": 164
     },
     {
       "login": "sadhiika",
@@ -135745,7 +135997,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 164
+      "rank": 165
     },
     {
       "login": "bobsbuiscuit123",
@@ -135862,7 +136114,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 165
+      "rank": 166
     },
     {
       "login": "trenchard",
@@ -135979,7 +136231,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 166
+      "rank": 167
     },
     {
       "login": "Quinn1108",
@@ -136096,7 +136348,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 167
+      "rank": 168
     },
     {
       "login": "nabirarashid",
@@ -136213,7 +136465,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 168
+      "rank": 169
     },
     {
       "login": "VatsalDesai152",
@@ -136330,7 +136582,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 169
+      "rank": 170
     },
     {
       "login": "Mr-Ak-Shay",
@@ -136447,7 +136699,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 170
+      "rank": 171
     }
   ]
 }
