@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T22:01:46.969Z",
+  "generated_at": "2026-09-09T00:07:54.290Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,9 +64,9 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-08T22:00:38.797Z",
+    "run_started_at": "2026-09-09T00:06:47.037Z",
     "lookback_days": 365,
-    "lookback_since": "2025-09-08T00:00:00.000Z",
+    "lookback_since": "2025-09-09T00:00:00.000Z",
     "repos": [
       "KellisLab/Mantis",
       "KellisLab/MantisAPI",
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3723,
-      "issues": 2289,
-      "reviews": 11499,
-      "review_comments": 14494
+      "prs": 3726,
+      "issues": 2290,
+      "reviews": 11505,
+      "review_comments": 14496
     }
   },
   "review_rules": {
@@ -176,7 +176,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 683,
+      "total": 711,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -204,7 +204,8 @@
         "2026-09-02": 38,
         "2026-09-04": 36,
         "2026-09-06": 57,
-        "2026-09-07": 19
+        "2026-09-07": 19,
+        "2026-09-08": 28
       },
       "dayCounts": {
         "2026-06-30": {
@@ -539,6 +540,18 @@
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 2,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-08": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -973,23 +986,30 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-09-08": {
+          "pr": 28,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 679,
+        "pr": 707,
         "review": 0,
         "issue": 0,
         "docs": 4,
         "other": 0
       },
       "counts": {
-        "prs": 71,
+        "prs": 73,
         "reviews": 0,
         "confirmed_issues": 93,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 5,
-        "issues_closed": 33,
+        "issues_closed": 34,
         "review_submissions": 0,
         "docs_prs": 1,
         "bug_prs": 0
@@ -998,8 +1018,8 @@
         "XS": 5,
         "S": 13,
         "M": 25,
-        "L": 18,
-        "XL": 9
+        "L": 19,
+        "XL": 10
       },
       "contributions": [],
       "ledger": [
@@ -1815,33 +1835,55 @@
           "notes": [
             "4th in 24h ×0.65"
           ]
+        },
+        {
+          "at": "2026-09-08T22:53:56Z",
+          "category": "pr",
+          "points": 14,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2922",
+          "title": "Batch KG concept mapping and raise the task time limit",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2922",
+          "notes": []
+        },
+        {
+          "at": "2026-09-08T23:07:04Z",
+          "category": "pr",
+          "points": 14,
+          "kind": "pr",
+          "ref": "KellisLab/mantis-docs#6",
+          "title": "Unified docs site: content, dev-docs auth gate, and box deploy pipeline",
+          "url": "https://github.com/KellisLab/mantis-docs/pull/6",
+          "notes": [
+            "2th in 24h ×1"
+          ]
         }
       ],
       "windows": {
-        "7": 150,
-        "14": 283
+        "7": 178,
+        "14": 311
       },
       "windowCounts": {
         "7": {
-          "prs": 14,
+          "prs": 16,
           "reviews": 0,
           "confirmed_issues": 9,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 7,
+          "issues_closed": 8,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 32,
+          "prs": 34,
           "reviews": 0,
           "confirmed_issues": 24,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 18,
+          "issues_closed": 19,
           "review_submissions": 0,
           "docs_prs": 1,
           "bug_prs": 0
@@ -1849,14 +1891,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 150,
+          "pr": 178,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 279,
+          "pr": 307,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -1865,15 +1907,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 150,
-          "shipping": 150,
+          "overall": 178,
+          "shipping": 178,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 283,
-          "shipping": 279,
+          "overall": 311,
+          "shipping": 307,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -2041,6 +2083,28 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4261",
             "notes": [
               "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-08T22:53:56Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2922",
+            "title": "Batch KG concept mapping and raise the task time limit",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2922",
+            "notes": []
+          },
+          {
+            "at": "2026-09-08T23:07:04Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/mantis-docs#6",
+            "title": "Unified docs site: content, dev-docs auth gate, and box deploy pipeline",
+            "url": "https://github.com/KellisLab/mantis-docs/pull/6",
+            "notes": [
+              "2th in 24h ×1"
             ]
           }
         ],
@@ -2409,10 +2473,32 @@
             "notes": [
               "4th in 24h ×0.65"
             ]
+          },
+          {
+            "at": "2026-09-08T22:53:56Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2922",
+            "title": "Batch KG concept mapping and raise the task time limit",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2922",
+            "notes": []
+          },
+          {
+            "at": "2026-09-08T23:07:04Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/mantis-docs#6",
+            "title": "Unified docs site: content, dev-docs auth gate, and box deploy pipeline",
+            "url": "https://github.com/KellisLab/mantis-docs/pull/6",
+            "notes": [
+              "2th in 24h ×1"
+            ]
           }
         ]
       },
-      "rolling_total": 150,
+      "rolling_total": 178,
       "rank": 1
     },
     {
@@ -17067,7 +17153,7 @@
       ],
       "windows": {
         "7": 48,
-        "14": 86
+        "14": 73
       },
       "windowCounts": {
         "7": {
@@ -17083,7 +17169,7 @@
           "bug_prs": 1
         },
         "14": {
-          "prs": 7,
+          "prs": 6,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -17104,7 +17190,7 @@
           "other": 0
         },
         "14": {
-          "pr": 86,
+          "pr": 73,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -17120,8 +17206,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 86,
-          "shipping": 86,
+          "overall": 73,
+          "shipping": 73,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -17178,16 +17264,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-25T22:52:25Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4114",
-            "title": "Improve semantic timeline activity logging",
-            "url": "https://github.com/KellisLab/Mantis/pull/4114",
-            "notes": []
-          },
           {
             "at": "2026-08-27T23:40:21Z",
             "category": "pr",
@@ -35765,13 +35841,13 @@
         },
         "14": {
           "prs": 2,
-          "reviews": 7,
+          "reviews": 6,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 1,
+          "prs_coauthored": 0,
           "issues_closed": 7,
-          "review_submissions": 9,
+          "review_submissions": 8,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -112837,7 +112913,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 1,
+          "prs_coauthored": 2,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -112858,7 +112934,7 @@
         "confirmed_issues": 0,
         "fixed_bonuses": 0,
         "manual": 0,
-        "prs_coauthored": 80,
+        "prs_coauthored": 81,
         "issues_closed": 0,
         "review_submissions": 0,
         "docs_prs": 0,
@@ -112884,7 +112960,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 1,
+          "prs_coauthored": 2,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -112896,7 +112972,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 10,
+          "prs_coauthored": 11,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
