@@ -23,10 +23,10 @@ code / review / issues ledger.
 | 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **69** | 6 | 0 | 1 |
 | 5 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
-| 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **48** | 4 | 0 | 0 |
-| 8 | [@Copilot](https://github.com/Copilot) | **42** | 0 | 5 | 0 |
-| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **29** | 1 | 2 | 0 |
-| 10 | [@edoardopanella](https://github.com/edoardopanella) | **28** | 2 | 1 | 0 |
+| 7 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
+| 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **48** | 4 | 0 | 0 |
+| 9 | [@Copilot](https://github.com/Copilot) | **33** | 0 | 4 | 0 |
+| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **29** | 1 | 2 | 0 |
 
 #### Past 14 Days
 
@@ -34,7 +34,7 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **311** | 34 | 0 | 19 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **176** | 16 | 2 | 5 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **114** | 21 | 0 | 0 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **126** | 22 | 0 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **90** | 8 | 0 | 3 |
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | [@Copilot](https://github.com/Copilot) | **60** | 0 | 7 | 0 |
 
-_Last updated: Wed, 09 Sep 2026 04:37:59 GMT_
+_Last updated: Wed, 09 Sep 2026 09:11:58 GMT_
 <!-- LEADERBOARD:END -->
 
 
