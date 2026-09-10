@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T23:11:02.567Z",
+  "generated_at": "2026-09-10T01:25:47.802Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,9 +64,9 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-09T23:10:01.949Z",
+    "run_started_at": "2026-09-10T01:24:45.571Z",
     "lookback_days": 365,
-    "lookback_since": "2025-09-09T00:00:00.000Z",
+    "lookback_since": "2025-09-10T00:00:00.000Z",
     "repos": [
       "KellisLab/Mantis",
       "KellisLab/MantisAPI",
@@ -94,8 +94,8 @@
     "event_counts": {
       "prs": 3756,
       "issues": 2299,
-      "reviews": 11570,
-      "review_comments": 14523
+      "reviews": 11577,
+      "review_comments": 14524
     }
   },
   "review_rules": {
@@ -176,7 +176,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 711,
+      "total": 724,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -205,7 +205,8 @@
         "2026-09-04": 36,
         "2026-09-06": 57,
         "2026-09-07": 19,
-        "2026-09-08": 28
+        "2026-09-08": 28,
+        "2026-09-10": 13
       },
       "dayCounts": {
         "2026-06-30": {
@@ -565,6 +566,18 @@
           "prs_coauthored": 1,
           "issues_closed": 0,
           "review_submissions": 1,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-10": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
@@ -1005,23 +1018,30 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-09-10": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 707,
+        "pr": 720,
         "review": 0,
         "issue": 0,
         "docs": 4,
         "other": 0
       },
       "counts": {
-        "prs": 73,
+        "prs": 74,
         "reviews": 1,
         "confirmed_issues": 94,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 6,
-        "issues_closed": 34,
+        "issues_closed": 35,
         "review_submissions": 1,
         "docs_prs": 1,
         "bug_prs": 0
@@ -1030,7 +1050,7 @@
         "XS": 5,
         "S": 13,
         "M": 25,
-        "L": 19,
+        "L": 20,
         "XL": 10
       },
       "contributions": [],
@@ -1869,33 +1889,43 @@
           "notes": [
             "2th in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-09-10T00:01:27Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2964",
+          "title": "Parallelize KG triplet extraction across concepts",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2964",
+          "notes": []
         }
       ],
       "windows": {
-        "7": 140,
-        "14": 282
+        "7": 153,
+        "14": 295
       },
       "windowCounts": {
         "7": {
-          "prs": 13,
+          "prs": 14,
           "reviews": 1,
           "confirmed_issues": 8,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 8,
+          "issues_closed": 9,
           "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 31,
+          "prs": 32,
           "reviews": 1,
           "confirmed_issues": 19,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 14,
+          "issues_closed": 15,
           "review_submissions": 1,
           "docs_prs": 1,
           "bug_prs": 0
@@ -1903,14 +1933,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 140,
+          "pr": 153,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 278,
+          "pr": 291,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -1919,15 +1949,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 140,
-          "shipping": 140,
+          "overall": 153,
+          "shipping": 153,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 282,
-          "shipping": 278,
+          "overall": 295,
+          "shipping": 291,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -2084,6 +2114,16 @@
             "notes": [
               "2th in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-09-10T00:01:27Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2964",
+            "title": "Parallelize KG triplet extraction across concepts",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2964",
+            "notes": []
           }
         ],
         "14": [
@@ -2437,10 +2477,20 @@
             "notes": [
               "2th in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-09-10T00:01:27Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2964",
+            "title": "Parallelize KG triplet extraction across concepts",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2964",
+            "notes": []
           }
         ]
       },
-      "rolling_total": 140,
+      "rolling_total": 153,
       "rank": 1
     },
     {
