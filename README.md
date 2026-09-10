@@ -19,20 +19,20 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **153** | 14 | 1 | 8 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **127** | 12 | 2 | 5 |
-| 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **100** | 1 | 15 | 0 |
+| 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **88** | 0 | 15 | 0 |
 | 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **69** | 6 | 0 | 1 |
 | 5 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 6 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
 | 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **48** | 4 | 0 | 0 |
-| 9 | [@charleywolf](https://github.com/charleywolf) | **25** | 2 | 0 | 0 |
-| 10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **25** | 2 | 0 | 0 |
+| 9 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
+| 10 | [@charleywolf](https://github.com/charleywolf) | **25** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **295** | 32 | 1 | 19 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **295** | 32 | 1 | 20 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **176** | 16 | 2 | 5 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **126** | 22 | 0 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | [@Copilot](https://github.com/Copilot) | **60** | 0 | 7 | 0 |
 
-_Last updated: Thu, 10 Sep 2026 01:25:47 GMT_
+_Last updated: Thu, 10 Sep 2026 06:38:01 GMT_
 <!-- LEADERBOARD:END -->
 
 
