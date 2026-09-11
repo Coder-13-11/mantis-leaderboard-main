@@ -17,10 +17,10 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **153** | 14 | 1 | 8 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **127** | 12 | 2 | 5 |
-| 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **88** | 0 | 15 | 0 |
-| 4 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **78** | 6 | 0 | 0 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **141** | 13 | 1 | 9 |
+| 2 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **88** | 0 | 15 | 0 |
+| 3 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **78** | 6 | 0 | 0 |
+| 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **71** | 4 | 2 | 4 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **69** | 6 | 0 | 1 |
 | 6 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
@@ -32,8 +32,8 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **279** | 30 | 1 | 20 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **176** | 16 | 2 | 5 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **279** | 30 | 1 | 18 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **180** | 16 | 2 | 5 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **126** | 22 | 0 | 0 |
 | 4 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
 | 5 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **100** | 1 | 15 | 0 |
@@ -41,9 +41,9 @@ code / review / issues ledger.
 | 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
 | 8 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **80** | 7 | 0 | 2 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
-| 10 | [@Copilot](https://github.com/Copilot) | **60** | 0 | 7 | 0 |
+| 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 
-_Last updated: Fri, 11 Sep 2026 00:04:20 GMT_
+_Last updated: Fri, 11 Sep 2026 04:31:49 GMT_
 <!-- LEADERBOARD:END -->
 
 
