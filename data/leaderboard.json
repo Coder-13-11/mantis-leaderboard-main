@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T20:01:12.448Z",
+  "generated_at": "2026-09-11T22:31:23.610Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-11T19:59:52.909Z",
+    "run_started_at": "2026-09-11T22:30:13.587Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-11T00:00:00.000Z",
     "repos": [
@@ -93,8 +93,8 @@
     "checksum_ok": true,
     "event_counts": {
       "prs": 3789,
-      "issues": 2339,
-      "reviews": 11676,
+      "issues": 2340,
+      "reviews": 11677,
       "review_comments": 14577
     }
   },
@@ -176,7 +176,7 @@
     {
       "login": "YakshithK",
       "name": "Yakshith",
-      "total": 724,
+      "total": 738,
       "days": {
         "2026-06-30": 12,
         "2026-07-06": 12,
@@ -206,7 +206,8 @@
         "2026-09-06": 57,
         "2026-09-07": 19,
         "2026-09-08": 28,
-        "2026-09-10": 13
+        "2026-09-10": 13,
+        "2026-09-11": 14
       },
       "dayCounts": {
         "2026-06-30": {
@@ -581,6 +582,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-09-11": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-06-27": {
           "prs": 0,
           "reviews": 0,
@@ -820,18 +833,6 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
-        },
-        "2026-09-11": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -1037,23 +1038,30 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-09-11": {
+          "pr": 14,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 720,
+        "pr": 734,
         "review": 0,
         "issue": 0,
         "docs": 4,
         "other": 0
       },
       "counts": {
-        "prs": 74,
+        "prs": 75,
         "reviews": 1,
         "confirmed_issues": 96,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 6,
-        "issues_closed": 35,
+        "issues_closed": 36,
         "review_submissions": 1,
         "docs_prs": 1,
         "bug_prs": 0
@@ -1062,7 +1070,7 @@
         "XS": 5,
         "S": 13,
         "M": 25,
-        "L": 20,
+        "L": 21,
         "XL": 10
       },
       "contributions": [],
@@ -1911,15 +1919,25 @@
           "title": "Parallelize KG triplet extraction across concepts",
           "url": "https://github.com/KellisLab/MantisAPI/pull/2964",
           "notes": []
+        },
+        {
+          "at": "2026-09-11T21:27:11Z",
+          "category": "pr",
+          "points": 14,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2983",
+          "title": "Parallelize KG keyword extraction and raise triplet concurrency",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2983",
+          "notes": []
         }
       ],
       "windows": {
-        "7": 141,
-        "14": 258
+        "7": 131,
+        "14": 272
       },
       "windowCounts": {
         "7": {
-          "prs": 13,
+          "prs": 12,
           "reviews": 1,
           "confirmed_issues": 9,
           "fixed_bonuses": 0,
@@ -1931,13 +1949,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 28,
+          "prs": 29,
           "reviews": 1,
           "confirmed_issues": 18,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 14,
+          "issues_closed": 15,
           "review_submissions": 1,
           "docs_prs": 1,
           "bug_prs": 0
@@ -1945,14 +1963,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 141,
+          "pr": 131,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 254,
+          "pr": 268,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -1961,15 +1979,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 141,
-          "shipping": 141,
+          "overall": 131,
+          "shipping": 131,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 258,
-          "shipping": 254,
+          "overall": 272,
+          "shipping": 268,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -1977,30 +1995,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-04T20:25:22Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2779",
-            "title": "fix(embeddings): stop manufacturing zero-vector placeholders on batch failure",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2779",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-04T21:31:25Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2821",
-            "title": "fix: replace pickle.loads with restricted unpickler for sklearn model blobs",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2821",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-09-06T03:17:22Z",
             "category": "pr",
@@ -2125,6 +2119,16 @@
             "ref": "KellisLab/MantisAPI#2964",
             "title": "Parallelize KG triplet extraction across concepts",
             "url": "https://github.com/KellisLab/MantisAPI/pull/2964",
+            "notes": []
+          },
+          {
+            "at": "2026-09-11T21:27:11Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2983",
+            "title": "Parallelize KG keyword extraction and raise triplet concurrency",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2983",
             "notes": []
           }
         ],
@@ -2441,10 +2445,20 @@
             "title": "Parallelize KG triplet extraction across concepts",
             "url": "https://github.com/KellisLab/MantisAPI/pull/2964",
             "notes": []
+          },
+          {
+            "at": "2026-09-11T21:27:11Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2983",
+            "title": "Parallelize KG keyword extraction and raise triplet concurrency",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2983",
+            "notes": []
           }
         ]
       },
-      "rolling_total": 141,
+      "rolling_total": 131,
       "rank": 1
     },
     {
@@ -5373,7 +5387,7 @@
       ],
       "windows": {
         "7": 78,
-        "14": 91
+        "14": 78
       },
       "windowCounts": {
         "7": {
@@ -5389,7 +5403,7 @@
           "bug_prs": 2
         },
         "14": {
-          "prs": 7,
+          "prs": 6,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -5410,7 +5424,7 @@
           "other": 0
         },
         "14": {
-          "pr": 91,
+          "pr": 78,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -5426,8 +5440,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 91,
-          "shipping": 91,
+          "overall": 78,
+          "shipping": 78,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -5508,18 +5522,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-28T20:41:06Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4185",
-            "title": "Handle partial-only Composer terminal responses",
-            "url": "https://github.com/KellisLab/Mantis/pull/4185",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
           {
             "at": "2026-09-06T17:53:05Z",
             "category": "pr",
