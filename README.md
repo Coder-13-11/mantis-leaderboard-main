@@ -35,15 +35,15 @@ code / review / issues ledger.
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **279** | 30 | 1 | 20 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **176** | 16 | 2 | 5 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **126** | 22 | 0 | 0 |
-| 4 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **103** | 8 | 0 | 0 |
-| 5 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
-| 6 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **100** | 1 | 15 | 0 |
-| 7 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **90** | 8 | 0 | 2 |
-| 8 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
+| 4 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
+| 5 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **100** | 1 | 15 | 0 |
+| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
+| 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **90** | 10 | 0 | 0 |
+| 8 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **80** | 7 | 0 | 2 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | [@Copilot](https://github.com/Copilot) | **60** | 0 | 7 | 0 |
 
-_Last updated: Thu, 10 Sep 2026 21:51:16 GMT_
+_Last updated: Fri, 11 Sep 2026 00:04:20 GMT_
 <!-- LEADERBOARD:END -->
 
 
