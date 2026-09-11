@@ -24,9 +24,9 @@ code / review / issues ledger.
 | 5 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **71** | 4 | 2 | 4 |
 | 6 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
-| 8 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
-| 9 | [@charleywolf](https://github.com/charleywolf) | **25** | 2 | 0 | 0 |
-| 10 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **25** | 2 | 0 | 0 |
+| 8 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **49** | 4 | 0 | 0 |
+| 9 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
+| 10 | [@charleywolf](https://github.com/charleywolf) | **25** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 
-_Last updated: Fri, 11 Sep 2026 09:07:06 GMT_
+_Last updated: Fri, 11 Sep 2026 13:32:09 GMT_
 <!-- LEADERBOARD:END -->
 
 
