@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T00:36:11.845Z",
+  "generated_at": "2026-09-12T05:00:38.597Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-12T00:35:05.196Z",
+    "run_started_at": "2026-09-12T04:59:29.725Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-12T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3789,
-      "issues": 2341,
-      "reviews": 11679,
-      "review_comments": 14577
+      "prs": 3792,
+      "issues": 2343,
+      "reviews": 11686,
+      "review_comments": 14579
     }
   },
   "review_rules": {
@@ -833,6 +833,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-09-12": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -1057,7 +1069,7 @@
       "counts": {
         "prs": 75,
         "reviews": 1,
-        "confirmed_issues": 96,
+        "confirmed_issues": 97,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 6,
@@ -1939,7 +1951,7 @@
         "7": {
           "prs": 12,
           "reviews": 1,
-          "confirmed_issues": 9,
+          "confirmed_issues": 10,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -1951,7 +1963,7 @@
         "14": {
           "prs": 29,
           "reviews": 1,
-          "confirmed_issues": 18,
+          "confirmed_issues": 19,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -10185,18 +10197,18 @@
         }
       ],
       "windows": {
-        "7": 71,
+        "7": 66,
         "14": 180
       },
       "windowCounts": {
         "7": {
-          "prs": 4,
+          "prs": 3,
           "reviews": 2,
-          "confirmed_issues": 4,
+          "confirmed_issues": 3,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 3,
+          "issues_closed": 2,
           "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
@@ -10216,7 +10228,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 41,
+          "pr": 36,
           "review": 30,
           "issue": 0,
           "docs": 0,
@@ -10232,8 +10244,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 71,
-          "shipping": 41,
+          "overall": 66,
+          "shipping": 36,
           "review": 30,
           "bugs": 0,
           "docs": 0
@@ -10248,18 +10260,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-05T04:24:17Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4249",
-            "title": "Show complete Spaces with source-aware point budgets",
-            "url": "https://github.com/KellisLab/Mantis/pull/4249",
-            "notes": [
-              "7th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-09-05T05:57:16Z",
             "category": "pr",
@@ -10530,7 +10530,7 @@
           }
         ]
       },
-      "rolling_total": 71,
+      "rolling_total": 66,
       "rank": 5
     },
     {
@@ -31381,7 +31381,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 76
+        "14": 54
       },
       "windowCounts": {
         "7": {
@@ -31397,7 +31397,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 9,
+          "prs": 7,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -31418,7 +31418,7 @@
           "other": 0
         },
         "14": {
-          "pr": 76,
+          "pr": 54,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -31434,8 +31434,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 76,
-          "shipping": 76,
+          "overall": 54,
+          "shipping": 54,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -31444,30 +31444,6 @@
       "windowLedger": {
         "7": [],
         "14": [
-          {
-            "at": "2026-08-29T01:53:23Z",
-            "category": "pr",
-            "points": 14,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2783",
-            "title": "Switch planning server from GLM-5.2 to GLM-5.3",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2783",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-29T01:53:38Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4186",
-            "title": "Point composer default at GLM-5.3",
-            "url": "https://github.com/KellisLab/Mantis/pull/4186",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-09-03T21:47:57Z",
             "category": "pr",
@@ -116601,7 +116577,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 10,
+          "prs_coauthored": 8,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
