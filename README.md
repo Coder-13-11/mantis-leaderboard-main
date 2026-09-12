@@ -19,8 +19,8 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **131** | 12 | 1 | 9 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **95** | 9 | 0 | 0 |
-| 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **88** | 0 | 15 | 0 |
-| 4 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **78** | 6 | 0 | 0 |
+| 3 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
+| 4 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **88** | 0 | 15 | 0 |
 | 5 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **71** | 4 | 2 | 4 |
 | 6 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
@@ -38,12 +38,12 @@ code / review / issues ledger.
 | 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **117** | 11 | 0 | 2 |
 | 5 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
 | 6 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **100** | 1 | 15 | 0 |
-| 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **78** | 6 | 0 | 0 |
+| 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
 | 8 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **76** | 9 | 0 | 0 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 
-_Last updated: Fri, 11 Sep 2026 22:31:23 GMT_
+_Last updated: Sat, 12 Sep 2026 00:36:11 GMT_
 <!-- LEADERBOARD:END -->
 
 
