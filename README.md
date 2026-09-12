@@ -36,14 +36,14 @@ code / review / issues ledger.
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **180** | 16 | 2 | 5 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **126** | 22 | 0 | 0 |
 | 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **117** | 11 | 0 | 2 |
-| 5 | [@charleywolf](https://github.com/charleywolf) | **103** | 9 | 0 | 0 |
-| 6 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **97** | 1 | 15 | 0 |
-| 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
+| 5 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **97** | 1 | 15 | 0 |
+| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
+| 7 | [@charleywolf](https://github.com/charleywolf) | **91** | 8 | 0 | 0 |
 | 8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
 | 9 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **61** | 5 | 0 | 0 |
 | 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 
-_Last updated: Sat, 12 Sep 2026 16:17:25 GMT_
+_Last updated: Sat, 12 Sep 2026 18:43:38 GMT_
 <!-- LEADERBOARD:END -->
 
 
