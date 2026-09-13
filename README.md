@@ -19,10 +19,10 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **100** | 9 | 0 | 2 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **95** | 9 | 0 | 0 |
-| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **88** | 5 | 2 | 16 |
+| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **88** | 5 | 2 | 20 |
 | 4 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **85** | 0 | 15 | 0 |
-| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **85** | 8 | 1 | 8 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **63** | 5 | 0 | 0 |
+| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **79** | 7 | 1 | 7 |
+| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **53** | 4 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 0 | 0 |
 | 8 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
 | 9 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **28** | 2 | 0 | 0 |
@@ -33,7 +33,7 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **223** | 23 | 1 | 20 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **213** | 19 | 2 | 21 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **190** | 17 | 2 | 25 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **139** | 13 | 0 | 2 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **100** | 9 | 0 | 2 |
 | 5 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **97** | 1 | 15 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 10 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 
-_Last updated: Sun, 13 Sep 2026 19:24:27 GMT_
+_Last updated: Sun, 13 Sep 2026 21:39:10 GMT_
 <!-- LEADERBOARD:END -->
 
 
