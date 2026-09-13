@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T23:17:41.262Z",
+  "generated_at": "2026-09-13T01:23:58.890Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,9 +64,9 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-12T23:16:46.186Z",
+    "run_started_at": "2026-09-13T01:23:06.934Z",
     "lookback_days": 365,
-    "lookback_since": "2025-09-12T00:00:00.000Z",
+    "lookback_since": "2025-09-13T00:00:00.000Z",
     "repos": [
       "KellisLab/Mantis",
       "KellisLab/MantisAPI",
@@ -93,9 +93,9 @@
     "checksum_ok": true,
     "event_counts": {
       "prs": 3817,
-      "issues": 2378,
-      "reviews": 11729,
-      "review_comments": 14593
+      "issues": 2379,
+      "reviews": 11738,
+      "review_comments": 14595
     }
   },
   "review_rules": {
@@ -21651,7 +21651,7 @@
       ],
       "windows": {
         "7": 12,
-        "14": 113
+        "14": 75
       },
       "windowCounts": {
         "7": {
@@ -21667,13 +21667,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 21,
+          "prs": 16,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 5,
-          "issues_closed": 20,
+          "issues_closed": 19,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -21688,7 +21688,7 @@
           "other": 0
         },
         "14": {
-          "pr": 113,
+          "pr": 75,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -21704,8 +21704,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 113,
-          "shipping": 113,
+          "overall": 75,
+          "shipping": 75,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -21725,66 +21725,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-29T23:29:11Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2798",
-            "title": "security: stop exposing client IP as health timestamp",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2798",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-29T23:43:12Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4189",
-            "title": "Fix benchmark workflow upload validation",
-            "url": "https://github.com/KellisLab/Mantis/pull/4189",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-08-29T23:51:20Z",
-            "category": "pr",
-            "points": 7,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2799",
-            "title": "Fix partial map completion classification",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2799",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-08-30T00:41:40Z",
-            "category": "pr",
-            "points": 6,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2801",
-            "title": "security: bind synthesis creation to authenticated identity",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2801",
-            "notes": [
-              "5th in 24h ×0.5"
-            ]
-          },
-          {
-            "at": "2026-08-30T01:11:08Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2802",
-            "title": "Preserve legacy map completion after partial-failure fix",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2802",
-            "notes": [
-              "6th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-08-30T01:29:17Z",
             "category": "pr",
@@ -130350,6 +130290,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-09-13": {
+          "prs": 0,
+          "reviews": 1,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 1,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-08-30": {
           "prs": 0,
           "reviews": 0,
@@ -130430,13 +130382,13 @@
       },
       "counts": {
         "prs": 15,
-        "reviews": 2,
-        "confirmed_issues": 1,
+        "reviews": 3,
+        "confirmed_issues": 2,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 3,
         "issues_closed": 2,
-        "review_submissions": 2,
+        "review_submissions": 3,
         "docs_prs": 0,
         "bug_prs": 0
       },
@@ -130640,25 +130592,25 @@
       "windowCounts": {
         "7": {
           "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
+          "reviews": 1,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 0,
-          "review_submissions": 0,
+          "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
           "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
+          "reviews": 1,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 1,
-          "review_submissions": 0,
+          "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
         }
