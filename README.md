@@ -17,11 +17,11 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **131** | 12 | 1 | 9 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **118** | 11 | 1 | 9 |
 | 2 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
 | 3 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **85** | 0 | 15 | 0 |
-| 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **79** | 4 | 2 | 16 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **73** | 7 | 0 | 0 |
+| 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **84** | 8 | 0 | 0 |
+| 5 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **79** | 4 | 2 | 16 |
 | 6 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **61** | 5 | 0 | 1 |
 | 7 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 8 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 1 | 0 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **272** | 29 | 1 | 20 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **262** | 28 | 1 | 20 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **217** | 19 | 2 | 21 |
-| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **117** | 11 | 0 | 2 |
+| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **128** | 12 | 0 | 2 |
 | 4 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **97** | 1 | 15 | 0 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
-| 6 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **75** | 16 | 0 | 0 |
-| 7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
-| 8 | [@charleywolf](https://github.com/charleywolf) | **63** | 5 | 0 | 0 |
+| 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
+| 7 | [@charleywolf](https://github.com/charleywolf) | **63** | 5 | 0 | 0 |
+| 8 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **62** | 13 | 0 | 0 |
 | 9 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **61** | 5 | 0 | 1 |
 | 10 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 
-_Last updated: Sun, 13 Sep 2026 01:23:58 GMT_
+_Last updated: Sun, 13 Sep 2026 06:45:09 GMT_
 <!-- LEADERBOARD:END -->
 
 
