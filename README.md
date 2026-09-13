@@ -18,23 +18,23 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **118** | 11 | 1 | 9 |
-| 2 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
-| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **88** | 5 | 2 | 16 |
-| 4 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **85** | 0 | 15 | 0 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **84** | 8 | 0 | 0 |
+| 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **95** | 9 | 0 | 0 |
+| 3 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
+| 4 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **88** | 5 | 2 | 16 |
+| 5 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **85** | 0 | 15 | 0 |
 | 6 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **61** | 5 | 0 | 2 |
-| 7 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
-| 8 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 1 | 0 |
-| 9 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
+| 7 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 0 | 0 |
+| 8 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
+| 9 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **28** | 2 | 0 | 0 |
 | 10 | [@charleywolf](https://github.com/charleywolf) | **25** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **233** | 25 | 1 | 20 |
+| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **227** | 24 | 1 | 20 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **226** | 20 | 2 | 21 |
-| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **128** | 12 | 0 | 2 |
+| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **139** | 13 | 0 | 2 |
 | 4 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **97** | 1 | 15 | 0 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
 | 6 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 10 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 
-_Last updated: Sun, 13 Sep 2026 12:42:39 GMT_
+_Last updated: Sun, 13 Sep 2026 16:57:39 GMT_
 <!-- LEADERBOARD:END -->
 
 
