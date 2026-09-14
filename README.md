@@ -17,23 +17,23 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **100** | 9 | 0 | 2 |
-| 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **95** | 9 | 0 | 0 |
-| 3 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **88** | 5 | 2 | 20 |
-| 4 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **85** | 0 | 15 | 0 |
-| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **79** | 7 | 1 | 7 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **53** | 4 | 0 | 0 |
-| 7 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 0 | 0 |
-| 8 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
-| 9 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **28** | 2 | 0 | 0 |
-| 10 | [@charleywolf](https://github.com/charleywolf) | **25** | 2 | 0 | 0 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **211** | 27 | 2 | 34 |
+| 2 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **100** | 9 | 0 | 2 |
+| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **95** | 9 | 0 | 0 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **74** | 6 | 1 | 8 |
+| 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **53** | 4 | 0 | 0 |
+| 6 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 0 | 0 |
+| 7 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
+| 8 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **28** | 2 | 0 | 0 |
+| 9 | [@charleywolf](https://github.com/charleywolf) | **25** | 2 | 0 | 0 |
+| 10 | **Karthikeya** ([@Coder-13-11](https://github.com/Coder-13-11)) | **14** | 1 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **223** | 23 | 1 | 20 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **190** | 17 | 2 | 25 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **325** | 40 | 2 | 39 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **223** | 23 | 1 | 18 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **139** | 13 | 0 | 2 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **100** | 9 | 0 | 2 |
 | 5 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **97** | 1 | 15 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 10 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 
-_Last updated: Sun, 13 Sep 2026 21:39:10 GMT_
+_Last updated: Mon, 14 Sep 2026 00:07:14 GMT_
 <!-- LEADERBOARD:END -->
 
 
