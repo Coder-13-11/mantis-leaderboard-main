@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T20:30:55.730Z",
+  "generated_at": "2026-09-14T23:25:22.945Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-14T20:29:48.802Z",
+    "run_started_at": "2026-09-14T23:24:24.648Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-14T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3923,
-      "issues": 2479,
-      "reviews": 11885,
-      "review_comments": 14737
+      "prs": 3926,
+      "issues": 2486,
+      "reviews": 11896,
+      "review_comments": 14743
     }
   },
   "review_rules": {
@@ -5800,19 +5800,19 @@
         }
       ],
       "windows": {
-        "7": 465,
+        "7": 435,
         "14": 579
       },
       "windowCounts": {
         "7": {
           "prs": 86,
-          "reviews": 2,
+          "reviews": 0,
           "confirmed_issues": 93,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
           "issues_closed": 86,
-          "review_submissions": 2,
+          "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
@@ -5832,7 +5832,7 @@
       "windowBreakdown": {
         "7": {
           "pr": 435,
-          "review": 30,
+          "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -5847,9 +5847,9 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 465,
+          "overall": 435,
           "shipping": 435,
-          "review": 30,
+          "review": 0,
           "bugs": 0,
           "docs": 0
         },
@@ -5863,36 +5863,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-07T21:25:09Z",
-            "category": "review",
-            "points": 17,
-            "kind": "review",
-            "ref": "KellisLab/MantisAPI#2937",
-            "title": "feat: pseudobulk differential expression analysis (matrix.pseudobulk_deg operator)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2937",
-            "notes": [
-              "changes requested",
-              "inline comments",
-              "nontrivial PR",
-              "change addressed"
-            ]
-          },
-          {
-            "at": "2026-09-07T21:25:11Z",
-            "category": "review",
-            "points": 13,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4264",
-            "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
-            "url": "https://github.com/KellisLab/Mantis/pull/4264",
-            "notes": [
-              "changes requested",
-              "inline comments",
-              "nontrivial PR",
-              "2th review in 24h ×1"
-            ]
-          },
           {
             "at": "2026-09-12T20:59:50Z",
             "category": "pr",
@@ -8125,7 +8095,7 @@
           }
         ]
       },
-      "rolling_total": 465,
+      "rolling_total": 435,
       "rank": 1
     },
     {
@@ -10654,7 +10624,7 @@
         "2026-09-14": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 4,
+          "confirmed_issues": 7,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -10886,7 +10856,7 @@
       "counts": {
         "prs": 75,
         "reviews": 1,
-        "confirmed_issues": 103,
+        "confirmed_issues": 106,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 7,
@@ -11768,7 +11738,7 @@
         "7": {
           "prs": 4,
           "reviews": 1,
-          "confirmed_issues": 10,
+          "confirmed_issues": 13,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
@@ -11780,7 +11750,7 @@
         "14": {
           "prs": 18,
           "reviews": 1,
-          "confirmed_issues": 20,
+          "confirmed_issues": 23,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
@@ -15046,7 +15016,7 @@
       ],
       "windows": {
         "7": 25,
-        "14": 49
+        "14": 25
       },
       "windowCounts": {
         "7": {
@@ -15062,7 +15032,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 4,
+          "prs": 2,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -15083,7 +15053,7 @@
           "other": 0
         },
         "14": {
-          "pr": 49,
+          "pr": 25,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -15099,8 +15069,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 49,
-          "shipping": 49,
+          "overall": 25,
+          "shipping": 25,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -15132,30 +15102,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-31T20:37:13Z",
-            "category": "pr",
-            "points": 14,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis-Discord-Bot#61",
-            "title": "Discord Bot UX & Access Cleanup",
-            "url": "https://github.com/KellisLab/Mantis-Discord-Bot/pull/61",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-08-31T20:45:33Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis-Discord-Bot#62",
-            "title": "Accelerated GitHub Access Synchronization",
-            "url": "https://github.com/KellisLab/Mantis-Discord-Bot/pull/62",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-09-08T00:03:00Z",
             "category": "pr",
@@ -101729,7 +101675,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 10
+        "14": 0
       },
       "windowCounts": {
         "7": {
@@ -101746,13 +101692,13 @@
         },
         "14": {
           "prs": 0,
-          "reviews": 1,
+          "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 0,
-          "review_submissions": 1,
+          "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -101767,7 +101713,7 @@
         },
         "14": {
           "pr": 0,
-          "review": 10,
+          "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -101782,30 +101728,16 @@
           "docs": 0
         },
         "14": {
-          "overall": 10,
+          "overall": 0,
           "shipping": 0,
-          "review": 10,
+          "review": 0,
           "bugs": 0,
           "docs": 0
         }
       },
       "windowLedger": {
         "7": [],
-        "14": [
-          {
-            "at": "2026-08-31T22:43:26Z",
-            "category": "review",
-            "points": 10,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4047",
-            "title": "Re-land point highlight rings, click-zoom, and cluster contour accents",
-            "url": "https://github.com/KellisLab/Mantis/pull/4047",
-            "notes": [
-              "changes requested",
-              "nontrivial PR"
-            ]
-          }
-        ]
+        "14": []
       },
       "rolling_total": 0,
       "rank": 57
@@ -107147,6 +107079,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-09-14": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-08-13": {
           "prs": 0,
           "reviews": 0,
@@ -107687,7 +107631,7 @@
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 76,
-        "issues_closed": 87,
+        "issues_closed": 88,
         "review_submissions": 118,
         "docs_prs": 1,
         "bug_prs": 0
@@ -108931,7 +108875,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -108943,7 +108887,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -128988,11 +128932,11 @@
         "14": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 1,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 1,
+          "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -139794,7 +139738,7 @@
         "2026-09-14": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 0,
+          "confirmed_issues": 2,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -139827,7 +139771,7 @@
       "counts": {
         "prs": 0,
         "reviews": 0,
-        "confirmed_issues": 2,
+        "confirmed_issues": 4,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 0,
@@ -139853,7 +139797,7 @@
         "7": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 2,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -139865,7 +139809,7 @@
         "14": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 2,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -140030,6 +139974,123 @@
       },
       "rolling_total": 0,
       "rank": 173
+    },
+    {
+      "login": "coderyaz856",
+      "name": "El Yazid Tebbaa",
+      "total": 0,
+      "days": {},
+      "dayCounts": {
+        "2026-09-14": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {},
+      "breakdown": {
+        "pr": 0,
+        "review": 0,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 0,
+        "reviews": 0,
+        "confirmed_issues": 1,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 0,
+        "issues_closed": 0,
+        "review_submissions": 0,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 0,
+        "S": 0,
+        "M": 0,
+        "L": 0,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [],
+      "windows": {
+        "7": 0,
+        "14": 0
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 0,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 0,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 0,
+          "shipping": 0,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 0,
+          "shipping": 0,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [],
+        "14": []
+      },
+      "rolling_total": 0,
+      "rank": 174
     }
   ]
 }
