@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T04:51:28.381Z",
+  "generated_at": "2026-09-14T10:33:56.659Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-14T04:50:14.978Z",
+    "run_started_at": "2026-09-14T10:32:44.835Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-14T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 3869,
-      "issues": 2432,
-      "reviews": 11828,
-      "review_comments": 14668
+      "prs": 3914,
+      "issues": 2474,
+      "reviews": 11858,
+      "review_comments": 14724
     }
   },
   "review_rules": {
@@ -176,7 +176,7 @@
     {
       "login": "chreia",
       "name": "Sebastien Kawada",
-      "total": 2021,
+      "total": 2190,
       "days": {
         "2026-06-06": 13,
         "2026-06-09": 12,
@@ -219,7 +219,7 @@
         "2026-09-07": 30,
         "2026-09-12": 37,
         "2026-09-13": 139,
-        "2026-09-14": 90
+        "2026-09-14": 259
       },
       "dayCounts": {
         "2026-06-06": {
@@ -787,13 +787,13 @@
           "bug_prs": 0
         },
         "2026-09-14": {
-          "prs": 20,
+          "prs": 60,
           "reviews": 0,
-          "confirmed_issues": 20,
+          "confirmed_issues": 60,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 21,
+          "issues_closed": 60,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -1184,7 +1184,7 @@
           "other": 0
         },
         "2026-09-14": {
-          "pr": 90,
+          "pr": 259,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1192,30 +1192,30 @@
         }
       },
       "breakdown": {
-        "pr": 1926,
+        "pr": 2095,
         "review": 48,
         "issue": 0,
         "docs": 47,
         "other": 0
       },
       "counts": {
-        "prs": 363,
+        "prs": 403,
         "reviews": 5,
-        "confirmed_issues": 240,
+        "confirmed_issues": 280,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 9,
-        "issues_closed": 141,
+        "issues_closed": 180,
         "review_submissions": 5,
         "docs_prs": 7,
         "bug_prs": 3
       },
       "sizes": {
-        "XS": 28,
-        "S": 52,
-        "M": 94,
-        "L": 76,
-        "XL": 90
+        "XS": 30,
+        "S": 65,
+        "M": 112,
+        "L": 81,
+        "XL": 92
       },
       "contributions": [],
       "ledger": [
@@ -5317,33 +5317,513 @@
           "notes": [
             "43th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-09-14T04:50:49Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3107",
+          "title": "A Space's filesystem exists from the first file-tree request",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3107",
+          "notes": [
+            "44th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T04:51:01Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4400",
+          "title": "File-tree socket stops reconnecting after a policy close",
+          "url": "https://github.com/KellisLab/Mantis/pull/4400",
+          "notes": [
+            "45th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T04:51:40Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3109",
+          "title": "Cluster descendants walk sorts in memory",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3109",
+          "notes": [
+            "46th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T04:51:55Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3111",
+          "title": "Dataset payload sizes are remembered per dataset",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3111",
+          "notes": [
+            "47th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T04:54:30Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3113",
+          "title": "Heavy reads stay narrow on the periodic and synthesis paths",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3113",
+          "notes": [
+            "48th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T04:54:34Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4402",
+          "title": "Next.js 16.3.5 with its patched image pipeline",
+          "url": "https://github.com/KellisLab/Mantis/pull/4402",
+          "notes": [
+            "49th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T04:58:55Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4404",
+          "title": "Transitive dependencies at their patched releases",
+          "url": "https://github.com/KellisLab/Mantis/pull/4404",
+          "notes": [
+            "50th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T05:18:06Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4406",
+          "title": "Point geometry streams over JSON frames",
+          "url": "https://github.com/KellisLab/Mantis/pull/4406",
+          "notes": [
+            "51th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T05:40:33Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4408",
+          "title": "Composer starts and stops instantly and works on the open Space",
+          "url": "https://github.com/KellisLab/Mantis/pull/4408",
+          "notes": [
+            "52th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T05:40:40Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3115",
+          "title": "Stop reaches the running turn immediately",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3115",
+          "notes": [
+            "53th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T05:47:33Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3117",
+          "title": "Native Composer works with the full Mantis tool set",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3117",
+          "notes": [
+            "54th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T05:57:05Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4410",
+          "title": "Composer streams with a skeleton, a live caret and quiet motion",
+          "url": "https://github.com/KellisLab/Mantis/pull/4410",
+          "notes": [
+            "55th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T06:07:49Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3120",
+          "title": "Codex owns the thread: standing Space scope, session credential, full workspace",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3120",
+          "notes": [
+            "56th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T06:23:08Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4412",
+          "title": "Composer shows the user's turn the instant Send is pressed",
+          "url": "https://github.com/KellisLab/Mantis/pull/4412",
+          "notes": [
+            "57th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T06:29:47Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4414",
+          "title": "Composer work log shows every step in order while a turn runs",
+          "url": "https://github.com/KellisLab/Mantis/pull/4414",
+          "notes": [
+            "58th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T06:34:39Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4416",
+          "title": "Composer takes its colours from the Space theme and lights the input while a turn runs",
+          "url": "https://github.com/KellisLab/Mantis/pull/4416",
+          "notes": [
+            "59th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T06:36:01Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4418",
+          "title": "Composer work log previews each result and stays live from Send",
+          "url": "https://github.com/KellisLab/Mantis/pull/4418",
+          "notes": [
+            "60th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:05:25Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4422",
+          "title": "Deploys reclaim earlier build space before building",
+          "url": "https://github.com/KellisLab/Mantis/pull/4422",
+          "notes": [
+            "61th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:08:25Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4423",
+          "title": "Frontend deploys make room on the host before uploading",
+          "url": "https://github.com/KellisLab/Mantis/pull/4423",
+          "notes": [
+            "62th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:09:12Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3125",
+          "title": "Composer Send at Codex CLI speed: one journaled run per message",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3125",
+          "notes": [
+            "63th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:25:08Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3127",
+          "title": "Codex compacts Composer threads at 128k tokens",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3127",
+          "notes": [
+            "64th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:33:07Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4425",
+          "title": "Composer sends every message, from the welcome screen onwards",
+          "url": "https://github.com/KellisLab/Mantis/pull/4425",
+          "notes": [
+            "65th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:37:07Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4427",
+          "title": "Composer wears the Space palette: white surfaces, highlight-blue user turns",
+          "url": "https://github.com/KellisLab/Mantis/pull/4427",
+          "notes": [
+            "66th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:39:17Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4429",
+          "title": "Composer history toggle sits on the left of the header",
+          "url": "https://github.com/KellisLab/Mantis/pull/4429",
+          "notes": [
+            "67th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:46:16Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4431",
+          "title": "Composer live caret rides the last line and leaves with the run",
+          "url": "https://github.com/KellisLab/Mantis/pull/4431",
+          "notes": [
+            "68th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:50:12Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4433",
+          "title": "Composer model selector always names the native model with its effort choices",
+          "url": "https://github.com/KellisLab/Mantis/pull/4433",
+          "notes": [
+            "69th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:55:47Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4435",
+          "title": "Composer welcome constellation keeps moving and the thinking state shines",
+          "url": "https://github.com/KellisLab/Mantis/pull/4435",
+          "notes": [
+            "70th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:58:31Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3130",
+          "title": "Warm sessions: skills and uploads land once, effort is low or high",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3130",
+          "notes": [
+            "71th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:58:41Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4420",
+          "title": "Open tabs keep working across deploys",
+          "url": "https://github.com/KellisLab/Mantis/pull/4420",
+          "notes": [
+            "72th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T07:58:54Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4437",
+          "title": "Composer effort choices follow the server catalog exactly",
+          "url": "https://github.com/KellisLab/Mantis/pull/4437",
+          "notes": [
+            "73th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T08:08:50Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4439",
+          "title": "Slash commands on the native Composer",
+          "url": "https://github.com/KellisLab/Mantis/pull/4439",
+          "notes": [
+            "74th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T08:17:08Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3134",
+          "title": "Composer runs on one reasoning setting",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3134",
+          "notes": [
+            "75th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T08:17:33Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4441",
+          "title": "Composer runs on one reasoning setting",
+          "url": "https://github.com/KellisLab/Mantis/pull/4441",
+          "notes": [
+            "76th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T08:23:21Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4443",
+          "title": "Composer shows how much of the context window is in use",
+          "url": "https://github.com/KellisLab/Mantis/pull/4443",
+          "notes": [
+            "77th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T08:27:59Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3132",
+          "title": "One warm Codex app-server per workspace, shared by every chat",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3132",
+          "notes": [
+            "78th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T08:31:00Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3136",
+          "title": "Slash commands that reach the server answer with a system note",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3136",
+          "notes": [
+            "79th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T09:43:20Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4447",
+          "title": "One current build for every open tab",
+          "url": "https://github.com/KellisLab/Mantis/pull/4447",
+          "notes": [
+            "79th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T10:01:16Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3139",
+          "title": "Inverter averages points with missing weights as equal weights",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3139",
+          "notes": [
+            "80th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T10:04:08Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4449",
+          "title": "Lasso draws a labelled bag and leaves the Composer to its own control",
+          "url": "https://github.com/KellisLab/Mantis/pull/4449",
+          "notes": [
+            "81th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-14T10:04:19Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3141",
+          "title": "Bag label socket accepts the signed ticket, answer pinned by tests",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3141",
+          "notes": [
+            "82th in 24h ×0.35"
+          ]
         }
       ],
       "windows": {
-        "7": 296,
-        "14": 410
+        "7": 465,
+        "14": 579
       },
       "windowCounts": {
         "7": {
-          "prs": 46,
+          "prs": 86,
           "reviews": 2,
-          "confirmed_issues": 53,
+          "confirmed_issues": 93,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 47,
+          "issues_closed": 86,
           "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 59,
+          "prs": 99,
           "reviews": 2,
-          "confirmed_issues": 58,
+          "confirmed_issues": 98,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 50,
+          "issues_closed": 89,
           "review_submissions": 2,
           "docs_prs": 1,
           "bug_prs": 0
@@ -5351,14 +5831,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 266,
+          "pr": 435,
           "review": 30,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 380,
+          "pr": 549,
           "review": 30,
           "issue": 0,
           "docs": 0,
@@ -5367,15 +5847,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 296,
-          "shipping": 266,
+          "overall": 465,
+          "shipping": 435,
           "review": 30,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 410,
-          "shipping": 380,
+          "overall": 579,
+          "shipping": 549,
           "review": 30,
           "bugs": 0,
           "docs": 0
@@ -5961,6 +6441,486 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/3105",
             "notes": [
               "43th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:50:49Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3107",
+            "title": "A Space's filesystem exists from the first file-tree request",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3107",
+            "notes": [
+              "44th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:51:01Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4400",
+            "title": "File-tree socket stops reconnecting after a policy close",
+            "url": "https://github.com/KellisLab/Mantis/pull/4400",
+            "notes": [
+              "45th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:51:40Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3109",
+            "title": "Cluster descendants walk sorts in memory",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3109",
+            "notes": [
+              "46th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:51:55Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3111",
+            "title": "Dataset payload sizes are remembered per dataset",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3111",
+            "notes": [
+              "47th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:54:30Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3113",
+            "title": "Heavy reads stay narrow on the periodic and synthesis paths",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3113",
+            "notes": [
+              "48th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:54:34Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4402",
+            "title": "Next.js 16.3.5 with its patched image pipeline",
+            "url": "https://github.com/KellisLab/Mantis/pull/4402",
+            "notes": [
+              "49th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:58:55Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4404",
+            "title": "Transitive dependencies at their patched releases",
+            "url": "https://github.com/KellisLab/Mantis/pull/4404",
+            "notes": [
+              "50th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:18:06Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4406",
+            "title": "Point geometry streams over JSON frames",
+            "url": "https://github.com/KellisLab/Mantis/pull/4406",
+            "notes": [
+              "51th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:40:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4408",
+            "title": "Composer starts and stops instantly and works on the open Space",
+            "url": "https://github.com/KellisLab/Mantis/pull/4408",
+            "notes": [
+              "52th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:40:40Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3115",
+            "title": "Stop reaches the running turn immediately",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3115",
+            "notes": [
+              "53th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:47:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3117",
+            "title": "Native Composer works with the full Mantis tool set",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3117",
+            "notes": [
+              "54th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:57:05Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4410",
+            "title": "Composer streams with a skeleton, a live caret and quiet motion",
+            "url": "https://github.com/KellisLab/Mantis/pull/4410",
+            "notes": [
+              "55th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:07:49Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3120",
+            "title": "Codex owns the thread: standing Space scope, session credential, full workspace",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3120",
+            "notes": [
+              "56th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:23:08Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4412",
+            "title": "Composer shows the user's turn the instant Send is pressed",
+            "url": "https://github.com/KellisLab/Mantis/pull/4412",
+            "notes": [
+              "57th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:29:47Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4414",
+            "title": "Composer work log shows every step in order while a turn runs",
+            "url": "https://github.com/KellisLab/Mantis/pull/4414",
+            "notes": [
+              "58th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:34:39Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4416",
+            "title": "Composer takes its colours from the Space theme and lights the input while a turn runs",
+            "url": "https://github.com/KellisLab/Mantis/pull/4416",
+            "notes": [
+              "59th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:36:01Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4418",
+            "title": "Composer work log previews each result and stays live from Send",
+            "url": "https://github.com/KellisLab/Mantis/pull/4418",
+            "notes": [
+              "60th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:05:25Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4422",
+            "title": "Deploys reclaim earlier build space before building",
+            "url": "https://github.com/KellisLab/Mantis/pull/4422",
+            "notes": [
+              "61th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:08:25Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4423",
+            "title": "Frontend deploys make room on the host before uploading",
+            "url": "https://github.com/KellisLab/Mantis/pull/4423",
+            "notes": [
+              "62th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:09:12Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3125",
+            "title": "Composer Send at Codex CLI speed: one journaled run per message",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3125",
+            "notes": [
+              "63th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:25:08Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3127",
+            "title": "Codex compacts Composer threads at 128k tokens",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3127",
+            "notes": [
+              "64th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:33:07Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4425",
+            "title": "Composer sends every message, from the welcome screen onwards",
+            "url": "https://github.com/KellisLab/Mantis/pull/4425",
+            "notes": [
+              "65th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:37:07Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4427",
+            "title": "Composer wears the Space palette: white surfaces, highlight-blue user turns",
+            "url": "https://github.com/KellisLab/Mantis/pull/4427",
+            "notes": [
+              "66th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:39:17Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4429",
+            "title": "Composer history toggle sits on the left of the header",
+            "url": "https://github.com/KellisLab/Mantis/pull/4429",
+            "notes": [
+              "67th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:46:16Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4431",
+            "title": "Composer live caret rides the last line and leaves with the run",
+            "url": "https://github.com/KellisLab/Mantis/pull/4431",
+            "notes": [
+              "68th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:50:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4433",
+            "title": "Composer model selector always names the native model with its effort choices",
+            "url": "https://github.com/KellisLab/Mantis/pull/4433",
+            "notes": [
+              "69th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:55:47Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4435",
+            "title": "Composer welcome constellation keeps moving and the thinking state shines",
+            "url": "https://github.com/KellisLab/Mantis/pull/4435",
+            "notes": [
+              "70th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:58:31Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3130",
+            "title": "Warm sessions: skills and uploads land once, effort is low or high",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3130",
+            "notes": [
+              "71th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:58:41Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4420",
+            "title": "Open tabs keep working across deploys",
+            "url": "https://github.com/KellisLab/Mantis/pull/4420",
+            "notes": [
+              "72th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:58:54Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4437",
+            "title": "Composer effort choices follow the server catalog exactly",
+            "url": "https://github.com/KellisLab/Mantis/pull/4437",
+            "notes": [
+              "73th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:08:50Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4439",
+            "title": "Slash commands on the native Composer",
+            "url": "https://github.com/KellisLab/Mantis/pull/4439",
+            "notes": [
+              "74th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:17:08Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3134",
+            "title": "Composer runs on one reasoning setting",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3134",
+            "notes": [
+              "75th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:17:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4441",
+            "title": "Composer runs on one reasoning setting",
+            "url": "https://github.com/KellisLab/Mantis/pull/4441",
+            "notes": [
+              "76th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:23:21Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4443",
+            "title": "Composer shows how much of the context window is in use",
+            "url": "https://github.com/KellisLab/Mantis/pull/4443",
+            "notes": [
+              "77th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:27:59Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3132",
+            "title": "One warm Codex app-server per workspace, shared by every chat",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3132",
+            "notes": [
+              "78th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:31:00Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3136",
+            "title": "Slash commands that reach the server answer with a system note",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3136",
+            "notes": [
+              "79th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T09:43:20Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4447",
+            "title": "One current build for every open tab",
+            "url": "https://github.com/KellisLab/Mantis/pull/4447",
+            "notes": [
+              "79th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T10:01:16Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3139",
+            "title": "Inverter averages points with missing weights as equal weights",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3139",
+            "notes": [
+              "80th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T10:04:08Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4449",
+            "title": "Lasso draws a labelled bag and leaves the Composer to its own control",
+            "url": "https://github.com/KellisLab/Mantis/pull/4449",
+            "notes": [
+              "81th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T10:04:19Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3141",
+            "title": "Bag label socket accepts the signed ticket, answer pinned by tests",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3141",
+            "notes": [
+              "82th in 24h ×0.35"
             ]
           }
         ],
@@ -6682,10 +7642,490 @@
             "notes": [
               "43th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-09-14T04:50:49Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3107",
+            "title": "A Space's filesystem exists from the first file-tree request",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3107",
+            "notes": [
+              "44th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:51:01Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4400",
+            "title": "File-tree socket stops reconnecting after a policy close",
+            "url": "https://github.com/KellisLab/Mantis/pull/4400",
+            "notes": [
+              "45th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:51:40Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3109",
+            "title": "Cluster descendants walk sorts in memory",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3109",
+            "notes": [
+              "46th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:51:55Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3111",
+            "title": "Dataset payload sizes are remembered per dataset",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3111",
+            "notes": [
+              "47th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:54:30Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3113",
+            "title": "Heavy reads stay narrow on the periodic and synthesis paths",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3113",
+            "notes": [
+              "48th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:54:34Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4402",
+            "title": "Next.js 16.3.5 with its patched image pipeline",
+            "url": "https://github.com/KellisLab/Mantis/pull/4402",
+            "notes": [
+              "49th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T04:58:55Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4404",
+            "title": "Transitive dependencies at their patched releases",
+            "url": "https://github.com/KellisLab/Mantis/pull/4404",
+            "notes": [
+              "50th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:18:06Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4406",
+            "title": "Point geometry streams over JSON frames",
+            "url": "https://github.com/KellisLab/Mantis/pull/4406",
+            "notes": [
+              "51th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:40:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4408",
+            "title": "Composer starts and stops instantly and works on the open Space",
+            "url": "https://github.com/KellisLab/Mantis/pull/4408",
+            "notes": [
+              "52th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:40:40Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3115",
+            "title": "Stop reaches the running turn immediately",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3115",
+            "notes": [
+              "53th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:47:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3117",
+            "title": "Native Composer works with the full Mantis tool set",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3117",
+            "notes": [
+              "54th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T05:57:05Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4410",
+            "title": "Composer streams with a skeleton, a live caret and quiet motion",
+            "url": "https://github.com/KellisLab/Mantis/pull/4410",
+            "notes": [
+              "55th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:07:49Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3120",
+            "title": "Codex owns the thread: standing Space scope, session credential, full workspace",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3120",
+            "notes": [
+              "56th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:23:08Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4412",
+            "title": "Composer shows the user's turn the instant Send is pressed",
+            "url": "https://github.com/KellisLab/Mantis/pull/4412",
+            "notes": [
+              "57th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:29:47Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4414",
+            "title": "Composer work log shows every step in order while a turn runs",
+            "url": "https://github.com/KellisLab/Mantis/pull/4414",
+            "notes": [
+              "58th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:34:39Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4416",
+            "title": "Composer takes its colours from the Space theme and lights the input while a turn runs",
+            "url": "https://github.com/KellisLab/Mantis/pull/4416",
+            "notes": [
+              "59th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T06:36:01Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4418",
+            "title": "Composer work log previews each result and stays live from Send",
+            "url": "https://github.com/KellisLab/Mantis/pull/4418",
+            "notes": [
+              "60th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:05:25Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4422",
+            "title": "Deploys reclaim earlier build space before building",
+            "url": "https://github.com/KellisLab/Mantis/pull/4422",
+            "notes": [
+              "61th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:08:25Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4423",
+            "title": "Frontend deploys make room on the host before uploading",
+            "url": "https://github.com/KellisLab/Mantis/pull/4423",
+            "notes": [
+              "62th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:09:12Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3125",
+            "title": "Composer Send at Codex CLI speed: one journaled run per message",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3125",
+            "notes": [
+              "63th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:25:08Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3127",
+            "title": "Codex compacts Composer threads at 128k tokens",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3127",
+            "notes": [
+              "64th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:33:07Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4425",
+            "title": "Composer sends every message, from the welcome screen onwards",
+            "url": "https://github.com/KellisLab/Mantis/pull/4425",
+            "notes": [
+              "65th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:37:07Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4427",
+            "title": "Composer wears the Space palette: white surfaces, highlight-blue user turns",
+            "url": "https://github.com/KellisLab/Mantis/pull/4427",
+            "notes": [
+              "66th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:39:17Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4429",
+            "title": "Composer history toggle sits on the left of the header",
+            "url": "https://github.com/KellisLab/Mantis/pull/4429",
+            "notes": [
+              "67th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:46:16Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4431",
+            "title": "Composer live caret rides the last line and leaves with the run",
+            "url": "https://github.com/KellisLab/Mantis/pull/4431",
+            "notes": [
+              "68th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:50:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4433",
+            "title": "Composer model selector always names the native model with its effort choices",
+            "url": "https://github.com/KellisLab/Mantis/pull/4433",
+            "notes": [
+              "69th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:55:47Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4435",
+            "title": "Composer welcome constellation keeps moving and the thinking state shines",
+            "url": "https://github.com/KellisLab/Mantis/pull/4435",
+            "notes": [
+              "70th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:58:31Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3130",
+            "title": "Warm sessions: skills and uploads land once, effort is low or high",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3130",
+            "notes": [
+              "71th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:58:41Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4420",
+            "title": "Open tabs keep working across deploys",
+            "url": "https://github.com/KellisLab/Mantis/pull/4420",
+            "notes": [
+              "72th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T07:58:54Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4437",
+            "title": "Composer effort choices follow the server catalog exactly",
+            "url": "https://github.com/KellisLab/Mantis/pull/4437",
+            "notes": [
+              "73th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:08:50Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4439",
+            "title": "Slash commands on the native Composer",
+            "url": "https://github.com/KellisLab/Mantis/pull/4439",
+            "notes": [
+              "74th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:17:08Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3134",
+            "title": "Composer runs on one reasoning setting",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3134",
+            "notes": [
+              "75th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:17:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4441",
+            "title": "Composer runs on one reasoning setting",
+            "url": "https://github.com/KellisLab/Mantis/pull/4441",
+            "notes": [
+              "76th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:23:21Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4443",
+            "title": "Composer shows how much of the context window is in use",
+            "url": "https://github.com/KellisLab/Mantis/pull/4443",
+            "notes": [
+              "77th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:27:59Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3132",
+            "title": "One warm Codex app-server per workspace, shared by every chat",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3132",
+            "notes": [
+              "78th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T08:31:00Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3136",
+            "title": "Slash commands that reach the server answer with a system note",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3136",
+            "notes": [
+              "79th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T09:43:20Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4447",
+            "title": "One current build for every open tab",
+            "url": "https://github.com/KellisLab/Mantis/pull/4447",
+            "notes": [
+              "79th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T10:01:16Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3139",
+            "title": "Inverter averages points with missing weights as equal weights",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3139",
+            "notes": [
+              "80th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T10:04:08Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4449",
+            "title": "Lasso draws a labelled bag and leaves the Composer to its own control",
+            "url": "https://github.com/KellisLab/Mantis/pull/4449",
+            "notes": [
+              "81th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-14T10:04:19Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3141",
+            "title": "Bag label socket accepts the signed ticket, answer pinned by tests",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3141",
+            "notes": [
+              "82th in 24h ×0.35"
+            ]
           }
         ]
       },
-      "rolling_total": 296,
+      "rolling_total": 465,
       "rank": 1
     },
     {
@@ -10132,7 +11572,7 @@
       ],
       "windows": {
         "7": 74,
-        "14": 209
+        "14": 205
       },
       "windowCounts": {
         "7": {
@@ -10148,13 +11588,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 19,
+          "prs": 18,
           "reviews": 1,
           "confirmed_issues": 18,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 12,
+          "issues_closed": 11,
           "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
@@ -10169,7 +11609,7 @@
           "other": 0
         },
         "14": {
-          "pr": 209,
+          "pr": 205,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -10185,8 +11625,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 209,
-          "shipping": 209,
+          "overall": 205,
+          "shipping": 205,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -10262,18 +11702,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-08-31T06:12:49Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2711",
-            "title": "fix(composer): use run-level cumulative tokens for context indicator",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2711",
-            "notes": [
-              "9th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-09-02T02:48:32Z",
             "category": "pr",
@@ -35947,18 +37375,6 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
-        "2026-09-10": {
-          "prs": 0,
-          "reviews": 2,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 2,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
         "2026-09-11": {
           "prs": 0,
           "reviews": 1,
@@ -35968,6 +37384,18 @@
           "prs_coauthored": 0,
           "issues_closed": 0,
           "review_submissions": 1,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-10": {
+          "prs": 0,
+          "reviews": 2,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
         },
