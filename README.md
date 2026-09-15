@@ -18,9 +18,9 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **510** | 103 | 0 | 105 |
-| 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **132** | 15 | 0 | 0 |
-| 3 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **124** | 11 | 0 | 2 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **119** | 12 | 1 | 15 |
+| 2 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **124** | 11 | 0 | 2 |
+| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **119** | 14 | 0 | 0 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **100** | 12 | 1 | 15 |
 | 5 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **85** | 6 | 3 | 9 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **60** | 4 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **24** | 2 | 0 | 0 |
@@ -33,7 +33,7 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **654** | 116 | 2 | 110 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **269** | 26 | 1 | 24 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **278** | 28 | 1 | 24 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **188** | 20 | 0 | 1 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **124** | 11 | 0 | 2 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **108** | 8 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 10 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
 
-_Last updated: Tue, 15 Sep 2026 21:16:26 GMT_
+_Last updated: Tue, 15 Sep 2026 23:41:03 GMT_
 <!-- LEADERBOARD:END -->
 
 
