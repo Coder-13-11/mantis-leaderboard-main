@@ -17,12 +17,12 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **454** | 90 | 0 | 97 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **488** | 98 | 0 | 100 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **130** | 13 | 0 | 0 |
 | 3 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **100** | 9 | 0 | 2 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **55** | 4 | 1 | 13 |
-| 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **43** | 3 | 0 | 0 |
-| 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **31** | 1 | 3 | 9 |
+| 4 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **85** | 6 | 3 | 9 |
+| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **68** | 5 | 1 | 13 |
+| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **43** | 3 | 0 | 0 |
 | 7 | [@edoardopanella](https://github.com/edoardopanella) | **24** | 2 | 0 | 0 |
 | 8 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **14** | 1 | 0 | 0 |
 | 9 | **Karthikeya** ([@Coder-13-11](https://github.com/Coder-13-11)) | **14** | 1 | 0 | 1 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **598** | 103 | 2 | 102 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **205** | 18 | 1 | 22 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **632** | 111 | 2 | 105 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **218** | 19 | 1 | 22 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **185** | 18 | 0 | 2 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **100** | 9 | 0 | 2 |
 | 5 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **97** | 1 | 15 | 0 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **91** | 7 | 0 | 0 |
-| 7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
-| 8 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
-| 9 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
-| 10 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
+| 7 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **85** | 6 | 3 | 9 |
+| 8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 5 | 2 | 0 |
+| 9 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
+| 10 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 
-_Last updated: Tue, 15 Sep 2026 01:53:52 GMT_
+_Last updated: Tue, 15 Sep 2026 07:39:52 GMT_
 <!-- LEADERBOARD:END -->
 
 
