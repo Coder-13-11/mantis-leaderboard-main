@@ -20,20 +20,20 @@ code / review / issues ledger.
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **510** | 103 | 0 | 105 |
 | 2 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **124** | 11 | 0 | 2 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **119** | 14 | 0 | 0 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **100** | 12 | 1 | 15 |
-| 5 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **85** | 6 | 3 | 9 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **100** | 12 | 1 | 14 |
+| 5 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **67** | 6 | 0 | 8 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **60** | 4 | 0 | 0 |
-| 7 | [@edoardopanella](https://github.com/edoardopanella) | **24** | 2 | 0 | 0 |
-| 8 | **Karthikeya** ([@Coder-13-11](https://github.com/Coder-13-11)) | **14** | 1 | 0 | 1 |
-| 9 | **Akash Gundimeda** ([@Gun-Akash](https://github.com/Gun-Akash)) | **14** | 1 | 0 | 0 |
-| 10 | **Lakshya Pandey** ([@pandeylakshya207-max](https://github.com/pandeylakshya207-max)) | **13** | 1 | 0 | 0 |
+| 7 | **Akash Gundimeda** ([@Gun-Akash](https://github.com/Gun-Akash)) | **28** | 2 | 0 | 0 |
+| 8 | [@edoardopanella](https://github.com/edoardopanella) | **24** | 2 | 0 | 0 |
+| 9 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **22** | 1 | 1 | 0 |
+| 10 | **Karthikeya** ([@Coder-13-11](https://github.com/Coder-13-11)) | **14** | 1 | 0 | 1 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **654** | 116 | 2 | 110 |
-| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **278** | 28 | 1 | 24 |
+| 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **264** | 27 | 1 | 24 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **188** | 20 | 0 | 1 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **124** | 11 | 0 | 2 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **108** | 8 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 10 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
 
-_Last updated: Tue, 15 Sep 2026 23:41:03 GMT_
+_Last updated: Wed, 16 Sep 2026 04:43:29 GMT_
 <!-- LEADERBOARD:END -->
 
 
