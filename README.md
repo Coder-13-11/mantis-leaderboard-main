@@ -17,33 +17,33 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **671** | 133 | 0 | 145 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **772** | 157 | 0 | 147 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **138** | 16 | 0 | 0 |
 | 3 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **99** | 9 | 0 | 2 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **87** | 11 | 0 | 13 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **85** | 6 | 0 | 0 |
 | 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **54** | 5 | 0 | 0 |
-| 7 | **Akash Gundimeda** ([@Gun-Akash](https://github.com/Gun-Akash)) | **28** | 2 | 0 | 0 |
-| 8 | **Lakshya Pandey** ([@pandeylakshya207-max](https://github.com/pandeylakshya207-max)) | **26** | 2 | 0 | 0 |
-| 9 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **22** | 1 | 1 | 0 |
-| 10 | **Imran Kutianawala** ([@imranmk007](https://github.com/imranmk007)) | **13** | 1 | 0 | 0 |
+| 7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **32** | 0 | 5 | 0 |
+| 8 | **Akash Gundimeda** ([@Gun-Akash](https://github.com/Gun-Akash)) | **28** | 2 | 0 | 0 |
+| 9 | **Lakshya Pandey** ([@pandeylakshya207-max](https://github.com/pandeylakshya207-max)) | **26** | 2 | 0 | 0 |
+| 10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **22** | 1 | 1 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **802** | 145 | 2 | 150 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **903** | 169 | 2 | 152 |
 | 2 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **240** | 25 | 1 | 21 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **207** | 22 | 0 | 1 |
 | 4 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **133** | 10 | 0 | 0 |
 | 5 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **124** | 11 | 0 | 2 |
 | 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **85** | 6 | 3 | 9 |
-| 7 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **85** | 0 | 15 | 0 |
+| 7 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **84** | 0 | 15 | 0 |
 | 8 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 9 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **54** | 7 | 0 | 0 |
 | 10 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
 
-_Last updated: Thu, 17 Sep 2026 05:18:14 GMT_
+_Last updated: Thu, 17 Sep 2026 10:24:22 GMT_
 <!-- LEADERBOARD:END -->
 
 
