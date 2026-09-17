@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T19:14:50.543Z",
+  "generated_at": "2026-09-17T22:25:37.938Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-17T19:13:41.512Z",
+    "run_started_at": "2026-09-17T22:24:26.032Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-17T00:00:00.000Z",
     "repos": [
@@ -93,8 +93,8 @@
     "checksum_ok": true,
     "event_counts": {
       "prs": 4017,
-      "issues": 2553,
-      "reviews": 12090,
+      "issues": 2554,
+      "reviews": 12091,
       "review_comments": 14875
     }
   },
@@ -14037,6 +14037,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-09-17": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -14268,7 +14280,7 @@
       "counts": {
         "prs": 85,
         "reviews": 1,
-        "confirmed_issues": 108,
+        "confirmed_issues": 109,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 8,
@@ -15268,7 +15280,7 @@
         "7": {
           "prs": 11,
           "reviews": 0,
-          "confirmed_issues": 13,
+          "confirmed_issues": 14,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
@@ -15280,7 +15292,7 @@
         "14": {
           "prs": 25,
           "reviews": 1,
-          "confirmed_issues": 21,
+          "confirmed_issues": 22,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
@@ -25328,7 +25340,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 54
+        "14": 22
       },
       "windowCounts": {
         "7": {
@@ -25344,7 +25356,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 7,
+          "prs": 4,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -25365,7 +25377,7 @@
           "other": 0
         },
         "14": {
-          "pr": 54,
+          "pr": 22,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -25381,8 +25393,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 54,
-          "shipping": 54,
+          "overall": 22,
+          "shipping": 22,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -25391,40 +25403,6 @@
       "windowLedger": {
         "7": [],
         "14": [
-          {
-            "at": "2026-09-03T21:47:57Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2871",
-            "title": "fix(sglang): reject over-length prompts instead of truncating them",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2871",
-            "notes": []
-          },
-          {
-            "at": "2026-09-03T21:48:04Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2872",
-            "title": "fix(hermes): restore both authed gateways — pomerium IdP creds never reach the container, telegram token never persisted",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2872",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-03T21:48:45Z",
-            "category": "pr",
-            "points": 9,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2870",
-            "title": "fix(ci): stop testuser CI artifacts from breaking the deploy checkout",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2870",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-09-03T22:31:43Z",
             "category": "pr",
@@ -33422,13 +33400,13 @@
       "windowCounts": {
         "7": {
           "prs": 0,
-          "reviews": 3,
+          "reviews": 2,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 0,
-          "review_submissions": 4,
+          "review_submissions": 3,
           "docs_prs": 0,
           "bug_prs": 0
         },
@@ -135277,7 +135255,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 12
+        "14": 0
       },
       "windowCounts": {
         "7": {
@@ -135293,7 +135271,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 1,
+          "prs": 0,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -135314,7 +135292,7 @@
           "other": 0
         },
         "14": {
-          "pr": 12,
+          "pr": 0,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -135330,8 +135308,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 12,
-          "shipping": 12,
+          "overall": 0,
+          "shipping": 0,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -135339,20 +135317,7 @@
       },
       "windowLedger": {
         "7": [],
-        "14": [
-          {
-            "at": "2026-09-03T19:35:06Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2853",
-            "title": "Nudge for walkthrough video on large PRs",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2853",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          }
-        ]
+        "14": []
       },
       "rolling_total": 0,
       "rank": 118
