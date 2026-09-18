@@ -25,7 +25,7 @@ code / review / issues ledger.
 | 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **54** | 5 | 0 | 0 |
 | 7 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **33** | 2 | 1 | 0 |
 | 8 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **32** | 0 | 5 | 0 |
-| 9 | **Akash Gundimeda** ([@Gun-Akash](https://github.com/Gun-Akash)) | **28** | 2 | 0 | 0 |
+| 9 | **Akash Gundimeda** ([@Gun-Akash](https://github.com/Gun-Akash)) | **28** | 4 | 0 | 0 |
 | 10 | **Lakshya Pandey** ([@pandeylakshya207-max](https://github.com/pandeylakshya207-max)) | **26** | 2 | 0 | 0 |
 
 #### Past 14 Days
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
 | 10 | [@Siddharthakhandelwal](https://github.com/Siddharthakhandelwal) | **37** | 3 | 0 | 0 |
 
-_Last updated: Thu, 17 Sep 2026 22:25:37 GMT_
+_Last updated: Fri, 18 Sep 2026 00:46:00 GMT_
 <!-- LEADERBOARD:END -->
 
 
