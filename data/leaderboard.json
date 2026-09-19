@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T14:45:09.578Z",
+  "generated_at": "2026-09-19T17:58:15.231Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-19T14:44:26.244Z",
+    "run_started_at": "2026-09-19T17:57:08.805Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-19T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4029,
+      "prs": 4050,
       "issues": 2561,
-      "reviews": 12149,
-      "review_comments": 14888
+      "reviews": 12191,
+      "review_comments": 14904
     }
   },
   "review_rules": {
@@ -11067,7 +11067,7 @@
     {
       "login": "SamDadmi",
       "name": "Sameeksha Dadmi",
-      "total": 410,
+      "total": 418,
       "days": {
         "2026-06-17": 11,
         "2026-06-20": 12,
@@ -11092,7 +11092,7 @@
         "2026-09-16": 19,
         "2026-09-17": 12,
         "2026-09-18": 24,
-        "2026-09-19": 8
+        "2026-09-19": 16
       },
       "dayCounts": {
         "2026-06-17": {
@@ -11384,7 +11384,7 @@
           "bug_prs": 0
         },
         "2026-09-19": {
-          "prs": 1,
+          "prs": 2,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -11607,7 +11607,7 @@
           "other": 0
         },
         "2026-09-19": {
-          "pr": 8,
+          "pr": 16,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -11615,14 +11615,14 @@
         }
       },
       "breakdown": {
-        "pr": 410,
+        "pr": 418,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 40,
+        "prs": 41,
         "reviews": 0,
         "confirmed_issues": 7,
         "fixed_bonuses": 0,
@@ -11634,7 +11634,7 @@
         "bug_prs": 0
       },
       "sizes": {
-        "XS": 7,
+        "XS": 8,
         "S": 12,
         "M": 20,
         "L": 1,
@@ -12089,15 +12089,27 @@
           "notes": [
             "3th in 24h ×0.8"
           ]
+        },
+        {
+          "at": "2026-09-19T16:52:10Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4539",
+          "title": "fix: session timeout setting not applying until page reload",
+          "url": "https://github.com/KellisLab/Mantis/pull/4539",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
         }
       ],
       "windows": {
-        "7": 145,
-        "14": 218
+        "7": 153,
+        "14": 226
       },
       "windowCounts": {
         "7": {
-          "prs": 16,
+          "prs": 17,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -12109,7 +12121,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 23,
+          "prs": 24,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -12123,14 +12135,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 145,
+          "pr": 153,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 218,
+          "pr": 226,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -12139,15 +12151,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 145,
-          "shipping": 145,
+          "overall": 153,
+          "shipping": 153,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 218,
-          "shipping": 218,
+          "overall": 226,
+          "shipping": 226,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -12341,6 +12353,18 @@
             "ref": "KellisLab/Mantis#4524",
             "title": "fix: add timeout to plugin isolate init runSync call",
             "url": "https://github.com/KellisLab/Mantis/pull/4524",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-19T16:52:10Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4539",
+            "title": "fix: session timeout setting not applying until page reload",
+            "url": "https://github.com/KellisLab/Mantis/pull/4539",
             "notes": [
               "3th in 24h ×0.8"
             ]
@@ -12614,11 +12638,1043 @@
             "notes": [
               "3th in 24h ×0.8"
             ]
+          },
+          {
+            "at": "2026-09-19T16:52:10Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4539",
+            "title": "fix: session timeout setting not applying until page reload",
+            "url": "https://github.com/KellisLab/Mantis/pull/4539",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ]
       },
-      "rolling_total": 145,
+      "rolling_total": 153,
       "rank": 2
+    },
+    {
+      "login": "PARTHANAND0009",
+      "name": "Parth Anand",
+      "total": 224,
+      "days": {
+        "2026-08-08": 11,
+        "2026-07-28": 6,
+        "2026-08-17": 10,
+        "2026-09-09": 25,
+        "2026-09-11": 24,
+        "2026-09-12": 12,
+        "2026-09-13": 39,
+        "2026-09-15": 24,
+        "2026-09-18": 23,
+        "2026-09-19": 50
+      },
+      "dayCounts": {
+        "2026-08-08": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-07-28": {
+          "prs": 0,
+          "reviews": 1,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 1,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-17": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-09": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-11": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-12": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-13": {
+          "prs": 4,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-15": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-18": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-19": {
+          "prs": 8,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-12": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-08-08": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-07-28": {
+          "pr": 0,
+          "review": 6,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-08-17": {
+          "pr": 10,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-09": {
+          "pr": 25,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-11": {
+          "pr": 24,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-12": {
+          "pr": 12,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-13": {
+          "pr": 39,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-15": {
+          "pr": 24,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-18": {
+          "pr": 23,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-19": {
+          "pr": 50,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 218,
+        "review": 6,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 23,
+        "reviews": 1,
+        "confirmed_issues": 4,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 1,
+        "issues_closed": 1,
+        "review_submissions": 1,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 4,
+        "S": 8,
+        "M": 11,
+        "L": 0,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-08-08T18:38:10Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#3426",
+          "title": "fix: prevent duplicate derived date comments in deadlines workflow (#…",
+          "url": "https://github.com/KellisLab/Mantis/pull/3426",
+          "notes": []
+        },
+        {
+          "at": "2026-07-28T18:53:00Z",
+          "category": "review",
+          "points": 6,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#3357",
+          "title": "fix(map): pass semantic zoom to bag declutter instead of raw camera zoom",
+          "url": "https://github.com/KellisLab/Mantis/pull/3357",
+          "notes": [
+            "approved"
+          ]
+        },
+        {
+          "at": "2026-08-17T20:36:23Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#3463",
+          "title": "fix: handle absolute S3 presigned URLs in CSV export download (#3459)",
+          "url": "https://github.com/KellisLab/Mantis/pull/3463",
+          "notes": []
+        },
+        {
+          "at": "2026-09-09T10:23:48Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4282",
+          "title": "fix(gradients): skip requests without finite 2D embeddings",
+          "url": "https://github.com/KellisLab/Mantis/pull/4282",
+          "notes": []
+        },
+        {
+          "at": "2026-09-09T22:46:13Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4283",
+          "title": "fix(gradients): stop polling when computation is rejected",
+          "url": "https://github.com/KellisLab/Mantis/pull/4283",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-11T09:56:42Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4327",
+          "title": "fix(map): respect editor focus in scene keyboard shortcuts",
+          "url": "https://github.com/KellisLab/Mantis/pull/4327",
+          "notes": []
+        },
+        {
+          "at": "2026-09-11T10:27:37Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4328",
+          "title": "fix(map): restore zoom after overlapping Alt-wheel gestures",
+          "url": "https://github.com/KellisLab/Mantis/pull/4328",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-12T14:37:23Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3006",
+          "title": "fix(mantis4mantis): skip pending retries without GitHub usernames",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3006",
+          "notes": []
+        },
+        {
+          "at": "2026-09-13T18:33:20Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4336",
+          "title": "fix(multimedia): keep missing CSV cells empty for special column names",
+          "url": "https://github.com/KellisLab/Mantis/pull/4336",
+          "notes": []
+        },
+        {
+          "at": "2026-09-13T18:40:51Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4359",
+          "title": "fix: make File Browser discoverable from the File menu",
+          "url": "https://github.com/KellisLab/Mantis/pull/4359",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-13T18:46:07Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4335",
+          "title": "fix(summarizer): handle string keywords without crashing",
+          "url": "https://github.com/KellisLab/Mantis/pull/4335",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-09-13T18:46:10Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4285",
+          "title": "fix(journeys): route path generation through the API proxy",
+          "url": "https://github.com/KellisLab/Mantis/pull/4285",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-09-15T09:24:56Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4471",
+          "title": "fix(synthesis): recover from failures after Strict Mode effect replay",
+          "url": "https://github.com/KellisLab/Mantis/pull/4471",
+          "notes": []
+        },
+        {
+          "at": "2026-09-15T10:57:13Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4470",
+          "title": "fix(gradients): reject malformed feature responses before updating state",
+          "url": "https://github.com/KellisLab/Mantis/pull/4470",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-18T12:05:01Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4337",
+          "title": "fix(summarizer): rank prototype-named keywords by actual frequency",
+          "url": "https://github.com/KellisLab/Mantis/pull/4337",
+          "notes": []
+        },
+        {
+          "at": "2026-09-18T21:08:42Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3018",
+          "title": "fix(synthesis): default sampling strategy for partial labeling configs",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3018",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-19T15:10:58Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4525",
+          "title": "fix: stop timing out intelligent space creation after 60s",
+          "url": "https://github.com/KellisLab/Mantis/pull/4525",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-19T15:57:38Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4526",
+          "title": "fix(composer): stop auth rejection reconnect loop",
+          "url": "https://github.com/KellisLab/Mantis/pull/4526",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-09-19T15:57:44Z",
+          "category": "pr",
+          "points": 7,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4527",
+          "title": "fix(marketing): make About source logos legible",
+          "url": "https://github.com/KellisLab/Mantis/pull/4527",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-09-19T15:58:03Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4530",
+          "title": "fix(search): show zero-result semantic search feedback",
+          "url": "https://github.com/KellisLab/Mantis/pull/4530",
+          "notes": [
+            "5th in 24h ×0.5"
+          ]
+        },
+        {
+          "at": "2026-09-19T15:58:09Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4533",
+          "title": "fix(composer): allow delayed bag persistence receipts",
+          "url": "https://github.com/KellisLab/Mantis/pull/4533",
+          "notes": [
+            "6th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-19T15:58:30Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4528",
+          "title": "fix(selection): preserve complete selection provenance",
+          "url": "https://github.com/KellisLab/Mantis/pull/4528",
+          "notes": [
+            "7th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-19T15:58:51Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4529",
+          "title": "fix(workspace): hydrate empty and late map bag state safely",
+          "url": "https://github.com/KellisLab/Mantis/pull/4529",
+          "notes": [
+            "8th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-19T16:52:12Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4538",
+          "title": "fix(composer): route View menu to floating Composer",
+          "url": "https://github.com/KellisLab/Mantis/pull/4538",
+          "notes": [
+            "9th in 24h ×0.35"
+          ]
+        }
+      ],
+      "windows": {
+        "7": 136,
+        "14": 197
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 16,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 21,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 136,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 197,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 136,
+          "shipping": 136,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 197,
+          "shipping": 197,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [
+          {
+            "at": "2026-09-13T18:33:20Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4336",
+            "title": "fix(multimedia): keep missing CSV cells empty for special column names",
+            "url": "https://github.com/KellisLab/Mantis/pull/4336",
+            "notes": []
+          },
+          {
+            "at": "2026-09-13T18:40:51Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4359",
+            "title": "fix: make File Browser discoverable from the File menu",
+            "url": "https://github.com/KellisLab/Mantis/pull/4359",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-13T18:46:07Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4335",
+            "title": "fix(summarizer): handle string keywords without crashing",
+            "url": "https://github.com/KellisLab/Mantis/pull/4335",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-13T18:46:10Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4285",
+            "title": "fix(journeys): route path generation through the API proxy",
+            "url": "https://github.com/KellisLab/Mantis/pull/4285",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-15T09:24:56Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4471",
+            "title": "fix(synthesis): recover from failures after Strict Mode effect replay",
+            "url": "https://github.com/KellisLab/Mantis/pull/4471",
+            "notes": []
+          },
+          {
+            "at": "2026-09-15T10:57:13Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4470",
+            "title": "fix(gradients): reject malformed feature responses before updating state",
+            "url": "https://github.com/KellisLab/Mantis/pull/4470",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-18T12:05:01Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4337",
+            "title": "fix(summarizer): rank prototype-named keywords by actual frequency",
+            "url": "https://github.com/KellisLab/Mantis/pull/4337",
+            "notes": []
+          },
+          {
+            "at": "2026-09-18T21:08:42Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3018",
+            "title": "fix(synthesis): default sampling strategy for partial labeling configs",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3018",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:10:58Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4525",
+            "title": "fix: stop timing out intelligent space creation after 60s",
+            "url": "https://github.com/KellisLab/Mantis/pull/4525",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:57:38Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4526",
+            "title": "fix(composer): stop auth rejection reconnect loop",
+            "url": "https://github.com/KellisLab/Mantis/pull/4526",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:57:44Z",
+            "category": "pr",
+            "points": 7,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4527",
+            "title": "fix(marketing): make About source logos legible",
+            "url": "https://github.com/KellisLab/Mantis/pull/4527",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:03Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4530",
+            "title": "fix(search): show zero-result semantic search feedback",
+            "url": "https://github.com/KellisLab/Mantis/pull/4530",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:09Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4533",
+            "title": "fix(composer): allow delayed bag persistence receipts",
+            "url": "https://github.com/KellisLab/Mantis/pull/4533",
+            "notes": [
+              "6th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:30Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4528",
+            "title": "fix(selection): preserve complete selection provenance",
+            "url": "https://github.com/KellisLab/Mantis/pull/4528",
+            "notes": [
+              "7th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:51Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4529",
+            "title": "fix(workspace): hydrate empty and late map bag state safely",
+            "url": "https://github.com/KellisLab/Mantis/pull/4529",
+            "notes": [
+              "8th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-19T16:52:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4538",
+            "title": "fix(composer): route View menu to floating Composer",
+            "url": "https://github.com/KellisLab/Mantis/pull/4538",
+            "notes": [
+              "9th in 24h ×0.35"
+            ]
+          }
+        ],
+        "14": [
+          {
+            "at": "2026-09-09T10:23:48Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4282",
+            "title": "fix(gradients): skip requests without finite 2D embeddings",
+            "url": "https://github.com/KellisLab/Mantis/pull/4282",
+            "notes": []
+          },
+          {
+            "at": "2026-09-09T22:46:13Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4283",
+            "title": "fix(gradients): stop polling when computation is rejected",
+            "url": "https://github.com/KellisLab/Mantis/pull/4283",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-11T09:56:42Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4327",
+            "title": "fix(map): respect editor focus in scene keyboard shortcuts",
+            "url": "https://github.com/KellisLab/Mantis/pull/4327",
+            "notes": []
+          },
+          {
+            "at": "2026-09-11T10:27:37Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4328",
+            "title": "fix(map): restore zoom after overlapping Alt-wheel gestures",
+            "url": "https://github.com/KellisLab/Mantis/pull/4328",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-12T14:37:23Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3006",
+            "title": "fix(mantis4mantis): skip pending retries without GitHub usernames",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3006",
+            "notes": []
+          },
+          {
+            "at": "2026-09-13T18:33:20Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4336",
+            "title": "fix(multimedia): keep missing CSV cells empty for special column names",
+            "url": "https://github.com/KellisLab/Mantis/pull/4336",
+            "notes": []
+          },
+          {
+            "at": "2026-09-13T18:40:51Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4359",
+            "title": "fix: make File Browser discoverable from the File menu",
+            "url": "https://github.com/KellisLab/Mantis/pull/4359",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-13T18:46:07Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4335",
+            "title": "fix(summarizer): handle string keywords without crashing",
+            "url": "https://github.com/KellisLab/Mantis/pull/4335",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-13T18:46:10Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4285",
+            "title": "fix(journeys): route path generation through the API proxy",
+            "url": "https://github.com/KellisLab/Mantis/pull/4285",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-15T09:24:56Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4471",
+            "title": "fix(synthesis): recover from failures after Strict Mode effect replay",
+            "url": "https://github.com/KellisLab/Mantis/pull/4471",
+            "notes": []
+          },
+          {
+            "at": "2026-09-15T10:57:13Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4470",
+            "title": "fix(gradients): reject malformed feature responses before updating state",
+            "url": "https://github.com/KellisLab/Mantis/pull/4470",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-18T12:05:01Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4337",
+            "title": "fix(summarizer): rank prototype-named keywords by actual frequency",
+            "url": "https://github.com/KellisLab/Mantis/pull/4337",
+            "notes": []
+          },
+          {
+            "at": "2026-09-18T21:08:42Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3018",
+            "title": "fix(synthesis): default sampling strategy for partial labeling configs",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3018",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:10:58Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4525",
+            "title": "fix: stop timing out intelligent space creation after 60s",
+            "url": "https://github.com/KellisLab/Mantis/pull/4525",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:57:38Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4526",
+            "title": "fix(composer): stop auth rejection reconnect loop",
+            "url": "https://github.com/KellisLab/Mantis/pull/4526",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:57:44Z",
+            "category": "pr",
+            "points": 7,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4527",
+            "title": "fix(marketing): make About source logos legible",
+            "url": "https://github.com/KellisLab/Mantis/pull/4527",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:03Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4530",
+            "title": "fix(search): show zero-result semantic search feedback",
+            "url": "https://github.com/KellisLab/Mantis/pull/4530",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:09Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4533",
+            "title": "fix(composer): allow delayed bag persistence receipts",
+            "url": "https://github.com/KellisLab/Mantis/pull/4533",
+            "notes": [
+              "6th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:30Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4528",
+            "title": "fix(selection): preserve complete selection provenance",
+            "url": "https://github.com/KellisLab/Mantis/pull/4528",
+            "notes": [
+              "7th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-19T15:58:51Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4529",
+            "title": "fix(workspace): hydrate empty and late map bag state safely",
+            "url": "https://github.com/KellisLab/Mantis/pull/4529",
+            "notes": [
+              "8th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-19T16:52:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4538",
+            "title": "fix(composer): route View menu to floating Composer",
+            "url": "https://github.com/KellisLab/Mantis/pull/4538",
+            "notes": [
+              "9th in 24h ×0.35"
+            ]
+          }
+        ]
+      },
+      "rolling_total": 136,
+      "rank": 3
     },
     {
       "login": "VihanAggarwal",
@@ -13424,7 +14480,7 @@
         ]
       },
       "rolling_total": 121,
-      "rank": 3
+      "rank": 4
     },
     {
       "login": "YakshithK",
@@ -15412,7 +16468,7 @@
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 2,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -15857,718 +16913,6 @@
             "title": "fix(embeddings): quarantine ideas without valid vectors durably",
             "url": "https://github.com/KellisLab/MantisAPI/pull/2780",
             "notes": []
-          }
-        ]
-      },
-      "rolling_total": 86,
-      "rank": 4
-    },
-    {
-      "login": "PARTHANAND0009",
-      "name": "Parth Anand",
-      "total": 174,
-      "days": {
-        "2026-08-08": 11,
-        "2026-07-28": 6,
-        "2026-08-17": 10,
-        "2026-09-09": 25,
-        "2026-09-11": 24,
-        "2026-09-12": 12,
-        "2026-09-13": 39,
-        "2026-09-15": 24,
-        "2026-09-18": 23
-      },
-      "dayCounts": {
-        "2026-08-08": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-07-28": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 1,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-17": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-09": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-11": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-12": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-13": {
-          "prs": 4,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-15": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-18": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-12": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-08-08": {
-          "pr": 11,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-07-28": {
-          "pr": 0,
-          "review": 6,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-08-17": {
-          "pr": 10,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-09": {
-          "pr": 25,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-11": {
-          "pr": 24,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-12": {
-          "pr": 12,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-13": {
-          "pr": 39,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-15": {
-          "pr": 24,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-18": {
-          "pr": 23,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 168,
-        "review": 6,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 15,
-        "reviews": 1,
-        "confirmed_issues": 4,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 1,
-        "issues_closed": 0,
-        "review_submissions": 1,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 1,
-        "S": 6,
-        "M": 8,
-        "L": 0,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-08-08T18:38:10Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#3426",
-          "title": "fix: prevent duplicate derived date comments in deadlines workflow (#…",
-          "url": "https://github.com/KellisLab/Mantis/pull/3426",
-          "notes": []
-        },
-        {
-          "at": "2026-07-28T18:53:00Z",
-          "category": "review",
-          "points": 6,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#3357",
-          "title": "fix(map): pass semantic zoom to bag declutter instead of raw camera zoom",
-          "url": "https://github.com/KellisLab/Mantis/pull/3357",
-          "notes": [
-            "approved"
-          ]
-        },
-        {
-          "at": "2026-08-17T20:36:23Z",
-          "category": "pr",
-          "points": 10,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#3463",
-          "title": "fix: handle absolute S3 presigned URLs in CSV export download (#3459)",
-          "url": "https://github.com/KellisLab/Mantis/pull/3463",
-          "notes": []
-        },
-        {
-          "at": "2026-09-09T10:23:48Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4282",
-          "title": "fix(gradients): skip requests without finite 2D embeddings",
-          "url": "https://github.com/KellisLab/Mantis/pull/4282",
-          "notes": []
-        },
-        {
-          "at": "2026-09-09T22:46:13Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4283",
-          "title": "fix(gradients): stop polling when computation is rejected",
-          "url": "https://github.com/KellisLab/Mantis/pull/4283",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-09-11T09:56:42Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4327",
-          "title": "fix(map): respect editor focus in scene keyboard shortcuts",
-          "url": "https://github.com/KellisLab/Mantis/pull/4327",
-          "notes": []
-        },
-        {
-          "at": "2026-09-11T10:27:37Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4328",
-          "title": "fix(map): restore zoom after overlapping Alt-wheel gestures",
-          "url": "https://github.com/KellisLab/Mantis/pull/4328",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-09-12T14:37:23Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#3006",
-          "title": "fix(mantis4mantis): skip pending retries without GitHub usernames",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/3006",
-          "notes": []
-        },
-        {
-          "at": "2026-09-13T18:33:20Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4336",
-          "title": "fix(multimedia): keep missing CSV cells empty for special column names",
-          "url": "https://github.com/KellisLab/Mantis/pull/4336",
-          "notes": []
-        },
-        {
-          "at": "2026-09-13T18:40:51Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4359",
-          "title": "fix: make File Browser discoverable from the File menu",
-          "url": "https://github.com/KellisLab/Mantis/pull/4359",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-09-13T18:46:07Z",
-          "category": "pr",
-          "points": 9,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4335",
-          "title": "fix(summarizer): handle string keywords without crashing",
-          "url": "https://github.com/KellisLab/Mantis/pull/4335",
-          "notes": [
-            "3th in 24h ×0.8"
-          ]
-        },
-        {
-          "at": "2026-09-13T18:46:10Z",
-          "category": "pr",
-          "points": 8,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4285",
-          "title": "fix(journeys): route path generation through the API proxy",
-          "url": "https://github.com/KellisLab/Mantis/pull/4285",
-          "notes": [
-            "4th in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-09-15T09:24:56Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4471",
-          "title": "fix(synthesis): recover from failures after Strict Mode effect replay",
-          "url": "https://github.com/KellisLab/Mantis/pull/4471",
-          "notes": []
-        },
-        {
-          "at": "2026-09-15T10:57:13Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4470",
-          "title": "fix(gradients): reject malformed feature responses before updating state",
-          "url": "https://github.com/KellisLab/Mantis/pull/4470",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-09-18T12:05:01Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4337",
-          "title": "fix(summarizer): rank prototype-named keywords by actual frequency",
-          "url": "https://github.com/KellisLab/Mantis/pull/4337",
-          "notes": []
-        },
-        {
-          "at": "2026-09-18T21:08:42Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#3018",
-          "title": "fix(synthesis): default sampling strategy for partial labeling configs",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/3018",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        }
-      ],
-      "windows": {
-        "7": 86,
-        "14": 147
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 8,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 13,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 86,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 147,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 86,
-          "shipping": 86,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 147,
-          "shipping": 147,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [
-          {
-            "at": "2026-09-13T18:33:20Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4336",
-            "title": "fix(multimedia): keep missing CSV cells empty for special column names",
-            "url": "https://github.com/KellisLab/Mantis/pull/4336",
-            "notes": []
-          },
-          {
-            "at": "2026-09-13T18:40:51Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4359",
-            "title": "fix: make File Browser discoverable from the File menu",
-            "url": "https://github.com/KellisLab/Mantis/pull/4359",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-13T18:46:07Z",
-            "category": "pr",
-            "points": 9,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4335",
-            "title": "fix(summarizer): handle string keywords without crashing",
-            "url": "https://github.com/KellisLab/Mantis/pull/4335",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-09-13T18:46:10Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4285",
-            "title": "fix(journeys): route path generation through the API proxy",
-            "url": "https://github.com/KellisLab/Mantis/pull/4285",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-15T09:24:56Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4471",
-            "title": "fix(synthesis): recover from failures after Strict Mode effect replay",
-            "url": "https://github.com/KellisLab/Mantis/pull/4471",
-            "notes": []
-          },
-          {
-            "at": "2026-09-15T10:57:13Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4470",
-            "title": "fix(gradients): reject malformed feature responses before updating state",
-            "url": "https://github.com/KellisLab/Mantis/pull/4470",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-18T12:05:01Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4337",
-            "title": "fix(summarizer): rank prototype-named keywords by actual frequency",
-            "url": "https://github.com/KellisLab/Mantis/pull/4337",
-            "notes": []
-          },
-          {
-            "at": "2026-09-18T21:08:42Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3018",
-            "title": "fix(synthesis): default sampling strategy for partial labeling configs",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3018",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          }
-        ],
-        "14": [
-          {
-            "at": "2026-09-09T10:23:48Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4282",
-            "title": "fix(gradients): skip requests without finite 2D embeddings",
-            "url": "https://github.com/KellisLab/Mantis/pull/4282",
-            "notes": []
-          },
-          {
-            "at": "2026-09-09T22:46:13Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4283",
-            "title": "fix(gradients): stop polling when computation is rejected",
-            "url": "https://github.com/KellisLab/Mantis/pull/4283",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-11T09:56:42Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4327",
-            "title": "fix(map): respect editor focus in scene keyboard shortcuts",
-            "url": "https://github.com/KellisLab/Mantis/pull/4327",
-            "notes": []
-          },
-          {
-            "at": "2026-09-11T10:27:37Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4328",
-            "title": "fix(map): restore zoom after overlapping Alt-wheel gestures",
-            "url": "https://github.com/KellisLab/Mantis/pull/4328",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-12T14:37:23Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3006",
-            "title": "fix(mantis4mantis): skip pending retries without GitHub usernames",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3006",
-            "notes": []
-          },
-          {
-            "at": "2026-09-13T18:33:20Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4336",
-            "title": "fix(multimedia): keep missing CSV cells empty for special column names",
-            "url": "https://github.com/KellisLab/Mantis/pull/4336",
-            "notes": []
-          },
-          {
-            "at": "2026-09-13T18:40:51Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4359",
-            "title": "fix: make File Browser discoverable from the File menu",
-            "url": "https://github.com/KellisLab/Mantis/pull/4359",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-13T18:46:07Z",
-            "category": "pr",
-            "points": 9,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4335",
-            "title": "fix(summarizer): handle string keywords without crashing",
-            "url": "https://github.com/KellisLab/Mantis/pull/4335",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-09-13T18:46:10Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4285",
-            "title": "fix(journeys): route path generation through the API proxy",
-            "url": "https://github.com/KellisLab/Mantis/pull/4285",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-15T09:24:56Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4471",
-            "title": "fix(synthesis): recover from failures after Strict Mode effect replay",
-            "url": "https://github.com/KellisLab/Mantis/pull/4471",
-            "notes": []
-          },
-          {
-            "at": "2026-09-15T10:57:13Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4470",
-            "title": "fix(gradients): reject malformed feature responses before updating state",
-            "url": "https://github.com/KellisLab/Mantis/pull/4470",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-18T12:05:01Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4337",
-            "title": "fix(summarizer): rank prototype-named keywords by actual frequency",
-            "url": "https://github.com/KellisLab/Mantis/pull/4337",
-            "notes": []
-          },
-          {
-            "at": "2026-09-18T21:08:42Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3018",
-            "title": "fix(synthesis): default sampling strategy for partial labeling configs",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3018",
-            "notes": [
-              "2th in 24h ×1"
-            ]
           }
         ]
       },
