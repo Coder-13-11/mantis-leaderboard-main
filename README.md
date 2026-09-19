@@ -19,9 +19,9 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **829** | 171 | 0 | 147 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **137** | 15 | 0 | 0 |
-| 3 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **98** | 9 | 0 | 2 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **86** | 11 | 0 | 13 |
-| 5 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **78** | 7 | 0 | 0 |
+| 3 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **116** | 13 | 0 | 0 |
+| 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **98** | 9 | 0 | 2 |
+| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **86** | 11 | 0 | 13 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **66** | 5 | 0 | 0 |
 | 7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **36** | 0 | 5 | 0 |
 | 8 | [@Siddharthakhandelwal](https://github.com/Siddharthakhandelwal) | **26** | 2 | 0 | 0 |
@@ -36,14 +36,14 @@ code / review / issues ledger.
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **232** | 24 | 0 | 0 |
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **217** | 23 | 1 | 22 |
 | 4 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **157** | 12 | 0 | 0 |
-| 5 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **147** | 13 | 0 | 2 |
-| 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **109** | 8 | 3 | 9 |
+| 5 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **147** | 14 | 3 | 9 |
+| 6 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **147** | 13 | 0 | 2 |
 | 7 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **83** | 0 | 15 | 0 |
 | 8 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
 | 9 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
 | 10 | [@Siddharthakhandelwal](https://github.com/Siddharthakhandelwal) | **50** | 4 | 0 | 0 |
 
-_Last updated: Fri, 18 Sep 2026 23:34:09 GMT_
+_Last updated: Sat, 19 Sep 2026 01:33:43 GMT_
 <!-- LEADERBOARD:END -->
 
 
