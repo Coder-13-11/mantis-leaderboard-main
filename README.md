@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **829** | 171 | 0 | 147 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **792** | 168 | 0 | 131 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **153** | 17 | 0 | 0 |
 | 3 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **136** | 16 | 0 | 2 |
 | 4 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **121** | 14 | 0 | 0 |
@@ -34,7 +34,7 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **871** | 172 | 2 | 147 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **226** | 24 | 0 | 0 |
-| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **217** | 23 | 1 | 22 |
+| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **217** | 23 | 1 | 20 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **197** | 21 | 0 | 2 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **157** | 12 | 0 | 0 |
 | 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **152** | 15 | 3 | 9 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | [@Siddharthakhandelwal](https://github.com/Siddharthakhandelwal) | **50** | 4 | 0 | 0 |
 | 10 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 1 | 0 |
 
-_Last updated: Sat, 19 Sep 2026 20:34:11 GMT_
+_Last updated: Sat, 19 Sep 2026 22:29:11 GMT_
 <!-- LEADERBOARD:END -->
 
 
