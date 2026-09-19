@@ -18,7 +18,7 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **829** | 171 | 0 | 147 |
-| 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **137** | 15 | 0 | 0 |
+| 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **145** | 16 | 0 | 0 |
 | 3 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **121** | 14 | 0 | 0 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **98** | 9 | 0 | 2 |
 | 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **86** | 11 | 0 | 11 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **882** | 173 | 2 | 149 |
-| 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **232** | 24 | 0 | 0 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **871** | 172 | 2 | 147 |
+| 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **218** | 23 | 0 | 0 |
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **217** | 23 | 1 | 22 |
 | 4 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **157** | 12 | 0 | 0 |
 | 5 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **152** | 15 | 3 | 9 |
 | 6 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **147** | 13 | 0 | 2 |
 | 7 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **83** | 0 | 15 | 0 |
 | 8 | **Aditya Bhaskar** ([@Zopu23](https://github.com/Zopu23)) | **56** | 4 | 0 | 0 |
-| 9 | [@edoardopanella](https://github.com/edoardopanella) | **52** | 4 | 1 | 0 |
-| 10 | [@Siddharthakhandelwal](https://github.com/Siddharthakhandelwal) | **50** | 4 | 0 | 0 |
+| 9 | [@Siddharthakhandelwal](https://github.com/Siddharthakhandelwal) | **50** | 4 | 0 | 0 |
+| 10 | [@edoardopanella](https://github.com/edoardopanella) | **38** | 3 | 1 | 0 |
 
-_Last updated: Sat, 19 Sep 2026 06:34:28 GMT_
+_Last updated: Sat, 19 Sep 2026 11:29:56 GMT_
 <!-- LEADERBOARD:END -->
 
 
