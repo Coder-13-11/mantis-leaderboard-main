@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T10:05:28.603Z",
+  "generated_at": "2026-09-20T14:11:53.838Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-20T10:04:26.755Z",
+    "run_started_at": "2026-09-20T14:10:45.294Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-20T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4073,
+      "prs": 4080,
       "issues": 2565,
-      "reviews": 12267,
-      "review_comments": 14929
+      "reviews": 12279,
+      "review_comments": 14931
     }
   },
   "review_rules": {
@@ -13346,12 +13346,12 @@
         }
       ],
       "windows": {
-        "7": 152,
+        "7": 141,
         "14": 236
       },
       "windowCounts": {
         "7": {
-          "prs": 17,
+          "prs": 16,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -13377,7 +13377,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 152,
+          "pr": 141,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -13393,8 +13393,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 152,
-          "shipping": 152,
+          "overall": 141,
+          "shipping": 141,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -13409,18 +13409,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-13T13:59:48Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4360",
-            "title": "Fix: clamp TableTab pagination to valid range after selection changes",
-            "url": "https://github.com/KellisLab/Mantis/pull/4360",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
           {
             "at": "2026-09-14T13:27:30Z",
             "category": "pr",
@@ -13909,7 +13897,7 @@
           }
         ]
       },
-      "rolling_total": 152,
+      "rolling_total": 141,
       "rank": 3
     },
     {
@@ -14721,7 +14709,7 @@
     {
       "login": "PranavaKCode",
       "name": "Pranava Kumar",
-      "total": 1403,
+      "total": 1412,
       "days": {
         "2026-03-23": 23,
         "2026-03-25": 13,
@@ -14748,7 +14736,7 @@
         "2026-08-29": 41,
         "2026-08-30": 73,
         "2026-09-09": 12,
-        "2026-09-20": 103
+        "2026-09-20": 112
       },
       "dayCounts": {
         "2026-03-23": {
@@ -15148,13 +15136,13 @@
           "bug_prs": 0
         },
         "2026-09-20": {
-          "prs": 18,
+          "prs": 20,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 8,
-          "issues_closed": 2,
+          "issues_closed": 6,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -15373,7 +15361,7 @@
           "other": 0
         },
         "2026-09-20": {
-          "pr": 103,
+          "pr": 112,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -15381,20 +15369,20 @@
         }
       },
       "breakdown": {
-        "pr": 1354,
+        "pr": 1363,
         "review": 9,
         "issue": 0,
         "docs": 40,
         "other": 0
       },
       "counts": {
-        "prs": 250,
+        "prs": 252,
         "reviews": 3,
         "confirmed_issues": 12,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 29,
-        "issues_closed": 66,
+        "issues_closed": 70,
         "review_submissions": 3,
         "docs_prs": 5,
         "bug_prs": 0
@@ -15402,8 +15390,8 @@
       "sizes": {
         "XS": 8,
         "S": 53,
-        "M": 158,
-        "L": 26,
+        "M": 159,
+        "L": 27,
         "XL": 5
       },
       "contributions": [],
@@ -18392,33 +18380,57 @@
           "notes": [
             "18th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-09-20T13:03:50Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3291",
+          "title": "fix(action-items): skip rate-limited sync without failing mirrors",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3291",
+          "notes": [
+            "19th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-20T14:05:52Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3292",
+          "title": "Add bounded math corpus profiling service",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3292",
+          "notes": [
+            "20th in 24h ×0.35"
+          ]
         }
       ],
       "windows": {
-        "7": 103,
-        "14": 115
+        "7": 112,
+        "14": 124
       },
       "windowCounts": {
         "7": {
-          "prs": 18,
+          "prs": 20,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 9,
-          "issues_closed": 3,
+          "issues_closed": 7,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 19,
+          "prs": 21,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 9,
-          "issues_closed": 3,
+          "issues_closed": 7,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -18426,14 +18438,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 103,
+          "pr": 112,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 115,
+          "pr": 124,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -18442,15 +18454,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 103,
-          "shipping": 103,
+          "overall": 112,
+          "shipping": 112,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 115,
-          "shipping": 115,
+          "overall": 124,
+          "shipping": 124,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -18670,6 +18682,30 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/3290",
             "notes": [
               "18th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-20T13:03:50Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3291",
+            "title": "fix(action-items): skip rate-limited sync without failing mirrors",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3291",
+            "notes": [
+              "19th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-20T14:05:52Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3292",
+            "title": "Add bounded math corpus profiling service",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3292",
+            "notes": [
+              "20th in 24h ×0.35"
             ]
           }
         ],
@@ -18897,10 +18933,34 @@
             "notes": [
               "18th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-09-20T13:03:50Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3291",
+            "title": "fix(action-items): skip rate-limited sync without failing mirrors",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3291",
+            "notes": [
+              "19th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-20T14:05:52Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3292",
+            "title": "Add bounded math corpus profiling service",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3292",
+            "notes": [
+              "20th in 24h ×0.35"
+            ]
           }
         ]
       },
-      "rolling_total": 103,
+      "rolling_total": 112,
       "rank": 5
     },
     {
@@ -21333,7 +21393,7 @@
     {
       "login": "shubhrasingh-24",
       "name": "Shubhra Singh",
-      "total": 195,
+      "total": 209,
       "days": {
         "2026-08-25": 13,
         "2026-08-27": 12,
@@ -21344,7 +21404,8 @@
         "2026-09-11": 13,
         "2026-09-15": 17,
         "2026-09-16": 25,
-        "2026-09-18": 24
+        "2026-09-18": 24,
+        "2026-09-20": 14
       },
       "dayCounts": {
         "2026-08-25": {
@@ -21467,6 +21528,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-09-20": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-08-05": {
           "prs": 0,
           "reviews": 0,
@@ -21550,23 +21623,30 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-09-20": {
+          "pr": 14,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 195,
+        "pr": 209,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 15,
+        "prs": 16,
         "reviews": 0,
         "confirmed_issues": 1,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 1,
-        "issues_closed": 1,
+        "issues_closed": 2,
         "review_submissions": 0,
         "docs_prs": 0,
         "bug_prs": 3
@@ -21575,7 +21655,7 @@
         "XS": 0,
         "S": 1,
         "M": 8,
-        "L": 4,
+        "L": 5,
         "XL": 2
       },
       "contributions": [],
@@ -21750,27 +21830,25 @@
           "notes": [
             "2th in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-09-20T10:44:36Z",
+          "category": "pr",
+          "points": 14,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3264",
+          "title": "Composer agent tools: complete #3242",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3264",
+          "notes": []
         }
       ],
       "windows": {
-        "7": 66,
-        "14": 157
+        "7": 80,
+        "14": 171
       },
       "windowCounts": {
         "7": {
-          "prs": 5,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 1
-        },
-        "14": {
-          "prs": 12,
+          "prs": 6,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -21779,19 +21857,31 @@
           "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
+          "bug_prs": 1
+        },
+        "14": {
+          "prs": 13,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 2,
+          "review_submissions": 0,
+          "docs_prs": 0,
           "bug_prs": 3
         }
       },
       "windowBreakdown": {
         "7": {
-          "pr": 66,
+          "pr": 80,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 157,
+          "pr": 171,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -21800,15 +21890,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 66,
-          "shipping": 66,
+          "overall": 80,
+          "shipping": 80,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 157,
-          "shipping": 157,
+          "overall": 171,
+          "shipping": 171,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -21873,6 +21963,16 @@
             "notes": [
               "2th in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-09-20T10:44:36Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3264",
+            "title": "Composer agent tools: complete #3242",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3264",
+            "notes": []
           }
         ],
         "14": [
@@ -22014,10 +22114,20 @@
             "notes": [
               "2th in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-09-20T10:44:36Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3264",
+            "title": "Composer agent tools: complete #3242",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3264",
+            "notes": []
           }
         ]
       },
-      "rolling_total": 66,
+      "rolling_total": 80,
       "rank": 7
     },
     {
@@ -23698,7 +23808,7 @@
       ],
       "windows": {
         "7": 26,
-        "14": 50
+        "14": 39
       },
       "windowCounts": {
         "7": {
@@ -23714,7 +23824,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 4,
+          "prs": 3,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -23735,7 +23845,7 @@
           "other": 0
         },
         "14": {
-          "pr": 50,
+          "pr": 39,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -23751,8 +23861,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 50,
-          "shipping": 50,
+          "overall": 39,
+          "shipping": 39,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -23784,16 +23894,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-06T14:00:31Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4223",
-            "title": "Clustering name mismatch",
-            "url": "https://github.com/KellisLab/Mantis/pull/4223",
-            "notes": []
-          },
           {
             "at": "2026-09-06T16:00:07Z",
             "category": "pr",
@@ -30275,13 +30375,13 @@
         },
         "14": {
           "prs": 1,
-          "reviews": 6,
+          "reviews": 5,
           "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
           "issues_closed": 1,
-          "review_submissions": 8,
+          "review_submissions": 7,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -46155,7 +46255,7 @@
         "7": {
           "prs": 1,
           "reviews": 0,
-          "confirmed_issues": 5,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
