@@ -26,24 +26,24 @@ code / review / issues ledger.
 | 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **80** | 6 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 1 | 1 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
-| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **29** | 3 | 0 | 3 |
+| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **37** | 4 | 0 | 4 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1083** | 214 | 2 | 188 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1053** | 214 | 0 | 188 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **259** | 28 | 0 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **240** | 48 | 0 | 28 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **233** | 28 | 0 | 2 |
-| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **173** | 18 | 1 | 18 |
+| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **154** | 16 | 1 | 19 |
 | 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **152** | 15 | 3 | 9 |
 | 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **123** | 9 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 5 | 1 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
-| 10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **33** | 2 | 1 | 0 |
+| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **37** | 4 | 0 | 4 |
 
-_Last updated: Mon, 21 Sep 2026 19:22:59 GMT_
+_Last updated: Mon, 21 Sep 2026 22:49:05 GMT_
 <!-- LEADERBOARD:END -->
 
 

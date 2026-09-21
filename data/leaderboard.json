@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:22:59.294Z",
+  "generated_at": "2026-09-21T22:49:05.859Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-21T19:21:46.760Z",
+    "run_started_at": "2026-09-21T22:47:54.034Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-21T00:00:00.000Z",
     "repos": [
@@ -87,16 +87,15 @@
     ],
     "warnings": [
       "discovery added 1 repo(s): KellisLab/MantisDiscovery",
-      "KellisLab/mantis-docs is in config and matches discovery patterns but was not returned by the org listing — token may not see it",
-      "KellisLab/MantisAPI pullRequests page 1 not UPDATED_AT-monotonic; not stopping early"
+      "KellisLab/mantis-docs is in config and matches discovery patterns but was not returned by the org listing — token may not see it"
     ],
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4112,
-      "issues": 2614,
-      "reviews": 12506,
-      "review_comments": 14770
+      "prs": 4115,
+      "issues": 2621,
+      "reviews": 12512,
+      "review_comments": 14771
     }
   },
   "review_rules": {
@@ -7414,7 +7413,7 @@
       ],
       "windows": {
         "7": 618,
-        "14": 1083
+        "14": 1053
       },
       "windowCounts": {
         "7": {
@@ -7431,13 +7430,13 @@
         },
         "14": {
           "prs": 214,
-          "reviews": 2,
+          "reviews": 0,
           "confirmed_issues": 188,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
           "issues_closed": 168,
-          "review_submissions": 2,
+          "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -7452,7 +7451,7 @@
         },
         "14": {
           "pr": 1053,
-          "review": 30,
+          "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -7467,9 +7466,9 @@
           "docs": 0
         },
         "14": {
-          "overall": 1083,
+          "overall": 1053,
           "shipping": 1053,
-          "review": 30,
+          "review": 0,
           "bugs": 0,
           "docs": 0
         }
@@ -9010,21 +9009,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-07T21:25:09Z",
-            "category": "review",
-            "points": 17,
-            "kind": "review",
-            "ref": "KellisLab/MantisAPI#2937",
-            "title": "feat: pseudobulk differential expression analysis (matrix.pseudobulk_deg operator)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2937",
-            "notes": [
-              "changes requested",
-              "inline comments",
-              "nontrivial PR",
-              "change addressed"
-            ]
-          },
           {
             "at": "2026-09-12T20:59:50Z",
             "category": "pr",
@@ -11561,21 +11545,6 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4599",
             "notes": [
               "41th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-07T21:25:11Z",
-            "category": "review",
-            "points": 13,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4264",
-            "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
-            "url": "https://github.com/KellisLab/Mantis/pull/4264",
-            "notes": [
-              "changes requested",
-              "inline comments",
-              "nontrivial PR",
-              "2th review in 24h ×1"
             ]
           },
           {
@@ -21393,7 +21362,7 @@
         "2026-09-21": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 2,
+          "confirmed_issues": 3,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -21646,7 +21615,7 @@
       "counts": {
         "prs": 87,
         "reviews": 1,
-        "confirmed_issues": 111,
+        "confirmed_issues": 112,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 8,
@@ -22660,7 +22629,7 @@
       ],
       "windows": {
         "7": 99,
-        "14": 173
+        "14": 154
       },
       "windowCounts": {
         "7": {
@@ -22676,13 +22645,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 18,
+          "prs": 16,
           "reviews": 1,
-          "confirmed_issues": 18,
+          "confirmed_issues": 19,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
-          "issues_closed": 7,
+          "issues_closed": 5,
           "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
@@ -22697,7 +22666,7 @@
           "other": 0
         },
         "14": {
-          "pr": 173,
+          "pr": 154,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -22713,8 +22682,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 173,
-          "shipping": 173,
+          "overall": 154,
+          "shipping": 154,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -22862,30 +22831,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-07T19:27:53Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2925",
-            "title": "Replace KG snapshot injection with an unconditional query hint",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2925",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-09-07T19:32:44Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4261",
-            "title": "Remove the composer KG toggle button, always send active_map_id",
-            "url": "https://github.com/KellisLab/Mantis/pull/4261",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
           {
             "at": "2026-09-08T22:53:56Z",
             "category": "pr",
@@ -29914,15 +29859,15 @@
     {
       "login": "VatsalDesai152",
       "name": "Vatsal Desai",
-      "total": 29,
+      "total": 37,
       "days": {
-        "2026-09-21": 29
+        "2026-09-21": 37
       },
       "dayCounts": {
         "2026-09-21": {
-          "prs": 3,
+          "prs": 4,
           "reviews": 0,
-          "confirmed_issues": 3,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -29946,7 +29891,7 @@
       },
       "dayBreakdown": {
         "2026-09-21": {
-          "pr": 29,
+          "pr": 37,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -29954,16 +29899,16 @@
         }
       },
       "breakdown": {
-        "pr": 29,
+        "pr": 37,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 3,
+        "prs": 4,
         "reviews": 0,
-        "confirmed_issues": 4,
+        "confirmed_issues": 5,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 0,
@@ -29975,7 +29920,7 @@
       "sizes": {
         "XS": 1,
         "S": 2,
-        "M": 0,
+        "M": 1,
         "L": 0,
         "XL": 0
       },
@@ -30014,17 +29959,29 @@
           "notes": [
             "3th in 24h ×0.8"
           ]
+        },
+        {
+          "at": "2026-09-21T20:13:09Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4615",
+          "title": "multiple small optimization for string normalization",
+          "url": "https://github.com/KellisLab/Mantis/pull/4615",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
         }
       ],
       "windows": {
-        "7": 29,
-        "14": 29
+        "7": 37,
+        "14": 37
       },
       "windowCounts": {
         "7": {
-          "prs": 3,
+          "prs": 4,
           "reviews": 0,
-          "confirmed_issues": 3,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -30034,9 +29991,9 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 3,
+          "prs": 4,
           "reviews": 0,
-          "confirmed_issues": 3,
+          "confirmed_issues": 4,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -30048,14 +30005,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 29,
+          "pr": 37,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 29,
+          "pr": 37,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -30064,15 +30021,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 29,
-          "shipping": 29,
+          "overall": 37,
+          "shipping": 37,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 29,
-          "shipping": 29,
+          "overall": 37,
+          "shipping": 37,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -30113,6 +30070,18 @@
             "notes": [
               "3th in 24h ×0.8"
             ]
+          },
+          {
+            "at": "2026-09-21T20:13:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4615",
+            "title": "multiple small optimization for string normalization",
+            "url": "https://github.com/KellisLab/Mantis/pull/4615",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
           }
         ],
         "14": [
@@ -30149,10 +30118,22 @@
             "notes": [
               "3th in 24h ×0.8"
             ]
+          },
+          {
+            "at": "2026-09-21T20:13:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4615",
+            "title": "multiple small optimization for string normalization",
+            "url": "https://github.com/KellisLab/Mantis/pull/4615",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
           }
         ]
       },
-      "rolling_total": 29,
+      "rolling_total": 37,
       "rank": 10
     },
     {
@@ -35541,7 +35522,7 @@
         "7": {
           "prs": 1,
           "reviews": 0,
-          "confirmed_issues": 1,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -89588,6 +89569,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-09-21": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -90099,11 +90092,11 @@
       "counts": {
         "prs": 159,
         "reviews": 67,
-        "confirmed_issues": 19,
+        "confirmed_issues": 20,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 28,
-        "issues_closed": 20,
+        "issues_closed": 21,
         "review_submissions": 74,
         "docs_prs": 7,
         "bug_prs": 0
@@ -92077,11 +92070,11 @@
         "7": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 0,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -92089,11 +92082,11 @@
         "14": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 0,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 1,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -145247,7 +145240,7 @@
         "7": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 2,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -145481,7 +145474,7 @@
         "7": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 1,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
