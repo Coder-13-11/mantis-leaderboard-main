@@ -17,16 +17,16 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **578** | 119 | 0 | 94 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **556** | 114 | 0 | 89 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **228** | 47 | 0 | 28 |
-| 3 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **133** | 19 | 0 | 0 |
-| 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **129** | 15 | 0 | 0 |
-| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **122** | 14 | 0 | 6 |
+| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **121** | 13 | 0 | 0 |
+| 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **109** | 17 | 0 | 0 |
+| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **90** | 11 | 0 | 6 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **80** | 6 | 0 | 0 |
 | 7 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **67** | 9 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 1 | 1 |
-| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
-| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **37** | 4 | 0 | 4 |
+| 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **43** | 5 | 0 | 5 |
+| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
 
 #### Past 14 Days
 
@@ -40,10 +40,10 @@ code / review / issues ledger.
 | 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **152** | 15 | 3 | 9 |
 | 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **123** | 9 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 5 | 1 |
-| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
-| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **37** | 4 | 0 | 4 |
+| 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **43** | 5 | 0 | 5 |
+| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
 
-_Last updated: Tue, 22 Sep 2026 06:47:15 GMT_
+_Last updated: Tue, 22 Sep 2026 12:34:20 GMT_
 <!-- LEADERBOARD:END -->
 
 
