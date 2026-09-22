@@ -17,12 +17,12 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **618** | 128 | 0 | 98 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **612** | 127 | 0 | 97 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **228** | 47 | 0 | 28 |
-| 3 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **133** | 19 | 0 | 0 |
-| 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **129** | 15 | 0 | 0 |
-| 5 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **121** | 14 | 0 | 0 |
-| 6 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **99** | 12 | 0 | 9 |
+| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **135** | 15 | 0 | 6 |
+| 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **133** | 19 | 0 | 0 |
+| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **129** | 15 | 0 | 0 |
+| 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **121** | 14 | 0 | 0 |
 | 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **80** | 6 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 1 | 1 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1053** | 214 | 0 | 188 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1066** | 217 | 0 | 191 |
 | 2 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **259** | 28 | 0 | 0 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **240** | 48 | 0 | 28 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **233** | 28 | 0 | 2 |
-| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **154** | 16 | 1 | 19 |
+| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **190** | 19 | 1 | 19 |
 | 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **152** | 15 | 3 | 9 |
 | 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **123** | 9 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 5 | 1 |
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **42** | 0 | 6 | 0 |
 | 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **37** | 4 | 0 | 4 |
 
-_Last updated: Mon, 21 Sep 2026 22:49:05 GMT_
+_Last updated: Tue, 22 Sep 2026 01:35:52 GMT_
 <!-- LEADERBOARD:END -->
 
 
