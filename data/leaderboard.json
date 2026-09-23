@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T07:42:43.947Z",
+  "generated_at": "2026-09-23T13:36:31.720Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-23T07:41:24.351Z",
+    "run_started_at": "2026-09-23T13:35:20.398Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-23T00:00:00.000Z",
     "repos": [
@@ -94,7 +94,7 @@
     "event_counts": {
       "prs": 4147,
       "issues": 2633,
-      "reviews": 12593,
+      "reviews": 12630,
       "review_comments": 14812
     }
   },
@@ -18117,12 +18117,12 @@
         }
       ],
       "windows": {
-        "7": 128,
+        "7": 120,
         "14": 247
       },
       "windowCounts": {
         "7": {
-          "prs": 13,
+          "prs": 12,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -18148,7 +18148,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 128,
+          "pr": 120,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -18164,8 +18164,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 128,
-          "shipping": 128,
+          "overall": 120,
+          "shipping": 120,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -18180,18 +18180,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-16T08:18:27Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4483",
-            "title": "fix: sync notebook with Composer edits without manual reopen",
-            "url": "https://github.com/KellisLab/Mantis/pull/4483",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
           {
             "at": "2026-09-16T19:29:53Z",
             "category": "pr",
@@ -18660,7 +18648,7 @@
           }
         ]
       },
-      "rolling_total": 128,
+      "rolling_total": 120,
       "rank": 3
     },
     {
@@ -19310,7 +19298,7 @@
       ],
       "windows": {
         "7": 109,
-        "14": 233
+        "14": 220
       },
       "windowCounts": {
         "7": {
@@ -19326,7 +19314,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 28,
+          "prs": 27,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
@@ -19347,7 +19335,7 @@
           "other": 0
         },
         "14": {
-          "pr": 233,
+          "pr": 220,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -19363,8 +19351,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 233,
-          "shipping": 233,
+          "overall": 220,
+          "shipping": 220,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -19574,16 +19562,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-09T10:23:48Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4282",
-            "title": "fix(gradients): skip requests without finite 2D embeddings",
-            "url": "https://github.com/KellisLab/Mantis/pull/4282",
-            "notes": []
-          },
           {
             "at": "2026-09-09T22:46:13Z",
             "category": "pr",
@@ -19900,6 +19878,738 @@
       },
       "rolling_total": 109,
       "rank": 4
+    },
+    {
+      "login": "Penguinz3",
+      "name": "Anikait Rana",
+      "total": 151,
+      "days": {
+        "2026-08-19": 42,
+        "2026-08-23": 13,
+        "2026-09-06": 11,
+        "2026-09-20": 13,
+        "2026-09-23": 72
+      },
+      "dayCounts": {
+        "2026-08-09": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-13": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-14": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-18": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-19": {
+          "prs": 4,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-20": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-23": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-26": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-06": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-20": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-23": {
+          "prs": 10,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-08-19": {
+          "pr": 42,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-08-23": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-06": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-20": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-23": {
+          "pr": 72,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 151,
+        "review": 0,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 19,
+        "reviews": 0,
+        "confirmed_issues": 0,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 6,
+        "issues_closed": 0,
+        "review_submissions": 0,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 0,
+        "S": 5,
+        "M": 8,
+        "L": 4,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-08-19T06:18:37Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4079",
+          "title": "Stop persisting workflow execution results",
+          "url": "https://github.com/KellisLab/Mantis/pull/4079",
+          "notes": []
+        },
+        {
+          "at": "2026-08-19T06:28:57Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2692",
+          "title": "Restrict YouTube ingestion hosts",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-08-19T06:39:03Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4054",
+          "title": "Correct Code panel Python helper syntax",
+          "url": "https://github.com/KellisLab/Mantis/pull/4054",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-08-19T21:45:42Z",
+          "category": "pr",
+          "points": 7,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4053",
+          "title": "Route Jupyter HTTP through the authenticated proxy",
+          "url": "https://github.com/KellisLab/Mantis/pull/4053",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-08-23T18:07:14Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2717",
+          "title": "Restore GitHub repository synthesis pipeline",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
+          "notes": []
+        },
+        {
+          "at": "2026-09-06T22:15:17Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4168",
+          "title": "Preserve every plugin imported concurrently",
+          "url": "https://github.com/KellisLab/Mantis/pull/4168",
+          "notes": []
+        },
+        {
+          "at": "2026-09-20T00:31:50Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4056",
+          "title": "Separate workflow saving from execution",
+          "url": "https://github.com/KellisLab/Mantis/pull/4056",
+          "notes": []
+        },
+        {
+          "at": "2026-09-23T01:31:40Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2768",
+          "title": "Protect journey lookups with normal access rules",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
+          "notes": []
+        },
+        {
+          "at": "2026-09-23T02:25:55Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4051",
+          "title": "security: limit Composer attachment uploads",
+          "url": "https://github.com/KellisLab/Mantis/pull/4051",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-23T08:03:41Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2767",
+          "title": "Enforce one-time downloads and conceal server paths",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2767",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-09-23T08:06:53Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2766",
+          "title": "Require authenticated access for live API spaces",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2766",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-09-23T09:51:45Z",
+          "category": "pr",
+          "points": 6,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4180",
+          "title": "Publish chat notebooks through an explicit write request",
+          "url": "https://github.com/KellisLab/Mantis/pull/4180",
+          "notes": [
+            "5th in 24h ×0.5"
+          ]
+        },
+        {
+          "at": "2026-09-23T09:51:49Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4167",
+          "title": "Make Reader and file previews release temporary resources",
+          "url": "https://github.com/KellisLab/Mantis/pull/4167",
+          "notes": [
+            "6th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-23T09:51:52Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4050",
+          "title": "security: restrict Composer OAuth links",
+          "url": "https://github.com/KellisLab/Mantis/pull/4050",
+          "notes": [
+            "7th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-23T09:51:56Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4031",
+          "title": "Preserve Composer drafts during voice input",
+          "url": "https://github.com/KellisLab/Mantis/pull/4031",
+          "notes": [
+            "8th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-23T09:52:01Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2764",
+          "title": "Protect space layout presets from unauthorized changes",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2764",
+          "notes": [
+            "9th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-23T09:52:05Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2765",
+          "title": "Keep private Composer content scoped to authorized users",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2765",
+          "notes": [
+            "10th in 24h ×0.35"
+          ]
+        }
+      ],
+      "windows": {
+        "7": 85,
+        "14": 85
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 11,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 11,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 85,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 85,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 85,
+          "shipping": 85,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 85,
+          "shipping": 85,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [
+          {
+            "at": "2026-09-20T00:31:50Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4056",
+            "title": "Separate workflow saving from execution",
+            "url": "https://github.com/KellisLab/Mantis/pull/4056",
+            "notes": []
+          },
+          {
+            "at": "2026-09-23T01:31:40Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2768",
+            "title": "Protect journey lookups with normal access rules",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
+            "notes": []
+          },
+          {
+            "at": "2026-09-23T02:25:55Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4051",
+            "title": "security: limit Composer attachment uploads",
+            "url": "https://github.com/KellisLab/Mantis/pull/4051",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-23T08:03:41Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2767",
+            "title": "Enforce one-time downloads and conceal server paths",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2767",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-23T08:06:53Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2766",
+            "title": "Require authenticated access for live API spaces",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2766",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:45Z",
+            "category": "pr",
+            "points": 6,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4180",
+            "title": "Publish chat notebooks through an explicit write request",
+            "url": "https://github.com/KellisLab/Mantis/pull/4180",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:49Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4167",
+            "title": "Make Reader and file previews release temporary resources",
+            "url": "https://github.com/KellisLab/Mantis/pull/4167",
+            "notes": [
+              "6th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:52Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4050",
+            "title": "security: restrict Composer OAuth links",
+            "url": "https://github.com/KellisLab/Mantis/pull/4050",
+            "notes": [
+              "7th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:56Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4031",
+            "title": "Preserve Composer drafts during voice input",
+            "url": "https://github.com/KellisLab/Mantis/pull/4031",
+            "notes": [
+              "8th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:52:01Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2764",
+            "title": "Protect space layout presets from unauthorized changes",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2764",
+            "notes": [
+              "9th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:52:05Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2765",
+            "title": "Keep private Composer content scoped to authorized users",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2765",
+            "notes": [
+              "10th in 24h ×0.35"
+            ]
+          }
+        ],
+        "14": [
+          {
+            "at": "2026-09-20T00:31:50Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4056",
+            "title": "Separate workflow saving from execution",
+            "url": "https://github.com/KellisLab/Mantis/pull/4056",
+            "notes": []
+          },
+          {
+            "at": "2026-09-23T01:31:40Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2768",
+            "title": "Protect journey lookups with normal access rules",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
+            "notes": []
+          },
+          {
+            "at": "2026-09-23T02:25:55Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4051",
+            "title": "security: limit Composer attachment uploads",
+            "url": "https://github.com/KellisLab/Mantis/pull/4051",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-23T08:03:41Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2767",
+            "title": "Enforce one-time downloads and conceal server paths",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2767",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-23T08:06:53Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2766",
+            "title": "Require authenticated access for live API spaces",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2766",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:45Z",
+            "category": "pr",
+            "points": 6,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4180",
+            "title": "Publish chat notebooks through an explicit write request",
+            "url": "https://github.com/KellisLab/Mantis/pull/4180",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:49Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4167",
+            "title": "Make Reader and file previews release temporary resources",
+            "url": "https://github.com/KellisLab/Mantis/pull/4167",
+            "notes": [
+              "6th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:52Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4050",
+            "title": "security: restrict Composer OAuth links",
+            "url": "https://github.com/KellisLab/Mantis/pull/4050",
+            "notes": [
+              "7th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:51:56Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4031",
+            "title": "Preserve Composer drafts during voice input",
+            "url": "https://github.com/KellisLab/Mantis/pull/4031",
+            "notes": [
+              "8th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:52:01Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2764",
+            "title": "Protect space layout presets from unauthorized changes",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2764",
+            "notes": [
+              "9th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-23T09:52:05Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2765",
+            "title": "Keep private Composer content scoped to authorized users",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2765",
+            "notes": [
+              "10th in 24h ×0.35"
+            ]
+          }
+        ]
+      },
+      "rolling_total": 85,
+      "rank": 5
     },
     {
       "login": "YakshithK",
@@ -22322,7 +23032,7 @@
         ]
       },
       "rolling_total": 71,
-      "rank": 5
+      "rank": 6
     },
     {
       "login": "VihanAggarwal",
@@ -23031,7 +23741,7 @@
         ]
       },
       "rolling_total": 67,
-      "rank": 6
+      "rank": 7
     },
     {
       "login": "shubhrasingh-24",
@@ -23712,7 +24422,7 @@
         ]
       },
       "rolling_total": 63,
-      "rank": 7
+      "rank": 8
     },
     {
       "login": "DemonizedCrush",
@@ -28712,7 +29422,7 @@
         ]
       },
       "rolling_total": 60,
-      "rank": 8
+      "rank": 9
     },
     {
       "login": "VatsalDesai152",
@@ -29120,7 +29830,7 @@
         ]
       },
       "rolling_total": 59,
-      "rank": 9
+      "rank": 10
     },
     {
       "login": "Chessing234",
@@ -30329,450 +31039,6 @@
         ]
       },
       "rolling_total": 51,
-      "rank": 10
-    },
-    {
-      "login": "Penguinz3",
-      "name": "Anikait Rana",
-      "total": 103,
-      "days": {
-        "2026-08-19": 42,
-        "2026-08-23": 13,
-        "2026-09-06": 11,
-        "2026-09-20": 13,
-        "2026-09-23": 24
-      },
-      "dayCounts": {
-        "2026-08-09": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-13": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-14": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-18": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-19": {
-          "prs": 4,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-20": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-23": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-06": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-20": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-23": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-08-19": {
-          "pr": 42,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-08-23": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-06": {
-          "pr": 11,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-20": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-23": {
-          "pr": 24,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 103,
-        "review": 0,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 11,
-        "reviews": 0,
-        "confirmed_issues": 0,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 6,
-        "issues_closed": 0,
-        "review_submissions": 0,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 0,
-        "S": 4,
-        "M": 5,
-        "L": 0,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-08-19T06:18:37Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4079",
-          "title": "Stop persisting workflow execution results",
-          "url": "https://github.com/KellisLab/Mantis/pull/4079",
-          "notes": []
-        },
-        {
-          "at": "2026-08-19T06:28:57Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2692",
-          "title": "Restrict YouTube ingestion hosts",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-08-19T06:39:03Z",
-          "category": "pr",
-          "points": 9,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4054",
-          "title": "Correct Code panel Python helper syntax",
-          "url": "https://github.com/KellisLab/Mantis/pull/4054",
-          "notes": [
-            "3th in 24h ×0.8"
-          ]
-        },
-        {
-          "at": "2026-08-19T21:45:42Z",
-          "category": "pr",
-          "points": 7,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4053",
-          "title": "Route Jupyter HTTP through the authenticated proxy",
-          "url": "https://github.com/KellisLab/Mantis/pull/4053",
-          "notes": [
-            "4th in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-08-23T18:07:14Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2717",
-          "title": "Restore GitHub repository synthesis pipeline",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
-          "notes": []
-        },
-        {
-          "at": "2026-09-06T22:15:17Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4168",
-          "title": "Preserve every plugin imported concurrently",
-          "url": "https://github.com/KellisLab/Mantis/pull/4168",
-          "notes": []
-        },
-        {
-          "at": "2026-09-20T00:31:50Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4056",
-          "title": "Separate workflow saving from execution",
-          "url": "https://github.com/KellisLab/Mantis/pull/4056",
-          "notes": []
-        },
-        {
-          "at": "2026-09-23T01:31:40Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2768",
-          "title": "Protect journey lookups with normal access rules",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
-          "notes": []
-        },
-        {
-          "at": "2026-09-23T02:25:55Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4051",
-          "title": "security: limit Composer attachment uploads",
-          "url": "https://github.com/KellisLab/Mantis/pull/4051",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        }
-      ],
-      "windows": {
-        "7": 37,
-        "14": 37
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 3,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 3,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 37,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 37,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 37,
-          "shipping": 37,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 37,
-          "shipping": 37,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [
-          {
-            "at": "2026-09-20T00:31:50Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4056",
-            "title": "Separate workflow saving from execution",
-            "url": "https://github.com/KellisLab/Mantis/pull/4056",
-            "notes": []
-          },
-          {
-            "at": "2026-09-23T01:31:40Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2768",
-            "title": "Protect journey lookups with normal access rules",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
-            "notes": []
-          },
-          {
-            "at": "2026-09-23T02:25:55Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4051",
-            "title": "security: limit Composer attachment uploads",
-            "url": "https://github.com/KellisLab/Mantis/pull/4051",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          }
-        ],
-        "14": [
-          {
-            "at": "2026-09-20T00:31:50Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4056",
-            "title": "Separate workflow saving from execution",
-            "url": "https://github.com/KellisLab/Mantis/pull/4056",
-            "notes": []
-          },
-          {
-            "at": "2026-09-23T01:31:40Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2768",
-            "title": "Protect journey lookups with normal access rules",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
-            "notes": []
-          },
-          {
-            "at": "2026-09-23T02:25:55Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4051",
-            "title": "security: limit Composer attachment uploads",
-            "url": "https://github.com/KellisLab/Mantis/pull/4051",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          }
-        ]
-      },
-      "rolling_total": 37,
       "rank": 11
     },
     {
@@ -32426,6 +32692,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-09-23": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-07-17": {
           "prs": 0,
           "reviews": 0,
@@ -32518,7 +32796,7 @@
         "confirmed_issues": 9,
         "fixed_bonuses": 0,
         "manual": 0,
-        "prs_coauthored": 1,
+        "prs_coauthored": 2,
         "issues_closed": 8,
         "review_submissions": 2,
         "docs_prs": 0,
@@ -32592,7 +32870,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 0,
+          "prs_coauthored": 1,
           "issues_closed": 0,
           "review_submissions": 2,
           "docs_prs": 0,
@@ -32604,7 +32882,7 @@
           "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 0,
+          "prs_coauthored": 1,
           "issues_closed": 0,
           "review_submissions": 2,
           "docs_prs": 0,
@@ -35588,7 +35866,7 @@
     {
       "login": "dhedhialy",
       "name": "Aly Dhedhi",
-      "total": 479,
+      "total": 475,
       "days": {
         "2026-02-13": 17,
         "2026-05-02": 13,
@@ -35612,7 +35890,7 @@
         "2026-08-17": 10,
         "2026-08-25": 12,
         "2026-09-03": 12,
-        "2026-09-06": 82,
+        "2026-09-06": 78,
         "2026-09-19": 13
       },
       "dayCounts": {
@@ -36194,7 +36472,7 @@
         },
         "2026-09-06": {
           "pr": 0,
-          "review": 82,
+          "review": 78,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -36209,7 +36487,7 @@
       },
       "breakdown": {
         "pr": 359,
-        "review": 120,
+        "review": 116,
         "issue": 0,
         "docs": 0,
         "other": 0
@@ -36715,47 +36993,6 @@
           ]
         },
         {
-          "at": "2026-09-06T21:57:23Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4180",
-          "title": "Publish chat notebooks through an explicit write request",
-          "url": "https://github.com/KellisLab/Mantis/pull/4180",
-          "notes": [
-            "approved",
-            "9th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-09-06T21:56:22Z",
-          "category": "review",
-          "points": 8,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#2764",
-          "title": "Protect space layout presets from unauthorized changes",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2764",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "2th review in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-09-06T21:56:20Z",
-          "category": "review",
-          "points": 8,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#2765",
-          "title": "Keep private Composer content scoped to authorized users",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2765",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "2th review in 24h ×1"
-          ]
-        },
-        {
           "at": "2026-09-06T21:56:19Z",
           "category": "review",
           "points": 8,
@@ -36767,6 +37004,47 @@
             "approved",
             "nontrivial PR",
             "2th review in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:57:23Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4180",
+          "title": "Publish chat notebooks through an explicit write request",
+          "url": "https://github.com/KellisLab/Mantis/pull/4180",
+          "notes": [
+            "approved",
+            "10th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:56:22Z",
+          "category": "review",
+          "points": 6,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2764",
+          "title": "Protect space layout presets from unauthorized changes",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2764",
+          "notes": [
+            "approved",
+            "nontrivial PR",
+            "3th review in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:56:20Z",
+          "category": "review",
+          "points": 6,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2765",
+          "title": "Keep private Composer content scoped to authorized users",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2765",
+          "notes": [
+            "approved",
+            "nontrivial PR",
+            "3th review in 24h ×0.8"
           ]
         }
       ],
@@ -37817,698 +38095,6 @@
       "rank": 19
     },
     {
-      "login": "imranmk007",
-      "name": "Imran Kutianawala",
-      "total": 74,
-      "days": {
-        "2026-05-14": 29,
-        "2026-06-06": 21,
-        "2026-06-08": 11,
-        "2026-09-16": 13
-      },
-      "dayCounts": {
-        "2026-05-14": {
-          "prs": 3,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-06-06": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-06-08": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-16": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-05-14": {
-          "pr": 29,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-06-06": {
-          "pr": 21,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-06-08": {
-          "pr": 11,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-16": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 74,
-        "review": 0,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 7,
-        "reviews": 0,
-        "confirmed_issues": 0,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 0,
-        "issues_closed": 0,
-        "review_submissions": 0,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 3,
-        "S": 3,
-        "M": 0,
-        "L": 1,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-05-14T01:16:29Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#2351",
-          "title": "[Ready for Review] Fix: map sometimes opens off-center",
-          "url": "https://github.com/KellisLab/Mantis/pull/2351",
-          "notes": []
-        },
-        {
-          "at": "2026-05-14T01:17:14Z",
-          "category": "pr",
-          "points": 10,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#1177",
-          "title": "fix: restrict global layout preset creation to developers",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1177",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-05-14T01:17:23Z",
-          "category": "pr",
-          "points": 8,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#2355",
-          "title": "Remove FPS indicator from map view",
-          "url": "https://github.com/KellisLab/Mantis/pull/2355",
-          "notes": [
-            "3th in 24h ×0.8"
-          ]
-        },
-        {
-          "at": "2026-06-06T18:07:47Z",
-          "category": "pr",
-          "points": 10,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#2543",
-          "title": "fix buttons bleeding out of composer text box when panel is narrow",
-          "url": "https://github.com/KellisLab/Mantis/pull/2543",
-          "notes": []
-        },
-        {
-          "at": "2026-06-06T22:12:50Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#2550",
-          "title": "fix(chat): show error feedback when clipboard write fails",
-          "url": "https://github.com/KellisLab/Mantis/pull/2550",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-06-08T19:28:39Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#2544",
-          "title": "fix feedback input and preset buttons",
-          "url": "https://github.com/KellisLab/Mantis/pull/2544",
-          "notes": []
-        },
-        {
-          "at": "2026-09-16T13:23:06Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2832",
-          "title": "Patent Vertical Data Commit",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2832",
-          "notes": []
-        }
-      ],
-      "windows": {
-        "7": 13,
-        "14": 13
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 13,
-          "shipping": 13,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 13,
-          "shipping": 13,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [
-          {
-            "at": "2026-09-16T13:23:06Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2832",
-            "title": "Patent Vertical Data Commit",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2832",
-            "notes": []
-          }
-        ],
-        "14": [
-          {
-            "at": "2026-09-16T13:23:06Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2832",
-            "title": "Patent Vertical Data Commit",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2832",
-            "notes": []
-          }
-        ]
-      },
-      "rolling_total": 13,
-      "rank": 20
-    },
-    {
-      "login": "pandeylakshya207-max",
-      "name": "Lakshya Pandey",
-      "total": 96,
-      "days": {
-        "2026-07-16": 11,
-        "2026-07-30": 12,
-        "2026-07-31": 11,
-        "2026-08-17": 12,
-        "2026-08-30": 12,
-        "2026-09-02": 12,
-        "2026-09-12": 13,
-        "2026-09-16": 13
-      },
-      "dayCounts": {
-        "2026-07-16": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-07-30": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-07-31": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-10": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-17": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-30": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-02": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-12": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-16": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-28": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-07-16": {
-          "pr": 11,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-07-30": {
-          "pr": 12,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-07-31": {
-          "pr": 11,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-08-17": {
-          "pr": 12,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-08-30": {
-          "pr": 12,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-02": {
-          "pr": 12,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-12": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-16": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 96,
-        "review": 0,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 8,
-        "reviews": 0,
-        "confirmed_issues": 1,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 1,
-        "issues_closed": 0,
-        "review_submissions": 0,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 0,
-        "S": 2,
-        "M": 4,
-        "L": 2,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-07-16T10:26:22Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#1743",
-          "title": "test: add missing journey tests for create, unauthenticated access, a…",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/1743",
-          "notes": []
-        },
-        {
-          "at": "2026-07-30T21:00:37Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#2857",
-          "title": "fix(views): auto-open primary map when no map is open; remove redundant Primary Map button",
-          "url": "https://github.com/KellisLab/Mantis/pull/2857",
-          "notes": []
-        },
-        {
-          "at": "2026-07-31T16:30:26Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#3544",
-          "title": "Fix content centering on new-space pages relative to sidebar",
-          "url": "https://github.com/KellisLab/Mantis/pull/3544",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-08-17T19:16:18Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4007",
-          "title": "refactor(minimap): remove unused QuickHull dead code",
-          "url": "https://github.com/KellisLab/Mantis/pull/4007",
-          "notes": []
-        },
-        {
-          "at": "2026-08-30T18:31:16Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4135",
-          "title": "feat(summarizer): add ranked key facts list (Part of #3194)",
-          "url": "https://github.com/KellisLab/Mantis/pull/4135",
-          "notes": []
-        },
-        {
-          "at": "2026-09-02T08:30:05Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4198",
-          "title": "feat(summarizer): extract free-text dates for TemporalViewsPanel (Part of #3194)",
-          "url": "https://github.com/KellisLab/Mantis/pull/4198",
-          "notes": []
-        },
-        {
-          "at": "2026-09-12T13:00:43Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4316",
-          "title": "feat: Smart Suggestions in Concepts tab",
-          "url": "https://github.com/KellisLab/Mantis/pull/4316",
-          "notes": []
-        },
-        {
-          "at": "2026-09-16T08:27:43Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4484",
-          "title": "feat: brainstorming prompts in Concepts tab (Phase 4 of #3194)",
-          "url": "https://github.com/KellisLab/Mantis/pull/4484",
-          "notes": []
-        }
-      ],
-      "windows": {
-        "7": 13,
-        "14": 26
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 26,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 13,
-          "shipping": 13,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 26,
-          "shipping": 26,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [
-          {
-            "at": "2026-09-16T08:27:43Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4484",
-            "title": "feat: brainstorming prompts in Concepts tab (Phase 4 of #3194)",
-            "url": "https://github.com/KellisLab/Mantis/pull/4484",
-            "notes": []
-          }
-        ],
-        "14": [
-          {
-            "at": "2026-09-12T13:00:43Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4316",
-            "title": "feat: Smart Suggestions in Concepts tab",
-            "url": "https://github.com/KellisLab/Mantis/pull/4316",
-            "notes": []
-          },
-          {
-            "at": "2026-09-16T08:27:43Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4484",
-            "title": "feat: brainstorming prompts in Concepts tab (Phase 4 of #3194)",
-            "url": "https://github.com/KellisLab/Mantis/pull/4484",
-            "notes": []
-          }
-        ]
-      },
-      "rolling_total": 13,
-      "rank": 21
-    },
-    {
       "login": "SufianTA",
       "name": null,
       "total": 206,
@@ -39125,7 +38711,7 @@
         ]
       },
       "rolling_total": 11,
-      "rank": 22
+      "rank": 20
     },
     {
       "login": "AryanSudhirDev",
@@ -39821,7 +39407,7 @@
         ]
       },
       "rolling_total": 11,
-      "rank": 23
+      "rank": 21
     },
     {
       "login": "Coder-13-11",
@@ -40391,7 +39977,7 @@
         ]
       },
       "rolling_total": 10,
-      "rank": 24
+      "rank": 22
     },
     {
       "login": "Copilot",
@@ -44010,7 +43596,7 @@
         ]
       },
       "rolling_total": 9,
-      "rank": 25
+      "rank": 23
     },
     {
       "login": "alvinzhengq",
@@ -44190,7 +43776,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 26
+      "rank": 24
     },
     {
       "login": "mtybadger",
@@ -44307,7 +43893,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 27
+      "rank": 25
     },
     {
       "login": "evbxll",
@@ -44445,7 +44031,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 28
+      "rank": 26
     },
     {
       "login": "zacmar0",
@@ -44607,7 +44193,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 29
+      "rank": 27
     },
     {
       "login": "GatlenCulp",
@@ -44793,7 +44379,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 30
+      "rank": 28
     },
     {
       "login": "ppxscal",
@@ -48765,7 +48351,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 31
+      "rank": 29
     },
     {
       "login": "JRahala",
@@ -48882,7 +48468,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 32
+      "rank": 30
     },
     {
       "login": "joshwu108",
@@ -49800,7 +49386,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 33
+      "rank": 31
     },
     {
       "login": "isaacgutterman",
@@ -49977,7 +49563,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 34
+      "rank": 32
     },
     {
       "login": "lebinary",
@@ -50373,7 +49959,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 35
+      "rank": 33
     },
     {
       "login": "jophy-ye",
@@ -51276,7 +50862,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 36
+      "rank": 34
     },
     {
       "login": "DavidBShan",
@@ -51462,7 +51048,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 37
+      "rank": 35
     },
     {
       "login": "deanliang06",
@@ -51876,7 +51462,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 38
+      "rank": 36
     },
     {
       "login": "vinays6",
@@ -53717,7 +53303,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 39
+      "rank": 37
     },
     {
       "login": "alex-d4v",
@@ -56496,7 +56082,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 40
+      "rank": 38
     },
     {
       "login": "gemini-code-assist",
@@ -92898,7 +92484,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 41
+      "rank": 39
     },
     {
       "login": "AnasMaar",
@@ -96893,7 +96479,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 42
+      "rank": 40
     },
     {
       "login": "LucaVor",
@@ -99389,7 +98975,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 43
+      "rank": 41
     },
     {
       "login": "Arun-V18",
@@ -101155,7 +100741,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 44
+      "rank": 42
     },
     {
       "login": "NIcolasp14",
@@ -101305,7 +100891,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 45
+      "rank": 43
     },
     {
       "login": "0xCUB3",
@@ -103399,7 +102985,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 46
+      "rank": 44
     },
     {
       "login": "kaeskiio",
@@ -103973,7 +103559,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 47
+      "rank": 45
     },
     {
       "login": "JustinZ1903718",
@@ -104177,7 +103763,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 48
+      "rank": 46
     },
     {
       "login": "farhan132",
@@ -104294,7 +103880,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 49
+      "rank": 47
     },
     {
       "login": "michaelyang28",
@@ -104411,7 +103997,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 50
+      "rank": 48
     },
     {
       "login": "excel-8",
@@ -104838,7 +104424,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 51
+      "rank": 49
     },
     {
       "login": "levtechs",
@@ -105134,7 +104720,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 52
+      "rank": 50
     },
     {
       "login": "ayanopt",
@@ -105335,7 +104921,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 53
+      "rank": 51
     },
     {
       "login": "Soham2020sam",
@@ -106181,7 +105767,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 54
+      "rank": 52
     },
     {
       "login": "naman-sonawane",
@@ -106331,7 +105917,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 55
+      "rank": 53
     },
     {
       "login": "gconsigli",
@@ -108146,7 +107732,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 56
+      "rank": 54
     },
     {
       "login": "hongning-wang",
@@ -111172,7 +110758,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 57
+      "rank": 55
     },
     {
       "login": "epic-riff",
@@ -111310,7 +110896,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 58
+      "rank": 56
     },
     {
       "login": "onlineinfoh",
@@ -111639,7 +111225,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 59
+      "rank": 57
     },
     {
       "login": "rohan-va",
@@ -115324,7 +114910,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 60
+      "rank": 58
     },
     {
       "login": "charleywolf",
@@ -117564,7 +117150,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 61
+      "rank": 59
     },
     {
       "login": "TheBigBener",
@@ -117693,7 +117279,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 62
+      "rank": 60
     },
     {
       "login": "kamchettysadhika",
@@ -118029,7 +117615,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 63
+      "rank": 61
     },
     {
       "login": "shreeya-12",
@@ -118179,7 +117765,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 64
+      "rank": 62
     },
     {
       "login": "vittesh12345",
@@ -118344,7 +117930,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 65
+      "rank": 63
     },
     {
       "login": "UncleEddie1",
@@ -118676,7 +118262,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 66
+      "rank": 64
     },
     {
       "login": "Krishiv-Thakuria",
@@ -118979,7 +118565,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 67
+      "rank": 65
     },
     {
       "login": "Donysus",
@@ -119213,7 +118799,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 68
+      "rank": 66
     },
     {
       "login": "samuelsurr",
@@ -119454,7 +119040,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 69
+      "rank": 67
     },
     {
       "login": "MaitreyaM",
@@ -119790,7 +119376,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 70
+      "rank": 68
     },
     {
       "login": "KrishivThakuria",
@@ -119907,7 +119493,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 71
+      "rank": 69
     },
     {
       "login": "Ardbiu",
@@ -120683,7 +120269,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 72
+      "rank": 70
     },
     {
       "login": "alexkana",
@@ -120905,7 +120491,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 73
+      "rank": 71
     },
     {
       "login": "edoardopanella",
@@ -121334,7 +120920,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 24
+        "14": 0
       },
       "windowCounts": {
         "7": {
@@ -121350,7 +120936,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 2,
+          "prs": 0,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -121371,7 +120957,7 @@
           "other": 0
         },
         "14": {
-          "pr": 24,
+          "pr": 0,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -121387,8 +120973,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 24,
-          "shipping": 24,
+          "overall": 0,
+          "shipping": 0,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -121396,33 +120982,10 @@
       },
       "windowLedger": {
         "7": [],
-        "14": [
-          {
-            "at": "2026-09-09T08:53:12Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2946",
-            "title": "fix(gradients): resolve ties toward the map gradients can actually serve",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2946",
-            "notes": []
-          },
-          {
-            "at": "2026-09-09T08:53:33Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4267",
-            "title": "fix(gradients): send the rendered map's id on every gradients request",
-            "url": "https://github.com/KellisLab/Mantis/pull/4267",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          }
-        ]
+        "14": []
       },
       "rolling_total": 0,
-      "rank": 74
+      "rank": 72
     },
     {
       "login": "saisanjana22",
@@ -121614,7 +121177,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 75
+      "rank": 73
     },
     {
       "login": "adityasngpta",
@@ -121782,7 +121345,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 76
+      "rank": 74
     },
     {
       "login": "w2sg-arnav",
@@ -121923,7 +121486,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 77
+      "rank": 75
     },
     {
       "login": "kamilfuks",
@@ -122040,7 +121603,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 78
+      "rank": 76
     },
     {
       "login": "RishabhMakker",
@@ -122169,7 +121732,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 79
+      "rank": 77
     },
     {
       "login": "legitHacker23",
@@ -122286,7 +121849,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 80
+      "rank": 78
     },
     {
       "login": "Zopu23",
@@ -124494,7 +124057,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 81
+      "rank": 79
     },
     {
       "login": "Premrshah",
@@ -125596,7 +125159,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 82
+      "rank": 80
     },
     {
       "login": "claude",
@@ -126445,7 +126008,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 83
+      "rank": 81
     },
     {
       "login": "HridhayJ",
@@ -126765,7 +126328,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 84
+      "rank": 82
     },
     {
       "login": "aritroBh",
@@ -127695,7 +127258,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 85
+      "rank": 83
     },
     {
       "login": "msun170",
@@ -128261,7 +127824,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 86
+      "rank": 84
     },
     {
       "login": "ZeidAl-Ruzouq",
@@ -128663,7 +128226,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 87
+      "rank": 85
     },
     {
       "login": "rushilm10",
@@ -128828,7 +128391,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 88
+      "rank": 86
     },
     {
       "login": "sohamsen15",
@@ -128969,7 +128532,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 89
+      "rank": 87
     },
     {
       "login": "cursoragent",
@@ -129542,7 +129105,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 90
+      "rank": 88
     },
     {
       "login": "VishwanathanV",
@@ -130434,7 +129997,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 91
+      "rank": 89
     },
     {
       "login": "redaq",
@@ -130964,7 +130527,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 92
+      "rank": 90
     },
     {
       "login": "siridesai",
@@ -131146,7 +130709,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 93
+      "rank": 91
     },
     {
       "login": "Akshay-Bhaskar1",
@@ -131336,7 +130899,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 94
+      "rank": 92
     },
     {
       "login": "miclovich",
@@ -131477,7 +131040,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 95
+      "rank": 93
     },
     {
       "login": "dianeferragu",
@@ -131741,7 +131304,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 96
+      "rank": 94
     },
     {
       "login": "laurenap",
@@ -132001,7 +131564,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 97
+      "rank": 95
     },
     {
       "login": "tenzinmchemey",
@@ -132301,7 +131864,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 98
+      "rank": 96
     },
     {
       "login": "themayankjashnani",
@@ -132463,7 +132026,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 99
+      "rank": 97
     },
     {
       "login": "ElpidaPi",
@@ -132601,7 +132164,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 100
+      "rank": 98
     },
     {
       "login": "TheAmrReticoStaderGuy",
@@ -132801,7 +132364,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 101
+      "rank": 99
     },
     {
       "login": "Priya",
@@ -132930,7 +132493,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 102
+      "rank": 100
     },
     {
       "login": "pranilraichura",
@@ -133738,7 +133301,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 103
+      "rank": 101
     },
     {
       "login": "manolik",
@@ -133900,7 +133463,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 104
+      "rank": 102
     },
     {
       "login": "kritgun-1907",
@@ -134080,7 +133643,282 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 105
+      "rank": 103
+    },
+    {
+      "login": "imranmk007",
+      "name": "Imran Kutianawala",
+      "total": 74,
+      "days": {
+        "2026-05-14": 29,
+        "2026-06-06": 21,
+        "2026-06-08": 11,
+        "2026-09-16": 13
+      },
+      "dayCounts": {
+        "2026-05-14": {
+          "prs": 3,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-06-06": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-06-08": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-16": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-05-14": {
+          "pr": 29,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-06-06": {
+          "pr": 21,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-06-08": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-16": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 74,
+        "review": 0,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 7,
+        "reviews": 0,
+        "confirmed_issues": 0,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 0,
+        "issues_closed": 0,
+        "review_submissions": 0,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 3,
+        "S": 3,
+        "M": 0,
+        "L": 1,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-05-14T01:16:29Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#2351",
+          "title": "[Ready for Review] Fix: map sometimes opens off-center",
+          "url": "https://github.com/KellisLab/Mantis/pull/2351",
+          "notes": []
+        },
+        {
+          "at": "2026-05-14T01:17:14Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#1177",
+          "title": "fix: restrict global layout preset creation to developers",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1177",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-05-14T01:17:23Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#2355",
+          "title": "Remove FPS indicator from map view",
+          "url": "https://github.com/KellisLab/Mantis/pull/2355",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-06-06T18:07:47Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#2543",
+          "title": "fix buttons bleeding out of composer text box when panel is narrow",
+          "url": "https://github.com/KellisLab/Mantis/pull/2543",
+          "notes": []
+        },
+        {
+          "at": "2026-06-06T22:12:50Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#2550",
+          "title": "fix(chat): show error feedback when clipboard write fails",
+          "url": "https://github.com/KellisLab/Mantis/pull/2550",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-06-08T19:28:39Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#2544",
+          "title": "fix feedback input and preset buttons",
+          "url": "https://github.com/KellisLab/Mantis/pull/2544",
+          "notes": []
+        },
+        {
+          "at": "2026-09-16T13:23:06Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2832",
+          "title": "Patent Vertical Data Commit",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2832",
+          "notes": []
+        }
+      ],
+      "windows": {
+        "7": 0,
+        "14": 13
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 0,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 0,
+          "shipping": 0,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 13,
+          "shipping": 13,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [],
+        "14": [
+          {
+            "at": "2026-09-16T13:23:06Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2832",
+            "title": "Patent Vertical Data Commit",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2832",
+            "notes": []
+          }
+        ]
+      },
+      "rolling_total": 0,
+      "rank": 104
     },
     {
       "login": "Muhammadabrarrayhan2",
@@ -135134,7 +134972,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 106
+      "rank": 105
     },
     {
       "login": "ChinmayKamjith1",
@@ -135284,7 +135122,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 107
+      "rank": 106
     },
     {
       "login": "TaherMerchant25",
@@ -135494,7 +135332,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 108
+      "rank": 107
     },
     {
       "login": "RonKat2008",
@@ -135758,7 +135596,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 109
+      "rank": 108
     },
     {
       "login": "ronitkatikaneni",
@@ -135887,7 +135725,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 110
+      "rank": 109
     },
     {
       "login": "ArjunSubramanian22",
@@ -136073,7 +135911,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 111
+      "rank": 110
     },
     {
       "login": "LuuOW",
@@ -136214,7 +136052,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 112
+      "rank": 111
     },
     {
       "login": "airjan-airlines",
@@ -136352,7 +136190,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 113
+      "rank": 112
     },
     {
       "login": "Akshaj-G",
@@ -136520,7 +136358,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 114
+      "rank": 113
     },
     {
       "login": "Cypherspec",
@@ -136830,7 +136668,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 115
+      "rank": 114
     },
     {
       "login": "NisargOza",
@@ -136980,7 +136818,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 116
+      "rank": 115
     },
     {
       "login": "vili179",
@@ -137190,7 +137028,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 117
+      "rank": 116
     },
     {
       "login": "varvarakarenski",
@@ -137628,7 +137466,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 118
+      "rank": 117
     },
     {
       "login": "gnosisHermes",
@@ -137791,6 +137629,401 @@
       "windowLedger": {
         "7": [],
         "14": []
+      },
+      "rolling_total": 0,
+      "rank": 118
+    },
+    {
+      "login": "pandeylakshya207-max",
+      "name": "Lakshya Pandey",
+      "total": 96,
+      "days": {
+        "2026-07-16": 11,
+        "2026-07-30": 12,
+        "2026-07-31": 11,
+        "2026-08-17": 12,
+        "2026-08-30": 12,
+        "2026-09-02": 12,
+        "2026-09-12": 13,
+        "2026-09-16": 13
+      },
+      "dayCounts": {
+        "2026-07-16": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-07-30": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-07-31": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-10": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-17": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-30": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-02": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-12": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-16": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-28": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-07-16": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-07-30": {
+          "pr": 12,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-07-31": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-08-17": {
+          "pr": 12,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-08-30": {
+          "pr": 12,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-02": {
+          "pr": 12,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-12": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-16": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 96,
+        "review": 0,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 8,
+        "reviews": 0,
+        "confirmed_issues": 1,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 1,
+        "issues_closed": 0,
+        "review_submissions": 0,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 0,
+        "S": 2,
+        "M": 4,
+        "L": 2,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-07-16T10:26:22Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#1743",
+          "title": "test: add missing journey tests for create, unauthenticated access, a…",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/1743",
+          "notes": []
+        },
+        {
+          "at": "2026-07-30T21:00:37Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#2857",
+          "title": "fix(views): auto-open primary map when no map is open; remove redundant Primary Map button",
+          "url": "https://github.com/KellisLab/Mantis/pull/2857",
+          "notes": []
+        },
+        {
+          "at": "2026-07-31T16:30:26Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#3544",
+          "title": "Fix content centering on new-space pages relative to sidebar",
+          "url": "https://github.com/KellisLab/Mantis/pull/3544",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-08-17T19:16:18Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4007",
+          "title": "refactor(minimap): remove unused QuickHull dead code",
+          "url": "https://github.com/KellisLab/Mantis/pull/4007",
+          "notes": []
+        },
+        {
+          "at": "2026-08-30T18:31:16Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4135",
+          "title": "feat(summarizer): add ranked key facts list (Part of #3194)",
+          "url": "https://github.com/KellisLab/Mantis/pull/4135",
+          "notes": []
+        },
+        {
+          "at": "2026-09-02T08:30:05Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4198",
+          "title": "feat(summarizer): extract free-text dates for TemporalViewsPanel (Part of #3194)",
+          "url": "https://github.com/KellisLab/Mantis/pull/4198",
+          "notes": []
+        },
+        {
+          "at": "2026-09-12T13:00:43Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4316",
+          "title": "feat: Smart Suggestions in Concepts tab",
+          "url": "https://github.com/KellisLab/Mantis/pull/4316",
+          "notes": []
+        },
+        {
+          "at": "2026-09-16T08:27:43Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4484",
+          "title": "feat: brainstorming prompts in Concepts tab (Phase 4 of #3194)",
+          "url": "https://github.com/KellisLab/Mantis/pull/4484",
+          "notes": []
+        }
+      ],
+      "windows": {
+        "7": 0,
+        "14": 26
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 0,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 26,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 0,
+          "shipping": 0,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 26,
+          "shipping": 26,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [],
+        "14": [
+          {
+            "at": "2026-09-12T13:00:43Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4316",
+            "title": "feat: Smart Suggestions in Concepts tab",
+            "url": "https://github.com/KellisLab/Mantis/pull/4316",
+            "notes": []
+          },
+          {
+            "at": "2026-09-16T08:27:43Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4484",
+            "title": "feat: brainstorming prompts in Concepts tab (Phase 4 of #3194)",
+            "url": "https://github.com/KellisLab/Mantis/pull/4484",
+            "notes": []
+          }
+        ]
       },
       "rolling_total": 0,
       "rank": 119
