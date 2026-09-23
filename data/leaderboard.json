@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T23:15:50.344Z",
+  "generated_at": "2026-09-23T01:44:55.742Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,9 +64,9 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-22T23:14:30.371Z",
+    "run_started_at": "2026-09-23T01:43:48.046Z",
     "lookback_days": 365,
-    "lookback_since": "2025-09-22T00:00:00.000Z",
+    "lookback_since": "2025-09-23T00:00:00.000Z",
     "repos": [
       "KellisLab/Mantis",
       "KellisLab/MantisAPI",
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4132,
+      "prs": 4136,
       "issues": 2631,
-      "reviews": 12576,
-      "review_comments": 14797
+      "reviews": 12580,
+      "review_comments": 14800
     }
   },
   "review_rules": {
@@ -29162,7 +29162,7 @@
     {
       "login": "Chessing234",
       "name": "Taksh Kothari",
-      "total": 329,
+      "total": 332,
       "days": {
         "2026-07-04": 10,
         "2026-07-05": 14,
@@ -29174,7 +29174,7 @@
         "2026-09-01": 44,
         "2026-09-02": 13,
         "2026-09-03": 16,
-        "2026-09-17": 27,
+        "2026-09-17": 30,
         "2026-07-20": 9,
         "2026-09-20": 6,
         "2026-09-22": 15
@@ -29482,7 +29482,7 @@
         },
         "2026-09-17": {
           "pr": 0,
-          "review": 27,
+          "review": 30,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -29511,7 +29511,7 @@
       },
       "breakdown": {
         "pr": 186,
-        "review": 143,
+        "review": 146,
         "issue": 0,
         "docs": 0,
         "other": 0
@@ -30008,23 +30008,9 @@
           ]
         },
         {
-          "at": "2026-09-17T09:17:51Z",
-          "category": "review",
-          "points": 8,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4055",
-          "title": "Keep generated panels from using the parent app as a privileged proxy",
-          "url": "https://github.com/KellisLab/Mantis/pull/4055",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "2th review in 24h ×1"
-          ]
-        },
-        {
           "at": "2026-09-17T09:35:07Z",
           "category": "review",
-          "points": 6,
+          "points": 8,
           "kind": "review",
           "ref": "KellisLab/MantisAPI#2582",
           "title": "fix(synthesis): fence stale progress so later updates cannot revive it",
@@ -30032,13 +30018,13 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "3th review in 24h ×0.8"
+            "2th review in 24h ×1"
           ]
         },
         {
           "at": "2026-09-17T09:50:43Z",
           "category": "review",
-          "points": 5,
+          "points": 6,
           "kind": "review",
           "ref": "KellisLab/MantisAPI#2579",
           "title": "fix(paper-protocol): stall running executions that lose their heartbeat",
@@ -30046,7 +30032,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "4th review in 24h ×0.65"
+            "3th review in 24h ×0.8"
           ]
         },
         {
@@ -30103,11 +30089,25 @@
             "nontrivial PR",
             "2th review in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-09-17T09:17:51Z",
+          "category": "review",
+          "points": 8,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4055",
+          "title": "Keep generated panels from using the parent app as a privileged proxy",
+          "url": "https://github.com/KellisLab/Mantis/pull/4055",
+          "notes": [
+            "approved",
+            "nontrivial PR",
+            "2th review in 24h ×1"
+          ]
         }
       ],
       "windows": {
-        "7": 48,
-        "14": 48
+        "7": 51,
+        "14": 51
       },
       "windowCounts": {
         "7": {
@@ -30138,14 +30138,14 @@
       "windowBreakdown": {
         "7": {
           "pr": 0,
-          "review": 48,
+          "review": 51,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
           "pr": 0,
-          "review": 48,
+          "review": 51,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -30153,16 +30153,16 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 48,
+          "overall": 51,
           "shipping": 0,
-          "review": 48,
+          "review": 51,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 48,
+          "overall": 51,
           "shipping": 0,
-          "review": 48,
+          "review": 51,
           "bugs": 0,
           "docs": 0
         }
@@ -30183,23 +30183,9 @@
             ]
           },
           {
-            "at": "2026-09-17T09:17:51Z",
-            "category": "review",
-            "points": 8,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4055",
-            "title": "Keep generated panels from using the parent app as a privileged proxy",
-            "url": "https://github.com/KellisLab/Mantis/pull/4055",
-            "notes": [
-              "approved",
-              "nontrivial PR",
-              "2th review in 24h ×1"
-            ]
-          },
-          {
             "at": "2026-09-17T09:35:07Z",
             "category": "review",
-            "points": 6,
+            "points": 8,
             "kind": "review",
             "ref": "KellisLab/MantisAPI#2582",
             "title": "fix(synthesis): fence stale progress so later updates cannot revive it",
@@ -30207,13 +30193,13 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "3th review in 24h ×0.8"
+              "2th review in 24h ×1"
             ]
           },
           {
             "at": "2026-09-17T09:50:43Z",
             "category": "review",
-            "points": 5,
+            "points": 6,
             "kind": "review",
             "ref": "KellisLab/MantisAPI#2579",
             "title": "fix(paper-protocol): stall running executions that lose their heartbeat",
@@ -30221,7 +30207,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "4th review in 24h ×0.65"
+              "3th review in 24h ×0.8"
             ]
           },
           {
@@ -30261,6 +30247,20 @@
             "notes": [
               "commented",
               "inline comments",
+              "nontrivial PR",
+              "2th review in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-17T09:17:51Z",
+            "category": "review",
+            "points": 8,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4055",
+            "title": "Keep generated panels from using the parent app as a privileged proxy",
+            "url": "https://github.com/KellisLab/Mantis/pull/4055",
+            "notes": [
+              "approved",
               "nontrivial PR",
               "2th review in 24h ×1"
             ]
@@ -30281,23 +30281,9 @@
             ]
           },
           {
-            "at": "2026-09-17T09:17:51Z",
-            "category": "review",
-            "points": 8,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4055",
-            "title": "Keep generated panels from using the parent app as a privileged proxy",
-            "url": "https://github.com/KellisLab/Mantis/pull/4055",
-            "notes": [
-              "approved",
-              "nontrivial PR",
-              "2th review in 24h ×1"
-            ]
-          },
-          {
             "at": "2026-09-17T09:35:07Z",
             "category": "review",
-            "points": 6,
+            "points": 8,
             "kind": "review",
             "ref": "KellisLab/MantisAPI#2582",
             "title": "fix(synthesis): fence stale progress so later updates cannot revive it",
@@ -30305,13 +30291,13 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "3th review in 24h ×0.8"
+              "2th review in 24h ×1"
             ]
           },
           {
             "at": "2026-09-17T09:50:43Z",
             "category": "review",
-            "points": 5,
+            "points": 6,
             "kind": "review",
             "ref": "KellisLab/MantisAPI#2579",
             "title": "fix(paper-protocol): stall running executions that lose their heartbeat",
@@ -30319,7 +30305,7 @@
             "notes": [
               "approved",
               "nontrivial PR",
-              "4th review in 24h ×0.65"
+              "3th review in 24h ×0.8"
             ]
           },
           {
@@ -30362,10 +30348,24 @@
               "nontrivial PR",
               "2th review in 24h ×1"
             ]
+          },
+          {
+            "at": "2026-09-17T09:17:51Z",
+            "category": "review",
+            "points": 8,
+            "kind": "review",
+            "ref": "KellisLab/Mantis#4055",
+            "title": "Keep generated panels from using the parent app as a privileged proxy",
+            "url": "https://github.com/KellisLab/Mantis/pull/4055",
+            "notes": [
+              "approved",
+              "nontrivial PR",
+              "2th review in 24h ×1"
+            ]
           }
         ]
       },
-      "rolling_total": 48,
+      "rolling_total": 51,
       "rank": 10
     },
     {
@@ -31701,6 +31701,414 @@
       "rank": 12
     },
     {
+      "login": "Penguinz3",
+      "name": "Anikait Rana",
+      "total": 90,
+      "days": {
+        "2026-08-19": 42,
+        "2026-08-23": 13,
+        "2026-09-06": 11,
+        "2026-09-20": 13,
+        "2026-09-23": 11
+      },
+      "dayCounts": {
+        "2026-08-09": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-13": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-14": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-18": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-19": {
+          "prs": 4,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-20": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-23": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-26": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-06": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-20": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-23": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-08-19": {
+          "pr": 42,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-08-23": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-06": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-20": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-23": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 90,
+        "review": 0,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 10,
+        "reviews": 0,
+        "confirmed_issues": 0,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 6,
+        "issues_closed": 0,
+        "review_submissions": 0,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 0,
+        "S": 4,
+        "M": 4,
+        "L": 0,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-08-19T06:18:37Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4079",
+          "title": "Stop persisting workflow execution results",
+          "url": "https://github.com/KellisLab/Mantis/pull/4079",
+          "notes": []
+        },
+        {
+          "at": "2026-08-19T06:28:57Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2692",
+          "title": "Restrict YouTube ingestion hosts",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-08-19T06:39:03Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4054",
+          "title": "Correct Code panel Python helper syntax",
+          "url": "https://github.com/KellisLab/Mantis/pull/4054",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-08-19T21:45:42Z",
+          "category": "pr",
+          "points": 7,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4053",
+          "title": "Route Jupyter HTTP through the authenticated proxy",
+          "url": "https://github.com/KellisLab/Mantis/pull/4053",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-08-23T18:07:14Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2717",
+          "title": "Restore GitHub repository synthesis pipeline",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
+          "notes": []
+        },
+        {
+          "at": "2026-09-06T22:15:17Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4168",
+          "title": "Preserve every plugin imported concurrently",
+          "url": "https://github.com/KellisLab/Mantis/pull/4168",
+          "notes": []
+        },
+        {
+          "at": "2026-09-20T00:31:50Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4056",
+          "title": "Separate workflow saving from execution",
+          "url": "https://github.com/KellisLab/Mantis/pull/4056",
+          "notes": []
+        },
+        {
+          "at": "2026-09-23T01:31:40Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2768",
+          "title": "Protect journey lookups with normal access rules",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
+          "notes": []
+        }
+      ],
+      "windows": {
+        "7": 24,
+        "14": 24
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 24,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 24,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 24,
+          "shipping": 24,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 24,
+          "shipping": 24,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [
+          {
+            "at": "2026-09-20T00:31:50Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4056",
+            "title": "Separate workflow saving from execution",
+            "url": "https://github.com/KellisLab/Mantis/pull/4056",
+            "notes": []
+          },
+          {
+            "at": "2026-09-23T01:31:40Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2768",
+            "title": "Protect journey lookups with normal access rules",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
+            "notes": []
+          }
+        ],
+        "14": [
+          {
+            "at": "2026-09-20T00:31:50Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4056",
+            "title": "Separate workflow saving from execution",
+            "url": "https://github.com/KellisLab/Mantis/pull/4056",
+            "notes": []
+          },
+          {
+            "at": "2026-09-23T01:31:40Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#2768",
+            "title": "Protect journey lookups with normal access rules",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
+            "notes": []
+          }
+        ]
+      },
+      "rolling_total": 24,
+      "rank": 13
+    },
+    {
       "login": "absol761",
       "name": "Ilan Barts",
       "total": 303,
@@ -32616,7 +33024,7 @@
         ]
       },
       "rolling_total": 23,
-      "rank": 13
+      "rank": 14
     },
     {
       "login": "amywang2010",
@@ -32888,7 +33296,7 @@
         "7": {
           "prs": 6,
           "reviews": 2,
-          "confirmed_issues": 1,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -33003,7 +33411,7 @@
         ]
       },
       "rolling_total": 22,
-      "rank": 14
+      "rank": 15
     },
     {
       "login": "ark248",
@@ -35086,7 +35494,7 @@
         ]
       },
       "rolling_total": 14,
-      "rank": 15
+      "rank": 16
     },
     {
       "login": "phi-jkim",
@@ -35722,7 +36130,7 @@
         ]
       },
       "rolling_total": 14,
-      "rank": 16
+      "rank": 17
     },
     {
       "login": "Gun-Akash",
@@ -35982,7 +36390,7 @@
         ]
       },
       "rolling_total": 14,
-      "rank": 17
+      "rank": 18
     },
     {
       "login": "DarkPhantom738",
@@ -36142,12 +36550,12 @@
         ]
       },
       "rolling_total": 14,
-      "rank": 18
+      "rank": 19
     },
     {
       "login": "dhedhialy",
       "name": "Aly Dhedhi",
-      "total": 476,
+      "total": 486,
       "days": {
         "2026-02-13": 17,
         "2026-05-02": 13,
@@ -36171,7 +36579,7 @@
         "2026-08-17": 10,
         "2026-08-25": 12,
         "2026-09-03": 12,
-        "2026-09-06": 79,
+        "2026-09-06": 89,
         "2026-09-19": 13
       },
       "dayCounts": {
@@ -36753,7 +37161,7 @@
         },
         "2026-09-06": {
           "pr": 0,
-          "review": 79,
+          "review": 89,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -36768,7 +37176,7 @@
       },
       "breakdown": {
         "pr": 359,
-        "review": 117,
+        "review": 127,
         "issue": 0,
         "docs": 0,
         "other": 0
@@ -37237,6 +37645,84 @@
           ]
         },
         {
+          "at": "2026-09-06T21:56:29Z",
+          "category": "review",
+          "points": 8,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2765",
+          "title": "Keep private Composer content scoped to authorized users",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2765",
+          "notes": [
+            "approved",
+            "nontrivial PR"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:57:15Z",
+          "category": "review",
+          "points": 3,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#3926",
+          "title": "refactor(workflow): decode execution sockets with parseOrchestratorMessage",
+          "url": "https://github.com/KellisLab/Mantis/pull/3926",
+          "notes": [
+            "approved",
+            "5th review in 24h ×0.5"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:56:29Z",
+          "category": "review",
+          "points": 8,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2766",
+          "title": "Require authenticated access for live API spaces",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2766",
+          "notes": [
+            "approved",
+            "nontrivial PR",
+            "2th review in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-06T21:56:44Z",
+          "category": "review",
+          "points": 4,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#2894",
+          "title": "Bind WebSocket callers to verified sessions and enforce state ownership",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2894",
+          "notes": [
+            "approved",
+            "nontrivial PR",
+            "5th review in 24h ×0.5"
+          ]
+        },
+        {
+          "at": "2026-09-19T23:56:07Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#2749",
+          "title": "fix(export): read _embedding from RawEmbedding table, not Idea.raw_embedding",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/2749",
+          "notes": []
+        },
+        {
+          "at": "2026-09-06T21:57:00Z",
+          "category": "review",
+          "points": 3,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4050",
+          "title": "security: restrict Composer OAuth links",
+          "url": "https://github.com/KellisLab/Mantis/pull/4050",
+          "notes": [
+            "approved",
+            "nontrivial PR",
+            "6th review in 24h ×0.35"
+          ]
+        },
+        {
           "at": "2026-09-06T21:56:28Z",
           "category": "review",
           "points": 8,
@@ -37263,23 +37749,9 @@
           ]
         },
         {
-          "at": "2026-09-06T21:56:29Z",
+          "at": "2026-09-06T21:56:22Z",
           "category": "review",
-          "points": 6,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#2765",
-          "title": "Keep private Composer content scoped to authorized users",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2765",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "3th review in 24h ×0.8"
-          ]
-        },
-        {
-          "at": "2026-09-06T21:56:30Z",
-          "category": "review",
-          "points": 5,
+          "points": 8,
           "kind": "review",
           "ref": "KellisLab/MantisAPI#2764",
           "title": "Protect space layout presets from unauthorized changes",
@@ -37287,72 +37759,7 @@
           "notes": [
             "approved",
             "nontrivial PR",
-            "4th review in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-09-06T21:57:15Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#3926",
-          "title": "refactor(workflow): decode execution sockets with parseOrchestratorMessage",
-          "url": "https://github.com/KellisLab/Mantis/pull/3926",
-          "notes": [
-            "approved",
-            "8th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-09-06T21:56:29Z",
-          "category": "review",
-          "points": 5,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#2766",
-          "title": "Require authenticated access for live API spaces",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2766",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "4th review in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-09-06T21:56:44Z",
-          "category": "review",
-          "points": 3,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#2894",
-          "title": "Bind WebSocket callers to verified sessions and enforce state ownership",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2894",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "8th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-09-19T23:56:07Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2749",
-          "title": "fix(export): read _embedding from RawEmbedding table, not Idea.raw_embedding",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2749",
-          "notes": []
-        },
-        {
-          "at": "2026-09-06T21:57:00Z",
-          "category": "review",
-          "points": 3,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4050",
-          "title": "security: restrict Composer OAuth links",
-          "url": "https://github.com/KellisLab/Mantis/pull/4050",
-          "notes": [
-            "approved",
-            "nontrivial PR",
-            "9th review in 24h ×0.35"
+            "2th review in 24h ×1"
           ]
         }
       ],
@@ -37445,7 +37852,7 @@
         ]
       },
       "rolling_total": 13,
-      "rank": 19
+      "rank": 20
     },
     {
       "login": "6namdang",
@@ -38400,7 +38807,7 @@
         ]
       },
       "rolling_total": 13,
-      "rank": 20
+      "rank": 21
     },
     {
       "login": "imranmk007",
@@ -38686,7 +39093,7 @@
         ]
       },
       "rolling_total": 13,
-      "rank": 21
+      "rank": 22
     },
     {
       "login": "pandeylakshya207-max",
@@ -39087,364 +39494,6 @@
             "ref": "KellisLab/Mantis#4484",
             "title": "feat: brainstorming prompts in Concepts tab (Phase 4 of #3194)",
             "url": "https://github.com/KellisLab/Mantis/pull/4484",
-            "notes": []
-          }
-        ]
-      },
-      "rolling_total": 13,
-      "rank": 22
-    },
-    {
-      "login": "Penguinz3",
-      "name": "Anikait Rana",
-      "total": 79,
-      "days": {
-        "2026-08-19": 42,
-        "2026-08-23": 13,
-        "2026-09-06": 11,
-        "2026-09-20": 13
-      },
-      "dayCounts": {
-        "2026-08-09": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-13": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-14": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-18": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-19": {
-          "prs": 4,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-20": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-23": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-26": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-06": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-20": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-08-19": {
-          "pr": 42,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-08-23": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-06": {
-          "pr": 11,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-20": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 79,
-        "review": 0,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 9,
-        "reviews": 0,
-        "confirmed_issues": 0,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 6,
-        "issues_closed": 0,
-        "review_submissions": 0,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 0,
-        "S": 3,
-        "M": 4,
-        "L": 0,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-08-19T06:18:37Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4079",
-          "title": "Stop persisting workflow execution results",
-          "url": "https://github.com/KellisLab/Mantis/pull/4079",
-          "notes": []
-        },
-        {
-          "at": "2026-08-19T06:28:57Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2692",
-          "title": "Restrict YouTube ingestion hosts",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2692",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-08-19T06:39:03Z",
-          "category": "pr",
-          "points": 9,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4054",
-          "title": "Correct Code panel Python helper syntax",
-          "url": "https://github.com/KellisLab/Mantis/pull/4054",
-          "notes": [
-            "3th in 24h ×0.8"
-          ]
-        },
-        {
-          "at": "2026-08-19T21:45:42Z",
-          "category": "pr",
-          "points": 7,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4053",
-          "title": "Route Jupyter HTTP through the authenticated proxy",
-          "url": "https://github.com/KellisLab/Mantis/pull/4053",
-          "notes": [
-            "4th in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-08-23T18:07:14Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/MantisAPI#2717",
-          "title": "Restore GitHub repository synthesis pipeline",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/2717",
-          "notes": []
-        },
-        {
-          "at": "2026-09-06T22:15:17Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4168",
-          "title": "Preserve every plugin imported concurrently",
-          "url": "https://github.com/KellisLab/Mantis/pull/4168",
-          "notes": []
-        },
-        {
-          "at": "2026-09-20T00:31:50Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4056",
-          "title": "Separate workflow saving from execution",
-          "url": "https://github.com/KellisLab/Mantis/pull/4056",
-          "notes": []
-        }
-      ],
-      "windows": {
-        "7": 13,
-        "14": 13
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 13,
-          "shipping": 13,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 13,
-          "shipping": 13,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [
-          {
-            "at": "2026-09-20T00:31:50Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4056",
-            "title": "Separate workflow saving from execution",
-            "url": "https://github.com/KellisLab/Mantis/pull/4056",
-            "notes": []
-          }
-        ],
-        "14": [
-          {
-            "at": "2026-09-20T00:31:50Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4056",
-            "title": "Separate workflow saving from execution",
-            "url": "https://github.com/KellisLab/Mantis/pull/4056",
             "notes": []
           }
         ]
@@ -138595,6 +138644,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-09-23": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {},
@@ -138611,7 +138672,7 @@
         "confirmed_issues": 0,
         "fixed_bonuses": 0,
         "manual": 0,
-        "prs_coauthored": 14,
+        "prs_coauthored": 15,
         "issues_closed": 0,
         "review_submissions": 0,
         "docs_prs": 0,
@@ -138637,7 +138698,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 7,
+          "prs_coauthored": 8,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -138649,7 +138710,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 11,
+          "prs_coauthored": 12,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,

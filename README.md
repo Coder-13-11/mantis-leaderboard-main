@@ -26,7 +26,7 @@ code / review / issues ledger.
 | 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **63** | 5 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 1 | 1 |
 | 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 6 |
-| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **48** | 0 | 7 | 0 |
+| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **51** | 0 | 7 | 0 |
 
 #### Past 14 Days
 
@@ -41,9 +41,9 @@ code / review / issues ledger.
 | 7 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **123** | 9 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 5 | 1 |
 | 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 6 |
-| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **48** | 0 | 7 | 0 |
+| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **51** | 0 | 7 | 0 |
 
-_Last updated: Tue, 22 Sep 2026 23:15:50 GMT_
+_Last updated: Wed, 23 Sep 2026 01:44:55 GMT_
 <!-- LEADERBOARD:END -->
 
 
