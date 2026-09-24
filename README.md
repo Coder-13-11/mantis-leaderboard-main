@@ -17,8 +17,8 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **454** | 97 | 0 | 54 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **305** | 58 | 0 | 29 |
+| 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **305** | 58 | 0 | 29 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **298** | 61 | 0 | 48 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **132** | 13 | 0 | 0 |
 | 4 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 0 |
 | 5 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **109** | 17 | 0 | 0 |
@@ -26,7 +26,7 @@ code / review / issues ledger.
 | 7 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **67** | 9 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 1 | 1 |
 | 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 6 |
-| 10 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **51** | 0 | 7 | 0 |
+| 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **49** | 4 | 0 | 0 |
 
 #### Past 14 Days
 
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 4 | 1 |
 | 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 6 |
 
-_Last updated: Thu, 24 Sep 2026 04:39:03 GMT_
+_Last updated: Thu, 24 Sep 2026 09:56:30 GMT_
 <!-- LEADERBOARD:END -->
 
 
