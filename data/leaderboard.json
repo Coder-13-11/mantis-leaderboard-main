@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T09:56:30.740Z",
+  "generated_at": "2026-09-24T14:59:22.078Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-24T09:55:17.754Z",
+    "run_started_at": "2026-09-24T14:57:59.554Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-24T00:00:00.000Z",
     "repos": [
@@ -13137,12 +13137,12 @@
         }
       ],
       "windows": {
-        "7": 298,
+        "7": 237,
         "14": 1066
       },
       "windowCounts": {
         "7": {
-          "prs": 61,
+          "prs": 46,
           "reviews": 0,
           "confirmed_issues": 48,
           "fixed_bonuses": 0,
@@ -13168,7 +13168,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 298,
+          "pr": 237,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -13184,8 +13184,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 298,
-          "shipping": 298,
+          "overall": 237,
+          "shipping": 237,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -13200,186 +13200,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-17T10:23:03Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2592",
-            "title": "refactor(spaces): share owned-space creation across API and MCP",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2592",
-            "notes": [
-              "54th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T10:24:10Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2595",
-            "title": "perf(access): collapse user_can_write_map into a single owner EXISTS",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2595",
-            "notes": [
-              "55th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T10:38:05Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3905",
-            "title": "perf(cache): let concurrent cache misses share one in-flight fetch",
-            "url": "https://github.com/KellisLab/Mantis/pull/3905",
-            "notes": [
-              "56th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T10:38:14Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2580",
-            "title": "fix(jarvis): mark executions complete when the stream ends without workflow_end",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2580",
-            "notes": [
-              "57th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T10:39:58Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3906",
-            "title": "fix(ws): fail closed when a backend WebSocket origin is missing",
-            "url": "https://github.com/KellisLab/Mantis/pull/3906",
-            "notes": [
-              "58th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T10:40:06Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2581",
-            "title": "fix(jarvis): claim scheduled workflows with a last_run_at compare-and-swap",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2581",
-            "notes": [
-              "59th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T10:44:28Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3908",
-            "title": "fix(composer): treat a chat-list failure as an error, not an empty inbox",
-            "url": "https://github.com/KellisLab/Mantis/pull/3908",
-            "notes": [
-              "60th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T10:47:15Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3913",
-            "title": "perf(bags): index bag lookups by id and name",
-            "url": "https://github.com/KellisLab/Mantis/pull/3913",
-            "notes": [
-              "61th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T11:55:04Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3919",
-            "title": "perf(home): abort off-screen preview fetches and free the slot",
-            "url": "https://github.com/KellisLab/Mantis/pull/3919",
-            "notes": [
-              "62th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T11:55:08Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2587",
-            "title": "fix(agno): bound workflow Celery tasks and emit workflow_error on timeout",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2587",
-            "notes": [
-              "63th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T11:55:12Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2590",
-            "title": "fix(paper-protocol): bound generated-code Celery tasks and persist timeout",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2590",
-            "notes": [
-              "64th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T12:20:28Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2577",
-            "title": "fix(paper-protocol): refuse worker pickup after stall or run-id mismatch",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2577",
-            "notes": [
-              "65th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T12:38:40Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3911",
-            "title": "fix(chat): close CONNECTING sockets and cancel delayed context patches",
-            "url": "https://github.com/KellisLab/Mantis/pull/3911",
-            "notes": [
-              "66th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T12:38:44Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3921",
-            "title": "perf(map-stream): skip per-frame ingest logs unless debug is on",
-            "url": "https://github.com/KellisLab/Mantis/pull/3921",
-            "notes": [
-              "67th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-17T12:44:54Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#3909",
-            "title": "fix(ml): ignore stale selector lists after overlapping loads",
-            "url": "https://github.com/KellisLab/Mantis/pull/3909",
-            "notes": [
-              "68th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-09-20T21:35:36Z",
             "category": "pr",
@@ -16532,7 +16352,7 @@
           }
         ]
       },
-      "rolling_total": 298,
+      "rolling_total": 237,
       "rank": 2
     },
     {
@@ -107889,7 +107709,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 5,
+          "prs_coauthored": 4,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -129262,7 +129082,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 16,
+          "prs_coauthored": 1,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -138847,7 +138667,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 8,
+          "prs_coauthored": 3,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -138859,7 +138679,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 12,
+          "prs_coauthored": 11,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
