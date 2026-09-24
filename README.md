@@ -19,13 +19,13 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **305** | 58 | 0 | 29 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **237** | 46 | 0 | 48 |
-| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **132** | 13 | 0 | 0 |
+| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **131** | 13 | 0 | 0 |
 | 4 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 0 |
 | 5 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **109** | 17 | 0 | 0 |
 | 6 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **71** | 6 | 0 | 4 |
 | 7 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **67** | 9 | 0 | 0 |
 | 8 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 1 | 1 |
-| 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 6 |
+| 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 8 |
 | 10 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **49** | 4 | 0 | 0 |
 
 #### Past 14 Days
@@ -34,16 +34,16 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1066** | 217 | 0 | 192 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **305** | 58 | 0 | 29 |
-| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **270** | 29 | 0 | 0 |
+| 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **281** | 30 | 0 | 0 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **208** | 26 | 0 | 2 |
 | 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **158** | 17 | 0 | 17 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **134** | 10 | 0 | 0 |
-| 7 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **121** | 14 | 0 | 0 |
-| 8 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 0 |
+| 6 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **121** | 14 | 0 | 0 |
+| 7 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 0 |
+| 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **104** | 8 | 0 | 0 |
 | 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 4 | 1 |
-| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 6 |
+| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **59** | 7 | 0 | 8 |
 
-_Last updated: Thu, 24 Sep 2026 14:59:22 GMT_
+_Last updated: Thu, 24 Sep 2026 19:05:02 GMT_
 <!-- LEADERBOARD:END -->
 
 
