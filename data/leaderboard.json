@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T20:27:46.396Z",
+  "generated_at": "2026-09-25T23:30:57.052Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-25T20:26:25.709Z",
+    "run_started_at": "2026-09-25T23:29:40.326Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-25T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4197,
-      "issues": 2655,
-      "reviews": 12757,
-      "review_comments": 14865
+      "prs": 4199,
+      "issues": 2656,
+      "reviews": 12765,
+      "review_comments": 14867
     }
   },
   "review_rules": {
@@ -17464,7 +17464,7 @@
     {
       "login": "SamDadmi",
       "name": "Sameeksha Dadmi",
-      "total": 521,
+      "total": 542,
       "days": {
         "2026-06-17": 11,
         "2026-06-20": 12,
@@ -17495,7 +17495,7 @@
         "2026-09-22": 13,
         "2026-09-23": 23,
         "2026-09-24": 11,
-        "2026-09-25": 12
+        "2026-09-25": 33
       },
       "dayCounts": {
         "2026-06-17": {
@@ -17859,7 +17859,7 @@
           "bug_prs": 0
         },
         "2026-09-25": {
-          "prs": 1,
+          "prs": 3,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -18124,7 +18124,7 @@
           "other": 0
         },
         "2026-09-25": {
-          "pr": 12,
+          "pr": 33,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -18132,14 +18132,14 @@
         }
       },
       "breakdown": {
-        "pr": 521,
+        "pr": 542,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 51,
+        "prs": 53,
         "reviews": 0,
         "confirmed_issues": 7,
         "fixed_bonuses": 0,
@@ -18152,8 +18152,8 @@
       },
       "sizes": {
         "XS": 8,
-        "S": 16,
-        "M": 25,
+        "S": 17,
+        "M": 26,
         "L": 2,
         "XL": 0
       },
@@ -18732,15 +18732,39 @@
           "title": "fix: filesystem tree drops files, editor tabs pick wrong/stale tab on close and delete",
           "url": "https://github.com/KellisLab/Mantis/pull/4674",
           "notes": []
+        },
+        {
+          "at": "2026-09-25T22:05:34Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4677",
+          "title": "fix(journey): memory leak from uncleared timers in JourneyCreationTour",
+          "url": "https://github.com/KellisLab/Mantis/pull/4677",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-25T22:41:09Z",
+          "category": "pr",
+          "points": 9,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4678",
+          "title": "fix: prevent stale timers in panel resize, spotlight, and scroll lock",
+          "url": "https://github.com/KellisLab/Mantis/pull/4678",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
         }
       ],
       "windows": {
-        "7": 119,
-        "14": 256
+        "7": 140,
+        "14": 277
       },
       "windowCounts": {
         "7": {
-          "prs": 12,
+          "prs": 14,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -18752,7 +18776,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 27,
+          "prs": 29,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -18766,14 +18790,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 119,
+          "pr": 140,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 256,
+          "pr": 277,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -18782,15 +18806,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 119,
-          "shipping": 119,
+          "overall": 140,
+          "shipping": 140,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 256,
-          "shipping": 256,
+          "overall": 277,
+          "shipping": 277,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -18935,6 +18959,30 @@
             "title": "fix: filesystem tree drops files, editor tabs pick wrong/stale tab on close and delete",
             "url": "https://github.com/KellisLab/Mantis/pull/4674",
             "notes": []
+          },
+          {
+            "at": "2026-09-25T22:05:34Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4677",
+            "title": "fix(journey): memory leak from uncleared timers in JourneyCreationTour",
+            "url": "https://github.com/KellisLab/Mantis/pull/4677",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-25T22:41:09Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4678",
+            "title": "fix: prevent stale timers in panel resize, spotlight, and scroll lock",
+            "url": "https://github.com/KellisLab/Mantis/pull/4678",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ],
         "14": [
@@ -19253,10 +19301,34 @@
             "title": "fix: filesystem tree drops files, editor tabs pick wrong/stale tab on close and delete",
             "url": "https://github.com/KellisLab/Mantis/pull/4674",
             "notes": []
+          },
+          {
+            "at": "2026-09-25T22:05:34Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4677",
+            "title": "fix(journey): memory leak from uncleared timers in JourneyCreationTour",
+            "url": "https://github.com/KellisLab/Mantis/pull/4677",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-25T22:41:09Z",
+            "category": "pr",
+            "points": 9,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4678",
+            "title": "fix: prevent stale timers in panel resize, spotlight, and scroll lock",
+            "url": "https://github.com/KellisLab/Mantis/pull/4678",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ]
       },
-      "rolling_total": 119,
+      "rolling_total": 140,
       "rank": 3
     },
     {
@@ -20220,6 +20292,548 @@
       "rank": 4
     },
     {
+      "login": "VatsalDesai152",
+      "name": "Vatsal Desai",
+      "total": 92,
+      "days": {
+        "2026-09-21": 37,
+        "2026-09-22": 22,
+        "2026-09-25": 33
+      },
+      "dayCounts": {
+        "2026-09-21": {
+          "prs": 4,
+          "reviews": 0,
+          "confirmed_issues": 4,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-22": {
+          "prs": 3,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-25": {
+          "prs": 3,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-02": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-24": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-09-21": {
+          "pr": 37,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-22": {
+          "pr": 22,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-25": {
+          "pr": 33,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 92,
+        "review": 0,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 10,
+        "reviews": 0,
+        "confirmed_issues": 11,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 0,
+        "issues_closed": 2,
+        "review_submissions": 0,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 1,
+        "S": 3,
+        "M": 6,
+        "L": 0,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-09-21T13:44:59Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4606",
+          "title": "Count attachment statuses in one pass",
+          "url": "https://github.com/KellisLab/Mantis/pull/4606",
+          "notes": []
+        },
+        {
+          "at": "2026-09-21T17:04:32Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4610",
+          "title": "fixing input.toLowerCase() function",
+          "url": "https://github.com/KellisLab/Mantis/pull/4610",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-21T17:50:09Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4612",
+          "title": "resolve config, lowercase fix",
+          "url": "https://github.com/KellisLab/Mantis/pull/4612",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        },
+        {
+          "at": "2026-09-21T20:13:09Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4615",
+          "title": "multiple small optimization for string normalization",
+          "url": "https://github.com/KellisLab/Mantis/pull/4615",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-09-22T08:37:13Z",
+          "category": "pr",
+          "points": 6,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4628",
+          "title": "optimization of repeated lookups, parsing",
+          "url": "https://github.com/KellisLab/Mantis/pull/4628",
+          "notes": [
+            "5th in 24h ×0.5"
+          ]
+        },
+        {
+          "at": "2026-09-22T17:35:42Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4634",
+          "title": "documentation view fix",
+          "url": "https://github.com/KellisLab/Mantis/pull/4634",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-09-22T18:16:09Z",
+          "category": "pr",
+          "points": 8,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4636",
+          "title": "Reduce redundant large-point metadata processing",
+          "url": "https://github.com/KellisLab/Mantis/pull/4636",
+          "notes": [
+            "4th in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-09-25T07:04:46Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4651",
+          "title": "Cache upgrade for document vector",
+          "url": "https://github.com/KellisLab/Mantis/pull/4651",
+          "notes": []
+        },
+        {
+          "at": "2026-09-25T08:15:31Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4668",
+          "title": "Remove redundant computation in local processing paths",
+          "url": "https://github.com/KellisLab/Mantis/pull/4668",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-09-25T20:58:51Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4676",
+          "title": "Reduce repeated plotting and map changes ",
+          "url": "https://github.com/KellisLab/Mantis/pull/4676",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
+        }
+      ],
+      "windows": {
+        "7": 92,
+        "14": 92
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 10,
+          "reviews": 0,
+          "confirmed_issues": 10,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 10,
+          "reviews": 0,
+          "confirmed_issues": 10,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 92,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 92,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 92,
+          "shipping": 92,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 92,
+          "shipping": 92,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [
+          {
+            "at": "2026-09-21T13:44:59Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4606",
+            "title": "Count attachment statuses in one pass",
+            "url": "https://github.com/KellisLab/Mantis/pull/4606",
+            "notes": []
+          },
+          {
+            "at": "2026-09-21T17:04:32Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4610",
+            "title": "fixing input.toLowerCase() function",
+            "url": "https://github.com/KellisLab/Mantis/pull/4610",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-21T17:50:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4612",
+            "title": "resolve config, lowercase fix",
+            "url": "https://github.com/KellisLab/Mantis/pull/4612",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-21T20:13:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4615",
+            "title": "multiple small optimization for string normalization",
+            "url": "https://github.com/KellisLab/Mantis/pull/4615",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-22T08:37:13Z",
+            "category": "pr",
+            "points": 6,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4628",
+            "title": "optimization of repeated lookups, parsing",
+            "url": "https://github.com/KellisLab/Mantis/pull/4628",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
+          },
+          {
+            "at": "2026-09-22T17:35:42Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4634",
+            "title": "documentation view fix",
+            "url": "https://github.com/KellisLab/Mantis/pull/4634",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-22T18:16:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4636",
+            "title": "Reduce redundant large-point metadata processing",
+            "url": "https://github.com/KellisLab/Mantis/pull/4636",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-25T07:04:46Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4651",
+            "title": "Cache upgrade for document vector",
+            "url": "https://github.com/KellisLab/Mantis/pull/4651",
+            "notes": []
+          },
+          {
+            "at": "2026-09-25T08:15:31Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4668",
+            "title": "Remove redundant computation in local processing paths",
+            "url": "https://github.com/KellisLab/Mantis/pull/4668",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-25T20:58:51Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4676",
+            "title": "Reduce repeated plotting and map changes ",
+            "url": "https://github.com/KellisLab/Mantis/pull/4676",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          }
+        ],
+        "14": [
+          {
+            "at": "2026-09-21T13:44:59Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4606",
+            "title": "Count attachment statuses in one pass",
+            "url": "https://github.com/KellisLab/Mantis/pull/4606",
+            "notes": []
+          },
+          {
+            "at": "2026-09-21T17:04:32Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4610",
+            "title": "fixing input.toLowerCase() function",
+            "url": "https://github.com/KellisLab/Mantis/pull/4610",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-21T17:50:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4612",
+            "title": "resolve config, lowercase fix",
+            "url": "https://github.com/KellisLab/Mantis/pull/4612",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          },
+          {
+            "at": "2026-09-21T20:13:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4615",
+            "title": "multiple small optimization for string normalization",
+            "url": "https://github.com/KellisLab/Mantis/pull/4615",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-22T08:37:13Z",
+            "category": "pr",
+            "points": 6,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4628",
+            "title": "optimization of repeated lookups, parsing",
+            "url": "https://github.com/KellisLab/Mantis/pull/4628",
+            "notes": [
+              "5th in 24h ×0.5"
+            ]
+          },
+          {
+            "at": "2026-09-22T17:35:42Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4634",
+            "title": "documentation view fix",
+            "url": "https://github.com/KellisLab/Mantis/pull/4634",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-22T18:16:09Z",
+            "category": "pr",
+            "points": 8,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4636",
+            "title": "Reduce redundant large-point metadata processing",
+            "url": "https://github.com/KellisLab/Mantis/pull/4636",
+            "notes": [
+              "4th in 24h ×0.65"
+            ]
+          },
+          {
+            "at": "2026-09-25T07:04:46Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4651",
+            "title": "Cache upgrade for document vector",
+            "url": "https://github.com/KellisLab/Mantis/pull/4651",
+            "notes": []
+          },
+          {
+            "at": "2026-09-25T08:15:31Z",
+            "category": "pr",
+            "points": 11,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4668",
+            "title": "Remove redundant computation in local processing paths",
+            "url": "https://github.com/KellisLab/Mantis/pull/4668",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-09-25T20:58:51Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4676",
+            "title": "Reduce repeated plotting and map changes ",
+            "url": "https://github.com/KellisLab/Mantis/pull/4676",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
+          }
+        ]
+      },
+      "rolling_total": 92,
+      "rank": 5
+    },
+    {
       "login": "PARTHANAND0009",
       "name": "Parth Anand",
       "total": 260,
@@ -20877,12 +21491,12 @@
         }
       ],
       "windows": {
-        "7": 98,
+        "7": 86,
         "14": 184
       },
       "windowCounts": {
         "7": {
-          "prs": 16,
+          "prs": 15,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -20908,7 +21522,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 98,
+          "pr": 86,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -20924,8 +21538,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 98,
-          "shipping": 98,
+          "overall": 86,
+          "shipping": 86,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -20940,18 +21554,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-18T21:08:42Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3018",
-            "title": "fix(synthesis): default sampling strategy for partial labeling configs",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3018",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
           {
             "at": "2026-09-19T15:10:58Z",
             "category": "pr",
@@ -21412,513 +22014,7 @@
           }
         ]
       },
-      "rolling_total": 98,
-      "rank": 5
-    },
-    {
-      "login": "VatsalDesai152",
-      "name": "Vatsal Desai",
-      "total": 82,
-      "days": {
-        "2026-09-21": 37,
-        "2026-09-22": 22,
-        "2026-09-25": 23
-      },
-      "dayCounts": {
-        "2026-09-21": {
-          "prs": 4,
-          "reviews": 0,
-          "confirmed_issues": 4,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-22": {
-          "prs": 3,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-25": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-02": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 1,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-24": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 2,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 1,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-09-21": {
-          "pr": 37,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-22": {
-          "pr": 22,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-25": {
-          "pr": 23,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 82,
-        "review": 0,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 9,
-        "reviews": 0,
-        "confirmed_issues": 11,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 0,
-        "issues_closed": 2,
-        "review_submissions": 0,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 1,
-        "S": 3,
-        "M": 5,
-        "L": 0,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-09-21T13:44:59Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4606",
-          "title": "Count attachment statuses in one pass",
-          "url": "https://github.com/KellisLab/Mantis/pull/4606",
-          "notes": []
-        },
-        {
-          "at": "2026-09-21T17:04:32Z",
-          "category": "pr",
-          "points": 10,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4610",
-          "title": "fixing input.toLowerCase() function",
-          "url": "https://github.com/KellisLab/Mantis/pull/4610",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        },
-        {
-          "at": "2026-09-21T17:50:09Z",
-          "category": "pr",
-          "points": 8,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4612",
-          "title": "resolve config, lowercase fix",
-          "url": "https://github.com/KellisLab/Mantis/pull/4612",
-          "notes": [
-            "3th in 24h ×0.8"
-          ]
-        },
-        {
-          "at": "2026-09-21T20:13:09Z",
-          "category": "pr",
-          "points": 8,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4615",
-          "title": "multiple small optimization for string normalization",
-          "url": "https://github.com/KellisLab/Mantis/pull/4615",
-          "notes": [
-            "4th in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-09-22T08:37:13Z",
-          "category": "pr",
-          "points": 6,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4628",
-          "title": "optimization of repeated lookups, parsing",
-          "url": "https://github.com/KellisLab/Mantis/pull/4628",
-          "notes": [
-            "5th in 24h ×0.5"
-          ]
-        },
-        {
-          "at": "2026-09-22T17:35:42Z",
-          "category": "pr",
-          "points": 8,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4634",
-          "title": "documentation view fix",
-          "url": "https://github.com/KellisLab/Mantis/pull/4634",
-          "notes": [
-            "4th in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-09-22T18:16:09Z",
-          "category": "pr",
-          "points": 8,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4636",
-          "title": "Reduce redundant large-point metadata processing",
-          "url": "https://github.com/KellisLab/Mantis/pull/4636",
-          "notes": [
-            "4th in 24h ×0.65"
-          ]
-        },
-        {
-          "at": "2026-09-25T07:04:46Z",
-          "category": "pr",
-          "points": 12,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4651",
-          "title": "Cache upgrade for document vector",
-          "url": "https://github.com/KellisLab/Mantis/pull/4651",
-          "notes": []
-        },
-        {
-          "at": "2026-09-25T08:15:31Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#4668",
-          "title": "Remove redundant computation in local processing paths",
-          "url": "https://github.com/KellisLab/Mantis/pull/4668",
-          "notes": [
-            "2th in 24h ×1"
-          ]
-        }
-      ],
-      "windows": {
-        "7": 82,
-        "14": 82
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 9,
-          "reviews": 0,
-          "confirmed_issues": 10,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 1,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 9,
-          "reviews": 0,
-          "confirmed_issues": 10,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 1,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 82,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 82,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 82,
-          "shipping": 82,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 82,
-          "shipping": 82,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [
-          {
-            "at": "2026-09-21T13:44:59Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4606",
-            "title": "Count attachment statuses in one pass",
-            "url": "https://github.com/KellisLab/Mantis/pull/4606",
-            "notes": []
-          },
-          {
-            "at": "2026-09-21T17:04:32Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4610",
-            "title": "fixing input.toLowerCase() function",
-            "url": "https://github.com/KellisLab/Mantis/pull/4610",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-21T17:50:09Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4612",
-            "title": "resolve config, lowercase fix",
-            "url": "https://github.com/KellisLab/Mantis/pull/4612",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-09-21T20:13:09Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4615",
-            "title": "multiple small optimization for string normalization",
-            "url": "https://github.com/KellisLab/Mantis/pull/4615",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-22T08:37:13Z",
-            "category": "pr",
-            "points": 6,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4628",
-            "title": "optimization of repeated lookups, parsing",
-            "url": "https://github.com/KellisLab/Mantis/pull/4628",
-            "notes": [
-              "5th in 24h ×0.5"
-            ]
-          },
-          {
-            "at": "2026-09-22T17:35:42Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4634",
-            "title": "documentation view fix",
-            "url": "https://github.com/KellisLab/Mantis/pull/4634",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-22T18:16:09Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4636",
-            "title": "Reduce redundant large-point metadata processing",
-            "url": "https://github.com/KellisLab/Mantis/pull/4636",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-25T07:04:46Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4651",
-            "title": "Cache upgrade for document vector",
-            "url": "https://github.com/KellisLab/Mantis/pull/4651",
-            "notes": []
-          },
-          {
-            "at": "2026-09-25T08:15:31Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4668",
-            "title": "Remove redundant computation in local processing paths",
-            "url": "https://github.com/KellisLab/Mantis/pull/4668",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          }
-        ],
-        "14": [
-          {
-            "at": "2026-09-21T13:44:59Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4606",
-            "title": "Count attachment statuses in one pass",
-            "url": "https://github.com/KellisLab/Mantis/pull/4606",
-            "notes": []
-          },
-          {
-            "at": "2026-09-21T17:04:32Z",
-            "category": "pr",
-            "points": 10,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4610",
-            "title": "fixing input.toLowerCase() function",
-            "url": "https://github.com/KellisLab/Mantis/pull/4610",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-21T17:50:09Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4612",
-            "title": "resolve config, lowercase fix",
-            "url": "https://github.com/KellisLab/Mantis/pull/4612",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
-          {
-            "at": "2026-09-21T20:13:09Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4615",
-            "title": "multiple small optimization for string normalization",
-            "url": "https://github.com/KellisLab/Mantis/pull/4615",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-22T08:37:13Z",
-            "category": "pr",
-            "points": 6,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4628",
-            "title": "optimization of repeated lookups, parsing",
-            "url": "https://github.com/KellisLab/Mantis/pull/4628",
-            "notes": [
-              "5th in 24h ×0.5"
-            ]
-          },
-          {
-            "at": "2026-09-22T17:35:42Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4634",
-            "title": "documentation view fix",
-            "url": "https://github.com/KellisLab/Mantis/pull/4634",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-22T18:16:09Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4636",
-            "title": "Reduce redundant large-point metadata processing",
-            "url": "https://github.com/KellisLab/Mantis/pull/4636",
-            "notes": [
-              "4th in 24h ×0.65"
-            ]
-          },
-          {
-            "at": "2026-09-25T07:04:46Z",
-            "category": "pr",
-            "points": 12,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4651",
-            "title": "Cache upgrade for document vector",
-            "url": "https://github.com/KellisLab/Mantis/pull/4651",
-            "notes": []
-          },
-          {
-            "at": "2026-09-25T08:15:31Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4668",
-            "title": "Remove redundant computation in local processing paths",
-            "url": "https://github.com/KellisLab/Mantis/pull/4668",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          }
-        ]
-      },
-      "rolling_total": 82,
+      "rolling_total": 86,
       "rank": 6
     },
     {
@@ -23839,7 +23935,7 @@
       ],
       "windows": {
         "7": 71,
-        "14": 150
+        "14": 137
       },
       "windowCounts": {
         "7": {
@@ -23855,7 +23951,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 12,
+          "prs": 11,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -23876,7 +23972,7 @@
           "other": 0
         },
         "14": {
-          "pr": 150,
+          "pr": 137,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -23892,8 +23988,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 150,
-          "shipping": 150,
+          "overall": 137,
+          "shipping": 137,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -23969,16 +24065,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-11T22:57:28Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4317",
-            "title": "feat(reasoning-cards): send bounded prior-card context",
-            "url": "https://github.com/KellisLab/Mantis/pull/4317",
-            "notes": []
-          },
           {
             "at": "2026-09-15T20:38:20Z",
             "category": "pr",
@@ -28945,7 +29031,7 @@
         "7": {
           "prs": 5,
           "reviews": 1,
-          "confirmed_issues": 1,
+          "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
@@ -28956,13 +29042,13 @@
         },
         "14": {
           "prs": 5,
-          "reviews": 3,
+          "reviews": 2,
           "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
           "issues_closed": 1,
-          "review_submissions": 4,
+          "review_submissions": 3,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -31216,7 +31302,7 @@
       ],
       "windows": {
         "7": 58,
-        "14": 158
+        "14": 144
       },
       "windowCounts": {
         "7": {
@@ -31232,13 +31318,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 17,
+          "prs": 16,
           "reviews": 0,
           "confirmed_issues": 16,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
-          "issues_closed": 3,
+          "issues_closed": 2,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -31253,7 +31339,7 @@
           "other": 0
         },
         "14": {
-          "pr": 158,
+          "pr": 144,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -31269,8 +31355,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 158,
-          "shipping": 158,
+          "overall": 144,
+          "shipping": 144,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -31336,16 +31422,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-11T21:27:11Z",
-            "category": "pr",
-            "points": 14,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2983",
-            "title": "Parallelize KG keyword extraction and raise triplet concurrency",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2983",
-            "notes": []
-          },
           {
             "at": "2026-09-15T05:18:47Z",
             "category": "pr",
@@ -147542,6 +147618,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-09-25": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {},
@@ -147555,7 +147643,7 @@
       "counts": {
         "prs": 0,
         "reviews": 0,
-        "confirmed_issues": 5,
+        "confirmed_issues": 6,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 0,
@@ -147581,7 +147669,7 @@
         "7": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 1,
+          "confirmed_issues": 2,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -147593,7 +147681,7 @@
         "14": {
           "prs": 0,
           "reviews": 0,
-          "confirmed_issues": 5,
+          "confirmed_issues": 6,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
