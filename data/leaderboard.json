@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T01:56:44.976Z",
+  "generated_at": "2026-09-26T07:35:44.314Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-26T01:55:42.873Z",
+    "run_started_at": "2026-09-26T07:34:26.144Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-26T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4199,
-      "issues": 2657,
-      "reviews": 12767,
-      "review_comments": 14867
+      "prs": 4213,
+      "issues": 2680,
+      "reviews": 12780,
+      "review_comments": 14878
     }
   },
   "review_rules": {
@@ -176,7 +176,7 @@
     {
       "login": "chreia",
       "name": "Sebastien Kawada",
-      "total": 2986,
+      "total": 2995,
       "days": {
         "2026-06-06": 13,
         "2026-06-09": 12,
@@ -225,7 +225,8 @@
         "2026-09-20": 91,
         "2026-09-21": 142,
         "2026-09-22": 4,
-        "2026-09-25": 165
+        "2026-09-25": 165,
+        "2026-09-26": 9
       },
       "dayCounts": {
         "2026-06-06": {
@@ -876,6 +877,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-09-26": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 21,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-06-07": {
           "prs": 0,
           "reviews": 0,
@@ -1309,19 +1322,26 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-09-26": {
+          "pr": 9,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 2891,
+        "pr": 2900,
         "review": 48,
         "issue": 0,
         "docs": 47,
         "other": 0
       },
       "counts": {
-        "prs": 564,
+        "prs": 566,
         "reviews": 5,
-        "confirmed_issues": 393,
+        "confirmed_issues": 414,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 12,
@@ -1333,8 +1353,8 @@
       "sizes": {
         "XS": 37,
         "S": 86,
-        "M": 181,
-        "L": 124,
+        "M": 182,
+        "L": 125,
         "XL": 113
       },
       "contributions": [],
@@ -7843,17 +7863,41 @@
             "nontrivial PR",
             "2th review in 24h ×1"
           ]
+        },
+        {
+          "at": "2026-09-26T06:55:59Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4690",
+          "title": "Paint /home/ instantly and stream the Space library",
+          "url": "https://github.com/KellisLab/Mantis/pull/4690",
+          "notes": [
+            "27th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T07:03:36Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4681",
+          "title": "Open the Verticals menu reliably: slot-safe menubar items",
+          "url": "https://github.com/KellisLab/Mantis/pull/4681",
+          "notes": [
+            "27th in 24h ×0.35"
+          ]
         }
       ],
       "windows": {
-        "7": 402,
-        "14": 1231
+        "7": 411,
+        "14": 1240
       },
       "windowCounts": {
         "7": {
-          "prs": 76,
+          "prs": 78,
           "reviews": 0,
-          "confirmed_issues": 62,
+          "confirmed_issues": 83,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
@@ -7863,9 +7907,9 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 247,
+          "prs": 249,
           "reviews": 0,
-          "confirmed_issues": 206,
+          "confirmed_issues": 227,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
@@ -7877,14 +7921,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 402,
+          "pr": 411,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 1231,
+          "pr": 1240,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -7893,15 +7937,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 402,
-          "shipping": 402,
+          "overall": 411,
+          "shipping": 411,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 1231,
-          "shipping": 1231,
+          "overall": 1240,
+          "shipping": 1240,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -8815,6 +8859,30 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/3461",
             "notes": [
               "30th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T06:55:59Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4690",
+            "title": "Paint /home/ instantly and stream the Space library",
+            "url": "https://github.com/KellisLab/Mantis/pull/4690",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T07:03:36Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4681",
+            "title": "Open the Verticals menu reliably: slot-safe menubar items",
+            "url": "https://github.com/KellisLab/Mantis/pull/4681",
+            "notes": [
+              "27th in 24h ×0.35"
             ]
           }
         ],
@@ -11774,10 +11842,34 @@
             "notes": [
               "30th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-09-26T06:55:59Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4690",
+            "title": "Paint /home/ instantly and stream the Space library",
+            "url": "https://github.com/KellisLab/Mantis/pull/4690",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T07:03:36Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4681",
+            "title": "Open the Verticals menu reliably: slot-safe menubar items",
+            "url": "https://github.com/KellisLab/Mantis/pull/4681",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
           }
         ]
       },
-      "rolling_total": 402,
+      "rolling_total": 411,
       "rank": 1
     },
     {
@@ -20360,6 +20452,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-09-26": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -20395,7 +20499,7 @@
       "counts": {
         "prs": 10,
         "reviews": 0,
-        "confirmed_issues": 11,
+        "confirmed_issues": 12,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 0,
@@ -20538,7 +20642,7 @@
         "7": {
           "prs": 10,
           "reviews": 0,
-          "confirmed_issues": 10,
+          "confirmed_issues": 11,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -20550,7 +20654,7 @@
         "14": {
           "prs": 10,
           "reviews": 0,
-          "confirmed_issues": 10,
+          "confirmed_issues": 11,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
@@ -26367,7 +26471,7 @@
         "14": {
           "prs": 16,
           "reviews": 0,
-          "confirmed_issues": 16,
+          "confirmed_issues": 14,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
