@@ -23,10 +23,10 @@ code / review / issues ledger.
 | 4 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 0 |
 | 5 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **92** | 10 | 0 | 10 |
 | 6 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **86** | 15 | 0 | 0 |
-| 7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **73** | 7 | 3 | 0 |
+| 7 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **79** | 7 | 4 | 0 |
 | 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **71** | 6 | 0 | 0 |
-| 9 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **60** | 5 | 1 | 0 |
-| 10 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **58** | 5 | 0 | 3 |
+| 9 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **58** | 5 | 0 | 3 |
+| 10 | **Arjun Kulkarni** ([@DemonizedCrush](https://github.com/DemonizedCrush)) | **47** | 4 | 1 | 0 |
 
 #### Past 14 Days
 
@@ -40,10 +40,10 @@ code / review / issues ledger.
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **137** | 11 | 0 | 0 |
 | 7 | [@VihanAggarwal](https://github.com/VihanAggarwal) | **121** | 14 | 0 | 0 |
 | 8 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 0 |
-| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **103** | 7 | 7 | 0 |
+| 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **109** | 7 | 8 | 0 |
 | 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **92** | 10 | 0 | 10 |
 
-_Last updated: Fri, 25 Sep 2026 23:30:57 GMT_
+_Last updated: Sat, 26 Sep 2026 01:56:45 GMT_
 <!-- LEADERBOARD:END -->
 
 
