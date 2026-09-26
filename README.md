@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **618** | 123 | 0 | 129 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **657** | 131 | 0 | 150 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **305** | 58 | 0 | 29 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **124** | 12 | 0 | 0 |
 | 4 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 0 |
@@ -32,7 +32,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1447** | 294 | 0 | 273 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1449** | 299 | 0 | 281 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **305** | 58 | 0 | 29 |
 | 3 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **277** | 29 | 0 | 0 |
 | 4 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **172** | 23 | 0 | 2 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **109** | 7 | 8 | 0 |
 | 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **92** | 10 | 0 | 11 |
 
-_Last updated: Sat, 26 Sep 2026 19:47:02 GMT_
+_Last updated: Sat, 26 Sep 2026 22:43:18 GMT_
 <!-- LEADERBOARD:END -->
 
 
