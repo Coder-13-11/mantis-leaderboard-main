@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T07:35:44.314Z",
+  "generated_at": "2026-09-26T12:26:45.562Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-09-26T07:34:26.144Z",
+    "run_started_at": "2026-09-26T12:25:40.411Z",
     "lookback_days": 365,
     "lookback_since": "2025-09-26T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4213,
-      "issues": 2680,
-      "reviews": 12780,
-      "review_comments": 14878
+      "prs": 4237,
+      "issues": 2710,
+      "reviews": 12841,
+      "review_comments": 14929
     }
   },
   "review_rules": {
@@ -176,7 +176,7 @@
     {
       "login": "chreia",
       "name": "Sebastien Kawada",
-      "total": 2995,
+      "total": 3088,
       "days": {
         "2026-06-06": 13,
         "2026-06-09": 12,
@@ -226,7 +226,7 @@
         "2026-09-21": 142,
         "2026-09-22": 4,
         "2026-09-25": 165,
-        "2026-09-26": 9
+        "2026-09-26": 102
       },
       "dayCounts": {
         "2026-06-06": {
@@ -878,13 +878,13 @@
           "bug_prs": 0
         },
         "2026-09-26": {
-          "prs": 2,
+          "prs": 22,
           "reviews": 0,
-          "confirmed_issues": 21,
+          "confirmed_issues": 50,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 20,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -1324,7 +1324,7 @@
           "other": 0
         },
         "2026-09-26": {
-          "pr": 9,
+          "pr": 102,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1332,30 +1332,30 @@
         }
       },
       "breakdown": {
-        "pr": 2900,
+        "pr": 2993,
         "review": 48,
         "issue": 0,
         "docs": 47,
         "other": 0
       },
       "counts": {
-        "prs": 566,
+        "prs": 586,
         "reviews": 5,
-        "confirmed_issues": 414,
+        "confirmed_issues": 443,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 12,
-        "issues_closed": 276,
+        "issues_closed": 296,
         "review_submissions": 5,
         "docs_prs": 7,
         "bug_prs": 3
       },
       "sizes": {
-        "XS": 37,
-        "S": 86,
-        "M": 182,
-        "L": 125,
-        "XL": 113
+        "XS": 38,
+        "S": 89,
+        "M": 185,
+        "L": 134,
+        "XL": 117
       },
       "contributions": [],
       "ledger": [
@@ -7850,21 +7850,6 @@
           ]
         },
         {
-          "at": "2026-09-07T21:25:11Z",
-          "category": "review",
-          "points": 13,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4264",
-          "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
-          "url": "https://github.com/KellisLab/Mantis/pull/4264",
-          "notes": [
-            "changes requested",
-            "inline comments",
-            "nontrivial PR",
-            "2th review in 24h ×1"
-          ]
-        },
-        {
           "at": "2026-09-26T06:55:59Z",
           "category": "pr",
           "points": 5,
@@ -7887,33 +7872,288 @@
           "notes": [
             "27th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-09-26T07:48:50Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4711",
+          "title": "Apply the Education layout only when the person switches to it",
+          "url": "https://github.com/KellisLab/Mantis/pull/4711",
+          "notes": [
+            "23th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T07:55:08Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4695",
+          "title": "Open Spaces sooner: one shared socket ticket, fetched while the Space resolves",
+          "url": "https://github.com/KellisLab/Mantis/pull/4695",
+          "notes": [
+            "24th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:04:07Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4708",
+          "title": "Hydrate the streamed Space library deterministically",
+          "url": "https://github.com/KellisLab/Mantis/pull/4708",
+          "notes": [
+            "25th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:04:43Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4698",
+          "title": "Front page: smooth scrolling on demand, 48 KiB lighter first load",
+          "url": "https://github.com/KellisLab/Mantis/pull/4698",
+          "notes": [
+            "26th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:06:40Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4702",
+          "title": "Front page map: build in milliseconds, draw only what the moment needs",
+          "url": "https://github.com/KellisLab/Mantis/pull/4702",
+          "notes": [
+            "27th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:12:32Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4700",
+          "title": "Draw the /home/ glyph fields in level batches and only on screen",
+          "url": "https://github.com/KellisLab/Mantis/pull/4700",
+          "notes": [
+            "27th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:31:37Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4693",
+          "title": "Space cards: readable descriptions, owner and age, quick actions on the preview",
+          "url": "https://github.com/KellisLab/Mantis/pull/4693",
+          "notes": [
+            "27th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:32:53Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4704",
+          "title": "Put your work first on /home/: slim Create strip, recent before featured, Shared filter",
+          "url": "https://github.com/KellisLab/Mantis/pull/4704",
+          "notes": [
+            "28th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:36:22Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4719",
+          "title": "One calm loading surface for every Space open",
+          "url": "https://github.com/KellisLab/Mantis/pull/4719",
+          "notes": [
+            "29th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:40:33Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4721",
+          "title": "Front page logos sized for how they are drawn: 1.6 MB lighter",
+          "url": "https://github.com/KellisLab/Mantis/pull/4721",
+          "notes": [
+            "28th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T08:49:11Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4717",
+          "title": "Front page header: a way into the product and navigation that works from the keyboard",
+          "url": "https://github.com/KellisLab/Mantis/pull/4717",
+          "notes": [
+            "29th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T09:03:54Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4714",
+          "title": "Front page type stays readable through every theme crossfade",
+          "url": "https://github.com/KellisLab/Mantis/pull/4714",
+          "notes": [
+            "28th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T09:17:12Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3476",
+          "title": "Anchor the cluster palette where a full set of hues fits",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3476",
+          "notes": [
+            "29th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T09:17:37Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3472",
+          "title": "Send the cluster hierarchy ahead of the first point layer",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3472",
+          "notes": [
+            "30th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T09:20:09Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3474",
+          "title": "Cartographer-1: a native Composer model for the life sciences and mathematics",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3474",
+          "notes": [
+            "31th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T09:21:17Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4715",
+          "title": "Life & Reasoning Sciences panels: 3D structures, flowcharts, charts and code, live over AG-UI",
+          "url": "https://github.com/KellisLab/Mantis/pull/4715",
+          "notes": [
+            "32th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T09:21:44Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4723",
+          "title": "Life & Reasoning Sciences vertical and Cartographer-1 in the Composer picker",
+          "url": "https://github.com/KellisLab/Mantis/pull/4723",
+          "notes": [
+            "33th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T09:23:41Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4701",
+          "title": "Colour every map point from its first frame",
+          "url": "https://github.com/KellisLab/Mantis/pull/4701",
+          "notes": [
+            "34th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T10:34:09Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4740",
+          "title": "chore(ci): raise /space/[slug] gzip budget by 1 KiB for the Composer model picker",
+          "url": "https://github.com/KellisLab/Mantis/pull/4740",
+          "notes": [
+            "30th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-26T10:45:28Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4729",
+          "title": "Uploads send large files in parallel parts and retry transient failures",
+          "url": "https://github.com/KellisLab/Mantis/pull/4729",
+          "notes": [
+            "29th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-09-07T21:25:11Z",
+          "category": "review",
+          "points": 13,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4264",
+          "title": "feat: pseudobulk differential expression analysis (h5ad post-processing)",
+          "url": "https://github.com/KellisLab/Mantis/pull/4264",
+          "notes": [
+            "changes requested",
+            "inline comments",
+            "nontrivial PR",
+            "2th review in 24h ×1"
+          ]
         }
       ],
       "windows": {
-        "7": 411,
-        "14": 1240
+        "7": 504,
+        "14": 1333
       },
       "windowCounts": {
         "7": {
-          "prs": 78,
+          "prs": 98,
           "reviews": 0,
-          "confirmed_issues": 83,
+          "confirmed_issues": 112,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 53,
+          "issues_closed": 73,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 249,
+          "prs": 269,
           "reviews": 0,
-          "confirmed_issues": 227,
+          "confirmed_issues": 256,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
-          "issues_closed": 182,
+          "issues_closed": 202,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -7921,14 +8161,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 411,
+          "pr": 504,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 1240,
+          "pr": 1333,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -7937,15 +8177,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 411,
-          "shipping": 411,
+          "overall": 504,
+          "shipping": 504,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 1240,
-          "shipping": 1240,
+          "overall": 1333,
+          "shipping": 1333,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -8883,6 +9123,246 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4681",
             "notes": [
               "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T07:48:50Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4711",
+            "title": "Apply the Education layout only when the person switches to it",
+            "url": "https://github.com/KellisLab/Mantis/pull/4711",
+            "notes": [
+              "23th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T07:55:08Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4695",
+            "title": "Open Spaces sooner: one shared socket ticket, fetched while the Space resolves",
+            "url": "https://github.com/KellisLab/Mantis/pull/4695",
+            "notes": [
+              "24th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:04:07Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4708",
+            "title": "Hydrate the streamed Space library deterministically",
+            "url": "https://github.com/KellisLab/Mantis/pull/4708",
+            "notes": [
+              "25th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:04:43Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4698",
+            "title": "Front page: smooth scrolling on demand, 48 KiB lighter first load",
+            "url": "https://github.com/KellisLab/Mantis/pull/4698",
+            "notes": [
+              "26th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:06:40Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4702",
+            "title": "Front page map: build in milliseconds, draw only what the moment needs",
+            "url": "https://github.com/KellisLab/Mantis/pull/4702",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:12:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4700",
+            "title": "Draw the /home/ glyph fields in level batches and only on screen",
+            "url": "https://github.com/KellisLab/Mantis/pull/4700",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:31:37Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4693",
+            "title": "Space cards: readable descriptions, owner and age, quick actions on the preview",
+            "url": "https://github.com/KellisLab/Mantis/pull/4693",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:32:53Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4704",
+            "title": "Put your work first on /home/: slim Create strip, recent before featured, Shared filter",
+            "url": "https://github.com/KellisLab/Mantis/pull/4704",
+            "notes": [
+              "28th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:36:22Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4719",
+            "title": "One calm loading surface for every Space open",
+            "url": "https://github.com/KellisLab/Mantis/pull/4719",
+            "notes": [
+              "29th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:40:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4721",
+            "title": "Front page logos sized for how they are drawn: 1.6 MB lighter",
+            "url": "https://github.com/KellisLab/Mantis/pull/4721",
+            "notes": [
+              "28th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:49:11Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4717",
+            "title": "Front page header: a way into the product and navigation that works from the keyboard",
+            "url": "https://github.com/KellisLab/Mantis/pull/4717",
+            "notes": [
+              "29th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:03:54Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4714",
+            "title": "Front page type stays readable through every theme crossfade",
+            "url": "https://github.com/KellisLab/Mantis/pull/4714",
+            "notes": [
+              "28th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:17:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3476",
+            "title": "Anchor the cluster palette where a full set of hues fits",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3476",
+            "notes": [
+              "29th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:17:37Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3472",
+            "title": "Send the cluster hierarchy ahead of the first point layer",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3472",
+            "notes": [
+              "30th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:20:09Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3474",
+            "title": "Cartographer-1: a native Composer model for the life sciences and mathematics",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3474",
+            "notes": [
+              "31th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:21:17Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4715",
+            "title": "Life & Reasoning Sciences panels: 3D structures, flowcharts, charts and code, live over AG-UI",
+            "url": "https://github.com/KellisLab/Mantis/pull/4715",
+            "notes": [
+              "32th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:21:44Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4723",
+            "title": "Life & Reasoning Sciences vertical and Cartographer-1 in the Composer picker",
+            "url": "https://github.com/KellisLab/Mantis/pull/4723",
+            "notes": [
+              "33th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:23:41Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4701",
+            "title": "Colour every map point from its first frame",
+            "url": "https://github.com/KellisLab/Mantis/pull/4701",
+            "notes": [
+              "34th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T10:34:09Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4740",
+            "title": "chore(ci): raise /space/[slug] gzip budget by 1 KiB for the Composer model picker",
+            "url": "https://github.com/KellisLab/Mantis/pull/4740",
+            "notes": [
+              "30th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T10:45:28Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4729",
+            "title": "Uploads send large files in parallel parts and retry transient failures",
+            "url": "https://github.com/KellisLab/Mantis/pull/4729",
+            "notes": [
+              "29th in 24h ×0.35"
             ]
           }
         ],
@@ -11866,10 +12346,250 @@
             "notes": [
               "27th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-09-26T07:48:50Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4711",
+            "title": "Apply the Education layout only when the person switches to it",
+            "url": "https://github.com/KellisLab/Mantis/pull/4711",
+            "notes": [
+              "23th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T07:55:08Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4695",
+            "title": "Open Spaces sooner: one shared socket ticket, fetched while the Space resolves",
+            "url": "https://github.com/KellisLab/Mantis/pull/4695",
+            "notes": [
+              "24th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:04:07Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4708",
+            "title": "Hydrate the streamed Space library deterministically",
+            "url": "https://github.com/KellisLab/Mantis/pull/4708",
+            "notes": [
+              "25th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:04:43Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4698",
+            "title": "Front page: smooth scrolling on demand, 48 KiB lighter first load",
+            "url": "https://github.com/KellisLab/Mantis/pull/4698",
+            "notes": [
+              "26th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:06:40Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4702",
+            "title": "Front page map: build in milliseconds, draw only what the moment needs",
+            "url": "https://github.com/KellisLab/Mantis/pull/4702",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:12:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4700",
+            "title": "Draw the /home/ glyph fields in level batches and only on screen",
+            "url": "https://github.com/KellisLab/Mantis/pull/4700",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:31:37Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4693",
+            "title": "Space cards: readable descriptions, owner and age, quick actions on the preview",
+            "url": "https://github.com/KellisLab/Mantis/pull/4693",
+            "notes": [
+              "27th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:32:53Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4704",
+            "title": "Put your work first on /home/: slim Create strip, recent before featured, Shared filter",
+            "url": "https://github.com/KellisLab/Mantis/pull/4704",
+            "notes": [
+              "28th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:36:22Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4719",
+            "title": "One calm loading surface for every Space open",
+            "url": "https://github.com/KellisLab/Mantis/pull/4719",
+            "notes": [
+              "29th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:40:33Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4721",
+            "title": "Front page logos sized for how they are drawn: 1.6 MB lighter",
+            "url": "https://github.com/KellisLab/Mantis/pull/4721",
+            "notes": [
+              "28th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T08:49:11Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4717",
+            "title": "Front page header: a way into the product and navigation that works from the keyboard",
+            "url": "https://github.com/KellisLab/Mantis/pull/4717",
+            "notes": [
+              "29th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:03:54Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4714",
+            "title": "Front page type stays readable through every theme crossfade",
+            "url": "https://github.com/KellisLab/Mantis/pull/4714",
+            "notes": [
+              "28th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:17:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3476",
+            "title": "Anchor the cluster palette where a full set of hues fits",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3476",
+            "notes": [
+              "29th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:17:37Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3472",
+            "title": "Send the cluster hierarchy ahead of the first point layer",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3472",
+            "notes": [
+              "30th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:20:09Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3474",
+            "title": "Cartographer-1: a native Composer model for the life sciences and mathematics",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3474",
+            "notes": [
+              "31th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:21:17Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4715",
+            "title": "Life & Reasoning Sciences panels: 3D structures, flowcharts, charts and code, live over AG-UI",
+            "url": "https://github.com/KellisLab/Mantis/pull/4715",
+            "notes": [
+              "32th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:21:44Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4723",
+            "title": "Life & Reasoning Sciences vertical and Cartographer-1 in the Composer picker",
+            "url": "https://github.com/KellisLab/Mantis/pull/4723",
+            "notes": [
+              "33th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T09:23:41Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4701",
+            "title": "Colour every map point from its first frame",
+            "url": "https://github.com/KellisLab/Mantis/pull/4701",
+            "notes": [
+              "34th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T10:34:09Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4740",
+            "title": "chore(ci): raise /space/[slug] gzip budget by 1 KiB for the Composer model picker",
+            "url": "https://github.com/KellisLab/Mantis/pull/4740",
+            "notes": [
+              "30th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-09-26T10:45:28Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4729",
+            "title": "Uploads send large files in parallel parts and retry transient failures",
+            "url": "https://github.com/KellisLab/Mantis/pull/4729",
+            "notes": [
+              "29th in 24h ×0.35"
+            ]
           }
         ]
       },
-      "rolling_total": 411,
+      "rolling_total": 504,
       "rank": 1
     },
     {
@@ -18851,12 +19571,12 @@
         }
       ],
       "windows": {
-        "7": 140,
+        "7": 132,
         "14": 277
       },
       "windowCounts": {
         "7": {
-          "prs": 14,
+          "prs": 13,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -18882,7 +19602,7 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 140,
+          "pr": 132,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -18898,8 +19618,8 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 140,
-          "shipping": 140,
+          "overall": 132,
+          "shipping": 132,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -18914,18 +19634,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-19T09:45:49Z",
-            "category": "pr",
-            "points": 8,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4524",
-            "title": "fix: add timeout to plugin isolate init runSync call",
-            "url": "https://github.com/KellisLab/Mantis/pull/4524",
-            "notes": [
-              "3th in 24h ×0.8"
-            ]
-          },
           {
             "at": "2026-09-19T16:52:10Z",
             "category": "pr",
@@ -19420,7 +20128,7 @@
           }
         ]
       },
-      "rolling_total": 140,
+      "rolling_total": 132,
       "rank": 3
     },
     {
@@ -55232,11 +55940,11 @@
         "14": {
           "prs": 1,
           "reviews": 0,
-          "confirmed_issues": 7,
+          "confirmed_issues": 5,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 8,
+          "issues_closed": 4,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
