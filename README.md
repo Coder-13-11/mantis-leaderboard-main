@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **562** | 111 | 1 | 143 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **553** | 109 | 1 | 130 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **259** | 42 | 0 | 4 |
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **209** | 23 | 2 | 24 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **181** | 8 | 24 | 1 |
@@ -25,14 +25,14 @@ code / review / issues ledger.
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **76** | 6 | 0 | 0 |
 | 7 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
 | 8 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **45** | 4 | 0 | 0 |
-| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **44** | 4 | 0 | 3 |
-| 10 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **42** | 3 | 0 | 0 |
+| 9 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **42** | 3 | 0 | 0 |
+| 10 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **31** | 3 | 0 | 2 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1180** | 234 | 1 | 272 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1200** | 238 | 1 | 277 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **564** | 100 | 0 | 33 |
 | 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **267** | 28 | 2 | 27 |
 | 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **260** | 15 | 28 | 1 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **84** | 6 | 0 | 0 |
 | 10 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **81** | 7 | 0 | 0 |
 
-_Last updated: Sat, 03 Oct 2026 18:49:26 GMT_
+_Last updated: Sat, 03 Oct 2026 22:07:13 GMT_
 <!-- LEADERBOARD:END -->
 
 
