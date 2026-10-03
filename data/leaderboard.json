@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T11:34:59.093Z",
+  "generated_at": "2026-10-03T15:15:19.665Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-10-03T11:33:51.155Z",
+    "run_started_at": "2026-10-03T15:14:03.119Z",
     "lookback_days": 365,
     "lookback_since": "2025-10-03T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4482,
-      "issues": 2936,
-      "reviews": 13446,
-      "review_comments": 15093
+      "prs": 4498,
+      "issues": 2954,
+      "reviews": 13459,
+      "review_comments": 15102
     }
   },
   "review_rules": {
@@ -176,7 +176,7 @@
     {
       "login": "chreia",
       "name": "Sebastien Kawada",
-      "total": 3631,
+      "total": 3704,
       "days": {
         "2026-06-06": 13,
         "2026-06-09": 12,
@@ -230,7 +230,7 @@
         "2026-09-27": 37,
         "2026-09-29": 8,
         "2026-10-02": 26,
-        "2026-10-03": 292
+        "2026-10-03": 365
       },
       "dayCounts": {
         "2026-06-06": {
@@ -930,13 +930,13 @@
           "bug_prs": 0
         },
         "2026-10-03": {
-          "prs": 60,
+          "prs": 75,
           "reviews": 0,
-          "confirmed_issues": 72,
+          "confirmed_issues": 88,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 52,
+          "issues_closed": 67,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -1404,7 +1404,7 @@
           "other": 0
         },
         "2026-10-03": {
-          "pr": 292,
+          "pr": 365,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -1412,30 +1412,30 @@
         }
       },
       "breakdown": {
-        "pr": 3528,
+        "pr": 3601,
         "review": 56,
         "issue": 0,
         "docs": 47,
         "other": 0
       },
       "counts": {
-        "prs": 695,
+        "prs": 710,
         "reviews": 6,
-        "confirmed_issues": 576,
+        "confirmed_issues": 592,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 12,
-        "issues_closed": 376,
+        "issues_closed": 391,
         "review_submissions": 6,
         "docs_prs": 7,
         "bug_prs": 3
       },
       "sizes": {
-        "XS": 42,
+        "XS": 43,
         "S": 94,
-        "M": 224,
-        "L": 178,
-        "XL": 134
+        "M": 225,
+        "L": 188,
+        "XL": 137
       },
       "contributions": [],
       "ledger": [
@@ -9526,33 +9526,213 @@
           "notes": [
             "62th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-10-03T11:35:32Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3736",
+          "title": "Calculate PDF bookmark section boundaries in one pass",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3736",
+          "notes": [
+            "63th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T11:52:32Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3720",
+          "title": "Keep Input Text cache I/O responsive on the ASGI event loop",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3720",
+          "notes": [
+            "64th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T12:06:03Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3742",
+          "title": "Surface per-object failures during point-generation cleanup",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3742",
+          "notes": [
+            "65th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T12:09:54Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4981",
+          "title": "Keep live previews owned by committed selections and make failures retryable",
+          "url": "https://github.com/KellisLab/Mantis/pull/4981",
+          "notes": [
+            "66th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T12:23:02Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3744",
+          "title": "Reuse PDF page extraction for font-heading sections",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3744",
+          "notes": [
+            "67th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T12:33:32Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4982",
+          "title": "Reuse fitted variance across plotted confidence bounds",
+          "url": "https://github.com/KellisLab/Mantis/pull/4982",
+          "notes": [
+            "68th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T12:50:48Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3738",
+          "title": "Count literal Composer text with ordinary BPE tokens",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3738",
+          "notes": [
+            "69th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T12:52:19Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3747",
+          "title": "Close periodic fetch sessions on every request exit",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3747",
+          "notes": [
+            "70th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T13:04:50Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4985",
+          "title": "Keep fitted scatter traces available for large selections",
+          "url": "https://github.com/KellisLab/Mantis/pull/4985",
+          "notes": [
+            "71th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T13:32:26Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3753",
+          "title": "Apply existing Space read permissions to upload progress sockets",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3753",
+          "notes": [
+            "72th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T13:39:42Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4988",
+          "title": "Reuse scaled regrouping maps across animation progress updates",
+          "url": "https://github.com/KellisLab/Mantis/pull/4988",
+          "notes": [
+            "73th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T14:00:52Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4987",
+          "title": "Keep requested History pages complete during persisted-action refreshes",
+          "url": "https://github.com/KellisLab/Mantis/pull/4987",
+          "notes": [
+            "74th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T14:04:12Z",
+          "category": "pr",
+          "points": 4,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3752",
+          "title": "Keep backend draft validation lanes idle until ready for review",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3752",
+          "notes": [
+            "75th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T14:18:12Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#4990",
+          "title": "Compute Home health scores once per sort",
+          "url": "https://github.com/KellisLab/Mantis/pull/4990",
+          "notes": [
+            "76th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-03T14:40:07Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3758",
+          "title": "Check media creation authority before ingestion work",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3758",
+          "notes": [
+            "77th in 24h ×0.35"
+          ]
         }
       ],
       "windows": {
-        "7": 543,
-        "14": 1047
+        "7": 536,
+        "14": 1120
       },
       "windowCounts": {
         "7": {
-          "prs": 109,
+          "prs": 107,
           "reviews": 1,
-          "confirmed_issues": 135,
+          "confirmed_issues": 137,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 80,
+          "issues_closed": 84,
           "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 207,
+          "prs": 222,
           "reviews": 1,
-          "confirmed_issues": 245,
+          "confirmed_issues": 261,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
-          "issues_closed": 153,
+          "issues_closed": 168,
           "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
@@ -9560,14 +9740,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 535,
+          "pr": 528,
           "review": 8,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 1039,
+          "pr": 1112,
           "review": 8,
           "issue": 0,
           "docs": 0,
@@ -9576,15 +9756,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 543,
-          "shipping": 535,
+          "overall": 536,
+          "shipping": 528,
           "review": 8,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 1047,
-          "shipping": 1039,
+          "overall": 1120,
+          "shipping": 1112,
           "review": 8,
           "bugs": 0,
           "docs": 0
@@ -9592,210 +9772,6 @@
       },
       "windowLedger": {
         "7": [
-          {
-            "at": "2026-09-26T12:54:18Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4741",
-            "title": "Remove the menubar history timeline; keep Undo, Redo and the save status",
-            "url": "https://github.com/KellisLab/Mantis/pull/4741",
-            "notes": [
-              "28th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T12:54:51Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4733",
-            "title": "Layouts menu: previews, a clear current layout, and no hidden clear",
-            "url": "https://github.com/KellisLab/Mantis/pull/4733",
-            "notes": [
-              "29th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T12:56:18Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4737",
-            "title": "Temporal Views: bounded work, one stable timeline and correct dates",
-            "url": "https://github.com/KellisLab/Mantis/pull/4737",
-            "notes": [
-              "30th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:14:01Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4706",
-            "title": "Show a point's image when hovering it on the map",
-            "url": "https://github.com/KellisLab/Mantis/pull/4706",
-            "notes": [
-              "31th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:14:04Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4731",
-            "title": "Open new panels beside the map instead of splitting the workspace",
-            "url": "https://github.com/KellisLab/Mantis/pull/4731",
-            "notes": [
-              "32th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:14:07Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4736",
-            "title": "Synthesis progress panel: stages, elapsed times and readable failures",
-            "url": "https://github.com/KellisLab/Mantis/pull/4736",
-            "notes": [
-              "33th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:17:08Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3485",
-            "title": "Name sibling clusters together from distinctive evidence",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3485",
-            "notes": [
-              "34th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:29:50Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3481",
-            "title": "Space card summaries store only a topical phrase",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3481",
-            "notes": [
-              "35th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:30:25Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3487",
-            "title": "Project maps with UMAP's faster neighbour search",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3487",
-            "notes": [
-              "36th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:35:56Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4746",
-            "title": "Keep the timeline perf fixture to Temporal Views (main typechecks again)",
-            "url": "https://github.com/KellisLab/Mantis/pull/4746",
-            "notes": [
-              "37th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:37:40Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4744",
-            "title": "CI: build the documentation in its own job, only when its inputs change",
-            "url": "https://github.com/KellisLab/Mantis/pull/4744",
-            "notes": [
-              "38th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:47:07Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4748",
-            "title": "Composer re-push test holds under load: every automatic push is the original",
-            "url": "https://github.com/KellisLab/Mantis/pull/4748",
-            "notes": [
-              "37th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:47:47Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3484",
-            "title": "Synthesis progress: readable stages with times, a heartbeat for long stages, clear file errors",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3484",
-            "notes": [
-              "38th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:51:11Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4749",
-            "title": "Temporal Views: select a time range by dragging across histogram bars",
-            "url": "https://github.com/KellisLab/Mantis/pull/4749",
-            "notes": [
-              "39th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:55:22Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4725",
-            "title": "Layouts stay where people put them",
-            "url": "https://github.com/KellisLab/Mantis/pull/4725",
-            "notes": [
-              "40th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T13:55:31Z",
-            "category": "pr",
-            "points": 5,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4727",
-            "title": "Give the map the larger share at every width",
-            "url": "https://github.com/KellisLab/Mantis/pull/4727",
-            "notes": [
-              "41th in 24h ×0.35"
-            ]
-          },
-          {
-            "at": "2026-09-26T14:05:31Z",
-            "category": "pr",
-            "points": 4,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4751",
-            "title": "Temporal Views range drag: follow only the pointer that started it",
-            "url": "https://github.com/KellisLab/Mantis/pull/4751",
-            "notes": [
-              "42th in 24h ×0.35"
-            ]
-          },
           {
             "at": "2026-09-26T15:25:13Z",
             "category": "pr",
@@ -10909,6 +10885,186 @@
             "url": "https://github.com/KellisLab/Mantis/pull/4979",
             "notes": [
               "62th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T11:35:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3736",
+            "title": "Calculate PDF bookmark section boundaries in one pass",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3736",
+            "notes": [
+              "63th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T11:52:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3720",
+            "title": "Keep Input Text cache I/O responsive on the ASGI event loop",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3720",
+            "notes": [
+              "64th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:06:03Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3742",
+            "title": "Surface per-object failures during point-generation cleanup",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3742",
+            "notes": [
+              "65th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:09:54Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4981",
+            "title": "Keep live previews owned by committed selections and make failures retryable",
+            "url": "https://github.com/KellisLab/Mantis/pull/4981",
+            "notes": [
+              "66th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:23:02Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3744",
+            "title": "Reuse PDF page extraction for font-heading sections",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3744",
+            "notes": [
+              "67th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:33:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4982",
+            "title": "Reuse fitted variance across plotted confidence bounds",
+            "url": "https://github.com/KellisLab/Mantis/pull/4982",
+            "notes": [
+              "68th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:50:48Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3738",
+            "title": "Count literal Composer text with ordinary BPE tokens",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3738",
+            "notes": [
+              "69th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:52:19Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3747",
+            "title": "Close periodic fetch sessions on every request exit",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3747",
+            "notes": [
+              "70th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T13:04:50Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4985",
+            "title": "Keep fitted scatter traces available for large selections",
+            "url": "https://github.com/KellisLab/Mantis/pull/4985",
+            "notes": [
+              "71th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T13:32:26Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3753",
+            "title": "Apply existing Space read permissions to upload progress sockets",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3753",
+            "notes": [
+              "72th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T13:39:42Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4988",
+            "title": "Reuse scaled regrouping maps across animation progress updates",
+            "url": "https://github.com/KellisLab/Mantis/pull/4988",
+            "notes": [
+              "73th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:00:52Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4987",
+            "title": "Keep requested History pages complete during persisted-action refreshes",
+            "url": "https://github.com/KellisLab/Mantis/pull/4987",
+            "notes": [
+              "74th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:04:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3752",
+            "title": "Keep backend draft validation lanes idle until ready for review",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3752",
+            "notes": [
+              "75th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:18:12Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4990",
+            "title": "Compute Home health scores once per sort",
+            "url": "https://github.com/KellisLab/Mantis/pull/4990",
+            "notes": [
+              "76th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:40:07Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3758",
+            "title": "Check media creation authority before ingestion work",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3758",
+            "notes": [
+              "77th in 24h ×0.35"
             ]
           }
         ],
@@ -13403,10 +13559,190 @@
             "notes": [
               "62th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-10-03T11:35:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3736",
+            "title": "Calculate PDF bookmark section boundaries in one pass",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3736",
+            "notes": [
+              "63th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T11:52:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3720",
+            "title": "Keep Input Text cache I/O responsive on the ASGI event loop",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3720",
+            "notes": [
+              "64th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:06:03Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3742",
+            "title": "Surface per-object failures during point-generation cleanup",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3742",
+            "notes": [
+              "65th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:09:54Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4981",
+            "title": "Keep live previews owned by committed selections and make failures retryable",
+            "url": "https://github.com/KellisLab/Mantis/pull/4981",
+            "notes": [
+              "66th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:23:02Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3744",
+            "title": "Reuse PDF page extraction for font-heading sections",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3744",
+            "notes": [
+              "67th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:33:32Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4982",
+            "title": "Reuse fitted variance across plotted confidence bounds",
+            "url": "https://github.com/KellisLab/Mantis/pull/4982",
+            "notes": [
+              "68th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:50:48Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3738",
+            "title": "Count literal Composer text with ordinary BPE tokens",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3738",
+            "notes": [
+              "69th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T12:52:19Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3747",
+            "title": "Close periodic fetch sessions on every request exit",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3747",
+            "notes": [
+              "70th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T13:04:50Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4985",
+            "title": "Keep fitted scatter traces available for large selections",
+            "url": "https://github.com/KellisLab/Mantis/pull/4985",
+            "notes": [
+              "71th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T13:32:26Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3753",
+            "title": "Apply existing Space read permissions to upload progress sockets",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3753",
+            "notes": [
+              "72th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T13:39:42Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4988",
+            "title": "Reuse scaled regrouping maps across animation progress updates",
+            "url": "https://github.com/KellisLab/Mantis/pull/4988",
+            "notes": [
+              "73th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:00:52Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4987",
+            "title": "Keep requested History pages complete during persisted-action refreshes",
+            "url": "https://github.com/KellisLab/Mantis/pull/4987",
+            "notes": [
+              "74th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:04:12Z",
+            "category": "pr",
+            "points": 4,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3752",
+            "title": "Keep backend draft validation lanes idle until ready for review",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3752",
+            "notes": [
+              "75th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:18:12Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#4990",
+            "title": "Compute Home health scores once per sort",
+            "url": "https://github.com/KellisLab/Mantis/pull/4990",
+            "notes": [
+              "76th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-03T14:40:07Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3758",
+            "title": "Check media creation authority before ingestion work",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3758",
+            "notes": [
+              "77th in 24h ×0.35"
+            ]
           }
         ]
       },
-      "rolling_total": 543,
+      "rolling_total": 536,
       "rank": 1
     },
     {
@@ -30798,7 +31134,7 @@
       ],
       "windows": {
         "7": 45,
-        "14": 131
+        "14": 120
       },
       "windowCounts": {
         "7": {
@@ -30814,13 +31150,13 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 19,
+          "prs": 18,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 1,
-          "issues_closed": 1,
+          "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -30835,7 +31171,7 @@
           "other": 0
         },
         "14": {
-          "pr": 131,
+          "pr": 120,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -30851,8 +31187,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 131,
-          "shipping": 131,
+          "overall": 120,
+          "shipping": 120,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -30908,18 +31244,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-19T15:10:58Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4525",
-            "title": "fix: stop timing out intelligent space creation after 60s",
-            "url": "https://github.com/KellisLab/Mantis/pull/4525",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
           {
             "at": "2026-09-19T15:57:38Z",
             "category": "pr",
@@ -92251,34 +92575,6 @@
           ]
         },
         {
-          "at": "2026-07-13T14:25:49Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#2971",
-          "title": "feat: create map from workspace CSV in file browser",
-          "url": "https://github.com/KellisLab/Mantis/pull/2971",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "29th review in 24h ×0.35"
-          ]
-        },
-        {
-          "at": "2026-07-13T00:58:25Z",
-          "category": "review",
-          "points": 2,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#2965",
-          "title": "feat: read prepared point pyramid bundles",
-          "url": "https://github.com/KellisLab/Mantis/pull/2965",
-          "notes": [
-            "commented",
-            "nontrivial PR",
-            "24th review in 24h ×0.35"
-          ]
-        },
-        {
           "at": "2025-11-23T21:07:29Z",
           "category": "review",
           "points": 4,
@@ -92414,6 +92710,34 @@
             "commented",
             "nontrivial PR",
             "4th review in 24h ×0.65"
+          ]
+        },
+        {
+          "at": "2026-07-13T14:25:49Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#2971",
+          "title": "feat: create map from workspace CSV in file browser",
+          "url": "https://github.com/KellisLab/Mantis/pull/2971",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "29th review in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-07-13T00:58:25Z",
+          "category": "review",
+          "points": 2,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#2965",
+          "title": "feat: read prepared point pyramid bundles",
+          "url": "https://github.com/KellisLab/Mantis/pull/2965",
+          "notes": [
+            "commented",
+            "nontrivial PR",
+            "24th review in 24h ×0.35"
           ]
         }
       ],
@@ -144603,7 +144927,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 22
+        "14": 9
       },
       "windowCounts": {
         "7": {
@@ -144620,13 +144944,13 @@
         },
         "14": {
           "prs": 3,
-          "reviews": 2,
+          "reviews": 1,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
           "issues_closed": 0,
-          "review_submissions": 2,
+          "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -144641,7 +144965,7 @@
         },
         "14": {
           "pr": 0,
-          "review": 22,
+          "review": 9,
           "issue": 0,
           "docs": 0,
           "other": 0
@@ -144656,9 +144980,9 @@
           "docs": 0
         },
         "14": {
-          "overall": 22,
+          "overall": 9,
           "shipping": 0,
-          "review": 22,
+          "review": 9,
           "bugs": 0,
           "docs": 0
         }
@@ -144677,20 +145001,6 @@
             "notes": [
               "approved",
               "inline comments"
-            ]
-          },
-          {
-            "at": "2026-09-19T13:01:13Z",
-            "category": "review",
-            "points": 13,
-            "kind": "review",
-            "ref": "KellisLab/MantisAPI#3185",
-            "title": "feat: GO/pathway enrichment (backend)",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3185",
-            "notes": [
-              "changes requested",
-              "inline comments",
-              "nontrivial PR"
             ]
           }
         ]
