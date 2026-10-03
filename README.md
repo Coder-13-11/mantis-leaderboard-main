@@ -17,11 +17,11 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **327** | 69 | 1 | 89 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **363** | 72 | 1 | 116 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **205** | 29 | 0 | 3 |
 | 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **187** | 8 | 25 | 1 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **183** | 21 | 2 | 23 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **120** | 10 | 0 | 0 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **183** | 21 | 2 | 24 |
+| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **99** | 8 | 0 | 0 |
 | 6 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
 | 7 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **45** | 4 | 0 | 0 |
 | 8 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **44** | 4 | 0 | 3 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **729** | 145 | 1 | 151 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **765** | 148 | 1 | 178 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **510** | 87 | 0 | 32 |
 | 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **260** | 15 | 28 | 1 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **241** | 26 | 2 | 26 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **241** | 26 | 2 | 27 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **239** | 22 | 0 | 0 |
-| 6 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **143** | 20 | 0 | 0 |
+| 6 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **131** | 19 | 0 | 0 |
 | 7 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **127** | 18 | 0 | 2 |
 | 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **109** | 9 | 0 | 0 |
 | 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **106** | 11 | 0 | 11 |
 | 10 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **84** | 6 | 0 | 0 |
 
-_Last updated: Fri, 02 Oct 2026 20:40:45 GMT_
+_Last updated: Sat, 03 Oct 2026 00:25:54 GMT_
 <!-- LEADERBOARD:END -->
 
 
