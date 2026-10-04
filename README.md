@@ -19,31 +19,31 @@ code / review / issues ledger.
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **603** | 121 | 1 | 135 |
 | 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **259** | 42 | 0 | 4 |
-| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **172** | 20 | 2 | 15 |
-| 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **134** | 8 | 14 | 1 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **126** | 10 | 0 | 0 |
+| 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **166** | 11 | 12 | 3 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **148** | 16 | 0 | 15 |
+| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **124** | 10 | 0 | 0 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **90** | 7 | 0 | 0 |
 | 7 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
-| 8 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **42** | 3 | 0 | 0 |
-| 9 | **Ilan Barts** ([@absol761](https://github.com/absol761)) | **31** | 3 | 0 | 2 |
-| 10 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **28** | 2 | 0 | 0 |
+| 8 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **48** | 4 | 0 | 0 |
+| 9 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **42** | 3 | 0 | 0 |
+| 10 | **Aryan Sudhir** ([@AryanSudhirDev](https://github.com/AryanSudhirDev)) | **25** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1316** | 264 | 1 | 285 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **461** | 82 | 0 | 31 |
-| 3 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **267** | 28 | 2 | 27 |
-| 4 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **254** | 15 | 27 | 1 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **240** | 21 | 0 | 0 |
+| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **430** | 75 | 0 | 28 |
+| 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **292** | 18 | 27 | 3 |
+| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **267** | 28 | 2 | 27 |
+| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **242** | 21 | 0 | 0 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **147** | 12 | 0 | 0 |
 | 7 | **Anikait Rana** ([@Penguinz3](https://github.com/Penguinz3)) | **114** | 17 | 0 | 2 |
 | 8 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **106** | 11 | 0 | 11 |
 | 9 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **84** | 6 | 0 | 0 |
 | 10 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
 
-_Last updated: Sun, 04 Oct 2026 12:50:08 GMT_
+_Last updated: Sun, 04 Oct 2026 17:33:59 GMT_
 <!-- LEADERBOARD:END -->
 
 
