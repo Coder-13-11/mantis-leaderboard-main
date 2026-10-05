@@ -17,9 +17,9 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **605** | 121 | 1 | 138 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **246** | 41 | 0 | 4 |
-| 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **187** | 14 | 12 | 3 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **631** | 128 | 1 | 142 |
+| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **280** | 44 | 0 | 4 |
+| 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **184** | 14 | 8 | 3 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **154** | 15 | 0 | 14 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **113** | 9 | 0 | 0 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **90** | 7 | 0 | 0 |
@@ -32,9 +32,9 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1177** | 240 | 1 | 259 |
-| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **354** | 57 | 0 | 7 |
-| 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **313** | 21 | 27 | 3 |
+| 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1128** | 230 | 1 | 249 |
+| 2 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **370** | 56 | 0 | 5 |
+| 3 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **321** | 21 | 27 | 3 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **268** | 28 | 2 | 28 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **224** | 19 | 0 | 0 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **147** | 12 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **84** | 6 | 0 | 0 |
 | 10 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
 
-_Last updated: Mon, 05 Oct 2026 02:22:29 GMT_
+_Last updated: Mon, 05 Oct 2026 09:36:28 GMT_
 <!-- LEADERBOARD:END -->
 
 
