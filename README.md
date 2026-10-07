@@ -17,7 +17,7 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **676** | 155 | 5 | 11 |
+| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **788** | 181 | 5 | 13 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **665** | 132 | 0 | 145 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **373** | 70 | 0 | 19 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **111** | 9 | 0 | 5 |
@@ -33,17 +33,17 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1157** | 231 | 1 | 248 |
-| 2 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **851** | 162 | 28 | 11 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **481** | 86 | 0 | 19 |
+| 2 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **963** | 188 | 28 | 13 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **458** | 81 | 0 | 19 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **247** | 26 | 2 | 27 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **229** | 19 | 0 | 2 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **147** | 12 | 0 | 0 |
+| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **206** | 17 | 0 | 2 |
+| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **136** | 11 | 0 | 0 |
 | 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
-| 8 | **Aniket Mangalampalli** ([@DarkPhantom738](https://github.com/DarkPhantom738)) | **70** | 5 | 0 | 0 |
-| 9 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
-| 10 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **47** | 4 | 0 | 5 |
+| 8 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
+| 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **47** | 4 | 0 | 5 |
+| 10 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **45** | 4 | 0 | 0 |
 
-_Last updated: Wed, 07 Oct 2026 13:14:24 GMT_
+_Last updated: Wed, 07 Oct 2026 19:31:37 GMT_
 <!-- LEADERBOARD:END -->
 
 
