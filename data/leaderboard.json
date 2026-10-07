@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T23:47:59.692Z",
+  "generated_at": "2026-10-07T05:49:14.622Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,9 +64,9 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-10-06T23:46:22.824Z",
+    "run_started_at": "2026-10-07T05:47:42.733Z",
     "lookback_days": 365,
-    "lookback_since": "2025-10-06T00:00:00.000Z",
+    "lookback_since": "2025-10-07T00:00:00.000Z",
     "repos": [
       "KellisLab/Mantis",
       "KellisLab/MantisAPI",
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4778,
-      "issues": 3040,
-      "reviews": 14213,
-      "review_comments": 15501
+      "prs": 4823,
+      "issues": 3048,
+      "reviews": 14391,
+      "review_comments": 15625
     }
   },
   "review_rules": {
@@ -176,7 +176,7 @@
     {
       "login": "chreia",
       "name": "Sebastien Kawada",
-      "total": 3936,
+      "total": 3971,
       "days": {
         "2026-06-06": 13,
         "2026-06-09": 12,
@@ -232,7 +232,8 @@
         "2026-10-02": 26,
         "2026-10-03": 475,
         "2026-10-04": 86,
-        "2026-10-05": 36
+        "2026-10-05": 36,
+        "2026-10-07": 35
       },
       "dayCounts": {
         "2026-06-06": {
@@ -967,6 +968,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-10-07": {
+          "prs": 3,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 2,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-06-07": {
           "prs": 0,
           "reviews": 0,
@@ -1461,23 +1474,30 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-10-07": {
+          "pr": 35,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 3829,
+        "pr": 3864,
         "review": 56,
         "issue": 0,
         "docs": 51,
         "other": 0
       },
       "counts": {
-        "prs": 761,
+        "prs": 764,
         "reviews": 6,
-        "confirmed_issues": 625,
+        "confirmed_issues": 627,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 16,
-        "issues_closed": 417,
+        "issues_closed": 419,
         "review_submissions": 6,
         "docs_prs": 8,
         "bug_prs": 3
@@ -1485,8 +1505,8 @@
       "sizes": {
         "XS": 44,
         "S": 103,
-        "M": 237,
-        "L": 206,
+        "M": 239,
+        "L": 207,
         "XL": 147
       },
       "contributions": [],
@@ -10359,33 +10379,67 @@
           "notes": [
             "9th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-10-07T01:14:54Z",
+          "category": "pr",
+          "points": 12,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#5173",
+          "title": "ci: route container-sized jobs to the csail pool and enforce self-hosted runners",
+          "url": "https://github.com/KellisLab/Mantis/pull/5173",
+          "notes": []
+        },
+        {
+          "at": "2026-10-07T04:33:05Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3952",
+          "title": "Keyless Continuum-1 for CSAIL machines on a shared CSAIL tier",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3952",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        },
+        {
+          "at": "2026-10-07T04:58:56Z",
+          "category": "pr",
+          "points": 10,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3953",
+          "title": "ci: run container-sized jobs on csail and enforce self-hosted runner pools",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3953",
+          "notes": [
+            "3th in 24h ×0.8"
+          ]
         }
       ],
       "windows": {
-        "7": 623,
-        "14": 1115
+        "7": 658,
+        "14": 1150
       },
       "windowCounts": {
         "7": {
-          "prs": 128,
+          "prs": 131,
           "reviews": 0,
-          "confirmed_issues": 143,
+          "confirmed_issues": 145,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
-          "issues_closed": 95,
+          "issues_closed": 97,
           "review_submissions": 0,
           "docs_prs": 1,
           "bug_prs": 0
         },
         "14": {
-          "prs": 227,
+          "prs": 230,
           "reviews": 1,
-          "confirmed_issues": 246,
+          "confirmed_issues": 248,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 6,
-          "issues_closed": 153,
+          "issues_closed": 155,
           "review_submissions": 1,
           "docs_prs": 1,
           "bug_prs": 0
@@ -10393,14 +10447,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 619,
+          "pr": 654,
           "review": 0,
           "issue": 0,
           "docs": 4,
           "other": 0
         },
         "14": {
-          "pr": 1103,
+          "pr": 1138,
           "review": 8,
           "issue": 0,
           "docs": 4,
@@ -10409,15 +10463,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 623,
-          "shipping": 619,
+          "overall": 658,
+          "shipping": 654,
           "review": 0,
           "bugs": 0,
           "docs": 4
         },
         "14": {
-          "overall": 1115,
-          "shipping": 1103,
+          "overall": 1150,
+          "shipping": 1138,
           "review": 8,
           "bugs": 0,
           "docs": 4
@@ -11946,6 +12000,40 @@
             "url": "https://github.com/KellisLab/Mantis/pull/5069",
             "notes": [
               "9th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-07T01:14:54Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5173",
+            "title": "ci: route container-sized jobs to the csail pool and enforce self-hosted runners",
+            "url": "https://github.com/KellisLab/Mantis/pull/5173",
+            "notes": []
+          },
+          {
+            "at": "2026-10-07T04:33:05Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3952",
+            "title": "Keyless Continuum-1 for CSAIL machines on a shared CSAIL tier",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3952",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-10-07T04:58:56Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3953",
+            "title": "ci: run container-sized jobs on csail and enforce self-hosted runner pools",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3953",
+            "notes": [
+              "3th in 24h ×0.8"
             ]
           }
         ],
@@ -14671,16 +14759,50 @@
             "notes": [
               "9th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-10-07T01:14:54Z",
+            "category": "pr",
+            "points": 12,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5173",
+            "title": "ci: route container-sized jobs to the csail pool and enforce self-hosted runners",
+            "url": "https://github.com/KellisLab/Mantis/pull/5173",
+            "notes": []
+          },
+          {
+            "at": "2026-10-07T04:33:05Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3952",
+            "title": "Keyless Continuum-1 for CSAIL machines on a shared CSAIL tier",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3952",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          },
+          {
+            "at": "2026-10-07T04:58:56Z",
+            "category": "pr",
+            "points": 10,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3953",
+            "title": "ci: run container-sized jobs on csail and enforce self-hosted runner pools",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3953",
+            "notes": [
+              "3th in 24h ×0.8"
+            ]
           }
         ]
       },
-      "rolling_total": 623,
+      "rolling_total": 658,
       "rank": 1
     },
     {
       "login": "Chessing234",
       "name": "Taksh Kothari",
-      "total": 993,
+      "total": 1003,
       "days": {
         "2026-07-04": 10,
         "2026-07-05": 14,
@@ -14704,7 +14826,8 @@
         "2026-10-01": 21,
         "2026-10-04": 59,
         "2026-10-05": 105,
-        "2026-10-06": 265
+        "2026-10-06": 270,
+        "2026-10-07": 5
       },
       "dayCounts": {
         "2026-07-04": {
@@ -15020,13 +15143,25 @@
           "bug_prs": 0
         },
         "2026-10-06": {
-          "prs": 82,
+          "prs": 83,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
           "issues_closed": 8,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-10-07": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -15200,7 +15335,14 @@
           "other": 0
         },
         "2026-10-06": {
-          "pr": 265,
+          "pr": 270,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-10-07": {
+          "pr": 5,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -15208,14 +15350,14 @@
         }
       },
       "breakdown": {
-        "pr": 702,
+        "pr": 712,
         "review": 291,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 145,
+        "prs": 147,
         "reviews": 50,
         "confirmed_issues": 6,
         "fixed_bonuses": 0,
@@ -15231,7 +15373,7 @@
         "S": 19,
         "M": 40,
         "L": 32,
-        "XL": 21
+        "XL": 23
       },
       "contributions": [],
       "ledger": [
@@ -17270,27 +17412,51 @@
           "notes": [
             "60th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-10-06T23:58:18Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/MantisAPI#3901",
+          "title": "feat(artemis): expand captured papers into linked research collections",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3901",
+          "notes": [
+            "61th in 24h ×0.35"
+          ]
+        },
+        {
+          "at": "2026-10-07T05:03:01Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#5099",
+          "title": "feat(knowledge): add Mission Mode controls and completion review",
+          "url": "https://github.com/KellisLab/Mantis/pull/5099",
+          "notes": [
+            "56th in 24h ×0.35"
+          ]
         }
       ],
       "windows": {
-        "7": 517,
-        "14": 670
+        "7": 519,
+        "14": 680
       },
       "windowCounts": {
         "7": {
-          "prs": 111,
-          "reviews": 7,
+          "prs": 113,
+          "reviews": 5,
           "confirmed_issues": 3,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 6,
           "issues_closed": 8,
-          "review_submissions": 14,
+          "review_submissions": 12,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 118,
+          "prs": 120,
           "reviews": 28,
           "confirmed_issues": 3,
           "fixed_bonuses": 0,
@@ -17304,14 +17470,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 464,
-          "review": 53,
+          "pr": 474,
+          "review": 45,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 516,
+          "pr": 526,
           "review": 154,
           "issue": 0,
           "docs": 0,
@@ -17320,15 +17486,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 517,
-          "shipping": 464,
-          "review": 53,
+          "overall": 519,
+          "shipping": 474,
+          "review": 45,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 670,
-          "shipping": 516,
+          "overall": 680,
+          "shipping": 526,
           "review": 154,
           "bugs": 0,
           "docs": 0
@@ -17356,20 +17522,6 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/3238",
             "notes": [
               "2th in 24h ×1"
-            ]
-          },
-          {
-            "at": "2026-09-30T05:31:41Z",
-            "category": "review",
-            "points": 8,
-            "kind": "review",
-            "ref": "KellisLab/Mantis#4845",
-            "title": "Keep Text Explorer highlights current without repeated DOM lookups",
-            "url": "https://github.com/KellisLab/Mantis/pull/4845",
-            "notes": [
-              "approved",
-              "nontrivial PR",
-              "2th review in 24h ×1"
             ]
           },
           {
@@ -18486,6 +18638,30 @@
             "url": "https://github.com/KellisLab/MantisAPI/pull/3937",
             "notes": [
               "60th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-06T23:58:18Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3901",
+            "title": "feat(artemis): expand captured papers into linked research collections",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3901",
+            "notes": [
+              "61th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-07T05:03:01Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5099",
+            "title": "feat(knowledge): add Mission Mode controls and completion review",
+            "url": "https://github.com/KellisLab/Mantis/pull/5099",
+            "notes": [
+              "56th in 24h ×0.35"
             ]
           }
         ],
@@ -19973,16 +20149,40 @@
             "notes": [
               "60th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-10-06T23:58:18Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/MantisAPI#3901",
+            "title": "feat(artemis): expand captured papers into linked research collections",
+            "url": "https://github.com/KellisLab/MantisAPI/pull/3901",
+            "notes": [
+              "61th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-07T05:03:01Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5099",
+            "title": "feat(knowledge): add Mission Mode controls and completion review",
+            "url": "https://github.com/KellisLab/Mantis/pull/5099",
+            "notes": [
+              "56th in 24h ×0.35"
+            ]
           }
         ]
       },
-      "rolling_total": 517,
+      "rolling_total": 519,
       "rank": 2
     },
     {
       "login": "PranavaKCode",
       "name": "Pranava Kumar",
-      "total": 2027,
+      "total": 2032,
       "days": {
         "2026-03-23": 23,
         "2026-03-25": 13,
@@ -20019,7 +20219,8 @@
         "2026-10-02": 101,
         "2026-10-03": 54,
         "2026-10-05": 58,
-        "2026-10-06": 105
+        "2026-10-06": 105,
+        "2026-10-07": 5
       },
       "dayCounts": {
         "2026-03-23": {
@@ -20586,6 +20787,18 @@
           "docs_prs": 1,
           "bug_prs": 0
         },
+        "2026-10-07": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 2,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-03-26": {
           "prs": 0,
           "reviews": 0,
@@ -20875,19 +21088,26 @@
           "issue": 0,
           "docs": 4,
           "other": 0
+        },
+        "2026-10-07": {
+          "pr": 5,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 1974,
+        "pr": 1979,
         "review": 9,
         "issue": 0,
         "docs": 44,
         "other": 0
       },
       "counts": {
-        "prs": 363,
+        "prs": 364,
         "reviews": 3,
-        "confirmed_issues": 54,
+        "confirmed_issues": 56,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 34,
@@ -20901,7 +21121,7 @@
         "S": 61,
         "M": 234,
         "L": 49,
-        "XL": 6
+        "XL": 7
       },
       "contributions": [],
       "ledger": [
@@ -25234,17 +25454,29 @@
           "notes": [
             "25th in 24h ×0.35"
           ]
+        },
+        {
+          "at": "2026-10-07T01:20:02Z",
+          "category": "pr",
+          "points": 5,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#5172",
+          "title": "Make saved Waypoints browsing responsive and recoverable",
+          "url": "https://github.com/KellisLab/Mantis/pull/5172",
+          "notes": [
+            "25th in 24h ×0.35"
+          ]
         }
       ],
       "windows": {
-        "7": 342,
-        "14": 450
+        "7": 347,
+        "14": 455
       },
       "windowCounts": {
         "7": {
-          "prs": 63,
+          "prs": 64,
           "reviews": 0,
-          "confirmed_issues": 15,
+          "confirmed_issues": 17,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
@@ -25254,9 +25486,9 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 79,
+          "prs": 80,
           "reviews": 0,
-          "confirmed_issues": 16,
+          "confirmed_issues": 17,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 5,
@@ -25268,14 +25500,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 338,
+          "pr": 343,
           "review": 0,
           "issue": 0,
           "docs": 4,
           "other": 0
         },
         "14": {
-          "pr": 446,
+          "pr": 451,
           "review": 0,
           "issue": 0,
           "docs": 4,
@@ -25284,15 +25516,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 342,
-          "shipping": 338,
+          "overall": 347,
+          "shipping": 343,
           "review": 0,
           "bugs": 0,
           "docs": 4
         },
         "14": {
-          "overall": 450,
-          "shipping": 446,
+          "overall": 455,
+          "shipping": 451,
           "review": 0,
           "bugs": 0,
           "docs": 4
@@ -26047,6 +26279,18 @@
             "ref": "KellisLab/MantisAPI#3940",
             "title": "Index ordered token offsets once when mapping late chunks",
             "url": "https://github.com/KellisLab/MantisAPI/pull/3940",
+            "notes": [
+              "25th in 24h ×0.35"
+            ]
+          },
+          {
+            "at": "2026-10-07T01:20:02Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5172",
+            "title": "Make saved Waypoints browsing responsive and recoverable",
+            "url": "https://github.com/KellisLab/Mantis/pull/5172",
             "notes": [
               "25th in 24h ×0.35"
             ]
@@ -26991,10 +27235,22 @@
             "notes": [
               "25th in 24h ×0.35"
             ]
+          },
+          {
+            "at": "2026-10-07T01:20:02Z",
+            "category": "pr",
+            "points": 5,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5172",
+            "title": "Make saved Waypoints browsing responsive and recoverable",
+            "url": "https://github.com/KellisLab/Mantis/pull/5172",
+            "notes": [
+              "25th in 24h ×0.35"
+            ]
           }
         ]
       },
-      "rolling_total": 342,
+      "rolling_total": 347,
       "rank": 3
     },
     {
@@ -27895,6 +28151,18 @@
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
+        },
+        "2026-10-07": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
         }
       },
       "dayBreakdown": {
@@ -28189,7 +28457,7 @@
       "counts": {
         "prs": 117,
         "reviews": 3,
-        "confirmed_issues": 138,
+        "confirmed_issues": 139,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 13,
@@ -29558,7 +29826,7 @@
         "7": {
           "prs": 9,
           "reviews": 0,
-          "confirmed_issues": 4,
+          "confirmed_issues": 5,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
@@ -29570,7 +29838,7 @@
         "14": {
           "prs": 26,
           "reviews": 2,
-          "confirmed_issues": 26,
+          "confirmed_issues": 27,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 5,
@@ -45235,6 +45503,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-10-07": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-08-29": {
           "prs": 0,
           "reviews": 0,
@@ -45279,10 +45559,10 @@
       "counts": {
         "prs": 0,
         "reviews": 1,
-        "confirmed_issues": 19,
+        "confirmed_issues": 20,
         "fixed_bonuses": 0,
         "manual": 0,
-        "prs_coauthored": 2,
+        "prs_coauthored": 3,
         "issues_closed": 0,
         "review_submissions": 2,
         "docs_prs": 0,
@@ -45319,10 +45599,10 @@
         "7": {
           "prs": 0,
           "reviews": 1,
-          "confirmed_issues": 17,
+          "confirmed_issues": 18,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 2,
+          "prs_coauthored": 3,
           "issues_closed": 0,
           "review_submissions": 2,
           "docs_prs": 0,
@@ -45331,10 +45611,10 @@
         "14": {
           "prs": 0,
           "reviews": 1,
-          "confirmed_issues": 17,
+          "confirmed_issues": 18,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 2,
+          "prs_coauthored": 3,
           "issues_closed": 0,
           "review_submissions": 2,
           "docs_prs": 0,
@@ -146049,7 +146329,7 @@
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
-          "prs_coauthored": 7,
+          "prs_coauthored": 6,
           "issues_closed": 0,
           "review_submissions": 0,
           "docs_prs": 0,
@@ -150302,7 +150582,7 @@
       ],
       "windows": {
         "7": 0,
-        "14": 114
+        "14": 90
       },
       "windowCounts": {
         "7": {
@@ -150318,7 +150598,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 17,
+          "prs": 15,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
@@ -150339,7 +150619,7 @@
           "other": 0
         },
         "14": {
-          "pr": 114,
+          "pr": 90,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -150355,8 +150635,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 114,
-          "shipping": 114,
+          "overall": 90,
+          "shipping": 90,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -150365,28 +150645,6 @@
       "windowLedger": {
         "7": [],
         "14": [
-          {
-            "at": "2026-09-23T01:31:40Z",
-            "category": "pr",
-            "points": 11,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#2768",
-            "title": "Protect journey lookups with normal access rules",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/2768",
-            "notes": []
-          },
-          {
-            "at": "2026-09-23T02:25:55Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/Mantis#4051",
-            "title": "security: limit Composer attachment uploads",
-            "url": "https://github.com/KellisLab/Mantis/pull/4051",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
           {
             "at": "2026-09-23T08:03:41Z",
             "category": "pr",
