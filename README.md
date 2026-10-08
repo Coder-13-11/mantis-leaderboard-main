@@ -17,24 +17,24 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **815** | 193 | 4 | 17 |
+| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **884** | 208 | 4 | 16 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **665** | 132 | 0 | 145 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **349** | 68 | 0 | 19 |
-| 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **114** | 9 | 0 | 2 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **361** | 69 | 0 | 19 |
+| 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **101** | 8 | 0 | 2 |
 | 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **86** | 7 | 0 | 5 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **78** | 6 | 0 | 0 |
 | 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
 | 8 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **54** | 5 | 0 | 0 |
-| 9 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **28** | 2 | 0 | 0 |
-| 10 | **Jinha Kim** ([@phi-jkim](https://github.com/phi-jkim)) | **28** | 2 | 0 | 0 |
+| 9 | **Abhijay G** ([@FungousLand1941](https://github.com/FungousLand1941)) | **33** | 2 | 1 | 18 |
+| 10 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **28** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1157** | 231 | 1 | 248 |
-| 2 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1046** | 206 | 28 | 17 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **453** | 80 | 0 | 19 |
+| 2 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1120** | 222 | 28 | 17 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **465** | 81 | 0 | 19 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **260** | 27 | 2 | 27 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **220** | 18 | 0 | 2 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **162** | 13 | 0 | 0 |
@@ -43,7 +43,7 @@ code / review / issues ledger.
 | 9 | **Vatsal Desai** ([@VatsalDesai152](https://github.com/VatsalDesai152)) | **47** | 4 | 0 | 5 |
 | 10 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **45** | 4 | 0 | 0 |
 
-_Last updated: Thu, 08 Oct 2026 05:55:14 GMT_
+_Last updated: Thu, 08 Oct 2026 13:21:05 GMT_
 <!-- LEADERBOARD:END -->
 
 
