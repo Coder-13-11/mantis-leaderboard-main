@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:26:06.166Z",
+  "generated_at": "2026-10-08T23:56:21.125Z",
   "repos": [
     "KellisLab/Mantis",
     "KellisLab/MantisAPI",
@@ -64,7 +64,7 @@
   "rules_version": 4,
   "sync": {
     "mode": "incremental",
-    "run_started_at": "2026-10-08T19:24:14.147Z",
+    "run_started_at": "2026-10-08T23:55:13.530Z",
     "lookback_days": 365,
     "lookback_since": "2025-10-08T00:00:00.000Z",
     "repos": [
@@ -92,10 +92,10 @@
     "checksums": [],
     "checksum_ok": true,
     "event_counts": {
-      "prs": 4970,
-      "issues": 3070,
-      "reviews": 15556,
-      "review_comments": 16503
+      "prs": 4980,
+      "issues": 3081,
+      "reviews": 15589,
+      "review_comments": 16532
     }
   },
   "review_rules": {
@@ -31443,7 +31443,7 @@
     {
       "login": "SamDadmi",
       "name": "Sameeksha Dadmi",
-      "total": 718,
+      "total": 732,
       "days": {
         "2026-06-17": 11,
         "2026-06-20": 12,
@@ -31483,7 +31483,8 @@
         "2026-10-04": 37,
         "2026-10-05": 13,
         "2026-10-06": 13,
-        "2026-10-07": 14
+        "2026-10-07": 14,
+        "2026-10-08": 14
       },
       "dayCounts": {
         "2026-06-17": {
@@ -31966,6 +31967,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-10-08": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-06-14": {
           "prs": 0,
           "reviews": 0,
@@ -32288,17 +32301,24 @@
           "issue": 0,
           "docs": 0,
           "other": 0
+        },
+        "2026-10-08": {
+          "pr": 14,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
         }
       },
       "breakdown": {
-        "pr": 718,
+        "pr": 732,
         "review": 0,
         "issue": 0,
         "docs": 0,
         "other": 0
       },
       "counts": {
-        "prs": 67,
+        "prs": 68,
         "reviews": 0,
         "confirmed_issues": 9,
         "fixed_bonuses": 0,
@@ -32313,7 +32333,7 @@
         "XS": 8,
         "S": 20,
         "M": 30,
-        "L": 7,
+        "L": 8,
         "XL": 2
       },
       "contributions": [],
@@ -33071,15 +33091,25 @@
           "title": "fix: Image Space upload for duplicate or special file names, and plugin errors",
           "url": "https://github.com/KellisLab/Mantis/pull/5242",
           "notes": []
+        },
+        {
+          "at": "2026-10-08T23:13:31Z",
+          "category": "pr",
+          "points": 14,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#5280",
+          "title": "fix: respect log selection and step order when generating journeys from logs",
+          "url": "https://github.com/KellisLab/Mantis/pull/5280",
+          "notes": []
         }
       ],
       "windows": {
-        "7": 88,
-        "14": 209
+        "7": 102,
+        "14": 223
       },
       "windowCounts": {
         "7": {
-          "prs": 7,
+          "prs": 8,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
@@ -33091,7 +33121,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 17,
+          "prs": 18,
           "reviews": 0,
           "confirmed_issues": 2,
           "fixed_bonuses": 0,
@@ -33105,14 +33135,14 @@
       },
       "windowBreakdown": {
         "7": {
-          "pr": 88,
+          "pr": 102,
           "review": 0,
           "issue": 0,
           "docs": 0,
           "other": 0
         },
         "14": {
-          "pr": 209,
+          "pr": 223,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -33121,15 +33151,15 @@
       },
       "windowDimensions": {
         "7": {
-          "overall": 88,
-          "shipping": 88,
+          "overall": 102,
+          "shipping": 102,
           "review": 0,
           "bugs": 0,
           "docs": 0
         },
         "14": {
-          "overall": 209,
-          "shipping": 209,
+          "overall": 223,
+          "shipping": 223,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -33211,6 +33241,16 @@
             "ref": "KellisLab/Mantis#5242",
             "title": "fix: Image Space upload for duplicate or special file names, and plugin errors",
             "url": "https://github.com/KellisLab/Mantis/pull/5242",
+            "notes": []
+          },
+          {
+            "at": "2026-10-08T23:13:31Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5280",
+            "title": "fix: respect log selection and step order when generating journeys from logs",
+            "url": "https://github.com/KellisLab/Mantis/pull/5280",
             "notes": []
           }
         ],
@@ -33404,10 +33444,20 @@
             "title": "fix: Image Space upload for duplicate or special file names, and plugin errors",
             "url": "https://github.com/KellisLab/Mantis/pull/5242",
             "notes": []
+          },
+          {
+            "at": "2026-10-08T23:13:31Z",
+            "category": "pr",
+            "points": 14,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5280",
+            "title": "fix: respect log selection and step order when generating journeys from logs",
+            "url": "https://github.com/KellisLab/Mantis/pull/5280",
+            "notes": []
           }
         ]
       },
-      "rolling_total": 88,
+      "rolling_total": 102,
       "rank": 4
     },
     {
@@ -34214,7 +34264,7 @@
       ],
       "windows": {
         "7": 78,
-        "14": 162
+        "14": 135
       },
       "windowCounts": {
         "7": {
@@ -34230,7 +34280,7 @@
           "bug_prs": 0
         },
         "14": {
-          "prs": 13,
+          "prs": 11,
           "reviews": 0,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
@@ -34251,7 +34301,7 @@
           "other": 0
         },
         "14": {
-          "pr": 162,
+          "pr": 135,
           "review": 0,
           "issue": 0,
           "docs": 0,
@@ -34267,8 +34317,8 @@
           "docs": 0
         },
         "14": {
-          "overall": 162,
-          "shipping": 162,
+          "overall": 135,
+          "shipping": 135,
           "review": 0,
           "bugs": 0,
           "docs": 0
@@ -34346,28 +34396,6 @@
           }
         ],
         "14": [
-          {
-            "at": "2026-09-24T20:54:18Z",
-            "category": "pr",
-            "points": 14,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3427",
-            "title": "Restore notebook tests to CI for issue 3198",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3427",
-            "notes": []
-          },
-          {
-            "at": "2026-09-24T22:33:49Z",
-            "category": "pr",
-            "points": 13,
-            "kind": "pr",
-            "ref": "KellisLab/MantisAPI#3428",
-            "title": "Restore conduit test collection for issue 3198",
-            "url": "https://github.com/KellisLab/MantisAPI/pull/3428",
-            "notes": [
-              "2th in 24h ×1"
-            ]
-          },
           {
             "at": "2026-09-25T11:48:43Z",
             "category": "pr",
@@ -41786,11 +41814,11 @@
         "2026-10-08": {
           "prs": 2,
           "reviews": 0,
-          "confirmed_issues": 0,
+          "confirmed_issues": 1,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 0,
-          "issues_closed": 0,
+          "issues_closed": 2,
           "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
@@ -41846,11 +41874,11 @@
       "counts": {
         "prs": 2,
         "reviews": 1,
-        "confirmed_issues": 20,
+        "confirmed_issues": 21,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 3,
-        "issues_closed": 0,
+        "issues_closed": 2,
         "review_submissions": 2,
         "docs_prs": 0,
         "bug_prs": 0
@@ -41908,11 +41936,11 @@
         "7": {
           "prs": 2,
           "reviews": 1,
-          "confirmed_issues": 18,
+          "confirmed_issues": 19,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
-          "issues_closed": 0,
+          "issues_closed": 2,
           "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
@@ -41920,11 +41948,11 @@
         "14": {
           "prs": 2,
           "reviews": 1,
-          "confirmed_issues": 18,
+          "confirmed_issues": 19,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 3,
-          "issues_closed": 0,
+          "issues_closed": 2,
           "review_submissions": 2,
           "docs_prs": 0,
           "bug_prs": 0
@@ -47123,6 +47151,473 @@
       "rank": 11
     },
     {
+      "login": "amywang2010",
+      "name": "Amy Wang",
+      "total": 72,
+      "days": {
+        "2026-07-21": 11,
+        "2026-07-26": 13,
+        "2026-09-22": 9,
+        "2026-09-19": 13,
+        "2026-10-08": 26
+      },
+      "dayCounts": {
+        "2026-07-21": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-07-26": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-02": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-16": {
+          "prs": 3,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-18": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-20": {
+          "prs": 1,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-23": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-22": {
+          "prs": 0,
+          "reviews": 1,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 1,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-25": {
+          "prs": 2,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 1,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-09-19": {
+          "prs": 0,
+          "reviews": 1,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 1,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-10-05": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 2,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-10-08": {
+          "prs": 3,
+          "reviews": 0,
+          "confirmed_issues": 8,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-07-17": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-08-06": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 1,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-07-24": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 7,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-07-31": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 6,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "2026-10-07": {
+          "prs": 0,
+          "reviews": 0,
+          "confirmed_issues": 1,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "dayBreakdown": {
+        "2026-07-21": {
+          "pr": 11,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-07-26": {
+          "pr": 13,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-22": {
+          "pr": 0,
+          "review": 9,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-09-19": {
+          "pr": 0,
+          "review": 13,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "2026-10-08": {
+          "pr": 26,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "breakdown": {
+        "pr": 50,
+        "review": 22,
+        "issue": 0,
+        "docs": 0,
+        "other": 0
+      },
+      "counts": {
+        "prs": 13,
+        "reviews": 2,
+        "confirmed_issues": 18,
+        "fixed_bonuses": 0,
+        "manual": 0,
+        "prs_coauthored": 5,
+        "issues_closed": 8,
+        "review_submissions": 2,
+        "docs_prs": 0,
+        "bug_prs": 0
+      },
+      "sizes": {
+        "XS": 0,
+        "S": 1,
+        "M": 1,
+        "L": 2,
+        "XL": 0
+      },
+      "contributions": [],
+      "ledger": [
+        {
+          "at": "2026-07-21T12:56:05Z",
+          "category": "pr",
+          "points": 11,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#3071",
+          "title": "Fix: Jarvis Error (Unknown Component Type: Jarvis)",
+          "url": "https://github.com/KellisLab/Mantis/pull/3071",
+          "notes": []
+        },
+        {
+          "at": "2026-07-26T17:14:58Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#3226",
+          "title": "Refactor: Extract text data type construction into reusable helper",
+          "url": "https://github.com/KellisLab/Mantis/pull/3226",
+          "notes": []
+        },
+        {
+          "at": "2026-09-22T01:19:09Z",
+          "category": "review",
+          "points": 9,
+          "kind": "review",
+          "ref": "KellisLab/Mantis#4551",
+          "title": "Stop Collections retry loop when initialization is disabled",
+          "url": "https://github.com/KellisLab/Mantis/pull/4551",
+          "notes": [
+            "approved",
+            "inline comments"
+          ]
+        },
+        {
+          "at": "2026-09-19T13:01:13Z",
+          "category": "review",
+          "points": 13,
+          "kind": "review",
+          "ref": "KellisLab/MantisAPI#3185",
+          "title": "feat: GO/pathway enrichment (backend)",
+          "url": "https://github.com/KellisLab/MantisAPI/pull/3185",
+          "notes": [
+            "changes requested",
+            "inline comments",
+            "nontrivial PR"
+          ]
+        },
+        {
+          "at": "2026-10-08T23:22:37Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#5287",
+          "title": "Extension SDK: emit point click events",
+          "url": "https://github.com/KellisLab/Mantis/pull/5287",
+          "notes": []
+        },
+        {
+          "at": "2026-10-08T23:22:58Z",
+          "category": "pr",
+          "points": 13,
+          "kind": "pr",
+          "ref": "KellisLab/Mantis#5292",
+          "title": "Link store: draw an extension-owned edge overlay",
+          "url": "https://github.com/KellisLab/Mantis/pull/5292",
+          "notes": [
+            "2th in 24h ×1"
+          ]
+        }
+      ],
+      "windows": {
+        "7": 26,
+        "14": 26
+      },
+      "windowCounts": {
+        "7": {
+          "prs": 3,
+          "reviews": 0,
+          "confirmed_issues": 9,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 2,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
+        "14": {
+          "prs": 5,
+          "reviews": 0,
+          "confirmed_issues": 9,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 3,
+          "issues_closed": 0,
+          "review_submissions": 0,
+          "docs_prs": 0,
+          "bug_prs": 0
+        }
+      },
+      "windowBreakdown": {
+        "7": {
+          "pr": 26,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        },
+        "14": {
+          "pr": 26,
+          "review": 0,
+          "issue": 0,
+          "docs": 0,
+          "other": 0
+        }
+      },
+      "windowDimensions": {
+        "7": {
+          "overall": 26,
+          "shipping": 26,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        },
+        "14": {
+          "overall": 26,
+          "shipping": 26,
+          "review": 0,
+          "bugs": 0,
+          "docs": 0
+        }
+      },
+      "windowLedger": {
+        "7": [
+          {
+            "at": "2026-10-08T23:22:37Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5287",
+            "title": "Extension SDK: emit point click events",
+            "url": "https://github.com/KellisLab/Mantis/pull/5287",
+            "notes": []
+          },
+          {
+            "at": "2026-10-08T23:22:58Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5292",
+            "title": "Link store: draw an extension-owned edge overlay",
+            "url": "https://github.com/KellisLab/Mantis/pull/5292",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          }
+        ],
+        "14": [
+          {
+            "at": "2026-10-08T23:22:37Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5287",
+            "title": "Extension SDK: emit point click events",
+            "url": "https://github.com/KellisLab/Mantis/pull/5287",
+            "notes": []
+          },
+          {
+            "at": "2026-10-08T23:22:58Z",
+            "category": "pr",
+            "points": 13,
+            "kind": "pr",
+            "ref": "KellisLab/Mantis#5292",
+            "title": "Link store: draw an extension-owned edge overlay",
+            "url": "https://github.com/KellisLab/Mantis/pull/5292",
+            "notes": [
+              "2th in 24h ×1"
+            ]
+          }
+        ]
+      },
+      "rolling_total": 26,
+      "rank": 12
+    },
+    {
       "login": "AryanSudhirDev",
       "name": "Aryan Sudhir",
       "total": 252,
@@ -47915,7 +48410,7 @@
         ]
       },
       "rolling_total": 13,
-      "rank": 12
+      "rank": 13
     },
     {
       "login": "pandeylakshya207-max",
@@ -48341,7 +48836,7 @@
         ]
       },
       "rolling_total": 11,
-      "rank": 13
+      "rank": 14
     },
     {
       "login": "neha-sharma-geoai",
@@ -48585,7 +49080,7 @@
         ]
       },
       "rolling_total": 11,
-      "rank": 14
+      "rank": 15
     },
     {
       "login": "alvinzhengq",
@@ -48765,7 +49260,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 15
+      "rank": 16
     },
     {
       "login": "mtybadger",
@@ -48882,7 +49377,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 16
+      "rank": 17
     },
     {
       "login": "evbxll",
@@ -49020,7 +49515,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 17
+      "rank": 18
     },
     {
       "login": "zacmar0",
@@ -49182,7 +49677,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 18
+      "rank": 19
     },
     {
       "login": "GatlenCulp",
@@ -49368,7 +49863,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 19
+      "rank": 20
     },
     {
       "login": "JRahala",
@@ -49485,7 +49980,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 20
+      "rank": 21
     },
     {
       "login": "joshwu108",
@@ -50403,7 +50898,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 21
+      "rank": 22
     },
     {
       "login": "isaacgutterman",
@@ -50580,7 +51075,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 22
+      "rank": 23
     },
     {
       "login": "lebinary",
@@ -50976,7 +51471,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 23
+      "rank": 24
     },
     {
       "login": "jophy-ye",
@@ -51878,7 +52373,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 24
+      "rank": 25
     },
     {
       "login": "DavidBShan",
@@ -52064,7 +52559,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 25
+      "rank": 26
     },
     {
       "login": "deanliang06",
@@ -52478,7 +52973,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 26
+      "rank": 27
     },
     {
       "login": "DemonizedCrush",
@@ -57368,7 +57863,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 27
+      "rank": 28
     },
     {
       "login": "vinays6",
@@ -59209,7 +59704,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 28
+      "rank": 29
     },
     {
       "login": "gemini-code-assist",
@@ -95293,7 +95788,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 29
+      "rank": 30
     },
     {
       "login": "AnasMaar",
@@ -99186,7 +99681,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 30
+      "rank": 31
     },
     {
       "login": "LucaVor",
@@ -101622,7 +102117,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 31
+      "rank": 32
     },
     {
       "login": "Arun-V18",
@@ -103388,7 +103883,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 32
+      "rank": 33
     },
     {
       "login": "NIcolasp14",
@@ -103538,7 +104033,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 33
+      "rank": 34
     },
     {
       "login": "0xCUB3",
@@ -105588,7 +106083,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 34
+      "rank": 35
     },
     {
       "login": "kaeskiio",
@@ -106162,7 +106657,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 35
+      "rank": 36
     },
     {
       "login": "JustinZ1903718",
@@ -106366,7 +106861,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 36
+      "rank": 37
     },
     {
       "login": "farhan132",
@@ -106483,7 +106978,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 37
+      "rank": 38
     },
     {
       "login": "michaelyang28",
@@ -106600,7 +107095,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 38
+      "rank": 39
     },
     {
       "login": "excel-8",
@@ -107027,7 +107522,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 39
+      "rank": 40
     },
     {
       "login": "levtechs",
@@ -107323,7 +107818,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 40
+      "rank": 41
     },
     {
       "login": "Copilot",
@@ -110927,7 +111422,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 41
+      "rank": 42
     },
     {
       "login": "ayanopt",
@@ -111128,7 +111623,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 42
+      "rank": 43
     },
     {
       "login": "Soham2020sam",
@@ -111962,7 +112457,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 43
+      "rank": 44
     },
     {
       "login": "naman-sonawane",
@@ -112112,7 +112607,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 44
+      "rank": 45
     },
     {
       "login": "gconsigli",
@@ -113919,7 +114414,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 45
+      "rank": 46
     },
     {
       "login": "hongning-wang",
@@ -116915,7 +117410,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 46
+      "rank": 47
     },
     {
       "login": "epic-riff",
@@ -117053,7 +117548,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 47
+      "rank": 48
     },
     {
       "login": "ark248",
@@ -119126,7 +119621,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 48
+      "rank": 49
     },
     {
       "login": "rohan-va",
@@ -122730,7 +123225,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 49
+      "rank": 50
     },
     {
       "login": "TheBigBener",
@@ -122859,7 +123354,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 50
+      "rank": 51
     },
     {
       "login": "kamchettysadhika",
@@ -123195,7 +123690,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 51
+      "rank": 52
     },
     {
       "login": "shreeya-12",
@@ -123345,7 +123840,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 52
+      "rank": 53
     },
     {
       "login": "vittesh12345",
@@ -123510,7 +124005,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 53
+      "rank": 54
     },
     {
       "login": "UncleEddie1",
@@ -123842,7 +124337,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 54
+      "rank": 55
     },
     {
       "login": "charleywolf",
@@ -126046,7 +126541,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 55
+      "rank": 56
     },
     {
       "login": "Krishiv-Thakuria",
@@ -126349,7 +126844,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 56
+      "rank": 57
     },
     {
       "login": "Donysus",
@@ -126583,7 +127078,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 57
+      "rank": 58
     },
     {
       "login": "SufianTA",
@@ -127180,7 +127675,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 58
+      "rank": 59
     },
     {
       "login": "samuelsurr",
@@ -127421,7 +127916,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 59
+      "rank": 60
     },
     {
       "login": "MaitreyaM",
@@ -127757,7 +128252,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 60
+      "rank": 61
     },
     {
       "login": "KrishivThakuria",
@@ -127874,7 +128369,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 61
+      "rank": 62
     },
     {
       "login": "Ardbiu",
@@ -128638,7 +129133,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 62
+      "rank": 63
     },
     {
       "login": "alexkana",
@@ -128860,7 +129355,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 63
+      "rank": 64
     },
     {
       "login": "edoardopanella",
@@ -129354,7 +129849,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 64
+      "rank": 65
     },
     {
       "login": "saisanjana22",
@@ -129546,7 +130041,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 65
+      "rank": 66
     },
     {
       "login": "adityasngpta",
@@ -129714,7 +130209,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 66
+      "rank": 67
     },
     {
       "login": "onlineinfoh",
@@ -130001,7 +130496,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 67
+      "rank": 68
     },
     {
       "login": "Siddharthakhandelwal",
@@ -130593,7 +131088,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 68
+      "rank": 69
     },
     {
       "login": "w2sg-arnav",
@@ -130734,7 +131229,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 69
+      "rank": 70
     },
     {
       "login": "kamilfuks",
@@ -130851,7 +131346,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 70
+      "rank": 71
     },
     {
       "login": "RishabhMakker",
@@ -130980,7 +131475,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 71
+      "rank": 72
     },
     {
       "login": "legitHacker23",
@@ -131097,7 +131592,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 72
+      "rank": 73
     },
     {
       "login": "Zopu23",
@@ -133305,7 +133800,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 73
+      "rank": 74
     },
     {
       "login": "Premrshah",
@@ -134407,7 +134902,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 74
+      "rank": 75
     },
     {
       "login": "claude",
@@ -135328,7 +135823,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 75
+      "rank": 76
     },
     {
       "login": "HridhayJ",
@@ -135648,7 +136143,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 76
+      "rank": 77
     },
     {
       "login": "aritroBh",
@@ -136578,7 +137073,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 77
+      "rank": 78
     },
     {
       "login": "msun170",
@@ -137144,7 +137639,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 78
+      "rank": 79
     },
     {
       "login": "ZeidAl-Ruzouq",
@@ -137546,7 +138041,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 79
+      "rank": 80
     },
     {
       "login": "rushilm10",
@@ -137711,7 +138206,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 80
+      "rank": 81
     },
     {
       "login": "sohamsen15",
@@ -137852,7 +138347,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 81
+      "rank": 82
     },
     {
       "login": "cursoragent",
@@ -138485,7 +138980,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 82
+      "rank": 83
     },
     {
       "login": "VishwanathanV",
@@ -139377,7 +139872,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 83
+      "rank": 84
     },
     {
       "login": "redaq",
@@ -139907,7 +140402,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 84
+      "rank": 85
     },
     {
       "login": "siridesai",
@@ -140089,7 +140584,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 85
+      "rank": 86
     },
     {
       "login": "Akshay-Bhaskar1",
@@ -140279,7 +140774,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 86
+      "rank": 87
     },
     {
       "login": "miclovich",
@@ -140420,7 +140915,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 87
+      "rank": 88
     },
     {
       "login": "dianeferragu",
@@ -140684,7 +141179,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 88
+      "rank": 89
     },
     {
       "login": "laurenap",
@@ -140944,7 +141439,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 89
+      "rank": 90
     },
     {
       "login": "tenzinmchemey",
@@ -141244,7 +141739,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 90
+      "rank": 91
     },
     {
       "login": "themayankjashnani",
@@ -141447,7 +141942,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 91
+      "rank": 92
     },
     {
       "login": "ElpidaPi",
@@ -141585,7 +142080,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 92
+      "rank": 93
     },
     {
       "login": "TheAmrReticoStaderGuy",
@@ -141785,7 +142280,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 93
+      "rank": 94
     },
     {
       "login": "6namdang",
@@ -142730,7 +143225,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 94
+      "rank": 95
     },
     {
       "login": "Priya",
@@ -142859,7 +143354,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 95
+      "rank": 96
     },
     {
       "login": "pranilraichura",
@@ -143679,7 +144174,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 96
+      "rank": 97
     },
     {
       "login": "manolik",
@@ -143841,7 +144336,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 97
+      "rank": 98
     },
     {
       "login": "kritgun-1907",
@@ -144021,7 +144516,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 98
+      "rank": 99
     },
     {
       "login": "imranmk007",
@@ -144297,7 +144792,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 99
+      "rank": 100
     },
     {
       "login": "Muhammadabrarrayhan2",
@@ -145351,7 +145846,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 100
+      "rank": 101
     },
     {
       "login": "ChinmayKamjith1",
@@ -145501,7 +145996,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 101
+      "rank": 102
     },
     {
       "login": "TaherMerchant25",
@@ -145711,7 +146206,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 102
+      "rank": 103
     },
     {
       "login": "RonKat2008",
@@ -145975,7 +146470,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 103
+      "rank": 104
     },
     {
       "login": "ronitkatikaneni",
@@ -146104,7 +146599,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 104
+      "rank": 105
     },
     {
       "login": "ArjunSubramanian22",
@@ -146290,7 +146785,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 105
+      "rank": 106
     },
     {
       "login": "LuuOW",
@@ -146431,7 +146926,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 106
+      "rank": 107
     },
     {
       "login": "airjan-airlines",
@@ -146569,7 +147064,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 107
+      "rank": 108
     },
     {
       "login": "Akshaj-G",
@@ -146737,7 +147232,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 108
+      "rank": 109
     },
     {
       "login": "Cypherspec",
@@ -147047,7 +147542,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 109
+      "rank": 110
     },
     {
       "login": "NisargOza",
@@ -147197,7 +147692,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 110
+      "rank": 111
     },
     {
       "login": "vili179",
@@ -147407,7 +147902,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 111
+      "rank": 112
     },
     {
       "login": "varvarakarenski",
@@ -147845,7 +148340,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 112
+      "rank": 113
     },
     {
       "login": "absol761",
@@ -148866,7 +149361,7 @@
         ]
       },
       "rolling_total": 0,
-      "rank": 113
+      "rank": 114
     },
     {
       "login": "Coder-13-11",
@@ -149428,7 +149923,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 114
+      "rank": 115
     },
     {
       "login": "gnosisHermes",
@@ -149593,7 +150088,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 115
+      "rank": 116
     },
     {
       "login": "ThomasdeChillaz",
@@ -149798,7 +150293,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 116
+      "rank": 117
     },
     {
       "login": "kaapra081",
@@ -150020,7 +150515,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 117
+      "rank": 118
     },
     {
       "login": "Rafa-Ross",
@@ -150293,7 +150788,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 118
+      "rank": 119
     },
     {
       "login": "JerryChen1974",
@@ -150431,7 +150926,7 @@
         "14": []
       },
       "rolling_total": 0,
-      "rank": 119
+      "rank": 120
     },
     {
       "login": "Cruz-Arnzen",
@@ -150913,385 +151408,6 @@
           "prs_coauthored": 0,
           "issues_closed": 0,
           "review_submissions": 1,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "windowBreakdown": {
-        "7": {
-          "pr": 0,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "14": {
-          "pr": 0,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "windowDimensions": {
-        "7": {
-          "overall": 0,
-          "shipping": 0,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        },
-        "14": {
-          "overall": 0,
-          "shipping": 0,
-          "review": 0,
-          "bugs": 0,
-          "docs": 0
-        }
-      },
-      "windowLedger": {
-        "7": [],
-        "14": []
-      },
-      "rolling_total": 0,
-      "rank": 120
-    },
-    {
-      "login": "amywang2010",
-      "name": "Amy Wang",
-      "total": 46,
-      "days": {
-        "2026-07-21": 11,
-        "2026-07-26": 13,
-        "2026-09-22": 9,
-        "2026-09-19": 13
-      },
-      "dayCounts": {
-        "2026-07-21": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-07-26": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 1,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-02": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-16": {
-          "prs": 3,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-18": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-20": {
-          "prs": 1,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-23": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-22": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 1,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-25": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 1,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-09-19": {
-          "prs": 0,
-          "reviews": 1,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 1,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-10-05": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 2,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-07-17": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-08-06": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 1,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-07-24": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 7,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-07-31": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 0,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 6,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "2026-10-07": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 0,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        }
-      },
-      "dayBreakdown": {
-        "2026-07-21": {
-          "pr": 11,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-07-26": {
-          "pr": 13,
-          "review": 0,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-22": {
-          "pr": 0,
-          "review": 9,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        },
-        "2026-09-19": {
-          "pr": 0,
-          "review": 13,
-          "issue": 0,
-          "docs": 0,
-          "other": 0
-        }
-      },
-      "breakdown": {
-        "pr": 24,
-        "review": 22,
-        "issue": 0,
-        "docs": 0,
-        "other": 0
-      },
-      "counts": {
-        "prs": 10,
-        "reviews": 2,
-        "confirmed_issues": 10,
-        "fixed_bonuses": 0,
-        "manual": 0,
-        "prs_coauthored": 5,
-        "issues_closed": 8,
-        "review_submissions": 2,
-        "docs_prs": 0,
-        "bug_prs": 0
-      },
-      "sizes": {
-        "XS": 0,
-        "S": 1,
-        "M": 0,
-        "L": 1,
-        "XL": 0
-      },
-      "contributions": [],
-      "ledger": [
-        {
-          "at": "2026-07-21T12:56:05Z",
-          "category": "pr",
-          "points": 11,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#3071",
-          "title": "Fix: Jarvis Error (Unknown Component Type: Jarvis)",
-          "url": "https://github.com/KellisLab/Mantis/pull/3071",
-          "notes": []
-        },
-        {
-          "at": "2026-07-26T17:14:58Z",
-          "category": "pr",
-          "points": 13,
-          "kind": "pr",
-          "ref": "KellisLab/Mantis#3226",
-          "title": "Refactor: Extract text data type construction into reusable helper",
-          "url": "https://github.com/KellisLab/Mantis/pull/3226",
-          "notes": []
-        },
-        {
-          "at": "2026-09-22T01:19:09Z",
-          "category": "review",
-          "points": 9,
-          "kind": "review",
-          "ref": "KellisLab/Mantis#4551",
-          "title": "Stop Collections retry loop when initialization is disabled",
-          "url": "https://github.com/KellisLab/Mantis/pull/4551",
-          "notes": [
-            "approved",
-            "inline comments"
-          ]
-        },
-        {
-          "at": "2026-09-19T13:01:13Z",
-          "category": "review",
-          "points": 13,
-          "kind": "review",
-          "ref": "KellisLab/MantisAPI#3185",
-          "title": "feat: GO/pathway enrichment (backend)",
-          "url": "https://github.com/KellisLab/MantisAPI/pull/3185",
-          "notes": [
-            "changes requested",
-            "inline comments",
-            "nontrivial PR"
-          ]
-        }
-      ],
-      "windows": {
-        "7": 0,
-        "14": 0
-      },
-      "windowCounts": {
-        "7": {
-          "prs": 0,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 2,
-          "issues_closed": 0,
-          "review_submissions": 0,
-          "docs_prs": 0,
-          "bug_prs": 0
-        },
-        "14": {
-          "prs": 2,
-          "reviews": 0,
-          "confirmed_issues": 1,
-          "fixed_bonuses": 0,
-          "manual": 0,
-          "prs_coauthored": 3,
-          "issues_closed": 0,
-          "review_submissions": 0,
           "docs_prs": 0,
           "bug_prs": 0
         }
@@ -155624,6 +155740,18 @@
           "docs_prs": 0,
           "bug_prs": 0
         },
+        "2026-10-08": {
+          "prs": 0,
+          "reviews": 1,
+          "confirmed_issues": 0,
+          "fixed_bonuses": 0,
+          "manual": 0,
+          "prs_coauthored": 0,
+          "issues_closed": 0,
+          "review_submissions": 1,
+          "docs_prs": 0,
+          "bug_prs": 0
+        },
         "2026-06-20": {
           "prs": 0,
           "reviews": 0,
@@ -155693,13 +155821,13 @@
       },
       "counts": {
         "prs": 6,
-        "reviews": 0,
+        "reviews": 1,
         "confirmed_issues": 4,
         "fixed_bonuses": 0,
         "manual": 0,
         "prs_coauthored": 5,
         "issues_closed": 2,
-        "review_submissions": 0,
+        "review_submissions": 1,
         "docs_prs": 0,
         "bug_prs": 0
       },
@@ -155750,25 +155878,25 @@
       "windowCounts": {
         "7": {
           "prs": 0,
-          "reviews": 0,
+          "reviews": 1,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 2,
           "issues_closed": 0,
-          "review_submissions": 0,
+          "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
         },
         "14": {
-          "prs": 1,
-          "reviews": 0,
+          "prs": 0,
+          "reviews": 1,
           "confirmed_issues": 0,
           "fixed_bonuses": 0,
           "manual": 0,
           "prs_coauthored": 4,
           "issues_closed": 0,
-          "review_submissions": 0,
+          "review_submissions": 1,
           "docs_prs": 0,
           "bug_prs": 0
         }
