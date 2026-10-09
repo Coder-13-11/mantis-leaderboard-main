@@ -17,9 +17,9 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1018** | 250 | 4 | 16 |
+| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1022** | 251 | 4 | 16 |
 | 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **665** | 132 | 0 | 145 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **299** | 58 | 0 | 17 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **282** | 54 | 0 | 16 |
 | 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **102** | 8 | 0 | 2 |
 | 5 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **78** | 6 | 0 | 0 |
 | 6 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **77** | 6 | 0 | 4 |
@@ -32,18 +32,18 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1259** | 265 | 28 | 17 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **1016** | 206 | 1 | 234 |
+| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1211** | 259 | 28 | 17 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **992** | 201 | 1 | 234 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **487** | 83 | 0 | 19 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **260** | 27 | 2 | 27 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **223** | 18 | 0 | 2 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **125** | 10 | 0 | 0 |
+| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **211** | 17 | 0 | 2 |
+| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **116** | 9 | 0 | 0 |
 | 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
 | 8 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
-| 9 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **58** | 10 | 0 | 9 |
+| 9 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **58** | 8 | 0 | 9 |
 | 10 | **Parth Anand** ([@PARTHANAND0009](https://github.com/PARTHANAND0009)) | **45** | 4 | 0 | 0 |
 
-_Last updated: Fri, 09 Oct 2026 13:09:17 GMT_
+_Last updated: Fri, 09 Oct 2026 18:49:23 GMT_
 <!-- LEADERBOARD:END -->
 
 
