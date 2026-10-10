@@ -17,33 +17,33 @@ code / review / issues ledger.
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1219** | 296 | 4 | 16 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **400** | 81 | 0 | 61 |
+| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1233** | 299 | 4 | 16 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **373** | 73 | 0 | 33 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **246** | 43 | 0 | 15 |
 | 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **105** | 8 | 0 | 2 |
 | 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **89** | 7 | 0 | 5 |
-| 6 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **82** | 13 | 0 | 16 |
+| 6 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **87** | 14 | 0 | 16 |
 | 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
-| 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **65** | 5 | 0 | 0 |
-| 9 | **Abhijay G** ([@FungousLand1941](https://github.com/FungousLand1941)) | **58** | 4 | 1 | 19 |
+| 8 | **Abhijay G** ([@FungousLand1941](https://github.com/FungousLand1941)) | **58** | 4 | 1 | 19 |
+| 9 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **51** | 4 | 0 | 0 |
 | 10 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **28** | 2 | 0 | 0 |
 
 #### Past 14 Days
 
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
-| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1408** | 304 | 28 | 17 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **899** | 181 | 1 | 189 |
+| 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1422** | 307 | 28 | 17 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **915** | 181 | 1 | 172 |
 | 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **505** | 85 | 0 | 19 |
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **298** | 30 | 2 | 29 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **204** | 16 | 0 | 2 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **116** | 9 | 0 | 0 |
-| 7 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **82** | 13 | 0 | 16 |
+| 7 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **87** | 14 | 0 | 16 |
 | 8 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
 | 9 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
 | 10 | **Abhijay G** ([@FungousLand1941](https://github.com/FungousLand1941)) | **58** | 4 | 1 | 19 |
 
-_Last updated: Sat, 10 Oct 2026 09:44:53 GMT_
+_Last updated: Sat, 10 Oct 2026 15:51:46 GMT_
 <!-- LEADERBOARD:END -->
 
 
