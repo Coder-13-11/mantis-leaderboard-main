@@ -18,13 +18,13 @@ code / review / issues ledger.
 | Rank | Contributor | Points | PRs | Reviews | Issues |
 | :--: | :---------- | -----: | --: | ------: | -----: |
 | 1 | **Taksh Kothari** ([@Chessing234](https://github.com/Chessing234)) | **1106** | 270 | 4 | 16 |
-| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **665** | 132 | 0 | 145 |
-| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **300** | 56 | 0 | 16 |
-| 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **115** | 9 | 0 | 5 |
-| 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **105** | 8 | 0 | 2 |
-| 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **78** | 6 | 0 | 0 |
+| 2 | **Sebastien Kawada** ([@chreia](https://github.com/chreia)) | **573** | 118 | 0 | 95 |
+| 3 | **Pranava Kumar** ([@PranavaKCode](https://github.com/PranavaKCode)) | **283** | 52 | 0 | 15 |
+| 4 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **105** | 8 | 0 | 2 |
+| 5 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **89** | 7 | 0 | 5 |
+| 6 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **82** | 13 | 0 | 16 |
 | 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
-| 8 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **68** | 10 | 0 | 16 |
+| 8 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **65** | 5 | 0 | 0 |
 | 9 | **Abhijay G** ([@FungousLand1941](https://github.com/FungousLand1941)) | **58** | 4 | 1 | 19 |
 | 10 | **alex_d4v** ([@alex-d4v](https://github.com/alex-d4v)) | **28** | 2 | 0 | 0 |
 
@@ -38,12 +38,12 @@ code / review / issues ledger.
 | 4 | **Yakshith** ([@YakshithK](https://github.com/YakshithK)) | **298** | 30 | 2 | 29 |
 | 5 | **Sameeksha Dadmi** ([@SamDadmi](https://github.com/SamDadmi)) | **204** | 16 | 0 | 2 |
 | 6 | **Shubhra Singh** ([@shubhrasingh-24](https://github.com/shubhrasingh-24)) | **116** | 9 | 0 | 0 |
-| 7 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
-| 8 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **68** | 10 | 0 | 16 |
+| 7 | **Amy Wang** ([@amywang2010](https://github.com/amywang2010)) | **82** | 13 | 0 | 16 |
+| 8 | **Pascal Passigan** ([@ppxscal](https://github.com/ppxscal)) | **70** | 7 | 0 | 0 |
 | 9 | **Aly Dhedhi** ([@dhedhialy](https://github.com/dhedhialy)) | **68** | 6 | 0 | 0 |
 | 10 | **Abhijay G** ([@FungousLand1941](https://github.com/FungousLand1941)) | **58** | 4 | 1 | 19 |
 
-_Last updated: Fri, 09 Oct 2026 23:12:30 GMT_
+_Last updated: Sat, 10 Oct 2026 02:42:55 GMT_
 <!-- LEADERBOARD:END -->
 
 
